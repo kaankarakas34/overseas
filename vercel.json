@@ -1,26 +1,12 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/contact.ts",
-      "use": "@vercel/node"
+      "source": "/api/contact",
+      "destination": "/api/contact.ts"
     },
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/contact",
-      "dest": "/api/contact.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!api/|assets/|images/|logolar/|referanslar/|logo2/|favicon.svg|icons.svg|.*\\..*).*)",
+      "destination": "/index.html"
     }
   ]
 }
