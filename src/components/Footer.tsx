@@ -13,10 +13,11 @@ import { MASTER_SERVICES } from '../data/masterPlanData';
 
 interface FooterProps {
   onSelectService: (serviceId: string) => void;
+  onNavigateDoctorBranding?: () => void;
   onOpenConsultation: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onSelectService, onOpenConsultation }) => {
+export const Footer: React.FC<FooterProps> = ({ onSelectService, onNavigateDoctorBranding, onOpenConsultation }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -59,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectService, onOpenConsultat
           {/* Col 2: Services Menu (4 cols) */}
           <div className="lg:col-span-4 space-y-3">
             <div className="font-['Inter_Tight'] text-sm font-bold text-white uppercase tracking-wider text-[#60A5FA]">
-              8 Temel Hizmetimiz
+              Hizmetlerimiz & Çözümler
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               {MASTER_SERVICES.map((s) => (
@@ -72,6 +73,15 @@ export const Footer: React.FC<FooterProps> = ({ onSelectService, onOpenConsultat
                   <span>{s.title}</span>
                 </button>
               ))}
+              {onNavigateDoctorBranding && (
+                <button
+                  onClick={onNavigateDoctorBranding}
+                  className="text-[#60A5FA] font-semibold hover:text-white text-left transition-colors py-0.5 flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#60A5FA]"></span>
+                  <span>Doktor Marka Yönetimi</span>
+                </button>
+              )}
             </div>
           </div>
 

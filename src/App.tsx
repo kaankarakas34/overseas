@@ -5,6 +5,8 @@ import { PartnerLogos } from './components/PartnerLogos';
 import { ProblemApproach } from './components/ProblemApproach';
 import { ServicesSection } from './components/ServicesSection';
 import { ServiceDetailPage } from './components/ServiceDetailPage';
+import { DoctorBrandingSection } from './components/DoctorBrandingSection';
+import { DoctorBrandingPage } from './components/DoctorBrandingPage';
 import { GrowthWorkflow } from './components/GrowthWorkflow';
 import { RoadmapSection } from './components/RoadmapSection';
 import { ReferencesLogos } from './components/ReferencesLogos';
@@ -19,7 +21,8 @@ import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 
 type RouteState = 
   | { view: 'home' }
-  | { view: 'service'; serviceId: string };
+  | { view: 'service'; serviceId: string }
+  | { view: 'doctor-branding' };
 
 export const App: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<RouteState>({ view: 'home' });
@@ -35,6 +38,10 @@ export const App: React.FC = () => {
 
   const handleNavigateService = (serviceId: string) => {
     setCurrentRoute({ view: 'service', serviceId });
+  };
+
+  const handleNavigateDoctorBranding = () => {
+    setCurrentRoute({ view: 'doctor-branding' });
   };
 
   const scrollToSection = (id: string) => {
@@ -53,7 +60,7 @@ export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-[#222222] flex flex-col selection:bg-[#446CB5] selection:text-white">
       
-      {/* 1. Navbar with Visual Mega Menu */}
+      {/* 1. Navbar with Visual Mega Menu (NO doctor branding link as requested) */}
       <Navbar 
         onNavigateHome={handleNavigateHome}
         onNavigateService={handleNavigateService}
@@ -66,7 +73,12 @@ export const App: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow">
-        {currentRoute.view === 'service' ? (
+        {currentRoute.view === 'doctor-branding' ? (
+          <DoctorBrandingPage 
+            onBackToHome={handleNavigateHome}
+            onOpenConsultation={() => setIsConsultationModalOpen(true)}
+          />
+        ) : currentRoute.view === 'service' ? (
           <ServiceDetailPage 
             serviceId={currentRoute.serviceId}
             onBackToHome={handleNavigateHome}
@@ -89,52 +101,59 @@ export const App: React.FC = () => {
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 5. Flowchart Roadmap Section (Newly added as requested) */}
+            {/* 5. Flowchart Roadmap Section */}
             <RoadmapSection />
 
-            {/* 6. 8 Core Master Plan Services (Click navigates to dedicated page) */}
+            {/* 6. 8 Core Master Plan Services */}
             <ServicesSection 
               onSelectService={handleNavigateService}
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 7. Growth Process */}
+            {/* 7. Doktor Marka Yönetimi (Homepage Section) */}
+            <DoctorBrandingSection 
+              onNavigateDoctorBranding={handleNavigateDoctorBranding}
+              onOpenConsultation={() => setIsConsultationModalOpen(true)}
+            />
+
+            {/* 8. Growth Process */}
             <GrowthWorkflow 
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 8. Clean References Logo Grid */}
+            {/* 9. Clean References Logo Grid */}
             <ReferencesLogos />
 
-            {/* 9. Specialty Areas */}
+            {/* 10. Specialty Areas */}
             <SpecialtiesSection 
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 10. Hakkımızda */}
+            {/* 11. Hakkımızda */}
             <AboutSection 
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 11. Rehber & Blog */}
+            {/* 12. Rehber & Blog */}
             <BlogSection 
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 12. FAQ Accordions */}
+            {/* 13. FAQ Accordions */}
             <FaqSection 
               onOpenConsultation={() => setIsConsultationModalOpen(true)}
             />
 
-            {/* 13. KVKK Compliant Contact Form */}
+            {/* 14. KVKK Compliant Contact Form */}
             <ContactSection />
           </>
         )}
       </main>
 
-      {/* 14. Footer */}
+      {/* 15. Footer */}
       <Footer 
         onSelectService={handleNavigateService}
+        onNavigateDoctorBranding={handleNavigateDoctorBranding}
         onOpenConsultation={() => setIsConsultationModalOpen(true)}
       />
 
