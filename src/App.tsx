@@ -53,7 +53,7 @@ const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOp
           <SEOHead
             title={service.seoTitle || `${service.title} | Overseas Marketing`}
             description={service.metaDesc || service.shortDesc}
-            canonicalUrl={`https://overseasmarketing.com.tr/hizmetler/${service.id}`}
+            canonicalUrl={`https://overseas.marketing/hizmetler/${service.id}`}
           />
           <JsonLdSchema type="service" service={service} />
         </>
@@ -86,7 +86,7 @@ const BranchPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
           <SEOHead
             title={branch.seoTitle}
             description={branch.metaDesc}
-            canonicalUrl={`https://overseasmarketing.com.tr/${branch.slug}`}
+            canonicalUrl={`https://overseas.marketing/${branch.slug}`}
           />
           <JsonLdSchema type="branch" branch={branch} />
         </>
@@ -119,7 +119,7 @@ const MarketPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
           <SEOHead
             title={market.seoTitle}
             description={market.metaDesc}
-            canonicalUrl={`https://overseasmarketing.com.tr/${market.slug}`}
+            canonicalUrl={`https://overseas.marketing/${market.slug}`}
           />
           <JsonLdSchema type="market" market={market} />
         </>
@@ -152,7 +152,7 @@ const CityPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenC
           <SEOHead
             title={city.seoTitle}
             description={city.metaDesc}
-            canonicalUrl={`https://overseasmarketing.com.tr/${city.slug}`}
+            canonicalUrl={`https://overseas.marketing/${city.slug}`}
           />
           <JsonLdSchema type="city" city={city} />
         </>
@@ -180,7 +180,7 @@ const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = 
       <SEOHead
         title="Doktor Marka Yönetimi & Dijital İtibar | Overseas Marketing"
         description="Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri."
-        canonicalUrl="https://overseasmarketing.com.tr/doktor-marka-yonetimi"
+        canonicalUrl="https://overseas.marketing/doktor-marka-yonetimi"
       />
       <JsonLdSchema type="doctor-branding" />
       <DoctorBrandingPage
@@ -203,7 +203,7 @@ const HomePage: React.FC<{
       <SEOHead
         title="Sağlık Turizmi Reklam Ajansı | Overseas Marketing"
         description="Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım."
-        canonicalUrl="https://overseasmarketing.com.tr/"
+        canonicalUrl="https://overseas.marketing/"
       />
       <JsonLdSchema type="home" />
 

@@ -359,7 +359,7 @@ console.log('🚀 2026 Statik Pre-rendering (Retrieval Katmanı) Derlemesi Başl
 let generatedCount = 0;
 
 for (const route of ROUTES) {
-  const canonicalUrl = `https://overseasmarketing.com.tr${route.path === '/' ? '' : route.path}`;
+  const canonicalUrl = `https://overseas.marketing${route.path === '/' ? '' : route.path}`;
 
   // Replace Title
   let pageHtml = templateHtml.replace(

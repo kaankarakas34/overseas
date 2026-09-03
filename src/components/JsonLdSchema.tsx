@@ -13,7 +13,7 @@ interface JsonLdSchemaProps {
   customUrl?: string;
 }
 
-const DOMAIN = 'https://overseasmarketing.com.tr';
+const DOMAIN = 'https://overseas.marketing';
 
 export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
   type = 'home',

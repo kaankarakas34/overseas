@@ -11,7 +11,7 @@ interface SEOHeadProps {
 
 const DEFAULT_TITLE = 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing';
 const DEFAULT_DESC = 'Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım.';
-const DEFAULT_DOMAIN = 'https://overseasmarketing.com.tr';
+const DEFAULT_DOMAIN = 'https://overseas.marketing';
 const DEFAULT_IMAGE = `${DEFAULT_DOMAIN}/images/hero_health_tech.jpg`;
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
