@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { PartnerLogos } from './components/PartnerLogos';
@@ -7,6 +8,9 @@ import { ServicesSection } from './components/ServicesSection';
 import { ServiceDetailPage } from './components/ServiceDetailPage';
 import { DoctorBrandingSection } from './components/DoctorBrandingSection';
 import { DoctorBrandingPage } from './components/DoctorBrandingPage';
+import { BranchDetailPage } from './components/BranchDetailPage';
+import { MarketDetailPage } from './components/MarketDetailPage';
+import { CityDetailPage } from './components/CityDetailPage';
 import { GrowthWorkflow } from './components/GrowthWorkflow';
 import { RoadmapSection } from './components/RoadmapSection';
 import { ReferencesLogos } from './components/ReferencesLogos';
@@ -18,39 +22,245 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { ConsultationModal } from './components/ConsultationModal';
 import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
+import { SEOHead } from './components/SEOHead';
+import { JsonLdSchema } from './components/JsonLdSchema';
+import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from './data/masterPlanData';
 
-type RouteState = 
-  | { view: 'home' }
-  | { view: 'service'; serviceId: string }
-  | { view: 'doctor-branding' };
-
-export const App: React.FC = () => {
-  const [currentRoute, setCurrentRoute] = useState<RouteState>({ view: 'home' });
-  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
+// Service Wrapper
+const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { serviceId } = useParams<{ serviceId: string }>();
+  const navigate = useNavigate();
+  const activeServiceId = serviceId || 'performans-pazarlama';
+  const service = MASTER_SERVICES.find((s) => s.id === activeServiceId);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentRoute]);
+  }, [activeServiceId]);
+
+  return (
+    <>
+      {service && (
+        <>
+          <SEOHead
+            title={service.seoTitle || `${service.title} | Overseas Marketing`}
+            description={service.metaDesc || service.shortDesc}
+            canonicalUrl={`https://overseasmarketing.com.tr/hizmetler/${service.id}`}
+          />
+          <JsonLdSchema type="service" service={service} />
+        </>
+      )}
+      <ServiceDetailPage
+        serviceId={activeServiceId}
+        onBackToHome={() => navigate('/')}
+        onSelectService={(id) => navigate(`/hizmetler/${id}`)}
+        onOpenConsultation={onOpenConsultation}
+      />
+    </>
+  );
+};
+
+// Branch Wrapper
+const BranchPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { branchSlug } = useParams<{ branchSlug: string }>();
+  const navigate = useNavigate();
+  const activeSlug = branchSlug || 'sac-ekimi-reklam-ajansi';
+  const branch = MASTER_BRANCHES.find((b) => b.slug === activeSlug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeSlug]);
+
+  return (
+    <>
+      {branch && (
+        <>
+          <SEOHead
+            title={branch.seoTitle}
+            description={branch.metaDesc}
+            canonicalUrl={`https://overseasmarketing.com.tr/${branch.slug}`}
+          />
+          <JsonLdSchema type="branch" branch={branch} />
+        </>
+      )}
+      <BranchDetailPage
+        slug={activeSlug}
+        onBackToHome={() => navigate('/')}
+        onSelectBranch={(slug) => navigate(`/${slug}`)}
+        onOpenConsultation={onOpenConsultation}
+      />
+    </>
+  );
+};
+
+// Market Wrapper
+const MarketPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { marketSlug } = useParams<{ marketSlug: string }>();
+  const navigate = useNavigate();
+  const activeSlug = marketSlug || 'ingiltere-saglik-turizmi-reklamlari';
+  const market = MASTER_MARKETS.find((m) => m.slug === activeSlug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeSlug]);
+
+  return (
+    <>
+      {market && (
+        <>
+          <SEOHead
+            title={market.seoTitle}
+            description={market.metaDesc}
+            canonicalUrl={`https://overseasmarketing.com.tr/${market.slug}`}
+          />
+          <JsonLdSchema type="market" market={market} />
+        </>
+      )}
+      <MarketDetailPage
+        slug={activeSlug}
+        onBackToHome={() => navigate('/')}
+        onSelectMarket={(slug) => navigate(`/${slug}`)}
+        onOpenConsultation={onOpenConsultation}
+      />
+    </>
+  );
+};
+
+// City Wrapper
+const CityPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { citySlug } = useParams<{ citySlug: string }>();
+  const navigate = useNavigate();
+  const activeSlug = citySlug || 'istanbul-saglik-turizmi-reklam-ajansi';
+  const city = MASTER_CITIES.find((c) => c.slug === activeSlug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeSlug]);
+
+  return (
+    <>
+      {city && (
+        <>
+          <SEOHead
+            title={city.seoTitle}
+            description={city.metaDesc}
+            canonicalUrl={`https://overseasmarketing.com.tr/${city.slug}`}
+          />
+          <JsonLdSchema type="city" city={city} />
+        </>
+      )}
+      <CityDetailPage
+        slug={activeSlug}
+        onBackToHome={() => navigate('/')}
+        onSelectCity={(slug) => navigate(`/${slug}`)}
+        onOpenConsultation={onOpenConsultation}
+      />
+    </>
+  );
+};
+
+// Doctor Branding Wrapper
+const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  return (
+    <>
+      <SEOHead
+        title="Doktor Marka Yönetimi & Dijital İtibar | Overseas Marketing"
+        description="Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri."
+        canonicalUrl="https://overseasmarketing.com.tr/doktor-marka-yonetimi"
+      />
+      <JsonLdSchema type="doctor-branding" />
+      <DoctorBrandingPage
+        onBackToHome={() => navigate('/')}
+        onOpenConsultation={onOpenConsultation}
+      />
+    </>
+  );
+};
+
+// Home Page Component
+const HomePage: React.FC<{
+  onSelectService: (serviceId: string) => void;
+  onNavigateDoctorBranding: () => void;
+  onOpenConsultation: () => void;
+  scrollToSection: (id: string) => void;
+}> = ({ onSelectService, onNavigateDoctorBranding, onOpenConsultation, scrollToSection }) => {
+  return (
+    <>
+      <SEOHead
+        title="Sağlık Turizmi Reklam Ajansı | Overseas Marketing"
+        description="Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım."
+        canonicalUrl="https://overseasmarketing.com.tr/"
+      />
+      <JsonLdSchema type="home" />
+
+      <Hero
+        onOpenConsultation={onOpenConsultation}
+        onExploreServices={() => scrollToSection('hizmetler')}
+      />
+
+      <PartnerLogos />
+
+      <ProblemApproach onOpenConsultation={onOpenConsultation} />
+
+      <RoadmapSection />
+
+      <ServicesSection
+        onSelectService={onSelectService}
+        onOpenConsultation={onOpenConsultation}
+      />
+
+      <DoctorBrandingSection
+        onNavigateDoctorBranding={onNavigateDoctorBranding}
+        onOpenConsultation={onOpenConsultation}
+      />
+
+      <GrowthWorkflow onOpenConsultation={onOpenConsultation} />
+
+      <ReferencesLogos />
+
+      <SpecialtiesSection onOpenConsultation={onOpenConsultation} />
+
+      <AboutSection onOpenConsultation={onOpenConsultation} />
+
+      <BlogSection onOpenConsultation={onOpenConsultation} />
+
+      <FaqSection onOpenConsultation={onOpenConsultation} />
+
+      <ContactSection />
+    </>
+  );
+};
+
+export const App: React.FC = () => {
+  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNavigateHome = () => {
-    setCurrentRoute({ view: 'home' });
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleNavigateService = (serviceId: string) => {
-    setCurrentRoute({ view: 'service', serviceId });
+    navigate(`/hizmetler/${serviceId}`);
   };
 
   const handleNavigateDoctorBranding = () => {
-    setCurrentRoute({ view: 'doctor-branding' });
+    navigate('/doktor-marka-yonetimi');
   };
 
   const scrollToSection = (id: string) => {
-    if (currentRoute.view !== 'home') {
-      setCurrentRoute({ view: 'home' });
+    if (location.pathname !== '/') {
+      navigate('/');
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      }, 150);
     } else {
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -59,9 +269,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-[#222222] flex flex-col selection:bg-[#446CB5] selection:text-white">
-      
-      {/* 1. Navbar with Visual Mega Menu (NO doctor branding link as requested) */}
-      <Navbar 
+      <Navbar
         onNavigateHome={handleNavigateHome}
         onNavigateService={handleNavigateService}
         onNavigateAbout={() => scrollToSection('hakkimizda')}
@@ -71,101 +279,86 @@ export const App: React.FC = () => {
         onOpenConsultation={() => setIsConsultationModalOpen(true)}
       />
 
-      {/* Main Content */}
       <main className="flex-grow">
-        {currentRoute.view === 'doctor-branding' ? (
-          <DoctorBrandingPage 
-            onBackToHome={handleNavigateHome}
-            onOpenConsultation={() => setIsConsultationModalOpen(true)}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                onSelectService={handleNavigateService}
+                onNavigateDoctorBranding={handleNavigateDoctorBranding}
+                onOpenConsultation={() => setIsConsultationModalOpen(true)}
+                scrollToSection={scrollToSection}
+              />
+            }
           />
-        ) : currentRoute.view === 'service' ? (
-          <ServiceDetailPage 
-            serviceId={currentRoute.serviceId}
-            onBackToHome={handleNavigateHome}
-            onSelectService={handleNavigateService}
-            onOpenConsultation={() => setIsConsultationModalOpen(true)}
+          <Route
+            path="/hizmetler/:serviceId"
+            element={
+              <ServicePageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+            }
           />
-        ) : (
-          <>
-            {/* 2. Clean Wow Hero */}
-            <Hero 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-              onExploreServices={() => scrollToSection('hizmetler')}
+          <Route
+            path="/doktor-marka-yonetimi"
+            element={
+              <DoctorBrandingPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+            }
+          />
+
+          {/* Branch Routes */}
+          {MASTER_BRANCHES.map((b) => (
+            <Route
+              key={b.slug}
+              path={`/${b.slug}`}
+              element={<BranchPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
             />
+          ))}
 
-            {/* 3. Partner Logos Bar */}
-            <PartnerLogos />
-
-            {/* 4. Problem & Approach */}
-            <ProblemApproach 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
+          {/* Market Routes */}
+          {MASTER_MARKETS.map((m) => (
+            <Route
+              key={m.slug}
+              path={`/${m.slug}`}
+              element={<MarketPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
             />
+          ))}
 
-            {/* 5. Flowchart Roadmap Section */}
-            <RoadmapSection />
-
-            {/* 6. 8 Core Master Plan Services */}
-            <ServicesSection 
-              onSelectService={handleNavigateService}
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
+          {/* City Routes */}
+          {MASTER_CITIES.map((c) => (
+            <Route
+              key={c.slug}
+              path={`/${c.slug}`}
+              element={<CityPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
             />
+          ))}
 
-            {/* 7. Doktor Marka Yönetimi (Homepage Section) */}
-            <DoctorBrandingSection 
-              onNavigateDoctorBranding={handleNavigateDoctorBranding}
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 8. Growth Process */}
-            <GrowthWorkflow 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 9. Clean References Logo Grid */}
-            <ReferencesLogos />
-
-            {/* 10. Specialty Areas */}
-            <SpecialtiesSection 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 11. Hakkımızda */}
-            <AboutSection 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 12. Rehber & Blog */}
-            <BlogSection 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 13. FAQ Accordions */}
-            <FaqSection 
-              onOpenConsultation={() => setIsConsultationModalOpen(true)}
-            />
-
-            {/* 14. KVKK Compliant Contact Form */}
-            <ContactSection />
-          </>
-        )}
+          {/* Fallback */}
+          <Route
+            path="*"
+            element={
+              <HomePage
+                onSelectService={handleNavigateService}
+                onNavigateDoctorBranding={handleNavigateDoctorBranding}
+                onOpenConsultation={() => setIsConsultationModalOpen(true)}
+                scrollToSection={scrollToSection}
+              />
+            }
+          />
+        </Routes>
       </main>
 
-      {/* 15. Footer */}
-      <Footer 
+      <Footer
         onSelectService={handleNavigateService}
         onNavigateDoctorBranding={handleNavigateDoctorBranding}
         onOpenConsultation={() => setIsConsultationModalOpen(true)}
       />
 
-      {/* 15. Quick Consultation Modal */}
-      <ConsultationModal 
+      <ConsultationModal
         isOpen={isConsultationModalOpen}
         onClose={() => setIsConsultationModalOpen(false)}
       />
 
-      {/* 16. WhatsApp Floater Button */}
       <WhatsAppFloatingButton />
-
     </div>
   );
 };

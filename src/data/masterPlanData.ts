@@ -625,3 +625,405 @@ export const WORKFLOW_STEPS = [
     duration: 'Sürekli Döngü'
   }
 ];
+
+// --- BRANŞ KÜMESİ (BRANCHES) ---
+export interface BranchItem {
+  id: string;
+  slug: string;
+  title: string;
+  h1: string;
+  seoTitle: string;
+  metaDesc: string;
+  shortDesc: string;
+  heroBadge: string;
+  overview: string;
+  highlights: string[];
+  deliverables: string[];
+  keywordsCovered: string[];
+  faq: { q: string; a: string }[];
+}
+
+export const MASTER_BRANCHES: BranchItem[] = [
+  {
+    id: 'sac-ekimi-reklam-ajansi',
+    slug: 'sac-ekimi-reklam-ajansi',
+    title: 'Saç Ekimi Reklam Ajansı',
+    h1: 'Saç Ekimi Klinikleri İçin Dijital Pazarlama ve Yabancı Hasta Kazanımı',
+    seoTitle: 'Saç Ekimi Reklam Ajansı | Yabancı Hasta Reklam & SEO | Overseas',
+    metaDesc: 'Saç ekimi kliniklerine özel Google Ads, Meta reklamları, SEO, GEO ve dönüşüm odaklı açılış sayfalarıyla İngiltere, Avrupa ve Körfez ülkelerinden hasta akışı sağlıyoruz.',
+    shortDesc: 'Saç ekim merkezlerinin uluslararası hastalara ulaşması için FUE, DHI ve Sapphire tekniklerine özel Google Ads, Meta ve GEO kampanyaları.',
+    heroBadge: 'Saç Ekimi Özel Stratejisi',
+    overview: 'Saç ekimi sağlık turizminin en rekabetçi alanlarından biridir. Yalnızca reklam açmak yetmez; greft maliyeti algısını kıran şeffaf içerikler, doktor güveni, WhatsApp karşılama hızı ve ülke bazlı kreatifler gereklidir.',
+    highlights: [
+      'İngiltere, İspanya, İtalya ve Almanya odaklı yerelleştirilmiş saç ekim kampanyaları',
+      'Google Ads Arama Ağı (Search) & Meta Ads (Instagram/Facebook) Lead Ads kurgusu',
+      'GEO & ChatGPT Optimizasyonu: "Best hair transplant clinic in Turkey" aramalarında yer alma',
+      'WhatsApp AI Call Agent ile gece gelen saç ekimi başvurularını anında yanıtlama',
+      'Greft ve VIP paket odaklı yüksek dönüşümlü Landing Page tasarımları'
+    ],
+    deliverables: [
+      'Hedef Ülke & Greft Maliyet Stratejisi',
+      'Çok Dilli Reklam Görselleri & Metinleri',
+      'Saç Ekimi Landing Page & Form Entegrasyonu',
+      'WhatsApp Otomasyonu & Danışman Takibi',
+      'Haftalık CPL & Nitelikli Başvuru Raporu'
+    ],
+    keywordsCovered: [
+      'saç ekimi reklam ajansı', 'saç ekimi dijital pazarlama', 'saç ekim merkezi reklam ajansı',
+      'saç ekimi hasta bulma', 'yurtdışı saç ekimi reklamları', 'saç ekimi Google Ads',
+      'hair transplant marketing Turkey', 'saç ekimi yabancı hasta kazanımı'
+    ],
+    faq: [
+      { q: 'Saç ekimi reklamlarında müşteri başı maliyetleri (CPL) nasıl düşürüyorsunuz?', a: 'Tıklama niyetini optimize eden reklam metinleri, şeffaf paket detayları sunan landing page\'ler ve WhatsApp hızlı yanıt otomasyonları ile kalitesiz başvuruları eleyerek maliyetleri optimize ediyoruz.' },
+      { q: 'İngiltere ve İspanya pazarlarında saç ekimi aramaları farklı mıdır?', a: 'Evet. İngiliz hastalar paket içeriği ve garanti sertifikasına önem verirken İspanyol hastalar hekim tecrübesi ve teknik detaylara (DHI vs Sapphire) odaklanır. Kampanyalarımızı ülkelere göre yerelleştiriyoruz.' }
+    ]
+  },
+  {
+    id: 'dis-klinigi-reklam-ajansi',
+    slug: 'dis-klinigi-reklam-ajansi',
+    title: 'Diş Kliniği Reklam Ajansı',
+    h1: 'Diş Klinikleri İçin Uluslararası Dijital Pazarlama ve Hasta Kazanımı',
+    seoTitle: 'Diş Kliniği Reklam Ajansı | Dental Marketing Turkey | Overseas',
+    metaDesc: 'Diş kliniklerine özel Hollywood Smile, Implant ve Zirkonyum tedavilerinde İngiltere, İrlanda ve Avrupa ülkelerinden hasta kazandıran dijital pazarlama ajansı.',
+    shortDesc: 'İmplant, All-on-4, Hollywood Smile ve Gülüş Tasarımı aramalarında uluslararası hasta kazanımı sağlayan özel dental pazarlama.',
+    heroBadge: 'Dental Pazarlama Uzmanlığı',
+    overview: 'Dental sağlık turizminde hastanın en büyük kaygısı tedavi kalitesi, malzeme markası ve ulaşım lojistiğidir. Diş kliniklerine özel landing page ve reklam stratejilerimizle güven bariyerini aşıyoruz.',
+    highlights: [
+      'Londra, Dublin, Berlin ve Zürih odaklı Dental Google Ads & Instagram reklamları',
+      'Implant, All-on-4 ve Hollywood Smile spesifik landing page tasarımları',
+      'Dental SEO & GEO: "Best dental clinic in Istanbul for UK patients" arama hedeflemesi',
+      'CRM entegrasyonu ile dental röntgen (X-Ray) gönderen hastaların anlık takibi',
+      'İngilizce ve Almanca konuşan satış ekipleri için potansiyel hasta skorlama'
+    ],
+    deliverables: [
+      'Dental Pazarlama & Tedavi Paket Stratejisi',
+      'Arama Ağı & Görsel Reklam Kurgusu',
+      'Dental Landing Page & Form Entegrasyonları',
+      'CRM Danışman Performans Takibi'
+    ],
+    keywordsCovered: [
+      'diş kliniği reklam ajansı', 'diş kliniği dijital pazarlama', 'dental reklam ajansı',
+      'dental marketing agency Turkey', 'diş kliniği SEO', 'yurtdışı diş hastası bulma',
+      'sağlık turizmi diş reklamları'
+    ],
+    faq: [
+      { q: 'Diş hastaları internet üzerinden tedavi kararı nasıl verir?', a: 'Öncesi/sonrası gülüş fotoğrafları, hekim videoları, açık fiyat aralıkları ve şeffaf transfer-otel bilgilendirmesi içeren açılış sayfalarımız güven aşamasını tamamlar.' }
+    ]
+  },
+  {
+    id: 'estetik-klinigi-reklam-ajansi',
+    slug: 'estetik-klinigi-reklam-ajansi',
+    title: 'Estetik Kliniği Reklam Ajansı',
+    h1: 'Medikal Estetik Klinikleri İçin Reklam ve Dijital Marka Yönetimi',
+    seoTitle: 'Estetik Kliniği Reklam Ajansı | Medikal Estetik Pazarlama | Overseas',
+    metaDesc: 'Medikal estetik kliniklerine özel botoks, dolgu, cilt gençleştirme ve ameliyatsız estetik uygulamalarında dijital reklam ve marka yönetimi.',
+    shortDesc: 'Medikal estetik, ameliyatsız yüz gençleştirme ve medikal dermatoloji uygulamalarında nitelikli randevu akışı.',
+    heroBadge: 'Medikal Estetik Stratejisi',
+    overview: 'Medikal estetik hastaları estetik görünüm, güvenilirlik ve hekim tecrübesine öncelik verir. Video ağırlıklı kreatifler ve sosyal kanıtlarla dönüşümü artırıyoruz.',
+    highlights: [
+      'Instagram, Facebook ve TikTok odaklı estetik video reklam yönetimi',
+      'Lokasyon bazlı hedefleme ile yurt içi ve yurt dışı estetik hastaları',
+      'Hekim kişisel markalama ve klinik güven sinyallerini öne çıkarma',
+      'Medikal estetik yönetmeliklerine uygun reklam dili'
+    ],
+    deliverables: [
+      'Sosyal Medya Reklam Kurgusu',
+      'Hekim Tanıtım Prodüksiyon Stratejisi',
+      'Nitelikli Randevu Takip Modülü'
+    ],
+    keywordsCovered: [
+      'estetik kliniği reklam ajansı', 'medikal estetik reklam ajansı', 'estetik kliniği dijital pazarlama', 'estetik merkezi reklamları'
+    ],
+    faq: [
+      { q: 'Medikal estetik reklamlarında kısıtlamalar nasıl aşılır?', a: 'Platformların (Meta, Google) yayın politikalarına ve mevzuat kurallarına tam uyumlu, bilgilendirici ve güven veren kreatif dili kullanıyoruz.' }
+    ]
+  },
+  {
+    id: 'plastik-cerrahi-reklam-ajansi',
+    slug: 'plastik-cerrahi-reklam-ajansi',
+    title: 'Plastik Cerrahi Reklam Ajansı',
+    h1: 'Plastik Cerrahi Klinikleri ve Cerrahlar İçin Uluslararası Pazarlama',
+    seoTitle: 'Plastik Cerrahi Reklam Ajansı | Estetik Cerrahi Pazarlama | Overseas',
+    metaDesc: 'Rinoplasti, meme estetiği, liposuction ve vücut şekillendirme ameliyatları için İngiltere, Avrupa ve Körfez ülkelerinden cerrahi hasta kazanımı.',
+    shortDesc: 'Burun estetiği (Rhinoplasty), meme cerrahisi ve Liposuction operasyonlarında yüksek değerli cerrahi hasta akışı.',
+    heroBadge: 'Cerrahi Operasyon Uzmanlığı',
+    overview: 'Cerrahi operasyonlar yüksek bütçeli ve derin güven gerektiren kararlardır. Cerrahın eğitimi, hastane standartları ve ameliyat sonrası bakım garantisi pazarlamanın merkezindedir.',
+    highlights: [
+      'Rhinoplasty, Breast Augmentation ve Liposuction özel açılış sayfaları',
+      'İngiltere ve Almanya pazarında E-E-A-T uyumlu uzman cerrah otoritesi',
+      'Cerrahi vakalar için özel hazırlanmış güven odaklı video prodüksiyonlar',
+      'Özel CRM ile ilk konsültasyondan ameliyat gününe kadar hasta takibi'
+    ],
+    deliverables: [
+      'Cerrahi Ameliyat Reklam Stratejisi',
+      'Cerrah Kişisel Marka İtibar Yönetimi',
+      'Çok Dilli Cerrahi Landing Page'
+    ],
+    keywordsCovered: [
+      'plastik cerrahi reklam ajansı', 'estetik cerrahi reklam ajansı', 'rhinoplasty marketing Turkey', 'meme estetiği hasta kazanımı'
+    ],
+    faq: [
+      { q: 'Cerrahi hastalarda ikna süreci ne kadar sürer?', a: 'Cerrahi hastalar ortalama 2-6 hafta araştırma yapar. CRM yeniden pazarlama (Retargeting) ve otomatik bilgi serileri ile hastanın karar verme sürecinde yanında oluyoruz.' }
+    ]
+  },
+  {
+    id: 'obezite-cerrahisi-reklam-ajansi',
+    slug: 'obezite-cerrahisi-reklam-ajansi',
+    title: 'Obezite Cerrahisi Reklam Ajansı',
+    h1: 'Tüp Mide ve Bariatrik Cerrahi Klinikleri İçin Pazarlama Stratejisi',
+    seoTitle: 'Obezite Cerrahisi Reklam Ajansı | Bariatrik Pazarlama | Overseas',
+    metaDesc: 'Tüp mide (Sleeve Gastrectomy), gastric bypass ve bariatrik cerrahi operasyonlarında İngiltere ve İrlanda hastalarına ulaşan reklam ve SEO ajansı.',
+    shortDesc: 'Tüp mide, bariatrik cerrahi ve kilo verme operasyonlarında İngiltere ve Avrupa odaklı nitelikli hasta kazanımı.',
+    heroBadge: 'Bariatrik Cerrahi Uzmanlığı',
+    overview: 'Bariatrik cerrahide hastalar ameliyat öncesi BMI kriterleri, ameliyat ekibi ve beslenme desteği hakkında kapsamlı bilgi arar. Güven ve sağlık takibi odaklı pazarlama kurguluyoruz.',
+    highlights: [
+      'İngiltere NHS bekleme sürelerini analiz eden hedefli Google Ads kampanyaları',
+      'Bariatrik cerrahiye özel BMI hesaplayıcılı etkileşimli landing page\'ler',
+      'Diyetisyen ve psikolog destek paketlerini öne çıkaran reklam metinleri'
+    ],
+    deliverables: [
+      'Bariatrik Cerrahi Pazarlama Planı',
+      'BMI Odaklı Landing Page Kurgusu',
+      'İngiltere / İrlanda Odaklı PPC Kampanyaları'
+    ],
+    keywordsCovered: ['obezite cerrahisi reklam ajansı', 'tüp mide reklamları', 'bariatric surgery marketing Turkey', 'yabancı bariatrik hasta bulma'],
+    faq: [{ q: 'İngiltere bariatrik hastaları için en etkili kanal hangisidir?', a: 'NHS bekleme sürelerinden dolayı Google Ads Arama Ağı ve TikTok üzerindeki gerçek hasta değişim hikayeleri en yüksek dönüşümü sağlar.' }]
+  },
+  {
+    id: 'tup-bebek-reklam-ajansi',
+    slug: 'tup-bebek-reklam-ajansi',
+    title: 'Tüp Bebek Reklam Ajansı',
+    h1: 'Tüp Bebek (IVF) Merkezleri İçin Hassas ve İtibarlı Dijital Pazarlama',
+    seoTitle: 'Tüp Bebek Reklam Ajansı | IVF Marketing Turkey | Overseas',
+    metaDesc: 'Tüp bebek (IVF) ve genetik taramalı tüp bebek tedavilerinde etik, duyarlı ve uluslararası hasta kazandıran pazarlama stratejileri.',
+    shortDesc: 'IVF, yumurta dondurma ve ileri tüp bebek tedavilerinde etik, güven odaklı ve yüksek empatiye sahip pazarlama.',
+    heroBadge: 'IVF & Tüp Bebek Stratejisi',
+    overview: 'Tüp bebek tedavisi duygusal hassasiyeti yüksek bir süreçtir. Reklam dili etik, umut verici ancak gerçekçi; teknolojik altyapı ve lab başarısı odaklı olmalıdır.',
+    highlights: [
+      'Avrupa ve BDT ülkeleri odaklı tüp bebek bilgilendirme kampanyaları',
+      'Genetik tanı (PGD/PGS) ve laboratuvar teknolojilerini öne çıkaran içerikler',
+      'Gizlilik esaslı hasta kayıt ve iletişim altyapısı'
+    ],
+    deliverables: ['IVF İletişim & Pazarlama Kurgusu', 'Etik Reklam Metinleri', 'Uluslararası IVF Hasta Rehberi'],
+    keywordsCovered: ['tüp bebek reklam ajansı', 'IVF marketing Turkey', 'tüp bebek hasta bulma', 'uluslararası IVF pazarlama'],
+    faq: [{ q: 'Tüp bebek pazarlamasında etik kurallar nasıl korunur?', a: 'Gerçekçi başarı oranları, laboratuvar standartları ve doktor biyografileri şeffafça sunulur; kesin gebelik vaatlerinden kaçınılır.' }]
+  },
+  {
+    id: 'goz-klinigi-reklam-ajansi',
+    slug: 'goz-klinigi-reklam-ajansi',
+    title: 'Göz Kliniği Reklam Ajansı',
+    h1: 'Göz Hastalıkları ve No-Touch Laser Klinikleri İçin Reklam Yönetimi',
+    seoTitle: 'Göz Kliniği Reklam Ajansı | Lazer Göz Cerrahisi Pazarlama | Overseas',
+    metaDesc: 'Akıllı mercek, No-Touch Laser ve katarakt ameliyatlarında Avrupa ve Almanya hastalarına ulaşan dijital pazarlama ajansı.',
+    shortDesc: 'No-Touch Laser, Akıllı Mercek (Multifocal) ve katarakt cerrahisinde Almanya ve Avrupa odaklı hasta kazanımı.',
+    heroBadge: 'Göz Sağlığı Uzmanlığı',
+    overview: 'Göz cerrahisinde hastalar kısa iyileşme süresi ve ağrısız lazer teknolojilerini araştırır. Alman ve Avrupa pazarına özel teknoloji odaklı kampanyalar yapıyoruz.',
+    highlights: [
+      'Almanya ve Hollanda odaklı No-Touch Laser arama kampanyaları',
+      'Akıllı mercek (Trifokal) ameliyatı bilgilendirici landing page tasarımı'
+    ],
+    deliverables: ['Göz Lazer Reklam Stratejisi', 'Almanca / İngilizce Landing Page'],
+    keywordsCovered: ['göz kliniği reklam ajansı', 'lazer göz reklamları', 'akıllı mercek pazarlama', 'eye surgery Turkey marketing'],
+    faq: [{ q: 'Göz ameliyatlarında en çok talep gelen ülkeler hangileridir?', a: 'Özellikle Almanya, Avusturya ve İsviçre lazer göz ve akıllı mercek tedavileri için yüksek talep gösterir.' }]
+  },
+  {
+    id: 'hastane-reklam-ajansi',
+    slug: 'hastane-reklam-ajansi',
+    title: 'Hastane Reklam Ajansı',
+    h1: 'Tam Teşekküllü Hastaneler ve Tıp Merkezleri İçin Uluslararası Pazarlama',
+    seoTitle: 'Hastane Reklam Ajansı | Genel Hastane Pazarlaması | Overseas',
+    metaDesc: 'A Sınıfı hastaneler ve tıp merkezleri için çok branşlı uluslararası pazarlama, B2B acente ağları ve medikal turizm stratejileri.',
+    shortDesc: 'Genel hastaneler, onkoloji, kardiyoloji ve ortopedi branşlarında küresel sağlık pazarlaması ve kurumsal B2B ağları.',
+    heroBadge: 'Kurumsal Hastane Pazarlaması',
+    overview: 'Hastaneler çok branşlı yapılardır. Hem B2C doğrudan hasta kazanımı hem de B2B acente/sigorta iş ortaklıkları için entegre stratejiler yürütürüz.',
+    highlights: [
+      'Çok dilli uluslararası hasta departmanı (IPC) dijital entegrasyonu',
+      'LinkedIn B2B acente ve sigorta şirketi hedefli kurumsal kampanyalar',
+      'JCI akreditasyonu ve teknolojik altyapı otorite iletişimi'
+    ],
+    deliverables: ['Kurumsal Hastane Pazarlama Mimarısı', 'B2B & B2C Reklam Kampanyaları', 'Özel CRM Çoklu Branş Modülü'],
+    keywordsCovered: ['hastane reklam ajansı', 'hastane pazarlama stratejisi', 'medikal turizm hastane reklamları', 'B2B sağlık turizmi'],
+    faq: [{ q: 'Hastaneler için tek bir reklam kampanyası yeterli midir?', a: 'Hayır, hastane pazarlaması branş bazlı B2C kampanyalar ve kurumsal B2B acente kampanyaları olarak ikiye ayrılmalıdır.' }]
+  },
+  {
+    id: 'doktor-reklam-ajansi',
+    slug: 'doktor-reklam-ajansi',
+    title: 'Doktor Reklam Ajansı',
+    h1: 'Hekimler İçin Kişisel Marka Yönetimi ve Uluslararası Dijital İtibar',
+    seoTitle: 'Doktor Reklam Ajansı | Hekim Kişisel Marka Yönetimi | Overseas',
+    metaDesc: 'Uzman hekimler ve cerrahlar için kişisel marka konumlama, dijital PR, YouTube/Instagram prodüksiyonu ve uluslararası hasta kazanımı.',
+    shortDesc: 'Cerrahlar ve uzman hekimler için kişisel otorite inşası, dijital PR, bilimsel yayın iletişimi ve hasta akışı.',
+    heroBadge: 'Doktor Marka Yönetimi',
+    overview: 'Hastalar kurumlardan önce ameliyatı yapacak hekime güvenir. Doktorlarımızın bilimsel kimliğini ve hekim yaklaşımını uluslararası alanda markalaştırıyoruz.',
+    highlights: [
+      'Hekim kişisel web sitesi & E-E-A-T uyumlu içerik mimarisi',
+      'YouTube ve Instagram için profesyonel klinik içi video çekimleri',
+      'Google AI Overviews ve ChatGPT\'de hekim adı aratıldığında otoriter görünürlük'
+    ],
+    deliverables: ['Hekim Kişisel Marka Stratejisi', 'Prodüksiyon & Medya Yönetimi', 'SEO & GEO Hekim İtibar Yapısı'],
+    keywordsCovered: ['doktor reklam ajansı', 'doktor dijital pazarlama', 'hekim marka yönetimi', 'doktor hasta bulma'],
+    faq: [{ q: 'Doktor reklam ajansı ile genel reklam ajansı arasındaki fark nedir?', a: 'Hekim etiğine, medikal terimlere ve hasta psikolojisine hakim, hekimin itibarını zedelemeden hasta kazandıran özel bir uzmanlıktır.' }]
+  }
+];
+
+// --- HEDEF ÜLKE KÜMESİ (MARKETS) ---
+export interface MarketItem {
+  id: string;
+  slug: string;
+  countryName: string;
+  flagEmoji: string;
+  title: string;
+  h1: string;
+  seoTitle: string;
+  metaDesc: string;
+  overview: string;
+  insights: string[];
+  recommendedChannels: string[];
+  faq: { q: string; a: string }[];
+}
+
+export const MASTER_MARKETS: MarketItem[] = [
+  {
+    id: 'ingiltere-saglik-turizmi-reklamlari',
+    slug: 'ingiltere-saglik-turizmi-reklamlari',
+    countryName: 'İngiltere (UK)',
+    flagEmoji: '🇬🇧',
+    title: 'İngiltere Sağlık Turizmi Reklamları',
+    h1: 'İngiltere Pazarı İçin Sağlık Turizmi Reklam ve Hasta Kazanım Stratejileri',
+    seoTitle: 'İngiltere Sağlık Turizmi Reklamları | UK Patient Acquisition | Overseas',
+    metaDesc: 'İngiltere (UK) pazarından diş, saç ekimi ve estetik hastası çekmek için Google Ads, Meta reklamları, GBP Sterlin fiyatlandırması ve CRM stratejileri.',
+    overview: 'İngiltere sağlık turizminde Türkiye\'nin 1 numaralı hedef pazarıdır. NHS bekleme süreleri, yüksek özel klinik fiyatları ve uçuş kolaylığı İngiliz hastaları Türkiye\'ye yönlendirir.',
+    insights: [
+      'İngiliz hastalar için Sterlin (£) bazlı şeffaf paket içeriği kritik önem taşır.',
+      'Google Ads Arama Ağı (Search) en yüksek ticari niyete sahip kanaldır.',
+      'WhatsApp üzerinden hızlı ve aksansız İngilizce karşılama dönüşümü %40 artırır.'
+    ],
+    recommendedChannels: ['Google Ads Search', 'Meta Video Ads', 'GEO / ChatGPT Optimization', 'WhatsApp Automation'],
+    faq: [
+      { q: 'İngiltere hastaları en çok hangi tedavileri tercih ediyor?', a: 'Diş (Dental Implants & Veneers), Saç Ekimi ve Obezite Cerrahisi (Tüp Mide) İngiltere pazarının lider tedavileridir.' }
+    ]
+  },
+  {
+    id: 'almanya-saglik-turizmi-reklamlari',
+    slug: 'almanya-saglik-turizmi-reklamlari',
+    countryName: 'Almanya (DACH)',
+    flagEmoji: '🇩🇪',
+    title: 'Almanya Sağlık Turizmi Reklamları',
+    h1: 'Almanya ve DACH Bölgesi İçin Sağlık Turizmi Reklam Stratejileri',
+    seoTitle: 'Almanya Sağlık Turizmi Reklamları | DACH Bölgesi Pazarlama | Overseas',
+    metaDesc: 'Almanya, Avusturya ve İsviçre pazarı için Almanca yerelleştirilmiş sağlık turizmi reklamları, SEO, E-E-A-T ve GDPR uyumlu CRM altyapısı.',
+    overview: 'Almanca konuşulan ülkeler (DACH) kaliteye, sertifikalara (JCI, ISO) ve doktor tecrübesine en çok dikkat eden pazardır.',
+    insights: [
+      'Almanca reklam metinleri ve landing page kullanımı zorunludur.',
+      'Avrupa KVKK (GDPR) kurallarına tam uyum veri güvenliği algısını güçlendirir.'
+    ],
+    recommendedChannels: ['Almanca Google Ads', 'Meta Lead Ads', 'E-E-A-T SEO & GEO'],
+    faq: [
+      { q: 'Almanya pazarında gurbetçiler mi yoksa Almanlar mı hedeflenmeli?', a: 'Her ikisi de ayrı stratejidir. Alman vatandaşları için Almanca içerik ve medikal sertifikalar; gurbetçiler için Türkçe/Almanca karışık kampanyalar kurulmalıdır.' }
+    ]
+  },
+  {
+    id: 'fransa-saglik-turizmi-reklamlari',
+    slug: 'fransa-saglik-turizmi-reklamlari',
+    countryName: 'Fransa',
+    flagEmoji: '🇫🇷',
+    title: 'Fransa Sağlık Turizmi Reklamları',
+    h1: 'Fransa Pazarı İçin Sağlık Turizmi Reklam Yönetimi',
+    seoTitle: 'Fransa Sağlık Turizmi Reklamları | Fransızca Hasta Kazanımı | Overseas',
+    metaDesc: 'Fransa pazarına özel Fransızca reklam kampanyaları, saç ekimi ve estetik cerrahi hasta kaynağı oluşturma çözümleri.',
+    overview: 'Fransız hastalar estetik görselliğe son derece önem verir. Fransızca ana dil seviyesinde reklam dili ve satış desteği şarttır.',
+    insights: [
+      'Fransızca konuşan satış danışmanı altyapısı olmayan kliniklerde dönüşüm düşer.',
+      'Instagram ve TikTok video içerikleri Fransa pazarında oldukça etkilidir.'
+    ],
+    recommendedChannels: ['Fransızca Meta Ads', 'TikTok Ads', 'Google Ads'],
+    faq: [{ q: 'Fransa pazarında en popüler tedaviler hangileridir?', a: 'Saç ekimi, rinoplasti ve estetik diş tedavileri Fransız hastaların en çok talep gösterdiği alanlardır.' }]
+  },
+  {
+    id: 'hollanda-saglik-turizmi-reklamlari',
+    slug: 'hollanda-saglik-turizmi-reklamlari',
+    countryName: 'Hollanda',
+    flagEmoji: '🇳🇱',
+    title: 'Hollanda Sağlık Turizmi Reklamları',
+    h1: 'Hollanda ve Belçika İçin Sağlık Turizmi Pazarlaması',
+    seoTitle: 'Hollanda Sağlık Turizmi Reklamları | Benelux Pazarlama | Overseas',
+    metaDesc: 'Hollanda ve Belçika pazarlarından hasta kazanmak için Felemenkçe ve İngilizce sağlık turizmi reklamları ve SEO çözümleri.',
+    overview: 'Benelüks ülkelerinde yaşayan hastalar uçuş mesafesi yakınlığı nedeniyle Türkiye\'yi sıkça tercih eder.',
+    insights: ['Felemenkçe ve İngilizce çift dilli kampanya kurgusu en yüksek verimi sağlar.'],
+    recommendedChannels: ['Google Ads Search', 'Meta Ads', 'WhatsApp Automation'],
+    faq: [{ q: 'Hollanda pazarı için Felemenkçe şart mıdır?', a: 'Felemenkçe reklam dili dönüşüm oranını hissedilir derecede artırır.' }]
+  }
+];
+
+// --- ŞEHİR KÜMESİ (CITIES) ---
+export interface CityItem {
+  id: string;
+  slug: string;
+  cityName: string;
+  title: string;
+  h1: string;
+  seoTitle: string;
+  metaDesc: string;
+  overview: string;
+  localAdvantages: string[];
+  faq: { q: string; a: string }[];
+}
+
+export const MASTER_CITIES: CityItem[] = [
+  {
+    id: 'istanbul-saglik-turizmi-reklam-ajansi',
+    slug: 'istanbul-saglik-turizmi-reklam-ajansi',
+    cityName: 'İstanbul',
+    title: 'İstanbul Sağlık Turizmi Reklam Ajansı',
+    h1: 'İstanbul Klinikleri ve Hastaneleri İçin Dijital Pazarlama Ajansı',
+    seoTitle: 'İstanbul Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
+    metaDesc: 'İstanbul merkezli diş klinikleri, saç ekim merkezleri ve hastaneler için uluslararası hasta kazandıran performans pazarlama, SEO ve CRM çözümleri.',
+    overview: 'İstanbul, dünya sağlık turizminin başkentidir. Havalimanı erişimi, otel kapasitesi ve klinik sayısı ile devasa bir ekosisteme sahiptir. Rekabetin en yüksek olduğu şehirde fark yaratan ajans stratejileri sunuyoruz.',
+    localAdvantages: [
+      'İstanbul havalimanları erişim kolaylığı algısının reklamlarda işlenmesi',
+      'İstanbul\'daki yüksek rekabette CPA (tıklama başı maliyet) optimizasyonu',
+      'Yerinde prodüksiyon ve klinik içi video çekim imkanı'
+    ],
+    faq: [{ q: 'İstanbul\'daki yoğun klinik rekabetinde nasıl öne çıkabiliriz?', a: 'Klasik reklam metinleri yerine branş spesifik landing page, hekim E-E-A-T otoritesi ve yapay zeka WhatsApp otomasyonu ile öne çıkıyoruz.' }]
+  },
+  {
+    id: 'antalya-saglik-turizmi-reklam-ajansi',
+    slug: 'antalya-saglik-turizmi-reklam-ajansi',
+    cityName: 'Antalya',
+    title: 'Antalya Sağlık Turizmi Reklam Ajansı',
+    h1: 'Antalya Diş ve Estetik Klinikleri İçin Reklam ve Pazarlama',
+    seoTitle: 'Antalya Sağlık Turizmi Reklam Ajansı | Dental & Estetik | Overseas',
+    metaDesc: 'Antalya\'daki diş klinikleri ve estetik merkezleri için tatil+tedavi konseptli uluslararası reklam yönetimi, İngiltere ve Avrupa hasta akışı.',
+    overview: 'Antalya, özellikle dental (diş) ve estetik alanında "Tatil ve Tedavi" konseptini dünyada en iyi uygulayan şehirdir. Avrupa ve İngiltere uçuş hatları çok güçlüdür.',
+    localAdvantages: [
+      'Dental & Tatil konseptini birleştiren görsel landing page kurguları',
+      'İngiltere, Rusya ve Almanya uçuş sezonlarına özel dinamik reklam bütçeleri'
+    ],
+    faq: [{ q: 'Antalya diş klinikleri için en etkili reklam mesajı nedir?', a: 'Hem yüksek standartlarda tedavi hem de Akdeniz tatili deneyimini sunan konsept reklamlar en yüksek form oranını verir.' }]
+  },
+  {
+    id: 'izmir-saglik-turizmi-reklam-ajansi',
+    slug: 'izmir-saglik-turizmi-reklam-ajansi',
+    cityName: 'İzmir',
+    title: 'İzmir Sağlık Turizmi Reklam Ajansı',
+    h1: 'İzmir Sağlık Turizmi Klinikleri İçin Dijital Büyüme Ajansı',
+    seoTitle: 'İzmir Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
+    metaDesc: 'İzmir ve Ege bölgesindeki hastaneler ve klinikler için Avrupa hedefli dijital pazarlama, SEO, GEO ve yapay zekâ çözümleri.',
+    overview: 'İzmir, butik klinik hizmetleri ve Ege atmosferi ile Avrupa pazarında hızla yükselen bir sağlık turizmi destinasyonudur.',
+    localAdvantages: ['Butik klinik ve yüksek hasta memnuniyeti odaklı E-E-A-T stratejileri'],
+    faq: [{ q: 'İzmir klinikleri hangi pazarlara odaklanmalıdır?', a: 'Almanya, Hollanda ve İngiltere direkt uçuş imkanlarıyla İzmir için öncelikli pazarlardır.' }]
+  },
+  {
+    id: 'ankara-saglik-turizmi-reklam-ajansi',
+    slug: 'ankara-saglik-turizmi-reklam-ajansi',
+    cityName: 'Ankara',
+    title: 'Ankara Sağlık Turizmi Reklam Ajansı',
+    h1: 'Ankara Hastane ve Tıp Merkezleri İçin Sağlık Turizmi Pazarlaması',
+    seoTitle: 'Ankara Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
+    metaDesc: 'Ankara\'daki akademisyen doktorlar, genel hastaneler ve tıp merkezleri için uluslararası hasta pazarlaması ve B2B acente iletişimi.',
+    overview: 'Ankara, akademik hekim kadroları, obezite ve ileri cerrahi branşlarıyla bilinen kurumsal sağlık turizmi merkezidir.',
+    localAdvantages: ['Akademik hekim unvanları ve hastane teknolojik donanım iletişimi'],
+    faq: [{ q: 'Ankara sağlık turizminde hangi branşlar öne çıkar?', a: 'Obezite cerrahisi, tüp bebek, göz ve genel cerrahi Ankara\'da en yüksek potansiyele sahiptir.' }]
+  }
+];
+
