@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { BranchItem, MASTER_BRANCHES } from '../data/masterPlanData';
+import { BenchmarkTable } from './BenchmarkTable';
 
 interface BranchDetailPageProps {
   slug: string;
@@ -206,6 +207,29 @@ export const BranchDetailPage: React.FC<BranchDetailPageProps> = ({
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PASSAGE-FIRST DIRECT ANSWER & BENCHMARK TABLE (AI & RAG RETRIEVAL READY) */}
+      <section className="py-12 bg-white border-b border-slate-150 text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#F8FAFC] p-6 sm:p-8 rounded-2xl border border-slate-200 mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#446CB5]/10 text-[#446CB5] mb-3">
+              <ShieldCheck className="w-3.5 h-3.5" /> Doğrudan Tanım &amp; Stratejik Çerçeve
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0B1528] mb-3">
+              {branch.title} Nedir ve Kliniğinize Nasıl Yabancı Hasta Kazandırır?
+            </h2>
+            <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium mb-4">
+              <strong>{branch.title}</strong>; ilgili tıbbi alanda uzmanlaşmış hekim ve kliniklerin hedef ülkelerdeki (Birleşik Krallık, DACH bölgesi ve Avrupa) potansiyel hastalara Google Ads, Meta ve yapay zekâ aramalarında (GEO) doğrudan ulaşmasını sağlayan, çok dilli açılış sayfaları ve WhatsApp otomasyonuyla hasta randevusuna dönüştüren entegre büyüme modelidir.
+            </p>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Yalnızca genel reklam kampanyaları yürütmek yerine; ilgili operasyonun fiyat algısı, cerrahın E-E-A-T otoritesi, vaka şeffaflığı ve hasta psikolojisine uygun dil ve görsel stratejileri inşa edilir.
+            </p>
+          </div>
+
+          {/* RAG & AI Citation Benchmark Table */}
+          <BenchmarkTable type="branch" slug={slug} />
         </div>
       </section>
 

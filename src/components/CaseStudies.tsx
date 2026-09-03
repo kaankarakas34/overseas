@@ -111,6 +111,30 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenConsultation }) 
                       </span>
                     ))}
                   </div>
+
+                  {/* 2026 Academic Information Gain 4-Pillar Grid */}
+                  {(cs.problemStatement || cs.intervention) && (
+                    <div className="pt-3 space-y-2 text-[11px] bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                      {cs.problemStatement && (
+                        <div>
+                          <span className="font-bold text-rose-700">Başlangıç Sorunu: </span>
+                          <span className="text-slate-600">{cs.problemStatement}</span>
+                        </div>
+                      )}
+                      {cs.intervention && (
+                        <div>
+                          <span className="font-bold text-[#446CB5]">Uygulanan Müdahale: </span>
+                          <span className="text-slate-600">{cs.intervention}</span>
+                        </div>
+                      )}
+                      {cs.limitations && (
+                        <div>
+                          <span className="font-bold text-amber-700">Sektörel Kısıt &amp; Öğrenim: </span>
+                          <span className="text-slate-600">{cs.limitations}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 {/* Metrics 3-Column Box */}

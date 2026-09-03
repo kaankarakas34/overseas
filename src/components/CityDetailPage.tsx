@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Sparkles, Phone, Send, CheckCircle2, MapPin, ChevronDown, HelpCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Sparkles, Phone, Send, CheckCircle2, MapPin, ChevronDown, HelpCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { CityItem, MASTER_CITIES } from '../data/masterPlanData';
+import { BenchmarkTable } from './BenchmarkTable';
 
 interface CityDetailPageProps {
   slug: string;
@@ -194,6 +195,29 @@ export const CityDetailPage: React.FC<CityDetailPageProps> = ({
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PASSAGE-FIRST DIRECT ANSWER & BENCHMARK TABLE (AI & RAG RETRIEVAL READY) */}
+      <section className="py-12 bg-white border-b border-slate-150 text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#F8FAFC] p-6 sm:p-8 rounded-2xl border border-slate-200 mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#446CB5]/10 text-[#446CB5] mb-3">
+              <ShieldCheck className="w-3.5 h-3.5" /> Şehir ve Bölgesel Ekosistem Çerçevesi
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0B1528] mb-3">
+              {city.cityName} Sağlık Turizmi Reklam Ajansı Ne Yapar?
+            </h2>
+            <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium mb-4">
+              <strong>{city.cityName} sağlık turizmi reklam ajansı</strong>; {city.cityName} merkezli klinik ve hastanelerin uluslararası hasta potansiyelini artırmak amacıyla yerel avantajları (uçuş hatları, otel iş birlikleri, cerrahi kadrolar) dijital pazarlama kampanyalarına (Google Ads, Meta, SEO ve GEO) entegre eden uzman kuruluştur.
+            </p>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Yoğun yerel rekabet ortamında tıklama başı maliyetleri optimize eder ve gelen hastaların kliniğe transferine kadar olan iletişim zincirini yapılandırır.
+            </p>
+          </div>
+
+          {/* RAG & AI Citation Benchmark Table */}
+          <BenchmarkTable type="city" slug={slug} title={city.cityName} />
         </div>
       </section>
 

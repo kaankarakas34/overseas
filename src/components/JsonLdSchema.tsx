@@ -43,10 +43,37 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
       addressLocality: 'İstanbul',
       addressCountry: 'TR',
     },
+    founder: {
+      '@type': 'Person',
+      name: 'Kaan Karakaş',
+      jobTitle: 'Founder & Lead Growth Strategist',
+      url: 'https://www.linkedin.com/in/kaankarakas',
+      sameAs: [
+        'https://www.linkedin.com/in/kaankarakas'
+      ],
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Overseas Marketing'
+      }
+    },
     sameAs: [
       'https://www.linkedin.com/company/overseasmarketing',
       'https://www.instagram.com/overseasmarketing',
+      'https://x.com/overseasagency',
+      'https://github.com/kaankarakas34/overseas'
     ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Sağlık Turizmi Dijital Büyüme ve Pazarlama Hizmetleri',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sağlık Turizmi Performans Pazarlama' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Uluslararası Sağlık Turizmi SEO ve GEO' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Saç Ekimi Reklam Ajansı Hizmeti' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Diş Kliniği Reklam Ajansı Hizmeti' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Doktor Marka Yönetimi' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sağlık Turizmi CRM ve Yapay Zekâ Otomasyonu' } }
+      ]
+    },
     knowsAbout: [
       'Sağlık Turizmi Reklam Yönetimi',
       'Saç Ekimi Reklam Ajansı',
@@ -55,6 +82,7 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
       'Generative Engine Optimization (GEO)',
       'Doktor Marka Yönetimi',
       'Sağlık Turizmi CRM ve Yapay Zekâ Otomasyonu',
+      '2026 Sağlık Bakanlığı Sağlık Turizmi Tanıtım Mevzuatı'
     ],
   };
 
@@ -140,12 +168,33 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
     itemListElement: breadcrumbItems,
   };
 
+  // 5. 2026 Healthcare Tourism Benchmark Dataset Schema (Information Gain & AI Citation)
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: '2026 Türkiye Sağlık Turizmi Dijital Reklam & CPL Benchmark Veritabanı',
+    description: 'Saç ekimi, diş kliniği, estetik cerrahi ve genel hastane branşlarında İngiltere, DACH ve Avrupa pazarlarında ortalama lead maliyetleri (CPL), karar süreleri ve dönüşüm oranları veri seti.',
+    creator: {
+      '@type': 'Organization',
+      name: 'Overseas Marketing',
+      url: DOMAIN,
+    },
+    license: 'https://creativecommons.org/licenses/by/4.0/',
+    keywords: [
+      'Sağlık Turizmi Reklam Maliyetleri',
+      'Saç Ekimi CPL Benchmark',
+      'Diş Kliniği Hasta Edinme Maliyeti',
+      'İngiltere Sağlık Turizmi Fiyat Karşılaştırması'
+    ]
+  };
+
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
       {serviceSchema && <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>}
       {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(datasetSchema)}</script>
     </Helmet>
   );
 };

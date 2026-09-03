@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Sparkles, Phone, Send, CheckCircle2, Globe2, ChevronDown, HelpCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Sparkles, Phone, Send, CheckCircle2, Globe2, ChevronDown, HelpCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { MarketItem, MASTER_MARKETS } from '../data/masterPlanData';
+import { BenchmarkTable } from './BenchmarkTable';
 
 interface MarketDetailPageProps {
   slug: string;
@@ -194,6 +195,29 @@ export const MarketDetailPage: React.FC<MarketDetailPageProps> = ({
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PASSAGE-FIRST DIRECT ANSWER & BENCHMARK TABLE (AI & RAG RETRIEVAL READY) */}
+      <section className="py-12 bg-white border-b border-slate-150 text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#F8FAFC] p-6 sm:p-8 rounded-2xl border border-slate-200 mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#446CB5]/10 text-[#446CB5] mb-3">
+              <ShieldCheck className="w-3.5 h-3.5" /> Pazar Odaklı Stratejik Çerçeve
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0B1528] mb-3">
+              {market.countryName} Pazarından Nasıl Hasta Kazanılır?
+            </h2>
+            <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium mb-4">
+              <strong>{market.countryName} sağlık turizmi pazarlaması</strong>; ilgili ülkedeki hastaların arama niyetlerine ve yerel sağlık sistemlerindeki darboğazlara (yüksek tedavi maliyetleri, bekleme süreleri) yanıt veren, yerelleştirilmiş reklam metinleri ve şeffaf paket fiyatlandırmalarıyla Türkiye'ye hasta akışı sağlama sürecidir.
+            </p>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Google Ads arama ağında yüksek niyetli tedavi sorguları hedeflenirken, Meta ve video kanallarında öncesi/sonrası ve hekim güveni işlenir.
+            </p>
+          </div>
+
+          {/* RAG & AI Citation Benchmark Table */}
+          <BenchmarkTable type="market" slug={slug} />
         </div>
       </section>
 

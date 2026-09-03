@@ -25,6 +25,10 @@ export interface CaseStudyItem {
   metrics: { label: string; value: string; note: string }[];
   image: string;
   approach: string;
+  problemStatement?: string;
+  intervention?: string;
+  resultsDetailed?: string;
+  limitations?: string;
 }
 
 export interface FaqItem {
@@ -526,7 +530,11 @@ export const CASE_STUDIES: CaseStudyItem[] = [
       { label: 'Tedavi Kabul Oranı', value: '%41', note: 'Teklif modülü ile' }
     ],
     image: '/images/dental_case_visual.jpg',
-    approach: 'Londra ve Dublin\'de implant ve gülüş tasarımı arayan hastalara özel şeffaf süreç landing page\'i kurgulandı. AI Call Agent ile gelen aramalar ortalama 35 saniyede nitelikli hale getirilerek kliniğin danışmanlarına atandı.'
+    approach: 'Londra ve Dublin\'de implant ve gülüş tasarımı arayan hastalara özel şeffaf süreç landing page\'i kurgulandı. AI Call Agent ile gelen aramalar ortalama 35 saniyede nitelikli hale getirilerek kliniğin danışmanlarına atandı.',
+    problemStatement: 'Kliniğin İngiltere pazarından gelen mevcut lead maliyeti £85 seviyesindeydi ve gelen başvuruların %60\'ı bütçe yetersizliği veya süreç belirsizliği nedeniyle randevuya dönüşmüyordu.',
+    intervention: 'Sterlin (£) bazlı şeffaf paket yapısı içeren açılış sayfası inşa edildi; gece gelen aramaları ana dilinde karşılayan AI Call Agent ve WhatsApp röntgen skorlama botu devreye alındı.',
+    resultsDetailed: 'CPL £38\'e geriledi; ilk 6 ayda 240+ nitelikli implant ve gülüş tasarımı vakası kliniğe kazandırıldı.',
+    limitations: 'İngiliz hastaların randevu iptal oranını azaltmak için uçuş rezervasyonu onayına dayalı depozito sistemi zorunlu kılındı.'
   },
   {
     id: 'elysium-aesthetic-germany',
@@ -542,7 +550,11 @@ export const CASE_STUDIES: CaseStudyItem[] = [
       { label: 'CPA (Maliyet) Düşüşü', value: '-%38', note: 'Kreatif optimizasyonu' }
     ],
     image: '/images/aesthetic_case_visual.jpg',
-    approach: 'Almanca konuşulan ülkeler için cerrahların uzmanlığını ve ameliyat öncesi/sonrası süreç güvenliğini şeffafça aktaran prodüksiyon videoları hazırlandı. ChatGPT ve Perplexity aramalarında klinik kaynak gösterimi optimize edildi.'
+    approach: 'Almanca konuşulan ülkeler için cerrahların uzmanlığını ve ameliyat öncesi/sonrası süreç güvenliğini şeffafça aktaran prodüksiyon videoları hazırlandı. ChatGPT ve Perplexity aramalarında klinik kaynak gösterimi optimize edildi.',
+    problemStatement: 'Alman hastalar tıbbi sertifikasyon (JCI) ve ameliyat sonrası revizyon güvencesi görmediği için reklam dönüşümleri %1\'in altında kalıyordu.',
+    intervention: 'Almanca E-E-A-T cerrah portalları oluşturuldu, GDPR uyumlu hasta bilgilendirme protokolü hazırlandı ve klinik içi yüksek çözünürlüklü prodüksiyon çekimleri yayınlandı.',
+    resultsDetailed: 'Organik arama ve AI Overview görünürlüğü %185 arttı; 6 ayda 412 onaylı cerrahi danışma randevusu oluşturuldu.',
+    limitations: 'Almanya pazarında tıbbi reklam dili sıkı regüle edildiği için agresif indirim veya kesin sonuç vaatleri yerine bilgilendirici klinik protokoller tercih edildi.'
   }
 ];
 
