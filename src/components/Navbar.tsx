@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Phone, 
   ArrowRight, 
@@ -74,8 +75,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between">
           
           {/* Brand Logo - Official Black Logo */}
-          <button 
-            onClick={onNavigateHome} 
+          <Link 
+            to="/" 
+            onClick={onNavigateHome}
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
             <img 
@@ -83,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               alt="Overseas Marketing" 
               className="h-5 sm:h-6 w-auto max-w-[150px] sm:max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
             />
-          </button>
+          </Link>
 
           {/* Clean Desktop Navigation according to Master Plan */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -119,12 +121,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                     <div className="grid grid-cols-2 gap-2.5">
                       {MASTER_SERVICES.map((svc) => (
-                        <button
+                        <Link
                           key={svc.id}
-                          onClick={() => {
-                            onNavigateService(svc.id);
-                            setServicesDropdownOpen(false);
-                          }}
+                          to={`/hizmetler/${svc.id}`}
+                          onClick={() => setServicesDropdownOpen(false)}
                           className="flex items-start gap-3 p-2.5 rounded-2xl hover:bg-[#EEF3FB] transition-all text-left group/item cursor-pointer border border-transparent hover:border-[#446CB5]/20"
                         >
                           <div className="p-2 rounded-xl bg-[#F5F6F8] group-hover/item:bg-white border border-[#DDE2E8]/60 shrink-0">
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               {svc.shortDesc}
                             </p>
                           </div>
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -266,17 +266,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="font-semibold text-xs text-[#446CB5] uppercase tracking-wider">Hizmetlerimiz (8 Sayfa)</div>
           <div className="grid grid-cols-1 gap-1.5 pl-2">
             {MASTER_SERVICES.map((s) => (
-              <button
+              <Link
                 key={s.id}
-                onClick={() => {
-                  onNavigateService(s.id);
-                  setMobileMenuOpen(false);
-                }}
+                to={`/hizmetler/${s.id}`}
+                onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-2.5 text-xs text-[#222222] hover:text-[#446CB5] py-1 text-left font-semibold"
               >
                 <div className="w-1.5 h-1.5 rounded-full bg-[#446CB5]"></div>
                 <span>{s.title}</span>
-              </button>
+              </Link>
             ))}
           </div>
 

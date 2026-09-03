@@ -48,6 +48,8 @@ export const ReferencesLogos: React.FC = () => {
               <img
                 src={logo.src}
                 alt={logo.alt}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-contain p-2 mix-blend-multiply group-hover:scale-105 transition-transform duration-300"
               />
             </div>

@@ -50,6 +50,8 @@ export const PartnerLogos: React.FC = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.alt} 
+                  loading="lazy"
+                  decoding="async"
                   className="h-8 sm:h-9 md:h-10 w-auto object-contain max-w-[150px] sm:max-w-[170px]"
                 />
               </div>

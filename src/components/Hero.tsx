@@ -110,6 +110,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreService
                 <img 
                   src="/images/hero_health_tech.jpg" 
                   alt="Overseas Marketing Sağlık Turizmi ve Teknoloji Yönetimi" 
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  width="800"
+                  height="450"
                   className="w-full h-[450px] object-cover object-center group-hover:scale-103 transition-transform duration-700"
                 />
                 

@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { PartnerLogos } from './components/PartnerLogos';
 import { ProblemApproach } from './components/ProblemApproach';
 import { ServicesSection } from './components/ServicesSection';
-import { ServiceDetailPage } from './components/ServiceDetailPage';
 import { DoctorBrandingSection } from './components/DoctorBrandingSection';
-import { DoctorBrandingPage } from './components/DoctorBrandingPage';
-import { BranchDetailPage } from './components/BranchDetailPage';
-import { MarketDetailPage } from './components/MarketDetailPage';
-import { CityDetailPage } from './components/CityDetailPage';
 import { GrowthWorkflow } from './components/GrowthWorkflow';
 import { RoadmapSection } from './components/RoadmapSection';
 import { ReferencesLogos } from './components/ReferencesLogos';
@@ -25,6 +20,20 @@ import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 import { SEOHead } from './components/SEOHead';
 import { JsonLdSchema } from './components/JsonLdSchema';
 import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from './data/masterPlanData';
+
+// Dynamic Code Splitting for Subpages (Improves Core Web Vitals & Bundle Size)
+const ServiceDetailPage = lazy(() => import('./components/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
+const DoctorBrandingPage = lazy(() => import('./components/DoctorBrandingPage').then(m => ({ default: m.DoctorBrandingPage })));
+const BranchDetailPage = lazy(() => import('./components/BranchDetailPage').then(m => ({ default: m.BranchDetailPage })));
+const MarketDetailPage = lazy(() => import('./components/MarketDetailPage').then(m => ({ default: m.MarketDetailPage })));
+const CityDetailPage = lazy(() => import('./components/CityDetailPage').then(m => ({ default: m.CityDetailPage })));
+
+// Loading Spinner for Code Splitting Suspense
+const PageLoadingFallback = () => (
+  <div className="min-h-[60vh] flex items-center justify-center bg-[#F8FAFC]">
+    <div className="w-8 h-8 border-3 border-[#446CB5] border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 // Service Wrapper
 const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
@@ -280,71 +289,73 @@ export const App: React.FC = () => {
       />
 
       <main className="flex-grow">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage
-                onSelectService={handleNavigateService}
-                onNavigateDoctorBranding={handleNavigateDoctorBranding}
-                onOpenConsultation={() => setIsConsultationModalOpen(true)}
-                scrollToSection={scrollToSection}
+        <Suspense fallback={<PageLoadingFallback />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  onSelectService={handleNavigateService}
+                  onNavigateDoctorBranding={handleNavigateDoctorBranding}
+                  onOpenConsultation={() => setIsConsultationModalOpen(true)}
+                  scrollToSection={scrollToSection}
+                />
+              }
+            />
+            <Route
+              path="/hizmetler/:serviceId"
+              element={
+                <ServicePageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+              }
+            />
+            <Route
+              path="/doktor-marka-yonetimi"
+              element={
+                <DoctorBrandingPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+              }
+            />
+
+            {/* Branch Routes */}
+            {MASTER_BRANCHES.map((b) => (
+              <Route
+                key={b.slug}
+                path={`/${b.slug}`}
+                element={<BranchPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
-            }
-          />
-          <Route
-            path="/hizmetler/:serviceId"
-            element={
-              <ServicePageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
-            }
-          />
-          <Route
-            path="/doktor-marka-yonetimi"
-            element={
-              <DoctorBrandingPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
-            }
-          />
+            ))}
 
-          {/* Branch Routes */}
-          {MASTER_BRANCHES.map((b) => (
-            <Route
-              key={b.slug}
-              path={`/${b.slug}`}
-              element={<BranchPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
-            />
-          ))}
-
-          {/* Market Routes */}
-          {MASTER_MARKETS.map((m) => (
-            <Route
-              key={m.slug}
-              path={`/${m.slug}`}
-              element={<MarketPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
-            />
-          ))}
-
-          {/* City Routes */}
-          {MASTER_CITIES.map((c) => (
-            <Route
-              key={c.slug}
-              path={`/${c.slug}`}
-              element={<CityPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
-            />
-          ))}
-
-          {/* Fallback */}
-          <Route
-            path="*"
-            element={
-              <HomePage
-                onSelectService={handleNavigateService}
-                onNavigateDoctorBranding={handleNavigateDoctorBranding}
-                onOpenConsultation={() => setIsConsultationModalOpen(true)}
-                scrollToSection={scrollToSection}
+            {/* Market Routes */}
+            {MASTER_MARKETS.map((m) => (
+              <Route
+                key={m.slug}
+                path={`/${m.slug}`}
+                element={<MarketPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
-            }
-          />
-        </Routes>
+            ))}
+
+            {/* City Routes */}
+            {MASTER_CITIES.map((c) => (
+              <Route
+                key={c.slug}
+                path={`/${c.slug}`}
+                element={<CityPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+              />
+            ))}
+
+            {/* Fallback */}
+            <Route
+              path="*"
+              element={
+                <HomePage
+                  onSelectService={handleNavigateService}
+                  onNavigateDoctorBranding={handleNavigateDoctorBranding}
+                  onOpenConsultation={() => setIsConsultationModalOpen(true)}
+                  scrollToSection={scrollToSection}
+                />
+              }
+            />
+          </Routes>
+        </Suspense>
       </main>
 
       <Footer
