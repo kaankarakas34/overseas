@@ -47,7 +47,8 @@ export default async function handler(
     const port = Number(process.env.SMTP_PORT) || 587;
     const user = process.env.SMTP_USER || 'info@overseas.marketing';
     const pass = process.env.SMTP_PASS || 'Vnl@.4qb8:7HVK7:';
-    const recipient = process.env.RECIPIENT_EMAIL || 'info@overseas.marketing';
+    // Her iki e-postaya da gönderilir (info@overseas.marketing ve kaankarakas93@gmail.com)
+    const recipient = process.env.RECIPIENT_EMAIL || 'info@overseas.marketing, kaankarakas93@gmail.com';
 
     // Nodemailer transporter with kurumsaleposta.com SMTP settings
     const transporter = nodemailer.createTransport({
@@ -73,7 +74,7 @@ export default async function handler(
         <style>
           body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #F8FAFC; color: #222222; margin: 0; padding: 20px; }
           .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #DDE2E8; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-          .header { bg-color: #16202E; background: #16202E; color: #ffffff; padding: 24px 30px; border-bottom: 3px solid #446CB5; }
+          .header { background: #16202E; color: #ffffff; padding: 24px 30px; border-bottom: 3px solid #446CB5; }
           .header h2 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.5px; color: #ffffff; }
           .header p { margin: 4px 0 0 0; font-size: 12px; color: #60A5FA; font-weight: 600; }
           .content { padding: 30px; }

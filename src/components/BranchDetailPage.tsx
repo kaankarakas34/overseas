@@ -55,11 +55,27 @@ export const BranchDetailPage: React.FC<BranchDetailPageProps> = ({
     }
     setFormLoading(true);
     try {
-      await new Promise(resolve => setTimeout(resolve, 800));
-      setFormSubmitted(true);
-      confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          clinicName: formData.clinicName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          formType: `Branş Formu (${branch.title})`
+        })
+      });
+      const data = await response.json();
+      if (data.success) {
+        setFormSubmitted(true);
+        confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
+      } else {
+        alert(data.error || 'Gönderim sırasında hata oluştu.');
+      }
     } catch {
-      alert('Gönderim sırasında hata oluştu.');
+      alert('Gönderim sırasında bağlantı hatası oluştu.');
     } finally {
       setFormLoading(false);
     }
