@@ -353,200 +353,27 @@ const ROUTES = [
     `
   },
 
-  // 7. Sağlık Turizmi SEO & Mevzuat Rehberi (16 BOFU/MOFU Sayfa)
-  {
-    path: '/saglik-turizmi-ajansi',
-    title: 'Sağlık Turizmi Ajansı Ne İş Yapar? | Overseas Marketing',
-    description: 'Sağlık turizmi ajansı; klinik ve hastanelerin yurt dışından hasta kazanması için çok dilli reklam, uluslararası SEO, GEO, CRM ve web altyapısı kuran uzman kuruluştur.',
-    h1: 'Sağlık Turizmi Ajansı Ne İş Yapar?',
-    content: `
-      <section>
-        <h2>Sağlık Turizmi Ajansı Hizmet Kapsamı</h2>
-        <p>Sağlık turizmi ajansı; hastane, klinik ve hekimlerin İngiltere, DACH ve Avrupa pazarlarından sürdürülebilir yabancı hasta edinmesini sağlayan çok dilli reklam, SEO/GEO ve CRM altyapısı kurar.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-reklam',
-    title: 'Sağlık Turizmi Reklamı Nasıl Yapılır? | Overseas Marketing',
-    description: 'Sağlık turizmi reklamı nasıl yapılır? Google Ads, Meta Ads hedeflemeleri, çok dilli açılış sayfaları, mevzuat kuralları ve dönüşüm optimizasyonu adımları.',
-    h1: 'Sağlık Turizmi Reklamı Nasıl Yapılır?',
-    content: `
-      <section>
-        <h2>Uluslararası Sağlık Turizmi Reklam Yönetimi</h2>
-        <p>Google Ads arama niyetleri, cerrahi güven pekiştiren video kreatifler ve 3 saniyenin altında açılan çok dilli landing page mimarisiyle yurt dışı hasta edinimi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-web-sitesi',
-    title: 'Sağlık Turizmi Web Sitesi Nasıl Olmalı? | Overseas Marketing',
-    description: 'Sağlık turizmi web sitesi tasarımı nasıl olmalıdır? Çok dilli altyapı, mobil hız, hekim otoritesi, KVKK/GDPR uyumu ve yabancı hastayı randevuya dönüştüren UX rehberi.',
-    h1: 'Sağlık Turizmi Web Sitesi Nasıl Olmalı?',
-    content: `
-      <section>
-        <h2>Yabancı Hastayı Randevuya Dönüştüren Web Sitesi Mimarisi</h2>
-        <p>Mobil öncelikli, 3 saniyenin altında açılan, hekim yetkinliği ve E-E-A-T unsurlarını şeffafça sunan yüksek dönüşümlü sağlık turizmi web siteleri.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi/seo-geo-stratejisi',
-    title: 'Sağlık Turizmi SEO ve GEO Stratejisi | Overseas Marketing',
-    description: 'Sağlık turizminde SEO ve GEO (Generative Engine Optimization). ChatGPT, Perplexity ve Google AI aramalarında kliniğinizi tavsiye edilen kaynak yapma rehberi.',
-    h1: 'Sağlık Turizmi Firmaları İçin SEO ve GEO Stratejisi',
-    content: `
-      <section>
-        <h2>Yapay Zekâ Motorlarında Kliniğinizi Tavsiye Ettirin</h2>
-        <p>Geleneksel Google sıralamalarının ötesinde ChatGPT, Perplexity ve Google AI Overviews aramalarında kliniğinizi referans kaynak haline getiren semantik GEO mimarisi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-fiyat-listesi',
-    title: 'Sağlık Turizmi Fiyat Listesi Nasıl Hazırlanır? | Overseas Marketing',
-    description: 'Sağlık turizmi fiyat listesi hazırlama rehberi. Tedavi paketleme stratejisi, transfer, konaklama, medikal maliyetler ve mevzuata uygun şeffaf fiyatlandırma.',
-    h1: 'Sağlık Turizmi Fiyat Listesi Nasıl Hazırlanır?',
-    content: `
-      <section>
-        <h2>Uluslararası Hasta İçin Şeffaf Tedavi Paketleme</h2>
-        <p>Tedavi, otel konaklaması, VIP transfer ve refakatçi süreçlerini kapsayan güvenilir her şey dahil sağlık turizmi fiyatlandırma modeli.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-yetki-belgesi',
-    title: 'Sağlık Turizmi Yetki Belgesi Nedir? | Overseas Marketing',
-    description: 'Sağlık turizmi yetki belgesi nedir? T.C. Sağlık Bakanlığı tarafından verilen uluslararası sağlık turizmi yetki belgesinin kapsamı, yasal zorunlulukları ve avantajları.',
-    h1: 'Sağlık Turizmi Yetki Belgesi Nedir?',
-    content: `
-      <section>
-        <h2>Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi</h2>
-        <p>Türkiye'de uluslararası hastalara teşhis, tedavi ve aracılık hizmeti sunmak isteyen sağlık tesisleri ve seyahat acentaları için zorunlu yasal izin belgesi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-yetki-belgesi/nasil-alinir',
-    title: 'Sağlık Turizmi Yetki Belgesi Nasıl Alınır? 2026 Başvuru Rehberi',
-    description: 'Sağlık turizmi yetki belgesi nasıl alınır? Sağlık tesisleri ve acentalar için başvuru aşamaları, İl Sağlık Müdürlüğü denetimleri ve onay süreci adımları.',
-    h1: 'Sağlık Turizmi Yetki Belgesi Nasıl Alınır?',
-    content: `
-      <section>
-        <h2>Yetki Belgesi Başvuru ve Denetim Aşamaları</h2>
-        <p>SKS puanı, yabancı dil personeli istihdamı, 7/24 çağrı altyapısı ve İl Sağlık Müdürlüğü fiziki denetim süreçleriyle yetki belgesi alma rehberi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-yetki-belgesi/sartlari',
-    title: 'Sağlık Turizmi Yetki Belgesi Şartları Nelerdir? | 2026',
-    description: 'Sağlık turizmi yetki belgesi şartları. SKS puanı, yabancı dil bilen personel kriterleri, 7/24 çağrı hattı ve klinik altyapı zorunlulukları tablosu.',
-    h1: 'Sağlık Turizmi Yetki Belgesi Şartları',
-    content: `
-      <section>
-        <h2>Yetki Belgesi İçin Asgari Şartlar ve Kriterler</h2>
-        <p>Hastaneler, tıp merkezleri, poliklinikler ve hekim muayenehaneleri için mevzuatta belirlenmiş asgari kalite, personel ve altyapı şartları.</p>
-      </section>
-    `
-  },
-  {
-    path: '/uluslararasi-saglik-turizmi-yetki-belgesi',
-    title: 'Uluslararası Sağlık Turizmi Yetki Belgesi | 2026 Rehber',
-    description: 'Uluslararası sağlık turizmi yetki belgesi nedir, nasıl alınır? Sağlık tesisleri ve aracı kuruluşlar için resmî başvuru adımları ve mevzuat yükümlülükleri.',
-    h1: 'Uluslararası Sağlık Turizmi Yetki Belgesi Başvuru Rehberi',
-    content: `
-      <section>
-        <h2>Uluslararası Sağlık Turizmi Belgesi ve Sağladığı Avantajlar</h2>
-        <p>Google/Meta reklam izinleri, Ticaret Bakanlığı hibe teşvikleri ve HealthTürkiye portalında listelenme için zorunlu resmî onay sertifikası.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi/gerekli-belgeler',
-    title: 'Sağlık Turizmi İçin Gerekli Belgeler Nelerdir? | 2026 Liste',
-    description: 'Sağlık turizmi yetki belgesi için gerekli evraklar ve başvuru belgeleri listesi. Tesis ruhsatı, personel dil belgeleri, taahhütnameler ve protokoller.',
-    h1: 'Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?',
-    content: `
-      <section>
-        <h2>Yetki Belgesi Başvuru Evrak Listesi</h2>
-        <p>Faaliyet izin belgesi, SKS sonuç belgesi, personel yabancı dil yeterlilik sertifikaları ve başvuru taahhütnameleri kontrol listesi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-yonetmeligi',
-    title: 'Sağlık Turizmi Yönetmeliği ve Hukuki Şartlar | 2026',
-    description: 'Uluslararası sağlık turizmi yönetmeliği maddeleri, hasta hakları, reklam sınırları, yetki belgesi zorunluluğu ve sağlık kuruluşlarının yasal sorumlulukları.',
-    h1: 'Sağlık Turizmi Yönetmeliği: Kurumların Bilmesi Gerekenler',
-    content: `
-      <section>
-        <h2>Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik</h2>
-        <p>Sağlık turizmi faaliyetleri, tanıtım sınırları, yabancı hasta hakları ve cezai yaptırımları düzenleyen temel mevzuat hükümleri.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-tesvikleri',
-    title: 'Sağlık Turizmi Teşvikleri Nelerdir? | 2026 Devlet Destekleri',
-    description: 'Sağlık turizmi teşvikleri nelerdir? T.C. Ticaret Bakanlığı 5448 sayılı karar kapsamında reklam, acenta komisyonu, yabancı dil personeli ve ofis destek oranları.',
-    h1: 'Sağlık Turizmi Teşvikleri Nelerdir?',
-    content: `
-      <section>
-        <h2>Ticaret Bakanlığı Sağlık Turizmi Hibe ve Teşvikleri</h2>
-        <p>Yurt dışı reklam harcamalarında %60-70 geri ödeme, acente komisyon desteği, tercüman maaş desteği ve yurt dışı ofis kira hibeleri.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi/devlet-destekleri-nasil-alinir',
-    title: 'Sağlık Turizmi Devlet Teşvikleri Nasıl Alınır? 2026 Kılavuzu',
-    description: 'Sağlık turizmi devlet teşvikleri nasıl alınır? Ticaret Bakanlığı DYS (Destek Yönetim Sistemi) kaydı, evrak hazırlığı ve harcamaların hibeye dönüştürülmesi rehberi.',
-    h1: 'Sağlık Turizmi Devlet Teşvikleri Nasıl Alınır?',
-    content: `
-      <section>
-        <h2>DYS Üzerinden Devlet Desteklerinden Yararlanma</h2>
-        <p>Yetki belgesi şartı, kurumsal DYS kaydı, bankacılık ödeme kuralları ve 6 aylık hak düşürücü süre yönetimi.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-tesvik-basvurusu',
-    title: 'Sağlık Turizmi Teşvik Başvurusu Nasıl Yapılır? | 2026 DYS',
-    description: 'Sağlık turizmi teşvik başvurusu nasıl yapılır? DYS sistemine evrak yükleme, fatura-dekont eşleştirmeleri, inceleme ve ödeme aşamaları rehberi.',
-    h1: 'Sağlık Turizmi Teşvik Başvurusu Nasıl Yapılır?',
-    content: `
-      <section>
-        <h2>Adım Adım Teşvik Başvuru Süreci</h2>
-        <p>DYS e-imza girişi, fatura ve banka onaylı dekont eşleştirmesi, reklam kanıtları ve HİB inceleme aşamaları.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-tesvik-danismanligi',
-    title: 'Sağlık Turizmi Teşvik Danışmanlığı Nedir? | Overseas Marketing',
-    description: 'Sağlık turizmi teşvik danışmanlığı nedir? Klinik ve acentaların devlet desteklerinden sıfır hata ve maksimum hibe oranıyla yararlanmasını sağlayan profesyonel hizmet.',
-    h1: 'Sağlık Turizmi Teşvik Danışmanlığı Nedir?',
-    content: `
-      <section>
-        <h2>Maksimum Hibe Oranı ve Sıfır Evrak Hatası</h2>
-        <p>Sağlık kuruluşlarının hak kaybı yaşamadan tüm reklam ve tanıtım harcamalarını devlet desteğiyle geri almasını sağlayan uçtan uca teşvik danışmanlığı.</p>
-      </section>
-    `
-  },
-  {
-    path: '/saglik-turizmi-acentesi-acmak',
-    title: 'Sağlık Turizmi Acentası Açmak İçin Gerekenler | 2026 Rehber',
-    description: 'Sağlık turizmi acentası nasıl açılır? TÜRSAB A grubu işletme belgesi, Sağlık Bakanlığı yetki belgesi şartları, anlaşmalı klinik protokolleri ve sermaye gereksinimleri.',
-    h1: 'Sağlık Turizmi Acentası Açmak İçin Gerekenler',
-    content: `
-      <section>
-        <h2>Uluslararası Sağlık Turizmi Aracı Kuruluşu Kurma Kılavuzu</h2>
-        <p>TÜRSAB A Grubu seyahat acentası belgesi, en az 3 sağlık tesisiyle resmî protokol ve Sağlık Bakanlığı aracı kuruluş yetki belgesi alma süreci.</p>
-      </section>
-    `
-  }
 ];
+
+// Load all 86 SEO Knowledge Base Articles dynamically from src/data/seoArticlesData.json
+const seoArticlesJsonPath = path.resolve(__dirname, '../src/data/seoArticlesData.json');
+if (fs.existsSync(seoArticlesJsonPath)) {
+  const seoArticles = JSON.parse(fs.readFileSync(seoArticlesJsonPath, 'utf-8'));
+  for (const art of seoArticles) {
+    ROUTES.push({
+      path: art.url,
+      title: art.seoTitle,
+      description: art.metaDesc,
+      h1: art.h1,
+      content: `
+        <section>
+          <h2>${art.h1}</h2>
+          <p>${art.quickAnswer}</p>
+        </section>
+      `
+    });
+  }
+}
 
 console.log('🚀 2026 Statik Pre-rendering (Retrieval Katmanı) Derlemesi Başlatılıyor...');
 

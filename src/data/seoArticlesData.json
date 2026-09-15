@@ -1,44 +1,4 @@
-export interface SeoArticleSection {
-  heading: string;
-  subheading?: string;
-  paragraphs: string[];
-  bulletPoints?: string[];
-  table?: {
-    headers: string[];
-    rows: string[][];
-  };
-  callout?: {
-    title: string;
-    text: string;
-    type?: 'info' | 'warning' | 'tip';
-  };
-}
-
-export interface SeoArticleItem {
-  id: string; // e.g. K001
-  slug: string;
-  url: string;
-  category: string;
-  title: string;
-  h1: string;
-  seoTitle: string;
-  metaDesc: string;
-  primaryKeyword: string;
-  secondaryKeywords: string[];
-  searchIntent: string;
-  funnel: 'BOFU' | 'MOFU' | 'TOFU';
-  readTime: string;
-  publishedDate: string;
-  author: string;
-  reviewer: string;
-  quickAnswer: string;
-  sections: SeoArticleSection[];
-  faqs: { q: string; a: string }[];
-  officialSources: { title: string; url: string }[];
-  internalLinks: { title: string; url: string }[];
-}
-
-export const SEO_ARTICLES: SeoArticleItem[] = [
+[
   {
     "id": "K001",
     "slug": "saglik-turizmi-nedir",
@@ -10092,4 +10052,4 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
       }
     ]
   }
-];
+]
