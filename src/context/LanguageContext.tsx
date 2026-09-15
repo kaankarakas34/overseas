@@ -12,35 +12,51 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const STORAGE_KEY = 'overseas_language';
 
+const defaultContext: LanguageContextType = {
+  language: 'tr',
+  setLanguage: () => {},
+  isEn: false,
+};
+
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
-    // 1. Check URL query param '?lang=en' or '?lang=tr'
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const urlLang = params.get('lang')?.toLowerCase();
-      if (urlLang === 'en' || urlLang === 'tr') {
-        return urlLang as Language;
+    try {
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        const urlLang = params.get('lang')?.toLowerCase();
+        if (urlLang === 'en' || urlLang === 'tr') {
+          return urlLang as Language;
+        }
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'en' || saved === 'tr') {
+          return saved as Language;
+        }
       }
-      // 2. Check localStorage
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'en' || saved === 'tr') {
-        return saved as Language;
-      }
+    } catch {
+      // Storage access may be restricted
     }
     return 'tr';
   });
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, lang);
-      document.documentElement.lang = lang;
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(STORAGE_KEY, lang);
+        document.documentElement.lang = lang;
+      }
+    } catch {
+      // Storage write may be restricted
     }
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      document.documentElement.lang = language;
+    try {
+      if (typeof window !== 'undefined') {
+        document.documentElement.lang = language;
+      }
+    } catch {
+      // Fallback
     }
   }, [language]);
 
@@ -53,8 +69,5 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
+  return context || defaultContext;
 };

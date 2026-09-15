@@ -21,7 +21,7 @@ export const ReferencesLogos: React.FC = () => {
   ];
 
   return (
-    <section id="vaka-calismalari" className="py-16 lg:py-24 bg-[#F8FAFC] border-b border-[#DDE2E8] text-left">
+    <section id="referanslar" className="py-16 lg:py-24 bg-[#F8FAFC] border-b border-[#DDE2E8] text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Section Header */}

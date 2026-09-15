@@ -303,7 +303,7 @@ export const App: React.FC = () => {
         onNavigateService={handleNavigateService}
         onNavigateAbout={() => scrollToSection('hakkimizda')}
         onNavigateBlog={() => scrollToSection('rehber')}
-        onNavigateCases={() => scrollToSection('vaka-calismalari')}
+        onNavigateCases={() => scrollToSection('referanslar')}
         onNavigateContact={() => scrollToSection('iletisim')}
         onOpenConsultation={() => setIsConsultationModalOpen(true)}
       />
