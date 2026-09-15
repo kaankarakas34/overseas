@@ -20,6 +20,7 @@ import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 import { SEOHead } from './components/SEOHead';
 import { JsonLdSchema } from './components/JsonLdSchema';
 import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from './data/masterPlanData';
+import { SEO_ARTICLES, SeoArticleItem } from './data/seoArticlesData';
 
 // Dynamic Code Splitting for Subpages (Improves Core Web Vitals & Bundle Size)
 const ServiceDetailPage = lazy(() => import('./components/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
@@ -27,6 +28,7 @@ const DoctorBrandingPage = lazy(() => import('./components/DoctorBrandingPage').
 const BranchDetailPage = lazy(() => import('./components/BranchDetailPage').then(m => ({ default: m.BranchDetailPage })));
 const MarketDetailPage = lazy(() => import('./components/MarketDetailPage').then(m => ({ default: m.MarketDetailPage })));
 const CityDetailPage = lazy(() => import('./components/CityDetailPage').then(m => ({ default: m.CityDetailPage })));
+const SeoArticlePage = lazy(() => import('./components/SeoArticlePage').then(m => ({ default: m.SeoArticlePage })));
 
 // Loading Spinner for Code Splitting Suspense
 const PageLoadingFallback = () => (
@@ -191,6 +193,15 @@ const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = 
   );
 };
 
+// SEO Article Page Wrapper
+const SeoArticlePageWrapper: React.FC<{ article: SeoArticleItem; onOpenConsultation: () => void }> = ({ article, onOpenConsultation }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [article.id]);
+
+  return <SeoArticlePage article={article} onOpenConsultation={onOpenConsultation} />;
+};
+
 // Home Page Component
 const HomePage: React.FC<{
   onSelectService: (serviceId: string) => void;
@@ -339,6 +350,15 @@ export const App: React.FC = () => {
                 key={c.slug}
                 path={`/${c.slug}`}
                 element={<CityPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+              />
+            ))}
+
+            {/* SEO Content Master Architecture Routes (BOFU/MOFU) */}
+            {SEO_ARTICLES.map((art) => (
+              <Route
+                key={art.id}
+                path={art.url}
+                element={<SeoArticlePageWrapper article={art} onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
             ))}
 

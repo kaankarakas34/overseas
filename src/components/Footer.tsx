@@ -163,6 +163,30 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
 
         </div>
 
+        {/* Middle Section: SEO & Mevzuat Hub Links */}
+        <div className="py-6 border-b border-slate-800/80">
+          <div className="font-['Inter_Tight'] text-xs font-bold uppercase tracking-wider text-[#60A5FA] mb-3">
+            Sağlık Turizmi Mevzuat, Teşvik & Ajans Rehberi
+          </div>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
+            <Link to="/saglik-turizmi-ajansi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Ajansı</Link>
+            <Link to="/saglik-turizmi-reklam" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Reklamı</Link>
+            <Link to="/saglik-turizmi-web-sitesi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Web Sitesi</Link>
+            <Link to="/saglik-turizmi/seo-geo-stratejisi" className="text-slate-400 hover:text-white transition-colors">SEO & GEO Stratejisi</Link>
+            <Link to="/saglik-turizmi-yetki-belgesi" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Nedir?</Link>
+            <Link to="/saglik-turizmi-yetki-belgesi/nasil-alinir" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Nasıl Alınır?</Link>
+            <Link to="/saglik-turizmi-yetki-belgesi/sartlari" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Şartları</Link>
+            <Link to="/uluslararasi-saglik-turizmi-yetki-belgesi" className="text-slate-400 hover:text-white transition-colors">Uluslararası Yetki Belgesi</Link>
+            <Link to="/saglik-turizmi/gerekli-belgeler" className="text-slate-400 hover:text-white transition-colors">Gerekli Belgeler</Link>
+            <Link to="/saglik-turizmi-yonetmeligi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Yönetmeliği</Link>
+            <Link to="/saglik-turizmi-tesvikleri" className="text-slate-400 hover:text-white transition-colors">Devlet Teşvikleri</Link>
+            <Link to="/saglik-turizmi-tesvik-basvurusu" className="text-slate-400 hover:text-white transition-colors">Teşvik Başvurusu</Link>
+            <Link to="/saglik-turizmi-tesvik-danismanligi" className="text-slate-400 hover:text-white transition-colors">Teşvik Danışmanlığı</Link>
+            <Link to="/saglik-turizmi-acentesi-acmak" className="text-slate-400 hover:text-white transition-colors">Acenta Açmak</Link>
+            <Link to="/saglik-turizmi-fiyat-listesi" className="text-slate-400 hover:text-white transition-colors">Fiyat Listesi Rehberi</Link>
+          </div>
+        </div>
+
         {/* Disclaimer & Copyright Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center md:text-left">
           <div className="space-y-1">
