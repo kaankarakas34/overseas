@@ -6,10 +6,9 @@ import {
   FileText, 
   Rocket, 
   TrendingUp, 
-  Calendar,
-  Layers
+  Calendar 
 } from 'lucide-react';
-import { WORKFLOW_STEPS } from '../data/masterPlanData';
+import { useLanguage } from '../context/LanguageContext';
 
 interface GrowthWorkflowProps {
   onOpenConsultation: () => void;
@@ -17,61 +16,117 @@ interface GrowthWorkflowProps {
 
 export const GrowthWorkflow: React.FC<GrowthWorkflowProps> = ({ onOpenConsultation }) => {
   const [activeStep, setActiveStep] = useState(0);
+  const { isEn } = useLanguage();
 
-  const STEP_DETAILS = [
-    {
-      step: '01',
-      title: 'Analiz & Keşif',
-      timeframe: '1. - 2. Hafta',
-      icon: Search,
-      focus: 'Mevcut Durum & Pazar Potansiyeli',
-      actions: [
-        'Mevcut Google ve Meta reklam hesaplarının geçmiş veri denetimi',
-        'Web sitesi dönüşüm engelleri ve mobil kullanıcı deneyimi testi',
-        'Hedef ülkelerdeki (İngiltere, DACH, Körfez) rakip ve arama hacmi analizi',
-        'Klinik satış ekibinin yanıt süreleri ve CRM kullanım alışkanlıkları'
+  const STEP_DETAILS = isEn
+    ? [
+        {
+          step: '01',
+          title: 'Audit & Discovery',
+          timeframe: 'Weeks 1 - 2',
+          icon: Search,
+          focus: 'Current Standing & Market Potential',
+          actions: [
+            'Historical audit of existing Google & Meta ad accounts and attribution data',
+            'Website conversion friction analysis and international mobile UX testing',
+            'Search volume, treatment pricing, and competitor benchmarking in the UK, DACH, and Gulf',
+            'Review of clinical sales response times, WhatsApp protocols, and CRM workflows'
+          ]
+        },
+        {
+          step: '02',
+          title: 'Strategy & Architecture',
+          timeframe: 'Weeks 3 - 4',
+          icon: FileText,
+          focus: 'Channel Blueprint, Content & CRM Setup',
+          actions: [
+            'Performance marketing budget allocation and patient acquisition KPI matrix',
+            'Multilingual conversion landing page wireframes and copywriting',
+            'AI Call Agent and intake triage workflow scripts finalized with medical team',
+            'Medical tourism CRM custom pipeline configuration and user role mapping'
+          ]
+        },
+        {
+          step: '03',
+          title: 'Deployment & Launch',
+          timeframe: 'Weeks 5 - 6',
+          icon: Rocket,
+          focus: 'Live Campaign & Pipeline Activation',
+          actions: [
+            'Launch of Google Search, Meta video, and localized paid social funnels',
+            'Indexing and speed optimization of multilingual landing pages with A/B tests',
+            'Integration of AI Call Agents and WhatsApp intake automation to phone lines',
+            'Centralized CRM live tracking and automated coordinator notifications'
+          ]
+        },
+        {
+          step: '04',
+          title: 'Optimization & Scaling',
+          timeframe: 'Continuous Cycle',
+          icon: TrendingUp,
+          focus: 'Weekly ROI & Patient Attribution',
+          actions: [
+            'Direct attribution linking ad spend to confirmed surgical consultations',
+            'Pruning non-converting keywords and reallocating budget to highest-yield treatments',
+            'Weekly feedback loops with patient coordinators to optimize inquiry quality',
+            'Introducing seasonal promotions and expanding into secondary European markets'
+          ]
+        }
       ]
-    },
-    {
-      step: '02',
-      title: 'Strateji & Mimar Planı',
-      timeframe: '3. - 4. Hafta',
-      icon: FileText,
-      focus: 'Kanal, İçerik ve CRM Kurgusu',
-      actions: [
-        'Performans pazarlama bütçe dağılımı ve KPI hedefleme tablosu',
-        'Çok dilli Landing Page telif ve tasarım şablonlarının hazırlanması',
-        'AI Call Agent karşılama senaryolarının hekimlerle onaylanması',
-        'Özel CRM modül gereksinimleri ve ekip rol matrisinin çıkarılması'
-      ]
-    },
-    {
-      step: '03',
-      title: 'Kurulum & Entegrasyon',
-      timeframe: '5. - 6. Hafta',
-      icon: Rocket,
-      focus: 'Canlı Yayına Çıkış',
-      actions: [
-        'Google Ads, Meta Ads ve TikTok kampanyalarının yayına alınması',
-        'Çok dilli yüksek hızlı Landing Page\'lerin indekslenmesi ve A/B testi',
-        'AI Call Agent ve WhatsApp chatbot\'un telefon hatlarına entegrasyonu',
-        'CRM talep havuzunun ve otomatik ekip bildirimlerinin devreye alınması'
-      ]
-    },
-    {
-      step: '04',
-      title: 'Ölçüm & Büyüme İyileştirmesi',
-      timeframe: 'Sürekli Döngü',
-      icon: TrendingUp,
-      focus: 'Haftalık ROI & Hasta Optimizasyonu',
-      actions: [
-        'Hangi reklamın kaç ameliyat/tedavi sağladığının net tespiti',
-        'Düşük dönüşümlü anahtar kelimelerin elenmesi, bütçenin kazananlara kaydırılması',
-        'Satış ekibine gelen hasta kalitesinin haftalık toplantılarla değerlendirilmesi',
-        'Yeni tedavi ve mevsimsel kampanyaların sisteme eklenmesi'
-      ]
-    }
-  ];
+    : [
+        {
+          step: '01',
+          title: 'Analiz & Keşif',
+          timeframe: '1. - 2. Hafta',
+          icon: Search,
+          focus: 'Mevcut Durum & Pazar Potansiyeli',
+          actions: [
+            'Mevcut Google ve Meta reklam hesaplarının geçmiş veri denetimi',
+            'Web sitesi dönüşüm engelleri ve mobil kullanıcı deneyimi testi',
+            'Hedef ülkelerdeki (İngiltere, DACH, Körfez) rakip ve arama hacmi analizi',
+            'Klinik satış ekibinin yanıt süreleri ve CRM kullanım alışkanlıkları'
+          ]
+        },
+        {
+          step: '02',
+          title: 'Strateji & Mimar Planı',
+          timeframe: '3. - 4. Hafta',
+          icon: FileText,
+          focus: 'Kanal, İçerik ve CRM Kurgusu',
+          actions: [
+            'Performans pazarlama bütçe dağılımı ve KPI hedefleme tablosu',
+            'Çok dilli Landing Page telif ve tasarım şablonlarının hazırlanması',
+            'AI Call Agent karşılama senaryolarının hekimlerle onaylanması',
+            'Özel CRM modül gereksinimleri ve ekip rol matrisinin çıkarılması'
+          ]
+        },
+        {
+          step: '03',
+          title: 'Kurulum & Entegrasyon',
+          timeframe: '5. - 6. Hafta',
+          icon: Rocket,
+          focus: 'Canlı Yayına Çıkış',
+          actions: [
+            'Google Ads, Meta Ads ve TikTok kampanyalarının yayına alınması',
+            'Çok dilli yüksek hızlı Landing Page\'lerin indekslenmesi ve A/B testi',
+            'AI Call Agent ve WhatsApp chatbot\'un telefon hatlarına entegrasyonu',
+            'CRM talep havuzunun ve otomatik ekip bildirimlerinin devreye alınması'
+          ]
+        },
+        {
+          step: '04',
+          title: 'Ölçüm & Büyüme İyileştirmesi',
+          timeframe: 'Sürekli Döngü',
+          icon: TrendingUp,
+          focus: 'Haftalık ROI & Hasta Optimizasyonu',
+          actions: [
+            'Hangi reklamın kaç ameliyat/tedavi sağladığının net tespiti',
+            'Düşük dönüşümlü anahtar kelimelerin elenmesi, bütçenin kazananlara kaydırılması',
+            'Satış ekibine gelen hasta kalitesinin haftalık toplantılarla değerlendirilmesi',
+            'Yeni tedavi ve mevsimsel kampanyaların sisteme eklenmesi'
+          ]
+        }
+      ];
 
   return (
     <section className="py-20 lg:py-28 bg-white border-b border-[#DDE2E8]">
@@ -81,15 +136,21 @@ export const GrowthWorkflow: React.FC<GrowthWorkflowProps> = ({ onOpenConsultati
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
             <Calendar className="w-3.5 h-3.5 text-[#446CB5]" />
-            <span>90 Günlük Uygulama Yol Haritası</span>
+            <span>{isEn ? '90-Day Execution Roadmap' : '90 Günlük Uygulama Yol Haritası'}</span>
           </div>
 
           <h2 className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-[#222222] tracking-tight">
-            Çalışmalarımızı <span className="text-[#446CB5]">nasıl yürütüyoruz?</span>
+            {isEn ? (
+              <>How we execute <span className="text-[#446CB5]">your growth plan</span></>
+            ) : (
+              <>Çalışmalarımızı <span className="text-[#446CB5]">nasıl yürütüyoruz?</span></>
+            )}
           </h2>
 
           <p className="text-base text-[#595F69]">
-            Belirsiz vaatler yerine, neyin ne zaman yapılacağını ve nasıl ölçüleceğini netleştiren 4 aşamalı disiplin.
+            {isEn
+              ? 'A 4-phase structured methodology replacing vague agency promises with clear timelines, deliverables, and measurable clinical outcomes.'
+              : 'Belirsiz vaatler yerine, neyin ne zaman yapılacağını ve nasıl ölçüleceğini netleştiren 4 aşamalı disiplin.'}
           </p>
         </div>
 
@@ -139,14 +200,14 @@ export const GrowthWorkflow: React.FC<GrowthWorkflowProps> = ({ onOpenConsultati
                 {STEP_DETAILS[activeStep].step}. {STEP_DETAILS[activeStep].title}
               </h3>
               <p className="text-sm font-semibold text-[#595F69]">
-                Odak: {STEP_DETAILS[activeStep].focus}
+                {isEn ? 'Focus: ' : 'Odak: '}{STEP_DETAILS[activeStep].focus}
               </p>
               <div className="pt-2">
                 <button
                   onClick={onOpenConsultation}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-semibold shadow-md shadow-[#446CB5]/20 cursor-pointer"
                 >
-                  <span>Bu Aşamayı Başlatalım</span>
+                  <span>{isEn ? 'Initiate This Phase' : 'Bu Aşamayı Başlatalım'}</span>
                   <ArrowRight className="w-4 h-4 text-white" />
                 </button>
               </div>
@@ -154,7 +215,7 @@ export const GrowthWorkflow: React.FC<GrowthWorkflowProps> = ({ onOpenConsultati
 
             <div className="lg:col-span-7 bg-white rounded-2xl border border-[#DDE2E8] p-6 space-y-3 shadow-xs">
               <div className="text-xs font-bold uppercase tracking-wider text-[#222222] mb-1">
-                Uygulama Adımları ve Çıktılar:
+                {isEn ? 'Implementation Steps & Deliverables:' : 'Uygulama Adımları ve Çıktılar:'}
               </div>
               {STEP_DETAILS[activeStep].actions.map((act, i) => (
                 <div key={i} className="flex items-start gap-3 p-2.5 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8]/60 text-xs text-[#222222]">

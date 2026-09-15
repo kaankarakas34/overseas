@@ -10,6 +10,9 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from '../data/masterPlanData';
+import { MASTER_SERVICES_EN, MASTER_BRANCHES_EN, MASTER_MARKETS_EN, MASTER_CITIES_EN } from '../i18n/masterPlanData.en';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 
 interface FooterProps {
   onSelectService?: (serviceId: string) => void;
@@ -18,6 +21,14 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
+  const { language, isEn } = useLanguage();
+  const t = translations[language];
+
+  const currentServices = isEn ? MASTER_SERVICES_EN : MASTER_SERVICES;
+  const currentBranches = isEn ? MASTER_BRANCHES_EN : MASTER_BRANCHES;
+  const currentMarkets = isEn ? MASTER_MARKETS_EN : MASTER_MARKETS;
+  const currentCities = isEn ? MASTER_CITIES_EN : MASTER_CITIES;
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -42,17 +53,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </Link>
 
             <p className="text-xs text-slate-300 leading-relaxed">
-              Sağlık turizminde görünürlükten hasta iletişimine, büyümenin her adımını birlikte tasarlıyoruz. Karşınızda değil, yanınızda oturuyoruz.
+              {t.footer.desc}
             </p>
 
             <div className="pt-2 flex flex-col gap-2 text-xs text-slate-400">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#60A5FA]" />
-                <span>2026 Tanıtım Mevzuatı Uyumlu</span>
+                <span>{isEn ? '100% Medical Advertising Compliant' : '2026 Tanıtım Mevzuatı Uyumlu'}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Lock className="w-4 h-4 text-[#60A5FA]" />
-                <span>KVKK & GDPR Standartlarında</span>
+                <span>{isEn ? 'GDPR & HIPAA Aligned Data Standards' : 'KVKK & GDPR Standartlarında'}</span>
               </div>
             </div>
 
@@ -61,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                 onClick={onOpenConsultation}
                 className="w-full py-2.5 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-semibold shadow-md transition-all cursor-pointer text-center"
               >
-                Büyüme Görüşmesi Planla
+                {t.hero.ctaPrimary}
               </button>
             </div>
           </div>
@@ -69,10 +80,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           {/* Col 2: Services Menu (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <div className="font-['Inter_Tight'] text-sm font-bold text-white uppercase tracking-wider text-[#60A5FA]">
-              Hizmetlerimiz
+              {t.footer.colServices}
             </div>
             <ul className="space-y-1.5 text-xs">
-              {MASTER_SERVICES.map((s) => (
+              {currentServices.map((s) => (
                 <li key={s.id}>
                   <Link
                     to={`/hizmetler/${s.id}`}
@@ -89,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                   className="text-[#60A5FA] font-semibold hover:text-white transition-colors py-0.5 flex items-center gap-1.5"
                 >
                   <ChevronRight className="w-3 h-3 text-[#60A5FA]" />
-                  <span>Doktor Marka Yönetimi</span>
+                  <span>{t.nav.doctorBranding}</span>
                 </Link>
               </li>
             </ul>
@@ -98,10 +109,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           {/* Col 3: Branches (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <div className="font-['Inter_Tight'] text-sm font-bold text-white uppercase tracking-wider text-[#60A5FA]">
-              Uzmanlık Branşları
+              {t.footer.colBranches}
             </div>
             <ul className="space-y-1.5 text-xs">
-              {MASTER_BRANCHES.map((b) => (
+              {currentBranches.map((b) => (
                 <li key={b.slug}>
                   <Link
                     to={`/${b.slug}`}
@@ -119,10 +130,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           <div className="lg:col-span-3 space-y-4">
             <div>
               <div className="font-['Inter_Tight'] text-sm font-bold text-white uppercase tracking-wider text-[#60A5FA] mb-2">
-                Hedef Pazarlar & Şehirler
+                {isEn ? 'Target Markets & Hubs' : 'Hedef Pazarlar & Şehirler'}
               </div>
               <div className="grid grid-cols-2 gap-1.5 text-xs mb-4">
-                {MASTER_MARKETS.map((m) => (
+                {currentMarkets.map((m) => (
                   <Link
                     key={m.slug}
                     to={`/${m.slug}`}
@@ -132,7 +143,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                     <span>{m.countryName.split(' ')[0]}</span>
                   </Link>
                 ))}
-                {MASTER_CITIES.map((c) => (
+                {currentCities.map((c) => (
                   <Link
                     key={c.slug}
                     to={`/${c.slug}`}
@@ -148,7 +159,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <div className="border-t border-slate-800 pt-3 space-y-2 text-xs text-slate-300">
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#60A5FA] shrink-0" />
-                <a href="tel:05363197697" className="hover:text-white transition-colors">0536 319 76 97</a>
+                <a href="tel:05363197697" className="hover:text-white transition-colors">+90 536 319 76 97</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#60A5FA] shrink-0" />
@@ -156,34 +167,52 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               </div>
               <div className="flex items-start gap-2">
                 <Globe2 className="w-3.5 h-3.5 text-[#60A5FA] shrink-0 mt-0.5" />
-                <span className="text-[11px] text-slate-400">İstanbul, Türkiye · Londra, İngiltere</span>
+                <span className="text-[11px] text-slate-400">Istanbul, Turkey · London, United Kingdom</span>
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* Middle Section: SEO & Mevzuat Hub Links */}
+        {/* Middle Section: SEO & Guides Hub Links */}
         <div className="py-6 border-b border-slate-800/80">
           <div className="font-['Inter_Tight'] text-xs font-bold uppercase tracking-wider text-[#60A5FA] mb-3">
-            Sağlık Turizmi Mevzuat, Teşvik & Ajans Rehberi
+            {isEn ? 'Medical Tourism Knowledge & Regulatory Guides' : 'Sağlık Turizmi Mevzuat, Teşvik & Ajans Rehberi'}
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
-            <Link to="/saglik-turizmi-ajansi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Ajansı</Link>
-            <Link to="/saglik-turizmi-reklam" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Reklamı</Link>
-            <Link to="/saglik-turizmi-web-sitesi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Web Sitesi</Link>
-            <Link to="/saglik-turizmi/seo-geo-stratejisi" className="text-slate-400 hover:text-white transition-colors">SEO & GEO Stratejisi</Link>
-            <Link to="/saglik-turizmi-yetki-belgesi" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Nedir?</Link>
-            <Link to="/saglik-turizmi-yetki-belgesi/nasil-alinir" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Nasıl Alınır?</Link>
-            <Link to="/saglik-turizmi-yetki-belgesi/sartlari" className="text-slate-400 hover:text-white transition-colors">Yetki Belgesi Şartları</Link>
-            <Link to="/uluslararasi-saglik-turizmi-yetki-belgesi" className="text-slate-400 hover:text-white transition-colors">Uluslararası Yetki Belgesi</Link>
-            <Link to="/saglik-turizmi/gerekli-belgeler" className="text-slate-400 hover:text-white transition-colors">Gerekli Belgeler</Link>
-            <Link to="/saglik-turizmi-yonetmeligi" className="text-slate-400 hover:text-white transition-colors">Sağlık Turizmi Yönetmeliği</Link>
-            <Link to="/saglik-turizmi-tesvikleri" className="text-slate-400 hover:text-white transition-colors">Devlet Teşvikleri</Link>
-            <Link to="/saglik-turizmi-tesvik-basvurusu" className="text-slate-400 hover:text-white transition-colors">Teşvik Başvurusu</Link>
-            <Link to="/saglik-turizmi-tesvik-danismanligi" className="text-slate-400 hover:text-white transition-colors">Teşvik Danışmanlığı</Link>
-            <Link to="/saglik-turizmi-acentesi-acmak" className="text-slate-400 hover:text-white transition-colors">Acenta Açmak</Link>
-            <Link to="/saglik-turizmi-fiyat-listesi" className="text-slate-400 hover:text-white transition-colors">Fiyat Listesi Rehberi</Link>
+            <Link to="/saglik-turizmi-ajansi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Medical Tourism Agency' : 'Sağlık Turizmi Ajansı'}
+            </Link>
+            <Link to="/saglik-turizmi-reklam" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Medical Tourism Ads' : 'Sağlık Turizmi Reklamı'}
+            </Link>
+            <Link to="/saglik-turizmi-web-sitesi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Medical Tourism Website' : 'Sağlık Turizmi Web Sitesi'}
+            </Link>
+            <Link to="/saglik-turizmi/seo-geo-stratejisi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'SEO & GEO Strategy' : 'SEO & GEO Stratejisi'}
+            </Link>
+            <Link to="/saglik-turizmi-yetki-belgesi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Accreditation License Guide' : 'Yetki Belgesi Nedir?'}
+            </Link>
+            <Link to="/saglik-turizmi-yetki-belgesi/nasil-alinir" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'How to Obtain License' : 'Yetki Belgesi Nasıl Alınır?'}
+            </Link>
+            <Link to="/saglik-turizmi-yonetmeligi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Health Tourism Regulations' : 'Sağlık Turizmi Yönetmeliği'}
+            </Link>
+            <Link to="/saglik-turizmi-tesvikleri" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Government Subsidies' : 'Devlet Teşvikleri'}
+            </Link>
+            <Link to="/saglik-turizmi-tesvik-danismanligi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Subsidy Consulting' : 'Teşvik Danışmanlığı'}
+            </Link>
+            <Link to="/saglik-turizmi-acentesi-acmak" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Setting Up Facilitator Agency' : 'Acenta Açmak'}
+            </Link>
+            <Link to="/saglik-turizmi-fiyat-listesi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Pricing Benchmark Guide' : 'Fiyat Listesi Rehberi'}
+            </Link>
           </div>
         </div>
 
@@ -191,19 +220,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center md:text-left">
           <div className="space-y-1">
             <div>
-              © 2026 Overseas Marketing. Tüm hakları saklıdır. Sağlık Turizmi Dijital Büyüme ve Performans Ajansı.
+              © 2026 Overseas Marketing. {t.footer.rights}
             </div>
             <div className="text-[11px] text-slate-500 max-w-2xl">
-              Yasal Uyarı: Bu web sitesi sağlık kuruluşlarına yönelik dijital pazarlama, CRM ve yapay zekâ ajans hizmetleri sunar. Kişiye özel tıbbi teşhis, tedavi veya klinik taahhüt içermez.
+              {t.footer.disclaimer}
             </div>
           </div>
 
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors cursor-pointer shrink-0 text-xs"
-            title="Yukarı Çık"
+            title={isEn ? "Back to top" : "Başa Dön"}
           >
-            <span>Başa Dön</span>
+            <span>{isEn ? 'Back to Top' : 'Başa Dön'}</span>
             <ArrowUp className="w-3.5 h-3.5 text-white" />
           </button>
         </div>

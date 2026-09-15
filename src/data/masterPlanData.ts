@@ -640,19 +640,25 @@ export const WORKFLOW_STEPS = [
 
 // --- BRANŞ KÜMESİ (BRANCHES) ---
 export interface BranchItem {
-  id: string;
+  id?: string;
   slug: string;
   title: string;
   h1: string;
   seoTitle: string;
   metaDesc: string;
-  shortDesc: string;
-  heroBadge: string;
-  overview: string;
-  highlights: string[];
-  deliverables: string[];
-  keywordsCovered: string[];
-  faq: { q: string; a: string }[];
+  shortDesc?: string;
+  heroBadge?: string;
+  badge?: string;
+  overview?: string;
+  lead?: string;
+  highlights?: string[];
+  deliverables?: string[];
+  keywordsCovered?: string[];
+  heroStats?: { value: string; label: string }[];
+  painPoints?: string[];
+  solutionSteps?: string[];
+  faq?: { q: string; a: string }[];
+  faqs?: { q: string; a: string }[];
 }
 
 export const MASTER_BRANCHES: BranchItem[] = [
@@ -880,18 +886,24 @@ export const MASTER_BRANCHES: BranchItem[] = [
 
 // --- HEDEF ÜLKE KÜMESİ (MARKETS) ---
 export interface MarketItem {
-  id: string;
+  id?: string;
   slug: string;
-  countryName: string;
-  flagEmoji: string;
+  countryName?: string;
+  flagEmoji?: string;
   title: string;
   h1: string;
   seoTitle: string;
   metaDesc: string;
-  overview: string;
-  insights: string[];
-  recommendedChannels: string[];
-  faq: { q: string; a: string }[];
+  badge?: string;
+  overview?: string;
+  lead?: string;
+  insights?: string[];
+  recommendedChannels?: string[];
+  heroStats?: { value: string; label: string }[];
+  painPoints?: string[];
+  solutionSteps?: string[];
+  faq?: { q: string; a: string }[];
+  faqs?: { q: string; a: string }[];
 }
 
 export const MASTER_MARKETS: MarketItem[] = [
@@ -969,16 +981,22 @@ export const MASTER_MARKETS: MarketItem[] = [
 
 // --- ŞEHİR KÜMESİ (CITIES) ---
 export interface CityItem {
-  id: string;
+  id?: string;
   slug: string;
-  cityName: string;
+  cityName?: string;
   title: string;
   h1: string;
   seoTitle: string;
   metaDesc: string;
-  overview: string;
-  localAdvantages: string[];
-  faq: { q: string; a: string }[];
+  badge?: string;
+  overview?: string;
+  lead?: string;
+  localAdvantages?: string[];
+  heroStats?: { value: string; label: string }[];
+  painPoints?: string[];
+  solutionSteps?: string[];
+  faq?: { q: string; a: string }[];
+  faqs?: { q: string; a: string }[];
 }
 
 export const MASTER_CITIES: CityItem[] = [

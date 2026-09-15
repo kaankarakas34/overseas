@@ -6,9 +6,10 @@ import {
   Scissors, 
   Hospital, 
   CheckCircle2, 
-  ArrowRight,
-  ShieldCheck
+  ArrowRight, 
+  ShieldCheck 
 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface SpecialtiesSectionProps {
   onOpenConsultation: () => void;
@@ -16,49 +17,93 @@ interface SpecialtiesSectionProps {
 
 export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenConsultation }) => {
   const [activeTab, setActiveTab] = useState<number>(0);
+  const { isEn } = useLanguage();
 
-  const SPECIALTIES = [
-    {
-      id: 'dental',
-      title: 'Diş Klinikleri & Ağız Sağlığı',
-      icon: Smile,
-      targetMarkets: 'İngiltere, İrlanda, Almanya, Fransa',
-      leadType: 'İmplant, All-on-4, Hollywood Smile, Zirkonyum',
-      strategy: 'İngiltere ve Avrupa hastasının maliyet ve randevu bekleme sorununu hedefleyen Google Ads arama kampanyaları + 3D dijital gülüş planlama landing page\'leri.',
-      crmFlow: 'Panoramik röntgen talep otomasyonu, hekim video konsültasyon randevusu ve sterlin/euro fiyat şablonları.',
-      stats: '%68 İlk Görüşme Dönüşümü'
-    },
-    {
-      id: 'aesthetic',
-      title: 'Estetik Cerrahi & Plastik Rekonstrüktif',
-      icon: Sparkles,
-      targetMarkets: 'Almanya, İsviçre, Avusturya, Körfez',
-      leadType: 'Rinoplasti, Liposuction, Göğüs Estetiği, Facelift',
-      strategy: 'Cerrahın uzmanlığını ve ameliyathane güvenliğini anlatan yüksek kaliteli video kreatifler, E-E-A-T uyumlu içerik mimarisi ve GEO optimizasyonu.',
-      crmFlow: 'Ön muayene fotoğraf yükleme akışı, cerrah değerlendirme formu ve VIP otel/transfer transfer operasyon modülü.',
-      stats: '%41 Tedavi Kabul Oranı'
-    },
-    {
-      id: 'hair',
-      title: 'Saç Ekimi Merkezleri',
-      icon: Scissors,
-      targetMarkets: 'İtalya, İspanya, Körfez, İngiltere',
-      leadType: 'DHI, Sapphire FUE, Sakal & Kaş Ekimi',
-      strategy: 'Meta Ads ve TikTok Ads video reklamları, çok dilli hızlı WhatsApp ve AI Call Agent karşılama sistemleri ile yüksek hacimli hasta kazanımı.',
-      crmFlow: 'Otomatik greft hesaplama asistanı, anlık çok dilli ekip ataması ve gece gelen talepleri kaçırmayan bot akışı.',
-      stats: '15 Dk. Ortalama Yanıt Hızı'
-    },
-    {
-      id: 'hospital',
-      title: 'Hastaneler & Sağlık Grupları',
-      icon: Hospital,
-      targetMarkets: 'Balkanlar, BDT, Afrika, Körfez',
-      leadType: 'Onkoloji, Ortopedi, Obezite, Kardiyoloji, Göz',
-      strategy: 'JCI akreditasyonu, çok dilli branş sayfaları, uluslararası hasta departmanı (IPC) entegrasyonu ve B2B medikal partner outreach süreçleri.',
-      crmFlow: 'Epikriz ve medikal dosya aktarımı, kurul onayı, ikinci görüş modülü ve çok departmanlı CRM yetkilendirme.',
-      stats: 'JCI ve K8 Mevzuat Uyumlu'
-    }
-  ];
+  const SPECIALTIES = isEn
+    ? [
+        {
+          id: 'dental',
+          title: 'Dental Clinics & Oral Health',
+          icon: Smile,
+          targetMarkets: 'UK, Ireland, Germany, France',
+          leadType: 'Implants, All-on-4, Hollywood Smile, Zirconia',
+          strategy: 'Google Ads Search campaigns targeting NHS waiting times and prohibitive private UK dental costs, paired with 3D digital smile design landing pages.',
+          crmFlow: 'Automated panoramic X-ray intake, virtual doctor video consultation booking, and instant GBP/EUR itemized proposal generation.',
+          stats: '68% Consultation Acceptance'
+        },
+        {
+          id: 'aesthetic',
+          title: 'Plastic & Aesthetic Surgery',
+          icon: Sparkles,
+          targetMarkets: 'Germany, Switzerland, Austria, Gulf',
+          leadType: 'Rhinoplasty, Liposuction, Breast Aesthetics, Facelift',
+          strategy: 'Cinematic video campaigns showcasing surgeon artistry and hospital safety, combined with multilingual E-E-A-T medical content and GEO ranking.',
+          crmFlow: 'Confidential photo upload triage, direct surgeon review forms, and VIP hotel/airport transfer operational tracking.',
+          stats: '41% Case Acceptance Rate'
+        },
+        {
+          id: 'hair',
+          title: 'Hair Restoration Centers',
+          icon: Scissors,
+          targetMarkets: 'Italy, Spain, UK, Gulf',
+          leadType: 'DHI, Sapphire FUE, Beard & Eyebrow Transplant',
+          strategy: 'High-converting Meta & TikTok video funnels paired with instant WhatsApp AI Call Agents for high-volume, continuous patient intake.',
+          crmFlow: 'Automated graft calculator bots, instant language-based coordinator assignment, and 24/7 lead intake.',
+          stats: '15 Min. Avg. Response Time'
+        },
+        {
+          id: 'hospital',
+          title: 'Hospitals & Medical Groups',
+          icon: Hospital,
+          targetMarkets: 'Balkans, CIS, Africa, Gulf',
+          leadType: 'Oncology, Orthopedics, Bariatrics, Cardiology, Eye',
+          strategy: 'JCI accreditation positioning, multilingual department portals, International Patient Center (IPC) integration, and B2B medical partner outreach.',
+          crmFlow: 'Medical records & epikrisis transfer, tumor board review routing, second opinion intake, and enterprise CRM access.',
+          stats: 'JCI & Regulatory Compliant'
+        }
+      ]
+    : [
+        {
+          id: 'dental',
+          title: 'Diş Klinikleri & Ağız Sağlığı',
+          icon: Smile,
+          targetMarkets: 'İngiltere, İrlanda, Almanya, Fransa',
+          leadType: 'İmplant, All-on-4, Hollywood Smile, Zirkonyum',
+          strategy: 'İngiltere ve Avrupa hastasının maliyet ve randevu bekleme sorununu hedefleyen Google Ads arama kampanyaları + 3D dijital gülüş planlama landing page\'leri.',
+          crmFlow: 'Panoramik röntgen talep otomasyonu, hekim video konsültasyon randevusu ve sterlin/euro fiyat şablonları.',
+          stats: '%68 İlk Görüşme Dönüşümü'
+        },
+        {
+          id: 'aesthetic',
+          title: 'Estetik Cerrahi & Plastik Rekonstrüktif',
+          icon: Sparkles,
+          targetMarkets: 'Almanya, İsviçre, Avusturya, Körfez',
+          leadType: 'Rinoplasti, Liposuction, Göğüs Estetiği, Facelift',
+          strategy: 'Cerrahın uzmanlığını ve ameliyathane güvenliğini anlatan yüksek kaliteli video kreatifler, E-E-A-T uyumlu içerik mimarisi ve GEO optimizasyonu.',
+          crmFlow: 'Ön muayene fotoğraf yükleme akışı, cerrah değerlendirme formu ve VIP otel/transfer transfer operasyon modülü.',
+          stats: '%41 Tedavi Kabul Oranı'
+        },
+        {
+          id: 'hair',
+          title: 'Saç Ekimi Merkezleri',
+          icon: Scissors,
+          targetMarkets: 'İtalya, İspanya, Körfez, İngiltere',
+          leadType: 'DHI, Sapphire FUE, Sakal & Kaş Ekimi',
+          strategy: 'Meta Ads ve TikTok Ads video reklamları, çok dilli hızlı WhatsApp ve AI Call Agent karşılama sistemleri ile yüksek hacimli hasta kazanımı.',
+          crmFlow: 'Otomatik greft hesaplama asistanı, anlık çok dilli ekip ataması ve gece gelen talepleri kaçırmayan bot akışı.',
+          stats: '15 Dk. Ortalama Yanıt Hızı'
+        },
+        {
+          id: 'hospital',
+          title: 'Hastaneler & Sağlık Grupları',
+          icon: Hospital,
+          targetMarkets: 'Balkanlar, BDT, Afrika, Körfez',
+          leadType: 'Onkoloji, Ortopedi, Obezite, Kardiyoloji, Göz',
+          strategy: 'JCI akreditasyonu, çok dilli branş sayfaları, uluslararası hasta departmanı (IPC) entegrasyonu ve B2B medikal partner outreach süreçleri.',
+          crmFlow: 'Epikriz ve medikal dosya aktarımı, kurul onayı, ikinci görüş modülü ve çok departmanlı CRM yetkilendirme.',
+          stats: 'JCI ve K8 Mevzuat Uyumlu'
+        }
+      ];
 
   const current = SPECIALTIES[activeTab];
   const IconComponent = current.icon;
@@ -71,15 +116,21 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
             <Building2 className="w-3.5 h-3.5 text-[#446CB5]" />
-            <span>Branş Odaklı Sağlık Turizmi Stratejileri</span>
+            <span>{isEn ? 'Specialty-Specific Growth Strategies' : 'Branş Odaklı Sağlık Turizmi Stratejileri'}</span>
           </div>
 
           <h2 className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-[#222222] tracking-tight">
-            Kliniğinizin branşına özel <span className="text-[#446CB5]">büyüme modelleri</span>
+            {isEn ? (
+              <>Growth models tailored to <span className="text-[#446CB5]">your medical specialty</span></>
+            ) : (
+              <>Kliniğinizin branşına özel <span className="text-[#446CB5]">büyüme modelleri</span></>
+            )}
           </h2>
 
           <p className="text-base text-[#595F69]">
-            Her branşın hasta karar süreci, güven kriterleri ve bütçe aralığı farklıdır. Şablon kopyalamak yerine branşa özel süreçler tasarlıyoruz.
+            {isEn
+              ? 'Every specialty entails distinct patient decision timeframes, trust thresholds, and treatment values. We build bespoke funnels rather than generic templates.'
+              : 'Her branşın hasta karar süreci, güven kriterleri ve bütçe aralığı farklıdır. Şablon kopyalamak yerine branşa özel süreçler tasarlıyoruz.'}
           </p>
         </div>
 
@@ -122,7 +173,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
                 </div>
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#446CB5]">
-                    Özelleştirilmiş Pazar Yaklaşımı
+                    {isEn ? 'Tailored Market Strategy' : 'Özelleştirilmiş Pazar Yaklaşımı'}
                   </span>
                   <h3 className="font-['Inter_Tight'] text-2xl font-bold text-[#222222]">
                     {current.title}
@@ -132,7 +183,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
 
               <div className="space-y-4 text-xs sm:text-sm text-[#595F69]">
                 <div className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8]/80 space-y-1">
-                  <div className="font-bold text-[#222222]">Hedef Pazarlar & Tedavi Odakları:</div>
+                  <div className="font-bold text-[#222222]">{isEn ? 'Target Markets & Focus Treatments:' : 'Hedef Pazarlar & Tedavi Odakları:'}</div>
                   <p className="text-xs text-[#446CB5] font-semibold">
                     {current.targetMarkets} • {current.leadType}
                   </p>
@@ -141,7 +192,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
                 <div className="space-y-2">
                   <div className="font-bold text-[#222222] flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#446CB5]" />
-                    <span>Pazarlama & Görünürlük Stratejisi:</span>
+                    <span>{isEn ? 'Marketing & Reach Strategy:' : 'Pazarlama & Görünürlük Stratejisi:'}</span>
                   </div>
                   <p className="text-xs leading-relaxed pl-6">
                     {current.strategy}
@@ -151,7 +202,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
                 <div className="space-y-2">
                   <div className="font-bold text-[#222222] flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#446CB5]" />
-                    <span>Özel CRM & Hasta Takip Akışı:</span>
+                    <span>{isEn ? 'Dedicated CRM & Patient Intake Flow:' : 'Özel CRM & Hasta Takip Akışı:'}</span>
                   </div>
                   <p className="text-xs leading-relaxed pl-6">
                     {current.crmFlow}
@@ -164,7 +215,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
                   onClick={onOpenConsultation}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-semibold shadow-md shadow-[#446CB5]/20 cursor-pointer"
                 >
-                  <span>Bu Branş İçin Büyüme Planı Hazırlayalım</span>
+                  <span>{isEn ? 'Get a Growth Plan for This Specialty' : 'Bu Branş İçin Büyüme Planı Hazırlayalım'}</span>
                   <ArrowRight className="w-4 h-4 text-white" />
                 </button>
               </div>
@@ -179,7 +230,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
 
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider text-[#60A5FA]">
-                  Kanıtlanmış Performans Göstergesi
+                  {isEn ? 'Verified Performance Metric' : 'Kanıtlanmış Performans Göstergesi'}
                 </div>
                 <div className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-white mt-1">
                   {current.stats}
@@ -187,11 +238,13 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenCo
               </div>
 
               <p className="text-xs text-slate-300 leading-relaxed">
-                Doğru hedefleme, dil bariyersiz AI sesli karşılama ve hasta takip CRM\'i ile hekimlerinizin takvimini nitelikli hastalarla doldurun.
+                {isEn
+                  ? 'Fill your doctors’ operating schedules with qualified foreign patients using precision ad targeting, 24/7 AI voice intake, and specialized healthcare CRM.'
+                  : 'Doğru hedefleme, dil bariyersiz AI sesli karşılama ve hasta takip CRM\'i ile hekimlerinizin takvimini nitelikli hastalarla doldurun.'}
               </p>
 
               <div className="pt-2 border-t border-slate-700 text-[11px] text-slate-400">
-                Overseas Marketing Sağlık Turizmi Standardı
+                {isEn ? 'Overseas Marketing Global Standard' : 'Overseas Marketing Sağlık Turizmi Standardı'}
               </div>
             </div>
 

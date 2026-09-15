@@ -1,24 +1,32 @@
 import React, { useState } from 'react';
-import { Sparkles, ArrowRight, ShieldCheck, HelpCircle } from 'lucide-react';
+import { Sparkles, HelpCircle } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export const RoadmapSection: React.FC = () => {
   const [activeNode, setActiveNode] = useState<string>('kimlik');
+  const { isEn } = useLanguage();
 
   const NODE_DETAILS = {
     kimlik: {
-      title: 'İlk Adım: Görünen Yüzünüz (Dijital Kimlik)',
-      text: 'Çünkü hasta sizi ilk defa sosyal medya hesapları veya web siteniz üzerinden sizi görecektir.',
-      badge: 'Dijital Kimlik'
+      title: isEn ? 'Step 1: Your Digital Presence (Digital Identity)' : 'İlk Adım: Görünen Yüzünüz (Dijital Kimlik)',
+      text: isEn 
+        ? 'Because foreign patients discover you first through your clinical website and social media channels.'
+        : 'Çünkü hasta sizi ilk defa sosyal medya hesapları veya web siteniz üzerinden sizi görecektir.',
+      badge: isEn ? 'Digital Identity' : 'Dijital Kimlik'
     },
     pazarlama: {
-      title: 'İkinci Adım: Görünürlük & Trafik (Pazarlama)',
-      text: 'Doğru hedef kitleye, arama niyeti yüksek hastalara Google (SEM), sosyal medya (SMM) ve arama motorları (SEO) ile ulaşma aşamasıdır.',
-      badge: 'Pazarlama'
+      title: isEn ? 'Step 2: Reach & Patient Traffic (Marketing)' : 'İkinci Adım: Görünürlük & Trafik (Pazarlama)',
+      text: isEn
+        ? 'Targeting prospective patients with high treatment intent through Google (SEM), social media (SMM), and organic search (SEO).'
+        : 'Doğru hedef kitleye, arama niyeti yüksek hastalara Google (SEM), sosyal medya (SMM) ve arama motorları (SEO) ile ulaşma aşamasıdır.',
+      badge: isEn ? 'Marketing' : 'Pazarlama'
     },
     crm: {
-      title: 'Üçüncü Adım: Operasyon & Otomasyon (CRM)',
-      text: 'Gelen taleplerin dil bariyeri olmadan anında karşılanması, CRM hasta havuzuna kaydedilmesi ve otomatik bildirimlerle satış ekibine atanması sürecidir.',
-      badge: 'CRM & Otomasyon'
+      title: isEn ? 'Step 3: Operations & Automation (CRM)' : 'Üçüncü Adım: Operasyon & Otomasyon (CRM)',
+      text: isEn
+        ? 'Greeting incoming inquiries without language barriers, syncing leads into a centralized CRM, and routing them automatically to coordinators.'
+        : 'Gelen taleplerin dil bariyeri olmadan anında karşılanması, CRM hasta havuzuna kaydedilmesi ve otomatik bildirimlerle satış ekibine atanması sürecidir.',
+      badge: isEn ? 'CRM & Automation' : 'CRM & Otomasyon'
     }
   };
 
@@ -32,10 +40,14 @@ export const RoadmapSection: React.FC = () => {
         <div className="max-w-3xl space-y-3 mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
             <Sparkles className="w-3.5 h-3.5 text-[#446CB5]" />
-            <span>Overseas Yol Haritası</span>
+            <span>{isEn ? 'Overseas Growth Roadmap' : 'Overseas Yol Haritası'}</span>
           </div>
           <h2 className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-[#222222] tracking-tight">
-            Sağlık turizminde <span className="text-[#446CB5]">büyüme yol haritası</span>
+            {isEn ? (
+              <>Healthcare tourism <span className="text-[#446CB5]">growth roadmap</span></>
+            ) : (
+              <>Sağlık turizminde <span className="text-[#446CB5]">büyüme yol haritası</span></>
+            )}
           </h2>
         </div>
 
@@ -58,7 +70,7 @@ export const RoadmapSection: React.FC = () => {
                       : 'bg-[#E57373] hover:bg-[#D32F2F]'
                   }`}
                 >
-                  Dijital Kimlik
+                  {isEn ? 'Digital Identity' : 'Dijital Kimlik'}
                 </button>
 
                 {/* Arrow lines connecting Dijital Kimlik to children */}
@@ -72,7 +84,7 @@ export const RoadmapSection: React.FC = () => {
 
                 {/* Sub Kimlik Items */}
                 <div className="flex flex-col gap-3">
-                  {['Sosyal Medya', 'Web Sitesi', 'Youtube'].map((item) => (
+                  {[isEn ? 'Social Media' : 'Sosyal Medya', isEn ? 'Website' : 'Web Sitesi', 'YouTube'].map((item) => (
                     <button
                       key={item}
                       onMouseEnter={() => setActiveNode('kimlik')}
@@ -105,7 +117,7 @@ export const RoadmapSection: React.FC = () => {
                       : 'bg-[#64B5F6] hover:bg-[#1976D2]'
                   }`}
                 >
-                  Pazarlama
+                  {isEn ? 'Marketing' : 'Pazarlama'}
                 </button>
 
                 {/* Connection lines from Pazarlama to SMM/SEM/SEO */}
@@ -176,7 +188,7 @@ export const RoadmapSection: React.FC = () => {
                         : 'bg-[#BA68C8] hover:bg-[#9C27B0]'
                     }`}
                   >
-                    Pazarlama Otomasyonu
+                    {isEn ? 'Marketing Automation' : 'Pazarlama Otomasyonu'}
                   </button>
 
                 </div>
@@ -191,7 +203,9 @@ export const RoadmapSection: React.FC = () => {
             
             {/* Top general quote */}
             <p className="text-base sm:text-lg font-semibold text-[#222222] leading-relaxed border-l-4 border-[#446CB5] pl-4">
-              Her şirketin gereksinimleri ve yapıları farklıdır bu nedenle, mevcut yapınıza en uygun çözümleri belirleyerek hedeflerinize en hızlı şekilde ulaşmanızı sağlamak için çaba gösteriyoruz.
+              {isEn
+                ? 'Every clinic has unique requirements and operational workflows. We tailor solutions to your existing setup so you reach patient growth targets with maximum speed.'
+                : 'Her şirketin gereksinimleri ve yapıları farklıdır bu nedenle, mevcut yapınıza en uygun çözümleri belirleyerek hedeflerinize en hızlı şekilde ulaşmanızı sağlamak için çaba gösteriyoruz.'}
             </p>
 
             {/* Dynamic Hover Card */}
@@ -200,7 +214,9 @@ export const RoadmapSection: React.FC = () => {
                 <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#446CB5] text-white">
                   {current.badge}
                 </span>
-                <span className="text-xs text-[#595F69]">Yol Haritası Detayı</span>
+                <span className="text-xs text-[#595F69]">
+                  {isEn ? 'Roadmap Details' : 'Yol Haritası Detayı'}
+                </span>
               </div>
               <h3 className="font-['Inter_Tight'] font-bold text-base text-[#222222]">
                 {current.title}
@@ -212,7 +228,11 @@ export const RoadmapSection: React.FC = () => {
 
             <div className="text-[11px] text-[#595F69] italic flex items-center gap-1.5 pl-2">
               <HelpCircle className="w-3.5 h-3.5 text-[#446CB5]" />
-              <span>Diyagramdaki butonların üzerine gelerek aşamaları inceleyebilirsiniz.</span>
+              <span>
+                {isEn 
+                  ? 'Hover over or click nodes in the diagram to inspect each growth phase.' 
+                  : 'Diyagramdaki butonların üzerine gelerek aşamaları inceleyebilirsiniz.'}
+              </span>
             </div>
 
           </div>

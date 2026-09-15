@@ -20,6 +20,8 @@ import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 import { SEOHead } from './components/SEOHead';
 import { JsonLdSchema } from './components/JsonLdSchema';
 import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from './data/masterPlanData';
+import { MASTER_SERVICES_EN } from './i18n/masterPlanData.en';
+import { useLanguage } from './context/LanguageContext';
 import { SEO_ARTICLES, SeoArticleItem } from './data/seoArticlesData';
 
 // Dynamic Code Splitting for Subpages (Improves Core Web Vitals & Bundle Size)
@@ -39,10 +41,12 @@ const PageLoadingFallback = () => (
 
 // Service Wrapper
 const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { isEn } = useLanguage();
   const { serviceId } = useParams<{ serviceId: string }>();
   const navigate = useNavigate();
   const activeServiceId = serviceId || 'performans-pazarlama';
-  const service = MASTER_SERVICES.find((s) => s.id === activeServiceId);
+  const servicesList = isEn ? MASTER_SERVICES_EN : MASTER_SERVICES;
+  const service = servicesList.find((s) => s.id === activeServiceId) || MASTER_SERVICES.find((s) => s.id === activeServiceId);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -171,6 +175,7 @@ const CityPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenC
 
 // Doctor Branding Wrapper
 const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+  const { isEn } = useLanguage();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -180,8 +185,12 @@ const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = 
   return (
     <>
       <SEOHead
-        title="Doktor Marka Yönetimi & Dijital İtibar | Overseas Marketing"
-        description="Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri."
+        title={isEn 
+          ? "Doctor Brand Management & Digital Reputation | Overseas Marketing" 
+          : "Doktor Marka Yönetimi & Dijital İtibar | Overseas Marketing"}
+        description={isEn 
+          ? "Physician personal brand positioning, digital PR, international patient visibility, and customized medical content strategy." 
+          : "Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri."}
         canonicalUrl="https://overseas.marketing/doktor-marka-yonetimi"
       />
       <JsonLdSchema type="doctor-branding" />

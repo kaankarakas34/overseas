@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { 
   Phone, 
   Mail, 
-  MapPin, 
   Send, 
   CheckCircle2, 
-  ShieldCheck, 
   Lock, 
   Clock, 
-  Sparkles,
-  ArrowRight
+  Sparkles 
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 
 export const ContactSection: React.FC = () => {
+  const { language, isEn } = useLanguage();
+  const t = translations[language];
+
   const [formData, setFormData] = useState({
     fullName: '',
     companyName: '',
@@ -28,14 +30,23 @@ export const ContactSection: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const availableServices = [
-    'Performans Pazarlama (Google/Meta)',
-    'SEO & GEO (Yapay Zeka Görünürlüğü)',
-    'Özel CRM Yazılımı',
-    'AI Call Agent & Otomasyon',
-    'Landing Page & Web Sitesi',
-    'İçerik & Video Prodüksiyon'
-  ];
+  const availableServices = isEn
+    ? [
+        'Performance Ads (Google/Meta)',
+        'SEO & GEO (AI Search Visibility)',
+        'Custom Medical CRM Software',
+        'AI Call Agent & Automations',
+        'Landing Page & Web Design',
+        'Medical Video & Content Production'
+      ]
+    : [
+        'Performans Pazarlama (Google/Meta)',
+        'SEO & GEO (Yapay Zeka Görünürlüğü)',
+        'Özel CRM Yazılımı',
+        'AI Call Agent & Otomasyon',
+        'Landing Page & Web Sitesi',
+        'İçerik & Video Prodüksiyon'
+      ];
 
   const handleToggleService = (srv: string) => {
     setFormData(prev => {
@@ -65,7 +76,7 @@ export const ContactSection: React.FC = () => {
           selectedServices: formData.selectedServices,
           targetCountries: formData.targetCountries,
           message: formData.message,
-          formType: 'Ana Sayfa İletişim Formu'
+          formType: isEn ? 'Homepage Contact Form (EN)' : 'Ana Sayfa İletişim Formu'
         })
       });
     } catch (err) {
@@ -93,15 +104,19 @@ export const ContactSection: React.FC = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
                 <Sparkles className="w-3.5 h-3.5 text-[#446CB5]" />
-                <span>İlk Görüşme & Büyüme Analizi</span>
+                <span>{t.contact.badge}</span>
               </div>
 
               <h2 className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-[#222222] tracking-tight">
-                Kurumunuzun bir sonraki adımını <span className="text-[#446CB5]">birlikte planlayalım</span>
+                {isEn ? (
+                  <>Let’s architect your clinic’s <span className="text-[#446CB5]">next growth leap</span></>
+                ) : (
+                  <>Kurumunuzun bir sonraki adımını <span className="text-[#446CB5]">birlikte planlayalım</span></>
+                )}
               </h2>
 
               <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                Yeni bir pazara açılmak, reklam performansınızı değerlendirmek veya başvuru süreçlerinizi düzenlemek istiyorsanız ihtiyacınızı bizimle paylaşın.
+                {t.contact.subtitle}
               </p>
             </div>
 
@@ -116,7 +131,7 @@ export const ContactSection: React.FC = () => {
                   <Phone className="w-5 h-5 text-[#446CB5] group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#595F69]">Doğrudan İletişim Hattı</div>
+                  <div className="text-xs text-[#595F69]">{t.contact.directContactTitle}</div>
                   <div className="font-['Inter_Tight'] font-bold text-sm text-[#222222]">
                     +90 536 319 76 97
                   </div>
@@ -131,7 +146,7 @@ export const ContactSection: React.FC = () => {
                   <Mail className="w-5 h-5 text-[#446CB5] group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#595F69]">Kurumsal E-posta</div>
+                  <div className="text-xs text-[#595F69]">{isEn ? 'Corporate Email' : 'Kurumsal E-posta'}</div>
                   <div className="font-['Inter_Tight'] font-bold text-sm text-[#222222]">
                     info@overseas.marketing
                   </div>
@@ -143,9 +158,9 @@ export const ContactSection: React.FC = () => {
                   <Clock className="w-5 h-5 text-[#446CB5]" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#595F69]">Çalışma & Yanıt Saatleri</div>
+                  <div className="text-xs text-[#595F69]">{isEn ? 'Office & Response Hours' : 'Çalışma & Yanıt Saatleri'}</div>
                   <div className="font-['Inter_Tight'] font-bold text-sm text-[#222222]">
-                    Pzt - Cmt: 09:00 - 19:00 (AI Asistan 24/7)
+                    {t.contact.hoursText}
                   </div>
                 </div>
               </div>
@@ -156,10 +171,12 @@ export const ContactSection: React.FC = () => {
             <div className="p-4 rounded-2xl bg-[#EEF3FB] border border-[#446CB5]/20 text-xs text-[#595F69] space-y-1">
               <div className="font-bold text-[#446CB5] flex items-center gap-1.5">
                 <Lock className="w-3.5 h-3.5 text-[#446CB5]" />
-                <span>Veri Güvenliği İlkesi</span>
+                <span>{isEn ? 'Data Confidentiality Guarantee' : 'Veri Güvenliği İlkesi'}</span>
               </div>
               <p>
-                Görüşme talepleri doğrudan kıdemli büyüme danışmanlarımıza iletilir ve üçüncü taraflarla paylaşılmaz.
+                {isEn 
+                  ? 'All consultation requests are routed strictly to our senior healthcare partners and never shared with third parties.'
+                  : 'Görüşme talepleri doğrudan kıdemli büyüme danışmanlarımıza iletilir ve üçüncü taraflarla paylaşılmaz.'}
               </p>
             </div>
 
@@ -175,10 +192,10 @@ export const ContactSection: React.FC = () => {
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="font-['Inter_Tight'] text-2xl font-bold text-[#222222]">
-                    Talebiniz Bize Ulaştı
+                    {t.contact.successTitle}
                   </h3>
                   <p className="text-sm text-[#595F69] max-w-md mx-auto leading-relaxed">
-                    Ekibimiz, paylaştığınız iletişim bilgileri üzerinden kurumunuza özel hazırlık yaparak 24 saat içinde sizinle iletişime geçecektir.
+                    {t.contact.successDesc}
                   </p>
                   <button
                     onClick={() => {
@@ -194,9 +211,9 @@ export const ContactSection: React.FC = () => {
                         kvkkConsent: false
                       });
                     }}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#446CB5] text-white text-xs font-semibold"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#446CB5] text-white text-xs font-semibold cursor-pointer"
                   >
-                    Yeni Başvuru Yap
+                    {isEn ? 'Submit Another Request' : 'Yeni Başvuru Yap'}
                   </button>
                 </div>
               ) : (
@@ -204,10 +221,10 @@ export const ContactSection: React.FC = () => {
                   
                   <div className="border-b border-[#DDE2E8] pb-3">
                     <h3 className="font-['Inter_Tight'] text-xl font-bold text-[#222222]">
-                      Büyüme Görüşmesi Talep Formu
+                      {isEn ? 'Medical Growth Consultation Request' : 'Büyüme Görüşmesi Talep Formu'}
                     </h3>
                     <p className="text-xs text-[#595F69]">
-                      Aşağıdaki formu doldurarak ilk strateji oturumunu planlayabilirsiniz.
+                      {isEn ? 'Complete the form below to schedule your initial strategy session.' : 'Aşağıdaki formu doldurarak ilk strateji oturumunu planlayabilirsiniz.'}
                     </p>
                   </div>
 
@@ -215,12 +232,12 @@ export const ContactSection: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#222222]">
-                        Adınız ve Soyadınız <span className="text-rose-500">*</span>
+                        {t.contact.nameLabel} <span className="text-rose-500">*</span>
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder="Örn: Dr. Ahmet Yılmaz"
+                        placeholder={t.contact.namePlaceholder}
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -229,12 +246,12 @@ export const ContactSection: React.FC = () => {
 
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#222222]">
-                        Kurum / Klinik Adı <span className="text-rose-500">*</span>
+                        {t.contact.clinicLabel} <span className="text-rose-500">*</span>
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder="Örn: DentGlobal Clinic"
+                        placeholder={t.contact.clinicPlaceholder}
                         value={formData.companyName}
                         onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -245,12 +262,12 @@ export const ContactSection: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#222222]">
-                        İş E-postası <span className="text-rose-500">*</span>
+                        {t.contact.emailLabel} <span className="text-rose-500">*</span>
                       </label>
                       <input
                         type="email"
                         required
-                        placeholder="ornek@klinik.com"
+                        placeholder={t.contact.emailPlaceholder}
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -259,12 +276,12 @@ export const ContactSection: React.FC = () => {
 
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#222222]">
-                        Telefon / WhatsApp <span className="text-rose-500">*</span>
+                        {t.contact.phoneLabel} <span className="text-rose-500">*</span>
                       </label>
                       <input
                         type="tel"
                         required
-                        placeholder="+90 532 ..."
+                        placeholder={t.contact.phonePlaceholder}
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -275,7 +292,7 @@ export const ContactSection: React.FC = () => {
                   {/* Multi-select Services */}
                   <div className="space-y-2">
                     <label className="text-xs font-semibold text-[#222222] block">
-                      İlgilendiğiniz Hizmetler (Çoklu Seçebilirsiniz):
+                      {isEn ? 'Services of Interest (Multiple Selection):' : 'İlgilendiğiniz Hizmetler (Çoklu Seçebilirsiniz):'}
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {availableServices.map((srv) => {
@@ -302,11 +319,11 @@ export const ContactSection: React.FC = () => {
                   {/* Target Countries */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-[#222222]">
-                      Hedef Ülkeler / Diller (Opsiyonel)
+                      {isEn ? 'Target Countries / Languages (Optional)' : 'Hedef Ülkeler / Diller (Opsiyonel)'}
                     </label>
                     <input
                       type="text"
-                      placeholder="Örn: İngiltere, Almanya, Hollanda, BAE"
+                      placeholder={isEn ? "e.g. UK, Germany, France, Netherlands, UAE" : "Örn: İngiltere, Almanya, Hollanda, BAE"}
                       value={formData.targetCountries}
                       onChange={(e) => setFormData({ ...formData, targetCountries: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -316,11 +333,11 @@ export const ContactSection: React.FC = () => {
                   {/* Needs description */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-[#222222]">
-                      Mevcut Durum ve İhtiyaç Açıklaması
+                      {t.contact.messageLabel}
                     </label>
                     <textarea
                       rows={3}
-                      placeholder="Kurumunuzun mevcut hasta edinme durumu, bütçe hedefi veya karşılaştığınız sorunlar hakkında kısa bilgi verin..."
+                      placeholder={t.contact.messagePlaceholder}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -329,7 +346,10 @@ export const ContactSection: React.FC = () => {
 
                   {/* Master Plan Mandatory Disclaimer */}
                   <div className="p-3 rounded-xl bg-amber-50 border border-amber-200/80 text-[11px] text-amber-900 leading-snug">
-                    <strong>Önemli Hatırlatma:</strong> Bu form sağlık kuruluşlarının iş birliği talepleri içindir. Lütfen hasta bilgisi, tıbbi belge veya özel nitelikli kişisel veri paylaşmayın.
+                    <strong>{isEn ? 'Important Notice: ' : 'Önemli Hatırlatma: '}</strong>
+                    {isEn 
+                      ? 'This form is for healthcare clinic partnerships and growth consulting. Please do not submit patient medical files or sensitive clinical data.' 
+                      : 'Bu form sağlık kuruluşlarının iş birliği talepleri içindir. Lütfen hasta bilgisi, tıbbi belge veya özel nitelikli kişisel veri paylaşmayın.'}
                   </div>
 
                   {/* KVKK Consent */}
@@ -343,7 +363,7 @@ export const ContactSection: React.FC = () => {
                       className="mt-0.5 rounded border-slate-300 text-[#446CB5] focus:ring-[#446CB5] cursor-pointer"
                     />
                     <label htmlFor="kvkkConsent" className="text-[11px] text-[#595F69] cursor-pointer">
-                      Aydınlatma metnini okudum; iş birliği değerlendirmesi amacıyla iletişim bilgilerimin işlenmesini kabul ediyorum.
+                      {t.contact.kvkkText}
                     </label>
                   </div>
 
@@ -354,10 +374,10 @@ export const ContactSection: React.FC = () => {
                     className="w-full py-3.5 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-bold shadow-lg shadow-[#446CB5]/25 hover:shadow-xl transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                   >
                     {loading ? (
-                      <span>Gönderiliyor...</span>
+                      <span>{t.contact.submitting}</span>
                     ) : (
                       <>
-                        <span>Görüşme Talebi Gönder</span>
+                        <span>{t.contact.submitButton}</span>
                         <Send className="w-4 h-4 text-white" />
                       </>
                     )}

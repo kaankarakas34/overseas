@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { 
   X, 
-  Calendar, 
-  Clock, 
   CheckCircle2, 
-  ShieldCheck, 
   Sparkles,
-  Send,
-  Lock
+  Send
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 
 interface ConsultationModalProps {
   isOpen: boolean;
@@ -17,13 +15,16 @@ interface ConsultationModalProps {
 }
 
 export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }) => {
+  const { language, isEn } = useLanguage();
+  const t = translations[language];
+
   const [formData, setFormData] = useState({
     fullName: '',
     clinicName: '',
     email: '',
     phone: '',
-    serviceInterest: 'Performans Pazarlama & Lead Üretimi',
-    preferredTime: 'Sabah (10:00 - 13:00)',
+    serviceInterest: isEn ? 'Performance Ads & Lead Acquisition' : 'Performans Pazarlama & Lead Üretimi',
+    preferredTime: isEn ? 'Morning (10:00 - 13:00 GMT+3)' : 'Sabah (10:00 - 13:00)',
     notes: '',
     kvkk: false
   });
@@ -65,7 +66,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
           serviceInterest: formData.serviceInterest,
           preferredTime: formData.preferredTime,
           message: formData.notes,
-          formType: '30 Dk. Büyüme Görüşmesi Randevusu'
+          formType: isEn ? '30 Min. Growth Consultation (EN)' : '30 Dk. Büyüme Görüşmesi Randevusu'
         })
       });
     } catch (err) {
@@ -88,6 +89,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
         {/* Close button */}
         <button
           onClick={onClose}
+          aria-label={isEn ? "Close" : "Kapat"}
           className="absolute top-5 right-5 p-2 rounded-full bg-[#F8FAFC] hover:bg-[#EEF3FB] text-[#222222] transition-colors cursor-pointer"
         >
           <X className="w-5 h-5 text-[#222222]" />
@@ -99,19 +101,19 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <h3 className="font-['Inter_Tight'] text-2xl font-bold text-[#222222]">
-              Görüşmeniz Planlandı
+              {t.modal.successTitle}
             </h3>
             <p className="text-xs sm:text-sm text-[#595F69] max-w-md mx-auto leading-relaxed">
-              Talebiniz büyüme koordinatörümüze iletildi. Belirttiğiniz saat aralığında sizinle ön değerlendirme linkini paylaşacağız.
+              {t.modal.successDesc}
             </p>
             <button
               onClick={() => {
                 setSubmitted(false);
                 onClose();
               }}
-              className="px-6 py-2.5 rounded-xl bg-[#446CB5] text-white text-xs font-semibold"
+              className="px-6 py-2.5 rounded-xl bg-[#446CB5] text-white text-xs font-semibold cursor-pointer"
             >
-              Tamam
+              {t.modal.close}
             </button>
           </div>
         ) : (
@@ -120,23 +122,23 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
             <div className="space-y-1 pr-8">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#EEF3FB] text-[10px] font-bold text-[#446CB5] uppercase">
                 <Sparkles className="w-3 h-3 text-[#446CB5]" />
-                Ücretsiz 30 Dk. Büyüme Analizi
+                {isEn ? 'Free 30-Minute Growth Analysis' : 'Ücretsiz 30 Dk. Büyüme Analizi'}
               </div>
               <h3 className="font-['Inter_Tight'] text-xl sm:text-2xl font-bold text-[#222222]">
-                Büyüme Görüşmesi Planlayın
+                {t.modal.title}
               </h3>
               <p className="text-xs text-[#595F69]">
-                Hedef pazarlarınızı, reklam bütçenizi ve CRM ihtiyaçlarınızı birlikte değerlendirelim.
+                {t.modal.subtitle}
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">Ad Soyad *</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.fullName} *</label>
                 <input
                   type="text"
                   required
-                  placeholder="Dr. / Ynt. Ad Soyad"
+                  placeholder={isEn ? "Dr. / Mgr. Full Name" : "Dr. / Ynt. Ad Soyad"}
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -144,11 +146,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">Kurum / Klinik Adı *</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.clinicName} *</label>
                 <input
                   type="text"
                   required
-                  placeholder="Klinik veya Hastane Adı"
+                  placeholder={isEn ? "Clinic or Hospital Name" : "Klinik veya Hastane Adı"}
                   value={formData.clinicName}
                   onChange={(e) => setFormData({ ...formData, clinicName: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -158,11 +160,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">İş E-postası *</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.email} *</label>
                 <input
                   type="email"
                   required
-                  placeholder="ad@kurum.com"
+                  placeholder="contact@clinic.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -170,11 +172,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">Telefon / WhatsApp *</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.phone} *</label>
                 <input
                   type="tel"
                   required
-                  placeholder="+90 532 ..."
+                  placeholder="+44 7000 ..."
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -184,39 +186,61 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">Öncelikli Odak Alanı</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.serviceInterest}</label>
                 <select
                   value={formData.serviceInterest}
                   onChange={(e) => setFormData({ ...formData, serviceInterest: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
                 >
-                  <option>Performans Pazarlama & Lead Üretimi</option>
-                  <option>Özel CRM & AI Call Agent Kurulumu</option>
-                  <option>Uluslararası SEO & GEO (AI Arama)</option>
-                  <option>Dönüşüm Odaklı Web Sitesi & LP</option>
-                  <option>Uçtan Uca Büyüme Paketi</option>
+                  {isEn ? (
+                    <>
+                      <option>Performance Ads & Lead Acquisition</option>
+                      <option>Custom CRM & AI Call Agent Setup</option>
+                      <option>International SEO & GEO (AI Search)</option>
+                      <option>High-Converting Medical Web & LP</option>
+                      <option>End-to-End Growth Engine</option>
+                    </>
+                  ) : (
+                    <>
+                      <option>Performans Pazarlama & Lead Üretimi</option>
+                      <option>Özel CRM & AI Call Agent Kurulumu</option>
+                      <option>Uluslararası SEO & GEO (AI Arama)</option>
+                      <option>Dönüşüm Odaklı Web Sitesi & LP</option>
+                      <option>Uçtan Uca Büyüme Paketi</option>
+                    </>
+                  )}
                 </select>
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">Tercih Edilen Saat Aralığı</label>
+                <label className="text-xs font-semibold text-[#222222]">{t.modal.preferredTime}</label>
                 <select
                   value={formData.preferredTime}
                   onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
                 >
-                  <option>Sabah (10:00 - 13:00)</option>
-                  <option>Öğleden Sonra (14:00 - 17:00)</option>
-                  <option>Akşamüstü (17:00 - 19:30)</option>
+                  {isEn ? (
+                    <>
+                      <option>Morning (10:00 - 13:00 GMT+3)</option>
+                      <option>Afternoon (14:00 - 17:00 GMT+3)</option>
+                      <option>Evening (17:00 - 19:30 GMT+3)</option>
+                    </>
+                  ) : (
+                    <>
+                      <option>Sabah (10:00 - 13:00)</option>
+                      <option>Öğleden Sonra (14:00 - 17:00)</option>
+                      <option>Akşamüstü (17:00 - 19:30)</option>
+                    </>
+                  )}
                 </select>
               </div>
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-semibold text-[#222222]">Varsa Kısa Notunuz</label>
+              <label className="text-xs font-semibold text-[#222222]">{t.modal.notes}</label>
               <textarea
                 rows={2}
-                placeholder="Hedef ülkeler veya merak ettiğiniz konular..."
+                placeholder={isEn ? "Target countries or specific requirements..." : "Hedef ülkeler veya merak ettiğiniz konular..."}
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                 className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -225,7 +249,9 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
 
             {/* Compliance reminder */}
             <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-[10px] text-amber-900 leading-snug">
-              Lütfen hasta sağlık bilgisi veya tıbbi kayıt paylaşmayınız; form sadece ajans iş birliği görüşmeleri içindir.
+              {isEn
+                ? 'Please do not submit patient medical records or health data; this form is exclusively for agency partnership inquiries.'
+                : 'Lütfen hasta sağlık bilgisi veya tıbbi kayıt paylaşmayınız; form sadece ajans iş birliği görüşmeleri içindir.'}
             </div>
 
             <div className="flex items-start gap-2 pt-1">
@@ -238,7 +264,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                 className="mt-0.5 rounded border-slate-300 text-[#446CB5] focus:ring-[#446CB5] cursor-pointer"
               />
               <label htmlFor="modalKvkk" className="text-[10px] text-[#595F69] cursor-pointer">
-                Aydınlatma metnini onaylıyorum.
+                {t.modal.kvkk}
               </label>
             </div>
 
@@ -248,10 +274,10 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               className="w-full py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-bold shadow-md shadow-[#446CB5]/20 flex items-center justify-center gap-2 cursor-pointer transition-all disabled:opacity-50"
             >
               {loading ? (
-                <span>Planlanıyor...</span>
+                <span>{t.modal.submitting}</span>
               ) : (
                 <>
-                  <span>Görüşmeyi Onayla & Takvime Ekle</span>
+                  <span>{t.modal.submit}</span>
                   <Send className="w-4 h-4 text-white" />
                 </>
               )}

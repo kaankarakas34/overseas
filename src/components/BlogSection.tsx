@@ -6,42 +6,53 @@ import {
   X, 
   ArrowRight, 
   Clock, 
-  ShieldCheck, 
   Sparkles,
   ChevronDown
 } from 'lucide-react';
 import { SEO_ARTICLES } from '../data/seoArticlesData';
+import { useLanguage } from '../context/LanguageContext';
 
 interface BlogSectionProps {
   onOpenConsultation?: () => void;
 }
 
 export const BlogSection: React.FC<BlogSectionProps> = () => {
+  const { isEn } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState('Tümü');
-  const [activeFunnel, setActiveFunnel] = useState<'Tümü' | 'BOFU' | 'MOFU' | 'TOFU'>('Tümü');
+  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeFunnel, setActiveFunnel] = useState<'all' | 'BOFU' | 'MOFU' | 'TOFU'>('all');
   const [visibleCount, setVisibleCount] = useState(12);
 
   // Categories list
-  const categories = [
-    'Tümü',
-    'Temel kavramlar ve sektör',
-    'İşletmecilik, acenta ve danışmanlık',
-    'Yetki belgesi, yönetmelik ve hukuk',
-    'Teşvikler, destekler ve vergi',
-    'Ajans, reklam, SEO ve web',
-    'Dental ve diş sağlık turizmi',
-    'Türkiye şehirleri',
-    'Ülke pazarları',
-    'Eğitim ve kariyer',
-    'Fuar, dernek ve akademik içerik'
-  ];
+  const categories = isEn
+    ? [
+        { id: 'all', label: 'All' },
+        { id: 'Temel kavramlar ve sektör', label: 'Fundamentals & Industry' },
+        { id: 'İşletmecilik, acenta ve danışmanlık', label: 'Agency & Consulting' },
+        { id: 'Yetki belgesi, yönetmelik ve hukuk', label: 'Licensing & Regulations' },
+        { id: 'Teşvikler, destekler ve vergi', label: 'Subsidies & Tax' },
+        { id: 'Ajans, reklam, SEO ve web', label: 'Agency, Ads & SEO' },
+        { id: 'Dental ve diş sağlık turizmi', label: 'Dental Tourism' },
+        { id: 'Türkiye şehirleri', label: 'Destinations' },
+        { id: 'Ülke pazarları', label: 'Target Markets' }
+      ]
+    : [
+        { id: 'all', label: 'Tümü' },
+        { id: 'Temel kavramlar ve sektör', label: 'Temel kavramlar ve sektör' },
+        { id: 'İşletmecilik, acenta ve danışmanlık', label: 'İşletmecilik, acenta ve danışmanlık' },
+        { id: 'Yetki belgesi, yönetmelik ve hukuk', label: 'Yetki belgesi, yönetmelik ve hukuk' },
+        { id: 'Teşvikler, destekler ve vergi', label: 'Teşvikler, destekler ve vergi' },
+        { id: 'Ajans, reklam, SEO ve web', label: 'Ajans, reklam, SEO ve web' },
+        { id: 'Dental ve diş sağlık turizmi', label: 'Dental ve diş sağlık turizmi' },
+        { id: 'Türkiye şehirleri', label: 'Türkiye şehirleri' },
+        { id: 'Ülke pazarları', label: 'Ülke pazarları' }
+      ];
 
   // Filter logic
   const filteredArticles = useMemo(() => {
     return SEO_ARTICLES.filter((art) => {
-      const matchesCat = activeCategory === 'Tümü' || art.category.toLowerCase() === activeCategory.toLowerCase();
-      const matchesFunnel = activeFunnel === 'Tümü' || art.funnel === activeFunnel;
+      const matchesCat = activeCategory === 'all' || art.category.toLowerCase() === activeCategory.toLowerCase();
+      const matchesFunnel = activeFunnel === 'all' || art.funnel === activeFunnel;
       const q = searchQuery.toLowerCase().trim();
       const matchesSearch = !q || 
         art.title.toLowerCase().includes(q) || 
@@ -64,19 +75,25 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
               <BookOpen className="w-3.5 h-3.5 text-[#446CB5]" />
-              <span>Sağlık Turizmi Kütüphanesi & Bilgi Merkezi</span>
+              <span>{isEn ? 'Medical Tourism Library & Knowledge Hub' : 'Sağlık Turizmi Kütüphanesi & Bilgi Merkezi'}</span>
             </div>
             <h2 className="font-['Inter_Tight'] text-3xl sm:text-4xl font-extrabold text-[#222222] tracking-tight">
-              Sağlık Turizmi <span className="text-[#446CB5]">Bilgi Merkezi ve Rehberi</span>
+              {isEn ? (
+                <>Medical Tourism <span className="text-[#446CB5]">Knowledge Base & Guides</span></>
+              ) : (
+                <>Sağlık Turizmi <span className="text-[#446CB5]">Bilgi Merkezi ve Rehberi</span></>
+              )}
             </h2>
             <p className="text-sm sm:text-base text-[#595F69]">
-              Sağlık Bakanlığı ve Ticaret Bakanlığı mevzuatına uygun, yetki belgesi şartları, teşvik modelleri ve dijital büyüme stratejilerini içeren 86 kapsamlı kaynak.
+              {isEn
+                ? '86 comprehensive guides covering accreditation rules, government incentives, international ad strategies, and target market analyses.'
+                : 'Sağlık Bakanlığı ve Ticaret Bakanlığı mevzuatına uygun, yetki belgesi şartları, teşvik modelleri ve dijital büyüme stratejilerini içeren 86 kapsamlı kaynak.'}
             </p>
           </div>
 
           {/* Quick Funnel Filter */}
           <div className="flex items-center gap-2 p-1.5 rounded-2xl bg-white border border-[#DDE2E8] shadow-2xs">
-            {(['Tümü', 'BOFU', 'MOFU', 'TOFU'] as const).map((f) => (
+            {(['all', 'BOFU', 'MOFU', 'TOFU'] as const).map((f) => (
               <button
                 key={f}
                 onClick={() => {
@@ -89,7 +106,13 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
                     : 'text-[#595F69] hover:text-[#16202E] hover:bg-[#F8FAFC]'
                 }`}
               >
-                {f === 'Tümü' ? 'Tüm Düzeyler' : f === 'BOFU' ? 'Ticari (BOFU)' : f === 'MOFU' ? 'Süreç (MOFU)' : 'Temel (TOFU)'}
+                {f === 'all' 
+                  ? (isEn ? 'All Tiers' : 'Tüm Düzeyler')
+                  : f === 'BOFU' 
+                  ? (isEn ? 'High-Intent (BOFU)' : 'Ticari (BOFU)')
+                  : f === 'MOFU' 
+                  ? (isEn ? 'Process (MOFU)' : 'Süreç (MOFU)')
+                  : (isEn ? 'Basics (TOFU)' : 'Temel (TOFU)')}
               </button>
             ))}
           </div>
@@ -106,7 +129,7 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
                 setSearchQuery(e.target.value);
                 setVisibleCount(12);
               }}
-              placeholder="Konu, yetki belgesi, teşvik veya anahtar kelime arayın... (örn: Google Ads, DYS, acenta)"
+              placeholder={isEn ? "Search topic, accreditation, incentives, or ads... (e.g. Google Ads, Subsidy, Agency)" : "Konu, yetki belgesi, teşvik veya anahtar kelime arayın... (örn: Google Ads, DYS, acenta)"}
               className="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs sm:text-sm text-[#222222] focus:outline-none focus:border-[#446CB5] focus:bg-white transition-all"
             />
             {searchQuery && (
@@ -120,7 +143,11 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
           </div>
 
           <div className="text-xs text-[#595F69] shrink-0 font-medium px-2">
-            Toplam <strong>{filteredArticles.length}</strong> rehber listeleniyor
+            {isEn ? (
+              <>Showing <strong>{filteredArticles.length}</strong> guides</>
+            ) : (
+              <>Toplam <strong>{filteredArticles.length}</strong> rehber listeleniyor</>
+            )}
           </div>
         </div>
 
@@ -128,18 +155,18 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
         <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
           {categories.map((cat) => (
             <button
-              key={cat}
+              key={cat.id}
               onClick={() => {
-                setActiveCategory(cat);
+                setActiveCategory(cat.id);
                 setVisibleCount(12);
               }}
               className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
-                activeCategory === cat
+                activeCategory === cat.id
                   ? 'bg-[#446CB5] text-white shadow-xs'
                   : 'bg-white text-[#595F69] border border-[#DDE2E8] hover:bg-[#EEF3FB] hover:text-[#446CB5]'
               }`}
             >
-              {cat}
+              {cat.label}
             </button>
           ))}
         </div>
@@ -179,7 +206,7 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
 
                 <div className="pt-4 mt-4 border-t border-[#DDE2E8]/60 flex items-center justify-between text-xs text-[#446CB5] font-semibold">
                   <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                    <span>Rehberi İncele</span>
+                    <span>{isEn ? 'Read Guide' : 'Rehberi İncele'}</span>
                     <ArrowRight className="w-3 h-3 text-[#446CB5]" />
                   </span>
                   <div className="flex items-center gap-1 text-[11px] text-[#595F69] font-normal">
@@ -193,19 +220,23 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
         ) : (
           <div className="text-center py-16 bg-white rounded-3xl border border-[#DDE2E8] p-8 space-y-4">
             <Sparkles className="w-8 h-8 text-slate-400 mx-auto" />
-            <div className="text-base font-bold text-[#222222]">Eşleşen rehber bulunamadı</div>
+            <div className="text-base font-bold text-[#222222]">
+              {isEn ? 'No matching guides found' : 'Eşleşen rehber bulunamadı'}
+            </div>
             <p className="text-xs text-[#595F69] max-w-md mx-auto">
-              "{searchQuery}" araması için içerik bulunamadı. Lütfen farklı bir arama terimi deneyin veya kategori filtrelerini sıfırlayın.
+              {isEn 
+                ? `No articles found matching "${searchQuery}". Please try a different search or reset filters.`
+                : `"${searchQuery}" araması için içerik bulunamadı. Lütfen farklı bir arama terimi deneyin veya kategori filtrelerini sıfırlayın.`}
             </p>
             <button
               onClick={() => {
                 setSearchQuery('');
-                setActiveCategory('Tümü');
-                setActiveFunnel('Tümü');
+                setActiveCategory('all');
+                setActiveFunnel('all');
               }}
               className="px-4 py-2 rounded-xl bg-[#446CB5] text-white text-xs font-semibold cursor-pointer"
             >
-              Filtreleri Sıfırla
+              {isEn ? 'Reset Filters' : 'Filtreleri Sıfırla'}
             </button>
           </div>
         )}
@@ -217,7 +248,11 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
               onClick={() => setVisibleCount((prev) => prev + 12)}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white border border-[#DDE2E8] hover:border-[#446CB5] hover:bg-[#EEF3FB] text-[#222222] hover:text-[#446CB5] font-semibold text-xs transition-all shadow-xs cursor-pointer"
             >
-              <span>Daha Fazla Konu Göster ({filteredArticles.length - visibleCount} içerik kaldı)</span>
+              <span>
+                {isEn 
+                  ? `Show More Guides (${filteredArticles.length - visibleCount} remaining)`
+                  : `Daha Fazla Konu Göster (${filteredArticles.length - visibleCount} içerik kaldı)`}
+              </span>
               <ChevronDown className="w-4 h-4" />
             </button>
           </div>

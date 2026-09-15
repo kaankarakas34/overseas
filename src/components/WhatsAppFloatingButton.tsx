@@ -1,14 +1,19 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export const WhatsAppFloatingButton: React.FC = () => {
-  const whatsappUrl = 'https://wa.me/905363197697';
+  const { isEn } = useLanguage();
+  const text = isEn 
+    ? encodeURIComponent('Hello, I would like to get information regarding health tourism growth and performance marketing solutions.')
+    : encodeURIComponent('Merhaba, sağlık turizmi büyüme ve reklam yönetimi hizmetleriniz hakkında bilgi almak istiyorum.');
+  const whatsappUrl = `https://wa.me/905363197697?text=${text}`;
 
   return (
     <div className="fixed bottom-6 right-6 z-50 group flex items-center gap-3">
       
       {/* Tooltip Pill on Hover / Floating Label */}
       <span className="hidden sm:inline-block px-3.5 py-1.5 rounded-full bg-[#16202E] text-white text-xs font-semibold shadow-lg border border-slate-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-        WhatsApp İletişim Hattı
+        {isEn ? 'WhatsApp Direct Support' : 'WhatsApp İletişim Hattı'}
       </span>
 
       {/* Floating Button */}
@@ -16,7 +21,7 @@ export const WhatsAppFloatingButton: React.FC = () => {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp İletişim"
+        aria-label={isEn ? "WhatsApp Support" : "WhatsApp İletişim"}
         className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center justify-center shadow-2xl shadow-[#25D366]/50 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer"
       >
         {/* Pulse Ripple Effect */}

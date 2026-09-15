@@ -4,17 +4,12 @@ import {
   CheckCircle2, 
   ShieldCheck, 
   UserCheck, 
-  Search, 
-  Cpu, 
   Sparkles, 
   Video, 
   HelpCircle, 
   ChevronDown, 
   ChevronUp, 
   ArrowRight, 
-  Star, 
-  Globe, 
-  MessageSquare, 
   Award, 
   FileText, 
   Building2, 
@@ -23,6 +18,7 @@ import {
   MessageSquareHeart,
   Target
 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface DoctorBrandingPageProps {
   onBackToHome: () => void;
@@ -33,13 +29,25 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
   onBackToHome, 
   onOpenConsultation 
 }) => {
+  const { isEn } = useLanguage();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
-  const patientQuestions = [
+  const patientQuestions = isEn ? [
+    "Who is this doctor?",
+    "How many years of clinical experience do they have?",
+    "What is their primary medical specialty?",
+    "Which past cases and treatments have they performed?",
+    "What do international patients say about their experience?",
+    "How does the doctor explain their clinical philosophy?",
+    "Is their digital presence professional and reassuring?",
+    "Are they recognized on reputable healthcare platforms?",
+    "Do they regularly treat international patients?",
+    "Do they communicate the treatment steps clearly and transparently?"
+  ] : [
     "Bu doktor kim?",
     "Kaç yıldır bu alanda çalışıyor?",
     "Uzmanlık alanı nedir?",
@@ -52,7 +60,18 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
     "Tedavi sürecini açık ve anlaşılır şekilde anlatıyor mu?"
   ];
 
-  const profileElements = [
+  const profileElements = isEn ? [
+    { title: "Surgical & Clinical Specialty", desc: "Showcasing signature procedures and clear boundaries of medical expertise" },
+    { title: "Doctor’s Philosophy & Approach", desc: "Transparent communication style, empathy, and medical ethics" },
+    { title: "Education & Credentials", desc: "Academic background, board certifications, fellowships, and international memberships" },
+    { title: "Treatment & Procedure Guides", desc: "Step-by-step visual guides clarifying what patients should expect" },
+    { title: "Frequently Asked Patient Questions", desc: "Video and text answers addressing pre-operative anxieties" },
+    { title: "Patient Experiences & Reviews", desc: "Authentic, verified patient journey stories and testimonials" },
+    { title: "International Patient Protocol", desc: "Clarity on VIP transfers, multilingual coordinators, and hotel accommodations" },
+    { title: "Educational Medical Content", desc: "Clear explanations free from unnecessary medical jargon" },
+    { title: "Doctor Video Explanations", desc: "Natural, authentic on-camera explanations creating immediate human connection" },
+    { title: "Clinic & Surgical Facility Standards", desc: "Showcasing operating theaters, state-of-the-art tech, and sterile protocols" }
+  ] : [
     { title: "Uzmanlık Alanınız", desc: "Öne çıkan operasyonlar ve net uzmanlık sınırları" },
     { title: "Doktor Yaklaşımınız", desc: "Hasta iletişimi ve tıbbi felsefeniz" },
     { title: "Eğitim ve Deneyiminiz", desc: "Akademik geçmiş, sertifikalar ve üyelikler" },
@@ -65,7 +84,33 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
     { title: "Klinik ve Ekip Görünürlüğü", desc: "Ameliyathane ve klinik hijyen standartları" }
   ];
 
-  const contentPillars = [
+  const contentPillars = isEn ? [
+    {
+      title: "Educational Content",
+      desc: "We clarify the pre-op and post-op questions patients search for, using the doctor's authentic medical voice.",
+      icon: FileText
+    },
+    {
+      title: "Doctor Video Content",
+      desc: "Patients want to see how the doctor speaks, listens, and reassures. High-quality natural video establishes the first trust touchpoint.",
+      icon: Video
+    },
+    {
+      title: "Treatment Journey Insights",
+      desc: "We transparently guide international patients through every step from first contact to surgical discharge and follow-up.",
+      icon: CheckCircle2
+    },
+    {
+      title: "Patient FAQs",
+      desc: "We build proactive content addressing common search queries on Google, social channels, and AI platforms.",
+      icon: HelpCircle
+    },
+    {
+      title: "Clinical Authority Pillars",
+      desc: "We develop specialized content reinforcing the doctor’s authority in the specific procedures they want to scale.",
+      icon: Award
+    }
+  ] : [
     {
       title: "Bilgilendirici İçerikler",
       desc: "Hastaların tedavi veya operasyon öncesinde merak ettiği konuları doktorun kendi anlatımıyla açıklıyoruz.",
@@ -102,7 +147,22 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
     "Cosmetic Dentist Turkey"
   ];
 
-  const deliverables = [
+  const deliverables = isEn ? [
+    "Doctor Personal Brand Strategy",
+    "Medical Brand Positioning",
+    "Professional Social Media Management",
+    "Targeted Content Strategy",
+    "Doctor Video Content Production",
+    "Medical Tourism Content Calendar",
+    "Instagram Profile & Bio Optimization",
+    "Google & Search Visibility Strategy",
+    "SEO-Compliant Doctor Website Copywriting",
+    "GEO (Generative Engine Optimization) Infrastructure",
+    "Patient Testimonials & Digital Reputation Management",
+    "International Patient Communication Materials",
+    "Unified Paid Ad & Organic Content Alignment",
+    "Joint Doctor & Clinic Brand Synergy Architecture"
+  ] : [
     "Doktor kişisel marka stratejisi",
     "Marka konumlandırması",
     "Sosyal medya yönetimi",
@@ -119,7 +179,36 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
     "Doktor ve klinik markasının birlikte konumlandırılması"
   ];
 
-  const faqs = [
+  const faqs = isEn ? [
+    {
+      q: "What is doctor brand management?",
+      a: "Doctor brand management is the consistent, strategic positioning of a physician's clinical expertise, track record, bedside manner, and digital authority across social media, Google, website, video platforms, and AI engines."
+    },
+    {
+      q: "Why is social media management critical for doctors?",
+      a: "International patients thoroughly scrutinize a physician's digital presence before booking travel. A professional, informative profile communicates clinical competence and establishes the vital first layer of patient trust."
+    },
+    {
+      q: "Why is doctor branding so important in medical tourism?",
+      a: "International patients are traveling to another country for surgery, making their decision process highly cautious. The doctor's verified credentials, video demeanor, patient reviews, and online authority are decisive in winning their trust."
+    },
+    {
+      q: "Does doctor branding directly impact paid ad performance?",
+      a: "Yes, significantly. Paid ads generate the initial visit to the doctor's profile or website. If the patient lands on an authoritative profile with convincing case stories and clear philosophy, conversion rates and show-up rates skyrocket."
+    },
+    {
+      q: "Can SEO be conducted specifically for a doctor's personal brand?",
+      a: "Absolutely. We build targeted SEO architectures around the doctor's name, signature treatments, and target markets (UK, Germany, GCC), ensuring page 1 visibility for high-intent medical queries."
+    },
+    {
+      q: "Why is GEO (Generative Engine Optimization) vital for doctors?",
+      a: "Prospective medical travelers increasingly query ChatGPT, Gemini, and Perplexity with prompts like 'Who is the top rhinoplasty surgeon in Istanbul?'. GEO ensures your clinical credentials and citations are indexed and favored by AI models."
+    },
+    {
+      q: "Is doctor brand management just managing an Instagram page?",
+      a: "No. Instagram is only one puzzle piece. A true personal brand encompasses the doctor's dedicated website, Google search results, patient video reviews, published articles, clinic synergy, and academic reputation."
+    }
+  ] : [
     {
       q: "Doktor marka yönetimi nedir?",
       a: "Doktor marka yönetimi, doktorun uzmanlığının, tecrübesinin, yaklaşımının ve dijital itibarının sosyal medya, Google, web sitesi, içerik platformları ve diğer dijital kanallarda tutarlı şekilde konumlandırılmasıdır."
@@ -161,23 +250,25 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
             className="inline-flex items-center gap-2 text-xs font-bold text-[#446CB5] hover:text-[#35558F] transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Ana Sayfaya Dön</span>
+            <span>{isEn ? 'Back to Home' : 'Ana Sayfaya Dön'}</span>
           </button>
 
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-bold text-[#446CB5]">
               <UserCheck className="w-3.5 h-3.5" />
-              <span>Sağlık Turizminde Dijital Kimlik & Güven</span>
+              <span>{isEn ? 'Digital Identity & Trust in Medical Tourism' : 'Sağlık Turizminde Dijital Kimlik & Güven'}</span>
             </div>
-            <span className="text-xs text-[#595F69]">Overseas Marketing Doktrini</span>
+            <span className="text-xs text-[#595F69]">{isEn ? 'Overseas Marketing Methodology' : 'Overseas Marketing Doktrini'}</span>
           </div>
 
           <h1 className="font-['Inter_Tight'] text-3xl sm:text-5xl font-black text-[#222222] tracking-tight leading-tight">
-            Doktor Marka Yönetimi
+            {isEn ? 'Doctor Brand Management' : 'Doktor Marka Yönetimi'}
           </h1>
 
           <p className="text-base sm:text-xl text-[#595F69] max-w-4xl leading-relaxed">
-            Sağlık turizminde iyi bir reklam hastanın sizi fark etmesini sağlar. Ancak hastanın size güvenmesini sağlayan şey reklamın kendisi değildir.
+            {isEn 
+              ? 'In medical tourism, a well-placed ad gets you noticed. But what genuinely convinces an international patient to travel for surgery is not the ad itself—it is their trust in the doctor.'
+              : 'Sağlık turizminde iyi bir reklam hastanın sizi fark etmesini sağlar. Ancak hastanın size güvenmesini sağlayan şey reklamın kendisi değildir.'}
           </p>
         </div>
       </div>
@@ -194,16 +285,20 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="relative z-10 max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold text-[#60A5FA] backdrop-blur-md">
               <ShieldCheck className="w-4 h-4" />
-              <span>Kişisel Marka Stratejimiz</span>
+              <span>{isEn ? 'Personal Brand Strategy' : 'Kişisel Marka Stratejimiz'}</span>
             </div>
 
             <p className="font-['Inter_Tight'] text-lg sm:text-2xl font-bold text-white leading-relaxed">
-              Hasta reklamınızı gördükten sonra profilinize girer. Kim olduğunuzu araştırır, uzmanlık alanınıza bakar, tecrübenizi inceler, yorumları okur ve Google & yapay zeka araçlarında bilgi toplar.
+              {isEn 
+                ? 'After seeing your ad, the patient visits your personal profile. They research who you are, verify your clinical credentials, review your past cases, and search for your reputation on Google and AI platforms.'
+                : 'Hasta reklamınızı gördükten sonra profilinize girer. Kim olduğunuzu araştırır, uzmanlık alanınıza bakar, tecrübenizi inceler, yorumları okur ve Google & yapay zeka araçlarında bilgi toplar.'}
             </p>
 
             <div className="p-5 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md">
               <p className="text-sm sm:text-base font-extrabold text-[#60A5FA] leading-relaxed">
-                “Biz yalnızca sosyal medya hesabınızı yönetmiyoruz. Doktor olarak dijital dünyadaki kişisel markanızı oluşturuyor, güven veren ve tercih edilmenizi kolaylaştıran bir dijital kimlik inşa ediyoruz.”
+                {isEn 
+                  ? '“We don’t simply manage social media feeds. We sculpt your authoritative personal brand in the global medical arena, constructing a digital identity that instills deep trust and accelerates international patient conversion.”'
+                  : '“Biz yalnızca sosyal medya hesabınızı yönetmiyoruz. Doktor olarak dijital dünyadaki kişisel markanızı oluşturuyor, güven veren ve tercih edilmenizi kolaylaştıran bir dijital kimlik inşa ediyoruz.”'}
               </p>
             </div>
           </div>
@@ -214,13 +309,15 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <Target className="w-3.5 h-3.5" />
-              <span>Hasta Karar Psikolojisi</span>
+              <span>{isEn ? 'Patient Decision Psychology' : 'Hasta Karar Psikolojisi'}</span>
             </div>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              Sağlık Turizminde Hasta Önce Doktoru Satın Alır
+              {isEn ? 'In Medical Tourism, Patients Buy the Doctor First' : 'Sağlık Turizminde Hasta Önce Doktoru Satın Alır'}
             </h2>
             <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-              Özellikle estetik cerrahi, diş tedavileri, saç ekimi, obezite cerrahisi, göz operasyonları, ortopedi ve benzeri sağlık turizmi alanlarında hasta için karar süreci oldukça farklıdır. Hasta yalnızca fiyat karşılaştırması yapmaz; kendisine işlemi gerçekleştirecek doktoru tanımak ister.
+              {isEn 
+                ? 'In aesthetic surgery, dental transformations, hair restoration, bariatric procedures, and orthopedics, patients do not just compare price tags; they seek absolute trust in the surgeon performing the procedure.'
+                : 'Özellikle estetik cerrahi, diş tedavileri, saç ekimi, obezite cerrahisi, göz operasyonları, ortopedi ve benzeri sağlık turizmi alanlarında hasta için karar süreci oldukça farklıdır. Hasta yalnızca fiyat karşılaştırması yapmaz; kendisine işlemi gerçekleştirecek doktoru tanımak ister.'}
             </p>
           </div>
 
@@ -228,7 +325,7 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#DDE2E8] space-y-6 shadow-xs">
             <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222] flex items-center gap-2">
               <HelpCircle className="w-5 h-5 text-[#446CB5]" />
-              <span>Hasta Dijital Araştırmasında Şu Soruların Cevabını Arar:</span>
+              <span>{isEn ? 'Questions Patients Seek Answers to During Digital Research:' : 'Hasta Dijital Araştırmasında Şu Soruların Cevabını Arar:'}</span>
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -243,7 +340,9 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
             </div>
 
             <div className="p-4 rounded-xl bg-[#FFFBEB] border border-[#FCD34D]/50 text-xs sm:text-sm text-[#92400E] font-medium leading-relaxed">
-              <strong>Önemli Tespit:</strong> Bu sorulara dijital dünyada güçlü cevaplar veremiyorsanız reklam bütçeniz ne kadar yüksek olursa olsun hasta dönüşüm oranınız sınırlı kalabilir.
+              <strong>{isEn ? 'Key Takeaway:' : 'Önemli Tespit:'}</strong> {isEn 
+                ? 'If your digital profile cannot provide convincing, transparent answers to these questions, even the highest ad budgets will yield poor patient conversion rates.' 
+                : 'Bu sorulara dijital dünyada güçlü cevaplar veremiyorsanız reklam bütçeniz ne kadar yüksek olursa olsun hasta dönüşüm oranınız sınırlı kalabilir.'}
             </div>
           </div>
         </div>
@@ -253,23 +352,29 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Organik Güven Dönüşümü</span>
+              <span>{isEn ? 'Organic Trust Conversion' : 'Organik Güven Dönüşümü'}</span>
             </div>
 
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              İyi Bir Doktor Profili Kendi Reklamını Yapar
+              {isEn ? 'A Great Doctor Profile Sells Itself' : 'İyi Bir Doktor Profili Kendi Reklamını Yapar'}
             </h2>
 
             <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-              Bir hasta Instagram veya Google reklamınızı gördüğünde ilk yaptığı şeylerden biri profilinizi kontrol etmektir. Reklamınız veya videonuz ne kadar başarılı olursa olsun, hasta profilinize geldiğinde düzensiz veya uzmanlığınızı anlatmayan bir hesapla karşılaşırsa reklamın oluşturduğu ilgi hızla kaybolabilir.
+              {isEn 
+                ? 'When an international patient clicks your Instagram or Google ad, their immediate next step is checking your profile. No matter how captivating your ad creative was, landing on a disorganized profile that lacks clinical authority instantly dampens their interest.' 
+                : 'Bir hasta Instagram veya Google reklamınızı gördüğünde ilk yaptığı şeylerden biri profilinizi kontrol etmektir. Reklamınız veya videonuz ne kadar başarılı olursa olsun, hasta profilinize geldiğinde düzensiz veya uzmanlığınızı anlatmayan bir hesapla karşılaşırsa reklamın oluşturduğu ilgi hızla kaybolabilir.'}
             </p>
 
             <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-              Tam tersine; profesyonel hazırlanmış bir doktor profili, doğru içerikler, hasta deneyimleri, bilgilendirici videolar ve güçlü dijital görünürlük hastanın karar sürecini kolaylaştırır.
+              {isEn 
+                ? 'Conversely, an expertly sculpted physician profile—featuring structured video consultations, transparent credentials, and genuine patient transformations—streamlines the decision process.' 
+                : 'Tam tersine; profesyonel hazırlanmış bir doktor profili, doğru içerikler, hasta deneyimleri, bilgilendirici videolar ve güçlü dijital görünürlük hastanın karar sürecini kolaylaştırır.'}
             </p>
 
             <div className="p-4 rounded-2xl bg-[#EEF3FB] border border-[#446CB5]/30 text-sm font-bold text-[#446CB5]">
-              Bizim için sosyal medya yalnızca paylaşım yapılan bir kanal değil; doktorun uzmanlığını, tecrübesini ve yaklaşımını dijital dünyaya doğru şekilde aktaran bir güven alanıdır.
+              {isEn 
+                ? 'To us, social media is not just a broadcasting channel; it is an authoritative trust sanctuary that articulates the physician’s surgical craft and clinical empathy to the world.'
+                : 'Bizim için sosyal medya yalnızca paylaşım yapılan bir kanal değil; doktorun uzmanlığını, tecrübesini ve yaklaşımını dijital dünyaya doğru şekilde aktaran bir güven alanıdır.'}
             </div>
           </div>
 
@@ -277,7 +382,7 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
             <div className="rounded-2xl overflow-hidden border border-[#DDE2E8] shadow-md">
               <img 
                 src="/images/doctor_brand_hero.jpg" 
-                alt="Doktor Profil Optimizasyonu" 
+                alt="Doctor Profile Optimization" 
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -289,13 +394,15 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <Building2 className="w-3.5 h-3.5" />
-              <span>Stratejik Adımlar</span>
+              <span>{isEn ? 'Strategic Blueprint' : 'Stratejik Adımlar'}</span>
             </div>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              Doktor Kişisel Markası Nasıl Oluşturulur?
+              {isEn ? 'How to Build an International Doctor Brand' : 'Doktor Kişisel Markası Nasıl Oluşturulur?'}
             </h2>
             <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-              Doktor marka yönetiminde ilk adım daha fazla paylaşım yapmak değildir. İlk olarak doktorun nasıl konumlandırılacağını belirlemek gerekir. Örneğin bir plastik cerrah için “Plastik cerrah” olmak tek başına yeterli değildir; hangi operasyonlarda öne çıktığı, hangi ülkelere hitap ettiği ve neden tercih edilmesi gerektiği netleştirilmelidir.
+              {isEn 
+                ? 'The first step is never just publishing more posts. We first define precise medical positioning: which signature procedures the physician excels at, which countries they target, and why international patients should entrust them with their surgery.' 
+                : 'Doktor marka yönetiminde ilk adım daha fazla paylaşım yapmak değildir. İlk olarak doktorun nasıl konumlandırılacağını belirlemek gerekir. Örneğin bir plastik cerrah için “Plastik cerrah” olmak tek başına yeterli değildir; hangi operasyonlarda öne çıktığı, hangi ülkelere hitap ettiği ve neden tercih edilmesi gerektiği netleştirilmelidir.'}
             </p>
           </div>
 
@@ -308,11 +415,13 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
                   1
                 </span>
                 <h3 className="font-['Inter_Tight'] text-lg sm:text-xl font-bold text-[#222222]">
-                  Doktorun Dijital Konumlandırmasını Belirliyoruz
+                  {isEn ? 'Defining Digital Positioning & Core Expertise' : 'Doktorun Dijital Konumlandırmasını Belirliyoruz'}
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-                Uzmanlık alanınızı ve güçlü olduğunuz tedavileri analiz ediyoruz. Hangi hasta grubuna ulaşmak istediğinizi belirliyoruz. Hedef ülkeleri, hasta beklentilerini ve rekabet ortamını değerlendirerek herkese hitap etmeye çalışan bir profile yerine belirli alanlarda güçlü bir uzmanlık algısı inşa ediyoruz.
+                {isEn 
+                  ? 'We analyze your core clinical strengths and high-value treatments. Rather than building a generic profile trying to appeal to everyone, we carve out undisputed authority in signature procedures for targeted international markets.' 
+                  : 'Uzmanlık alanınızı ve güçlü olduğunuz tedavileri analiz ediyoruz. Hangi hasta grubuna ulaşmak istediğinizi belirliyoruz. Hedef ülkeleri, hasta beklentilerini ve rekabet ortamını değerlendirerek herkese hitap etmeye çalışan bir profile yerine belirli alanlarda güçlü bir uzmanlık algısı inşa ediyoruz.'}
               </p>
             </div>
 
@@ -323,11 +432,13 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
                   2
                 </span>
                 <h3 className="font-['Inter_Tight'] text-lg sm:text-xl font-bold text-[#222222]">
-                  Sosyal Medya Profilinizi Güven Odaklı Hale Getiriyoruz
+                  {isEn ? 'Transforming Social Profiles into Trust Engines' : 'Sosyal Medya Profilinizi Güven Odaklı Hale Getiriyoruz'}
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-                Doktor sosyal medya yönetimi yalnızca haftada birkaç gönderi paylaşmak değildir. Profilin tamamı hastanın gözünden değerlendirilmelidir. Profil fotoğrafından biyografi alanına, sabitlenmiş içeriklerden video diline kadar bütün yapı doktorun kişisel markasını desteklemelidir.
+                {isEn 
+                  ? 'Managing a medical profile is not just publishing weekly graphics. From the biography copy and verified badges to pinned guides and surgical video style, every touchpoint is engineered through the eyes of an international patient.' 
+                  : 'Doktor sosyal medya yönetimi yalnızca haftada birkaç gönderi paylaşmak değildir. Profilin tamamı hastanın gözünden değerlendirilmelidir. Profil fotoğrafından biyografi alanına, sabitlenmiş içeriklerden video diline kadar bütün yapı doktorun kişisel markasını desteklemelidir.'}
               </p>
             </div>
 
@@ -336,14 +447,14 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           {/* 10 Profile Elements List */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#DDE2E8] space-y-6 shadow-xs">
             <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222]">
-              Sosyal Medya Profilinizde Stratejik Olarak Sunulan 10 Yapı Taşı:
+              {isEn ? '10 Strategic Pillars Presented on Your Doctor Profile:' : 'Sosyal Medya Profilinizde Stratejik Olarak Sunulan 10 Yapı Taşı:'}
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {profileElements.map((el, idx) => (
                 <div key={idx} className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] space-y-2 hover:border-[#446CB5] transition-colors">
                   <div className="text-xs font-bold text-[#446CB5] uppercase tracking-wider">
-                    {idx + 1}. Yapı Taşı
+                    {idx + 1}. {isEn ? 'Pillar' : 'Yapı Taşı'}
                   </div>
                   <h4 className="font-['Inter_Tight'] text-sm font-bold text-[#222222]">
                     {el.title}
@@ -356,7 +467,9 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
             </div>
 
             <div className="p-4 rounded-xl bg-[#EEF3FB] text-xs sm:text-sm text-[#446CB5] font-bold">
-              Amaç yalnızca takipçi kazanmak değildir. Amaç, profilinizi ziyaret eden hastanın sizin hakkınızda doğru ve güvenilir bir fikir oluşturmasını sağlamaktır.
+              {isEn 
+                ? 'The goal is not vanity follower counts. The goal is empowering visiting international patients to immediately recognize you as a reliable, board-certified medical master.' 
+                : 'Amaç yalnızca takipçi kazanmak değildir. Amaç, profilinizi ziyaret eden hastanın sizin hakkınızda doğru ve güvenilir bir fikir oluşturmasını sağlamaktır.'}
             </div>
           </div>
         </div>
@@ -367,49 +480,61 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="bg-white rounded-3xl p-8 border border-[#DDE2E8] space-y-4 shadow-xs">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <TrendingUp className="w-3.5 h-3.5" />
-              <span>Satış Ekibine Destek</span>
+              <span>{isEn ? 'Sales Team Support' : 'Satış Ekibine Destek'}</span>
             </div>
 
             <h2 className="font-['Inter_Tight'] text-xl sm:text-2xl font-extrabold text-[#222222]">
-              Doktor Sosyal Medya Yönetimi Neden Reklam Performansını Etkiler?
+              {isEn ? 'Why Doctor Social Media Directly Affects Paid Ad ROI' : 'Doktor Sosyal Medya Yönetimi Neden Reklam Performansını Etkiler?'}
             </h2>
 
             <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-              Dijital reklamlar doğrudan satış gerçekleştirmez; hastanın dikkatini çeker. Asıl karar ise sonrasında gerçekleşir. Hasta profilinizi kontrol eder, sizi Google'da arar, yorumları okur ve karşılaştırır.
+              {isEn 
+                ? 'Digital ads generate awareness, but conversion happens when trust is confirmed. The patient examines your profile, Googles your background, reads reviews, and compares your work.' 
+                : 'Dijital reklamlar doğrudan satış gerçekleştirmez; hastanın dikkatini çeker. Asıl karar ise sonrasında gerçekleşir. Hasta profilinizi kontrol eder, sizi Google\'da arar, yorumları okur ve karşılaştırır.'}
             </p>
 
             <div className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] space-y-2">
-              <div className="text-xs font-bold text-[#446CB5]">Örnek Senaryo:</div>
+              <div className="text-xs font-bold text-[#446CB5]">{isEn ? 'Real-World Example:' : 'Örnek Senaryo:'}</div>
               <p className="text-xs text-[#222222] font-semibold">
-                "Dental Implant Turkey" veya "Rhinoplasty in Istanbul" reklamı gören bir hasta form doldurmadan önce doktoru araştırır. Güven veren içeriklerle karşılaşması satış görüşmesinin kalitesini doğrudan artırır.
+                {isEn 
+                  ? 'A patient seeing a "Dental Implant Turkey" or "Rhinoplasty Istanbul" ad checks the doctor before filling out a form. Finding authoritative, transparent video explanations immediately elevates consultation close rates.' 
+                  : '"Dental Implant Turkey" veya "Rhinoplasty in Istanbul" reklamı gören bir hasta form doldurmadan önce doktoru araştırır. Güven veren içeriklerle karşılaşması satış görüşmesinin kalitesini doğrudan artırır.'}
               </p>
             </div>
 
             <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-              Hasta sizi zaten tanıyarak görüşmeye başladığında satış ekibinizin sıfırdan güven oluşturması gerekmez.
+              {isEn 
+                ? 'When a patient begins the WhatsApp consultation already trusting the doctor, your sales coordinators do not need to fight uphill battles building initial credibility.' 
+                : 'Hasta sizi zaten tanıyarak görüşmeye başladığında satış ekibinizin sıfırdan güven oluşturması gerekmez.'}
             </p>
           </div>
 
           <div className="bg-white rounded-3xl p-8 border border-[#DDE2E8] space-y-4 shadow-xs">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <MessageSquareHeart className="w-3.5 h-3.5" />
-              <span>Dijital İtibar</span>
+              <span>{isEn ? 'Digital Reputation' : 'Dijital İtibar'}</span>
             </div>
 
             <h2 className="font-['Inter_Tight'] text-xl sm:text-2xl font-extrabold text-[#222222]">
-              Hasta Yorumları Doktor Markasının En Güçlü Parçasıdır
+              {isEn ? 'Patient Testimonials: The Strongest Pillar of Doctor Branding' : 'Hasta Yorumları Doktor Markasının En Güçlü Parçasıdır'}
             </h2>
 
             <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-              Sağlık turizminde güven yalnızca doktorun kendisini anlatmasıyla oluşmaz. Diğer hastaların deneyimleri karar sürecinde vital bir rol oynar.
+              {isEn 
+                ? 'In cross-border healthcare, trust is never built solely by what the doctor claims. Authentic stories and experiences from fellow international patients play a decisive role.' 
+                : 'Sağlık turizminde güven yalnızca doktorun kendisini anlatmasıyla oluşmaz. Diğer hastaların deneyimleri karar sürecinde vital bir rol oynar.'}
             </p>
 
             <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-              Hasta yorumlarını yalnızca Google puanı olarak değerlendirmiyoruz. Google yorumları, video deneyimleri, sosyal medya içerikleri ve uygun platformlardaki hasta değerlendirmelerini tutarlı bir dijital itibar sisteminde birleştiriyoruz.
+              {isEn 
+                ? 'We unify Google reviews, video interviews, social proof, and verified medical portal evaluations into a coherent digital reputation ecosystem.' 
+                : 'Hasta yorumlarını yalnızca Google puanı olarak değerlendirmiyoruz. Google yorumları, video deneyimleri, sosyal medya içerikleri ve uygun platformlardaki hasta değerlendirmelerini tutarlı bir dijital itibar sisteminde birleştiriyoruz.'}
             </p>
 
             <div className="p-4 rounded-2xl bg-[#EEF3FB] text-xs sm:text-sm font-bold text-[#446CB5]">
-              Buradaki amaç yapay bir mükemmellik görüntüsü değil, gerçek hasta deneyimlerini doğru şekilde görünür kılmaktır.
+              {isEn 
+                ? 'Our objective is never fabricated perfection, but rather illuminating genuine surgical success and compassionate care in a professional light.' 
+                : 'Buradaki amaç yapay bir mükemmellik görüntüsü değil, gerçek hasta deneyimlerini doğru şekilde görünür kılmaktır.'}
             </div>
           </div>
 
@@ -420,13 +545,15 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <FileText className="w-3.5 h-3.5" />
-              <span>İçerik Stratejisi</span>
+              <span>{isEn ? 'Content Architecture' : 'İçerik Stratejisi'}</span>
             </div>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              Doktor İçerik Yönetimi (5 Temel İçerik Sütunu)
+              {isEn ? 'Doctor Content Strategy: 5 Fundamental Pillars' : 'Doktor İçerik Yönetimi (5 Temel İçerik Sütunu)'}
             </h2>
             <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-              İyi bir doktor markası sürekli kendisini öven içerikler paylaşmaz. Bilgi verir, soruları cevaplar ve hastanın kafasındaki belirsizlikleri azaltır. İçerik stratejimizi hasta yolculuğuna göre planlıyoruz.
+              {isEn 
+                ? 'A premier medical personal brand never spams self-praise. It educates, answers burning questions, and eliminates uncertainties along the international patient journey.' 
+                : 'İyi bir doktor markası sürekli kendisini öven içerikler paylaşmaz. Bilgi verir, soruları cevaplar ve hastanın kafasındaki belirsizlikleri azaltır. İçerik stratejimizi hasta yolculuğuna göre planlıyoruz.'}
             </p>
           </div>
 
@@ -459,28 +586,34 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
                 <BrainCircuit className="w-3.5 h-3.5" />
-                <span>SEO & Yapay Zeka (GEO) Optimizasyonu</span>
+                <span>{isEn ? 'SEO & Generative Engine Optimization (GEO)' : 'SEO & Yapay Zeka (GEO) Optimizasyonu'}</span>
               </div>
 
               <h2 className="font-['Inter_Tight'] text-2xl sm:text-4xl font-black text-[#222222]">
-                Adınız Arandığında & AI'ya Sorulduğunda Ne Görünüyor?
+                {isEn ? 'What Surfaces When Patients Search or Ask AI About You?' : 'Adınız Arandığında & AI\'ya Sorulduğunda Ne Görünüyor?'}
               </h2>
 
               <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-                Bir hasta reklamınızı gördükten sonra Google'a doktorun adını yazar. Doktorun adı arandığında yalnızca Instagram hesabının çıkması yeterli değildir. Doktor web sitesi, uzmanlık sayfaları, röportajlar, makaleler, medya içerikleri ve Google Business profilleriyle güçlü bir dijital varlık oluşturuyoruz.
+                {isEn 
+                  ? 'Having only an Instagram account when a patient searches the surgeon’s name on Google is insufficient. We engineer a robust digital presence featuring dedicated doctor websites, specialty landing pages, medical interviews, peer citations, and verified Google Business entities.' 
+                  : 'Bir hasta reklamınızı gördükten sonra Google\'a doktorun adını yazar. Doktorun adı arandığında yalnızca Instagram hesabının çıkması yeterli değildir. Doktor web sitesi, uzmanlık sayfaları, röportajlar, makaleler, medya içerikleri ve Google Business profilleriyle güçlü bir dijital varlık oluşturuyoruz.'}
               </p>
 
               <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] space-y-3">
                 <h3 className="text-xs font-bold text-[#222222] uppercase tracking-wider">
-                  GEO (Generative Engine Optimization) Çağı:
+                  {isEn ? 'The GEO (Generative Engine Optimization) Era:' : 'GEO (Generative Engine Optimization) Çağı:'}
                 </h3>
                 <p className="text-xs text-[#595F69] leading-relaxed">
-                  Hastarlar artık ChatGPT ve Gemini'ye soruyor: <em>“Who are the best rhinoplasty surgeons in Istanbul?”</em> veya <em>“How can I find a reliable dental implant doctor in Turkey?”</em>. GEO çalışmalarımızla doktorunuzun dijital uzmanlık sinyallerini yapay zekanın anlayabileceği formatta yapılandırıyoruz.
+                  {isEn 
+                    ? 'Patients now query ChatGPT and Gemini: “Who are the best rhinoplasty surgeons in Istanbul?” or “How do I find a reputable dental implant specialist in Turkey?”. Our GEO methodologies structure your credentials and clinical data in semantic formats AI models recognize and cite.' 
+                    : 'Hastarlar artık ChatGPT ve Gemini\'ye soruyor: “Who are the best rhinoplasty surgeons in Istanbul?” veya “How can I find a reliable dental implant doctor in Turkey?”. GEO çalışmalarımızla doktorunuzun dijital uzmanlık sinyallerini yapay zekanın anlayabileceği formatta yapılandırıyoruz.'}
                 </p>
               </div>
 
               <div className="space-y-2">
-                <div className="text-xs font-bold text-[#222222]">Hedeflenen Arama Terimleri Örnekleri:</div>
+                <div className="text-xs font-bold text-[#222222]">
+                  {isEn ? 'Target Search Queries Examples:' : 'Hedeflenen Arama Terimleri Örnekleri:'}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {seoGeoKeywords.map((kw, idx) => (
                     <span key={idx} className="px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-semibold text-[#446CB5]">
@@ -495,7 +628,7 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
               <div className="rounded-2xl overflow-hidden border border-[#DDE2E8] shadow-md">
                 <img 
                   src="/images/doctor_geo_ai.jpg" 
-                  alt="Doktor SEO ve GEO Görünürlük Analizi" 
+                  alt="Doctor SEO and GEO Visibility Analysis" 
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -507,19 +640,21 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
         {/* Section 8: Doktor Markası ile Klinik Markası Birlikte Çalışmalıdır */}
         <div className="p-8 rounded-3xl bg-[#EEF3FB] border border-[#446CB5]/30 space-y-4 text-left">
           <h2 className="font-['Inter_Tight'] text-xl sm:text-2xl font-extrabold text-[#222222]">
-            Sağlık Turizminde Doktor Markası ile Klinik Markası Birlikte Çalışmalıdır
+            {isEn ? 'The Doctor Brand and Clinic Brand Must Work in Synergy' : 'Sağlık Turizminde Doktor Markası ile Klinik Markası Birlikte Çalışmalıdır'}
           </h2>
           <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-            Sağlık turizminde yalnızca klinik markasına yatırım yapmak her zaman yeterli değildir. Çünkü hasta operasyonu bir şirket logosuna yaptırmayacaktır; doktoru tanımak ister.
+            {isEn 
+              ? 'Investing solely in clinic branding is rarely enough in cross-border healthcare. Patients will not undergo surgery by a corporate logo; they demand to know their operating surgeon.' 
+              : 'Sağlık turizminde yalnızca klinik markasına yatırım yapmak her zaman yeterli değildir. Çünkü hasta operasyonu bir şirket logosuna yaptırmayacaktır; doktoru tanımak ister.'}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
             <div className="p-4 rounded-2xl bg-white border border-[#DDE2E8] space-y-1">
-              <div className="text-xs font-bold text-[#446CB5]">Klinik Markası</div>
-              <p className="text-xs text-[#222222]">Operasyonel güveni, organizasyonu ve sağlık turizmi deneyimini temsil eder.</p>
+              <div className="text-xs font-bold text-[#446CB5]">{isEn ? 'Clinic Brand' : 'Klinik Markası'}</div>
+              <p className="text-xs text-[#222222]">{isEn ? 'Represents operational trust, VIP hospitality, concierge logistics, and facilities.' : 'Operasyonel güveni, organizasyonu ve sağlık turizmi deneyimini temsil eder.'}</p>
             </div>
             <div className="p-4 rounded-2xl bg-white border border-[#DDE2E8] space-y-1">
-              <div className="text-xs font-bold text-[#446CB5]">Doktor Markası</div>
-              <p className="text-xs text-[#222222]">Uzmanlığı, tecrübeyi ve tıbbi güveni temsil eder.</p>
+              <div className="text-xs font-bold text-[#446CB5]">{isEn ? 'Doctor Brand' : 'Doktor Markası'}</div>
+              <p className="text-xs text-[#222222]">{isEn ? 'Represents clinical mastery, surgical precision, academic credentials, and personal reassurance.' : 'Uzmanlığı, tecrübeyi ve tıbbi güveni temsil eder.'}</p>
             </div>
           </div>
         </div>
@@ -529,13 +664,15 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="max-w-3xl space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>Hizmet Kapsamı</span>
+              <span>{isEn ? 'Service Scope' : 'Hizmet Kapsamı'}</span>
             </div>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              Biz Ne Yapıyoruz?
+              {isEn ? 'What We Deliver' : 'Biz Ne Yapıyoruz?'}
             </h2>
             <p className="text-xs sm:text-sm text-[#595F69]">
-              Doktor marka yönetimi hizmetimiz kapsamında dijital varlığınızı bütüncül olarak ele alıyoruz:
+              {isEn 
+                ? 'Under our doctor brand management umbrella, we manage your global digital presence end-to-end:' 
+                : 'Doktor marka yönetimi hizmetimiz kapsamında dijital varlığınızı bütüncül olarak ele alıyoruz:'}
             </p>
           </div>
 
@@ -552,17 +689,19 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
         {/* Section 10: Warning Banner */}
         <div className="p-8 rounded-3xl bg-white border-2 border-[#446CB5] space-y-4 shadow-sm">
           <h2 className="font-['Inter_Tight'] text-xl sm:text-2xl font-extrabold text-[#222222]">
-            Reklam Vermeden Önce Markanızı Hazırlayın
+            {isEn ? 'Prepare Your Personal Brand Before Spending on Ads' : 'Reklam Vermeden Önce Markanızı Hazırlayın'}
           </h2>
           <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
-            Sağlık turizminde reklam bütçesini artırmak her zaman daha fazla hasta anlamına gelmez. Bazen problem reklam kampanyasında değildir; hastanın reklamdan sonra karşılaştığı dijital dünyadır.
+            {isEn 
+              ? 'In medical tourism, increasing ad spend does not guarantee more patients. The issue often lies not in ad targeting, but in the lack of digital authority patients encounter upon clicking.' 
+              : 'Sağlık turizminde reklam bütçesini artırmak her zaman daha fazla hasta anlamına gelmez. Bazen problem reklam kampanyasında değildir; hastanın reklamdan sonra karşılaştığı dijital dünyadır.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <div className="flex-1 p-4 rounded-xl bg-[#EEF3FB] text-xs font-bold text-[#446CB5]">
-              Reklam sizi görünür hale getirir.
+              {isEn ? 'Advertising makes you visible.' : 'Reklam sizi görünür hale getirir.'}
             </div>
             <div className="flex-1 p-4 rounded-xl bg-[#16202E] text-xs font-bold text-white">
-              Markanız ise hastanın sizi tercih etmesi için gereken güveni oluşturur.
+              {isEn ? 'Your personal brand builds the trust required for patients to choose you.' : 'Markanız ise hastanın sizi tercih etmesi için gereken güveni oluşturur.'}
             </div>
           </div>
         </div>
@@ -571,10 +710,10 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
         <div className="space-y-6">
           <div className="max-w-3xl space-y-2">
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              Doktor Marka Yönetimi Hakkında Sık Sorulan Sorular
+              {isEn ? 'Frequently Asked Questions on Doctor Branding' : 'Doktor Marka Yönetimi Hakkında Sık Sorulan Sorular'}
             </h2>
             <p className="text-xs sm:text-sm text-[#595F69]">
-              Merak ettiğiniz tüm detayları aşağıda yanıtladık:
+              {isEn ? 'Detailed answers to common questions below:' : 'Merak ettiğiniz tüm detayları aşağıda yanıtladık:'}
             </p>
           </div>
 
@@ -606,15 +745,17 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
           <div className="max-w-3xl mx-auto space-y-4 relative z-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold text-[#60A5FA]">
               <Sparkles className="w-4 h-4" />
-              <span>Hemen Başlayın</span>
+              <span>{isEn ? 'Get Started Today' : 'Hemen Başlayın'}</span>
             </div>
 
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-4xl font-black tracking-tight leading-tight text-white">
-              Doktor Markanızı Bir Dijital Varlığa Dönüştürün
+              {isEn ? 'Transform Your Medical Career into a Global Digital Asset' : 'Doktor Markanızı Bir Dijital Varlığa Dönüştürün'}
             </h2>
 
             <p className="text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Bugün güçlü bir doktor markası yalnızca takipçi sayısıyla ölçülmez. Adınız arandığında ne çıktığı, hastaların hakkınızda ne söylediği ve oluşturduğunuz güven çok daha önemlidir. Uzmanlığınızı görünür, güvenilir ve sürdürülebilir bir kişisel markaya dönüştürelim.
+              {isEn 
+                ? 'Today, a commanding doctor brand is not measured by follower counts. What surfaces when your name is searched, what past patients testify, and the clinical trust you radiate matter far more. Let us transform your surgical expertise into a premier global personal brand.' 
+                : 'Bugün güçlü bir doktor markası yalnızca takipçi sayısıyla ölçülmez. Adınız arandığında ne çıktığı, hastaların hakkınızda ne söylediği ve oluşturduğunuz güven çok daha önemlidir. Uzmanlığınızı görünür, güvenilir ve sürdürülebilir bir kişisel markaya dönüştürelim.'}
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -622,7 +763,7 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
                 onClick={onOpenConsultation}
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-lg group"
               >
-                <span>Doktor Marka Danışmanlığı Alın</span>
+                <span>{isEn ? 'Schedule Doctor Brand Consultation' : 'Doktor Marka Danışmanlığı Alın'}</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 
@@ -630,7 +771,7 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
                 onClick={onBackToHome}
                 className="w-full sm:w-auto px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors cursor-pointer"
               >
-                <span>Ana Sayfaya Dön</span>
+                <span>{isEn ? 'Back to Home' : 'Ana Sayfaya Dön'}</span>
               </button>
             </div>
           </div>

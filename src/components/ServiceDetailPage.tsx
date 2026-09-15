@@ -19,6 +19,8 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { MASTER_SERVICES, ServiceItem } from '../data/masterPlanData';
+import { MASTER_SERVICES_EN } from '../i18n/masterPlanData.en';
+import { useLanguage } from '../context/LanguageContext';
 
 interface ServiceDetailPageProps {
   serviceId: string;
@@ -33,6 +35,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   onSelectService,
   onOpenConsultation
 }) => {
+  const { isEn } = useLanguage();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [faqCategory, setFaqCategory] = useState<string>('Tümü');
   const [faqSearchQuery, setFaqSearchQuery] = useState<string>('');
@@ -47,7 +50,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     kvkk: false
   });
 
-  const service: ServiceItem | undefined = MASTER_SERVICES.find(s => s.id === serviceId) || MASTER_SERVICES[0];
+  const servicesList = isEn ? MASTER_SERVICES_EN : MASTER_SERVICES;
+  const service: ServiceItem | undefined = servicesList.find(s => s.id === serviceId) || servicesList[0];
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -89,11 +93,20 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   };
 
   // Find next service for bottom navigation
-  const currentIndex = MASTER_SERVICES.findIndex(s => s.id === service.id);
-  const nextService = MASTER_SERVICES[(currentIndex + 1) % MASTER_SERVICES.length];
+  const currentIndex = servicesList.findIndex(s => s.id === service.id);
+  const nextService = servicesList[(currentIndex + 1) % servicesList.length];
 
   // Group FAQ categories for performance marketing page
-  const faqCategories = [
+  const faqCategories = isEn ? [
+    'All',
+    'General',
+    'Google Ads',
+    'Meta Ads',
+    'Yandex Ads',
+    'LinkedIn Ads',
+    'TikTok Ads',
+    'Conversion & Process'
+  ] : [
     'Tümü',
     'Genel',
     'Google Ads',
@@ -106,18 +119,20 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
   const getFaqGroup = (q: string): string => {
     const qLower = q.toLowerCase();
-    if (qLower.includes('google ads') || qLower.includes('google\'da')) return 'Google Ads';
+    if (qLower.includes('google ads') || qLower.includes('google\'da') || qLower.includes('google')) return 'Google Ads';
     if (qLower.includes('meta') || qLower.includes('facebook') || qLower.includes('instagram')) return 'Meta Ads';
     if (qLower.includes('yandex')) return 'Yandex Ads';
     if (qLower.includes('linkedin')) return 'LinkedIn Ads';
     if (qLower.includes('tiktok')) return 'TikTok Ads';
-    if (qLower.includes('dönüşüm') || qLower.includes('landing page') || qLower.includes('lead') || qLower.includes('çevirmene') || qLower.includes('başarıyı')) return 'Dönüşüm & Süreç';
-    return 'Genel';
+    if (qLower.includes('dönüşüm') || qLower.includes('landing page') || qLower.includes('lead') || qLower.includes('çevirmene') || qLower.includes('başarıyı') || qLower.includes('conversion') || qLower.includes('process')) {
+      return isEn ? 'Conversion & Process' : 'Dönüşüm & Süreç';
+    }
+    return isEn ? 'General' : 'Genel';
   };
 
   const filteredFaqs = service.faq.filter(item => {
     const group = getFaqGroup(item.q);
-    const matchesCat = faqCategory === 'Tümü' || group === faqCategory;
+    const matchesCat = (faqCategory === 'Tümü' || faqCategory === 'All') || group === faqCategory;
     const matchesSearch = item.q.toLowerCase().includes(faqSearchQuery.toLowerCase()) || 
                           item.a.toLowerCase().includes(faqSearchQuery.toLowerCase());
     return matchesCat && matchesSearch;
@@ -134,14 +149,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               onClick={onBackToHome}
               className="hover:text-[#446CB5] transition-colors cursor-pointer"
             >
-              Ana Sayfa
+              {isEn ? 'Home' : 'Ana Sayfa'}
             </button>
             <span>/</span>
             <button 
               onClick={onBackToHome}
               className="hover:text-[#446CB5] transition-colors cursor-pointer"
             >
-              Hizmetler
+              {isEn ? 'Services' : 'Hizmetler'}
             </button>
             <span>/</span>
             <span className="text-[#446CB5] font-bold">{service.title}</span>
@@ -152,7 +167,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-[#DDE2E8] text-xs font-semibold text-[#222222] hover:bg-[#EEF3FB] transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-3.5 h-3.5 text-[#446CB5]" />
-            <span>Tüm Hizmetlere Dön</span>
+            <span>{isEn ? 'All Services' : 'Tüm Hizmetlere Dön'}</span>
           </button>
         </div>
 
@@ -162,7 +177,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-bold text-[#446CB5]">
               <span className="w-2 h-2 rounded-full bg-[#446CB5]"></span>
-              <span>{service.category} Hizmeti</span>
+              <span>{service.category} {isEn ? 'Solution' : 'Hizmeti'}</span>
               <span className="text-[#DDE2E8]">|</span>
               <span className="text-[#595F69] font-medium">Master Plan V2.0</span>
             </div>
@@ -181,7 +196,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 onClick={onOpenConsultation}
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-sm font-semibold shadow-lg shadow-[#446CB5]/25 transition-all cursor-pointer"
               >
-                <span>Reklam Stratejinizi Planlayalım</span>
+                <span>{isEn ? 'Plan Your Growth Strategy' : 'Reklam Stratejinizi Planlayalım'}</span>
                 <ArrowRight className="w-4 h-4 text-white" />
               </button>
 
@@ -190,7 +205,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white border border-[#DDE2E8] hover:bg-[#EEF3FB] text-xs font-bold text-[#222222] transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#446CB5]" />
-                <span>0536 319 76 97</span>
+                <span>+90 536 319 76 97</span>
               </a>
             </div>
           </div>
@@ -201,10 +216,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               
               <div className="border-b border-[#DDE2E8] pb-4">
                 <div className="text-xs font-bold uppercase tracking-wider text-[#446CB5]">
-                  Öne Çıkan Standartlar
+                  {isEn ? 'Core Highlights & Standards' : 'Öne Çıkan Standartlar'}
                 </div>
                 <div className="font-['Inter_Tight'] text-lg font-bold text-[#222222] mt-1">
-                  {service.title} Yetkinlikleri
+                  {service.title} {isEn ? 'Capabilities' : 'Yetkinlikleri'}
                 </div>
               </div>
 
@@ -219,7 +234,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               {service.subChannels && (
                 <div className="pt-3 border-t border-[#DDE2E8] space-y-2">
-                  <div className="text-[11px] font-bold uppercase text-[#595F69]">Yönetilen Platformlar:</div>
+                  <div className="text-[11px] font-bold uppercase text-[#595F69]">
+                    {isEn ? 'Managed Channels & Platforms:' : 'Yönetilen Platformlar:'}
+                  </div>
                   <div className="flex flex-wrap gap-1.5">
                     {service.subChannels.map(ch => (
                       <span key={ch} className="px-3 py-1 rounded-lg bg-[#EEF3FB] text-[#446CB5] font-semibold text-xs">
@@ -999,13 +1016,15 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           
           <div className="text-center space-y-3">
             <div className="text-xs font-bold uppercase tracking-wider text-[#446CB5]">
-              Bilgi Tabanı & SSS
+              {isEn ? 'Knowledge Base & FAQ' : 'Bilgi Tabanı & SSS'}
             </div>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-              {service.title} Sıkça Sorulan Sorular
+              {service.title} {isEn ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
             </h2>
             <p className="text-xs sm:text-sm text-[#595F69]">
-              Platformlar, stratejik planlama, bütçelendirme ve yasal koşullar hakkında detaylı bilgilendirme.
+              {isEn 
+                ? 'Comprehensive guidance on ad platforms, strategic budgeting, lead flows, and regulatory compliance.'
+                : 'Platformlar, stratejik planlama, bütçelendirme ve yasal koşullar hakkında detaylı bilgilendirme.'}
             </p>
           </div>
 
@@ -1017,7 +1036,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               <Search className="w-4 h-4 text-[#595F69] absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Arama yapın (örn: bütçe, Google, Yandex, form)..."
+                placeholder={isEn ? 'Search questions (e.g., budget, Google, CRM, lead)...' : 'Arama yapın (örn: bütçe, Google, Yandex, form)...'}
                 value={faqSearchQuery}
                 onChange={(e) => setFaqSearchQuery(e.target.value)}
                 className="w-full pl-9 pr-4 py-2 rounded-xl bg-white border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5] shadow-xs"
@@ -1078,7 +1097,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
             {filteredFaqs.length === 0 && (
               <div className="p-8 text-center bg-white rounded-2xl border border-[#DDE2E8] text-xs text-[#595F69]">
-                Kriterlere uygun soru bulunamadı. Lütfen üstteki filtreleri değiştirin veya bize sorun.
+                {isEn ? 'No questions matched your search. Try another query or contact us.' : 'Kriterlere uygun soru bulunamadı. Lütfen üstteki filtreleri değiştirin veya bize sorun.'}
               </div>
             )}
           </div>
@@ -1090,13 +1109,15 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           
           <div className="text-center space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-[#60A5FA]">
-              Strateji & Planlama
+              {isEn ? 'Strategy & Consultation' : 'Strateji & Planlama'}
             </span>
             <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-bold text-white">
-              {service.title} Görüşmesi Planlayın
+              {isEn ? `Schedule Your ${service.title} Strategy Session` : `${service.title} Görüşmesi Planlayın`}
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
-              Kliniğinizin büyüme hedeflerine uygun bütçelendirmeyi ve kampanya dağılımını birlikte belirleyelim.
+              {isEn 
+                ? 'Let us map out target markets, scalable budgets, and multilingual ad architectures aligned with your clinic’s growth goals.'
+                : 'Kliniğinizin büyüme hedeflerine uygun bütçelendirmeyi ve kampanya dağılımını birlikte belirleyelim.'}
             </p>
           </div>
 
@@ -1106,10 +1127,12 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <CheckCircle2 className="w-7 h-7" />
               </div>
               <h3 className="font-['Inter_Tight'] text-xl font-bold text-white">
-                Başvurunuz Alındı
+                {isEn ? 'Inquiry Received Successfully' : 'Başvurunuz Alındı'}
               </h3>
               <p className="text-xs text-slate-300">
-                <strong>{service.title}</strong> koordinatörümüz 24 saat içinde sizinle ön değerlendirme linkini paylaşacaktır.
+                {isEn 
+                  ? <>Our <strong>{service.title}</strong> strategist will reach out within 24 hours with your preliminary roadmap.</>
+                  : <><strong>{service.title}</strong> koordinatörümüz 24 saat içinde sizinle ön değerlendirme linkini paylaşacaktır.</>}
               </p>
             </div>
           ) : (
@@ -1119,7 +1142,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <input
                   type="text"
                   required
-                  placeholder="Adınız Soyadınız *"
+                  placeholder={isEn ? 'Full Name *' : 'Adınız Soyadınız *'}
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#60A5FA]"
@@ -1127,7 +1150,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <input
                   type="text"
                   required
-                  placeholder="Kurum / Klinik Adı *"
+                  placeholder={isEn ? 'Clinic / Organization Name *' : 'Kurum / Klinik Adı *'}
                   value={formData.clinicName}
                   onChange={(e) => setFormData({ ...formData, clinicName: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#60A5FA]"
@@ -1138,7 +1161,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <input
                   type="email"
                   required
-                  placeholder="İş E-postası *"
+                  placeholder={isEn ? 'Business Email *' : 'İş E-postası *'}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#60A5FA]"
@@ -1146,7 +1169,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <input
                   type="tel"
                   required
-                  placeholder="Telefon / WhatsApp *"
+                  placeholder={isEn ? 'Phone / WhatsApp *' : 'Telefon / WhatsApp *'}
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#60A5FA]"
@@ -1155,7 +1178,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               <textarea
                 rows={2}
-                placeholder="Öncelikli hedef pazarlarınız veya sormak istedikleriniz..."
+                placeholder={isEn ? 'Priority target countries, treatments, or questions...' : 'Öncelikli hedef pazarlarınız veya sormak istedikleriniz...'}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#60A5FA]"
@@ -1171,7 +1194,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   className="mt-0.5 rounded border-slate-600 text-[#446CB5] focus:ring-[#60A5FA] cursor-pointer"
                 />
                 <label htmlFor="serviceKvkk" className="text-[11px] text-slate-300 cursor-pointer">
-                  Aydınlatma metnini onaylıyorum (Hasta sağlık verisi paylaşılmamalıdır).
+                  {isEn 
+                    ? 'I agree to the privacy policy and terms (No confidential patient medical data should be submitted).' 
+                    : 'Aydınlatma metnini onaylıyorum (Hasta sağlık verisi paylaşılmamalıdır).'}
                 </label>
               </div>
 
@@ -1180,9 +1205,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 disabled={formLoading}
                 className="w-full py-3.5 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-bold shadow-lg shadow-[#446CB5]/30 flex items-center justify-center gap-2 cursor-pointer transition-all disabled:opacity-50"
               >
-                {formLoading ? <span>Gönderiliyor...</span> : (
+                {formLoading ? <span>{isEn ? 'Submitting...' : 'Gönderiliyor...'}</span> : (
                   <>
-                    <span>Reklam Stratejinizi Planlayalım</span>
+                    <span>{isEn ? 'Request Growth Strategy Session' : 'Reklam Stratejinizi Planlayalım'}</span>
                     <Send className="w-4 h-4 text-white" />
                   </>
                 )}
@@ -1199,14 +1224,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             onClick={onBackToHome}
             className="text-xs font-semibold text-[#595F69] hover:text-[#446CB5] transition-colors cursor-pointer"
           >
-            ← Ana Sayfaya ve Tüm Çözümlere Dön
+            {isEn ? '← Back to Home & All Solutions' : '← Ana Sayfaya ve Tüm Çözümlere Dön'}
           </button>
 
           <button
             onClick={() => onSelectService(nextService.id)}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-[#DDE2E8] hover:border-[#446CB5] text-xs font-bold text-[#222222] transition-colors cursor-pointer shadow-xs"
           >
-            <span>Sıradaki Hizmet: {nextService.title}</span>
+            <span>{isEn ? 'Next Solution:' : 'Sıradaki Hizmet:'} {nextService.title}</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#446CB5]" />
           </button>
         </div>
