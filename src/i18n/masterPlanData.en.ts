@@ -567,7 +567,10 @@ export const MASTER_BRANCHES_EN: BranchItem[] = [
 
 export const MASTER_MARKETS_EN: MarketItem[] = [
   {
+    id: 'ingiltere-saglik-turizmi-reklamlari',
     slug: 'ingiltere-saglik-turizmi-reklamlari',
+    countryName: 'United Kingdom (UK)',
+    flagEmoji: '🇬🇧',
     title: 'United Kingdom (UK) Medical Tourism Advertising',
     badge: 'UK Market Leadership',
     seoTitle: 'UK Medical Tourism Advertising | UK Patient Acquisition',
@@ -596,7 +599,10 @@ export const MASTER_MARKETS_EN: MarketItem[] = [
     ]
   },
   {
+    id: 'almanya-saglik-turizmi-reklamlari',
     slug: 'almanya-saglik-turizmi-reklamlari',
+    countryName: 'Germany (DACH)',
+    flagEmoji: '🇩🇪',
     title: 'Germany (DACH) Medical Tourism Advertising',
     badge: 'DACH German Precision',
     seoTitle: 'Germany Medical Tourism Advertising | DACH Patient Acquisition',
@@ -625,7 +631,10 @@ export const MASTER_MARKETS_EN: MarketItem[] = [
     ]
   },
   {
+    id: 'fransa-saglik-turizmi-reklamlari',
     slug: 'fransa-saglik-turizmi-reklamlari',
+    countryName: 'France',
+    flagEmoji: '🇫🇷',
     title: 'France Medical Tourism Advertising',
     badge: 'Francophone Europe',
     seoTitle: 'France Medical Tourism Advertising | French Patient Acquisition',
@@ -654,7 +663,10 @@ export const MASTER_MARKETS_EN: MarketItem[] = [
     ]
   },
   {
+    id: 'hollanda-saglik-turizmi-reklamlari',
     slug: 'hollanda-saglik-turizmi-reklamlari',
+    countryName: 'Netherlands',
+    flagEmoji: '🇳🇱',
     title: 'Netherlands & Benelux Medical Tourism Advertising',
     badge: 'Benelux Market',
     seoTitle: 'Netherlands Medical Tourism Advertising | Benelux Patient Growth',
@@ -685,7 +697,9 @@ export const MASTER_MARKETS_EN: MarketItem[] = [
 
 export const MASTER_CITIES_EN: CityItem[] = [
   {
+    id: 'istanbul-saglik-turizmi-reklam-ajansi',
     slug: 'istanbul-saglik-turizmi-reklam-ajansi',
+    cityName: 'Istanbul',
     title: 'Istanbul Medical Tourism Advertising Agency',
     badge: 'Global Healthcare Capital',
     seoTitle: 'Istanbul Medical Tourism Advertising Agency | Overseas Marketing',
@@ -714,7 +728,9 @@ export const MASTER_CITIES_EN: CityItem[] = [
     ]
   },
   {
+    id: 'antalya-saglik-turizmi-reklam-ajansi',
     slug: 'antalya-saglik-turizmi-reklam-ajansi',
+    cityName: 'Antalya',
     title: 'Antalya Medical Tourism Advertising Agency',
     badge: 'Treatment & Vacation Hub',
     seoTitle: 'Antalya Medical Tourism Advertising Agency | Dental & Aesthetic',
@@ -743,7 +759,9 @@ export const MASTER_CITIES_EN: CityItem[] = [
     ]
   },
   {
+    id: 'izmir-saglik-turizmi-reklam-ajansi',
     slug: 'izmir-saglik-turizmi-reklam-ajansi',
+    cityName: 'Izmir',
     title: 'Izmir Medical Tourism Advertising Agency',
     badge: 'Boutique Medical Tourism',
     seoTitle: 'Izmir Medical Tourism Advertising Agency | Aegean Medical Marketing',
@@ -772,7 +790,9 @@ export const MASTER_CITIES_EN: CityItem[] = [
     ]
   },
   {
+    id: 'ankara-saglik-turizmi-reklam-ajansi',
     slug: 'ankara-saglik-turizmi-reklam-ajansi',
+    cityName: 'Ankara',
     title: 'Ankara Medical Tourism Advertising Agency',
     badge: 'Academic & Complex Surgery',
     seoTitle: 'Ankara Medical Tourism Advertising Agency | Advanced Surgery Marketing',

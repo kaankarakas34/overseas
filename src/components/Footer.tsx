@@ -133,16 +133,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                 {isEn ? 'Target Markets & Hubs' : 'Hedef Pazarlar & Şehirler'}
               </div>
               <div className="grid grid-cols-2 gap-1.5 text-xs mb-4">
-                {currentMarkets.map((m) => (
-                  <Link
-                    key={m.slug}
-                    to={`/${m.slug}`}
-                    className="text-slate-300 hover:text-white transition-colors py-0.5 flex items-center gap-1"
-                  >
-                    <span className="text-xs">{m.flagEmoji}</span>
-                    <span>{m.countryName.split(' ')[0]}</span>
-                  </Link>
-                ))}
+                {currentMarkets.map((m) => {
+                  const country = m.countryName || m.title || '';
+                  const shortName = country.includes(' ') ? country.split(' ')[0] : country;
+                  return (
+                    <Link
+                      key={m.slug}
+                      to={`/${m.slug}`}
+                      className="text-slate-300 hover:text-white transition-colors py-0.5 flex items-center gap-1"
+                    >
+                      <span className="text-xs">{m.flagEmoji || '🌐'}</span>
+                      <span>{shortName}</span>
+                    </Link>
+                  );
+                })}
                 {currentCities.map((c) => (
                   <Link
                     key={c.slug}
@@ -150,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                     className="text-slate-300 hover:text-white transition-colors py-0.5 flex items-center gap-1"
                   >
                     <span className="w-1 h-1 rounded-full bg-slate-500"></span>
-                    <span>{c.cityName}</span>
+                    <span>{c.cityName || c.title || ''}</span>
                   </Link>
                 ))}
               </div>
