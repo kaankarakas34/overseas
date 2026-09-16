@@ -20,7 +20,7 @@ import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 import { SEOHead } from './components/SEOHead';
 import { JsonLdSchema } from './components/JsonLdSchema';
 import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from './data/masterPlanData';
-import { MASTER_SERVICES_EN } from './i18n/masterPlanData.en';
+import { MASTER_SERVICES_EN, MASTER_BRANCHES_EN, MASTER_MARKETS_EN, MASTER_CITIES_EN } from './i18n/masterPlanData.en';
 import { useLanguage } from './context/LanguageContext';
 import { SEO_ARTICLES, SeoArticleItem } from './data/seoArticlesData';
 
@@ -31,6 +31,8 @@ const BranchDetailPage = lazy(() => import('./components/BranchDetailPage').then
 const MarketDetailPage = lazy(() => import('./components/MarketDetailPage').then(m => ({ default: m.MarketDetailPage })));
 const CityDetailPage = lazy(() => import('./components/CityDetailPage').then(m => ({ default: m.CityDetailPage })));
 const SeoArticlePage = lazy(() => import('./components/SeoArticlePage').then(m => ({ default: m.SeoArticlePage })));
+const NotFoundPage = lazy(() => import('./components/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
+const B2BOutreachLandingPage = lazy(() => import('./components/B2BOutreachLandingPage').then(m => ({ default: m.B2BOutreachLandingPage })));
 
 // Loading Spinner for Code Splitting Suspense
 const PageLoadingFallback = () => (
@@ -59,7 +61,7 @@ const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOp
           <SEOHead
             title={service.seoTitle || `${service.title} | Overseas Marketing`}
             description={service.metaDesc || service.shortDesc}
-            canonicalUrl={`https://overseas.marketing/hizmetler/${service.id}`}
+            canonicalUrl={`https://www.overseas.marketing/hizmetler/${service.id}`}
           />
           <JsonLdSchema type="service" service={service} />
         </>
@@ -75,11 +77,13 @@ const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOp
 };
 
 // Branch Wrapper
-const BranchPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+const BranchPageWrapper: React.FC<{ slug?: string; onOpenConsultation: () => void }> = ({ slug: propSlug, onOpenConsultation }) => {
+  const { isEn } = useLanguage();
   const { branchSlug } = useParams<{ branchSlug: string }>();
   const navigate = useNavigate();
-  const activeSlug = branchSlug || 'sac-ekimi-reklam-ajansi';
-  const branch = MASTER_BRANCHES.find((b) => b.slug === activeSlug);
+  const activeSlug = propSlug || branchSlug || 'sac-ekimi-reklam-ajansi';
+  const branchesList = isEn ? MASTER_BRANCHES_EN : MASTER_BRANCHES;
+  const branch = branchesList.find((b) => b.slug === activeSlug) || MASTER_BRANCHES.find((b) => b.slug === activeSlug);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -92,7 +96,7 @@ const BranchPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
           <SEOHead
             title={branch.seoTitle}
             description={branch.metaDesc}
-            canonicalUrl={`https://overseas.marketing/${branch.slug}`}
+            canonicalUrl={`https://www.overseas.marketing/${branch.slug}`}
           />
           <JsonLdSchema type="branch" branch={branch} />
         </>
@@ -108,11 +112,13 @@ const BranchPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
 };
 
 // Market Wrapper
-const MarketPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+const MarketPageWrapper: React.FC<{ slug?: string; onOpenConsultation: () => void }> = ({ slug: propSlug, onOpenConsultation }) => {
+  const { isEn } = useLanguage();
   const { marketSlug } = useParams<{ marketSlug: string }>();
   const navigate = useNavigate();
-  const activeSlug = marketSlug || 'ingiltere-saglik-turizmi-reklamlari';
-  const market = MASTER_MARKETS.find((m) => m.slug === activeSlug);
+  const activeSlug = propSlug || marketSlug || 'ingiltere-saglik-turizmi-reklamlari';
+  const marketsList = isEn ? MASTER_MARKETS_EN : MASTER_MARKETS;
+  const market = marketsList.find((m) => m.slug === activeSlug) || MASTER_MARKETS.find((m) => m.slug === activeSlug);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -125,7 +131,7 @@ const MarketPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
           <SEOHead
             title={market.seoTitle}
             description={market.metaDesc}
-            canonicalUrl={`https://overseas.marketing/${market.slug}`}
+            canonicalUrl={`https://www.overseas.marketing/${market.slug}`}
           />
           <JsonLdSchema type="market" market={market} />
         </>
@@ -141,11 +147,13 @@ const MarketPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpe
 };
 
 // City Wrapper
-const CityPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+const CityPageWrapper: React.FC<{ slug?: string; onOpenConsultation: () => void }> = ({ slug: propSlug, onOpenConsultation }) => {
+  const { isEn } = useLanguage();
   const { citySlug } = useParams<{ citySlug: string }>();
   const navigate = useNavigate();
-  const activeSlug = citySlug || 'istanbul-saglik-turizmi-reklam-ajansi';
-  const city = MASTER_CITIES.find((c) => c.slug === activeSlug);
+  const activeSlug = propSlug || citySlug || 'istanbul-saglik-turizmi-reklam-ajansi';
+  const citiesList = isEn ? MASTER_CITIES_EN : MASTER_CITIES;
+  const city = citiesList.find((c) => c.slug === activeSlug) || MASTER_CITIES.find((c) => c.slug === activeSlug);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -158,7 +166,7 @@ const CityPageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenC
           <SEOHead
             title={city.seoTitle}
             description={city.metaDesc}
-            canonicalUrl={`https://overseas.marketing/${city.slug}`}
+            canonicalUrl={`https://www.overseas.marketing/${city.slug}`}
           />
           <JsonLdSchema type="city" city={city} />
         </>
@@ -191,7 +199,7 @@ const DoctorBrandingPageWrapper: React.FC<{ onOpenConsultation: () => void }> = 
         description={isEn 
           ? "Physician personal brand positioning, digital PR, international patient visibility, and customized medical content strategy." 
           : "Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri."}
-        canonicalUrl="https://overseas.marketing/doktor-marka-yonetimi"
+        canonicalUrl="https://www.overseas.marketing/doktor-marka-yonetimi"
       />
       <JsonLdSchema type="doctor-branding" />
       <DoctorBrandingPage
@@ -218,12 +226,17 @@ const HomePage: React.FC<{
   onOpenConsultation: () => void;
   scrollToSection: (id: string) => void;
 }> = ({ onSelectService, onNavigateDoctorBranding, onOpenConsultation, scrollToSection }) => {
+  const { isEn } = useLanguage();
   return (
     <>
       <SEOHead
-        title="Sağlık Turizmi Reklam Ajansı | Overseas Marketing"
-        description="Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım."
-        canonicalUrl="https://overseas.marketing/"
+        title={isEn
+          ? "Health Tourism Advertising Agency | Overseas Marketing"
+          : "Sağlık Turizmi Reklam Ajansı | Overseas Marketing"}
+        description={isEn
+          ? "Performance marketing, international SEO, GEO, high-converting medical websites, specialized CRM, and AI automation for medical tourism. Let’s plan your growth together."
+          : "Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım."}
+        canonicalUrl="https://www.overseas.marketing/"
       />
       <JsonLdSchema type="home" />
 
@@ -296,17 +309,21 @@ export const App: React.FC = () => {
     }
   };
 
+  const isStandaloneLanding = location.pathname === '/b2b-linkedin-outreach';
+
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#222222] flex flex-col selection:bg-[#446CB5] selection:text-white">
-      <Navbar
-        onNavigateHome={handleNavigateHome}
-        onNavigateService={handleNavigateService}
-        onNavigateAbout={() => scrollToSection('hakkimizda')}
-        onNavigateBlog={() => scrollToSection('rehber')}
-        onNavigateCases={() => scrollToSection('referanslar')}
-        onNavigateContact={() => scrollToSection('iletisim')}
-        onOpenConsultation={() => setIsConsultationModalOpen(true)}
-      />
+    <div className={`min-h-screen flex flex-col selection:bg-[#0A66C2] selection:text-white ${isStandaloneLanding ? 'bg-[#0E1726] text-slate-100' : 'bg-[#F8FAFC] text-[#222222]'}`}>
+      {!isStandaloneLanding && (
+        <Navbar
+          onNavigateHome={handleNavigateHome}
+          onNavigateService={handleNavigateService}
+          onNavigateAbout={() => scrollToSection('hakkimizda')}
+          onNavigateBlog={() => scrollToSection('rehber')}
+          onNavigateCases={() => scrollToSection('referanslar')}
+          onNavigateContact={() => scrollToSection('iletisim')}
+          onOpenConsultation={() => setIsConsultationModalOpen(true)}
+        />
+      )}
 
       <main className="flex-grow">
         <Suspense fallback={<PageLoadingFallback />}>
@@ -340,7 +357,7 @@ export const App: React.FC = () => {
               <Route
                 key={b.slug}
                 path={`/${b.slug}`}
-                element={<BranchPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+                element={<BranchPageWrapper slug={b.slug} onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
             ))}
 
@@ -349,7 +366,7 @@ export const App: React.FC = () => {
               <Route
                 key={m.slug}
                 path={`/${m.slug}`}
-                element={<MarketPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+                element={<MarketPageWrapper slug={m.slug} onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
             ))}
 
@@ -358,7 +375,7 @@ export const App: React.FC = () => {
               <Route
                 key={c.slug}
                 path={`/${c.slug}`}
-                element={<CityPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+                element={<CityPageWrapper slug={c.slug} onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
               />
             ))}
 
@@ -371,34 +388,39 @@ export const App: React.FC = () => {
               />
             ))}
 
-            {/* Fallback */}
+            {/* B2B LinkedIn Outreach Standalone Campaign Landing Page */}
+            <Route
+              path="/b2b-linkedin-outreach"
+              element={<B2BOutreachLandingPage />}
+            />
+
+            {/* Fallback 404 */}
             <Route
               path="*"
               element={
-                <HomePage
-                  onSelectService={handleNavigateService}
-                  onNavigateDoctorBranding={handleNavigateDoctorBranding}
-                  onOpenConsultation={() => setIsConsultationModalOpen(true)}
-                  scrollToSection={scrollToSection}
-                />
+                <NotFoundPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />
               }
             />
           </Routes>
         </Suspense>
       </main>
 
-      <Footer
-        onSelectService={handleNavigateService}
-        onNavigateDoctorBranding={handleNavigateDoctorBranding}
-        onOpenConsultation={() => setIsConsultationModalOpen(true)}
-      />
+      {!isStandaloneLanding && (
+        <>
+          <Footer
+            onSelectService={handleNavigateService}
+            onNavigateDoctorBranding={handleNavigateDoctorBranding}
+            onOpenConsultation={() => setIsConsultationModalOpen(true)}
+          />
 
-      <ConsultationModal
-        isOpen={isConsultationModalOpen}
-        onClose={() => setIsConsultationModalOpen(false)}
-      />
+          <ConsultationModal
+            isOpen={isConsultationModalOpen}
+            onClose={() => setIsConsultationModalOpen(false)}
+          />
 
-      <WhatsAppFloatingButton />
+          <WhatsAppFloatingButton />
+        </>
+      )}
     </div>
   );
 };

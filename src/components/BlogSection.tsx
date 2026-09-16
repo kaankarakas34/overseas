@@ -107,12 +107,12 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
                 }`}
               >
                 {f === 'all' 
-                  ? (isEn ? 'All Tiers' : 'Tüm Düzeyler')
+                  ? (isEn ? 'All Guides' : 'Tüm Rehberler')
                   : f === 'BOFU' 
-                  ? (isEn ? 'High-Intent (BOFU)' : 'Ticari (BOFU)')
+                  ? (isEn ? 'Clinic & Conversion' : 'Klinik & Dönüşüm')
                   : f === 'MOFU' 
-                  ? (isEn ? 'Process (MOFU)' : 'Süreç (MOFU)')
-                  : (isEn ? 'Basics (TOFU)' : 'Temel (TOFU)')}
+                  ? (isEn ? 'Market & Process' : 'Pazar & Süreç')
+                  : (isEn ? 'Fundamentals & Basics' : 'Temel & Mevzuat')}
               </button>
             ))}
           </div>

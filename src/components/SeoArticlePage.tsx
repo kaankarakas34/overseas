@@ -44,7 +44,7 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
   };
 
   // Structured JSON-LD Data for Article, Breadcrumb and FAQPage
-  const canonicalUrl = `https://overseas.marketing${article.url}`;
+  const canonicalUrl = `https://www.overseas.marketing${article.url}`;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -57,19 +57,19 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
     description: article.metaDesc,
     author: {
       '@type': 'Organization',
-      name: 'Overseas Marketing',
-      url: 'https://overseas.marketing'
+      name: 'Overseas Marketing Medikal SEO Ekibi',
+      url: 'https://www.overseas.marketing'
     },
     publisher: {
       '@type': 'Organization',
       name: 'Overseas Marketing',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://overseas.marketing/logo2/siyah.png'
+        url: 'https://www.overseas.marketing/logo2/siyah.png'
       }
     },
-    datePublished: '2026-01-01',
-    dateModified: '2026-09-15',
+    datePublished: '2026-01-15',
+    dateModified: '2026-09-16',
     keywords: [article.primaryKeyword, ...article.secondaryKeywords].join(', ')
   };
 
@@ -94,13 +94,13 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
         '@type': 'ListItem',
         position: 1,
         name: 'Ana Sayfa',
-        item: 'https://overseas.marketing/'
+        item: 'https://www.overseas.marketing/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Sağlık Turizmi Rehberi',
-        item: 'https://overseas.marketing/#rehber'
+        item: 'https://www.overseas.marketing/#rehber'
       },
       {
         '@type': 'ListItem',
@@ -118,6 +118,7 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
         title={article.seoTitle}
         description={article.metaDesc}
         canonicalUrl={canonicalUrl}
+        hasEnAlternate={false}
       />
 
       {/* JSON-LD Injections */}
@@ -174,12 +175,12 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-1.5">
                 <UserCheck className="w-4 h-4 text-[#446CB5]" />
-                <span>Hazırlayan: <strong>{article.author}</strong></span>
+                <span>Hazırlayan: <strong>{article.author === 'Overseas Uzman Kurulu' ? 'Overseas Medikal SEO Ekibi' : article.author}</strong></span>
               </div>
               <span>•</span>
               <div className="flex items-center gap-1.5">
                 <FileCheck className="w-4 h-4 text-emerald-600" />
-                <span>Denetim: <strong>{article.reviewer}</strong></span>
+                <span>Mevzuat Denetimi: <strong>{article.reviewer === 'Medikal Pazarlama Masası' ? 'Sağlık Turizmi Mevzuat Masası' : article.reviewer}</strong></span>
               </div>
               <span>•</span>
               <div className="flex items-center gap-1.5">

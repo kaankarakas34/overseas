@@ -70,15 +70,15 @@ const fullArticles = rawItems.map((item) => {
   
   // Default sources if empty
   const sources = item.sources.length > 0 ? item.sources : [
-    { title: 'Sağlık Turizmi Daire Başkanlığı', url: 'https://shgmturizmdb.saglik.gov.tr/' },
+    { title: 'T.C. Sağlık Bakanlığı Sağlık Turizmi Daire Başkanlığı', url: 'https://shgmturizmdb.saglik.gov.tr/' },
     { title: 'HealthTürkiye Resmî Portalı', url: 'https://healthturkiye.gov.tr/tr/homepage' }
   ];
 
   // Quick answer
-  const quickAnswer = `${item.rawTitle}, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; ${primaryKw} konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.`;
+  let quickAnswer = `${item.rawTitle}, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; ${primaryKw} konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.`;
 
   // Custom Sections tailored by group
-  const sections = [
+  let sections = [
     {
       heading: `${item.rawTitle} Genel Bakış ve Kapsamı`,
       subheading: '2026 Mevzuat ve Pazar Standartları',
@@ -115,7 +115,7 @@ const fullArticles = rawItems.map((item) => {
   ];
 
   // Tailored FAQs
-  const faqs = [
+  let faqs = [
     {
       q: `${item.rawTitle} konusunda dikkat edilmesi gereken en önemli husus nedir?`,
       a: `En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir.`
@@ -129,6 +129,178 @@ const fullArticles = rawItems.map((item) => {
       a: 'Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar.'
     }
   ];
+
+  // Specific high-intent overrides for articles highlighted in the SEO report
+  if (item.url === '/saglik-turizmi/nedir') {
+    quickAnswer = 'Sağlık turizmi; bireylerin sağlığını korumak, iyileştirmek, cerrahi operasyon geçirmek veya rehabilite olmak amacıyla ikamet ettikleri ülkeden başka bir ülkeye seyahat ederek sağlık ve turizm hizmetlerini birlikte almasıdır. Medikal turizm, termal turizm ve ileri yaş/engelli turizmi olmak üzere üç temel kategoride incelenir.';
+    sections = [
+      {
+        heading: 'Sağlık Turizminin Tanımı ve Üç Temel Türü',
+        subheading: 'Uluslararası Sağlık Örgütü ve Bakanlık Standartları',
+        paragraphs: [
+          'Sağlık turizmi; bir kişinin planlı olarak kendi ülkesi dışındaki bir sağlık kuruluşuna başvurarak tıbbi muayene, tetkik, cerrahi operasyon, estetik girişim veya rehabilitasyon hizmeti almasını ifade eder.',
+          'Dünya Sağlık Örgütü (WHO) ve T.C. Sağlık Bakanlığı sınıflandırmasına göre sağlık turizmi üç ana dala ayrılır: 1) Medikal Turizm (Cerrahi, diş, saç ekimi, onkoloji, tüp bebek), 2) Termal ve Spa Turizmi (Kaplıca ve hidroterapi tedavileri), 3) İleri Yaş ve Engelli Bakım Turizmi.'
+        ],
+        bulletPoints: [
+          'Medikal Turizm: Hastane ve kliniklerde uzman hekimlerce gerçekleştirilen cerrahi ve invaziv tedaviler.',
+          'Termal Turizm: Türkiye’nin zengin jeotermal kaynaklarıyla sunulan fizik tedavi ve rehabilitasyon uygulamaları.',
+          'Yaşlı ve Engelli Turizmi: Uzun dönemli bakım, geriatri ve refakat hizmetleri.'
+        ]
+      },
+      {
+        heading: 'Sağlık Turizmi Ekosisteminin Temel Aktörleri',
+        subheading: 'Hizmet Sunucuları ve Yasal Süreç Ortakları',
+        paragraphs: [
+          'Sağlık turizmi yalnızca hastane ile hasta arasındaki bir işlem değildir; regüle edilmiş bir uluslararası süreçtir. Ekosistemin temel bileşenleri şunlardır: Akredite Sağlık Tesisleri (Hastaneler, Tıp Merkezleri, Poliklinikler), T.C. Sağlık Bakanlığı Yetkili Uluslararası Sağlık Turizmi Aracı Kuruluşları (A Grubu Seyahat Acentaları), USHAŞ (Uluslararası Sağlık Hizmetleri A.Ş.) ve dijital büyüme/iletişim ajansları.'
+        ],
+        table: {
+          headers: ['Aktör / Kuruluş', 'Sorumluluk Alanı', 'Zorunlu Belge / Standart'],
+          rows: [
+            ['Sağlık Tesisleri', 'Tıbbi teşhis, cerrahi tedavi ve klinik takip', 'Uluslararası Sağlık Turizmi Yetki Belgesi & Ruhsat'],
+            ['Yetkili Aracı Kuruluşlar', 'Ulaşım, konaklama, tercüme ve refakat', 'TÜRSAB A Grubu Belgesi & Sağlık Bakanlığı Yetki Belgesi'],
+            ['USHAŞ & HealthTürkiye', 'Devlet koordinasyonu ve uluslararası tanıtım', 'Kamu ve Bakanlık Denetimi'],
+            ['Sağlık Turizmi Reklam Ajansı', 'Çok dilli reklam, SEO, CRM ve hasta iletişimi', 'Sağlık Mevzuatı (K8) & KVKK/GDPR Uyumu']
+          ]
+        },
+        callout: {
+          title: 'Resmî Mevzuat Notu',
+          text: 'Türkiye’de uluslararası hasta kabul edebilmek için sağlık kuruluşunun T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi’ne sahip olması yasal zorunluluktur.',
+          type: 'info'
+        }
+      }
+    ];
+  } else if (item.url === '/saglik-turizmi/baslangic-rehberi') {
+    quickAnswer = 'Sağlık turizmine başlamak isteyen klinik ve hekimlerin izlemesi gereken sıralı yol haritası; yetki belgesi şartlarını sağlamak, hedef branş ve ülke odağını belirlemek, çok dilli landing page ve WhatsApp CRM sistemini kurmak ve Ticaret Bakanlığı teşviklerinden yararlanmaktır.';
+    sections = [
+      {
+        heading: 'Kuruluş Türüne Göre Sıralı Başlangıç Adımları',
+        subheading: 'Muayenehane, Klinik ve Hastaneler İçin Yol Haritası',
+        paragraphs: [
+          'Sağlık turizmine giriş yaparken en sık yapılan hata doğrudan reklama bütçe ayırmaktır. Oysa operasyonel hazırlık ve mevzuat gereksinimleri tamamlanmadan gelen yabancı hasta adayları dönüştürülemez.',
+          'İlk adım yasal yetkilendirmedir: Muayenehane veya poliklinikler en az iki dilde B2/C1 personeli istihdam etmeli, uluslararası hasta birimini tescil ettirmeli ve Sağlık Bakanlığı yetki belgesini almalıdır.'
+        ],
+        bulletPoints: [
+          'Adım 1: Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi Başvurusu.',
+          'Adım 2: İngiltere, Almanya veya Körfez ülkeleri arasından branşa uygun birincil hedef pazarın seçimi.',
+          'Adım 3: Yabancı hastanın ana dilinde güven veren, hekim otoritesini (E-E-A-T) öne çıkaran web sitesi.',
+          'Adım 4: Gece ve hafta sonu gelen lead’leri kaybetmeyen WhatsApp & CRM takip sistemi kurulumu.',
+          'Adım 5: Ticaret Bakanlığı 5448 sayılı Döviz Kazandırıcı Hizmet Teşviklerine başvuru.'
+        ]
+      },
+      {
+        heading: 'Kuruluş Türlerine Göre Karar Matrisi',
+        subheading: 'Hangi Yapı Hangi İhtiyaçlarla Başlamalı?',
+        paragraphs: [
+          'Kuruluşunuzun ölçeğine göre başlangıç bütçesi, personel ihtiyacı ve yetkilendirme modeli değişiklik gösterir:'
+        ],
+        table: {
+          headers: ['Kuruluş Türü', 'Zorunlu Asgari Şart', 'Önerilen İlk Pazar', 'Kritik Başarı Faktörü'],
+          rows: [
+            ['Muayenehane / Hekim', 'Yetki belgesi veya yetkili aracı kurum protokolü', 'İngiltere / Avrupa (Niş branş)', 'Doktor marka otoritesi & vaka sunumu'],
+            ['Diş / Saç Kliniği', 'Klinik yetki belgesi, 2 dilde hasta danışmanı', 'İngiltere / İrlanda / Almanya', 'Hızlı WhatsApp karşılama & şeffaf fiyat'],
+            ['A Plus Hastane', 'JCI/TEMOS akreditasyonu, 7/24 çağrı merkezi', 'Balkanlar / Körfez / Avrupa', 'Kompleks cerrahi branş gücü & sigorta anlaşmaları'],
+            ['Aracı Kuruluş', 'TÜRSAB A grubu belge & en az 3 hastane protokolü', 'Tüm hedef ülkeler', 'B2B acente ağı ve kapsamlı refakat paketi']
+          ]
+        }
+      }
+    ];
+  } else if (item.url === '/saglik-turizmi/dis-fiyatlari') {
+    quickAnswer = 'Türkiye’de sağlık turizmi diş tedavisi fiyatları; tek implant için 350€ - 850€, All-on-4 tam çene implant için 3.200€ - 6.500€, zirkonyum kaplama için ise diş başına 160€ - 280€ aralığındadır. Fiyat araştırması yapan yabancı hastaya kliniğinizin yaklaşımı; yalnızca en ucuz teklifi vermek değil, cerrah yetkinliğini ve garanti kapsamını içeren şeffaf tedavi planı sunmak olmalıdır.';
+    sections = [
+      {
+        heading: 'Türkiye Diş Tedavisi Fiyat Aralıkları ve Avrupa Karşılaştırması',
+        subheading: '2026 Güncel Piyasa Fiyatları ve Tasarruf Oranları',
+        paragraphs: [
+          'İngiltere, Almanya ve Hollanda gibi ülkelerdeki yüksek özel klinik maliyetleri ve NHS randevu bekleme süreleri, yabancı hastaların Türkiye’yi tercih etmesindeki en büyük faktördür.',
+          'Türkiye’de tedavi maliyetlerinin Avrupa’ya göre %60-70 daha ekonomik olması hekim kalitesinin düşüklüğünden değil; laboratuvar, kira ve operasyonel gider farklarından kaynaklanır.'
+        ],
+        table: {
+          headers: ['Tedavi Türü', 'Türkiye Ortalama', 'İngiltere (UK)', 'Almanya (DE)', 'Ortalama Tasarruf'],
+          rows: [
+            ['Tek Dental İmplant (İsviçre/Alman Menşei)', '350€ - 750€', '1.800£ - 2.500£', '1.900€ - 2.800€', '%65 - %75'],
+            ['All-on-4 Tam Çene (Sabit Protez Dahil)', '3.200€ - 6.000€', '9.000£ - 14.000£', '10.000€ - 15.000€', '%60 - %70'],
+            ['All-on-6 Tam Çene', '4.200€ - 7.500€', '12.000£ - 18.000£', '13.000€ - 19.000€', '%65 - %70'],
+            ['Zirkonyum Kaplama (Diş Başına)', '160€ - 260€', '600£ - 900£', '700€ - 1.000€', '%70 - %75'],
+            ['Gülüş Tasarımı (E-max Veneer - 20 Diş)', '3.500€ - 5.500€', '10.000£ - 16.000£', '11.000€ - 17.000€', '%65 - %70']
+          ]
+        }
+      },
+      {
+        heading: 'Diş Klinikleri İçin Fiyat Odaklı Hasta İletişim Stratejisi',
+        subheading: 'Fiyat Soran Hastayı Güvenle Tedaviye Nasıl Dönüştürmeli?',
+        paragraphs: [
+          'Avrupa’dan WhatsApp veya web formu ile "How much for full mouth dental implants?" diye soran hastaya yalnızca çıplak fiyat göndermek dönüşüm oranını düşürür.',
+          'Hastanın röntgenini (panoramik X-Ray) talep etmek, hekimin ön değerlendirmesini video veya ses kaydıyla iletmek ve paket detaylarını (otel, transfer, garantili implant sertifikası) madde madde açıklamak kliniğinizi fiyat rekabetinden çıkarıp kalite rekabetine taşır.'
+        ],
+        bulletPoints: [
+          'Marka ve Menşei Şeffaflığı: Kullanılan implantların FDA ve CE onaylı olduğunu (Straumann, Nobel, Osstem vb.) açıkça belirtin.',
+          'Garanti Kartı: İmplant üreticisinin uluslararası ömür boyu garanti sertifikasını hastaya bildirin.',
+          'Paket Kapsamı: Konaklama, VIP transfer ve ilaç/refakat hizmetlerini şeffafça kaleme dökün.'
+        ]
+      }
+    ];
+  } else if (item.url === '/saglik-turizmi-isletmeciligi/taban-puanlari') {
+    quickAnswer = 'Sağlık Turizmi İşletmeciliği (Önlisans - TYT) ve Sağlık Yönetimi (Lisans - Eşit Ağırlık) programlarının 2025/2026 taban puanları devlet üniversitelerinde 230 - 325 puan, başarı sıralamaları ise 350.000 ile 850.000 bandında gerçekleşmiştir. Mezunlar yetkili aracı kurumlarda, hastanelerin uluslararası hasta departmanlarında ve sağlık turizmi ajanslarında hasta koordinatörü ve operasyon yöneticisi olarak istihdam edilmektedir.';
+    sections = [
+      {
+        heading: 'Sağlık Turizmi ve Sağlık Yönetimi Bölümleri Taban Puanları',
+        subheading: 'Önlisans ve Lisans Üniversite Giriş Verileri',
+        paragraphs: [
+          'Sağlık turizmi sektörünün hızla büyümesi, üniversitelerin Sağlık Turizmi İşletmeciliği (2 yıllık) ve Sağlık Yönetimi (4 yıllık) bölümlerine olan talebi artırmıştır.',
+          'Önlisans programlarına YKS TYT puanıyla, lisans programlarına ise EA (Eşit Ağırlık) puan türüyle yerleştirme yapılmaktadır.'
+        ],
+        table: {
+          headers: ['Üniversite & Program', 'Tür / Süre', 'Puan Türü', 'Tahmini Taban Puan', 'Başarı Sıralaması'],
+          rows: [
+            ['İstanbul Üniversitesi - Cerrahpaşa (Sağlık Yönetimi)', 'Lisans (4 Yıl)', 'EA', '325 - 345', '280.000 - 350.000'],
+            ['Ankara Hacı Bayram Veli Ünv. (Sağlık Yönetimi)', 'Lisans (4 Yıl)', 'EA', '310 - 330', '320.000 - 410.000'],
+            ['Akdeniz Üniversitesi (Sağlık Turizmi İşletmeciliği)', 'Önlisans (2 Yıl)', 'TYT', '260 - 285', '750.000 - 900.000'],
+            ['Ege Üniversitesi (Sağlık Kurumları İşletmeciliği)', 'Önlisans (2 Yıl)', 'TYT', '280 - 305', '600.000 - 750.000'],
+            ['Vakıf Üniversiteleri (%50 İndirimli / Burslu)', 'Önlisans / Lisans', 'TYT / EA', '230 - 315', '450.000 - 1.100.000']
+          ]
+        }
+      },
+      {
+        heading: 'Sektörel İstihdam Alanları ve Ajans İhtiyaçları',
+        subheading: 'Mezunların Sağlık Turizmi Sektöründeki Rolü',
+        paragraphs: [
+          'Sağlık turizmi işletmeciliği mezunları için en büyük istihdam açığı yabancı dil bilen, hasta psikolojisini yönetebilen ve medikal CRM araçlarını kullanabilen nitelikli operasyon koordinatörleridir.'
+        ],
+        bulletPoints: [
+          'Uluslararası Hasta Koordinatörlüğü: Hastanın havalimanı karşılamasından tedavi sonrasına kadar tüm süreç takibi.',
+          'Medikal Satış Danışmanlığı: İngiltere ve Avrupa’dan gelen talepleri karşılayıp satışa dönüştürme.',
+          'Yetkili Aracı Kurum Operasyon Sorumlusu: Sağlık Bakanlığı ve TÜRSAB mevzuat uyumunun yönetilmesi.'
+        ]
+      }
+    ];
+  } else if (item.url.includes('yetki-belgesi')) {
+    quickAnswer = 'Uluslararası Sağlık Turizmi Yetki Belgesi; Türkiye’de yabancı hastalara sağlık hizmeti sunmak veya aracı kurum olarak faaliyet göstermek isteyen kurumların T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü’nden almak zorunda olduğu resmî izin belgesidir. Sağlık tesisleri için Ek-1, aracı kuruluşlar için Ek-2 kriterlerine tam uyum zorunludur.';
+    sections = [
+      {
+        heading: 'Sağlık Turizmi Yetki Belgesi Alım Şartları ve Kriterleri',
+        subheading: 'Sağlık Bakanlığı Yönetmeliği Kapsamında Zorunlu Kriterler',
+        paragraphs: [
+          'Yetki belgesi olmadan yabancı hastalara yönelik tanıtım, reklam veya hasta kabul faaliyeti yürütmek idari para cezası ve faaliyet durdurma yaptırımlarına tabidir.',
+          'Yetki belgesi iki ayrı kategoriye ayrılır: Sağlık Tesisleri (Hastaneler, Tıp Merkezleri, Muayenehaneler) ve Aracı Kuruluşlar (Seyahat Acentaları).'
+        ],
+        table: {
+          headers: ['Gereksinim', 'Sağlık Tesisi İçin Şart', 'Aracı Kuruluş İçin Şart'],
+          rows: [
+            ['Yabancı Dil Personeli', 'En az 2 yabancı dilde B2/C1 yeterlilik belgesi', 'En az 2 dilde B2/C1 düzeyinde istihdam'],
+            ['Çağrı / İletişim', '7/24 kesintisiz çok dilli iletişim hattı', '7/24 kesintisiz çok dilli çağrı ve kriz yönetimi'],
+            ['Mesleki İzin', 'Ruhsatlı sağlık tesisi / muayenehane', 'TÜRSAB A Grubu Seyahat Acentası İşletme Belgesi'],
+            ['Protokol Zorunluluğu', 'Kendi sağlık ruhsatı esastır', 'En az 3 yetkili sağlık tesisiyle imzalanmış protokol'],
+            ['Web Sitesi Şartları', 'Hekim yetkinliği, KVKK/GDPR, çok dilli altyapı', 'Paket içeriği, acente unvanı ve şeffaf bilgilendirme']
+          ]
+        },
+        callout: {
+          title: 'Yasal Uyum Kuralı',
+          text: 'Aracı kuruluşların TÜRSAB A Grubu Seyahat Acentası Belgesi bulunması kanuni zorunluluktur. B veya C grubu acentalar sağlık turizmi aracı kurumu olamaz.',
+          type: 'warning'
+        }
+      }
+    ];
+  }
 
   // Dynamic internal links
   const relatedGroupItems = rawItems.filter(r => r.id !== item.id && r.group === item.group).slice(0, 3);
@@ -157,8 +329,8 @@ const fullArticles = rawItems.map((item) => {
     funnel: item.funnel,
     readTime: '6-8 dk okuma',
     publishedDate: '2026',
-    author: 'Overseas Uzman Kurulu',
-    reviewer: 'Medikal Pazarlama Masası',
+    author: 'Overseas Medikal SEO Ekibi',
+    reviewer: 'Sağlık Turizmi Mevzuat Masası',
     quickAnswer: quickAnswer,
     sections: sections,
     faqs: faqs,
@@ -221,7 +393,7 @@ fs.writeFileSync(tsPath, tsContent, 'utf-8');
 console.log(`✅ ${fullArticles.length} makale src/data/seoArticlesData.ts dosyasına yazıldı.`);
 
 // 3. Build Full sitemap.xml
-const BASE_DOMAIN = 'https://overseas.marketing';
+const BASE_DOMAIN = 'https://www.overseas.marketing';
 const CORE_ROUTES = [
   { path: '/', priority: '1.0' },
   { path: '/doktor-marka-yonetimi', priority: '0.95' },

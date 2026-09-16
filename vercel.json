@@ -1,12 +1,10 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/api/contact",
       "destination": "/api/contact.ts"
-    },
-    {
-      "source": "/((?!api/|assets/|images/|logolar/|referanslar/|logo2/|favicon.svg|icons.svg|.*\\..*).*)",
-      "destination": "/index.html"
     }
   ]
 }

@@ -138,6 +138,26 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     return matchesCat && matchesSearch;
   });
 
+  // Dynamic CTA label based on service type as recommended by SEO audit
+  const getServiceCtaLabel = () => {
+    if (service.id === 'uluslararasi-seo-hizmeti') {
+      return isEn ? 'Analyze Your Healthcare SEO Potential' : 'SEO Potansiyelinizi Analiz Edelim';
+    }
+    if (service.id === 'saglik-turizmi-crm-yazilimi') {
+      return isEn ? 'Request CRM Demo & Strategy' : 'CRM Demo ve Süreç Planı İsteyin';
+    }
+    if (service.id === 'geo-generative-engine-optimization') {
+      return isEn ? 'Request AI Visibility Audit' : 'Yapay Zekâ Görünürlük Analizi İsteyin';
+    }
+    if (service.id === 'web-sitesi-landing-page') {
+      return isEn ? 'Request Landing Page Audit' : 'Landing Page Analizi Talep Edin';
+    }
+    if (service.id === 'yapay-zeka-otomasyon') {
+      return isEn ? 'Explore AI Voice & Chat Systems' : 'AI Otomasyon Çözümünü İnceleyin';
+    }
+    return isEn ? 'Plan Your Growth Strategy' : 'Büyüme & Reklam Stratejinizi Planlayalım';
+  };
+
   return (
     <div className="pt-28 pb-20 bg-[#F8FAFC] text-[#222222] min-h-screen text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
@@ -179,7 +199,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               <span className="w-2 h-2 rounded-full bg-[#446CB5]"></span>
               <span>{service.category} {isEn ? 'Solution' : 'Hizmeti'}</span>
               <span className="text-[#DDE2E8]">|</span>
-              <span className="text-[#595F69] font-medium">Master Plan V2.0</span>
+              <span className="text-[#595F69] font-medium">{isEn ? 'Enterprise Growth Model' : 'Kurumsal Büyüme Mimarisi'}</span>
             </div>
 
             <h1 className="font-['Inter_Tight'] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#222222] tracking-tight leading-[1.15]">
@@ -196,7 +216,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 onClick={onOpenConsultation}
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-sm font-semibold shadow-lg shadow-[#446CB5]/25 transition-all cursor-pointer"
               >
-                <span>{isEn ? 'Plan Your Growth Strategy' : 'Reklam Stratejinizi Planlayalım'}</span>
+                <span>{getServiceCtaLabel()}</span>
                 <ArrowRight className="w-4 h-4 text-white" />
               </button>
 
@@ -1207,7 +1227,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               >
                 {formLoading ? <span>{isEn ? 'Submitting...' : 'Gönderiliyor...'}</span> : (
                   <>
-                    <span>{isEn ? 'Request Growth Strategy Session' : 'Reklam Stratejinizi Planlayalım'}</span>
+                    <span>{getServiceCtaLabel()}</span>
                     <Send className="w-4 h-4 text-white" />
                   </>
                 )}

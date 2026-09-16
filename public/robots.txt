@@ -17,4 +17,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://overseas.marketing/sitemap.xml
+Sitemap: https://www.overseas.marketing/sitemap.xml

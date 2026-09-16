@@ -13,7 +13,7 @@ interface JsonLdSchemaProps {
   customUrl?: string;
 }
 
-const DOMAIN = 'https://overseas.marketing';
+const DOMAIN = 'https://www.overseas.marketing';
 
 export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
   type = 'home',
@@ -36,7 +36,7 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
     logo: `${DOMAIN}/logo2/beyaz.webp`,
     image: `${DOMAIN}/images/hero_health_tech.jpg`,
     description: 'Sağlık turizminde performans pazarlama, uluslararası SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları sunan dijital büyüme ajansı.',
-    telephone: '+90 532 000 00 00',
+    telephone: '+90 536 319 76 97',
     priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',

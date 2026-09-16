@@ -18,16 +18,8 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreServices }) => {
-  const [, setLiveLeadCount] = useState(1284);
   const { language, isEn } = useLanguage();
   const t = translations[language];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLiveLeadCount(prev => prev + Math.floor(Math.random() * 2));
-    }, 4500);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section className="relative pt-32 pb-16 lg:pt-38 lg:pb-24 overflow-hidden bg-gradient-to-b from-[#EEF3FB]/70 via-white to-[#F8FAFC]">
@@ -130,8 +122,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreService
                       <TrendingUp className="w-3.5 h-3.5 text-[#60A5FA]" />
                       {isEn ? 'Global Medical Tourism Network' : 'Global Sağlık Turizmi Ağ Operasyonu'}
                     </span>
-                    <span className="text-[11px] bg-white/10 px-2 py-0.5 rounded-full font-mono">
-                      {isEn ? 'Live' : 'Canlı'}
+                    <span className="text-[11px] bg-white/10 px-2 py-0.5 rounded-full font-medium">
+                      {isEn ? 'Global Network' : 'Global Ağ'}
                     </span>
                   </div>
                   <div className="font-['Inter_Tight'] text-sm font-semibold">
@@ -148,11 +140,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreService
                   </div>
                   <div className="text-left">
                     <div className="text-[10px] font-bold text-[#446CB5] uppercase flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
-                      {isEn ? 'AI Call Agent Active' : 'AI Call Agent Aktif'}
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                      {isEn ? 'AI Voice Agent' : 'AI Sesli Asistan'}
                     </div>
                     <div className="text-xs font-bold text-[#222222]">
-                      {isEn ? '12 Concurrent Voice Sessions' : '12 Eşzamanlı Sesli Karşılama'}
+                      {isEn ? 'Multilingual Patient Inquiries' : 'Çok Dilli Hasta Karşılama'}
                     </div>
                   </div>
                 </div>
@@ -167,10 +159,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreService
                   <div className="text-left">
                     <div className="text-[10px] font-bold text-emerald-600 flex items-center gap-1">
                       <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-                      {isEn ? 'Latest Qualified Lead' : 'Son Nitelikli Talep'}
+                      {isEn ? 'Sample Qualified Lead' : 'Örnek Nitelikli Başvuru'}
                     </div>
                     <div className="text-xs font-bold text-[#222222]">
-                      {isEn ? 'London · Dental Implant' : 'Londra · Dental İmplant'}
+                      {isEn ? 'UK / London · Dental Treatment' : 'İngiltere · Dental Tedavi Talebi'}
                     </div>
                   </div>
                 </div>
