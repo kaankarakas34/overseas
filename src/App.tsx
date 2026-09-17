@@ -34,6 +34,20 @@ const SeoArticlePage = lazy(() => import('./components/SeoArticlePage').then(m =
 const NotFoundPage = lazy(() => import('./components/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 const B2BOutreachLandingPage = lazy(() => import('./components/B2BOutreachLandingPage').then(m => ({ default: m.B2BOutreachLandingPage })));
 
+// New Institutional, Authority and Conversion Pages
+const AboutPage = lazy(() => import('./components/AboutPage').then(m => ({ default: m.AboutPage })));
+const TeamPage = lazy(() => import('./components/TeamPage').then(m => ({ default: m.TeamPage })));
+const ReferencesPage = lazy(() => import('./components/ReferencesPage').then(m => ({ default: m.ReferencesPage })));
+const CaseStudiesPage = lazy(() => import('./components/CaseStudiesPage').then(m => ({ default: m.CaseStudiesPage })));
+const ContactPage = lazy(() => import('./components/ContactPage').then(m => ({ default: m.ContactPage })));
+const GetQuotePage = lazy(() => import('./components/GetQuotePage').then(m => ({ default: m.GetQuotePage })));
+const MethodologyPage = lazy(() => import('./components/MethodologyPage').then(m => ({ default: m.MethodologyPage })));
+const SectorsPage = lazy(() => import('./components/SectorsPage').then(m => ({ default: m.SectorsPage })));
+const MarketsPage = lazy(() => import('./components/MarketsPage').then(m => ({ default: m.MarketsPage })));
+const BlogIndexPage = lazy(() => import('./components/BlogIndexPage').then(m => ({ default: m.BlogIndexPage })));
+const AuthorsPage = lazy(() => import('./components/AuthorsPage').then(m => ({ default: m.AuthorsPage })));
+const LegalPage = lazy(() => import('./components/LegalPage').then(m => ({ default: m.LegalPage })));
+
 // Loading Spinner for Code Splitting Suspense
 const PageLoadingFallback = () => (
   <div className="min-h-[60vh] flex items-center justify-center bg-[#F8FAFC]">
@@ -42,11 +56,11 @@ const PageLoadingFallback = () => (
 );
 
 // Service Wrapper
-const ServicePageWrapper: React.FC<{ onOpenConsultation: () => void }> = ({ onOpenConsultation }) => {
+const ServicePageWrapper: React.FC<{ serviceIdProp?: string; onOpenConsultation: () => void }> = ({ serviceIdProp, onOpenConsultation }) => {
   const { isEn } = useLanguage();
   const { serviceId } = useParams<{ serviceId: string }>();
   const navigate = useNavigate();
-  const activeServiceId = serviceId || 'performans-pazarlama';
+  const activeServiceId = serviceIdProp || serviceId || 'performans-pazarlama';
   const servicesList = isEn ? MASTER_SERVICES_EN : MASTER_SERVICES;
   const service = servicesList.find((s) => s.id === activeServiceId) || MASTER_SERVICES.find((s) => s.id === activeServiceId);
 
@@ -351,6 +365,40 @@ export const App: React.FC = () => {
                 <DoctorBrandingPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
               }
             />
+
+            {/* Institutional, Trust & Conversion Hubs */}
+            <Route path="/hakkimizda" element={<AboutPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/ekibimiz" element={<TeamPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/referanslar" element={<ReferencesPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/basari-hikayeleri" element={<CaseStudiesPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/iletisim" element={<ContactPage />} />
+            <Route path="/teklif-al" element={<GetQuotePage />} />
+            <Route path="/metodoloji" element={<MethodologyPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/sektorler" element={<SectorsPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/ulkeler" element={<MarketsPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/blog" element={<BlogIndexPage />} />
+            <Route path="/kaynaklar" element={<BlogIndexPage />} />
+            <Route path="/yazarlar" element={<AuthorsPage />} />
+            <Route path="/kvkk" element={<LegalPage />} />
+            <Route path="/gizlilik-politikasi" element={<LegalPage />} />
+            <Route path="/cerez-politikasi" element={<LegalPage />} />
+            <Route path="/aydinlatma-metni" element={<LegalPage />} />
+
+            {/* Direct Service Pillar Routes */}
+            <Route path="/saglik-turizmi-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-seo" element={<ServicePageWrapper serviceIdProp="uluslararasi-seo-hizmeti" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-geo" element={<ServicePageWrapper serviceIdProp="geo-generative-engine-optimization" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-google-ads" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-google-ads" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-meta-reklamlari" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-meta-reklamlari" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-performans-pazarlama" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-web-tasarim" element={<ServicePageWrapper serviceIdProp="web-sitesi-landing-page" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-landing-page" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-landing-page" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-crm" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-crm-yazilimi" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-otomasyon" element={<ServicePageWrapper serviceIdProp="yapay-zeka-otomasyon" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizminde-yapay-zeka" element={<ServicePageWrapper serviceIdProp="yapay-zeka-otomasyon" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-sosyal-medya-yonetimi" element={<ServicePageWrapper serviceIdProp="sosyal-medya-yonetimi" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-icerik-pazarlamasi" element={<ServicePageWrapper serviceIdProp="icerik-produksiyon" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
 
             {/* Branch Routes */}
             {MASTER_BRANCHES.map((b) => (

@@ -13,7 +13,7 @@ console.log('======================================================\n');
 console.log('1️⃣  SİTEMAP & İNDEKSLEME DENETİMİ:');
 const sitemapPath = path.resolve(__dirname, '../public/sitemap.xml');
 const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
-const locMatches = [...sitemapContent.matchAll(/<loc>(https:\/\/overseas\.marketing[^<]*)<\/loc>/g)].map(m => m[1]);
+const locMatches = [...sitemapContent.matchAll(/<loc>(https:\/\/(?:www\.)?overseas\.marketing[^<]*)<\/loc>/g)].map(m => m[1]);
 const uniqueLocs = new Set(locMatches);
 
 console.log(` - Toplam Kayıtlı URL: ${locMatches.length}`);
@@ -44,12 +44,12 @@ function checkDir(dir) {
     } else if (f === 'index.html') {
       htmlCount++;
       const html = fs.readFileSync(full, 'utf-8');
-      if (!html.includes('<title>')) missingTitle++;
-      if (!html.includes('<meta name="description"')) missingDesc++;
-      if (!html.includes('<link rel="canonical"')) missingCanonical++;
+      if (!html.includes('<title')) missingTitle++;
+      if (!html.includes('name="description"')) missingDesc++;
+      if (!html.includes('rel="canonical"')) missingCanonical++;
       if (!html.includes('<h1')) missingH1++;
-      if (!html.includes('<meta property="og:title"')) missingOg++;
-      if (!html.includes('<meta name="twitter:title"')) missingTwitter++;
+      if (!html.includes('property="og:title"')) missingOg++;
+      if (!html.includes('name="twitter:title"')) missingTwitter++;
     }
   }
 }

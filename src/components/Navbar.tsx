@@ -182,37 +182,53 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </div>
 
-            {/* Referanslar */}
-            <button 
-              onClick={onNavigateCases} 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors cursor-pointer"
+            {/* Sektörler */}
+            <Link 
+              to="/sektorler" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
             >
-              Referanslar
-            </button>
+              Sektörler
+            </Link>
 
-            {/* Rehber / Blog */}
-            <button 
-              onClick={onNavigateBlog} 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors cursor-pointer"
+            {/* Başarı Hikayeleri & Referanslar */}
+            <Link 
+              to="/basari-hikayeleri" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
+            >
+              Başarı Hikayeleri
+            </Link>
+
+            {/* Metodoloji */}
+            <Link 
+              to="/metodoloji" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
+            >
+              Metodoloji
+            </Link>
+
+            {/* Blog & Rehber */}
+            <Link 
+              to="/blog" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
             >
               Rehber & Blog
-            </button>
+            </Link>
 
             {/* Hakkımızda */}
-            <button 
-              onClick={onNavigateAbout} 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors cursor-pointer"
+            <Link 
+              to="/hakkimizda" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
             >
               Hakkımızda
-            </button>
+            </Link>
 
             {/* İletişim */}
-            <button 
-              onClick={onNavigateContact} 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors cursor-pointer"
+            <Link 
+              to="/iletisim" 
+              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
             >
               İletişim
-            </button>
+            </Link>
 
           </nav>
 
@@ -283,30 +299,55 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="pt-3 border-t border-[#DDE2E8] space-y-2.5">
-            <button 
-              onClick={() => { onNavigateCases(); setMobileMenuOpen(false); }}
-              className="block w-full text-left text-xs font-semibold text-[#222222]"
+            <Link 
+              to="/sektorler"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
-              Referanslar
-            </button>
-            <button 
-              onClick={() => { onNavigateBlog(); setMobileMenuOpen(false); }}
-              className="block w-full text-left text-xs font-semibold text-[#222222]"
+              Sektörler
+            </Link>
+            <Link 
+              to="/basari-hikayeleri"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
+            >
+              Başarı Hikayeleri & Referanslar
+            </Link>
+            <Link 
+              to="/metodoloji"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
+            >
+              Metodoloji
+            </Link>
+            <Link 
+              to="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
               Rehber & Blog
-            </button>
-            <button 
-              onClick={() => { onNavigateAbout(); setMobileMenuOpen(false); }}
-              className="block w-full text-left text-xs font-semibold text-[#222222]"
+            </Link>
+            <Link 
+              to="/hakkimizda"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
               Hakkımızda
-            </button>
-            <button 
-              onClick={() => { onNavigateContact(); setMobileMenuOpen(false); }}
-              className="block w-full text-left text-xs font-semibold text-[#222222]"
+            </Link>
+            <Link 
+              to="/ekibimiz"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
+            >
+              Ekibimiz
+            </Link>
+            <Link 
+              to="/iletisim"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
               İletişim
-            </button>
+            </Link>
           </div>
 
           <div className="pt-4 border-t border-[#DDE2E8]">

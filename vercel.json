@@ -1,6 +1,31 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/saglik-turizmi-yetki-belgesi/nasil-alinir", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-yetki-belgesi/sartlari", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/uluslararasi-saglik-turizmi-yetki-belgesi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/uluslararasi-saglik-turizmi-yetki-belgesi/nasil-alinir", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-bakanligi-saglik-turizmi-yetki-belgesi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-belgesi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi/gerekli-belgeler", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi/gerekli-sartlar", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-sertifikasi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi/akreditasyon", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-daire-baskanligi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-dairesi-baskanligi", "destination": "/saglik-turizmi-yetki-belgesi", "permanent": true },
+    { "source": "/saglik-turizmi-tesvikleri/rehber", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/saglik-turizmi/devlet-tesvikleri", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/saglik-turizmi/devlet-destekleri", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/saglik-turizmi-tesvik-basvurusu", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/saglik-turizmi-tesvik-danismanligi", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/saglik-turizmi/vergi-muafiyeti", "destination": "/saglik-turizmi-tesvikleri", "permanent": true },
+    { "source": "/kuba-saglik-turizmi", "destination": "/saglik-turizmi/dunyada", "permanent": true },
+    { "source": "/kuba-saglik-turizmi/nasil-yapiliyor", "destination": "/saglik-turizmi/dunyada", "permanent": true },
+    { "source": "/hindistan-saglik-turizmi", "destination": "/saglik-turizmi/dunyada", "permanent": true },
+    { "source": "/brezilya-saglik-turizmi", "destination": "/saglik-turizmi/dunyada", "permanent": true },
+    { "source": "/longevita-saglik-turizmi", "destination": "/saglik-turizmi/araci-kurumlar", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/api/contact",

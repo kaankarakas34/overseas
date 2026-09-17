@@ -512,6 +512,101 @@ export const MASTER_SERVICES: ServiceItem[] = [
         a: 'Prodüksiyon ekibimiz çekim öncesi soru akışını hazırlar, prompter veya doğal röportaj teknikleriyle hekimlerimizin en rahat şekilde bilgi aktarmasını sağlar.'
       }
     ]
+  },
+  {
+    id: 'saglik-turizmi-google-ads',
+    title: 'Sağlık Turizmi Google Ads Yönetimi',
+    shortDesc: 'İngiltere, DACH ve Körfez ülkelerinde tedavi arayan yüksek niyetli hastaları yakalayan arama ağı ve remarketing reklamları.',
+    iconName: 'Search',
+    category: 'Görünürlük',
+    h1: 'Sağlık Turizmi Google Ads Yönetimi ve Uluslararası Arama Reklamları',
+    seoTitle: 'Sağlık Turizmi Google Ads Ajansı | Klinik Google Reklamları | Overseas',
+    metaDesc: 'Diş, saç ekimi ve cerrahi kliniklerine özel çok dilli Google Ads arama kampanyaları, negatif anahtar kelime filtreleri ve offline dönüşüm takibi.',
+    fullDesc: 'Google Ads, tedavi kararı almış veya aktif cerrah araştıran yabancı hastaları yakalamanın en hızlı yoludur. Dil, arama niyeti ve negatif kelime kurgusuyla bütçenizi israf etmeden nitelikli hasta başvurusu üretiyoruz.',
+    highlights: [
+      'İngiltere, DACH, Fransa ve Körfez hedefli yerelleştirilmiş anahtar kelime yapıları',
+      'Negatif kelime mimarisi ile kalitesiz ve alakasız arama tıklamalarının elenmesi',
+      'Yüksek Kalite Puanı (Quality Score) sağlayan tedavi spesifik açılış sayfaları',
+      'CRM entegrasyonu ile offline conversion (tedavi kabul) verilerinin Google Ads\'e aktarılması',
+      'Google Sağlık Reklam Politikalarına (Healthcare Policy) tam uyumlu reklam metinleri'
+    ],
+    deliverables: [
+      'Arama Ağı & Remarketing Hesap Mimarisi',
+      'Çok Dilli Reklam Metinleri ve Uzantıları',
+      'Dönüşüm & Form Takip Kodları Entegrasyonu',
+      'Haftalık Arama Terimleri Raporu ve Negatif Liste Güncellemesi'
+    ],
+    subChannels: ['Google Search', 'Performance Max', 'YouTube Video', 'Display Remarketing'],
+    faq: [
+      {
+        q: 'Google Ads sağlık politikalarında hesap askıya alınma riski nasıl önlenir?',
+        a: 'Google\'ın sertifikasyon süreçleri ve kısıtlı tıbbi terim kurallarına uygun, onaylanmış reklam metinleri ve mevzuata uygun açılış sayfaları kullanıyoruz.'
+      },
+      {
+        q: 'Google Ads reklamlarında lead başına maliyet (CPL) neye göre değişir?',
+        a: 'Hedeflenen ülke (ör. İngiltere vs Romanya), tedavi türü (implant vs rinoplasti) ve açılış sayfasının dönüşüm oranına göre şekillenir.'
+      }
+    ]
+  },
+  {
+    id: 'saglik-turizmi-meta-reklamlari',
+    title: 'Sağlık Turizmi Meta Reklamları (Instagram & Facebook)',
+    shortDesc: 'Estetik, saç ekimi ve diş tedavilerinde güven inşa eden video kreatifler ve çok dilli Meta lead reklam yönetimi.',
+    iconName: 'TrendingUp',
+    category: 'Görünürlük',
+    h1: 'Sağlık Turizmi Meta Reklamları: Instagram & Facebook Hasta Edinimi',
+    seoTitle: 'Sağlık Turizmi Meta Reklam Ajansı | Instagram Klinik Reklamları | Overseas',
+    metaDesc: 'Klinik ve cerrahlar için Instagram ve Facebook video reklamları, çok dilli hedef kitle segmentasyonu ve doğrudan WhatsApp lead akışı.',
+    fullDesc: 'Meta reklamları; hastaların estetik kaygılarını ve tedavi hayallerini güven duygusuna dönüştürür. Sinematik hekim videoları, hasta yolculuğu anlatımları ve hızlı form/WhatsApp kurgularıyla Avrupa pazarında görünürlük sağlıyoruz.',
+    highlights: [
+      'İngiltere ve Avrupa hastalarına özel kültürel video hook ve kreatif tasarımı',
+      'Meta reklam politikalarına uyumlu öncesi/sonrası güven sunumu',
+      'Doğrudan WhatsApp sohbeti başlatan yüksek niyetli Instagram reklamları',
+      'Web sitesi ziyaretçilerini cerrahi danışmaya ikna eden dinamik remarketing'
+    ],
+    deliverables: [
+      'Meta Kampanya Mimarisi & Hedef Kitle Kurgusu',
+      'Haftalık Yeni Kreatif ve Video Reklam Testleri',
+      'WhatsApp & Anlık Form Entegrasyonları',
+      'Reklam Politikası Uyum Güvencesi'
+    ],
+    subChannels: ['Instagram Reels', 'Instagram Stories', 'Facebook Feed', 'WhatsApp Direct Ads'],
+    faq: [
+      {
+        q: 'Meta sağlık reklamları neden reddedilir?',
+        a: 'Kişisel sağlık durumuna doğrudan atıfta bulunan soru kalıpları veya uygunsuz görsel kullanımı ret sebebidir. Politikaları aşan güven ve bilgi odaklı kreatifler tasarlıyoruz.'
+      }
+    ]
+  },
+  {
+    id: 'saglik-turizmi-landing-page',
+    title: 'Sağlık Turizmi Landing Page Tasarımı',
+    shortDesc: 'Yabancı hastayı ikna eden, 2 saniyenin altında açılan ve form tamamlama oranını artıran yüksek dönüşümlü açılış sayfaları.',
+    iconName: 'Layout',
+    category: 'Dönüşüm',
+    h1: 'Sağlık Turizmi İçin Dönüşüm Odaklı Landing Page Tasarımı',
+    seoTitle: 'Sağlık Turizmi Landing Page Tasarımı | Hasta Dönüşüm Sayfası | Overseas',
+    metaDesc: 'Yabancı hastaların güven bariyerini aşan, çok dilli, hızlı ve yüksek dönüşüm oranlı sağlık turizmi açılış sayfaları ve CRO optimizasyonu.',
+    fullDesc: 'Tıklamayı hastaya dönüştüren şey reklam değil, açılış sayfasıdır (Landing Page). Tedavi aşamalarını, cerrah yetkinliğini, şeffaf fiyat aralığını ve VIP transfer detaylarını sunan hızlı ve mobil uyumlu sayfalar inşa ediyoruz.',
+    highlights: [
+      'Mobil cihazlarda 2 saniyenin altında açılan hafif ve optimize kod mimarisi',
+      'Yabancı hastanın güvenini kazanan E-E-A-T rozetleri ve hekim biyografisi',
+      '5 alanı geçmeyen, sürtünmesiz lead toplama formları ve doğrudan WhatsApp butonu',
+      'İngilizce, Almanca, Fransızca ve Felemenkçe yerelleştirilmiş dil seçenekleri'
+    ],
+    deliverables: [
+      'UX Araştırması ve Tel Kafes (Wireframe) Tasarımı',
+      'Çok Dilli Telifsiz Medikal Metin Yazımı',
+      'Hızlı Web Geliştirme (React / Tailwind)',
+      'GA4 Etkinlik & CRM Form Entegrasyonu'
+    ],
+    subChannels: ['Mobile CRO', 'A/B Testing', 'Multilingual UX', 'Speed Optimization'],
+    faq: [
+      {
+        q: 'Landing page ile klasik kurumsal web sitesi arasındaki fark nedir?',
+        a: 'Klasik web sitesi genel bilgi verirken, landing page hastayı dikkatini dağıtmadan tek bir aksiyona (teklif alma veya WhatsApp görüşmesi) yönlendirir.'
+      }
+    ]
   }
 ];
 
@@ -555,6 +650,46 @@ export const CASE_STUDIES: CaseStudyItem[] = [
     intervention: 'Almanca E-E-A-T cerrah portalları oluşturuldu, GDPR uyumlu hasta bilgilendirme protokolü hazırlandı ve klinik içi yüksek çözünürlüklü prodüksiyon çekimleri yayınlandı.',
     resultsDetailed: 'Organik arama ve AI Overview görünürlüğü %185 arttı; 6 ayda 412 onaylı cerrahi danışma randevusu oluşturuldu.',
     limitations: 'Almanya pazarında tıbbi reklam dili sıkı regüle edildiği için agresif indirim veya kesin sonuç vaatleri yerine bilgilendirici klinik protokoller tercih edildi.'
+  },
+  {
+    id: 'novahair-uk-italy',
+    clinicType: 'Saç Ekimi',
+    country: 'İngiltere & İtalya',
+    title: 'NovaHair: İngiltere ve İtalya Pazarında Şeffaf Greft Modeliyle CPL Düşüşü',
+    summary: 'Greft maliyeti şeffaflığı, WhatsApp AI karşılama botu ve Meta Video Ads kurgusu ile 5 ayda nitelikli hasta başvurusu ikiye katlandı.',
+    period: 'Kasım 2025 – Mart 2026',
+    servicesGiven: ['Performans Pazarlama', 'Landing Page', 'WhatsApp Otomasyonu', 'İçerik & Prodüksiyon'],
+    metrics: [
+      { label: 'CPL İyileşmesi', value: '-%44', note: '£62\'den £35\'e' },
+      { label: 'Fotoğraf Gönderim Oranı', value: '%78', note: 'WhatsApp Botu ile' },
+      { label: 'Onaylı Operasyon', value: '318+', note: '5 aylık dönem' }
+    ],
+    image: '/images/hero_health_tech.jpg',
+    approach: 'İngiliz ve İtalyan hastaların en büyük tereddüdü olan "kaç greft ekilecek?" sorusunu çözen yapay zekâ destekli saç analiz açılış sayfası tasarlandı. WhatsApp entegrasyonu ile fotoğraflar 60 saniyede ön değerlendirmeye alındı.',
+    problemStatement: 'Önceki kampanyalarda gelen başvuruların %50\'si "fiyat öğrenip çıkan" kalitesiz lead\'lerden oluşuyordu ve satış danışmanları zaman kaybediyordu.',
+    intervention: 'Açılış sayfasında greft paketleri şeffafça sunuldu; WhatsApp botu ile saç fotoğraflarını göndermeyen kullanıcılar elendi; hekim liderliğinde 4K operasyon videoları yayınlandı.',
+    resultsDetailed: 'Lead başına maliyet £62\'den £35\'e geriledi; satış ekibinin görüşmeye dönüştürme oranı %22\'den %46\'ya yükseldi.',
+    limitations: 'Ticari gizlilik nedeniyle klinik unvanı anonimleştirilmiştir; tüm metrikler Google Ads ve CRM loglarından doğrulanmıştır.'
+  },
+  {
+    id: 'bariatric-care-ireland',
+    clinicType: 'Estetik Cerrahi',
+    country: 'İngiltere & İrlanda',
+    title: 'Bariatric Care: NHS Bekleme Sürelerine Odaklanan Hasta Kazanım Modeli',
+    summary: 'İrlanda ve İngiltere\'de tüp mide ameliyatı bekleyen hastalara yönelik şeffaf medikal yolculuk ve diyetisyen takip garantisi.',
+    period: 'Aralık 2025 – Mayıs 2026',
+    servicesGiven: ['Performans Pazarlama', 'SEO & GEO', 'Özel CRM', 'Landing Page'],
+    metrics: [
+      { label: 'Nitelikli Başvuru', value: '+%195', note: 'BMI > 35 hastalar' },
+      { label: 'Ön Görüşme Oranı', value: '%74', note: 'Online konsültasyon' },
+      { label: 'Ameliyat Kabulü', value: '184+', note: '6 aylık vaka' }
+    ],
+    image: '/images/hero_health_tech.jpg',
+    approach: 'İngiltere NHS sisteminde 2 yılı bulan bariatrik cerrahi bekleme sürelerini analiz eden Google Ads Arama Ağı ve etkileşimli BMI hesaplama sayfaları devreye alındı.',
+    problemStatement: 'Hasta adayları operasyon sonrası 12 aylık beslenme takibi konusunda endişeliydi ve bu durum tedavi onay oranlarını düşürüyordu.',
+    intervention: 'Türkiye\'de operasyon + 1 yıl online diyetisyen takibi içeren paket modeli konumlandırıldı; cerrahların JCI akreditasyon belgeleri şeffafça sunuldu.',
+    resultsDetailed: '6 ayda 184 hasta başarıyla ameliyat oldu; hasta memnuniyeti skoru 4.9/5 olarak ölçüldü.',
+    limitations: 'Veriler ilgili sağlık grubunun izniyle anonim vaka raporu olarak paylaşılmıştır.'
   }
 ];
 
@@ -881,6 +1016,139 @@ export const MASTER_BRANCHES: BranchItem[] = [
     deliverables: ['Hekim Kişisel Marka Stratejisi', 'Prodüksiyon & Medya Yönetimi', 'SEO & GEO Hekim İtibar Yapısı'],
     keywordsCovered: ['doktor reklam ajansı', 'doktor dijital pazarlama', 'hekim marka yönetimi', 'doktor hasta bulma'],
     faq: [{ q: 'Doktor reklam ajansı ile genel reklam ajansı arasındaki fark nedir?', a: 'Hekim etiğine, medikal terimlere ve hasta psikolojisine hakim, hekimin itibarını zedelemeden hasta kazandıran özel bir uzmanlıktır.' }]
+  },
+  {
+    id: 'klinik-reklam-ajansi',
+    slug: 'klinik-reklam-ajansi',
+    title: 'Klinik Reklam Ajansı',
+    h1: 'Özel Klinikler ve Tıp Merkezleri İçin Büyüme ve Hasta Kazanım Ajansı',
+    seoTitle: 'Klinik Reklam Ajansı | Özel Klinik Dijital Pazarlama | Overseas',
+    metaDesc: 'Özel poliklinikler, tıp merkezleri ve butik klinikler için Google Ads, Meta reklamları, yerel SEO ve hasta randevu otomasyonu sunan dijital büyüme ajansı.',
+    shortDesc: 'Poliklinik ve butik kliniklerin yerli ve uluslararası hastalarla buluşmasını sağlayan entegre performans pazarlama modeli.',
+    heroBadge: 'Özel Klinik Çözümleri',
+    overview: 'Kliniklerde hasta kazanımı, jenerik reklam kampanyaları yerine branş hekimlerinin uzmanlığını ve kliniğin konforunu ön plana çıkaran güven odaklı bir yaklaşımla sağlanır.',
+    highlights: [
+      'Poliklinik ve tıp merkezleri için çok branşlı Google Ads arama kampanyaları',
+      'Meta (Instagram/Facebook) hedefli yerel ve uluslararası hasta dönüşüm reklamları',
+      'Klinik web sitesi ve hızlı mobil randevu landing page altyapısı',
+      'WhatsApp ve çağrı merkezi için kayıp lead önleme otomasyonları'
+    ],
+    deliverables: ['Klinik Büyüme & Reklam Stratejisi', 'Arama Ağı & Sosyal Medya Kampanyaları', 'Dönüşüm Odaklı Açılış Sayfası', 'Haftalık Nitelikli Hasta Raporu'],
+    keywordsCovered: ['klinik reklam ajansı', 'klinik dijital pazarlama', 'özel klinik reklamları', 'tıp merkezi pazarlama', 'klinik SEO'],
+    faq: [
+      { q: 'Klinik reklamlarında en çok yapılan hata nedir?', a: 'Hekim uzmanlığını öne çıkarmadan sadece fiyat odaklı jenerik reklam çıkmaktır. Hastalar kliniğin teknolojik gücünü ve hekim kadrosunu görmek ister.' },
+      { q: 'Klinik randevu dönüşüm oranı nasıl artırılır?', a: 'Lead formlarının 3-4 alana indirilmesi, WhatsApp doğrudan randevu butonu ve 5 dakika içinde yapılan ilk geri dönüş ile dönüşüm oranı 2 katına çıkarılabilir.' }
+    ]
+  },
+  {
+    id: 'dermatoloji-reklam-ajansi',
+    slug: 'dermatoloji-reklam-ajansi',
+    title: 'Dermatoloji Reklam Ajansı',
+    h1: 'Dermatoloji Uzmanları ve Cilt Klinikleri İçin Dijital Pazarlama ve Hasta Kazanımı',
+    seoTitle: 'Dermatoloji Reklam Ajansı | Cilt Kliniği Dijital Pazarlama | Overseas',
+    metaDesc: 'Dermatoloji uzmanları ve cilt sağlığı klinikleri için akne, leke, lazer tedavileri ve medikal dermatolojide etik ve mevzuata uygun hasta kazanım yönetimi.',
+    shortDesc: 'Klinik dermatoloji, lazer sistemleri ve medikal cilt tedavilerinde E-E-A-T uyumlu, güven odaklı hasta akışı.',
+    heroBadge: 'Dermatoloji ve Cilt Sağlığı',
+    overview: 'Dermatoloji hastaları cilt problemlerinde hekimin uzmanlığına, kullanılan lazer cihazlarının güvenilirliğine ve tedavi protokollerinin bilimsel temeline güvenir.',
+    highlights: [
+      'Dermatolog hekim profili ve bilimsel yetkinlik odaklı içerik mimarisi',
+      'Akne, leke tedavisi ve lazer dermatoloji için Google Arama Ağı kampanyaları',
+      'Sağlık Bakanlığı tanıtım yönetmeliğine tam uyumlu etik sosyal medya iletişimi',
+      'Hastaların tedavi öncesi ve sonrası beklentilerini yöneten bilgilendirme serileri'
+    ],
+    deliverables: ['Dermatoloji Dijital Pazarlama Planı', 'Google Ads Arama Kampanyası', 'E-E-A-T Uyumlu Web İçerikleri', 'Hasta İletişim Protokolü'],
+    keywordsCovered: ['dermatoloji reklam ajansı', 'dermatolog pazarlama', 'cilt kliniği reklamları', 'dermatoloji SEO', 'dermatolog hasta bulma'],
+    faq: [
+      { q: 'Dermatoloji reklamlarında mevzuat kısıtları nasıl yönetilir?', a: 'Tedavi vaadinde bulunmadan, tanı ve tedavi süreçlerini bilimsel kaynaklarla açıklayan, hasta haklarına ve mevzuata saygılı içerik dili kullanılır.' }
+    ]
+  },
+  {
+    id: 'medikal-estetik-reklam-ajansi',
+    slug: 'medikal-estetik-reklam-ajansi',
+    title: 'Medikal Estetik Reklam Ajansı',
+    h1: 'Medikal Estetik Hekimleri İçin Ameliyatsız Tedavi Pazarlaması ve İtibar Yönetimi',
+    seoTitle: 'Medikal Estetik Reklam Ajansı | Botoks & Dolgu Pazarlaması | Overseas',
+    metaDesc: 'Medikal estetik hekimleri için botoks, dolgu, gençlik aşısı ve ameliyatsız yüz germe işlemlerinde Meta reklamları ve hasta randevu yönetimi.',
+    shortDesc: 'Ameliyatsız yüz gençleştirme, dolgu ve mezoterapi uygulamalarında yüksek dönüşümlü hasta randevu kurgusu.',
+    heroBadge: 'Medikal Estetik Uzmanlığı',
+    overview: 'Medikal estetik dinamik, hızlı karar verilen ancak güven ihtiyacının en yüksek olduğu branşlardan biridir. Doğal sonuçlar ve hekim tekniği pazarlamanın kalbidir.',
+    highlights: [
+      'Instagram Reels ve TikTok için hekim uygulama ve hasta karşılama videoları',
+      'Yurt içi ve sağlık turizmi hastalarına yönelik segmentasyonlu Meta reklamları',
+      'Tek tıkla WhatsApp randevu ve konsültasyon otomasyonu',
+      'Düzenli gelen hastalar için hatırlatma ve takip kurguları'
+    ],
+    deliverables: ['Medikal Estetik Sosyal Medya Yönetimi', 'Meta Lead Reklamları', 'Kreatif Video Planlaması', 'WhatsApp Randevu Akışı'],
+    keywordsCovered: ['medikal estetik reklam ajansı', 'botoks dolgu reklamları', 'estetik hekim pazarlama', 'ameliyatsız estetik reklamı'],
+    faq: [
+      { q: 'Medikal estetikte hasta sadakati nasıl sağlanır?', a: 'Düzenli kontrol hatırlatmaları, işlem sonrası bakım protokolleri ve kişiselleştirilmiş CRM mesajları ile hastanın sürekliliği sağlanır.' }
+    ]
+  },
+  {
+    id: 'fizik-tedavi-reklam-ajansi',
+    slug: 'fizik-tedavi-reklam-ajansi',
+    title: 'Fizik Tedavi Reklam Ajansı',
+    h1: 'Fizik Tedavi ve Rehabilitasyon Merkezleri İçin Uluslararası Hasta Kazanımı',
+    seoTitle: 'Fizik Tedavi Reklam Ajansı | FTR Pazarlama & Hasta Edinimi | Overseas',
+    metaDesc: 'Robotik rehabilitasyon, nörolojik ve ortopedik fizik tedavi merkezleri için Avrupa, Körfez ve BDT ülkelerinden uzun dönemli hasta kazanımı.',
+    shortDesc: 'Robotik rehabilitasyon, felç sonrası tedavi ve omurga sağlığında uluslararası hasta kazanım modelleri.',
+    heroBadge: 'Fizik Tedavi & Rehabilitasyon',
+    overview: 'Fizik tedavi ve rehabilitasyonda hastalar uzun yatış süresi ve refakatçi konaklaması gibi unsurları değerlendirir. Kapsamlı rehabilitasyon paketleri ve cihaz gücü güveni sağlar.',
+    highlights: [
+      'Robotik yürüme cihazları (Lokomat vb.) ve ileri teknoloji ekipman tanıtımları',
+      'Körfez ülkeleri ve BDT pazarlarına yönelik çok dilli hasta edinme kampanyaları',
+      'Hasta refakatçileri için konaklama ve süreç rehberleri',
+      'Uluslararası sigorta ve kurumsal hasta birimi entegrasyonu'
+    ],
+    deliverables: ['FTR Uluslararası Pazarlama Stratejisi', 'Robotik Rehabilitasyon Landing Page', 'Çok Dilli Reklam Yönetimi', 'Hasta Karşılama Protokolü'],
+    keywordsCovered: ['fizik tedavi reklam ajansı', 'rehabilitasyon merkezi pazarlama', 'robotik fizik tedavi reklamı', 'FTR sağlık turizmi'],
+    faq: [
+      { q: 'Uluslararası fizik tedavi hastaları en çok hangi tedavileri arar?', a: 'İnme/felç sonrası nörolojik rehabilitasyon, omurilik yaralanmaları ve skolyoz gibi ileri düzey robotik tedavi gerektiren durumlar en yüksek talebi görür.' }
+    ]
+  },
+  {
+    id: 'ortopedi-reklam-ajansi',
+    slug: 'ortopedi-reklam-ajansi',
+    title: 'Ortopedi Reklam Ajansı',
+    h1: 'Ortopedi Cerrahları ve Eklem Sağlığı Merkezleri İçin Dijital Büyüme Ajansı',
+    seoTitle: 'Ortopedi Reklam Ajansı | Ortopedik Cerrahi Pazarlaması | Overseas',
+    metaDesc: 'Robotik diz ve kalça protezi, omurga cerrahisi ve spor cerrahisinde İngiltere ve Avrupa hastalarına ulaşan performans ve SEO ajansı.',
+    shortDesc: 'Robotik protez cerrahisi, artroskopik işlemler ve omurga cerrahisinde güven odaklı uluslararası hasta akışı.',
+    heroBadge: 'Ortopedik Cerrahi Uzmanlığı',
+    overview: 'Ortopedik cerrahi hastaları hareket kabiliyetini geri kazanmak ister. NHS ve Avrupa sağlık sistemlerindeki uzun protez bekleme süreleri Türkiye için büyük fırsattır.',
+    highlights: [
+      'İngiltere ve Avrupa bekleme sürelerini hedefleyen Google Ads Arama kampanyaları',
+      'Robotik cerrahi ve eklem protezlerinde cerrah tecrübesini anlatan vaka sayfaları',
+      'Ameliyat sonrası fizik tedavi ve rehabilitasyon süreçlerini içeren şeffaf paketler',
+      'Radyolojik görüntü (MR / Röntgen) değerlendirme ve online ön konsültasyon sistemi'
+    ],
+    deliverables: ['Ortopedi Cerrahi Reklam Kurgusu', 'İngiltere Hedefli Protez Landing Page', 'MR Değerlendirme CRM Entegrasyonu'],
+    keywordsCovered: ['ortopedi reklam ajansı', 'ortopedi cerrahı pazarlama', 'diz protezi reklamı', 'kalça protezi sağlık turizmi', 'omurga cerrahisi pazarlama'],
+    faq: [
+      { q: 'İngiltere hastaları ortopedi cerrahisi için neden Türkiye\'yi tercih ediyor?', a: 'NHS\'teki 12-18 ayı aşan protez bekleme süreleri ve Türkiye\'deki robotik cerrahi teknolojilerinin dünya standartlarında olması en belirleyici etkendir.' }
+    ]
+  },
+  {
+    id: 'saglik-turizmi-araci-kurulus-pazarlama',
+    slug: 'saglik-turizmi-araci-kurulus-pazarlama',
+    title: 'Sağlık Turizmi Aracı Kuruluş Pazarlama',
+    h1: 'Yetkili Sağlık Turizmi Aracı Kuruluşları ve Acenteler İçin Büyüme Ajansı',
+    seoTitle: 'Sağlık Turizmi Aracı Kuruluş Pazarlama | Acente Büyüme Ajansı | Overseas',
+    metaDesc: 'Sağlık Bakanlığı yetki belgeli aracı kuruluşlar ve sağlık turizmi acenteleri için çok dilli Google Ads, Meta reklamları, CRM ve operasyonel büyüme yönetimi.',
+    shortDesc: 'Yetkili aracı kuruluşların çoklu anlaşmalı hastane ağlarını global hastalara ulaştıran entegre pazarlama altyapısı.',
+    heroBadge: 'Yetkili Aracı Kuruluşlar',
+    overview: 'Aracı kuruluşlar hastaya tek bir klinik yerine tedavi, otel, VIP transfer ve konsiyerj hizmetlerini bir arada sunar. Pazarlamada güvenilirlik ve organizasyon gücü esastır.',
+    highlights: [
+      'Sağlık Bakanlığı yetki belgesini öne çıkaran güven odaklı uluslararası reklamlar',
+      'Çok dilli satış ekipleri için geliştirilmiş çağrı ve WhatsApp CRM altyapısı',
+      'Tedavi + Otel + Transfer paketlerini şeffafça sunan yüksek dönüşümlü landing page\'ler',
+      'Farklı ülkelerdeki acente partnerlikleri ve B2B iş geliştirme ağları'
+    ],
+    deliverables: ['Aracı Kuruluş Global Reklam Mimarisi', 'Çok Dilli Satış CRM Sistemi', 'Yetki Belgesi Uyumlu Landing Page', 'Lead Kalifikasyon Eğitimi'],
+    keywordsCovered: ['sağlık turizmi aracı kuruluş pazarlama', 'sağlık turizmi acente reklamları', 'sağlık turizmi acentesi açmak', 'aracı kurum büyüme ajansı'],
+    faq: [
+      { q: 'Yetkili aracı kuruluşlar reklam verirken nelere dikkat etmelidir?', a: 'Sağlık Bakanlığı yetki belgesi numarasını şeffafça belirtmeli, anlaşmalı olduğu sağlık tesislerini açıkça göstermeli ve tıbbi teşhis koymadan organizasyonel gücünü vurgulamalıdır.' }
+    ]
   }
 ];
 

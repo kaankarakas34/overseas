@@ -15,6 +15,17 @@ if (!fs.existsSync(templatePath)) {
 const templateHtml = fs.readFileSync(templatePath, 'utf-8');
 const BASE_DOMAIN = 'https://www.overseas.marketing';
 
+const NOINDEX_URLS = new Set([
+  '/saglik-turizmi-isletmeciligi/taban-puanlari',
+  '/saglik-turizmi-isletmeciligi/dgs',
+  '/cumhuriyet-universitesi-saglik-turizmi-isletmeciligi',
+  '/saglik-turizmi-slayt',
+  '/saglik-turizmi-tezleri',
+  '/saglik-turizmi-is-ilanlari',
+  '/saglik-turizmi-isletmeciligi/maaslari',
+  '/saglik-turizmi/maaslari'
+]);
+
 // 27 Core Route definitions with rich static SEO content for non-JS bots (AI & Search Engines)
 const ROUTES = [
   // 1. Ana Sayfa
@@ -405,7 +416,447 @@ const ROUTES = [
         </ul>
       </section>
     `
+  },
+  // --- 7. Temel Kurumsal, Güven & Dönüşüm Merkezleri ---
+  {
+    path: '/hakkimizda',
+    title: 'Hakkımızda | Overseas Marketing Sağlık Turizmi Reklam Ajansı',
+    description: 'Overseas Marketing: Sağlık turizminde performans pazarlama, uluslararası SEO, özel CRM ve yapay zekâ otomasyonlarını birleştiren büyüme ajansı.',
+    h1: 'Sağlık Turizminde Büyüme ve Hasta Kazanım Ortaklığı',
+    content: `
+      <section>
+        <h2>Overseas Marketing Yaklaşımı ve İlkeleri</h2>
+        <p>Overseas Marketing; sağlık turizminde klinik, hastane ve cerrahların İngiltere, DACH ve Avrupa pazarlarından sürdürülebilir yabancı hasta başvurusu elde etmesini sağlayan entegre büyüme ajansıdır.</p>
+        <p>Sağlık Bakanlığı tanıtım mevzuatına tam uyumlu, şeffaf metrikler ve veri odaklı hasta kazanım mimarisi inşa ediyoruz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/ekibimiz',
+    title: 'Ekibimiz ve Uzman Kadromuz | Overseas Marketing',
+    description: 'Overseas Marketing\'in sağlık turizmi stratejistleri, medikal SEO uzmanları ve CRM mühendisleriyle tanışın. E-E-A-T uyumlu profesyonel kadro.',
+    h1: 'Sağlık Turizmi Uzman ve Strateji Ekibimiz',
+    content: `
+      <section>
+        <h2>E-E-A-T Medikal Büyüme Ekibi</h2>
+        <p>Hekim etiğine, medikal terminolojiye ve uluslararası hasta psikolojisine hakim büyüme direktörleri, teknik SEO mühendisleri ve prodüksiyon ekibimizle hizmet veriyoruz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/referanslar',
+    title: 'Referanslarımız ve Sağlık Kuruluşları | Overseas Marketing',
+    description: 'Overseas Marketing ile uluslararası hasta edinimini büyüten doğrulanabilir klinik, hastane ve hekim referansları.',
+    h1: 'Birlikte Büyüdüğümüz Sağlık Markaları ve Referanslarımız',
+    content: `
+      <section>
+        <h2>Doğrulanabilir Sağlık Kuruluşu İş Ortaklıkları</h2>
+        <p>Türkiye\'nin yetkili diş klinikleri, saç ekim merkezleri, estetik cerrahları ve hastaneleriyle yürüttüğümüz uluslararası hasta büyüme referanslarımız.</p>
+      </section>
+    `
+  },
+  {
+    path: '/basari-hikayeleri',
+    title: 'Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing',
+    description: 'Gerçek sağlık turizmi vaka analizleri: Sorun, strateji, uygulama, ölçülebilir CPL sonuçları ve öğrenimler. Diş, saç ekimi ve estetik cerrahi.',
+    h1: 'Sağlık Turizmi Başarı Hikayeleri ve Ölçülebilir Vaka Sonuçları',
+    content: `
+      <section>
+        <h2>Sorun → Strateji → Ölçülebilir Sonuç Modeli</h2>
+        <p>İngiltere ve DACH pazarlarında CPL düşüşü, randevu gerçekleşme oranları ve net ciro katkısı üzerinden belgelenmiş klinik vaka analizlerimiz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/iletisim',
+    title: 'İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı',
+    description: 'Overseas Marketing ile iletişime geçin: Sağlık turizmi strateji toplantısı planlayın, ajans telefon, e-posta, WhatsApp ve adres bilgileri.',
+    h1: 'Kliniğinizin Uluslararası Büyüme Stratejisini Birlikte Planlayalım',
+    content: `
+      <section>
+        <h2>Doğrudan İletişim & Strateji Görüşmesi</h2>
+        <p>Telefon: 0536 319 76 97 | E-posta: info@overseas.marketing</p>
+        <p>Maslak Mah. Büyükdere Cad. No:255, Sarıyer / İstanbul</p>
+      </section>
+    `
+  },
+  {
+    path: '/teklif-al',
+    title: 'Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing',
+    description: 'Kliniğinize özel sağlık turizmi pazarlama teklifi alın: Tahmini lead başı maliyet (CPL), hedef ülke büyüme planı ve reklam bütçe simülasyonu.',
+    h1: 'Kliniğinize Özel Sağlık Turizmi Pazarlama Teklifi ve Bütçe Planı',
+    content: `
+      <section>
+        <h2>24 Saatte Hazırlanan Kişiselleştirilmiş Büyüme Teklifi</h2>
+        <p>Branşınızı ve hedef pazarınızı seçin; rakiplerinizi ve tahmini başvuru maliyetlerinizi analiz ederek özel büyüme yol haritanızı iletelim.</p>
+      </section>
+    `
+  },
+  {
+    path: '/metodoloji',
+    title: 'Sağlık Turizmi Büyüme Metodolojimiz | Overseas Marketing',
+    description: 'Overseas Marketing\'in 6 aşamalı sağlık turizmi büyüme metodolojisi: Analiz, strateji, dönüşüm altyapısı, çok kanallı reklam, CRM ve yapay zekâ ölçekleme.',
+    h1: 'İlk Aramadan Ameliyata: 6 Aşamalı Bilimsel Büyüme Metodolojisi',
+    content: `
+      <section>
+        <h2>Süreç Mühendisliği ile Hasta Kazanımı</h2>
+        <p>1. Klinik Analizi → 2. Strateji & Funnel → 3. Teknik Altyapı & CRM → 4. Çok Kanallı Reklam → 5. Satış Geri Bildirimi & CRO → 6. Yapay Zekâ Ölçekleme.</p>
+      </section>
+    `
+  },
+  {
+    path: '/sektorler',
+    title: 'Hizmet Verdiğimiz Sağlık Branşları ve Sektörler | Overseas Marketing',
+    description: 'Diş klinikleri, saç ekimi, plastik cerrahi, tüp bebek, obezite, göz ve hastaneler için özel sağlık turizmi pazarlama çözümleri.',
+    h1: 'Her Klinik Branşı İçin Özelleştirilmiş Hasta Edinme Çözümleri',
+    content: `
+      <section>
+        <h2>15+ Sağlık Branşı ve Klinik Çözümü</h2>
+        <p>Diş, saç ekimi, estetik cerrahi, tüp bebek, obezite, göz, ortopedi, dermatoloji ve hastaneler için özelleştirilmiş pazarlama modelleri.</p>
+      </section>
+    `
+  },
+  {
+    path: '/ulkeler',
+    title: 'Hedef Ülkeler ve Uluslararası Sağlık Turizmi Pazarları | Overseas Marketing',
+    description: 'İngiltere, Almanya, Fransa, Hollanda ve Körfez pazarlarında sağlık turizmi reklam yönetimi, hasta profilleri ve pazar dinamikleri rehberi.',
+    h1: 'Hedef Pazarlar: Avrupa ve Birleşik Krallık\'ta Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>Uluslararası Pazar Dinamikleri ve Sağlık Koridorları</h2>
+        <p>İngiltere NHS bekleme süreleri, Alman JCI akreditasyon beklentisi ve Körfez VIP hasta talepleri doğrultusunda yerelleştirilmiş stratejiler.</p>
+      </section>
+    `
+  },
+  {
+    path: '/blog',
+    title: 'Sağlık Turizmi Rehberi ve Bilgi Merkezi | Overseas Marketing',
+    description: 'Sağlık turizmi pazarlaması, SEO, GEO, Google Ads reklamları, mevzuat, yetki belgeleri ve hasta kazanımı hakkında kapsamlı rehberler.',
+    h1: 'Sağlık Turizmi Bilgi Merkezi ve Strateji Kütüphanesi',
+    content: `
+      <section>
+        <h2>10 Temel Konu Kümesinde Derinlemesine Rehberler</h2>
+        <p>Mevzuat, teşvikler, Google Ads, Meta video kreatifleri, SEO, GEO ve CRM otomasyonları hakkında uzmanlarımızca hazırlanan sektörel rehberler.</p>
+      </section>
+    `
+  },
+  {
+    path: '/kaynaklar',
+    title: 'Sağlık Turizmi Kaynakları ve Analiz Merkezi | Overseas Marketing',
+    description: 'Sağlık turizmi büyüme rehberleri, mevzuat analizleri ve performans pazarlama kılavuzları kütüphanesi.',
+    h1: 'Sağlık Turizmi Kaynakları ve Analiz Merkezi',
+    content: `
+      <section>
+        <h2>Sektörel Raporlar ve Araştırma Kılavuzları</h2>
+        <p>Uluslararası hasta ediniminde klinik ve hekimlerin başvurabileceği kapsamlı bilgi arşivi.</p>
+      </section>
+    `
+  },
+  {
+    path: '/yazarlar',
+    title: 'Editoryal Kadro ve Yazarlarımız | Overseas Marketing',
+    description: 'Overseas Marketing rehberlerinin, vaka analizlerinin ve mevzuat içeriklerinin arkasındaki editoryal kadro ve sağlık turizmi stratejistleri.',
+    h1: 'Editoryal Kadromuz ve Sağlık Turizmi Stratejistlerimiz',
+    content: `
+      <section>
+        <h2>E-E-A-T Otorite ve Editoryal Şeffaflık</h2>
+        <p>Sağlık turizmi rehberlerimizin ve pazar analizlerimizin arkasındaki uzman yazar kadrosu ve kaynak doğrulama politikalarımız.</p>
+      </section>
+    `
+  },
+  {
+    path: '/kvkk',
+    title: 'KVKK Aydınlatma Metni | Overseas Marketing',
+    description: '6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca aydınlatma metni ve veri güvenliği bildirimi.',
+    h1: 'Kişisel Verilerin Korunması (KVKK) Aydınlatma Metni',
+    content: `
+      <section>
+        <h2>Veri Güvenliği ve Gizlilik Politikası</h2>
+        <p>Overseas Marketing veri sorumlusu sıfatıyla kişisel verilerinizin gizliliğine ve güvenliğine azami hassasiyet göstermektedir.</p>
+      </section>
+    `
+  },
+  {
+    path: '/gizlilik-politikasi',
+    title: 'Gizlilik Politikası | Overseas Marketing',
+    description: 'Overseas Marketing web sitesi gizlilik ilkeleri ve kullanıcı hakları bildirimi.',
+    h1: 'Gizlilik Politikası ve Güvenlik Standartları',
+    content: `
+      <section>
+        <h2>Gizlilik Bildirimi</h2>
+        <p>Kullanıcı verilerinin işlenmesi, korunması ve çerez kullanım prensipleri hakkında yasal bilgilendirme.</p>
+      </section>
+    `
+  },
+  {
+    path: '/cerez-politikasi',
+    title: 'Çerez Politikası (Cookie Policy) | Overseas Marketing',
+    description: 'Web sitemizde kullanılan çerezler, analitik araçlar ve tercihlerinizi yönetme rehberi.',
+    h1: 'Çerez Politikası (Cookie Policy)',
+    content: `
+      <section>
+        <h2>Çerez Kullanımı ve Tercihler</h2>
+        <p>Web sitemizin performansını artırmak ve analitik ölçüm sağlamak amacıyla kullanılan çerezlere dair bilgilendirme.</p>
+      </section>
+    `
+  },
+  {
+    path: '/aydinlatma-metni',
+    title: 'Aydınlatma Metni | Overseas Marketing',
+    description: 'İletişim formları ve teklif talepleri kapsamında işlenen kişisel verilere ilişkin aydınlatma bildirimi.',
+    h1: 'Aydınlatma Metni ve Açık Rıza Bildirimi',
+    content: `
+      <section>
+        <h2>Aydınlatma Metni</h2>
+        <p>Form ve teklif taleplerinde paylaştığınız kişisel verilerin işlenme kapsamı ve haklarınız.</p>
+      </section>
+    `
+  },
+
+  // --- 8. Yeni Branş Sayfaları (6 Branş) ---
+  {
+    path: '/klinik-reklam-ajansi',
+    title: 'Klinik Reklam Ajansı | Özel Klinik Dijital Pazarlama | Overseas',
+    description: 'Özel poliklinikler, tıp merkezleri ve butik klinikler için Google Ads, Meta reklamları, yerel SEO ve hasta randevu otomasyonu sunan dijital büyüme ajansı.',
+    h1: 'Klinik Reklam Ajansı: Özel Klinikler ve Tıp Merkezleri İçin Büyüme',
+    content: `
+      <section>
+        <h2>Özel Klinik ve Polikliniklere Özel Hasta Kazanım Modeli</h2>
+        <p>Hekim uzmanlığını ve kliniğin konforunu öne çıkaran çok branşlı reklam mimarisi, WhatsApp randevu otomasyonu ve yerel SEO çalışmaları.</p>
+      </section>
+    `
+  },
+  {
+    path: '/dermatoloji-reklam-ajansi',
+    title: 'Dermatoloji Reklam Ajansı | Cilt Kliniği Dijital Pazarlama | Overseas',
+    description: 'Dermatoloji uzmanları ve cilt sağlığı klinikleri için akne, leke, lazer tedavileri ve medikal dermatolojide etik ve mevzuata uygun hasta kazanım yönetimi.',
+    h1: 'Dermatoloji Reklam Ajansı: Cilt Klinikleri İçin Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>Dermatoloji ve Cilt Sağlığında E-E-A-T Odaklı Büyüme</h2>
+        <p>Akne, leke ve lazer tedavilerinde hekimin uzmanlığını ve bilimsel yetkinliğini öne çıkaran etik sağlık pazarlaması.</p>
+      </section>
+    `
+  },
+  {
+    path: '/medikal-estetik-reklam-ajansi',
+    title: 'Medikal Estetik Reklam Ajansı | Botoks & Dolgu Pazarlaması | Overseas',
+    description: 'Medikal estetik hekimleri için botoks, dolgu, gençlik aşısı ve ameliyatsız yüz germe işlemlerinde Meta reklamları ve hasta randevu yönetimi.',
+    h1: 'Medikal Estetik Reklam Ajansı: Ameliyatsız Tedavi Pazarlaması',
+    content: `
+      <section>
+        <h2>Medikal Estetikte Güven ve Doğal Sonuç Odaklı İletişim</h2>
+        <p>Instagram Reels ve TikTok video kreatifleri, tek tıkla WhatsApp randevu akışı ve hasta sadakat sistemleri.</p>
+      </section>
+    `
+  },
+  {
+    path: '/fizik-tedavi-reklam-ajansi',
+    title: 'Fizik Tedavi Reklam Ajansı | FTR Pazarlama & Hasta Edinimi | Overseas',
+    description: 'Robotik rehabilitasyon, nörolojik ve ortopedik fizik tedavi merkezleri için Avrupa, Körfez ve BDT ülkelerinden uzun dönemli hasta kazanımı.',
+    h1: 'Fizik Tedavi Reklam Ajansı: Rehabilitasyon Merkezleri İçin Pazarlama',
+    content: `
+      <section>
+        <h2>Robotik Rehabilitasyon ve FTR Sağlık Turizmi</h2>
+        <p>İnme, omurilik ve nörolojik rehabilitasyon gerektiren uluslararası hastalara yönelik teknoloji ve refakatçi odaklı hasta kurgusu.</p>
+      </section>
+    `
+  },
+  {
+    path: '/ortopedi-reklam-ajansi',
+    title: 'Ortopedi Reklam Ajansı | Ortopedik Cerrahi Pazarlaması | Overseas',
+    description: 'Robotik diz ve kalça protezi, omurga cerrahisi ve spor cerrahisinde İngiltere ve Avrupa hastalarına ulaşan performans ve SEO ajansı.',
+    h1: 'Ortopedi Reklam Ajansı: Eklem Protezi ve Cerrahi Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>İngiltere NHS Bekleme Sürelerini Fırsata Dönüştüren Model</h2>
+        <p>Robotik diz ve kalça protezinde cerrah tecrübesini ve şeffaf iyileşme paketlerini öne çıkaran arama ağı reklamları.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-araci-kurulus-pazarlama',
+    title: 'Sağlık Turizmi Aracı Kuruluş Pazarlama | Acente Büyüme Ajansı | Overseas',
+    description: 'Sağlık Bakanlığı yetki belgeli aracı kuruluşlar ve sağlık turizmi acenteleri için çok dilli Google Ads, Meta reklamları, CRM ve operasyonel büyüme yönetimi.',
+    h1: 'Sağlık Turizmi Aracı Kuruluş Pazarlama ve Acente Büyüme Yönetimi',
+    content: `
+      <section>
+        <h2>Yetkili Aracı Kuruluşlar İçin Küresel Hasta Ağları</h2>
+        <p>Anlaşmalı hastane ağlarını, VIP transfer ve otel paketlerini şeffafça sunan yüksek dönüşümlü acente büyüme altyapısı.</p>
+      </section>
+    `
+  },
+
+  // --- 9. Yeni Hizmet Pillar Sayfaları (Google Ads, Meta, Landing Page vb.) ---
+  {
+    path: '/saglik-turizmi-google-ads',
+    title: 'Sağlık Turizmi Google Ads Ajansı | Klinik Google Reklamları | Overseas',
+    description: 'Diş, saç ekimi ve cerrahi kliniklerine özel çok dilli Google Ads arama kampanyaları, negatif anahtar kelime filtreleri ve offline dönüşüm takibi.',
+    h1: 'Sağlık Turizmi Google Ads Ajansı ve Uluslararası Arama Reklamları',
+    content: `
+      <section>
+        <h2>Yüksek Niyetli Arama Trafiğini Hastaya Dönüştürün</h2>
+        <p>Google Ads arama ağında yüksek tedavi niyetli sorgular (Search Intent), negatif kelime optimizasyonu ve CRM offline dönüşüm entegrasyonu.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-meta-reklamlari',
+    title: 'Sağlık Turizmi Meta Reklam Ajansı | Instagram Klinik Reklamları | Overseas',
+    description: 'Klinik ve cerrahlar için Instagram ve Facebook video reklamları, çok dilli hedef kitle segmentasyonu ve doğrudan WhatsApp lead akışı.',
+    h1: 'Sağlık Turizmi Meta Reklamları: Instagram ve Facebook Hasta Edinimi',
+    content: `
+      <section>
+        <h2>Görsel Güven ve Video Prodüksiyon Odaklı Meta Reklamları</h2>
+        <p>Avrupa ve İngiltere hastaları için ameliyat öncesi/sonrası süreç anlatımları, hekim güveni ve doğrudan WhatsApp sohbet reklamları.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-landing-page',
+    title: 'Sağlık Turizmi Landing Page Tasarımı | Hasta Dönüşüm Sayfası | Overseas',
+    description: 'Yabancı hastaların güven bariyerini aşan, çok dilli, hızlı ve yüksek dönüşüm oranlı sağlık turizmi açılış sayfaları ve CRO optimizasyonu.',
+    h1: 'Sağlık Turizmi İçin Dönüşüm Odaklı Landing Page Tasarımı',
+    content: `
+      <section>
+        <h2>2 Saniyenin Altında Açılan Hızlı ve Yüksek Dönüşümlü Sayfalar</h2>
+        <p>UX araştırması, şeffaf tedavi aşamaları, E-E-A-T rozetleri ve sürtünmesiz lead formlarıyla yabancı ziyaretçileri randevuya dönüştürün.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-reklam-ajansi',
+    title: 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
+    description: 'Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım.',
+    h1: 'Sağlık Turizmi Reklam Ajansı: Performans, SEO ve CRM Çözümleri',
+    content: `
+      <section>
+        <h2>Entegre Sağlık Turizmi Büyüme Modeli</h2>
+        <p>Google Ads, Meta reklamları, uluslararası SEO, GEO, WhatsApp CRM ve yapay zekâ hasta karşılama botları tek büyüme çatısı altında.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-reklam-ajansi',
+    title: 'Sağlık Reklam Ajansı | Medikal Pazarlama ve Klinik Reklamları | Overseas',
+    description: 'Klinikler, hastaneler ve doktorlar için mevzuata uygun medikal reklam yönetimi, dijital pazarlama ve hasta edinim altyapısı.',
+    h1: 'Sağlık Reklam Ajansı: Klinikler ve Doktorlar İçin Medikal Pazarlama',
+    content: `
+      <section>
+        <h2>Medikal Etik ve Mevzuat Uyumlu Sağlık Pazarlaması</h2>
+        <p>Sağlık sektörüne özel pazarlama dinamikleri, hekim itibar yönetimi ve kanıta dayalı hasta kazanım stratejileri.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-seo',
+    title: 'Sağlık Turizmi SEO Ajansı | Çok Dilli Organik Büyüme | Overseas',
+    description: 'Klinikler ve doktorlar için İngiltere, DACH ve Avrupa odaklı uluslararası SEO mimarisi, teknik altyapı ve E-E-A-T içerik stratejisi.',
+    h1: 'Sağlık Turizmi SEO Ajansı: Uluslararası Organik Hasta Büyümesi',
+    content: `
+      <section>
+        <h2>Çok Dilli Medikal SEO ve Hreflang Mimarisi</h2>
+        <p>Hedef ülkelerin arama motorlarında üst sıralara çıkaran semantik içerik kurgusu, teknik denetim ve yerel otorite inşası.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-geo',
+    title: 'Sağlık Turizmi GEO Ajansı | Generative Engine Optimization | Overseas',
+    description: 'ChatGPT, Perplexity ve Google AI Overviews aramalarında kliniğinizin tavsiye edilmesini sağlayan yeni nesil GEO optimizasyonu.',
+    h1: 'Generative Engine Optimization (GEO): AI Aramalarında Görünürlük',
+    content: `
+      <section>
+        <h2>Yapay Zekâ Arama Motorlarında Kliniğinizi Kaynak Göstertin</h2>
+        <p>Doğrudan cevap blokları, yapılandırılmış sağlık verisi ve entity ilişkileriyle yapay zekâ modellerinin kliniğinizi önermesini sağlayın.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-crm',
+    title: 'Sağlık Turizmi CRM Yazılımı | Çok Dilli Hasta Takip Sistemi | Overseas',
+    description: 'WhatsApp entegrasyonlu, çok dilli satış ekibi için optimize edilmiş ve teklif yönetimli özel sağlık turizmi CRM sistemi.',
+    h1: 'Sağlık Turizmi CRM Yazılımı: Kayıp Lead\'leri Sıfırlayan Sistem',
+    content: `
+      <section>
+        <h2>Satış Danışmanlarının Dönüşüm Hızını Artıran Altyapı</h2>
+        <p>WhatsApp, form ve çağrı kanallarından gelen başvuruları tek panelde toplayan ve lead skorlama sunan özel sağlık CRM\'i.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-otomasyon',
+    title: 'Sağlık Turizmi Otomasyonu | WhatsApp & Lead Takip Otomasyonu | Overseas',
+    description: 'Hasta lead\'lerine saniyeler içinde dönüş sağlayan WhatsApp otomasyonları, akıllı randevu hatırlatıcıları ve CRM webhook\'ları.',
+    h1: 'Sağlık Turizmi Otomasyonu: WhatsApp ve Satış Süreci Otomasyonları',
+    content: `
+      <section>
+        <h2>Lead Dönüşüm Hızını Katlayan Otomasyon Kurguları</h2>
+        <p>İlk karşılama, fotoğraf talep etme, doktor ön konsültasyon formu ve no-show önleme hatırlatıcıları.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizminde-yapay-zeka',
+    title: 'Sağlık Turizminde Yapay Zekâ | AI Call Agent & Chatbot | Overseas',
+    description: '7/24 çok dilli sesli yapay zekâ asistanları, AI hasta karşılama botları ve otomatik lead nitelik skorlaması.',
+    h1: 'Sağlık Turizminde Yapay Zekâ Çözümleri ve AI Çağrı Asistanı',
+    content: `
+      <section>
+        <h2>Gece ve Hafta Sonu Gelen Aramaları Anında Karşılayın</h2>
+        <p>İngilizce, Almanca, Fransızca ve Arapça konuşan sesli yapay zekâ asistanlarıyla lead kayıplarını sonlandırın.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-web-tasarim',
+    title: 'Sağlık Turizmi Web Tasarım Ajansı | Klinik Web Siteleri | Overseas',
+    description: 'Yabancı hastalar için özel tasarlanmış, çok dilli, hızlı ve yüksek dönüşüm oranlı sağlık turizmi web siteleri ve açılış sayfaları.',
+    h1: 'Sağlık Turizmi Web Tasarım Ajansı: Dönüşüm Odaklı Klinik Siteleri',
+    content: `
+      <section>
+        <h2>Yabancı Hastayı Randevuya Dönüştüren Hızlı Web Siteleri</h2>
+        <p>Modern arayüz, E-E-A-T hekim profilleri, çok dilli dil seçici ve mobil uyumlu randevu altyapısı.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-performans-pazarlama',
+    title: 'Sağlık Turizmi Performans Pazarlama | Google Ads & Meta Reklamları | Overseas',
+    description: 'İngiltere, Almanya ve Avrupa hedefli çok dilli Google Ads ve Meta reklam yönetimi. Yüksek niyetli yabancı hasta kazanımı.',
+    h1: 'Sağlık Turizmi Performans Pazarlama: Uluslararası Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>Ölçülebilir CPL ve Yüksek ROI Odaklı Kampanyalar</h2>
+        <p>Search Intent, video kreatifler, çok dilli açılış sayfaları ve satış CRM entegrasyonu.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-sosyal-medya-yonetimi',
+    title: 'Sağlık Turizmi Sosyal Medya Yönetimi | Uluslararası İtibar | Overseas',
+    description: 'Hekim ve klinik markaları için estetik ve cerrahi güven odaklı profesyonel sosyal medya içerik yönetimi.',
+    h1: 'Sağlık Turizmi Sosyal Medya Yönetimi: Güven ve İtibar İnşası',
+    content: `
+      <section>
+        <h2>Avrupa Hastasının Güvenini Kazanan İçerik Stratejisi</h2>
+        <p>Instagram ve TikTok için cerrahi operasyon anlatımları, hasta deneyimleri ve hekim açıklamaları.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-icerik-pazarlamasi',
+    title: 'Sağlık Turizmi İçerik Pazarlaması | Medikal Prodüksiyon | Overseas',
+    description: 'Klinik içi profesyonel 4K video çekimleri, cerrahi operasyon anlatımları ve uluslararası hasta röportajları.',
+    h1: 'Sağlık Turizmi İçerik Pazarlaması ve Klinik Prodüksiyonu',
+    content: `
+      <section>
+        <h2>Kliniğinizi Dünya Standartlarında Gösteren Video Prodüksiyon</h2>
+        <p>4K klinik çekimleri, cerrah güven videoları ve çok dilli hasta röportajları.</p>
+      </section>
+    `
   }
+
 ];
 
 // Load all 86 SEO Knowledge Base Articles dynamically from src/data/seoArticlesData.json
@@ -568,6 +1019,7 @@ const navFooterHtml = `
 let generatedCount = 0;
 
 for (const route of ROUTES) {
+  const isNoindex = NOINDEX_URLS.has(route.path);
   const canonicalUrl = `${BASE_DOMAIN}${route.path === '/' ? '' : route.path}`;
 
   // Replace Title with data-rh="true"
@@ -581,6 +1033,14 @@ for (const route of ROUTES) {
     /<meta[^>]*?name=["']description["'][^>]*?>/i,
     `<meta data-rh="true" name="description" content="${route.description}" />`
   );
+
+  // Handle Noindex if low-intent or academic
+  if (isNoindex) {
+    pageHtml = pageHtml.replace(
+      /<meta[^>]*?name=["']robots["'][^>]*?>/i,
+      '<meta data-rh="true" name="robots" content="noindex, follow" />'
+    );
+  }
 
   // Replace Canonical with data-rh="true" and www
   pageHtml = pageHtml.replace(

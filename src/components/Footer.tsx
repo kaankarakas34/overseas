@@ -220,6 +220,29 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           </div>
         </div>
 
+        {/* Corporate & Legal Hub Mesh */}
+        <div className="py-6 border-b border-slate-800/80">
+          <div className="font-['Inter_Tight'] text-xs font-bold uppercase tracking-wider text-[#60A5FA] mb-3">
+            {isEn ? 'Corporate, Methodology & Legal' : 'Kurumsal Mimarimiz, Metodoloji & Yasal'}
+          </div>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
+            <Link to="/hakkimizda" className="text-slate-300 hover:text-white transition-colors">Hakkımızda</Link>
+            <Link to="/ekibimiz" className="text-slate-300 hover:text-white transition-colors">Ekibimiz</Link>
+            <Link to="/referanslar" className="text-slate-300 hover:text-white transition-colors">Referanslar</Link>
+            <Link to="/basari-hikayeleri" className="text-slate-300 hover:text-white transition-colors">Başarı Hikayeleri</Link>
+            <Link to="/metodoloji" className="text-slate-300 hover:text-white transition-colors">Metodoloji</Link>
+            <Link to="/sektorler" className="text-slate-300 hover:text-white transition-colors">Sektörler & Branşlar</Link>
+            <Link to="/ulkeler" className="text-slate-300 hover:text-white transition-colors">Hedef Ülkeler</Link>
+            <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">Rehber & Blog</Link>
+            <Link to="/yazarlar" className="text-slate-300 hover:text-white transition-colors">Yazarlar</Link>
+            <Link to="/teklif-al" className="text-slate-300 hover:text-white transition-colors">Teklif Al</Link>
+            <Link to="/iletisim" className="text-slate-300 hover:text-white transition-colors">İletişim</Link>
+            <Link to="/kvkk" className="text-slate-400 hover:text-white transition-colors">KVKK</Link>
+            <Link to="/gizlilik-politikasi" className="text-slate-400 hover:text-white transition-colors">Gizlilik Politikası</Link>
+            <Link to="/cerez-politikasi" className="text-slate-400 hover:text-white transition-colors">Çerez Politikası</Link>
+          </div>
+        </div>
+
         {/* Disclaimer & Copyright Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center md:text-left">
           <div className="space-y-1">
