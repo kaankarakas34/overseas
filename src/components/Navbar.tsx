@@ -16,10 +16,15 @@ import {
   Video,
   ShieldCheck,
   Sparkles,
-  CheckCircle2
+  CheckCircle2,
+  Building2,
+  Award,
+  BookOpen,
+  Compass
 } from 'lucide-react';
 import { MASTER_SERVICES } from '../data/masterPlanData';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { useLanguage } from '../context/LanguageContext';
 
 interface NavbarProps {
   onNavigateHome: () => void;
@@ -40,9 +45,11 @@ export const Navbar: React.FC<NavbarProps> = ({
   onNavigateContact,
   onOpenConsultation 
 }) => {
+  const { isEn } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -182,37 +189,194 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </div>
 
-            {/* Sektörler */}
-            <Link 
-              to="/sektorler" 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
+            {/* Mega Menu: Neden Overseas? / Why Overseas? */}
+            <div 
+              className="relative"
+              onMouseEnter={() => { setWhyDropdownOpen(true); setServicesDropdownOpen(false); }}
+              onMouseLeave={() => setWhyDropdownOpen(false)}
             >
-              Sektörler
-            </Link>
+              <button 
+                className="flex items-center gap-1.5 text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors py-2 cursor-pointer"
+                onClick={() => setWhyDropdownOpen(!whyDropdownOpen)}
+              >
+                <span>{isEn ? 'Why Overseas?' : 'Neden Overseas?'}</span>
+                <ChevronDown className={`w-4 h-4 text-[#595F69] transition-transform duration-200 ${whyDropdownOpen ? 'rotate-180 text-[#446CB5]' : ''}`} />
+              </button>
 
-            {/* Başarı Hikayeleri & Referanslar */}
-            <Link 
-              to="/basari-hikayeleri" 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
-            >
-              Başarı Hikayeleri
-            </Link>
+              {/* Rich Visual Mega Menu */}
+              {whyDropdownOpen && (
+                <div className="absolute top-full -left-28 w-[840px] bg-white rounded-3xl shadow-2xl border border-[#DDE2E8] p-6 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+                  
+                  {/* Top Bar */}
+                  <div className="flex items-center justify-between pb-3 border-b border-[#DDE2E8]">
+                    <div>
+                      <span className="text-xs font-bold uppercase tracking-wider text-[#446CB5]">
+                        {isEn ? 'WHY OVERSEAS MARKETING?' : 'NEDEN OVERSEAS MARKETING?'}
+                      </span>
+                      <p className="text-xs text-[#595F69] mt-0.5">
+                        {isEn 
+                          ? 'Proven clinical growth, medical specialty depth, and integrated healthcare systems.' 
+                          : 'Branş derinliği, 360° hasta edinme sistemi ve doğrulanmış klinik vaka sonuçları.'}
+                      </p>
+                    </div>
+                    <span className="text-[11px] font-semibold text-[#16202E] bg-[#EEF3FB] px-3 py-1 rounded-full border border-[#446CB5]/20">
+                      {isEn ? '360° Growth Engine' : '360° Büyüme Ekosistemi'}
+                    </span>
+                  </div>
 
-            {/* Metodoloji */}
-            <Link 
-              to="/metodoloji" 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
-            >
-              Metodoloji
-            </Link>
+                  {/* 4 Core Pillars Grid */}
+                  <div className="grid grid-cols-2 gap-3.5">
+                    
+                    {/* Sektörler */}
+                    <Link
+                      to="/sektorler"
+                      onClick={() => setWhyDropdownOpen(false)}
+                      className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8FAFC] hover:bg-[#EEF3FB] transition-all text-left group/item border border-[#DDE2E8]/60 hover:border-[#446CB5]/30 hover:shadow-sm"
+                    >
+                      <div className="p-2.5 rounded-xl bg-white group-hover/item:bg-[#446CB5] text-[#446CB5] group-hover/item:text-white transition-colors border border-[#DDE2E8]/80 shrink-0">
+                        <Building2 className="w-5 h-5" />
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between">
+                          <div className="font-['Inter_Tight'] text-sm font-bold text-[#222222] group-hover/item:text-[#446CB5] transition-colors">
+                            {isEn ? 'Sectors & Specialties' : 'Sektörler & Branşlar'}
+                          </div>
+                          <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-[#446CB5] border border-[#446CB5]/20">
+                            {isEn ? '12+ Fields' : '12+ Branş'}
+                          </span>
+                        </div>
+                        <p className="text-xs text-[#595F69] mt-1 leading-relaxed">
+                          {isEn 
+                            ? 'Dental, hair transplant, aesthetic, obesity, IVF, and health agency growth models.' 
+                            : 'Diş, estetik, saç ekimi, obezite, tüp bebek ve aracı kuruluş büyüme altyapıları.'}
+                        </p>
+                      </div>
+                    </Link>
 
-            {/* Blog & Rehber */}
-            <Link 
-              to="/blog" 
-              className="text-sm font-semibold text-[#222222] hover:text-[#446CB5] transition-colors"
-            >
-              Rehber & Blog
-            </Link>
+                    {/* Başarı Hikayeleri */}
+                    <Link
+                      to="/basari-hikayeleri"
+                      onClick={() => setWhyDropdownOpen(false)}
+                      className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8FAFC] hover:bg-[#EEF3FB] transition-all text-left group/item border border-[#DDE2E8]/60 hover:border-[#446CB5]/30 hover:shadow-sm"
+                    >
+                      <div className="p-2.5 rounded-xl bg-white group-hover/item:bg-[#446CB5] text-[#446CB5] group-hover/item:text-white transition-colors border border-[#DDE2E8]/80 shrink-0">
+                        <Award className="w-5 h-5" />
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between">
+                          <div className="font-['Inter_Tight'] text-sm font-bold text-[#222222] group-hover/item:text-[#446CB5] transition-colors">
+                            {isEn ? 'Case Studies & Results' : 'Başarı Hikayeleri'}
+                          </div>
+                          <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-emerald-600 border border-emerald-500/20">
+                            {isEn ? 'Verified ROI' : 'Kanıtlanmış Ciro'}
+                          </span>
+                        </div>
+                        <p className="text-xs text-[#595F69] mt-1 leading-relaxed">
+                          {isEn 
+                            ? 'Real clinic cases, lowered CPL, scaling international patient revenue.' 
+                            : 'Düşen CPL maliyetleri, ölçeklenen yabancı hasta hacimleri ve somut vaka grafikleri.'}
+                        </p>
+                      </div>
+                    </Link>
+
+                    {/* Metodoloji */}
+                    <Link
+                      to="/metodoloji"
+                      onClick={() => setWhyDropdownOpen(false)}
+                      className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8FAFC] hover:bg-[#EEF3FB] transition-all text-left group/item border border-[#DDE2E8]/60 hover:border-[#446CB5]/30 hover:shadow-sm"
+                    >
+                      <div className="p-2.5 rounded-xl bg-white group-hover/item:bg-[#446CB5] text-[#446CB5] group-hover/item:text-white transition-colors border border-[#DDE2E8]/80 shrink-0">
+                        <Compass className="w-5 h-5" />
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between">
+                          <div className="font-['Inter_Tight'] text-sm font-bold text-[#222222] group-hover/item:text-[#446CB5] transition-colors">
+                            {isEn ? 'Growth Methodology' : 'Büyüme Metodolojisi'}
+                          </div>
+                          <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-[#446CB5] border border-[#446CB5]/20">
+                            {isEn ? '360° Model' : '360° Model'}
+                          </span>
+                        </div>
+                        <p className="text-xs text-[#595F69] mt-1 leading-relaxed">
+                          {isEn 
+                            ? 'Integrated Ads + CRM software + AI automation + multilingual sales pipeline.' 
+                            : 'Performans pazarlama, özel CRM yazılımı, yapay zeka ve çok dilli satış mimarisi.'}
+                        </p>
+                      </div>
+                    </Link>
+
+                    {/* Blog & Rehber */}
+                    <Link
+                      to="/blog"
+                      onClick={() => setWhyDropdownOpen(false)}
+                      className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8FAFC] hover:bg-[#EEF3FB] transition-all text-left group/item border border-[#DDE2E8]/60 hover:border-[#446CB5]/30 hover:shadow-sm"
+                    >
+                      <div className="p-2.5 rounded-xl bg-white group-hover/item:bg-[#446CB5] text-[#446CB5] group-hover/item:text-white transition-colors border border-[#DDE2E8]/80 shrink-0">
+                        <BookOpen className="w-5 h-5" />
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between">
+                          <div className="font-['Inter_Tight'] text-sm font-bold text-[#222222] group-hover/item:text-[#446CB5] transition-colors">
+                            {isEn ? 'Guides & Knowledge Hub' : 'Rehber & Bilgi Merkezi'}
+                          </div>
+                          <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-[#446CB5] border border-[#446CB5]/20">
+                            {isEn ? 'Knowledge Hub' : 'Resmi Mevzuat'}
+                          </span>
+                        </div>
+                        <p className="text-xs text-[#595F69] mt-1 leading-relaxed">
+                          {isEn 
+                            ? 'Incentives, healthcare tourism regulations, market intel, and country blueprints.' 
+                            : 'Sağlık turizmi teşvikleri 2026, yetki belgesi şartları ve pazar analizleri.'}
+                        </p>
+                      </div>
+                    </Link>
+
+                  </div>
+
+                  {/* Bottom Quick Hubs */}
+                  <div className="pt-3 border-t border-[#DDE2E8] flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-4 text-[#595F69]">
+                      <span className="font-semibold text-[#222222]">
+                        {isEn ? 'Also Explore:' : 'Ayrıca Keşfedin:'}
+                      </span>
+                      <Link 
+                        to="/ulkeler" 
+                        onClick={() => setWhyDropdownOpen(false)}
+                        className="hover:text-[#446CB5] transition-colors underline-offset-4 hover:underline"
+                      >
+                        {isEn ? 'Target Markets' : 'Hedef Ülkeler'}
+                      </Link>
+                      <span className="text-slate-300">•</span>
+                      <Link 
+                        to="/doktor-marka-yonetimi" 
+                        onClick={() => setWhyDropdownOpen(false)}
+                        className="hover:text-[#446CB5] transition-colors underline-offset-4 hover:underline"
+                      >
+                        {isEn ? 'Doctor Branding' : 'Doktor Marka Yönetimi'}
+                      </Link>
+                      <span className="text-slate-300">•</span>
+                      <Link 
+                        to="/ekibimiz" 
+                        onClick={() => setWhyDropdownOpen(false)}
+                        className="hover:text-[#446CB5] transition-colors underline-offset-4 hover:underline"
+                      >
+                        {isEn ? 'Team' : 'Ekibimiz'}
+                      </Link>
+                    </div>
+
+                    <Link
+                      to="/teklif-al"
+                      onClick={() => setWhyDropdownOpen(false)}
+                      className="inline-flex items-center gap-1 font-semibold text-[#446CB5] hover:text-[#35558F] transition-colors"
+                    >
+                      <span>{isEn ? 'Get Clinic Proposal' : 'Klinik Teklifi Al'}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+
+                </div>
+              )}
+            </div>
 
             {/* Hakkımızda */}
             <Link 
@@ -298,55 +462,68 @@ export const Navbar: React.FC<NavbarProps> = ({
             ))}
           </div>
 
+          {/* Neden Overseas? / Why Overseas? Sub-Group */}
+          <div className="pt-3 border-t border-[#DDE2E8] space-y-2">
+            <div className="font-semibold text-xs text-[#446CB5] uppercase tracking-wider">
+              {isEn ? 'Why Overseas?' : 'Neden Overseas?'}
+            </div>
+            <div className="grid grid-cols-1 gap-1 pl-2">
+              <Link 
+                to="/sektorler"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-2 text-xs font-semibold text-[#222222] hover:text-[#446CB5] py-1"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#446CB5]"></div>
+                <span>{isEn ? 'Sectors & Specialties' : 'Sektörler & Branşlar'}</span>
+              </Link>
+              <Link 
+                to="/basari-hikayeleri"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-2 text-xs font-semibold text-[#222222] hover:text-[#446CB5] py-1"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#446CB5]"></div>
+                <span>{isEn ? 'Case Studies & Results' : 'Başarı Hikayeleri'}</span>
+              </Link>
+              <Link 
+                to="/metodoloji"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-2 text-xs font-semibold text-[#222222] hover:text-[#446CB5] py-1"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#446CB5]"></div>
+                <span>{isEn ? 'Growth Methodology' : 'Büyüme Metodolojisi'}</span>
+              </Link>
+              <Link 
+                to="/blog"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-2 text-xs font-semibold text-[#222222] hover:text-[#446CB5] py-1"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#446CB5]"></div>
+                <span>{isEn ? 'Guides & Blog' : 'Rehber & Bilgi Merkezi'}</span>
+              </Link>
+            </div>
+          </div>
+
           <div className="pt-3 border-t border-[#DDE2E8] space-y-2.5">
-            <Link 
-              to="/sektorler"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
-            >
-              Sektörler
-            </Link>
-            <Link 
-              to="/basari-hikayeleri"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
-            >
-              Başarı Hikayeleri & Referanslar
-            </Link>
-            <Link 
-              to="/metodoloji"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
-            >
-              Metodoloji
-            </Link>
-            <Link 
-              to="/blog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
-            >
-              Rehber & Blog
-            </Link>
             <Link 
               to="/hakkimizda"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
-              Hakkımızda
+              {isEn ? 'About Us' : 'Hakkımızda'}
             </Link>
             <Link 
               to="/ekibimiz"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
-              Ekibimiz
+              {isEn ? 'Team' : 'Ekibimiz'}
             </Link>
             <Link 
               to="/iletisim"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-left text-xs font-semibold text-[#222222] hover:text-[#446CB5]"
             >
-              İletişim
+              {isEn ? 'Contact' : 'İletişim'}
             </Link>
           </div>
 
