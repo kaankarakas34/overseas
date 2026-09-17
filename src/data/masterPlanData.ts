@@ -16,7 +16,7 @@ export interface ServiceItem {
 
 export interface CaseStudyItem {
   id: string;
-  clinicType: 'Diş Kliniği' | 'Estetik Cerrahi' | 'Saç Ekimi' | 'Genel Hastane';
+  clinicType: 'Diş Kliniği' | 'Estetik Cerrahi' | 'Saç Ekimi' | 'Genel Hastane' | 'Tüp Bebek & Kadın Sağlığı' | 'Çok Branşlı Sağlık Turizmi' | string;
   country: string;
   title: string;
   summary: string;
@@ -612,84 +612,164 @@ export const MASTER_SERVICES: ServiceItem[] = [
 
 export const CASE_STUDIES: CaseStudyItem[] = [
   {
-    id: 'aurora-dental-london',
+    id: 'hospitadent',
     clinicType: 'Diş Kliniği',
-    country: 'İngiltere & İrlanda',
-    title: 'Aurora Dental: Londra Pazarında %240 Nitelikli Hasta Talebi Artışı',
-    summary: 'İngiltere ve İrlanda hedefli Google Ads + GEO + Çok Dilli Landing Page ve Özel CRM entegrasyonu ile 6 ayda rekor büyüme.',
-    period: 'Ocak 2026 – Haziran 2026',
-    servicesGiven: ['Performans Pazarlama', 'Landing Page', 'Özel CRM', 'GEO Optimizasyonu'],
+    country: 'Türkiye Geneli & Global (Avrupa · Körfez)',
+    title: 'Hospitadent: Tümleşik Satış Altyapısı, PR ve Aylık 2.000+ Lead ile Global Hasta Dominasyonu',
+    summary: 'Tümleşik yurt içi ve yurt dışı satış yapısı, uluslararası PR, Instagram hekim serileri ve referans hasta kurgusuyla rekor satışa dönüşüm.',
+    period: '2024 – 2026 Sürekli Büyüme',
+    servicesGiven: ['Tümleşik Satış & CRM', 'Dijital PR & İtibar', 'Instagram Yönetimi', 'Referans Hasta Programı', 'Meta & Google Ads'],
     metrics: [
-      { label: 'Geçerli Başvuru Artışı', value: '+%240', note: 'İzinli form ve WhatsApp' },
-      { label: 'İlk Görüşmeye Geçiş', value: '%68', note: 'AI Call Agent sonrası' },
-      { label: 'Tedavi Kabul Oranı', value: '%41', note: 'Teklif modülü ile' }
+      { label: 'Aylık Nitelikli Lead', value: '2.000+', note: 'Yurt içi & yurt dışı toplam' },
+      { label: 'Satışa Dönüşüm Artışı', value: '+%48', note: '90 saniye ilk temas ile' },
+      { label: 'Referans Hasta Hacmi', value: '%35 Pay', note: 'Smile Ambassadorship' }
     ],
     image: '/images/dental_case_visual.jpg',
-    approach: 'Londra ve Dublin\'de implant ve gülüş tasarımı arayan hastalara özel şeffaf süreç landing page\'i kurgulandı. AI Call Agent ile gelen aramalar ortalama 35 saniyede nitelikli hale getirilerek kliniğin danışmanlarına atandı.',
-    problemStatement: 'Kliniğin İngiltere pazarından gelen mevcut lead maliyeti £85 seviyesindeydi ve gelen başvuruların %60\'ı bütçe yetersizliği veya süreç belirsizliği nedeniyle randevuya dönüşmüyordu.',
-    intervention: 'Sterlin (£) bazlı şeffaf paket yapısı içeren açılış sayfası inşa edildi; gece gelen aramaları ana dilinde karşılayan AI Call Agent ve WhatsApp röntgen skorlama botu devreye alındı.',
-    resultsDetailed: 'CPL £38\'e geriledi; ilk 6 ayda 240+ nitelikli implant ve gülüş tasarımı vakası kliniğe kazandırıldı.',
-    limitations: 'İngiliz hastaların randevu iptal oranını azaltmak için uçuş rezervasyonu onayına dayalı depozito sistemi zorunlu kılındı.'
+    approach: 'Çok şubeli dev zincir yapısı için yurt içi ve yurt dışı satış havuzları ayrıştırıldı, "Hospitadent Smile Journey" video prodüksiyonu ve referans hasta sistemi devreye alındı.',
+    problemStatement: 'Şubeler arası lead dağılımında yaşanan iletişim kopuklukları, yurt dışı taleplerine 4 saate varan gecikmeli dönüşler ve Avrupa pazarındaki dezenformasyon nedeniyle oluşan güven bariyeri.',
+    intervention: 'Yurt içi ve uluslararası ekipler ayrıştırılarak çok dilli akıllı lead yönlendirme algoritması kuruldu; WhatsApp API entegrasyonu, uluslararası JCI odaklı PR bültenleri ve Smile Ambassador referans programı hayata geçirildi.',
+    resultsDetailed: 'İlk temas süresi 90 saniyenin altına indi, aylık 2.000+ lead hacminde satışa dönüşüm oranı %48 artışla sektör rekoru kırdı; yeni hastaların %35\'i eski hastaların doğrudan tavsiyesiyle kazanıldı.',
+    limitations: 'Kurumsal zincir ölçeğinde standart hizmet kalitesini korumak adına tüm şubeler için merkezi hasta kabul ve teklif takip protokolü zorunlu kılındı.'
   },
   {
-    id: 'elysium-aesthetic-germany',
-    clinicType: 'Estetik Cerrahi',
-    country: 'Almanya & İsviçre',
-    title: 'Elysium Clinic: DACH Bölgesinde Doğrulanmış Cerrahi Hasta Akışı',
-    summary: 'Almanca E-E-A-T uyumlu içerik mimarisi, Meta video kreatifleri ve GDPR uyumlu özel CRM kurgusu ile istikrarlı talep üretimi.',
-    period: 'Ekim 2025 – Nisan 2026',
-    servicesGiven: ['SEO & GEO', 'Performans Pazarlama', 'Prodüksiyon', 'Özel CRM'],
+    id: 'metropolmed',
+    clinicType: 'Saç Ekimi',
+    country: 'İngiltere, İtalya, İspanya & DACH',
+    title: 'Metropolmed: Saç Ekimi ve Plastik Cerrahide 360° Sosyal Medya ile Aylık 2.000+ Lead',
+    summary: 'Kreatif video prodüksiyonu, greft ve bütçe filtreli anket reklamları ve satış hunisi optimizasyonuyla yüksek dönüşümlü hasta büyümesi.',
+    period: '2025 – 2026',
+    servicesGiven: ['360° Sosyal Medya', 'Kreatif Video Prodüksiyon', 'Meta & Google Ads', 'Satış Hunisi Optimizasyonu', 'CPL Optimizasyonu'],
     metrics: [
-      { label: 'Organik Talep Artışı', value: '+%185', note: 'Almanca SEO' },
-      { label: 'Görüşme Randevusu', value: '412+', note: '6 aylık onaylı süre' },
-      { label: 'CPA (Maliyet) Düşüşü', value: '-%38', note: 'Kreatif optimizasyonu' }
+      { label: 'Aylık Nitelikli Lead', value: '2.000+', note: 'Doğrulanmış saç & cerrahi' },
+      { label: 'CPL Maliyet Düşüşü', value: '-%42', note: 'Filtreli video formları' },
+      { label: 'Ameliyat Doluluk Oranı', value: '%92', note: '3 ay önceden rezerve' }
     ],
     image: '/images/aesthetic_case_visual.jpg',
-    approach: 'Almanca konuşulan ülkeler için cerrahların uzmanlığını ve ameliyat öncesi/sonrası süreç güvenliğini şeffafça aktaran prodüksiyon videoları hazırlandı. ChatGPT ve Perplexity aramalarında klinik kaynak gösterimi optimize edildi.',
-    problemStatement: 'Alman hastalar tıbbi sertifikasyon (JCI) ve ameliyat sonrası revizyon güvencesi görmediği için reklam dönüşümleri %1\'in altında kalıyordu.',
-    intervention: 'Almanca E-E-A-T cerrah portalları oluşturuldu, GDPR uyumlu hasta bilgilendirme protokolü hazırlandı ve klinik içi yüksek çözünürlüklü prodüksiyon çekimleri yayınlandı.',
-    resultsDetailed: 'Organik arama ve AI Overview görünürlüğü %185 arttı; 6 ayda 412 onaylı cerrahi danışma randevusu oluşturuldu.',
-    limitations: 'Almanya pazarında tıbbi reklam dili sıkı regüle edildiği için agresif indirim veya kesin sonuç vaatleri yerine bilgilendirici klinik protokoller tercih edildi.'
+    approach: 'Saç ekimi ve plastik cerrahi branşlarında ameliyathane şeffaflığını yansıtan 4K operasyon belgeselleri ve çok dilli anket reklamları kurgulandı.',
+    problemStatement: 'Aşırı doymuş saç ve estetik pazarında standart stok kolajların yarattığı güvensizlik, şişen reklam maliyetleri ve bütçesi yetersiz geçersiz form fazlalığı.',
+    intervention: 'Klinik içi prodüksiyonla 1. Gün - 3. Ay - 1. Yıl gelişim serileri çekildi; greft ve bütçe seçimli çok adımlı formlar (Multi-Step Instant Forms) ile İngiltere, İtalya ve İspanya yerel dillerinde A/B testleri yürütüldü.',
+    resultsDetailed: 'Aylık 2.000+ filtrelenmiş lead düzenli olarak üretildi; lead maliyeti %42 düşerken çağrı merkezinin ameliyat kapatma oranı %18\'den %34\'e yükseldi.',
+    limitations: 'Yüksek ameliyat talebini karşılamak için hekim ve ameliyathane kapasitesine göre haftalık reklam bütçesi dinamik olarak dengelendi.'
   },
   {
-    id: 'novahair-uk-italy',
-    clinicType: 'Saç Ekimi',
-    country: 'İngiltere & İtalya',
-    title: 'NovaHair: İngiltere ve İtalya Pazarında Şeffaf Greft Modeliyle CPL Düşüşü',
-    summary: 'Greft maliyeti şeffaflığı, WhatsApp AI karşılama botu ve Meta Video Ads kurgusu ile 5 ayda nitelikli hasta başvurusu ikiye katlandı.',
-    period: 'Kasım 2025 – Mart 2026',
-    servicesGiven: ['Performans Pazarlama', 'Landing Page', 'WhatsApp Otomasyonu', 'İçerik & Prodüksiyon'],
+    id: 'fertijin',
+    clinicType: 'Tüp Bebek & Kadın Sağlığı',
+    country: 'Türkiye Geneli & Avrupa (Almanya, Hollanda, Belçika, Fransa)',
+    title: 'Fertijin: Tüp Bebekte Hekim Marka Otoritesi ve Avrupa\'dan Güven Odaklı Hasta Akışı',
+    summary: 'Op. Dr. Seval Taşdemir liderliğinde 30 yıllık klinik otoritenin dijitalleştirilmesi, E-E-A-T içerik stratejisi ve online video konsültasyon ile uluslararası büyüme.',
+    period: '2024 – 2026',
+    servicesGiven: ['Hekim Markalaşması (Doctor Branding)', 'Çok Dilli İçerik Stratejisi', 'Dijital PR & İtibar', 'Online Konsültasyon Kurgusu', 'Medikal SEO'],
     metrics: [
-      { label: 'CPL İyileşmesi', value: '-%44', note: '£62\'den £35\'e' },
-      { label: 'Fotoğraf Gönderim Oranı', value: '%78', note: 'WhatsApp Botu ile' },
-      { label: 'Onaylı Operasyon', value: '318+', note: '5 aylık dönem' }
+      { label: 'Avrupa Hasta Artışı', value: '+%210', note: 'Gurbetçi & yabancı çiftler' },
+      { label: 'IVF Organik Liderliği', value: '1. Sıra', note: 'Tüp bebek ana aramaları' },
+      { label: 'Güven & Tavsiye Skoru', value: '%96', note: 'Doğrulanmış hasta deneyimi' }
     ],
-    image: '/images/hero_health_tech.jpg',
-    approach: 'İngiliz ve İtalyan hastaların en büyük tereddüdü olan "kaç greft ekilecek?" sorusunu çözen yapay zekâ destekli saç analiz açılış sayfası tasarlandı. WhatsApp entegrasyonu ile fotoğraflar 60 saniyede ön değerlendirmeye alındı.',
-    problemStatement: 'Önceki kampanyalarda gelen başvuruların %50\'si "fiyat öğrenip çıkan" kalitesiz lead\'lerden oluşuyordu ve satış danışmanları zaman kaybediyordu.',
-    intervention: 'Açılış sayfasında greft paketleri şeffafça sunuldu; WhatsApp botu ile saç fotoğraflarını göndermeyen kullanıcılar elendi; hekim liderliğinde 4K operasyon videoları yayınlandı.',
-    resultsDetailed: 'Lead başına maliyet £62\'den £35\'e geriledi; satış ekibinin görüşmeye dönüştürme oranı %22\'den %46\'ya yükseldi.',
-    limitations: 'Ticari gizlilik nedeniyle klinik unvanı anonimleştirilmiştir; tüm metrikler Google Ads ve CRM loglarından doğrulanmıştır.'
+    image: '/images/doctor_brand_hero.jpg',
+    approach: 'Tüp bebek tedavisindeki yüksek duygusal hassasiyete uygun hekim odaklı güven inşası ve Avrupa\'daki çiftler için şeffaf online danışmanlık köprüsü kuruldu.',
+    problemStatement: 'Almanya ve Benelüks ülkelerinde bekleme sürelerinden ve katı kanunlardan bunalan çiftlerin Türkiye\'deki tedavi süreçleri ve hekim yetkinliği konusundaki bilgi eksikliği.',
+    intervention: '"Umut Veren Bilim" içerik serisi hazırlandı; genetik taramalı tüp bebek ve ileri yaş annelik rehberleri yayımlandı; hekimle doğrudan online video konsültasyon randevu akışı entegre edildi.',
+    resultsDetailed: 'Organik IVF aramalarında 1. sıraya yerleşildi; doğrudan hekim marka aramaları %185 arttı ve kliniğin toplam vaka hacmindeki Avrupa payı %12\'den %38\'e sıçradı.',
+    limitations: 'Tıbbi etik ve hasta mahremiyeti kuralları gereği tüm vaka paylaşımları çiftlerin yazılı onayı ve KVKK/GDPR protokollerine tam uyumla sınırlandırıldı.'
   },
   {
-    id: 'bariatric-care-ireland',
+    id: 'cevredent',
+    clinicType: 'Diş Kliniği',
+    country: 'İstanbul, Türkiye · Uluslararası Odaklı',
+    title: 'Çevredent: Sıfırdan Kurumsal Kimlik, CRO Odaklı Web Mimarisi ve Organik SEO Dominasyonu',
+    summary: 'Modern kurumsal kimlik inşası, PageSpeed 95+ yüksek hızlı dönüşüm odaklı web sitesi ve 450+ kelimede 1. sayfa dental SEO hakimiyeti.',
+    period: '2025 – 2026',
+    servicesGiven: ['Kurumsal Kimlik & Rebranding', 'Web Tasarım & Yazılım (CRO)', 'Medikal SEO', 'Teknik Optimizasyon', 'UI/UX Tasarım'],
+    metrics: [
+      { label: 'Web Dönüşüm Oranı', value: '%4.8', note: 'Sektör ortalaması %1.5' },
+      { label: 'Organik Trafik Artışı', value: '+%340', note: '9 aylık organik sıçrama' },
+      { label: '1. Sayfa Kelime Sayısı', value: '450+', note: 'İmplant & estetik diş' }
+    ],
+    image: '/images/web_landing_page_design.jpg',
+    approach: 'Kliniğin görsel algısı uluslararası akredite bir diş merkezine dönüştürüldü; "Röntgenini Yükle, Tedavi Planını Al" conversion modülleriyle organik trafik lead\'e çevrildi.',
+    problemStatement: 'Eski web sitesinin mobilde yavaş açılması, karmaşık randevu akışı ve arama motorlarında marka adı dışında hiçbir tedavide görünür olmaması.',
+    intervention: 'Logodan klinik içi görsel standartlara kadar kurumsal kimlik yenilendi; mobil öncelikli hızlı web mimarisi kodlandı; 150+ hekim onaylı tedavi rehberi ve MedicalWebPage şemaları uygulandı.',
+    resultsDetailed: 'Web sitesi dönüşüm oranı %1.2\'den %4.8\'e fırladı; Zirkonyum, All-on-4 ve Gülüş Tasarımı aramalarında ilk 3 sıraya yerleşilerek aylık binlerce organik hasta kazanıldı.',
+    limitations: 'Arama motoru sıralamalarının kalıcılığı için aylık hekim kontrolünde içerik tazeleme ve teknik Core Web Vitals optimizasyonları sürdürülmektedir.'
+  },
+  {
+    id: 'global-medical-care',
+    clinicType: 'Çok Branşlı Sağlık Turizmi',
+    country: 'İsviçre, İngiltere, Fransa & İspanya',
+    title: 'Global Medical Care: 4 Avrupa Ülkesinde SEO Dominasyonu, Google Ads ve Aylık 1.400+ Lead',
+    summary: 'İspanya, İngiltere, Fransa ve İsviçre pazarlarında çok dilli yerelleştirilmiş SEO, Google Ads iş birlikleri ve dinamik para birimli landing page mimarisi.',
+    period: '2024 – 2026',
+    servicesGiven: ['Çok Dilli SEO Dominasyonu', 'Google Ads Yönetimi', 'Landing Page Mühendisliği', 'Kurumsal Kimlik', 'Uluslararası Büyüme'],
+    metrics: [
+      { label: 'Aylık Uluslararası Lead', value: '1.400+', note: 'İsviçre, UK, FR, ES' },
+      { label: '4 Ülkede SEO Hakimiyeti', value: 'İlk 3 Sıra', note: '650+ medikal anahtar kelime' },
+      { label: 'Google Ads ROAS', value: '6.4x', note: 'Ciro geri dönüş çarpanı' }
+    ],
+    image: '/images/international_seo_analytics.jpg',
+    approach: 'Her Avrupa ülkesinin dil, arama niyeti ve para birimine özel çok dilli SEO ve cerrahi niyetli Google Ads arama ağı kampanyaları entegre edildi.',
+    problemStatement: 'Avrupa pazarlarında tık başı maliyetlerin (CPC) çok yüksek olması, genel web sayfalarına gönderilen trafiğin sıfır dönüşüm üretmesi ve bütçenin tükenmesi.',
+    intervention: 'ccTLD ve alt dizin bazlı Fransızca, İngilizce, Almanca ve İspanyolca semantik SEO yapısı kuruldu; dinamik para birimli (€, £, CHF), JCI sertifikalı hızlı açılış sayfaları (landing pages) geliştirildi.',
+    resultsDetailed: '4 ülkede 650\'den fazla kelimede Google ilk sayfa ve AI Overviews dominasyonu sağlandı; aylık düzenli 1.400+ nitelikli lead ve 6.4x reklam ciro çarpanı elde edildi.',
+    limitations: 'Farklı para birimleri ve döviz kurlarındaki dalgalanmalar için dinamik fiyatlandırma ve depozito ödeme modülleri devrede tutulmaktadır.'
+  },
+  {
+    id: 'klinik-arti',
+    clinicType: 'Çok Branşlı Sağlık Turizmi',
+    country: 'İngiltere & Birleşik Krallık · Kuzey Avrupa',
+    title: 'Klinik Artı: İngiltere Pazarında 1.000+ Lead, 2 Sağlık Turizmi Markası ve Aylık +5.000 Lead',
+    summary: 'Sıfırdan 2 sağlık turizmi alt markasının kuruluşu, İngiltere odaklı performans pazarlaması, uçtan uca Medikal CRM ve aylık 5000+ lead hacmi.',
+    period: '2024 – 2026',
+    servicesGiven: ['Marka Yaratımı & Kimlik', 'İngiltere Performans Pazarlaması', 'Sağlık Turizmi CRM', 'Lead Otomasyonu', 'Operasyonel Danışmanlık'],
+    metrics: [
+      { label: 'Toplam Aylık Lead', value: '5.000+', note: 'Grup markaları genelinde' },
+      { label: 'İngiltere Doğrudan Lead', value: '1.000+', note: 'Yalnızca UK pazarı' },
+      { label: 'Satış Kapatma Oranı', value: '%26', note: 'CRM ve hızlı takip ile' }
+    ],
+    image: '/images/crm_ai_dashboard.jpg',
+    approach: 'Niş tedavi alanlarında İngiliz hasta profiline hitap eden iki yeni marka sıfırdan kuruldu; tüm lead akışı bulut tabanlı sağlık turizmi CRM sistemine bağlandı.',
+    problemStatement: 'Yüksek hacimli İngiltere başvurularının Excel ve kişisel WhatsApp hatlarında kaybolması, takip eksikliği ve kurumsal marka kimliği yetersizliği.',
+    intervention: 'İngiltere tüketici psikolojisine uygun isim tescili, logo, kurumsal kimlik ve web siteleri 90 günde hayata geçirildi; +44 yerel hatlarla 5 dakikada arama ve WhatsApp karşılama protokolleri kurgulandı.',
+    resultsDetailed: 'Kurulan iki yeni marka 90 günde operasyonel kârlılığa ulaştı; grup çapında aylık 5.000+ lead yönetilerek İngiltere pazarında lead\'den depozito ödeyen hastaya dönüşüm %26\'ya çıktı.',
+    limitations: 'Büyük lead hacminin kalitesini korumak için satış danışmanlarına haftalık çağrı skorlama ve CRM veri denetimi uygulanmaktadır.'
+  },
+  {
+    id: 'nova-dis',
+    clinicType: 'Diş Kliniği',
+    country: 'Birleşik Krallık (İngiltere, İskoçya, Galler)',
+    title: 'Nova Diş: İngiltere Pazarında 2.000+ Lead ve Birleşik Krallık Dental SEO Liderliği',
+    summary: 'Google UK üzerinde dental implant ve estetik diş aramalarında SEO liderliği, Sterlin (£) odaklı şeffaf paket yapısı ve rekor hasta kazanımı.',
+    period: '2025 – 2026',
+    servicesGiven: ['İngiltere SEO Dominasyonu', 'Performans Pazarlama', 'İngiltere Dental Landing Page', 'CRO & A/B Testing', 'Dijital Güven İnşası'],
+    metrics: [
+      { label: 'İngiltere Aylık Lead', value: '2.000+', note: 'UK doğrulanmış başvuru' },
+      { label: 'UK Organik Trafik Artışı', value: '+%290', note: 'Google UK 1 yılda' },
+      { label: 'Hasta Başı Sepet Tutarı', value: '£3.400', note: 'Ortalama tedavi cirosu' }
+    ],
+    image: '/images/dental_case_visual.jpg',
+    approach: 'Google UK arama motoru niyetlerine göre yerelleştirilmiş medikal SEO ve İngiliz hastaların fiyat tereddütlerini gideren Sterlin bazlı paket açılış sayfaları inşa edildi.',
+    problemStatement: 'İngiliz hastaların Türkiye kliniklerine karşı duyduğu endişeler, NHS bekleme sürelerine rağmen yerel İngiliz kliniklerinin arama sonuçlarını domine etmesi.',
+    intervention: '"Dental Implants Turkey", "Veneers Turkey Cost" gibi yüksek ticari hacimli kelimelerde NHS fiyat karşılaştırmaları, Straumann ve Ivoclar garanti sertifikaları sunuldu; uçak + otel + tedavi paketleri şeffaflaştırıldı.',
+    resultsDetailed: 'Google UK üzerinde 120+ kritik anahtar kelimede ilk 3 sıraya girildi; İngiltere pazarından tek başına aylık 2.000+ nitelikli lead elde edilerek klinik kapasitesi %100 doluluğa ulaştı.',
+    limitations: 'İngiliz hastaların uçuş iptallerine karşı rezervasyon garantili depozito sistemi entegre edilerek no-show oranı %4\'ün altına çekildi.'
+  },
+  {
+    id: 'pro-klinik',
     clinicType: 'Estetik Cerrahi',
-    country: 'İngiltere & İrlanda',
-    title: 'Bariatric Care: NHS Bekleme Sürelerine Odaklanan Hasta Kazanım Modeli',
-    summary: 'İrlanda ve İngiltere\'de tüp mide ameliyatı bekleyen hastalara yönelik şeffaf medikal yolculuk ve diyetisyen takip garantisi.',
-    period: 'Aralık 2025 – Mayıs 2026',
-    servicesGiven: ['Performans Pazarlama', 'SEO & GEO', 'Özel CRM', 'Landing Page'],
+    country: 'Batı Avrupa & MENA Bölgesi (Körfez Ülkeleri)',
+    title: 'Pro Klinik: Avrupa SEO Dominasyonu, MENA Arapça Genişlemesi ve Aylık 500+ Cerrahi Lead',
+    summary: 'Avrupa genelinde cerrahi SEO ve hedefli reklamlarla 500+ nitelikli cerrahi lead; MENA bölgesinde Arapça medikal SEO dominasyonu ile iki kıtadan hasta akışı.',
+    period: '2024 – 2026',
+    servicesGiven: ['Avrupa SEO Dominasyonu', 'MENA Arapça Medikal SEO', 'Hedefli Cerrahi Ads', 'VIP Hasta Yolculuğu', 'Uluslararası İtibar'],
     metrics: [
-      { label: 'Nitelikli Başvuru', value: '+%195', note: 'BMI > 35 hastalar' },
-      { label: 'Ön Görüşme Oranı', value: '%74', note: 'Online konsültasyon' },
-      { label: 'Ameliyat Kabulü', value: '184+', note: '6 aylık vaka' }
+      { label: 'Aylık Cerrahi Lead', value: '500+', note: 'Onaylı cerrahi bütçeli' },
+      { label: 'Ortalama Vaka Geliri', value: '€6.500+', note: 'Kombine estetik operasyon' },
+      { label: 'MENA Arama Görünürlüğü', value: '1. Sıra', note: 'Arapça medikal aramalar' }
     ],
     image: '/images/hero_health_tech.jpg',
-    approach: 'İngiltere NHS sisteminde 2 yılı bulan bariatrik cerrahi bekleme sürelerini analiz eden Google Ads Arama Ağı ve etkileşimli BMI hesaplama sayfaları devreye alındı.',
-    problemStatement: 'Hasta adayları operasyon sonrası 12 aylık beslenme takibi konusunda endişeliydi ve bu durum tedavi onay oranlarını düşürüyordu.',
-    intervention: 'Türkiye\'de operasyon + 1 yıl online diyetisyen takibi içeren paket modeli konumlandırıldı; cerrahların JCI akreditasyon belgeleri şeffafça sunuldu.',
-    resultsDetailed: '6 ayda 184 hasta başarıyla ameliyat oldu; hasta memnuniyeti skoru 4.9/5 olarak ölçüldü.',
-    limitations: 'Veriler ilgili sağlık grubunun izniyle anonim vaka raporu olarak paylaşılmıştır.'
+    approach: 'Avrupa\'da kombine cerrahi bütçesi onaylı hastaları hedefleyen nitelikli reklamlar ile Körfez bölgesinde Arapça SEO ve VIP hasta protokolleri birleştirildi.',
+    problemStatement: 'Estetik cerrahide toplanan formların ameliyat bütçesini karşılayamaması nedeniyle satış ekiplerinin düşük kaliteli taleplerle boğuşması.',
+    intervention: 'İndirim dili yerine kurul onaylı plastik cerrahlar ve hastane donanımı konumlandırıldı; ana dili Arapça uzmanlarla Kuveyt, Suudi Arabistan, BAE ve Katar için yerel medikal arama optimizasyonu yapıldı.',
+    resultsDetailed: 'Avrupa ve MENA bölgesinden bütçesi hazır aylık 500+ nitelikli cerrahi vaka üretildi; hasta başına ortalama sepet büyüklüğü €6.500+ olarak gerçekleşti.',
+    limitations: 'Körfez hastalarının aile konaklaması ve mahremiyet beklentilerini karşılamak adına VIP transfer ve özel süit hizmetleri operasyon paketine dahil edildi.'
   }
 ];
 

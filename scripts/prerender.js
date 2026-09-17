@@ -457,13 +457,23 @@ const ROUTES = [
   },
   {
     path: '/basari-hikayeleri',
-    title: 'Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing',
-    description: 'Gerçek sağlık turizmi vaka analizleri: Sorun, strateji, uygulama, ölçülebilir CPL sonuçları ve öğrenimler. Diş, saç ekimi ve estetik cerrahi.',
-    h1: 'Sağlık Turizmi Başarı Hikayeleri ve Ölçülebilir Vaka Sonuçları',
+    title: 'Sağlık Turizmi Başarı Hikayeleri ve Vaka Analizleri | Overseas Marketing',
+    description: 'Hospitadent, Metropolmed, Fertijin, Çevredent, Global Medical Care, Klinik Artı, Nova Diş ve Pro Klinik: Sağlık turizmi vaka analizleri ve ölçülebilir büyüme hikayeleri.',
+    h1: 'Sağlık Turizmi Başarı Hikayeleri ve Ölçülebilir Sonuçlar',
     content: `
       <section>
         <h2>Sorun → Strateji → Ölçülebilir Sonuç Modeli</h2>
-        <p>İngiltere ve DACH pazarlarında CPL düşüşü, randevu gerçekleşme oranları ve net ciro katkısı üzerinden belgelenmiş klinik vaka analizlerimiz.</p>
+        <p>Hospitadent, Metropolmed, Fertijin, Çevredent, Global Medical Care, Klinik Artı, Nova Diş ve Pro Klinik ile elde edilen rekor lead, CPL düşüşü ve uluslararası hasta büyümesi.</p>
+        <ul>
+          <li><strong>Hospitadent:</strong> Tümleşik satış yapısı, PR ve referans hasta kurgusuyla aylık 2.000+ lead ve %48 satış artışı.</li>
+          <li><strong>Metropolmed:</strong> Saç ekimi ve estetikte 360° sosyal medya yönetimi ve aylık 2.000+ lead.</li>
+          <li><strong>Fertijin:</strong> Tüp bebekte hekim marka otoritesi ve Avrupa'dan %210 hasta artışı.</li>
+          <li><strong>Çevredent:</strong> Kurumsal kimlik, CRO odaklı web sitesi ve dental SEO dominasyonu.</li>
+          <li><strong>Global Medical Care:</strong> İspanya, UK, Fransa ve İsviçre'de SEO dominasyonu ve aylık 1.400+ lead.</li>
+          <li><strong>Klinik Artı:</strong> İngiltere'de 1.000+ lead, 2 yeni marka lansmanı ve aylık 5.000+ lead.</li>
+          <li><strong>Nova Diş:</strong> Birleşik Krallık dental SEO liderliği ve İngiltere'den aylık 2.000+ lead.</li>
+          <li><strong>Pro Klinik:</strong> Avrupa SEO dominasyonu, MENA Arapça açılımı ve aylık 500+ cerrahi lead.</li>
+        </ul>
       </section>
     `
   },

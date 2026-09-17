@@ -103,7 +103,27 @@ export const CaseStudiesPage: React.FC<CaseStudiesPageProps> = ({ onOpenConsulta
                 : 'text-[#595F69] hover:text-[#16202E] hover:bg-[#F8FAFC]'
             }`}
           >
-            {isEn ? "Plastic & Bariatric Surgery" : "Estetik & Cerrahi"}
+            {isEn ? "Plastic & Surgery" : "Estetik & Cerrahi"}
+          </button>
+          <button
+            onClick={() => setSelectedType('tüp')}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-colors ${
+              selectedType === 'tüp' 
+                ? 'bg-[#446CB5] text-white shadow-xs' 
+                : 'text-[#595F69] hover:text-[#16202E] hover:bg-[#F8FAFC]'
+            }`}
+          >
+            {isEn ? "IVF & Fertility" : "Tüp Bebek"}
+          </button>
+          <button
+            onClick={() => setSelectedType('sağlık turizmi')}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-colors ${
+              selectedType === 'sağlık turizmi' 
+                ? 'bg-[#446CB5] text-white shadow-xs' 
+                : 'text-[#595F69] hover:text-[#16202E] hover:bg-[#F8FAFC]'
+            }`}
+          >
+            {isEn ? "Multi-Branch & Groups" : "Çok Branşlı & Gruplar"}
           </button>
         </div>
       </section>
