@@ -23,10 +23,12 @@ import { MASTER_SERVICES, MASTER_BRANCHES, MASTER_MARKETS, MASTER_CITIES } from 
 import { MASTER_SERVICES_EN, MASTER_BRANCHES_EN, MASTER_MARKETS_EN, MASTER_CITIES_EN } from './i18n/masterPlanData.en';
 import { useLanguage } from './context/LanguageContext';
 import { SEO_ARTICLES, SeoArticleItem } from './data/seoArticlesData';
+import { DOCTOR_ARTICLES } from './data/doctorArticlesData';
 
 // Dynamic Code Splitting for Subpages (Improves Core Web Vitals & Bundle Size)
 const ServiceDetailPage = lazy(() => import('./components/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
 const DoctorBrandingPage = lazy(() => import('./components/DoctorBrandingPage').then(m => ({ default: m.DoctorBrandingPage })));
+const DoctorAdvertisingAgencyPage = lazy(() => import('./components/DoctorAdvertisingAgencyPage').then(m => ({ default: m.DoctorAdvertisingAgencyPage })));
 const BranchDetailPage = lazy(() => import('./components/BranchDetailPage').then(m => ({ default: m.BranchDetailPage })));
 const MarketDetailPage = lazy(() => import('./components/MarketDetailPage').then(m => ({ default: m.MarketDetailPage })));
 const CityDetailPage = lazy(() => import('./components/CityDetailPage').then(m => ({ default: m.CityDetailPage })));
@@ -365,6 +367,19 @@ export const App: React.FC = () => {
                 <DoctorBrandingPageWrapper onOpenConsultation={() => setIsConsultationModalOpen(true)} />
               }
             />
+            {/* Dedicated Doctor Advertising Agency Master Page */}
+            <Route
+              path="/doktor-reklam-ajansi"
+              element={
+                <DoctorAdvertisingAgencyPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+              }
+            />
+            <Route
+              path="/doktor-reklam-ajansi/"
+              element={
+                <DoctorAdvertisingAgencyPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />
+              }
+            />
 
             {/* Institutional, Trust & Conversion Hubs */}
             <Route path="/hakkimizda" element={<AboutPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
@@ -429,6 +444,15 @@ export const App: React.FC = () => {
 
             {/* SEO Content Master Architecture Routes (BOFU/MOFU) */}
             {SEO_ARTICLES.map((art) => (
+              <Route
+                key={art.id}
+                path={art.url}
+                element={<SeoArticlePageWrapper article={art} onOpenConsultation={() => setIsConsultationModalOpen(true)} />}
+              />
+            ))}
+
+            {/* Doctor Advertising Hub & Spoke Guides */}
+            {DOCTOR_ARTICLES.map((art) => (
               <Route
                 key={art.id}
                 path={art.url}

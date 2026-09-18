@@ -86,6 +86,31 @@ const ROUTES = [
     `
   },
 
+  // 2b. Doktor Reklam Ajansı
+  {
+    path: '/doktor-reklam-ajansi',
+    title: 'Doktor Reklam Ajansı | SEO, GEO, YouTube, LinkedIn ve PR | Overseas Marketing',
+    description: 'Doktorlar için mevzuata uygun SEO, GEO, YouTube, Instagram, LinkedIn ve PR stratejileri. Reklam yasağını gözeten, ceza riski olmayan sürdürülebilir hekim görünürlüğü.',
+    h1: 'Doktor Reklam Ajansı: Mevzuata Uygun Dijital Görünürlük ve Uzmanlık İletişimi',
+    content: `
+      <section>
+        <h2>Mevzuata Uygun Hekim Tanıtımı ve Dijital Otorite Modeli</h2>
+        <p>Türkiye’de 12 Kasım 2025 tarihli ve 33075 sayılı Resmî Gazete’de yayımlanan yönetmelik uyarınca sağlık hizmetlerinde açık veya örtülü reklam kesinlikle yasaktır. Overseas Marketing; yasağı delmek yerine mevzuatın izin verdiği organik SEO, GEO, YouTube eğitici serileri, LinkedIn düşünce liderliği ve saygın basında kamu yararına uzman görüşü sunarak hekiminizi ceza riski olmadan arama motorlarında ve yapay zekâ cevaplarında bir numaralı güvenilir uzman konumuna taşır.</p>
+        <p>1219 sayılı Kanun, 3359 sayılı Temel Kanun ve 6698 sayılı KVKK standartlarına tam uyumlu yayın öncesi çift göz denetimi ile çalışıyoruz.</p>
+      </section>
+      <section style="margin-top: 30px;">
+        <h2>Doktorlar İçin 6 Temel Hizmet Sütunumuz</h2>
+        <ul style="line-height: 1.8;">
+          <li><a href="/doktorlar-icin-seo-ve-geo"><strong>Doktor SEO ve GEO Hizmeti:</strong></a> Google ve yapay zekâ cevaplarında (ChatGPT, Gemini, Perplexity, AI Overviews) birincil kaynak olarak alıntılanma.</li>
+          <li><a href="/doktorlar-icin-youtube-instagram-icerik-pazarlamasi"><strong>YouTube ve Instagram İçerik Yönetimi:</strong></a> Deontolojiye uygun hasta bilgilendirme serileri ve mit kırma formatları.</li>
+          <li><a href="/doktorlar-icin-linkedin-pazarlamasi"><strong>LinkedIn Düşünce Liderliği:</strong></a> Akademi, meslektaşlar ve sağlık yöneticileri nezdinde hekim kişisel marka yönetimi.</li>
+          <li><a href="/doktor-pr-medya-tanitimi"><strong>Doktor Medya PR ve Basın Danışmanlığı:</strong></a> AA, TRT, NTV gibi ulusal kanallarda editoryal uzman görüşü sunma.</li>
+          <li><a href="/saglik-turizmi-reklami-nasil-verilir"><strong>Uluslararası Sağlık Turizmi Tanıtımı:</strong></a> Yetki belgesi şartıyla çok dilli yurt dışı reklam kurulumu.</li>
+        </ul>
+      </section>
+    `
+  },
+
   // 3. Hizmetler (8 Hizmet)
   {
     path: '/hizmetler/performans-pazarlama',

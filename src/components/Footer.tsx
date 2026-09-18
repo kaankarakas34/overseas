@@ -103,6 +103,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                   <span>{t.nav.doctorBranding}</span>
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/doktor-reklam-ajansi"
+                  className="text-[#60A5FA] font-semibold hover:text-white transition-colors py-0.5 flex items-center gap-1.5"
+                >
+                  <ChevronRight className="w-3 h-3 text-[#60A5FA]" />
+                  <span>{isEn ? 'Doctor Advertising Agency' : 'Doktor Reklam Ajansı'}</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -216,6 +225,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </Link>
             <Link to="/saglik-turizmi-fiyat-listesi" className="text-slate-400 hover:text-white transition-colors">
               {isEn ? 'Pricing Benchmark Guide' : 'Fiyat Listesi Rehberi'}
+            </Link>
+            <Link to="/doktor-reklam-ajansi" className="text-[#60A5FA] hover:text-white transition-colors font-medium">
+              {isEn ? 'Doctor Advertising Agency' : 'Doktor Reklam Ajansı'}
+            </Link>
+            <Link to="/doktor-reklam-yasagi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Doctor Advertising Ban' : 'Doktor Reklam Yasağı'}
+            </Link>
+            <Link to="/doktor-reklam-yonetmeligi" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'Doctor Regulation' : 'Doktor Reklam Yönetmeliği'}
+            </Link>
+            <Link to="/doktor-reklami-nasil-yapilir" className="text-slate-400 hover:text-white transition-colors">
+              {isEn ? 'How to Market Doctors' : 'Doktor Reklamı Nasıl Yapılır?'}
             </Link>
           </div>
         </div>
