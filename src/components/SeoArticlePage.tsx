@@ -224,18 +224,20 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
               </div>
 
               {section.paragraphs.map((p, pIdx) => (
-                <p key={pIdx} className="text-sm sm:text-base text-[#334155] leading-relaxed">
-                  {p}
-                </p>
+                <p 
+                  key={pIdx} 
+                  className="text-sm sm:text-base text-[#334155] leading-relaxed [&_a]:text-[#446CB5] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#35558F]"
+                  dangerouslySetInnerHTML={{ __html: p }}
+                />
               ))}
 
               {/* Bullet Points */}
               {section.bulletPoints && section.bulletPoints.length > 0 && (
                 <ul className="space-y-3 pt-2">
                   {section.bulletPoints.map((bp, bIdx) => (
-                    <li key={bIdx} className="flex items-start gap-3 text-sm sm:text-base text-[#334155] leading-relaxed">
+                    <li key={bIdx} className="flex items-start gap-3 text-sm sm:text-base text-[#334155] leading-relaxed [&_a]:text-[#446CB5] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#35558F]">
                       <CheckCircle2 className="w-5 h-5 text-[#446CB5] shrink-0 mt-0.5" />
-                      <span>{bp}</span>
+                      <span dangerouslySetInnerHTML={{ __html: bp }} />
                     </li>
                   ))}
                 </ul>

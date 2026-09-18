@@ -111,6 +111,30 @@ const ROUTES = [
     `
   },
 
+  // 2c. Sağlık Turizmi Reklamı Nasıl Verilir?
+  {
+    path: '/saglik-turizmi-reklami-nasil-verilir',
+    title: 'Sağlık Turizmi Reklamı Nasıl Verilir? Meta, Google Ads ve CRM Rehberi | Overseas Marketing',
+    description: 'Sağlık turizmi nasıl reklam verilir? Meta reklamları tek ülke stratejisi, Google Ads anahtar kelime eşleme türleri, form soruları ve sağlık turizmi CRM entegrasyonu rehberi.',
+    h1: 'Sağlık Turizmi Reklamı Nasıl Verilir? Meta Ads, Google Ads ve CRM İle Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>Uluslararası Sağlık Turizmi Reklam Stratejisi</h2>
+        <p>Sağlık turizmi reklamı; yetki belgeli sağlık kuruluşları tarafından münhasıran yurt dışına yönelik yabancı dildeki varlıklar üzerinden yürütülür. Başarılı bir uluslararası hasta kazanımı; Meta Ads üzerinde tek ülke ve niş kitle hedeflemesi, Google Ads üzerinde long-tail hasta niyetli sorgular, saat dilimi filtreli formlar ve özel bir sağlık turizmi CRM yazılımı ile mümkündür.</p>
+      </section>
+      <section style="margin-top: 30px;">
+        <h2>Meta Reklamlarında Tek Ülke ve Niş Kitleler</h2>
+        <p>Bütün Avrupa'yı tek seferde hedeflemek Meta algoritmasının öğrenme sürecini bozar. İngiltere, Almanya veya Fransa için ayrı ayrı kampanyalar kurulmalı, yerel dilde aksansız video kreatifler kullanılmalı ve eldeki geçmiş hasta verisiyle Lookalike (benzer kitleler) üretilmelidir.</p>
+        <p><a href="/hizmetler/saglik-turizmi-meta-reklamlari">Sağlık Turizmi Meta Reklamları</a> hizmetimizi inceleyebilirsiniz.</p>
+      </section>
+      <section style="margin-top: 30px;">
+        <h2>Google Ads Eşleme Türleri ve Negatif Stratejisi</h2>
+        <p>Jenerik tekil kelimeler yerine 'hair transplant in Istanbul' gibi long-tail cerrahi aramalara odaklanılmalı; sıralı eşleme ve tam eşleme dengesi kurulmalıdır. 'Ücretsiz', 'bedava', 'iş ilanları' ve kamu hastaneleri gibi alakasız aramalar negatif anahtar kelimeler ile elenmelidir.</p>
+        <p><a href="/hizmetler/saglik-turizmi-google-ads">Sağlık Turizmi Google Ads Yönetimi</a> ve <a href="/hizmetler/saglik-turizmi-crm-yazilimi">Sağlık Turizmi CRM Yazılımı</a> sayfalarımızdan detaylı bilgi alabilirsiniz.</p>
+      </section>
+    `
+  },
+
   // 3. Hizmetler (8 Hizmet)
   {
     path: '/hizmetler/performans-pazarlama',

@@ -346,46 +346,178 @@ export const DOCTOR_ARTICLES: SeoArticleItem[] = [
     slug: "saglik-turizmi-reklami-nasil-verilir",
     url: "/saglik-turizmi-reklami-nasil-verilir",
     category: "Uluslararası Sağlık Turizmi",
-    title: "Sağlık Turizmi Reklamı Nasıl Verilir? 2026 Güncel Rehber",
-    h1: "Sağlık Turizmi Reklamı Nasıl Verilir? Yetki, Hedefleme ve Kampanya Rehberi",
-    seoTitle: "Sağlık Turizmi Reklamı Nasıl Verilir? 2026 Güncel Rehber | Overseas Marketing",
-    metaDesc: "Sağlık turizmi reklamı için yetki belgesi, yabancı dil sitesi, yurt dışı hedefleme, HealthTürkiye logosu ve hasta görseli kurallarını öğrenin.",
+    title: "Sağlık Turizmi Reklamı Nasıl Verilir? Meta, Google Ads ve CRM Rehberi 2026",
+    h1: "Sağlık Turizmi Reklamı Nasıl Verilir? Meta Ads, Google Ads ve CRM İle Hasta Kazanımı",
+    seoTitle: "Sağlık Turizmi Reklamı Nasıl Verilir? Meta, Google Ads ve CRM Rehberi | Overseas Marketing",
+    metaDesc: "Sağlık turizmi nasıl reklam verilir? Meta reklamları tek ülke stratejisi, Google Ads anahtar kelime eşleme türleri, form soruları ve sağlık turizmi CRM entegrasyonu rehberi.",
     primaryKeyword: "sağlık turizmi reklamı nasıl verilir",
-    secondaryKeywords: ["yurtdışı hasta reklamı", "sağlık turizmi reklam mevzuatı", "sağlık turizmi google ads", "sağlık turizmi meta reklamları"],
+    secondaryKeywords: [
+      "sağlık turizmi meta reklamları",
+      "sağlık turizmi google ads reklamları",
+      "sağlık turizmi reklam yönetimi",
+      "sağlık turizmi crm yazılımı",
+      "sağlık turizmi hasta kazanımı",
+      "sağlık turizmi reklam ajansı"
+    ],
     searchIntent: "Ticari / Bilgilendirici",
     funnel: "BOFU",
-    readTime: "10 dk okuma",
+    readTime: "12 dk okuma",
     publishedDate: "18 Eylül 2026",
     author: "Overseas Uluslararası Sağlık Turizmi Departmanı",
-    reviewer: "Sağlık Turizmi Mevzuat Kurulu",
-    quickAnswer: "Sağlık turizmi reklamı; T.C. Sağlık Bakanlığı onaylı Uluslararası Sağlık Turizmi Yetki Belgesi’ne sahip sağlık tesisleri ve aracı kuruluşlar tarafından, yurt dışına yönelik ayrı yabancı dilde bir internet sitesi/hesabı üzerinden, Türkçe dışındaki dillerde ve Türkiye konumu negatiflenerek (otomatik hedeflemeler kapatılarak) verilebilir. HealthTürkiye logosu ve yetki belgesi yayınlanmak zorundadır.",
+    reviewer: "Sağlık Turizmi Performans ve Mevzuat Kurulu",
+    quickAnswer: "Sağlık turizmi reklamı; T.C. Sağlık Bakanlığı onaylı Uluslararası Sağlık Turizmi Yetki Belgesi’ne sahip sağlık tesisleri ve aracı kuruluşlar tarafından, yurt dışına yönelik ayrı yabancı dildeki varlıklar üzerinden verilir. Başarılı bir uluslararası hasta kazanımı; Meta Ads (Instagram/Facebook) üzerinde tek ülke ve niş kitle hedeflemesi, Google Ads üzerinde 'hair transplant in Istanbul' gibi long-tail hasta niyetli sorgular ve negatif eşleme listeleri, saat dilimi filtreli hızlı lead formları ve hastayı asla unutturmayan özel bir sağlık turizmi CRM yazılımının entegre çalışmasıyla mümkündür.",
     sections: [
       {
-        heading: "Sağlık Turizmi Reklamı Açarken Uyulması Zorunlu 6 Kriter",
-        subheading: "Mevzuata Uygun Yurt Dışı Kampanya Kurulumu",
+        heading: "Sağlık Turizmi Nasıl Reklam Verilir? (Yasal ve Stratejik Zemin)",
+        subheading: "Uluslararası Hasta Kazanımında Temel Kurallar",
         paragraphs: [
-          "1. Yetki Belgesinin Doğrulanması: Reklam yapacak kurumun Bakanlıkça verilmiş yetki belgesi olmalı ve reklam açılış sayfasında belgenin taranmış kopyası veya karekodu yer almalıdır.",
-          "2. Ayrı Yurt Dışı Dijital Varlığı: Yurt içi hesapta ara sıra İngilizce paylaşım yapmak yetmez; münhasıran yurt dışına yönelik ayrı hesap ve web sitesi kullanılmalıdır.",
-          "3. Dil Şartı: Sponsorlu reklamlar Türkçe hariç diğer resmî dillerde (İngilizce, Almanca, Fransızca, Arapça, Rusça vb.) hazırlanmalıdır.",
-          "4. Kesin Coğrafi Dışlama: Türkiye’de yaşayan kişilere talep yaratacak reklamlar yasaktır. Meta ve Google Ads üzerinde Türkiye konumu kesin olarak hariç tutulmalı, Advantage/otomatik kitle genişletme kapatılmalıdır.",
-          "5. HealthTürkiye Logosu: Resmi sağlık turizmi portalı olan HealthTürkiye logosu ve bağlantısı web sitesinde yer almalıdır.",
-          "6. Hasta Görselleri: Yurt dışı varlıklarda açık rızalı hasta hikâyelerine yer verilebilir; ancak gerçeğe aykırı filtre ve yanıltıcı montajlar yasaktır."
+          "Sağlık turizminde reklam vermek; Türkiye'deki klasik yurt içi reklamcılıktan tamamen farklı yasal ve teknik kurallara tabidir. 12 Kasım 2025 tarihli güncel yönetmeliğe göre yurt dışı reklamı verebilmek için kurumun Sağlık Bakanlığı'ndan alınmış Uluslararası Sağlık Turizmi Yetki Belgesi'ne sahip olması, HealthTürkiye logosunu bulundurması ve münhasıran yurt dışına yönelik ayrı dijital varlıklar kullanması şarttır.",
+          "Ancak yalnızca yasal izinlere sahip olmak tek başına hasta getirmez. Reklam bütçenizi boşa harcamamak ve yüksek niyetli yabancı hasta başvurusu toplayabilmek için <a href=\"/saglik-turizmi-reklam-ajansi\">sağlık turizmi reklam yönetimi</a> ve <a href=\"/hizmetler/performans-pazarlama\">sağlık turizmi performans pazarlama</a> stratejilerinin iki ana sütunu olan <strong>Meta Ads</strong> ve <strong>Google Ads</strong> kanallarını birbirini tamamlayacak şekilde kurgulamak gerekir."
+        ],
+        bulletPoints: [
+          "Yetki Belgesi Zorunluluğu: Bakanlık onaylı yetki belgesi olmayan kuruluşların yurt dışına dahi olsa reklam vermesi yasal yaptırım doğurur.",
+          "Türkiye Konumunu Kesin Olarak Hariç Tutma: Kampanya hedeflemesinde Türkiye kesinlikle negatiflenmeli ve algoritmanın Türkiye'deki kişilere reklam göstermesi engellenmelidir.",
+          "Ayrı Yabancı Dil Varlıkları: Web sitesi, açılış sayfası ve sosyal medya hesapları hedef pazarın resmî dilinde hazırlanmalıdır."
+        ]
+      },
+      {
+        heading: "Sağlık Turizmi Meta Reklamları (Instagram & Facebook) Nasıl Kurgulanmalı?",
+        subheading: "Tek Ülke Odaklanması, Niş Kitleler ve Lookalike (Benzer Kitle) Gücü",
+        paragraphs: [
+          "Sağlık turizmi Meta reklamlarında kliniklerin ve hekimlerin yaptığı en ölümcül hata, tek bir reklam kampanyasında 'bütün Avrupa'yı veya onlarca ülkeyi aynı anda hedeflemektir. Bütün Avrupa'yı tek sepete koyduğunuzda Meta'nın makine öğrenimi algoritması neyi ve hangi dili optimize edeceğini şaşırır. İngiltere'deki hastanın kültürel sağlık kaygısıyla Almanya veya Fransa'daki hastanın beklentisi, bütçe algısı ve karar alma süreçleri birbirinden tamamen farklıdır. Reklamı tek bir hedef ülkeye özelleştirmemek, bütçenizin hızla erimesine ve alakasız kişilerden düşük kaliteli formlar gelmesine yol açar.",
+          "Örneğin İngiltere pazarına çıkıyorsanız; kampanya yalnızca Birleşik Krallık coğrafyasını hedeflemeli, kreatifler ve videolar aksansız yerel İngilizce dilinde hazırlanmalı ve İngiliz Ulusal Sağlık Sistemi'nin (NHS) bekleme sürelerine veya yüksek tedavi maliyetlerine alternatif sunan bir güven dili inşa edilmelidir. Milyonlarca kişilik dev genel kitleler yerine, tedaviye gerçek ilgi duyan daha niş hedef kitleler kurulmalıdır.",
+          "Eğer kliniğinizin elinde daha önce form doldurmuş veya kliniğinize gelip tedavi olmuş geçmiş yabancı hasta verileri (telefon, e-posta, piksel dönüşüm geçmişi) varsa, bu veriler Meta reklam yöneticisine yüklenerek %1 ve %2'lik <strong>Lookalike (Benzer Hedef Kitleler)</strong> üretilmelidir. Geçmiş hasta profilinize birebir benzeyen yabancı kullanıcılara ulaşmak, tıklama başı maliyetleri (CPC) ve lead edinme maliyetlerini (CPL) dramatik şekilde düşürür. Kliniğinizin sosyal medya bütçesini verimli yönetmek için <a href=\"/hizmetler/saglik-turizmi-meta-reklamlari\">sağlık turizmi meta reklamları</a> danışmanlığımızdan destek alabilirsiniz."
+        ],
+        callout: {
+          title: "Altın Kural: Asla Bütün Avrupa'yı Aynı Kurguda Hedeflemeyin",
+          text: "Her ülke için ayrı kampanya, ayrı reklam hesabı piksel optimizasyonu ve yerelleştirilmiş dilde video kreatif şarttır. Birleşik Krallık, Almanya, Fransa veya Körfez ülkelerinin her biri bağımsız birer sağlık pazarıdır.",
+          type: "warning"
+        }
+      },
+      {
+        heading: "Yabancı Hasta Lead Formu Tasarımı: Saat Dilimi ve Soru Dengesi",
+        subheading: "Form Kalitesini Artıran ve Terk Oranını Düşüren Stratejiler",
+        paragraphs: [
+          "Meta veya Google Ads üzerinde hazırladığınız lead toplama formları, yabancı hastanın ilk temas noktasıdır. Burada yapılacak en kritik optimizasyonlardan biri, forma <em>'Size hangi saat diliminde ulaşmamızı tercih edersiniz? (Sabah / Öğle / Akşam)'</em> sorusunu eklemektir. Çünkü yurt dışında yaşayan insanların mesai saatleri içinde yabancı bir numaradan gelen aramayı açma oranı son derece düşüktür. Hastanın kendisinin belirlediği uygun saatte aranması, kliniğinizin aranma ve ulaşılabilirlik oranını (Contact Rate) doğrudan %40'ın üzerinde artırır.",
+          "Ancak dikkat edilmesi gereken hayati bir denge vardır: Forma gereğinden fazla soru koymak! Birçok klinik formda onlarca soru sorarak hastayı yormakta; hasta sıkılıp formu göndermeden sayfayı terk etmektedir. Yurt dışı pazarda kliniğinizin yüzlerce agresif rakibi olduğunu asla unutmayın. Formda yalnızca temel iletişim bilgileri, tedavi ilgisi ve aranacak uygun saat dilimi sorulmalı; detaylı medikal analiz ve tetkik aşaması ise hastayla kurulan ilk sıcak iletişim sonrasına bırakılmalıdır."
+        ],
+        bulletPoints: [
+          "Zorunlu Saat Dilimi Sorusu: Hastanın sabah, öğle veya akşam saat tercihi lead kalitesini doğrudan artırır.",
+          "Minimalist Form Mimarisi: 4-5 soruyu aşmayan net alanlar formu tamamlama oranını maksimize eder.",
+          "Hızlı Teyit Ekranı: Form doldurulduğu anda hastaya anında WhatsApp veya e-posta ile otomatik teyit mesajı iletilmelidir."
+        ]
+      },
+      {
+        heading: "Hastayı Asla Unutmamak ve Hızlı Dönüş: Özel CRM Yazılımının Önemi",
+        subheading: "Sağlık Turizmi Bir Bütündür: Reklam Tek Başına Yetmez",
+        paragraphs: [
+          "Sağlık turizminde reklam vermek operasyonun yalnızca başlangıcıdır. Formu gönderen yabancı hastaya ilk 5 ile 15 dakika içinde geri dönüş yapılmazsa, hasta alternatif arayışına girerek başka bir kliniğe başvuracaktır. Yurt dışı sağlık sektöründe hızlı yanıt veren kurumlar satışın %70'inden fazlasını kapatır.",
+          "İşte bu yüzden sağlık turizmi bir bütündür ve hastayı asla unutmayan, satış ekibini yönlendiren profesyonel bir altyapı gerektirir. Yabancı hastanın hangi ülkeden geldiğini, hangi reklam görseline tıkladığını, hangi saatte aranmak istediğini ve önceki mesajlaşma geçmişini tek bir ekranda toplayan düzgün bir CRM programınızın olması zorunludur.",
+          "Özel olarak tasarlanan <a href=\"/hizmetler/saglik-turizmi-crm-yazilimi\">sağlık turizmi için özel CRM yazılımı</a>; çok dilli WhatsApp şablonları, sesli görüşme kayıtları, otomatik takip hatırlatıcıları ve teklif durumlarını adım adım yöneterek reklamdan gelen hiçbir lead'in kaybolmasına izin vermez."
+        ],
+        callout: {
+          title: "Süreç Bütünlüğü İlkesi",
+          text: "Dünyanın en iyi Meta veya Google Ads reklamını verseniz dahi, arkasında organize çalışan bir sağlık turizmi CRM altyapısı ve çok dilli hasta koordinatörü ekibi yoksa harcanan bütçe boşa gider.",
+          type: "tip"
+        }
+      },
+      {
+        heading: "Sağlık Turizmi Google Ads Reklamları: Long-Tail Odaklı Hasta Kazanımı",
+        subheading: "Jenerik Kelimelerden Kaçınmak ve Arama Niyetini Doğru Yakalamak",
+        paragraphs: [
+          "Google Arama Ağı'nda (Google Search Ads) uluslararası kampanya kurgularken anahtar kelimeleri seçmek en büyük ustalıktır. Birçok klinik doğrudan 'hair' veya 'dentist' gibi aşırı genel ve jenerik kelimeleri reklamına ekler. Direkt olarak sadece hizmetin genel adını koymak yüzlerce alakasız tıklama alarak bütçenizi birkaç saatte tüketir ama size kesinlikle hasta getirmez!",
+          "Unutulmamalıdır ki sağlık iletişiminde 'müşteri' değil, <strong>'hasta'</strong> kelimesi ve hasta arama niyetleri esastır. Bu sebeple genel kelimeler yerine mutlaka <strong>long-tail (uzun kuyruklu)</strong> ve coğrafi tedavi niyeti taşıyan kelimelere odaklanılmalıdır.",
+          "Örneğin İngiltere veya İrlanda hedefli bir kampanyada; <em>'hair transplant in Istanbul'</em>, <em>'hair transplant in Turkey'</em>, <em>'dental implants Turkey cost'</em>, <em>'all on 4 dental turkey package'</em>, <em>'rhinoplasty turkey surgeon reviews'</em> gibi aramalar doğrudan tedavi için Türkiye'ye gelmeye karar vermiş, yüksek bütçeli ve ameliyata hazır yabancı hastaları hedefler.",
+          "Google Ads tarafında da tıpkı Meta reklamlarında olduğu gibi tek ülke hedeflemesiyle gidilmeli; her hedef ülke için o ülkenin yerel para birimini, dilini ve arama alışkanlıklarını yansıtan ayrı reklam grupları oluşturulmalıdır. Ayrıntılı stratejiler için <a href=\"/hizmetler/saglik-turizmi-google-ads\">sağlık turizmi Google Ads yönetimi</a> sayfamızı inceleyebilirsiniz."
+        ]
+      },
+      {
+        heading: "Google Ads Anahtar Kelime Eşleme Türleri ve Negatif Eşleme Stratejisi",
+        subheading: "Bütçenizi Koruyan ve Dönüşümü Artıran 4 Eşleme Modeli",
+        paragraphs: [
+          "Google Ads'de başarılı bir sağlık turizmi reklamı yönetebilmek için anahtar kelime eşleme türlerini (Geniş, Sıralı, Tam ve Negatif) kusursuz bilmek ve uygulamak gerekir:",
+          "1. Geniş Eşleme (Broad Match): Varsayılan eşleme türüdür ve hiçbir özel karakter içermez (Örn: hair transplant turkey). Google bu kelimeyle ilgili olabilecek eşanlamlıları, yazım hatalarını ve geniş varyasyonları tetikler. En çok kitleye ulaşan türdür; ancak hedef dışı aramalarda da reklamınızı göstererek bütçenizi gereksiz yere tüketebilir. Bu nedenle geniş eşleme, çok güçlü ve günlük taranan bir negatif anahtar kelime listesi olmadan kullanılmamalıdır.",
+          "2. Sıralı Eşleme (Phrase Match): Tırnak içinde yazılır (Örn: \"hair transplant in istanbul\"). Belirttiğiniz kelime öbeğinin anlamını veya aynı niyete sahip arama sorgularını hedefler. Kelimenin başına veya sonuna başka kelimeler gelebilir ama temel anlam bozulmaz. Sağlık turizmi Google Ads kampanyalarında en çok kullanılan, hem yeterli arama hacmi sunan hem de alakasız tıklamaları filtreleyen en dengeli eşleme türüdür.",
+          "3. Tam Eşleme (Exact Match): Köşeli parantez içinde yazılır (Örn: [best hair clinic in turkey]). Yalnızca anahtar kelimeyle birebir aynı olan veya çok yakın varyasyonları taşıyan aramalarda reklamı tetikler. Arama hacmi düşüktür; ancak tedavi niyeti en net hastayı getirdiği için dönüşüm oranı en yüksek eşleme türüdür.",
+          "4. Negatif Eşleme (Negative Match): Reklamınızın kesinlikle görünmesini istemediğiniz arama terimlerini engellemenizi sağlar (Eksi işaretiyle tanımlanır). Sağlık turizminde bütçeyi korumanın en kritik aracı negatif anahtar kelimelerdir."
+        ],
+        table: {
+          headers: ["Eşleme Türü", "Sözdizimi Formatı", "Tetiklenme Mantığı", "Sağlık Turizmindeki Rolü"],
+          rows: [
+            [
+              "Geniş Eşleme (Broad)",
+              "hair transplant turkey",
+              "İlgili tüm aramalar, eşanlamlılar, genel saç dökülmesi soruları",
+              "Dikkatli kullanılmalı; kontrolsüz bütçe tüketebilir."
+            ],
+            [
+              "Sıralı Eşleme (Phrase)",
+              "\"hair transplant in turkey\"",
+              "Belirtilen kelime öbeğini ve aynı anlama gelen niyet aramalarını kapsar",
+              "Sağlık turizminde en çok tercih edilen, hacim ve alaka dengeli türdür."
+            ],
+            [
+              "Tam Eşleme (Exact)",
+              "[dental implants turkey]",
+              "Yalnızca kelimeyle birebir aynı niyetli yüksek odaklı aramalarda tetiklenir",
+              "En yüksek dönüşüm sağlayan, cerrahi kararı net hastalara odaklanır."
+            ],
+            [
+              "Negatif Eşleme (Negative)",
+              "-free, -jobs, -salary, -sgk",
+              "Bu kelimeleri içeren hiçbir aramada reklamınız asla gösterilmez",
+              "Bütçenizi korur, kalitesiz ve alakasız lead'leri tamamen eler."
+            ]
+          ]
+        }
+      },
+      {
+        heading: "Negatif Anahtar Kelime Kurgusu: Kliniğinizi Gereksiz Harcamalardan Koruyun",
+        subheading: "Hangi Kelimeler Kesinlikle Negatif Listesine Alınmalıdır?",
+        paragraphs: [
+          "Negatif eşleme; reklam bütçenizi çöpe atmaktan kurtaran kalkanınızdır. Sağlık turizmi kampanyalarında 'ücretsiz', 'bedava' (free, cheap, discount), 'iş ilanları' (jobs, vacancy, career, salary), 'staj', 'eğitim', 'nasıl olunur' gibi ticari değeri olmayan kelimeler mutlaka negatife eklenmelidir.",
+          "Ayrıca kurum türünüze göre özel negatifler kurgulanmalıdır: Örneğin özel bir diş kliniğiyseniz veya hekim muayenehanesiyseniz, devlet hastanesini ya da kamu sağlık kuruluşlarını arayan kişilerin sizin reklamınıza tıklayıp bütçenizi bitirmesini istemezsiniz. Bu sebeple 'devlet', 'kamu', 'SGK', 'numune', 'şehir hastanesi', 'NHS' gibi kelimeleri negatif anahtar kelime listesine eklemek reklamınızın yalnızca özel sağlık hizmeti satın alabilecek yabancı hastalara gösterilmesini sağlar.",
+          "Tüm bu Meta reklamları, Google Ads stratejileri ve CRM entegrasyonlarını uçtan uca kuran <a href=\"/doktor-reklam-ajansi\">doktor reklam ajansı</a> ve sağlık iletişimi hizmetimiz, kliniğinizi uluslararası arenada güvenle büyütür."
         ]
       }
     ],
     faqs: [
       {
-        q: "Aracı kuruluş sağlık tesisi gibi reklam yapabilir mi?",
-        a: "Hayır. Uluslararası sağlık turizmi aracı kuruluşları kendilerini hastane veya klinik gibi gösteremez; aracı rolünü ve hizmetin hangi yetkili sağlık tesisinde verileceğini açıkça belirtmek zorundadır."
+        q: "Sağlık turizminde Meta reklamları mı yoksa Google Ads mi daha çok hasta getirir?",
+        a: "Her iki kanal farklı aşamalardaki hastaları yakalar. Google Ads, 'hair transplant in Istanbul' gibi aramalar yapan ve tedavi kararı almış yüksek niyetli hastaları hemen yakalar. Meta Ads ise kaliteli video kreatiflerle henüz araştırma aşamasında olan hastaların aklına güven tohumları eker. En başarılı sağlık turizmi operasyonları her iki kanalı CRM ile entegre yönetenlerdir."
+      },
+      {
+        q: "Meta reklamlarında neden tek bir ülke seçilmesi gerekir?",
+        a: "Bütün Avrupa veya birden fazla ülke tek reklam setine konulduğunda Meta'nın algoritması hangi ülkeye ve hangi dile odaklanacağını şaşırır. İngiltere'deki hastanın ilgi ve maliyet eşiği ile Almanya veya Fransa'daki hastanınki aynı değildir. Tek ülke hedeflemesi reklamın öğrenme sürecini hızlandırır ve lead maliyetlerini düşürür."
+      },
+      {
+        q: "Lead formuna 'hangi saat diliminde aranalım' sorusunu koymak neden önemlidir?",
+        a: "Yurt dışında çalışan kişilerin gün içinde yabancı numaralardan gelen çağrıları yanıtlama oranı düşüktür. Hastaya uygun olduğu saat aralığını (sabah/öğle/akşam) seçtirmek, çağrı yanıtlama oranını %40'tan fazla artırır ve ulaşılabilir lead kalitesini yükseltir."
+      },
+      {
+        q: "Google Ads'de neden jenerik kelimeler yerine long-tail kelimeler seçilmelidir?",
+        a: "Yalnızca 'diş' veya 'estetik' gibi tekil genel kelimeler bilgi arayan veya öğrenci olan binlerce alakasız kişiyi çeker ve bütçenizi boşa harcar. 'Dental implants turkey packages' gibi long-tail (uzun kuyruklu) kelimeler ise doğrudan tedavi için Türkiye'ye gelmeyi planlayan cerrahi niyetli hastaları getirir."
+      },
+      {
+        q: "Negatif anahtar kelimeler kliniğe ne kazandırır?",
+        a: "Negatif anahtar kelimeler; 'ücretsiz', 'iş ilanları', 'staj' veya 'devlet hastanesi' gibi kliniğinize gelir getirmeyecek aramaları engelleyerek reklam bütçenizin yalnızca ödeme gücü olan ve özel sağlık hizmeti arayan gerçek yabancı hastalara harcanmasını sağlar."
+      },
+      {
+        q: "Sağlık turizmi reklamı için CRM programı şart mıdır?",
+        a: "Evet. Reklamdan gelen hastaya ilk 5-15 dakika içinde geri dönülmezse veya takip süreci organize edilmezse harcanan reklam bütçesi boşa gider. Çok dilli WhatsApp entegrasyonu ve otomatik hatırlatıcıları olan özel bir sağlık turizmi CRM'i dönüşüm oranlarını en az 3 kat artırır."
       }
     ],
     officialSources: [
       { title: "Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik", url: "https://shgmturizmdb.saglik.gov.tr/TR-108367/yeni-saglik-turizmi-yonetmeligi.html" },
-      { title: "HealthTürkiye Resmi Portalı", url: "https://www.healthturkiye.gov.tr/" }
+      { title: "HealthTürkiye Resmi Portalı", url: "https://www.healthturkiye.gov.tr/" },
+      { title: "Google Ads Sağlık ve İlaç Reklam Politikaları Kılavuzu", url: "https://support.google.com/adspolicy/answer/176031" }
     ],
     internalLinks: [
-      { title: "Doktor Reklam Ajansı", url: "/doktor-reklam-ajansi" },
-      { title: "Sağlık Turizmi Reklam Ajansı Çözümleri", url: "/saglik-turizmi-reklam-ajansi" }
+      { title: "Sağlık Turizmi Reklam Ajansı", url: "/saglik-turizmi-reklam-ajansi" },
+      { title: "Sağlık Turizmi Google Ads Yönetimi", url: "/hizmetler/saglik-turizmi-google-ads" },
+      { title: "Sağlık Turizmi Meta Reklamları", url: "/hizmetler/saglik-turizmi-meta-reklamlari" },
+      { title: "Sağlık Turizmi CRM Yazılımı", url: "/hizmetler/saglik-turizmi-crm-yazilimi" },
+      { title: "Doktor Reklam Ajansı Ana Sayfası", url: "/doktor-reklam-ajansi" }
     ]
   },
 
