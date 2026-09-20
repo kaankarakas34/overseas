@@ -39,6 +39,130 @@ export interface FaqItem {
 
 export const MASTER_SERVICES: ServiceItem[] = [
   {
+    id: 'saglik-turizmi-reklam-ajansi',
+    title: 'Sağlık Turizmi Reklam Ajansı',
+    shortDesc: 'Klinik, doktor ve hastanelerin yurtdışından nitelikli hasta kazanması için pazar araştırması, reklam yönetimi, landing page, CRM ve satış takibi.',
+    iconName: 'TrendingUp',
+    category: 'Görünürlük',
+    h1: 'Sağlık Turizmi Reklam Ajansı',
+    seoTitle: 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
+    metaDesc: 'Sağlık turizmi reklam ajansı Overseas Marketing; klinik, doktor ve hastaneler için çok kanallı reklam yönetimi, çok dilli açılış sayfaları, CRM ve yapay zekâ otomasyonları kurar.',
+    fullDesc: 'Sağlık turizmi reklam ajansı; klinik, doktor, hastane ve sağlık turizmi kuruluşlarının yurtdışındaki potansiyel hastalara ulaşması için pazar araştırması, reklam yönetimi, çok dilli landing page, ölçümleme, CRM ve satış takibi süreçlerini birlikte kuran uzmanlaşmış ajanstır. Başarı yalnızca lead sayısıyla değil; nitelikli görüşme, randevu, tedavi ve sürdürülebilir edinme maliyetiyle değerlendirilmelidir.',
+    highlights: [
+      'İngiltere, DACH, Fransa, Hollanda ve Körfez pazarlarına özel çok dilli kampanya mimarisi',
+      'Google Ads yüksek tedavi niyetli aramalar ve Meta video kreatiflerinin entegrasyonu',
+      '2 saniyenin altında açılan çok dilli ve yüksek dönüşümlü Landing Page tasarımları',
+      'WhatsApp entegrasyonlu ve ilk yanıt süresini 90 saniyenin altına indiren özel CRM altyapısı',
+      'Sağlık tanıtım mevzuatına ve uluslararası reklam kurallarına %100 uyum'
+    ],
+    deliverables: [
+      'Pazar Araştırması ve Hedef Ülke Rekabet Analizi',
+      'Google Ads & Meta Ads Çok Dilli Kampanya Kurulumu',
+      'Yüksek Dönüşümlü Açılış Sayfaları (Landing Page)',
+      'Çok Dilli WhatsApp Satış Hunisi ve CRM Entegrasyonu',
+      'Haftalık Nitelikli Hasta Maliyeti (CPL) ve Ciro Katkısı Raporu'
+    ],
+    subChannels: ['Google Ads', 'Meta Ads', 'Landing Page CRO', 'WhatsApp CRM', 'AI Call Agent'],
+    faq: [
+      {
+        q: 'Sağlık turizmi reklam ajansı ne yapar?',
+        a: 'Sağlık turizmi reklam ajansı; klinik, doktor ve hastanelerin hedef ülkelerden yabancı hasta kazanması için pazar analizi, reklam kampanyaları, çok dilli açılış sayfaları, CRM takip sistemleri ve raporlama altyapısını uçtan uca kurar.'
+      },
+      {
+        q: 'Başarı yalnızca gelen form veya lead sayısıyla mı ölçülür?',
+        a: 'Hayır. Niteliksiz lead bütçe israfıdır. Başarı; nitelikli görüşme oranı, planlanan görüntülü muayene, kliniğe gelen hasta ve sürdürülebilir hasta edinme maliyeti (CPA) ile ölçülür.'
+      },
+      {
+        q: 'Hangi ülkelerde reklam yönetimi yapıyorsunuz?',
+        a: 'Başta İngiltere, Almanya, Avusturya, İsviçre (DACH), Fransa, Hollanda, Belçika, İtalya, İspanya ve Körfez ülkeleri olmak üzere sağlık turizmi talebi yüksek pazarlarda ana dilinde kampanyalar yönetiyoruz.'
+      },
+      {
+        q: 'Sağlık tanıtım mevzuatına uyum nasıl sağlanır?',
+        a: '1219 sayılı Kanun, 3359 sayılı Kanun ve Sağlık Bakanlığı tanıtım yönetmeliklerine uygun olarak; kanıtsız üstünlük ifadelerinden ve yanıltıcı garanti vaatlerinden uzak, bilgilendirici ve güven odaklı kreatifler hazırlanır.'
+      }
+    ]
+  },
+  {
+    id: 'saglik-turizmi-dijital-pazarlama',
+    title: 'Sağlık Turizmi Dijital Pazarlama',
+    shortDesc: 'Klinik ve hekimler için bütünsel dijital büyüme: SEO, GEO, performans reklamları, web altyapısı, CRM ve satış takibi.',
+    iconName: 'Globe2',
+    category: 'Görünürlük',
+    h1: 'Sağlık Turizmi Dijital Pazarlama',
+    seoTitle: 'Sağlık Turizmi Dijital Pazarlama | Overseas Marketing',
+    metaDesc: 'Sağlık turizmi dijital pazarlaması: Hedef pazar analizi, SEO, GEO, performans reklamları, çok dilli açılış sayfaları ve CRM tabanlı satış takibi.',
+    fullDesc: 'Sağlık turizmi dijital pazarlaması; klinik, doktor ve hastanelerin uluslararası pazarlarda doğru hasta adaylarına ulaşması için hedef pazar analizi, arama motoru optimizasyonu (SEO), yapay zekâ görünürlüğü (GEO), performans reklamları, çok dilli açılış sayfaları ve CRM tabanlı satış takibini tek entegre büyüme sistemi içinde birleştiren stratejik süreçtir.',
+    highlights: [
+      'Reklam, SEO, GEO ve CRM kanallarını birbirini besleyen tek büyüme ekosisteminde birleştirme',
+      'Tek bir kanala bağımlı kalmadan hem kısa vadeli (Google/Meta) hem uzun vadeli (SEO/GEO) hasta akışı',
+      'Yabancı hasta karar yolculuğunu (araştırma, güven, teklif, seyahat) kapsayan çok dilli içerik mimarisi',
+      'Uluslararası arama niyetlerini karşılayan tedavi spesifik açılış sayfaları ve dönüşüm optimizasyonu',
+      'Satış ekibinin dönüşüm hızını artıran yapay zekâ destekli hasta ön nitelikleme sistemleri'
+    ],
+    deliverables: [
+      '360° Dijital Sağlık Turizmi Büyüme Stratejisi',
+      'Çok Kanallı Reklam & Bütçe Dağılım Modeli',
+      'Uluslararası SEO & Çok Dilli Teknik Altyapı',
+      'GEO (Yapay Zekâ Arama Motoru Optimizasyonu) Mimarisi',
+      'Entegre Satış Hunisi ve CRM Raporlama Sistemi'
+    ],
+    subChannels: ['Uluslararası SEO', 'GEO & AI Search', 'Performans Reklamları', 'CRO & Landing Page', 'CRM Otomasyonu'],
+    faq: [
+      {
+        q: 'Sağlık turizmi dijital pazarlaması neden tek kanaldan ibaret olamaz?',
+        a: 'Yabancı hasta bir reklam gördüğünde hemen ameliyat kararı vermez. Google\'da kliniği arar, ChatGPT\'ye sorar, hekimin uzmanlığını inceler ve WhatsApp üzerinden iletişim kurar. Bu yolculuğun tüm temas noktaları birlikte yönetilmelidir.'
+      },
+      {
+        q: 'SEO ile reklamlar nasıl birlikte çalışır?',
+        a: 'Reklamlar yüksek niyetli hastaları hemen kliniğe çekerken; SEO ve GEO, reklam maliyetlerinden bağımsız olarak kalıcı organik güven ve marka bilinirliği inşa eder.'
+      },
+      {
+        q: 'Klinikler için dijital pazarlama bütçesi nasıl planlanmalı?',
+        a: 'Hedef ülkenin tıklama maliyetleri, kliniğin tedavi kapasitesi, satış ekibinin karşılama hacmi ve hedeflenen randevu sayısı dikkate alınarak dengeli bir bütçe dağılımı yapılır.'
+      }
+    ]
+  },
+  {
+    id: 'uluslararasi-hasta-kazanimi',
+    title: 'Uluslararası Hasta Kazanımı',
+    shortDesc: 'Hedef pazar seçimi, güven oluşturma, reklam ve organik görünürlük, çok dilli iletişim ve CRM satış süreçlerinin uçtan uca yönetimi.',
+    iconName: 'HeartHandshake',
+    category: 'Dönüşüm',
+    h1: 'Uluslararası Hasta Kazanımı',
+    seoTitle: 'Uluslararası Hasta Kazanımı | Sağlık Turizmi Hasta Edinimi | Overseas',
+    metaDesc: 'Uluslararası hasta kazanımı: Hedef pazar seçimi, güven oluşturma, reklam ve organik görünürlük, çok dilli iletişim, hızlı ön değerlendirme ve CRM takibi.',
+    fullDesc: 'Uluslararası hasta kazanımı; hedef pazar seçimi, güven oluşturma, reklam ve organik görünürlük, çok dilli iletişim, hızlı ön değerlendirme, CRM takibi ve satış süreçlerinin birlikte yönetilmesidir. Yalnızca reklam vermek yeterli değildir; lead\'in gerçek hastaya dönüşmesine kadar bütün yolculuğun ölçülmesi gerekir.',
+    highlights: [
+      'Tıklamadan tedavi sonrasına kadar tüm hasta yolculuğunun (Patient Journey) şeffaf tasarımı',
+      'İngiltere, DACH, Fransa ve Hollanda pazarlarında kültürel bariyerleri aşan ana dilinde iletişim',
+      'WhatsApp ilk temas süresini düşürerek sıcak lead\'lerin rakiplere gitmesini önleyen sistem',
+      'Hekim yetkinliğini, ameliyathane güvenliğini ve şeffaf paket içeriklerini öne çıkaran yaklaşım',
+      'Reklam bütçesinin doğrudan ameliyat ve tedavi cirosuna etkisini gösteren kapalı devre (closed-loop) analitik'
+    ],
+    deliverables: [
+      'Hasta Yolculuğu (Patient Journey) & Satış Hunisi Tasarımı',
+      'Hedef Ülke Kültürel & Dil Yerelleştirme Kılavuzu',
+      'WhatsApp Satış Ekibi Yanıt Şablonları ve Protokolleri',
+      'Ön Değerlendirme ve Tıbbi Fotoğraf Toplama Formları',
+      'Uçtan Uca Hasta Kazanım ve Dönüşüm Analitiği'
+    ],
+    subChannels: ['Patient Funnel', 'Multilingual Sales', 'WhatsApp Automation', 'E-E-A-T Trust Building', 'Attribution Modeling'],
+    faq: [
+      {
+        q: 'Uluslararası hasta kazanımında en sık yapılan hata nedir?',
+        a: 'En sık yapılan hata, reklamdan gelen başvuruyu saatler sonra yanıtlamak ve hastayı generic metinlerle karşılamaktır. Sıcak ilgi 5-15 dakika içinde nitelikli şekilde karşılanmadığında hasta başka bir kliniği tercih eder.'
+      },
+      {
+        q: 'Yabancı hastalar Türkiye\'yi seçerken nelere dikkat eder?',
+        a: 'Fiyat önemli bir faktör olsa da asıl belirleyici olan hekimin deneyimi, vaka sonuçlarının şeffaflığı, iletişim hızı ve dil engelinin bulunmamasıdır.'
+      },
+      {
+        q: 'Hasta kazanım sürecinde CRM neden zorunludur?',
+        a: 'Sağlık turizmi kararı ortalama 2 hafta ile 3 ay arasında verilir. CRM olmadan takip edilmeyen hasta adayları unutulur ve reklam yatırımı heba olur.'
+      }
+    ]
+  },
+  {
     id: 'performans-pazarlama',
     title: 'Sağlık Turizmi Reklam Yönetimi',
     shortDesc: 'Kliniğinizin uluslararası hastalara ulaşması için reklam kampanyalarını planlıyor, yönetiyor ve geliştiriyoruz.',
@@ -465,7 +589,7 @@ export const MASTER_SERVICES: ServiceItem[] = [
       'Hedef ülke diline ve kültürüne uygun yerelleştirilmiş içerik üretimi',
       'Hekim uzmanlığı, teknoloji ve klinik atmosferini yansıtan video kurguları',
       'Organik topluluk etkileşimi ve güvenli başvuru yönlendirmeleri',
-      'Mevzuat (K8) ve platform etik kurallarına uygun yayın onayı',
+      'Sağlık tanıtım mevzuatı ve platform etik kurallarına uygun yayın onayı',
       'Aylık erişim, profil ziyareti ve lead dönüşüm raporlaması'
     ],
     deliverables: [

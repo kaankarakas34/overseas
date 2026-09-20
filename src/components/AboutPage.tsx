@@ -6,7 +6,12 @@ import {
   TrendingUp, 
   Award, 
   ArrowRight,
-  Globe2
+  Globe2,
+  Cpu,
+  Layers,
+  Users,
+  CheckCircle2,
+  Building2
 } from 'lucide-react';
 import { SEOHead } from './SEOHead';
 import { JsonLdSchema } from './JsonLdSchema';
@@ -22,48 +27,60 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenConsultation }) => {
   const values = [
     {
       icon: <ShieldCheck className="w-6 h-6 text-[#446CB5]" />,
-      title: isEn ? "E-E-A-T & Regulatory Compliance" : "Mevzuat ve Etik Uyum",
+      title: isEn ? "E-E-A-T & Regulatory Compliance" : "Mevzuat ve Tanıtım İlkelerine Uyum",
       desc: isEn 
-        ? "We strictly adhere to Turkish Ministry of Health and target country advertising regulations without misleading claims." 
-        : "Sağlık Bakanlığı tanıtım yönetmeliğine ve hedef ülke reklam regülasyonlarına tam uyumla, yanıltıcı vaatlerden uzak çalışırız."
+        ? "We strictly adhere to Turkish healthcare advertising regulations (Law No. 1219, Law No. 3359) and target country guidelines. We never use unverified medical promises or guarantee patient volumes." 
+        : "Sağlık Bakanlığı tanıtım yönetmeliklerine (1219 sayılı Kanun, 3359 sayılı Kanun) ve hedef ülke reklam kurallarına tam uyumla çalışırız. Kanıtsız üstünlük, tıbbi garanti veya yanıltıcı vaatlerden uzak dururuz."
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-[#446CB5]" />,
-      title: isEn ? "Integrated Performance & Technology" : "Entegre Pazarlama & Teknoloji",
+      title: isEn ? "Holistic Growth Infrastructure" : "Bütünsel Büyüme Altyapısı",
       desc: isEn
-        ? "We fuse paid acquisition (Google & Meta Ads) with proprietary CRM and AI agents so no patient inquiry is lost."
-        : "Google Ads ve Meta reklamlarını özel WhatsApp CRM ve sesli yapay zekâ asistanlarıyla birleştirerek sıfır kayıp lead hedefliyoruz."
+        ? "We integrate high-intent paid search (Google & Meta Ads) with proprietary CRM funnels and AI call agents to eliminate lead leakage."
+        : "Google Ads ve Meta reklamlarını özel WhatsApp CRM ve sesli yapay zekâ asistanlarıyla birleştirerek reklamdan ilk temasa uzanan süreçte kayıp lead oranını en aza indiriyoruz."
     },
     {
       icon: <Globe2 className="w-6 h-6 text-[#446CB5]" />,
-      title: isEn ? "Target Market Localization" : "Hedef Pazar Yerelleştirmesi",
+      title: isEn ? "Target Market Cultural Localization" : "Hedef Pazar ve Kültürel Yerelleştirme",
       desc: isEn
-        ? "Native copywriting and patient journey optimization in English, German, French, Arabic, and Dutch."
-        : "İngiltere, Almanya, Fransa, Hollanda ve Körfez pazarlarında doğrudan ana dilinde ve kültürel dinamiklere uygun hasta iletişimi."
+        ? "Copywriting and patient journeys crafted natively for the UK, DACH (Germany, Austria, Switzerland), France, Netherlands, and GCC markets."
+        : "İngiltere, Almanya, Fransa, Hollanda ve Körfez pazarlarında doğrudan ana dilinde, kültürel hassasiyetleri gözeten hasta iletişimi."
     },
     {
       icon: <Award className="w-6 h-6 text-[#446CB5]" />,
-      title: isEn ? "Verifiable Case Documentation" : "Ölçülebilir & Şeffaf Sonuçlar",
+      title: isEn ? "Transparent & Verifiable Reporting" : "Şeffaf ve Ölçülebilir Raporlama",
       desc: isEn
-        ? "Real performance data: CPL, qualified consultation rates, and actual patient conversion attribution."
-        : "Nitelikli hasta başvuru maliyetleri (CPL), randevu gerçekleşme oranları ve net ciro katkısı üzerinden haftalık şeffaf raporlama."
+        ? "True performance attribution: Cost per qualified lead (CPL), scheduled consultations, and end-to-end revenue contribution."
+        : "Nitelikli hasta başvuru maliyeti (CPL), randevu gerçekleşme oranları ve net tedavi dönüşümü üzerinden şeffaf raporlama."
     }
   ];
 
-  const milestones = [
-    { year: "2021", title: isEn ? "Foundation & Medical Focus" : "Kuruluş ve Medikal Odak", desc: isEn ? "Established exclusively for healthcare cross-border growth." : "Yalnızca sağlık turizmi ve hekim büyümesi odaklı ajans modeli kuruldu." },
-    { year: "2023", title: isEn ? "Proprietary CRM & Automation" : "Özel CRM ve WhatsApp Altyapısı", desc: isEn ? "Launched dedicated multilingual WhatsApp lead qualification CRM." : "Çok dilli satış ekiplerine özel sağlık turizmi CRM altyapısı geliştirildi." },
-    { year: "2025", title: isEn ? "GEO & AI Search Integration" : "GEO ve Yapay Zekâ Entegrasyonu", desc: isEn ? "Pioneered Generative Engine Optimization for ChatGPT and Perplexity." : "ChatGPT, Perplexity ve Google AI Overviews için GEO optimizasyon katmanı açıldı." },
-    { year: "2026", title: isEn ? "Global Patient Growth Engine" : "Entegre Küresel Hasta Motoru", desc: isEn ? "Managing 15+ specialties across 12 countries with 360° growth stack." : "15'i aşkın klinik branşında İngiltere ve Avrupa genelinde tam kapsamlı büyüme yönetimi." }
+  const whoWeWorkWith = [
+    {
+      title: isEn ? "Private Clinics & Polyclinics" : "Özel Klinikler ve Poliklinikler",
+      desc: isEn ? "Dental, hair restoration, plastic surgery, and medical aesthetic clinics scaling abroad." : "Dental turizm, saç ekimi, plastik cerrahi ve medikal estetik alanında yurtdışından hasta kabul eden klinikler."
+    },
+    {
+      title: isEn ? "Independent Physicians & Practices" : "Hekim Muayenehaneleri",
+      desc: isEn ? "Surgeons and specialists building personal brand authority and international patient flow." : "Kendi muayenehanesinde uluslararası hasta kabul eden, E-E-A-T ve dijital itibarını büyütmek isteyen hekimler."
+    },
+    {
+      title: isEn ? "Hospitals & Healthcare Groups" : "Hastaneler ve Sağlık Grupları",
+      desc: isEn ? "Multispecialty hospitals managing cross-border patient acquisition and insurance workflows." : "Onkoloji, kardiyoloji, obezite ve ileri cerrahi branşlarda yabancı hasta kabul eden A+ hastaneler."
+    },
+    {
+      title: isEn ? "Licensed Health Tourism Agencies" : "Yetkili Aracı Kuruluşlar",
+      desc: isEn ? "Ministry of Health authorized healthcare facilitators managing multilingual patient pipelines." : "Sağlık Bakanlığı yetki belgesine sahip, çok dilli hasta operasyonunu dijitalleştirmek isteyen aracı kurumlar."
+    }
   ];
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-[#222222] pt-28 pb-20">
       <SEOHead
-        title={isEn ? "About Us | Overseas Marketing Health Tourism Agency" : "Hakkımızda | Overseas Marketing Sağlık Turizmi Reklam Ajansı"}
+        title={isEn ? "About Us | Overseas Marketing Health Tourism Agency" : "Overseas Marketing Hakkında | Sağlık Turizmi Reklam ve Büyüme Ajansı"}
         description={isEn
-          ? "Learn about Overseas Marketing: Our medical growth methodology, team, clinical principles, and international patient acquisition stack."
-          : "Overseas Marketing hakkında: Deneyimimiz, sağlık turizmi büyüme yaklaşımımız, etik ilkelerimiz, ekibimiz ve uluslararası hasta edinim modeli."}
+          ? "Overseas Marketing is a digital growth agency specializing in medical tourism marketing, SEO/GEO, CRM, and patient acquisition for clinics, doctors, and hospitals."
+          : "Overseas Marketing; sağlık turizminde klinik, doktor ve hastaneler için uluslararası hasta kazanımı, reklam yönetimi, SEO, GEO ve CRM altyapısı kuran dijital büyüme ajansıdır."}
         canonicalUrl="https://www.overseas.marketing/hakkimizda"
       />
       <JsonLdSchema type="home" />
@@ -76,58 +93,84 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenConsultation }) => {
         </div>
         <h1 className="font-['Inter_Tight'] text-3xl sm:text-5xl font-extrabold text-[#16202E] tracking-tight leading-tight mb-6 max-w-4xl">
           {isEn ? (
-            <>We engineer <span className="text-[#446CB5]">predictable international patient growth</span> for healthcare providers.</>
+            <>Engineering <span className="text-[#446CB5]">sustainable international patient growth</span> for healthcare organizations.</>
           ) : (
-            <>Sağlık kuruluşları için <span className="text-[#446CB5]">öngörülebilir uluslararası hasta kazanımı</span> inşa ediyoruz.</>
+            <>Sağlık kuruluşları için <span className="text-[#446CB5]">sürdürülebilir uluslararası hasta kazanım</span> altyapısı kuruyoruz.</>
           )}
         </h1>
         <p className="text-lg text-[#595F69] max-w-3xl leading-relaxed">
           {isEn
-            ? "Overseas Marketing is a specialized medical tourism growth agency based in Istanbul. We combine high-intent performance advertising, international SEO/GEO, high-converting medical websites, proprietary WhatsApp CRM, and AI call agents under a single operational roof."
-            : "Overseas Marketing; İstanbul merkezli, yalnızca sağlık turizmi ve hekim büyümesine odaklanmış uzman bir dijital ajanstır. Yüksek niyetli performans reklamlarını, uluslararası SEO/GEO altyapısını, dönüşüm odaklı kliniki web sitelerini, özel WhatsApp CRM ve sesli yapay zekâ asistanlarını tek büyüme çatısında birleştiriyoruz."}
+            ? "Overseas Marketing is a specialized digital marketing and technology agency focused exclusively on medical tourism and cross-border healthcare growth. We design the entire patient acquisition pipeline from paid advertising to first contact, sales follow-up, and performance analytics."
+            : "Overseas Marketing, sağlık turizmi ve uluslararası büyüme alanlarına odaklanan bir dijital pazarlama ve teknoloji ajansıdır. Klinikler, doktorlar, hastaneler ve sağlık turizmi şirketleri için hasta kazanımının reklamdan ilk temasa, satış takibinden raporlamaya kadar uzanan dijital altyapısını tasarlar."}
         </p>
       </section>
 
-      {/* GEO Direct Answer Snippet */}
+      {/* Explicit Regulatory / Entity Distinction Box */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="p-6 sm:p-8 rounded-3xl bg-[#EEF3FB] border border-[#446CB5]/20">
           <h2 className="text-xs font-bold uppercase tracking-wider text-[#446CB5] mb-2">
-            {isEn ? "Direct Summary / Agency Overview" : "Özet / Overseas Marketing Ne Yapar?"}
+            {isEn ? "Agency Identity & Regulatory Clarity" : "Kurumsal Kimlik ve Yasal Tanıtım Sınırları"}
           </h2>
           <p className="text-base text-[#16202E] font-medium leading-relaxed mb-4">
             {isEn
-              ? "Overseas Marketing provides end-to-end patient acquisition solutions for clinics, hospitals, and surgeons targeting the UK, Germany, France, Netherlands, and GCC. We do not just deliver clicks; we track the full funnel from the first Google search to the clinic consultation room."
-              : "Overseas Marketing; İngiltere, Almanya, Fransa, Hollanda ve Körfez ülkelerinden yabancı hasta çekmek isteyen klinik, hastane ve hekimlere uçtan uca büyüme altyapısı kurar. Yalnızca tıklama değil; Google aramasından ameliyat randevusuna uzanan tüm hasta yolculuğunu ölçülebilir biçimde yönetir."}
+              ? "Overseas Marketing is a digital growth and technology agency. We do not provide medical services, clinical treatments, or patient guarantees. Our mission is to provide healthcare organizations with transparent marketing strategies, software infrastructure, and international patient acquisition consulting in full compliance with advertising regulations."
+              : "Ajansın çalışma modeli; performans pazarlama, uluslararası SEO, üretken yapay zekâ aramalarına yönelik GEO, dönüşüm odaklı web geliştirme, CRM ve yapay zekâ otomasyonlarını aynı büyüme hedefi etrafında birleştirir. Overseas Marketing sağlık hizmeti vermez; sağlık kuruluşlarına pazarlama, yazılım ve büyüme danışmanlığı sağlar."}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-[#446CB5]/20 text-center">
-            <div>
-              <div className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#446CB5]">15+</div>
-              <div className="text-xs text-[#595F69] font-medium mt-1">{isEn ? "Specialties Managed" : "Uzmanlık Branşı"}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[#446CB5]/20 text-xs sm:text-sm text-[#595F69]">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-[#446CB5] shrink-0" />
+              <span>Sağlık Bakanlığı Mevzuatına Uyum</span>
             </div>
-            <div>
-              <div className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#446CB5]">12+</div>
-              <div className="text-xs text-[#595F69] font-medium mt-1">{isEn ? "Target Countries" : "Hedef Pazar"}</div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-[#446CB5] shrink-0" />
+              <span>KVKK & GDPR Standartlarında Veri Güvenliği</span>
             </div>
-            <div>
-              <div className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#446CB5]">%100</div>
-              <div className="text-xs text-[#595F69] font-medium mt-1">{isEn ? "Mevzuat Compliance" : "Mevzuat Uyumu"}</div>
-            </div>
-            <div>
-              <div className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#446CB5]">7/24</div>
-              <div className="text-xs text-[#595F69] font-medium mt-1">{isEn ? "AI Call & Chat" : "AI Hasta Karşılama"}</div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-[#446CB5] shrink-0" />
+              <span>Uluslararası Arama ve GEO Uyumu</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values Grid */}
+      {/* Who We Work With */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-bold text-[#16202E]">
-            {isEn ? "Our Core Operational Principles" : "Temel Çalışma ve Hizmet İlkelerimiz"}
+            {isEn ? "Who We Partner With" : "Hangi Kuruluş Türleriyle Çalışıyoruz?"}
           </h2>
           <p className="text-[#595F69] mt-2">
-            {isEn ? "Ethical, transparent, and technology-driven healthcare marketing." : "Etik, şeffaf ve teknoloji odaklı sağlık pazarlaması."}
+            {isEn ? "Tailored growth frameworks for every healthcare tier." : "Her sağlık kuruluşu segmenti için özelleştirilmiş büyüme modelleri."}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {whoWeWorkWith.map((item, idx) => (
+            <div key={idx} className="p-6 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-[#EEF3FB] flex items-center justify-center mb-4 text-[#446CB5]">
+                  <Building2 className="w-5 h-5" />
+                </div>
+                <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#16202E] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Core Principles */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-bold text-[#16202E]">
+            {isEn ? "Our Operational Principles" : "Temel Çalışma Yaklaşımımız ve İlkelerimiz"}
+          </h2>
+          <p className="text-[#595F69] mt-2">
+            {isEn ? "Ethical, data-driven, and sustainable growth." : "Etik, veri odaklı ve sürdürülebilir büyüme ilkeleri."}
           </p>
         </div>
 
@@ -148,37 +191,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenConsultation }) => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm">
-          <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-bold text-[#16202E] mb-8 text-center">
-            {isEn ? "Our Growth Roadmap" : "Gelişim Yolculuğumuz"}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {milestones.map((m, idx) => (
-              <div key={idx} className="relative pl-6 border-l-2 border-[#446CB5]">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#446CB5] border-2 border-white" />
-                <span className="text-xs font-bold text-[#446CB5] uppercase tracking-wider">{m.year}</span>
-                <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#16202E] mt-1 mb-2">{m.title}</h3>
-                <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">{m.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Box */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 rounded-3xl bg-[#16202E] text-white text-center space-y-6">
           <h2 className="font-['Inter_Tight'] text-2xl sm:text-4xl font-extrabold max-w-2xl mx-auto">
             {isEn 
-              ? "Ready to scale your international patient volume?" 
-              : "Kliniğinizin uluslararası hasta hacmini birlikte büyütelim."}
+              ? "Ready to scale your international patient acquisition?" 
+              : "Kliniğinizin uluslararası büyüme altyapısını birlikte değerlendirelim."}
           </h2>
           <p className="text-[#94A3B8] max-w-xl mx-auto text-sm sm:text-base">
             {isEn 
-              ? "Schedule a 30-minute confidential growth consultation with our healthcare marketing directors." 
-              : "Sağlık turizmi büyüme stratejistlerimizle 30 dakikalık ücretsiz strateji görüşmesi planlayın."}
+              ? "Schedule a confidential strategy session with our healthcare marketing practitioners." 
+              : "Sağlık turizmi büyüme stratejistlerimizle reklam, SEO, GEO ve CRM süreçlerinizi değerlendirin."}
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <button

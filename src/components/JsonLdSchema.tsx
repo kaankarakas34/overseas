@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ServiceItem, BranchItem, MarketItem, CityItem } from '../data/masterPlanData';
 
 interface JsonLdSchemaProps {
-  type?: 'home' | 'service' | 'doctor-branding' | 'branch' | 'market' | 'city';
+  type?: 'home' | 'service' | 'doctor-branding' | 'branch' | 'market' | 'city' | 'person' | 'about' | 'policy';
   service?: ServiceItem;
   branch?: BranchItem;
   market?: MarketItem;
@@ -125,6 +125,36 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
     activeUrl = `${DOMAIN}/${city.slug}`;
   }
 
+  // Person Schema
+  let personSchema = null;
+  if (type === 'person') {
+    activeTitle = 'Kaan Karakaş | Overseas Marketing';
+    activeUrl = `${DOMAIN}/ekip/kaan-karakas`;
+    personSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': `${DOMAIN}/ekip/kaan-karakas/#person`,
+      name: 'Kaan Karakaş',
+      jobTitle: 'Founder & Lead Growth Strategist',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Overseas Marketing',
+        url: DOMAIN
+      },
+      url: `${DOMAIN}/ekip/kaan-karakas`,
+      sameAs: [
+        'https://www.linkedin.com/in/kaankarakas'
+      ],
+      knowsAbout: [
+        'Sağlık Turizmi Pazarlaması',
+        'Uluslararası SEO & GEO',
+        'Google Ads & Meta Ads Reklam Yönetimi',
+        'Sağlık Turizmi CRM Sistemleri',
+        'Yapay Zekâ ve AI Call Agent Otomasyonları'
+      ]
+    };
+  }
+
   // 3. FAQ Schema
   const activeFaqs = faqs || service?.faq || branch?.faq || market?.faq || city?.faq || [];
   let faqSchema = null;
@@ -191,6 +221,7 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+      {personSchema && <script type="application/ld+json">{JSON.stringify(personSchema)}</script>}
       {serviceSchema && <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>}
       {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

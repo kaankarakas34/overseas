@@ -32,13 +32,13 @@ const ROUTES = [
   {
     path: '/',
     title: 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
-    description: 'Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım.',
-    h1: 'Sağlık Turizmi İçin Reklam, SEO ve CRM Çözümleri',
+    description: 'Overseas Marketing; klinik, doktor ve hastaneler için sağlık turizmi reklamları, SEO, GEO, CRM, web ve yapay zekâ otomasyonları geliştirir.',
+    h1: 'Sağlık Turizmi İçin Reklam, SEO, GEO ve CRM Çözümleri',
     content: `
       <section>
         <h2>Sağlık Turizminde Entegre Büyüme ve Hasta Edinimi Modeli</h2>
-        <p>Overseas Marketing; sağlık turizminde klinik, hastane ve hekimlerin İngiltere, Almanya ve Avrupa pazarlarından sürdürülebilir yabancı hasta başvurusu elde etmesini sağlayan entegre performans pazarlama, uluslararası SEO, GEO ve yapay zekâ ajansıdır.</p>
-        <p>Google Ads arama niyetleri, Meta video kreatifleri, çok dilli açılış sayfaları ve özel WhatsApp CRM altyapısı tek çatı altında sunulur. Sağlık Bakanlığı tanıtım mevzuatına (K8) tam uyumlu kurumsal büyüme mimarisi kuruyoruz.</p>
+        <p>Overseas Marketing; kliniklerin, doktorların ve hastanelerin uluslararası pazarlarda doğru hastaya ulaşması için performans reklamları, SEO, GEO, dönüşüm odaklı web altyapısı, CRM ve yapay zekâ otomasyonlarını tek büyüme sistemi içinde birleştirir.</p>
+        <p>Google Ads arama niyetleri, Meta video kreatifleri, çok dilli açılış sayfaları ve özel WhatsApp CRM altyapısı tek çatı altında sunulur. Sağlık Bakanlığı tanıtım mevzuatına ve uluslararası reklam regülasyonlarına tam uyumlu kurumsal büyüme mimarisi kuruyoruz.</p>
       </section>
       <section style="margin-top: 30px;">
         <h2>Temel Büyüme Hizmetlerimiz</h2>
@@ -786,12 +786,97 @@ const ROUTES = [
   {
     path: '/saglik-turizmi-reklam-ajansi',
     title: 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
-    description: 'Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım.',
-    h1: 'Sağlık Turizmi Reklam Ajansı: Performans, SEO ve CRM Çözümleri',
+    description: 'Sağlık turizmi reklam ajansı Overseas Marketing; klinik, doktor ve hastaneler için çok kanallı reklam yönetimi, çok dilli açılış sayfaları, CRM ve yapay zekâ otomasyonları kurar.',
+    h1: 'Sağlık Turizmi Reklam Ajansı',
     content: `
       <section>
+        <h2>Doğrudan Cevap: Sağlık Turizmi Reklam Ajansı Ne Yapar?</h2>
+        <p>Sağlık turizmi reklam ajansı; klinik, doktor, hastane ve sağlık turizmi kuruluşlarının yurtdışındaki potansiyel hastalara ulaşması için pazar araştırması, reklam yönetimi, çok dilli landing page, ölçümleme, CRM ve satış takibi süreçlerini birlikte kuran uzmanlaşmış ajanstır. Başarı yalnızca lead sayısıyla değil; nitelikli görüşme, randevu, tedavi ve sürdürülebilir edinme maliyetiyle değerlendirilmelidir.</p>
+      </section>
+      <section style="margin-top: 24px;">
         <h2>Entegre Sağlık Turizmi Büyüme Modeli</h2>
-        <p>Google Ads, Meta reklamları, uluslararası SEO, GEO, WhatsApp CRM ve yapay zekâ hasta karşılama botları tek büyüme çatısı altında.</p>
+        <p>Google Ads, Meta reklamları, uluslararası SEO, GEO, WhatsApp CRM ve yapay zekâ hasta karşılama botları tek büyüme çatısı altında sunulur. Sağlık Bakanlığı tanıtım mevzuatına tam uyumlu, şeffaf metrikler ve veri odaklı hasta kazanım mimarisi inşa ediyoruz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/saglik-turizmi-dijital-pazarlama',
+    title: 'Sağlık Turizmi Dijital Pazarlama | Overseas Marketing',
+    description: 'Klinik ve hekimler için bütünsel sağlık turizmi dijital pazarlaması: SEO, GEO, performans reklamları, web altyapısı, CRM ve satış takibi.',
+    h1: 'Sağlık Turizmi Dijital Pazarlama',
+    content: `
+      <section>
+        <h2>Doğrudan Cevap: Sağlık Turizmi Dijital Pazarlaması Nedir?</h2>
+        <p>Sağlık turizmi dijital pazarlaması; klinik, doktor ve hastanelerin uluslararası pazarlarda doğru hasta adaylarına ulaşması için hedef pazar analizi, arama motoru optimizasyonu (SEO), yapay zekâ görünürlüğü (GEO), performans reklamları, çok dilli açılış sayfaları ve CRM tabanlı satış takibini tek entegre büyüme sistemi içinde birleştiren stratejik süreçtir.</p>
+      </section>
+      <section style="margin-top: 24px;">
+        <h2>Bütünsel Büyüme Ekosistemi</h2>
+        <p>Tek bir reklam kanalına bağımlı kalmadan; arama niyetini karşılayan Google Ads, estetik güveni inşa eden Meta video kreatifleri, organik otorite sağlayan uluslararası SEO ve yapay zekâ aramalarında referans gösterilmeyi sağlayan GEO optimizasyonunu birleştiriyoruz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/uluslararasi-hasta-kazanimi',
+    title: 'Uluslararası Hasta Kazanımı | Sağlık Turizmi Hasta Edinimi | Overseas',
+    description: 'Uluslararası hasta kazanımı: Hedef pazar seçimi, güven oluşturma, reklam ve organik görünürlük, çok dilli iletişim, hızlı ön değerlendirme ve CRM takibi.',
+    h1: 'Uluslararası Hasta Kazanımı',
+    content: `
+      <section>
+        <h2>Doğrudan Cevap: Uluslararası Hasta Kazanımı Nasıl Yönetilir?</h2>
+        <p>Uluslararası hasta kazanımı; hedef pazar seçimi, güven oluşturma, reklam ve organik görünürlük, çok dilli iletişim, hızlı ön değerlendirme, CRM takibi ve satış süreçlerinin birlikte yönetilmesidir. Yalnızca reklam vermek yeterli değildir; lead'in gerçek hastaya dönüşmesine kadar bütün yolculuğun ölçülmesi gerekir.</p>
+      </section>
+      <section style="margin-top: 24px;">
+        <h2>Hasta Yolculuğu (Patient Journey) Mimarisi</h2>
+        <p>İngiltere, DACH, Fransa ve Hollanda pazarlarında kültürel bariyerleri aşan ana dilinde iletişim, WhatsApp üzerinden hızlı ilk temas ve ameliyathane güvenliğini öne çıkaran şeffaf paket içerikleriyle sürdürülebilir hasta akışı kuruyoruz.</p>
+      </section>
+    `
+  },
+  {
+    path: '/yayin-ilkeleri',
+    title: 'Yayın İlkeleri ve Editoryal Politika | Overseas Marketing',
+    description: 'Overseas Marketing yayın ilkeleri: Sağlık turizmi pazarlaması, mevzuat analizleri ve rehberlerimizin hazırlanış, doğrulama ve editoryal denetim süreçleri.',
+    h1: 'Yayın İlkeleri ve Editoryal Politika',
+    content: `
+      <section>
+        <h2>Editoryal Standartlarımız ve Doğrulanabilir Bilgi Üretimi</h2>
+        <p>Overseas Marketing, içeriklerini bir dijital pazarlama, yazılım ve veri analitiği ajansı kimliğiyle üretir. Şirketimiz sağlık hizmeti sunmaz, tıbbi tavsiye vermez ve tedavi garantisi vaat etmez. İçeriklerimizin amacı; klinik yöneticileri, hekimler ve sağlık turizmi paydaşlarına sürdürülebilir hasta kazanımı, yasal reklam sınırları, CRM süreçleri ve yapay zekâ teknolojileri konusunda doğru ve tarafsız bilgi sunmaktır.</p>
+      </section>
+      <section style="margin-top: 24px;">
+        <h2>Temel Editoryal İlkelerimiz</h2>
+        <ul>
+          <li><strong>Mevzuat ve Tanıtım İlkelerine Uyum:</strong> 1219 ve 3359 sayılı Kanunlara tam uyum; kanıtsız üstünlük veya garanti vaatlerinden uzak durma.</li>
+          <li><strong>Birincil Kaynak Doğrulaması:</strong> Resmî Gazete, USHAŞ, Ticaret Bakanlığı ve hedef ülke sağlık otoritelerinin doğrulanmış verileri.</li>
+          <li><strong>Sorumlu Yapay Zekâ Kullanımı:</strong> AI araçlarının insan denetimi ve uzman editör süzgecinden geçirilmesi.</li>
+          <li><strong>Şeffaf Düzeltme Politikası:</strong> İçerik güncellemelerinin açık tarih damgasıyla kullanıcılara sunulması.</li>
+        </ul>
+      </section>
+    `
+  },
+  {
+    path: '/ekip/kaan-karakas',
+    title: 'Kaan Karakaş | Kurucu & Sağlık Büyüme Stratejisti | Overseas Marketing',
+    description: 'Kaan Karakaş biyografisi ve uzmanlık alanları: Overseas Marketing kurucusu; sağlık turizmi pazarlaması, uluslararası SEO, GEO, CRM ve yapay zekâ otomasyonları uzmanı.',
+    h1: 'Kaan Karakaş: Kurucu ve Sağlık Turizmi Büyüme Stratejisti',
+    content: `
+      <section>
+        <h2>Kaan Karakaş Hakkında</h2>
+        <p>Kaan Karakaş, Overseas Marketing'in kurucusu ve büyüme stratejistidir. Sağlık turizmi pazarlaması, hedef ülke odaklı performans reklamları (Google Ads, Meta), uluslararası SEO/GEO, çok dilli CRM yapıları ve yapay zekâ destekli hasta iletişim otomasyonları üzerine çalışır. Overseas Marketing'de araştırma, strateji ve dijital büyüme süreçlerine liderlik eder.</p>
+      </section>
+      <section style="margin-top: 24px;">
+        <h2>Uzmanlık Alanları ve Metodoloji</h2>
+        <p>Türkiye'deki klinik, hastane ve hekimlerin İngiltere, Almanya, Fransa, Hollanda ve Körfez ülkelerindeki hastalarla buluşmasını sağlayan entegre büyüme altyapısını tasarlar. Yaklaşımı; tıklamadan randevuya uzanan tüm funnel'ı ölçülebilir kılan teknik SEO, çok dilli arama ağı reklamları, WhatsApp CRM yönetimi ve yasal tanıtım mevzuatına tam uyumu temel alır.</p>
+      </section>
+    `
+  },
+  {
+    path: '/ekip',
+    title: 'Ekibimiz ve Uzman Kadromuz | Overseas Marketing',
+    description: 'Overseas Marketing\'in sağlık turizmi stratejistleri, medikal SEO uzmanları ve CRM mühendisleriyle tanışın. E-E-A-T uyumlu profesyonel kadro.',
+    h1: 'Sağlık Turizmi Uzman ve Strateji Ekibimiz',
+    content: `
+      <section>
+        <h2>E-E-A-T Medikal Büyüme Ekibi</h2>
+        <p>Hekim etiğine, medikal terminolojiye ve uluslararası hasta psikolojisine hakim büyüme direktörleri, teknik SEO mühendisleri ve prodüksiyon ekibimizle hizmet veriyoruz.</p>
       </section>
     `
   },
@@ -814,6 +899,10 @@ const ROUTES = [
     h1: 'Sağlık Turizmi SEO Ajansı: Uluslararası Organik Hasta Büyümesi',
     content: `
       <section>
+        <h2>Doğrudan Cevap: Sağlık Turizmi SEO Nedir?</h2>
+        <p>Sağlık turizmi SEO çalışması, bir kliniğin veya sağlık kuruluşunun hedef ülkelerde tedavi ve güven odaklı aramalarda organik olarak bulunmasını amaçlar. Teknik SEO, çok dilli bilgi mimarisi, tedavi içerikleri, yerelleştirme, kurum ve uzmanlık sinyalleri, iç linkleme ve dönüşüm optimizasyonu birlikte ele alınır.</p>
+      </section>
+      <section style="margin-top: 24px;">
         <h2>Çok Dilli Medikal SEO ve Hreflang Mimarisi</h2>
         <p>Hedef ülkelerin arama motorlarında üst sıralara çıkaran semantik içerik kurgusu, teknik denetim ve yerel otorite inşası.</p>
       </section>
@@ -826,6 +915,10 @@ const ROUTES = [
     h1: 'Generative Engine Optimization (GEO): AI Aramalarında Görünürlük',
     content: `
       <section>
+        <h2>Doğrudan Cevap: Sağlık Turizmi GEO Nedir?</h2>
+        <p>Sağlık turizmi GEO, bir sağlık kuruluşunun veya uzman markanın ChatGPT, Gemini, Perplexity ve Google'ın yapay zekâ destekli arama deneyimlerinde doğru bağlamla anlaşılmasını ve uygun sorularda kaynak ya da seçenek olarak değerlendirilebilmesini hedefleyen çalışmalardır. Bunun temeli taranabilir teknik yapı, açık entity bilgileri, özgün uzmanlık içeriği, güvenilir kaynaklandırma ve güçlü klasik SEO'dur.</p>
+      </section>
+      <section style="margin-top: 24px;">
         <h2>Yapay Zekâ Arama Motorlarında Kliniğinizi Kaynak Göstertin</h2>
         <p>Doğrudan cevap blokları, yapılandırılmış sağlık verisi ve entity ilişkileriyle yapay zekâ modellerinin kliniğinizi önermesini sağlayın.</p>
       </section>
@@ -838,8 +931,12 @@ const ROUTES = [
     h1: 'Sağlık Turizmi CRM Yazılımı: Kayıp Lead\'leri Sıfırlayan Sistem',
     content: `
       <section>
+        <h2>Doğrudan Cevap: Sağlık Turizmi CRM Nedir?</h2>
+        <p>Sağlık turizmi CRM'i; farklı ülke ve kanallardan gelen hasta adaylarının ilk mesajdan randevu, teklif, takip ve sonuç aşamasına kadar tek sistemde yönetilmesini sağlar. Amaç yalnızca kişi kaydetmek değil; yanıt süresini, takip kalitesini, satış aşamalarını ve kanal bazlı dönüşümü ölçülebilir hale getirmektir.</p>
+      </section>
+      <section style="margin-top: 24px;">
         <h2>Satış Danışmanlarının Dönüşüm Hızını Artıran Altyapı</h2>
-        <p>WhatsApp, form ve çağrı kanallarından gelen başvuruları tek panelde toplayan ve lead skorlama sunan özel sağlık CRM\'i.</p>
+        <p>WhatsApp, form ve çağrı kanallarından gelen başvuruları tek panelde toplayan ve lead skorlama sunan özel sağlık CRM'i.</p>
       </section>
     `
   },

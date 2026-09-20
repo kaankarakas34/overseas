@@ -48,6 +48,8 @@ const SectorsPage = lazy(() => import('./components/SectorsPage').then(m => ({ d
 const MarketsPage = lazy(() => import('./components/MarketsPage').then(m => ({ default: m.MarketsPage })));
 const BlogIndexPage = lazy(() => import('./components/BlogIndexPage').then(m => ({ default: m.BlogIndexPage })));
 const AuthorsPage = lazy(() => import('./components/AuthorsPage').then(m => ({ default: m.AuthorsPage })));
+const EditorialPolicyPage = lazy(() => import('./components/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
+const AuthorProfilePage = lazy(() => import('./components/AuthorProfilePage').then(m => ({ default: m.AuthorProfilePage })));
 const LegalPage = lazy(() => import('./components/LegalPage').then(m => ({ default: m.LegalPage })));
 
 // Loading Spinner for Code Splitting Suspense
@@ -250,8 +252,8 @@ const HomePage: React.FC<{
           ? "Health Tourism Advertising Agency | Overseas Marketing"
           : "Sağlık Turizmi Reklam Ajansı | Overseas Marketing"}
         description={isEn
-          ? "Performance marketing, international SEO, GEO, high-converting medical websites, specialized CRM, and AI automation for medical tourism. Let’s plan your growth together."
-          : "Sağlık turizminde performans pazarlama, SEO, GEO, dönüşüm odaklı web siteleri, özel CRM ve yapay zekâ otomasyonları. Büyümenizi birlikte planlayalım."}
+          ? "Overseas Marketing develops medical tourism advertising, SEO, GEO, CRM, web, and AI automations for clinics, doctors, and hospitals."
+          : "Overseas Marketing; klinik, doktor ve hastaneler için sağlık turizmi reklamları, SEO, GEO, CRM, web ve yapay zekâ otomasyonları geliştirir."}
         canonicalUrl="https://www.overseas.marketing/"
       />
       <JsonLdSchema type="home" />
@@ -383,7 +385,11 @@ export const App: React.FC = () => {
 
             {/* Institutional, Trust & Conversion Hubs */}
             <Route path="/hakkimizda" element={<AboutPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/yayin-ilkeleri" element={<EditorialPolicyPage />} />
+            <Route path="/ekip" element={<TeamPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/ekibimiz" element={<TeamPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/ekip/kaan-karakas" element={<AuthorProfilePage />} />
+            <Route path="/yazarlar/kaan-karakas" element={<AuthorProfilePage />} />
             <Route path="/referanslar" element={<ReferencesPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/basari-hikayeleri" element={<CaseStudiesPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/iletisim" element={<ContactPage />} />
@@ -400,11 +406,14 @@ export const App: React.FC = () => {
             <Route path="/aydinlatma-metni" element={<LegalPage />} />
 
             {/* Direct Service Pillar Routes */}
-            <Route path="/saglik-turizmi-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
-            <Route path="/saglik-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-reklam-ajansi" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-dijital-pazarlama" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-dijital-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/uluslararasi-hasta-kazanimi" element={<ServicePageWrapper serviceIdProp="uluslararasi-hasta-kazanimi" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-reklam-ajansi" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-reklam-ajansi" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-seo" element={<ServicePageWrapper serviceIdProp="uluslararasi-seo-hizmeti" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-geo" element={<ServicePageWrapper serviceIdProp="geo-generative-engine-optimization" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-google-ads" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-google-ads" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/saglik-turizmi-meta-ads" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-meta-reklamlari" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-meta-reklamlari" element={<ServicePageWrapper serviceIdProp="saglik-turizmi-meta-reklamlari" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-performans-pazarlama" element={<ServicePageWrapper serviceIdProp="performans-pazarlama" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/saglik-turizmi-web-tasarim" element={<ServicePageWrapper serviceIdProp="web-sitesi-landing-page" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />

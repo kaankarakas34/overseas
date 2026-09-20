@@ -248,7 +248,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
             <Link to="/hakkimizda" className="text-slate-300 hover:text-white transition-colors">Hakkımızda</Link>
-            <Link to="/ekibimiz" className="text-slate-300 hover:text-white transition-colors">Ekibimiz</Link>
+            <Link to="/yayin-ilkeleri" className="text-slate-300 hover:text-white transition-colors">Yayın İlkeleri</Link>
+            <Link to="/ekip" className="text-slate-300 hover:text-white transition-colors">Ekibimiz</Link>
+            <Link to="/ekip/kaan-karakas" className="text-slate-300 hover:text-white transition-colors">Kaan Karakaş</Link>
             <Link to="/referanslar" className="text-slate-300 hover:text-white transition-colors">Referanslar</Link>
             <Link to="/basari-hikayeleri" className="text-slate-300 hover:text-white transition-colors">Başarı Hikayeleri</Link>
             <Link to="/metodoloji" className="text-slate-300 hover:text-white transition-colors">Metodoloji</Link>
