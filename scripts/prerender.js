@@ -881,6 +881,42 @@ const ROUTES = [
     `
   },
   {
+    path: '/sozluk',
+    title: 'Sağlık Turizmi ve Dijital Pazarlama Sözlüğü | Overseas Marketing',
+    description: 'Sağlık turizmi pazarlaması, uluslararası hasta kazanımı, medikal SEO, GEO, CPPA, CPL ve sağlık CRM kavramlarının doğrudan tanımları.',
+    h1: 'Sağlık Turizmi ve Dijital Pazarlama Terimleri Sözlüğü',
+    content: `
+      <section>
+        <h2>Sağlık Turizmi & Büyüme Terminolojisi</h2>
+        <p>Klinikler, hekimler ve sağlık turizmi profesyonelleri için uluslararası hasta kazanımı, performans reklamları, medikal SEO, GEO ve sağlık CRM terminolojisi rehberi.</p>
+      </section>
+      <section style="margin-top: 24px;">
+        <dl style="line-height: 1.8;">
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">Sağlık Turizmi Pazarlaması (Medical Tourism Marketing)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Klinik, hastane ve hekimlerin uluslararası hasta adaylarına ulaşmak, medikal uzmanlıklarını sınır ötesi pazarlarda tanıtmak ve çok dilli iletişim kanallarıyla nitelikli tedavi randevusu oluşturmak amacıyla yürüttüğü stratejik dijital büyüme, reklam ve marka faaliyetlerinin bütünüdür.</dd>
+          
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">Uluslararası Hasta Kazanımı (International Patient Acquisition)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Sınır ötesinden tedavi arayışında olan hastaların çok dilli dijital kanallarda keşif aşamasından randevu oluşturma, konsültasyon, kliniğe kabul ve tedavi sonrası takibe kadar geçen tüm basamaklarının planlı, ölçülebilir ve mevzuata uygun yönetilmesidir.</dd>
+          
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">Sağlıkta Lead (Healthcare Lead)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Belirli bir tedavi, klinik branş veya hekim hakkında bilgi almak, fiyat veya tedavi planı öğrenmek amacıyla dijital reklamlar, web formları veya telefon aramaları üzerinden iletişim bilgilerini bırakan potansiyel hasta adayıdır.</dd>
+
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">Nitelikli Hasta Adayı (Qualified Patient Lead - MQL/SQL)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Kliniğin sunduğu spesifik cerrahi prosedüre tıbbi olarak uygun, pasaport ve seyahat engeli bulunmayan, operasyon bütçesi tedavi maliyetiyle örtüşen ve belirli zaman aralığında tedavi olma kararlılığı taşıyan ön filtreden geçmiş hasta adayıdır.</dd>
+
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">CPPA (Edinilen Hasta Başına Maliyet - Cost Per Patient Acquisition)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Bir hastanın kliniğe gelerek tedavisini fiilen yaptırmasını sağlamak için harcanan toplam pazarlama ve reklam maliyetidir. Sağlık turizmi yatırımlarının gerçek kârlılığını (ROI) belirleyen en kritik finansal göstergedir.</dd>
+
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">Sağlık CRM'i (Healthcare CRM)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Uluslararası hasta adaylarının ilk temasından konsültasyona, teklif sunumundan seyahat planlamasına ve tedavi sonrası takibe kadar tüm iletişim, doküman ve satış aşamalarını KVKK ve GDPR uyumlu şekilde yöneten sağlık turizmine özel müşteri ilişkileri yazılımıdır.</dd>
+
+          <dt style="font-weight: bold; font-size: 18px; color: #16202E; margin-top: 16px;">GEO (Generative Engine Optimization)</dt>
+          <dd style="margin-left: 0; margin-bottom: 12px; color: #475569;">Yapay zekâ destekli arama motorları ve dil modellerinin (ChatGPT Search, Perplexity, Google Gemini) klinik ve hekim marka varlıklarını anlamasını, otoriter bir bilgi kaynağı olarak tanımasını ve tedavi aramalarında kaynak (citation) olarak önermesini sağlayan yeni nesil optimizasyon disiplinidir.</dd>
+        </dl>
+      </section>
+    `
+  },
+  {
     path: '/saglik-reklam-ajansi',
     title: 'Sağlık Reklam Ajansı | Medikal Pazarlama ve Klinik Reklamları | Overseas',
     description: 'Klinikler, hastaneler ve doktorlar için mevzuata uygun medikal reklam yönetimi, dijital pazarlama ve hasta edinim altyapısı.',
@@ -1117,6 +1153,7 @@ const navHeaderHtml = `
         <a href="/hizmetler/uluslararasi-seo-hizmeti" style="color: #16202E; text-decoration: none;">Uluslararası SEO</a>
         <a href="/hizmetler/saglik-turizmi-crm-yazilimi" style="color: #16202E; text-decoration: none;">Sağlık Turizmi CRM</a>
         <a href="/hizmetler/geo-generative-engine-optimization" style="color: #16202E; text-decoration: none;">GEO</a>
+        <a href="/sozluk" style="color: #16202E; text-decoration: none;">Sözlük</a>
         <a href="/sac-ekimi-reklam-ajansi" style="color: #16202E; text-decoration: none;">Saç Ekimi</a>
         <a href="/dis-klinigi-reklam-ajansi" style="color: #16202E; text-decoration: none;">Diş Kliniği</a>
         <a href="/ingiltere-saglik-turizmi-reklamlari" style="color: #16202E; text-decoration: none;">İngiltere Pazarı</a>

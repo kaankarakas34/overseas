@@ -946,7 +946,7 @@ export const MASTER_FAQS: FaqItem[] = [
   {
     category: 'Hukuk & Etik',
     question: 'Sağlık Bakanlığı 2025/2026 sağlık turizmi tanıtım yönetmeliğine uyum nasıl sağlanır?',
-    answer: 'Tüm reklam metinleri, görseller ve landing page içerikleri mevzuat maddelerine (K8) uygun olarak denetlenir; yanıltıcı indirim, sahte tedavi garantisi veya gizli hasta verisi kullanılmaz.'
+    answer: 'Tüm reklam metinleri, görseller ve landing page içerikleri ilgili sağlık tanıtım mevzuatına uygun olarak denetlenir; yanıltıcı indirim, sahte tedavi garantisi veya gizli hasta verisi kullanılmaz.'
   }
 ];
 
@@ -1388,15 +1388,39 @@ export const MASTER_MARKETS: MarketItem[] = [
     h1: 'İngiltere Pazarı İçin Sağlık Turizmi Reklam ve Hasta Kazanım Stratejileri',
     seoTitle: 'İngiltere Sağlık Turizmi Reklamları | UK Patient Acquisition | Overseas',
     metaDesc: 'İngiltere (UK) pazarından diş, saç ekimi ve estetik hastası çekmek için Google Ads, Meta reklamları, GBP Sterlin fiyatlandırması ve CRM stratejileri.',
-    overview: 'İngiltere sağlık turizminde Türkiye\'nin 1 numaralı hedef pazarıdır. NHS bekleme süreleri, yüksek özel klinik fiyatları ve uçuş kolaylığı İngiliz hastaları Türkiye\'ye yönlendirir.',
+    badge: '1 Numaralı Pazar: Birleşik Krallık',
+    overview: 'İngiltere, Türkiye sağlık turizminin en yüksek hacimli ve en olgun pazarıdır. NHS (Ulusal Sağlık Sistemi) bekleme listelerinin 7.6 milyonu aşması, İngiltere içi özel tedavi maliyetlerinin yüksekliği ve Londra-İstanbul arası 3.5 saatlik doğrudan uçuş kolaylığı İngiliz hastaları Türkiye\'ye yönlendirir. Ancak İngiliz hastalar regülasyonlara (ASA - Advertising Standards Authority kuralları), cerrah referanslarına ve şeffaf paket içeriklerine üst düzey hassasiyet gösterir.',
+    lead: 'İngiltere pazarında başarılı olmak için jenerik reklamlar yerine Sterlin (£) bazlı şeffaf paketler, aksansız İngilizce WhatsApp karşılama ve cerrahi güvenlik odaklı açılış sayfaları gereklidir.',
     insights: [
-      'İngiliz hastalar için Sterlin (£) bazlı şeffaf paket içeriği kritik önem taşır.',
-      'Google Ads Arama Ağı (Search) en yüksek ticari niyete sahip kanaldır.',
-      'WhatsApp üzerinden hızlı ve aksansız İngilizce karşılama dönüşümü %40 artırır.'
+      'İngiliz hastalar için Sterlin (£) bazlı şeffaf paket içeriği (tedavi + otel + VIP transfer) kritik güven unsurudur.',
+      'Google Ads Arama Ağı (Search) en yüksek ticari satın alma niyetine sahip ana kanaldır.',
+      'WhatsApp üzerinden ilk 5 dakikada aksansız İngilizce ve profesyonel tıbbi danışman karşılığı dönüşüm oranını %40 artırır.',
+      'Trustpilot ve Google Reviews profillerindeki gerçek hasta deneyimleri karar sürecinde belirleyicidir.',
+      'Karar verme döngüsü diş ve saç ekiminde 2-3 hafta, obezite ve plastik cerrahide 4-6 hafta aralığındadır.'
     ],
-    recommendedChannels: ['Google Ads Search', 'Meta Video Ads', 'GEO / ChatGPT Optimization', 'WhatsApp Automation'],
+    recommendedChannels: ['Google Ads Search (Yüksek Niyet)', 'Meta Video Reels & Stories (Güven İnşası)', 'GEO / AI Engine Optimization (ChatGPT & Perplexity)', 'WhatsApp Business Automation & Call Tracking'],
+    heroStats: [
+      { value: '3.5 Saat', label: 'Londra - İstanbul Uçuş Süresi' },
+      { value: '7.6M+', label: 'NHS Bekleme Listesindeki Hasta Sayısı' },
+      { value: '%60-70', label: 'İngiltere Özel Kliniklerine Göre Maliyet Avantajı' },
+      { value: '2-4 Hafta', label: 'Ortalama Karar Verme Döngüsü' }
+    ],
+    painPoints: [
+      'NHS\'teki aylar ve yılları bulan ameliyat ve diş randevusu bekleme süreleri',
+      'İngiltere özel kliniklerinde fahiş tedavi ve protez fiyatları',
+      'Yurtdışı kliniklerinde komplikasyon korkusu ve cerrah tecrübesi belirsizliği',
+      'Gizli masraflar veya net olmayan seyahat/konaklama paketleri'
+    ],
+    solutionSteps: [
+      'ASA (Advertising Standards Authority) uyumlu şeffaf, kanıtsız abartı içermeyen reklam metinleri',
+      'Cerrahi akreditasyonları, hastane donanımını ve cerrah biyografisini öne çıkaran E-E-A-T landing page\'ler',
+      'Her detayı yazılı Sterlin (£) teklif şablonları ve ücretsiz online hekim ön konsültasyonu',
+      'İngiltere saat dilimine (GMT) uyumlu 7/24 kesintisiz çok dilli WhatsApp ve çağrı desteği'
+    ],
     faq: [
-      { q: 'İngiltere hastaları en çok hangi tedavileri tercih ediyor?', a: 'Diş (Dental Implants & Veneers), Saç Ekimi ve Obezite Cerrahisi (Tüp Mide) İngiltere pazarının lider tedavileridir.' }
+      { q: 'İngiltere hastaları en çok hangi tedavileri tercih ediyor?', a: 'Diş (Dental Implants, All-on-4, Full Mouth Restorations), Saç Ekimi (FUE, Sapphire, DHI) ve Obezite Cerrahisi (Sleeve Gastrectomy) İngiltere pazarının en popüler tedavileridir.' },
+      { q: 'İngiltere reklamlarında ASA (Advertising Standards Authority) kurallarına nasıl uyulur?', a: 'Tedavi garantisi veren yanıltıcı ifadeler, sahte indirim sayaçları veya tıbbi olmayan cerrahi vaatler kullanılmaz. Tüm iddialar bilimsel ve etik verilere dayandırılır.' },
+      { q: 'İngiltere\'den hasta kazanırken lead maliyetleri (CPL) ne düzeydedir?', a: 'Branşa göre değişmekle birlikte diş ve saç ekiminde 15-35 GBP, obezite ve estetik cerrahide 25-50 GBP aralığındadır. Asıl hedefimiz düşük CPL değil, randevuya dönüşen nitelikli SQL üretmektir.' }
     ]
   },
   {
@@ -1408,14 +1432,39 @@ export const MASTER_MARKETS: MarketItem[] = [
     h1: 'Almanya ve DACH Bölgesi İçin Sağlık Turizmi Reklam Stratejileri',
     seoTitle: 'Almanya Sağlık Turizmi Reklamları | DACH Bölgesi Pazarlama | Overseas',
     metaDesc: 'Almanya, Avusturya ve İsviçre pazarı için Almanca yerelleştirilmiş sağlık turizmi reklamları, SEO, E-E-A-T ve GDPR uyumlu CRM altyapısı.',
-    overview: 'Almanca konuşulan ülkeler (DACH) kaliteye, sertifikalara (JCI, ISO) ve doktor tecrübesine en çok dikkat eden pazardır.',
+    badge: 'Yüksek Satın Alma Gücü: DACH Pazarı',
+    overview: 'Almanca konuşulan ülkeler (Almanya, Avusturya, İsviçre - DACH); kalite standartlarına, akreditasyonlara (JCI, ISO, TÜV) ve hekim tecrübesine en çok değer veren pazardır. Gesetzliche Krankenkassen (Yasal Sağlık Sigortası) diş ve estetik tedavilerini karşılamadığından hastalar yurtdışı çözümlere açıktır. Ancak bu pazar, katı veri koruma (DSGVO / GDPR) ve disiplinli kurumsal iletişim talep eder.',
+    lead: 'Almanya pazarında güven; hekim sertifikaları, kullanılan medikal malzemelerin marka şeffaflığı (Straumann, Nobel Biocare vb.) ve kusursuz Almanca dil desteği ile inşa edilir.',
     insights: [
-      'Almanca reklam metinleri ve landing page kullanımı zorunludur.',
-      'Avrupa KVKK (GDPR) kurallarına tam uyum veri güvenliği algısını güçlendirir.'
+      'Almanca ana dil seviyesinde yazılmış reklam metinleri ve açılış sayfaları mutlak zorunluluktur; İngilizce içerikler DACH bölgesinde güven kaybına yol açar.',
+      'Alman hastalar karar vermeden önce cerrahın uzmanlık unvanını, eğitim kurumlarını ve vaka sayılarını titizlikle inceler.',
+      'Avrupa Veri Koruma Yönetmeliği (DSGVO / GDPR) kurallarına ve açık rıza metinlerine %100 uyum gerekir.',
+      'Almanya\'da yaşayan Türk toplumu (gurbetçiler) ile yerli Alman hastaların arama niyetleri ve kültürel dinamikleri birbirinden tamamen farklıdır.',
+      'Karar verme süreci 4 ila 8 hafta arasında olup, detaylı yazılı tedavi planı ve maliyet tablosu (Heil- und Kostenplan) beklentisi vardır.'
     ],
-    recommendedChannels: ['Almanca Google Ads', 'Meta Lead Ads', 'E-E-A-T SEO & GEO'],
+    recommendedChannels: ['Almanca Google Ads Search', 'Meta (Instagram & Facebook) Video Ads', 'E-E-A-T Odaklı Medikal SEO & Almanca GEO', 'Almanca Çağrı & WhatsApp CRM'],
+    heroStats: [
+      { value: '100M+', label: 'DACH Bölgesi Toplam Nüfusu' },
+      { value: '%100', label: 'DSGVO / GDPR Veri Güvenliği Uyumu' },
+      { value: '3 Saat', label: 'Frankfurt/Münih - İstanbul Uçuşu' },
+      { value: 'JCI / TÜV', label: 'Hastanelerde Aranan Akreditasyonlar' }
+    ],
+    painPoints: [
+      'Almanya\'da yasal sigortanın implant ve estetik operasyonları karşılamaması ve yüksek cepten ödeme payı (Zuzahlung)',
+      'Doktor randevusu almak için haftalarca beklemek zorunda kalınması',
+      'Yabancı ülkelerdeki medikal standartlara ve hijyen koşullarına dair önyargılar',
+      'Kişisel sağlık verilerinin korunması ve gizlilik endişesi (Datenschutz)'
+    ],
+    solutionSteps: [
+      'Kullanılan implant ve protez malzemelerinin uluslararası CE/FDA belgelerini gösteren şeffaf landing page tasarımı',
+      'JCI akreditasyonlu anlaşmalı hastane standartlarını ve sterilizasyon süreçlerini belgeleyen video içerikler',
+      'Almanca konuşan medikal danışmanlar ile hazırlanan detaylı tedavi ve maliyet planı sunumu',
+      'DSGVO / GDPR uyumlu veri saklama ve şifreli dosya transfer protokolleri'
+    ],
     faq: [
-      { q: 'Almanya pazarında gurbetçiler mi yoksa Almanlar mı hedeflenmeli?', a: 'Her ikisi de ayrı stratejidir. Alman vatandaşları için Almanca içerik ve medikal sertifikalar; gurbetçiler için Türkçe/Almanca karışık kampanyalar kurulmalıdır.' }
+      { q: 'Almanya pazarında gurbetçiler mi yoksa yerli Almanlar mı hedeflenmeli?', a: 'Her iki kitle için farklı strateji uygulanır. Yerli Almanlar için tamamen Almanca, sertifika ve medikal kanıt odaklı; gurbetçi kitle için Türkçe/Almanca çift dilli, memleket ziyareti ve tedavi kombini sunan kampanyalar kurulur.' },
+      { q: 'Almanya sağlık reklamlarında hangi mevzuata dikkat edilmelidir?', a: 'Almanya Heilmittelwerbegesetz (HWG) ve UWG reklam kanunları katıdır. Karşılaştırmalı veya yanıltıcı garanti iddialarından kaçınılıp, tedavi süreçlerini açıklayan bilgilendirici dil kullanılır.' },
+      { q: 'Almanya\'da en çok talep gören tedaviler nelerdir?', a: 'İmplant ve estetik diş hekimliği, No-Touch lazer göz cerrahisi, saç ekimi ve rinoplasti Almanya\'dan en yüksek hasta hacmini çeken alanlardır.' }
     ]
   },
   {
@@ -1427,27 +1476,82 @@ export const MASTER_MARKETS: MarketItem[] = [
     h1: 'Fransa Pazarı İçin Sağlık Turizmi Reklam Yönetimi',
     seoTitle: 'Fransa Sağlık Turizmi Reklamları | Fransızca Hasta Kazanımı | Overseas',
     metaDesc: 'Fransa pazarına özel Fransızca reklam kampanyaları, saç ekimi ve estetik cerrahi hasta kaynağı oluşturma çözümleri.',
-    overview: 'Fransız hastalar estetik görselliğe son derece önem verir. Fransızca ana dil seviyesinde reklam dili ve satış desteği şarttır.',
+    badge: 'Görsel Estetik & Doğallık: Fransa Pazarı',
+    overview: 'Fransa, sağlık turizminde estetik cerrahi, rinoplasti, diş estetiği ve saç ekimi alanlarında hızla büyüyen stratejik bir Avrupa pazarıdır. Fransız hastalar doğallığa, cerrahın sanatsal vizyonuna ve rafine bir hasta deneyimine önem verir. İngilizce içerikler Fransa pazarında düşük performans gösterdiğinden, tüm pazarlama hunisinin kusursuz Fransızca ile kurgulanması şarttır.',
+    lead: 'Fransa pazarında başarı; abartısız, doğal estetik sonuçlarını öne çıkaran Fransızca video kreatifleri ve ana dilinde hasta koordinasyonu ile elde edilir.',
     insights: [
-      'Fransızca konuşan satış danışmanı altyapısı olmayan kliniklerde dönüşüm düşer.',
-      'Instagram ve TikTok video içerikleri Fransa pazarında oldukça etkilidir.'
+      'Fransızca konuşan satış danışmanı ve tıbbi tercüman altyapısı bulunmayan kliniklerde satışa dönüşüm oranı %70\'e varan oranda düşer.',
+      'Instagram, TikTok ve YouTube video içerikleri Fransız hastaların karar verme sürecinde son derece etkilidir.',
+      'Fransız hastalar aşırı yapay veya abartılı estetik vaatlerine şüpheyle yaklaşır; "naturel" sonuçlar ön plandadır.',
+      'Euro (€) para biriminde net, her şey dahil paket fiyatları talep edilir.',
+      'Paris, Lyon, Marsilya ve Nice şehirlerinden İstanbul ve Antalya\'ya doğrudan uçuş sıklığı büyüme için büyük bir lojistik avantajdır.'
     ],
-    recommendedChannels: ['Fransızca Meta Ads', 'TikTok Ads', 'Google Ads'],
-    faq: [{ q: 'Fransa pazarında en popüler tedaviler hangileridir?', a: 'Saç ekimi, rinoplasti ve estetik diş tedavileri Fransız hastaların en çok talep gösterdiği alanlardır.' }]
+    recommendedChannels: ['Fransızca Meta (Instagram/Facebook) Video Ads', 'TikTok Reklamları & Hasta Deneyimi', 'Fransızca Google Ads Search', 'Fransızca Medikal SEO & GEO'],
+    heroStats: [
+      { value: '68M', label: 'Fransa Toplam Nüfusu' },
+      { value: '3.5 Saat', label: 'Paris - İstanbul Uçuş Süresi' },
+      { value: 'Euro (€)', label: 'Şeffaf Paket Para Birimi' },
+      { value: 'Doğal Sonuç', label: 'Fransız Hastaların 1 Numaralı Önceliği' }
+    ],
+    painPoints: [
+      'Fransa\'da estetik cerrahi ve diş tedavilerinin yüksek maliyetleri ve uzun randevu süreleri',
+      'Yabancı dil bariyeri ve tıbbi konularda anlaşılmama endişesi',
+      'Yapay ve abartılı estetik sonuçlardan duyulan çekince',
+      'Ameliyat sonrası Fransa\'ya dönüşte takip eksikliği endişesi'
+    ],
+    solutionSteps: [
+      'Fransızca ana dil seviyesinde tıbbi danışmanlık ve WhatsApp ilk temas protokolü',
+      'Doğallığı ve cerrahın anatomik uzmanlığını vurgulayan video anlatımları',
+      'Tüm süreçleri (ameliyat, lüks konaklama, transfer, refakatçi) içeren şeffaf Euro teklifleri',
+      'Fransa\'ya döndükten sonraki ilk 6 ay boyunca uzaktan dijital post-op takip garantisi'
+    ],
+    faq: [
+      { q: 'Fransa pazarında en popüler tedaviler hangileridir?', a: 'Saç ekimi (özellikle DHI ve Sapphire teknikleri), rinoplasti (ultrasonik/piezo burun estetiği), meme estetiği ve zirkonyum gülüş tasarımı en çok talep gören tedavilerdir.' },
+      { q: 'Fransa kampanyalarında dil ne kadar önemlidir?', a: 'Fransız hastalar kendi dillerinde iletişim kurmayı bekler. Reklam metni, landing page, teklif PDF\'i ve WhatsApp görüşmeleri mutlaka profesyonel Fransızca ile yürütülmelidir.' }
+    ]
   },
   {
     id: 'hollanda-saglik-turizmi-reklamlari',
     slug: 'hollanda-saglik-turizmi-reklamlari',
-    countryName: 'Hollanda',
+    countryName: 'Hollanda & Belçika (Benelüks)',
     flagEmoji: '🇳🇱',
     title: 'Hollanda Sağlık Turizmi Reklamları',
-    h1: 'Hollanda ve Belçika İçin Sağlık Turizmi Pazarlaması',
-    seoTitle: 'Hollanda Sağlık Turizmi Reklamları | Benelux Pazarlama | Overseas',
+    h1: 'Hollanda ve Benelüks Bölgesi İçin Sağlık Turizmi Pazarlaması',
+    seoTitle: 'Hollanda Sağlık Turizmi Reklamları | Benelüks Pazarlama | Overseas',
     metaDesc: 'Hollanda ve Belçika pazarlarından hasta kazanmak için Felemenkçe ve İngilizce sağlık turizmi reklamları ve SEO çözümleri.',
-    overview: 'Benelüks ülkelerinde yaşayan hastalar uçuş mesafesi yakınlığı nedeniyle Türkiye\'yi sıkça tercih eder.',
-    insights: ['Felemenkçe ve İngilizce çift dilli kampanya kurgusu en yüksek verimi sağlar.'],
-    recommendedChannels: ['Google Ads Search', 'Meta Ads', 'WhatsApp Automation'],
-    faq: [{ q: 'Hollanda pazarı için Felemenkçe şart mıdır?', a: 'Felemenkçe reklam dili dönüşüm oranını hissedilir derecede artırır.' }]
+    badge: 'Yüksek Dönüşüm: Benelüks Pazarı',
+    overview: 'Hollanda ve Belçika (Flaman bölgesi), Türkiye sağlık turizmine yüksek ilgi gösteren, satın alma gücü yüksek ve seyahat kültürü gelişmiş bir pazardır. Zorgverzekering (Hollanda Sağlık Sigortası) kapsamının daralması ve yerel klinik fiyatlarının aşırı yüksekliği Hollandalı hastaları yurtdışına yönlendirir. Hollandalılar rasyonel, detaycı ve doğrudan iletişimi seven bir hasta profiline sahiptir.',
+    lead: 'Benelüks pazarında başarı; net tedavi detayları, Felemenkçe/İngilizce çift dilli iletişim ve gizli maliyetsiz şeffaf fiyatlandırma ile sağlanır.',
+    insights: [
+      'Felemenkçe reklam dili ve açılış sayfası dönüşüm oranını hissedilir derecede artırırken, İngilizce içeriklerle desteklenen çift dilli kurgu maksimum erişim sağlar.',
+      'Hollandalı hastalar detaycıdır; tedavi adımlarını, kalış süresini ve otel standartlarını baştan öğrenmek ister.',
+      'Amsterdam Schiphol, Rotterdam ve Brüksel havalimanlarından İstanbul ve Antalya\'ya her gün çok sayıda doğrudan uçuş bulunmaktadır.',
+      'Klinik hijyeni ve doktor tecrübesine dair görsel kanıtlar güven inşasında kilit rol oynar.',
+      'Karar verme süresi ortalama 3-5 hafta olup, rasyonel fayda sunulduğunda sadakat yüksektir.'
+    ],
+    recommendedChannels: ['Felemenkçe & İngilizce Google Ads', 'Meta (Instagram) Cerrahi & Dental Reklamları', 'WhatsApp Satış Hattı Entegrasyonu', 'Benelüks Yerel SEO & GEO'],
+    heroStats: [
+      { value: '28M+', label: 'Hollanda ve Belçika Nüfusu' },
+      { value: '3.5 Saat', label: 'Amsterdam - İstanbul Uçuş Süresi' },
+      { value: '%65', label: 'Lokal Kliniklere Göre Tasarruf Oranı' },
+      { value: 'Çift Dilli', label: 'Felemenkçe & İngilizce Strateji' }
+    ],
+    painPoints: [
+      'Zorgverzekeraar (Hollanda Sağlık Sigortası) tarafından karşılanmayan yüksek diş ve estetik operasyon faturaları',
+      'Yerel sağlık sistemindeki uzun uzman doktor bekleme süreleri',
+      'Yurtdışı operasyonlarda beklenmedik ek masraflarla karşılaşma çekincesi',
+      'Uçak ve konaklama organizasyonuyla tek tek uğraşma zorluğu'
+    ],
+    solutionSteps: [
+      'Uçak hariç her şeyi (operasyon, ilaçlar, 5 yıldızlı otel, VIP transfer) kapsayan net Euro paketleri',
+      'Felemenkçe ve İngilizce konuşan medikal hasta koordinatörleri ile anlık iletişim',
+      'Hekim uzmanlığı ve kliniğin teknolojik altyapısını belgeleyen 4K video tanıtımları',
+      'Ameliyat sonrası Hollanda\'ya döndüğünde sürekli online kontrol ve refakat garantisi'
+    ],
+    faq: [
+      { q: 'Hollanda pazarı için Felemenkçe içerik şart mıdır?', a: 'Hollanda\'da İngilizce konuşma oranı çok yüksek olsa da, kişisel sağlık ve cerrahi kararlarında Felemenkçe reklam ve karşılama güven hissini ve form dönüşümünü %45\'e kadar artırır.' },
+      { q: 'Hollandalı hastalar hangi tedaviler için Türkiye\'yi tercih ediyor?', a: 'Diş implantları ve estetik gülüş, saç ekimi, lazer göz cerrahisi ve bariatrik cerrahi Hollanda ve Belçika pazarında ilk sıralardadır.' }
+    ]
   }
 ];
 

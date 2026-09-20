@@ -50,6 +50,7 @@ const BlogIndexPage = lazy(() => import('./components/BlogIndexPage').then(m => 
 const AuthorsPage = lazy(() => import('./components/AuthorsPage').then(m => ({ default: m.AuthorsPage })));
 const EditorialPolicyPage = lazy(() => import('./components/EditorialPolicyPage').then(m => ({ default: m.EditorialPolicyPage })));
 const AuthorProfilePage = lazy(() => import('./components/AuthorProfilePage').then(m => ({ default: m.AuthorProfilePage })));
+const DictionaryPage = lazy(() => import('./components/DictionaryPage').then(m => ({ default: m.DictionaryPage })));
 const LegalPage = lazy(() => import('./components/LegalPage').then(m => ({ default: m.LegalPage })));
 
 // Loading Spinner for Code Splitting Suspense
@@ -400,6 +401,8 @@ export const App: React.FC = () => {
             <Route path="/blog" element={<BlogIndexPage />} />
             <Route path="/kaynaklar" element={<BlogIndexPage />} />
             <Route path="/yazarlar" element={<AuthorsPage />} />
+            <Route path="/sozluk" element={<DictionaryPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/bilgi-merkezi/sozluk" element={<DictionaryPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route path="/kvkk" element={<LegalPage />} />
             <Route path="/gizlilik-politikasi" element={<LegalPage />} />
             <Route path="/cerez-politikasi" element={<LegalPage />} />

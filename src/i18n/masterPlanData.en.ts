@@ -871,7 +871,7 @@ export const MASTER_FAQS_EN = [
   {
     category: 'Legal & Ethics',
     question: 'How do you ensure medical advertising compliance?',
-    answer: 'All ad copy, visual assets, and landing page claims are audited against Ministry of Health promotional directives (K8) and target country healthcare codes, avoiding misleading discounts or unverified claims.'
+    answer: 'All ad copy, visual assets, and landing page claims are audited against Ministry of Health promotional directives and target country healthcare codes, avoiding misleading discounts or unverified claims.'
   }
 ];
 

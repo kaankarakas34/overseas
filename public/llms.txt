@@ -33,7 +33,9 @@ Overseas Marketing bir sağlık hizmeti sunucusu değildir; sağlık kuruluşlar
 ## Vaka Analizleri ve Metodoloji
 - [Başarı Hikayeleri](https://www.overseas.marketing/basari-hikayeleri)
 - [Büyüme Metodolojisi](https://www.overseas.marketing/metodoloji)
-- [Blog & Bilgi Merkezi](https://www.overseas.marketing/blog)
+## Bilgi Merkezi & Sözlük
+- [Sağlık Turizmi ve Dijital Pazarlama Sözlüğü](https://www.overseas.marketing/sozluk)
+- [Blog & Rehberler](https://www.overseas.marketing/blog)
 
 ## Sitemap
 - https://www.overseas.marketing/sitemap.xml

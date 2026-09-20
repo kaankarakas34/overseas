@@ -106,7 +106,7 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
             [
               "Sağlık Turizmi Reklam Ajansı",
               "Çok dilli reklam, SEO, CRM ve hasta iletişimi",
-              "Sağlık Mevzuatı (K8) & KVKK/GDPR Uyumu"
+              "Sağlık Tanıtım Mevzuatı & KVKK/GDPR Uyumu"
             ]
           ]
         },

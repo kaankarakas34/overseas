@@ -71,7 +71,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenConsultation }
                   <CheckCircle2 className="w-4 h-4 text-[#446CB5] mt-0.5 shrink-0" />
                   <span>
                     <strong>{isEn ? 'Regulatory Rigor: ' : 'Mevzuat Hassasiyeti: '}</strong>
-                    {isEn ? '100% adherence to international health advertisement directives and ethical medical codes.' : '2025/2026 Sağlık Bakanlığı tanıtım yönetmeliğine (K8) %100 sadakat.'}
+                    {isEn ? '100% adherence to international health advertisement directives and ethical medical codes.' : 'Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği ile uluslararası mevzuata %100 uyum.'}
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
