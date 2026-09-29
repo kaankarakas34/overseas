@@ -368,35 +368,50 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
           </div>
 
           {/* High Converting Commercial CTA Card */}
-          <div className="rounded-3xl bg-gradient-to-br from-[#16202E] to-[#1E293B] text-white p-8 sm:p-12 shadow-xl relative overflow-hidden text-center sm:text-left">
-            <div className="relative z-10 max-w-2xl space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#446CB5]/40 text-[#60A5FA] text-xs font-bold uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-[#60A5FA]" />
-                <span>Sağlık Kuruluşları İçin Stratejik Büyüme</span>
+          {(() => {
+            const isDoctorArticle = 
+              article.url.includes('doktor') || 
+              article.url.includes('hekim') || 
+              article.category.toLowerCase().includes('doktor') ||
+              article.primaryKeyword.toLowerCase().includes('doktor') ||
+              article.primaryKeyword.toLowerCase().includes('hekim');
+
+            return (
+              <div className="rounded-3xl bg-gradient-to-br from-[#16202E] to-[#1E293B] text-white p-8 sm:p-12 shadow-xl relative overflow-hidden text-center sm:text-left">
+                <div className="relative z-10 max-w-2xl space-y-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#446CB5]/40 text-[#60A5FA] text-xs font-bold uppercase">
+                    <Sparkles className="w-3.5 h-3.5 text-[#60A5FA]" />
+                    <span>{isDoctorArticle ? 'Doktor & Sağlık Kuruluşu Görünürlüğü' : 'Sağlık Kuruluşları İçin Stratejik Büyüme'}</span>
+                  </div>
+                  <h3 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                    {isDoctorArticle 
+                      ? 'Doktor ve Çalıştığı Kuruluş İçin Dijital Görünürlük Değerlendirmesi İsteyin'
+                      : 'Kliniğinizin Yurt Dışı Hasta Kazanım Potansiyelini Birlikte Analiz Edelim'}
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    {isDoctorArticle
+                      ? '12 Kasım 2025 tanıtım yönetmeliğine uygun hekim dijital itibar mimarisi, E-E-A-T içerik stratejisi ve uluslararası hasta görünürlüğü değerlendirmesi için uzmanlarımızla görüşün.'
+                      : 'Mevzuata tam uyumlu reklam kurguları, hedef ülke analizleri ve çok dilli CRM altyapımızla büyümenizi şansa bırakmayın.'}
+                  </p>
+                  <div className="pt-3 flex flex-wrap items-center gap-4 justify-center sm:justify-start">
+                    <button
+                      onClick={onOpenConsultation}
+                      className="px-6 py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white font-semibold text-sm shadow-md transition-all flex items-center gap-2 cursor-pointer"
+                    >
+                      <span>{isDoctorArticle ? 'Görünürlük Değerlendirmesi İsteyin' : 'Ücretsiz Büyüme Analizi Talep Edin'}</span>
+                      <ArrowRight className="w-4 h-4 text-white" />
+                    </button>
+                    <a
+                      href="tel:05363197697"
+                      className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border border-white/20"
+                    >
+                      0536 319 76 97
+                    </a>
+                  </div>
+                </div>
               </div>
-              <h3 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-white leading-tight">
-                Kliniğinizin Yurt Dışı Hasta Kazanım Potansiyelini Birlikte Analiz Edelim
-              </h3>
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Mevzuata tam uyumlu reklam kurguları, hedef ülke analizleri ve çok dilli CRM altyapımızla büyümenizi şansa bırakmayın.
-              </p>
-              <div className="pt-3 flex flex-wrap items-center gap-4 justify-center sm:justify-start">
-                <button
-                  onClick={onOpenConsultation}
-                  className="px-6 py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white font-semibold text-sm shadow-md transition-all flex items-center gap-2 cursor-pointer"
-                >
-                  <span>Ücretsiz Büyüme Analizi Talep Edin</span>
-                  <ArrowRight className="w-4 h-4 text-white" />
-                </button>
-                <a
-                  href="tel:05363197697"
-                  className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border border-white/20"
-                >
-                  0536 319 76 97
-                </a>
-              </div>
-            </div>
-          </div>
+            );
+          })()}
 
         </main>
 

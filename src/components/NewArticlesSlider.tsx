@@ -21,6 +21,22 @@ export const NewArticlesSlider: React.FC = () => {
 
   const newArticles = [
     {
+      id: 'doc-ban-2026',
+      title: isEn
+        ? "Doctor Advertising Ban 2026: What Healthcare Professionals Can Do"
+        : "Doktor Reklam Yasağı 2026: Hekimler Neler Yapabilir?",
+      url: "/blog/doktor-reklam-yasagi-2026",
+      badge: isEn ? "New Reference Guide • 2026" : "Yeni Referans Rehberi • 2026",
+      badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+      icon: <Building2 className="w-5 h-5 text-purple-600" />,
+      desc: isEn
+        ? "Scope of the physician ad ban, website, Google Ads, Instagram rules, before-after photos, and medical tourism exceptions."
+        : "Doktor reklam yasağının kapsamı, web sitesi, Google ve sosyal medya tanıtım sınırları ile yurt dışı sağlık turizmi ayrımı.",
+      readTime: "8 dk okuma",
+      date: "29 Eylül 2026",
+      category: isEn ? "Doctor Regulations" : "Doktor Mevzuatı"
+    },
+    {
       id: 'reg-2026',
       title: isEn 
         ? "Healthcare Tourism Advertising Regulations 2026: Cross-Border Rules" 
