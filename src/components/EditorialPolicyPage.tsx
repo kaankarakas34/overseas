@@ -23,8 +23,8 @@ export const EditorialPolicyPage: React.FC = () => {
       icon: <ShieldCheck className="w-6 h-6 text-[#446CB5]" />,
       title: isEn ? "Healthcare & Regulatory Compliance" : "Mevzuat ve Tanıtım İlkelerine Uyum",
       desc: isEn
-        ? "All content strictly complies with Turkish healthcare advertising regulations (Law No. 1219, Law No. 3359) and target country advertising authorities. We never make therapeutic promises, guarantee medical outcomes, or present marketing claims as clinical facts."
-        : "Yayımlanan tüm içerikler 1219 sayılı Kanun, 3359 sayılı Sağlık Hizmetleri Temel Kanunu ve ilgili sağlık tanıtım yönetmeliklerine tam uyumludur. Tıbbi tavsiye verilmez, tedavi garantisi vaat edilmez ve pazarlama argümanları klinik gerçeklik gibi sunulmaz."
+        ? "We review provider credentials, target market regulations, creatives, and landing pages against applicable healthcare rules prior to launch. We never make therapeutic promises, guarantee medical outcomes, or present marketing claims as clinical facts."
+        : "Her yayında ve kampanyada kuruluşun yetkisini, hedef ülkeyi, kreatifleri ve açılış sayfasını yürürlükteki kurallara göre kontrol ederek planlarız. Tıbbi tavsiye verilmez, tedavi garantisi vaat edilmez ve pazarlama argümanları klinik gerçeklik gibi sunulmaz."
     },
     {
       icon: <Search className="w-6 h-6 text-[#446CB5]" />,
@@ -111,7 +111,7 @@ export const EditorialPolicyPage: React.FC = () => {
         <p className="text-lg text-[#595F69] max-w-3xl leading-relaxed">
           {isEn
             ? "Healthcare marketing and international patient acquisition touch sensitive decisions. At Overseas Marketing, we hold our educational guides, industry benchmarks, and strategic frameworks to the highest editorial standards."
-            : "Sağlık turizmi ve hekim iletişimi, hem etik hem de yasal açıdan en yüksek hassasiyet gerektiren alanlardandır. Overseas Marketing olarak yayımladığımız her rehber, vaka analizi ve stratejik içerikte şeffaf, doğrulanabilir ve mevzuata tam uyumlu bir editoryal süreç işletiyoruz."}
+            : "Sağlık turizmi ve hekim iletişimi, hem etik hem de yasal açıdan en yüksek hassasiyet gerektiren alanlardandır. Overseas Marketing olarak yayımladığımız her rehber, vaka analizi ve stratejik içerikte şeffaf, doğrulanabilir ve mevzuat/politika denetiminden geçen bir editoryal süreç işletiyoruz."}
         </p>
       </section>
 

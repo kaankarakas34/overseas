@@ -165,13 +165,13 @@ export const MASTER_SERVICES: ServiceItem[] = [
   {
     id: 'performans-pazarlama',
     title: 'Sağlık Turizmi Reklam Yönetimi',
-    shortDesc: 'Kliniğinizin uluslararası hastalara ulaşması için reklam kampanyalarını planlıyor, yönetiyor ve geliştiriyoruz.',
+    shortDesc: 'Yetkili klinik ve hastaneler için Google Ads, Meta Ads, hedef ülke uyumu ve CRM entegrasyonlu reklam yönetimi.',
     iconName: 'TrendingUp',
     category: 'Görünürlük',
-    h1: 'Sağlık Turizmi Reklam Yönetimi',
-    seoTitle: 'Sağlık Turizmi Reklam Yönetimi | Overseas Marketing',
-    metaDesc: 'Sağlık turizmi reklam ajansı Overseas Marketing olarak hedef ülkenize, hizmetlerinize ve bütçenize uygun dijital reklam stratejileri oluşturuyoruz.',
-    fullDesc: 'Kliniğinizin uluslararası hastalara ulaşması için reklam kampanyalarınızı planlıyor, yönetiyor ve geliştiriyoruz. Sağlık turizmi reklam ajansı Overseas Marketing olarak hedef ülkenize, hizmetlerinize ve bütçenize uygun dijital reklam stratejileri oluşturuyoruz.',
+    h1: 'Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan',
+    seoTitle: 'Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing',
+    metaDesc: 'Yetkili klinik ve hastaneler için Google Ads ve Meta reklam yönetimi. Hedef ülke ve mevzuat kontrolü, branşa özel açılış sayfası, CRM entegrasyonu ve dönüşüm odaklı medya planı.',
+    fullDesc: 'Yetkili klinik ve hastaneler için Google Ads ve Meta reklam yönetimi sunuyoruz. Hedef ülkenin arama niyetine, branşın tıbbi özelliklerine ve yerel reklam kurallarına uygun kampanyalar kurguluyor; açılış sayfası ve CRM entegrasyonuyla nitelikli başvuru sürecini uçtan uca ölçüyoruz.',
     highlights: [
       'Google Ads Yönetimi (Sağlık aramalarında üst sırada listelenme)',
       'Meta Ads Yönetimi (Facebook ve Instagram görsel/video reklamları)',
@@ -370,7 +370,7 @@ export const MASTER_SERVICES: ServiceItem[] = [
     h1: 'GEO: Yapay Zeka Aramalarında ve Hedef Ülkelerde Görünür Olun',
     seoTitle: 'GEO Ajansı | Yapay Zeka Aramalarında ve Hedef Ülkelerde Görünürlük',
     metaDesc: 'GEO ve uluslararası SEO ile markanızı ChatGPT, Gemini, Google AI Overviews ve hedef ülke Google aramalarında görünür hale getirin. İngiltere, Avrupa ve global pazarlara özel GEO stratejileri.',
-    fullDesc: 'Arama dünyası değişiyor. İnsanlar artık yalnızca Google’a birkaç kelime yazıp çıkan sonuçları incelemiyor. ChatGPT’ye hangi kliniği tercih etmesi gerektiğini soruyor, Gemini’den şehirdeki en iyi işletmeleri karşılaştırmasını istiyor, Google AI Overviews üzerinden araştırmasını yapıyor ve karar vermeden önce yapay zekadan fikir alıyor. Generative Engine Optimization (GEO) ile markanızı yapay zeka aramalarında bulunabilir, anlaşılabilir ve referans gösterilebilir bir kaynak haline getiriyoruz.',
+    fullDesc: 'Arama dünyası değişiyor. İnsanlar artık yalnızca Google arama çubuğuna kelime yazmıyor; ChatGPT ve Gemini gibi yapay zekâ asistanlarına doğrudan klinik ve tedavi soruları yöneltiyor. Generative Engine Optimization (GEO) ile klinik bilgilerinin erişilebilirliğini ve kaynak gösterilmeye uygunluğunu geliştirir; görünürlüğü düzenli örnek sorgularla ölçeriz. Organik ChatGPT yanıtları reklamla satın alınamaz veya kesin olarak garanti edilemez; amacımız yapay zekanın kliniğinizi güvenilir ve doğrulanabilir bir kaynak olarak anlamasını sağlamaktır.',
     highlights: [
       'ChatGPT, Gemini, Copilot, Perplexity ve Google AI Overviews görünürlüğü',
       'İngiltere, Avrupa ve Global hedef pazarlara özel International GEO',

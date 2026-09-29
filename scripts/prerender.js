@@ -31,14 +31,14 @@ const ROUTES = [
   // 1. Ana Sayfa
   {
     path: '/',
-    title: 'Sağlık Turizmi Reklam Ajansı | Overseas Marketing',
-    description: 'Overseas Marketing; klinik, doktor ve hastaneler için sağlık turizmi reklamları, SEO, GEO, CRM, web ve yapay zekâ otomasyonları geliştirir.',
-    h1: 'Sağlık Turizmi İçin Reklam, SEO, GEO ve CRM Çözümleri',
+    title: 'Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing',
+    description: 'Yetkili klinik ve hastaneler için hedef ülke araştırması, çok dilli reklam ve içerik, açılış sayfası, CRM ve dönüşüm ölçümünü tek plan içinde kuruyoruz.',
+    h1: 'Sağlık turizmi için reklam, SEO, GEO ve hasta iletişim sistemi',
     content: `
       <section>
         <h2>Sağlık Turizminde Entegre Büyüme ve Hasta Edinimi Modeli</h2>
-        <p>Overseas Marketing; kliniklerin, doktorların ve hastanelerin uluslararası pazarlarda doğru hastaya ulaşması için performans reklamları, SEO, GEO, dönüşüm odaklı web altyapısı, CRM ve yapay zekâ otomasyonlarını tek büyüme sistemi içinde birleştirir.</p>
-        <p>Google Ads arama niyetleri, Meta video kreatifleri, çok dilli açılış sayfaları ve özel WhatsApp CRM altyapısı tek çatı altında sunulur. Sağlık Bakanlığı tanıtım mevzuatına ve uluslararası reklam regülasyonlarına tam uyumlu kurumsal büyüme mimarisi kuruyoruz.</p>
+        <p>Yetkili klinik ve hastaneler için hedef ülke araştırması, çok dilli reklam ve içerik, açılış sayfası, CRM ve dönüşüm ölçümünü tek plan içinde kuruyoruz.</p>
+        <p>Google Ads arama niyetleri, Meta video kreatifleri, çok dilli açılış sayfaları ve özel WhatsApp CRM altyapısı tek çatı altında sunulur. Her kampanyada kuruluşun yetkisini, hedef ülkeyi, kreatifleri ve açılış sayfasını yürürlükteki kurallara göre kontrol ederek planlarız.</p>
       </section>
       <section style="margin-top: 30px;">
         <h2>Temel Büyüme Hizmetlerimiz</h2>
@@ -947,7 +947,7 @@ const ROUTES = [
   {
     path: '/saglik-turizmi-geo',
     title: 'Sağlık Turizmi GEO Ajansı | Generative Engine Optimization | Overseas',
-    description: 'ChatGPT, Perplexity ve Google AI Overviews aramalarında kliniğinizin tavsiye edilmesini sağlayan yeni nesil GEO optimizasyonu.',
+    description: 'Klinik bilgilerinin erişilebilirliğini ve kaynak gösterilmeye uygunluğunu geliştirir; görünürlüğü düzenli örnek sorgularla ölçeriz.',
     h1: 'Generative Engine Optimization (GEO): AI Aramalarında Görünürlük',
     content: `
       <section>
@@ -956,7 +956,7 @@ const ROUTES = [
       </section>
       <section style="margin-top: 24px;">
         <h2>Yapay Zekâ Arama Motorlarında Kliniğinizi Kaynak Göstertin</h2>
-        <p>Doğrudan cevap blokları, yapılandırılmış sağlık verisi ve entity ilişkileriyle yapay zekâ modellerinin kliniğinizi önermesini sağlayın.</p>
+        <p>Doğrudan cevap blokları, yapılandırılmış sağlık verisi ve entity ilişkileriyle yapay zekâ modellerinin kliniğinizi güvenilir bir kaynak olarak anlamasını sağlayın. Organik ChatGPT yanıtları reklamla satın alınamaz veya kesin olarak garanti edilemez.</p>
       </section>
     `
   },

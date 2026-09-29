@@ -152,8 +152,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     if (service.id === 'web-sitesi-landing-page') {
       return isEn ? 'Request Landing Page Audit' : 'Landing Page Analizi Talep Edin';
     }
-    if (service.id === 'yapay-zeka-otomasyon') {
-      return isEn ? 'Explore AI Voice & Chat Systems' : 'AI Otomasyon Çözümünü İnceleyin';
+    if (service.id === 'performans-pazarlama') {
+      return isEn ? 'Request Media Plan for Your Market & Branch' : 'Ülke ve Branşınıza Göre Medya Planı İsteyin';
     }
     return isEn ? 'Plan Your Growth Strategy' : 'Büyüme & Reklam Stratejinizi Planlayalım';
   };
@@ -272,117 +272,343 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
         </div>
 
-        {/* 2. Structured Sub-Headings with Images (Specific layout for Reklam Yönetimi) */}
+        {/* 2. Structured Sub-Headings (Specific layout for Sağlık Turizmi Reklam Yönetimi) */}
         {serviceId === 'performans-pazarlama' ? (
-          <div className="space-y-20 pt-10">
+          <div className="space-y-20 pt-10 text-left">
             
-            {/* Google Ads */}
+            {/* H2 #1: Reklama başlamadan yetki ve hedef ülke kontrolü */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  Arama Motoru Reklamcılığı
+              <div className="lg:col-span-7 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-50 text-emerald-700 text-xs font-bold uppercase border border-emerald-200">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>Ön Denetim & Yasal Altyapı</span>
                 </div>
                 <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  Google Ads Yönetimi
+                  Reklama başlamadan yetki ve hedef ülke kontrolü
                 </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Sağlık hizmetlerinizi Google’da araştıran kullanıcılara ulaşın. Google Ads yönetimi kapsamında anahtar kelime analizi, reklam metinleri, ülke ve dil hedeflemesi, bütçe yönetimi ve dönüşüm takibi yapıyoruz. Kampanyalarınızı hasta başvurularının kalitesine göre geliştiriyoruz.
+                  Sağlık turizmi reklamcılığı genel e-ticaret veya kurumsal pazarlamadan kökten farklıdır. Yayına başlamadan önce ilk adımımız; kliniğin T.C. Sağlık Bakanlığı onaylı <strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong> durumunu, HealthTürkiye entegrasyonunu ve hedef ülkenin (İngiltere ASA, Almanya HWG gibi) yerel tanıtım yasalarını denetlemektir.
                 </p>
-              </div>
-              <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
-                <img 
-                  src="/images/crm_ai_dashboard.jpg" 
-                  alt="Google Ads Yönetimi" 
-                  className="w-full h-[280px] object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Meta Ads */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 lg:order-2 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  Sosyal Medya Reklamcılığı
-                </div>
-                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  Meta Ads Yönetimi
-                </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Facebook ve Instagram’da kliniğinizin görünürlüğünü artırın. Meta Ads yönetimi ile görsel ve video reklamlar hazırlıyor, hedef pazarınıza uygun kampanyalar oluşturuyoruz. Reklam içeriklerini, başvuru formlarını ve mesajlaşma akışlarını birlikte planlıyoruz.
+                  Yetkisiz aracılık iddialarından, yanıltıcı tedavi garantilerinden ve mecra cezalarından korunmak için her kampanya kreatifini, metnini ve açılış sayfasını yasal çerçeveye göre ön kontrolden geçiririz. Mutlak uyum garantisi yerine, her adımda doğrulanabilir yasal süreçler işletiriz.
                 </p>
               </div>
-              <div className="lg:col-span-6 lg:order-1 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
-                <img 
-                  src="/images/aesthetic_case_visual.jpg" 
-                  alt="Meta Ads Yönetimi" 
-                  className="w-full h-[280px] object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Yandex Ads */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  Rusya & BDT Pazarı
-                </div>
-                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  Yandex Ads Yönetimi
-                </h2>
-                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Yandex kullanan hedef pazarlara ulaşmanız için Yandex Ads yönetimi sunuyoruz. Arama reklamlarını, anahtar kelimeleri ve reklam metinlerini hedef ülkenin diline göre hazırlıyor; bütçe ve başvuru performansını takip ediyoruz.
-                </p>
-              </div>
-              <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
-                <img 
-                  src="/images/dental_case_visual.jpg" 
-                  alt="Yandex Ads Yönetimi" 
-                  className="w-full h-[280px] object-cover"
-                />
-              </div>
-            </div>
-
-            {/* LinkedIn Ads */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 lg:order-2 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  B2B Kurumsal İş Ortaklıkları
-                </div>
-                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  LinkedIn Ads Yönetimi
-                </h2>
-                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Sağlık turizminde uluslararası iş ortaklıkları ve kurumsal bağlantılar geliştirin. LinkedIn Ads yönetimi ile aracı kuruluşlara, şirketlere ve ilgili karar vericilere yönelik kampanyalar planlıyor; kurumunuzun B2B pazarlama çalışmalarını destekliyoruz.
-                </p>
-              </div>
-              <div className="lg:col-span-6 lg:order-1 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
+              <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
                 <img 
                   src="/images/hero_health_tech.jpg" 
-                  alt="LinkedIn Ads Yönetimi" 
-                  className="w-full h-[280px] object-cover"
+                  alt="Sağlık Turizmi Reklam Yetki ve Mevzuat Kontrolü" 
+                  className="w-full h-[300px] object-cover"
                 />
               </div>
             </div>
 
-            {/* TikTok Ads */}
+            {/* H2 #2: Google Ads arama niyeti */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 space-y-4">
+              <div className="lg:col-span-7 lg:order-2 space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  Dinamik Video Reklamları
+                  Arama Ağı & Ticari Niyet
                 </div>
                 <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  TikTok Ads Yönetimi
+                  Google Ads arama niyeti
                 </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Kliniğinizi ve hizmetlerinizi kısa video içerikleriyle tanıtın. TikTok Ads yönetimi kapsamında platforma uygun reklam videoları, mesajlar ve kampanyalar hazırlıyoruz. Hedef ülke ve sağlık kategorisinin reklam koşullarına göre yayın planı oluşturuyoruz.
+                  Google'da sağlık aramaları yapan kullanıcıların niyetleri farklıdır. "What is a dental implant?" genel bilgi arayan bir kullanıcıyken, "All on 4 dental implants Turkey price London" doğrudan seyahat ve tedavi bütçesini planlayan yüksek ticari niyetli bir hasta adayıdır.
+                </p>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Bütçenizi genel aramalarda eritmemek için negatif anahtar kelime mimarisi kurar, hedef ülkenin yerel şehir bazlı sorgularını (Manchester, Frankfurt, Riyad vb.) filtreler ve doğrudan karar verme aşamasındaki yabancı hastaları hedefleriz.
                 </p>
               </div>
-              <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
+              <div className="lg:col-span-5 lg:order-1 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
                 <img 
-                  src="/images/ai_call_agent_mockup.jpg" 
-                  alt="TikTok Ads Yönetimi" 
-                  className="w-full h-[280px] object-cover"
+                  src="/images/crm_ai_dashboard.jpg" 
+                  alt="Google Ads Sağlık Turizmi Arama Niyeti" 
+                  className="w-full h-[300px] object-cover"
                 />
+              </div>
+            </div>
+
+            {/* H2 #3: Meta'da kreatif ve hedefleme */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  Instagram & Facebook Kampanyaları
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  Meta'da kreatif ve hedefleme
+                </h2>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Instagram ve Facebook reklamlarında yabancı hastanın ilk baktığı şey fiyattan önce cerrahın uzmanlığı ve kliniğin hijyen standartlarıdır. Sahte önce/sonra görselleri yerine; hekimin hasta hikâyesini anlattığı röportajlar, ameliyathane teknolojisi ve otel-transfer konforunu belgeleyen yüksek çözünürlüklü video kreatifler üretiriz.
+                </p>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Meta'nın sağlık ve kişisel veriler konusundaki katı reklam politikalarına tam uyum sağlayarak, hesap kapanma risklerini ortadan kaldıran onaylı reklam formatları (Instant Form, WhatsApp Click-to-Chat, Landing Page yönlendirmesi) kurgularız.
+                </p>
+              </div>
+              <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
+                <img 
+                  src="/images/aesthetic_case_visual.jpg" 
+                  alt="Meta Sağlık Turizmi Video Kreatifleri" 
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* H2 #4: Branşa göre landing page & Kampanya Tasarım Matrisi */}
+            <div className="space-y-8">
+              <div className="max-w-3xl space-y-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  Dönüşüm Mimarisi
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  Branşa göre landing page
+                </h2>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Reklamdan gelen yabancı hastayı kliniğin genel ana sayfasına yönlendirmek bütçe israfıdır. Diş hastası NHS fiyat kıyaslamasını görmek isterken, saç ekimi hastası greft planlamasını, obezite hastası ise cerrahın tecrübesini ve ameliyat sonrası takip garantisini arar. Her branşa ve hedef ülkeye özel 3 saniyenin altında açılan açılış sayfaları tasarlarız.
+                </p>
+              </div>
+
+              {/* Kampanya Tasarım Matrisi Tablosu */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#446CB5]">
+                    Örnek Kampanya Tasarım Matrisi (Ülke & Branş Bazlı)
+                  </span>
+                  <span className="text-[11px] text-[#595F69]">
+                    *Tasarım örneğidir; her klinik için sıfırdan modellenir
+                  </span>
+                </div>
+
+                <div className="overflow-x-auto rounded-2xl border border-[#DDE2E8] shadow-xs">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                    <thead>
+                      <tr className="bg-[#16202E] text-white">
+                        <th className="py-3.5 px-4 font-semibold">Pazar & Branş</th>
+                        <th className="py-3.5 px-4 font-semibold">Hasta Araştırma Sorusu</th>
+                        <th className="py-3.5 px-4 font-semibold">Gereken Dil & Nüans</th>
+                        <th className="py-3.5 px-4 font-semibold">Açılış Sayfası Güven Kanıtı</th>
+                        <th className="py-3.5 px-4 font-semibold">Ölçüm Olayı (Conversion)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#DDE2E8]">
+                      <tr className="bg-white">
+                        <td className="py-3.5 px-4 font-bold text-[#16202E]">
+                          İngiltere – Diş (All-on-4 / İmplant)
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          "Why is dental treatment cheaper in Turkey?", "Straumann guarantee UK"
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          İngiliz İngilizcesi, GBP (£) şeffaf fiyat bandı, NHS bekleme süresi vurgusu
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          Uluslararası garanti sertifikası, GDC denkliği, Londra havalimanı transfer planı
+                        </td>
+                        <td className="py-3.5 px-4 font-mono text-xs text-[#446CB5]">
+                          Röntgen / Form Gönderimi & WhatsApp Başlatma
+                        </td>
+                      </tr>
+                      <tr className="bg-[#F8FAFC]">
+                        <td className="py-3.5 px-4 font-bold text-[#16202E]">
+                          Almanya – Saç Ekimi (Sapphire FUE)
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          "Haartransplantation Türkei Erfahrungen", "Arztanwesenheit OP"
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          Akıcı Almanca, Euro (€), ameliyatta hekimin bizzat bulunma garantisi
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          Hekim diploması, steril hastane ortamı, Almanca konuşan hasta danışmanı kanıtı
+                        </td>
+                        <td className="py-3.5 px-4 font-mono text-xs text-[#446CB5]">
+                          Saç Fotoğrafı Yükleme & WhatsApp Konsültasyon
+                        </td>
+                      </tr>
+                      <tr className="bg-white">
+                        <td className="py-3.5 px-4 font-bold text-[#16202E]">
+                          Körfez – Hastane & Obezite (Tüp Mide)
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          "Best bariatric hospital Istanbul", "VIP health package Turkey"
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          Arapça / İngilizce çift dil, USD ($), refakatçi ve suit oda detayları
+                        </td>
+                        <td className="py-3.5 px-4 text-[#334155]">
+                          JCI akreditasyonu, genel hastane yoğun bakım ünitesi, multidisipliner takip
+                        </td>
+                        <td className="py-3.5 px-4 font-mono text-xs text-[#446CB5]">
+                          Boy/Kilo (BMI) Formu & Doğrudan Çağrı
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p className="text-[11px] text-[#595F69] italic">
+                  Not: Tablodaki senaryolar geçmiş kampanya tasarım şablonlarımızı göstermektedir; her kliniğin bütçesine, hekim kadrosuna ve hedef ülkesine göre özel medya planı oluşturulur.
+                </p>
+              </div>
+            </div>
+
+            {/* H2 #5: WhatsApp/CRM yanıt hızı */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  Satış Operasyonu & Triyaj
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  WhatsApp/CRM yanıt hızı
+                </h2>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Sağlık turizminde en kaliteli reklamı verseniz bile, gelen başvuruya ilk 15 dakika içinde yanıt verilmezse hastanın başka bir kliniğe gitme ihtimali %70 artar. Yurt dışı hasta anlık ilgi ve güven bekler.
+                </p>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Geliştirdiğimiz WhatsApp CRM entegrasyonu sayesinde, form dolduran veya mesaj atan yabancı hasta anında diline göre atanmış satış temsilcisinin ekranına düşer. Gece veya saat farkı olan ülkelerden gelen başvurular yapay zekâ destekli sesli/yazılı asistanlarla karşılanarak tıbbi ön değerlendirme başlatılır.
+                </p>
+              </div>
+              <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
+                <img 
+                  src="/images/crm_software_dashboard.jpg" 
+                  alt="WhatsApp CRM Sağlık Turizmi Yanıt Hızı" 
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* H2 #6: Başvuru kalitesi ve hasta başı maliyet */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7 lg:order-2 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  CPPA & Birim Maliyet
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  Başvuru kalitesi ve hasta başı maliyet
+                </h2>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Çoğu ajans kliniğe "1000 lead getirdik" diyerek övünür ancak bu başvuruların 900'ü telefonunu açmaz veya bütçesi yetersizdir. Overseas Marketing olarak "lead sayısını şişirmek" yerine <strong>CPPA (Cost Per Patient Acquired - Kazanılan Hasta Başı Maliyet)</strong> metriğini hedefleriz.
+                </p>
+                <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
+                  Başvuru kalitesi tek bir reklam ayarıyla maksimize edilemez; hedef pazarın seçimi, açılış sayfasının şeffaflığı, hekimin güven seviyesi, çağrı karşılama hızı ve tedavi teklifinin netliği bir bütün olarak çalışmalıdır. Kampanyalarımızı yalnızca tıklamaya göre değil, kliniğe gerçekten gelen hastaya göre optimize ederiz.
+                </p>
+              </div>
+              <div className="lg:col-span-5 lg:order-1 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
+                <img 
+                  src="/images/international_seo_analytics.jpg" 
+                  alt="Sağlık Turizmi Hasta Başı Maliyet Analizi" 
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* H2 #7: İlk 30 gün test planı */}
+            <div className="bg-white rounded-3xl border border-[#DDE2E8] p-8 sm:p-10 shadow-xs space-y-6">
+              <div className="max-w-3xl space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  Kontrollü Bütçe Başlangıcı
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  İlk 30 gün test planı
+                </h2>
+                <p className="text-sm text-[#595F69]">
+                  Büyük bütçeleri körlemesine yakmak yerine, ilk 30 günde riskleri minimize eden 3 aşamalı kontrollü bir doğrulama planı işletiriz:
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2.5">
+                  <span className="text-xs font-black text-[#446CB5]">GÜN 01 – 10</span>
+                  <h3 className="font-['Inter_Tight'] text-base font-bold text-[#16202E]">
+                    Kurulum, Altyapı & Mevzuat
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Yetki belgesi ve HealthTürkiye kontrolü, çok dilli landing page tasarımı, GA4 / Pixel dönüşüm etiketleri ve CRM webhook entegrasyonu.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2.5">
+                  <span className="text-xs font-black text-[#446CB5]">GÜN 11 – 20</span>
+                  <h3 className="font-['Inter_Tight'] text-base font-bold text-[#16202E]">
+                    Kontrollü Test Yayını & Filtreleme
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Hedef ülkede sınırlı test bütçesiyle Google Arama ve Meta video kreatiflerinin yayına alınması, negatif kelime temizliği ve satış triyaj testi.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2.5">
+                  <span className="text-xs font-black text-[#446CB5]">GÜN 21 – 30</span>
+                  <h3 className="font-['Inter_Tight'] text-base font-bold text-[#16202E]">
+                    Dönüşüm Mutabakatı & Ölçekleme
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Gelen başvuruların nitelik ve randevu oranlarının klinik satış ekibiyle ortak değerlendirilmesi; kazandıran hedef kitleye bütçe aktarımı.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-[#EEF2F6] flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span className="text-xs text-[#595F69]">
+                  Kliniğinizin branş ve hedef pazarına özel ilk 30 günlük detaylı medya planını birlikte hazırlayalım.
+                </span>
+                <button
+                  onClick={onOpenConsultation}
+                  className="px-6 py-3 rounded-xl bg-[#446CB5] hover:bg-[#35558F] text-white text-xs font-bold transition-all shadow-md cursor-pointer shrink-0"
+                >
+                  Ülke ve branşınıza göre medya planı isteyin
+                </button>
+              </div>
+            </div>
+
+            {/* H2 #8: Sık sorulan sorular */}
+            <div className="space-y-6">
+              <div className="max-w-3xl space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
+                  Performans Pazarlama FAQ
+                </div>
+                <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                  Sık sorulan sorular
+                </h2>
+                <p className="text-sm text-[#595F69]">
+                  Sağlık turizmi reklam yönetimi, bütçe kullanımı ve hedef ülke kampanyaları hakkında merak edilenler.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-5 rounded-2xl bg-white border border-[#DDE2E8] space-y-2">
+                  <h3 className="font-['Inter_Tight'] text-sm font-bold text-[#16202E]">
+                    Reklam bütçemizi nasıl belirlemeliyiz?
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Bütçe; hedeflenen branşın rekabetine (diş, saç, estetik), hedef ülkenin tıklama başı maliyetlerine (İngiltere £2-£6, Almanya €1.5-€4) ve kliniğinizin aylık hasta kabul kapasitesine göre stratejik olarak modellenir.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-white border border-[#DDE2E8] space-y-2">
+                  <h3 className="font-['Inter_Tight'] text-sm font-bold text-[#16202E]">
+                    Tüm dillerde reklam yönetimi yapıyor musunuz?
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Evet. İngilizce, Almanca, Fransızca, Arapça ve Rusça dillerinde hedef pazarın yerel kültürel dinamiklerine ve medikal terimlerine hakim uzmanlarımızla ana dilinde reklam metinleri ve açılış sayfaları hazırlarız.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-white border border-[#DDE2E8] space-y-2">
+                  <h3 className="font-['Inter_Tight'] text-sm font-bold text-[#16202E]">
+                    ChatGPT'de sağlık reklamı verilebilir mi?
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    OpenAI politikalarına göre tıbbi işlemler ve cerrahi tedaviler tüm ülkelerde ChatGPT Ads için izin dışıdır. Bu nedenle tıbbi reklam için Google ve Meta kullanılırken; ChatGPT'de yer almak için organik GEO stratejisi uygulanır.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-white border border-[#DDE2E8] space-y-2">
+                  <h3 className="font-['Inter_Tight'] text-sm font-bold text-[#16202E]">
+                    Reklam hesaplarının mülkiyeti kime ait olur?
+                  </h3>
+                  <p className="text-xs text-[#595F69] leading-relaxed">
+                    Tüm Google Ads ve Meta Business Manager hesapları %100 kliniğinize ait olur. Ajans olarak yönetici veya ortak erişimiyle çalışır; tüm veriye, harcama faturalarına ve dönüşüm geçmişine şeffaf erişiminizi sağlarız.
+                  </p>
+                </div>
               </div>
             </div>
 

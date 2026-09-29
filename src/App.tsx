@@ -12,8 +12,10 @@ import { ReferencesLogos } from './components/ReferencesLogos';
 import { SpecialtiesSection } from './components/SpecialtiesSection';
 import { AboutSection } from './components/AboutSection';
 import { BlogSection } from './components/BlogSection';
+import { NewArticlesSlider } from './components/NewArticlesSlider';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
+import { AgencyDecisionFramework } from './components/AgencyDecisionFramework';
 import { Footer } from './components/Footer';
 import { ConsultationModal } from './components/ConsultationModal';
 import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
@@ -250,25 +252,27 @@ const HomePage: React.FC<{
     <>
       <SEOHead
         title={isEn
-          ? "Health Tourism Advertising Agency | Overseas Marketing"
-          : "Sağlık Turizmi Reklam Ajansı | Overseas Marketing"}
+          ? "Health Tourism Advertising Agency | International Patient Growth – Overseas Marketing"
+          : "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing"}
         description={isEn
-          ? "Overseas Marketing develops medical tourism advertising, SEO, GEO, CRM, web, and AI automations for clinics, doctors, and hospitals."
-          : "Overseas Marketing; klinik, doktor ve hastaneler için sağlık turizmi reklamları, SEO, GEO, CRM, web ve yapay zekâ otomasyonları geliştirir."}
+          ? "We build target country research, multilingual advertising and content, landing pages, CRM, and conversion tracking into a single unified plan for authorized clinics and hospitals."
+          : "Yetkili klinik ve hastaneler için hedef ülke araştırması, çok dilli reklam ve içerik, açılış sayfası, CRM ve dönüşüm ölçümünü tek plan içinde kuruyoruz."}
         canonicalUrl="https://www.overseas.marketing/"
       />
       <JsonLdSchema type="home" />
 
       <Hero
         onOpenConsultation={onOpenConsultation}
-        onExploreServices={() => scrollToSection('hizmetler')}
+        onExploreServices={() => scrollToSection('kimler-icin')}
       />
 
       <PartnerLogos />
 
-      <ProblemApproach onOpenConsultation={onOpenConsultation} />
-
-      <RoadmapSection />
+      {/* Master 8-Section Strategic Agency Decision Framework */}
+      <AgencyDecisionFramework
+        onOpenConsultation={onOpenConsultation}
+        onSelectService={onSelectService}
+      />
 
       <ServicesSection
         onSelectService={onSelectService}
@@ -288,9 +292,10 @@ const HomePage: React.FC<{
 
       <AboutSection onOpenConsultation={onOpenConsultation} />
 
-      <BlogSection onOpenConsultation={onOpenConsultation} />
+      {/* Yeni Makaleler & 2026 Mevzuat Slider */}
+      <NewArticlesSlider />
 
-      <FaqSection onOpenConsultation={onOpenConsultation} />
+      <BlogSection onOpenConsultation={onOpenConsultation} />
 
       <ContactSection />
     </>

@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <div className="pt-2 flex flex-col gap-2 text-xs text-slate-400">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#60A5FA]" />
-                <span>{isEn ? '100% Medical Advertising Compliant' : '2026 Tanıtım Mevzuatı Uyumlu'}</span>
+                <span>{isEn ? 'Campaign Regulatory & Policy Review' : 'Tanıtım Mevzuatı ve Politika Kontrollü'}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Lock className="w-4 h-4 text-[#60A5FA]" />

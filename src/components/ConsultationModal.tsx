@@ -23,8 +23,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
     clinicName: '',
     email: '',
     phone: '',
-    serviceInterest: isEn ? 'Performance Ads & Lead Acquisition' : 'Performans Pazarlama & Lead Üretimi',
-    preferredTime: isEn ? 'Morning (10:00 - 13:00 GMT+3)' : 'Sabah (10:00 - 13:00)',
+    organizationType: isEn ? 'Licensed Clinic / Medical Center' : 'Yetkili Sağlık Tesisi / Tıp Merkezi',
+    authorizationStatus: isEn ? 'Health Tourism Authorization License Active' : 'Sağlık Turizmi Yetki Belgesi Var',
+    branch: isEn ? 'Dental Treatments & Implants' : 'Diş Tedavileri & İmplant',
+    targetMarket: isEn ? 'United Kingdom (UK)' : 'İngiltere (UK)',
+    monthlyBudget: isEn ? '€5,000 - €10,000 / month' : '5.000€ - 10.000€ / ay',
     notes: '',
     kvkk: false
   });
@@ -63,10 +66,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
           clinicName: formData.clinicName,
           email: formData.email,
           phone: formData.phone,
-          serviceInterest: formData.serviceInterest,
-          preferredTime: formData.preferredTime,
+          organizationType: formData.organizationType,
+          authorizationStatus: formData.authorizationStatus,
+          branch: formData.branch,
+          targetMarket: formData.targetMarket,
+          monthlyBudget: formData.monthlyBudget,
           message: formData.notes,
-          formType: isEn ? '30 Min. Growth Consultation (EN)' : '30 Dk. Büyüme Görüşmesi Randevusu'
+          formType: isEn ? 'B2B Healthcare Strategy & Eligibility Review' : 'Sağlık Turizmi Yetki & Pazar Uygunluk Değerlendirmesi'
         })
       });
     } catch (err) {
@@ -122,13 +128,15 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
             <div className="space-y-1 pr-8">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#EEF3FB] text-[10px] font-bold text-[#446CB5] uppercase">
                 <Sparkles className="w-3 h-3 text-[#446CB5]" />
-                {isEn ? 'Free 30-Minute Growth Analysis' : 'Ücretsiz 30 Dk. Büyüme Analizi'}
+                {isEn ? 'Strategy & Eligibility Review' : 'Strateji & Uygunluk Değerlendirmesi'}
               </div>
               <h3 className="font-['Inter_Tight'] text-xl sm:text-2xl font-bold text-[#222222]">
-                {t.modal.title}
+                {isEn ? 'Evaluate Your Clinic’s Market & Channel Eligibility' : 'Kliniğinizin Yetki, Hedef Ülke ve Kanal Uygunluğunu Değerlendirelim'}
               </h3>
               <p className="text-xs text-[#595F69]">
-                {t.modal.subtitle}
+                {isEn 
+                  ? 'Request a targeted 30-minute growth consultation for authorized healthcare providers, hospitals, and facilitators.'
+                  : 'Yetkili sağlık tesisleri, hastaneler ve aracı kuruluşlar için hedef pazar, reklam kanalları ve hasta edinim modeli analizi.'}
               </p>
             </div>
 
@@ -176,7 +184,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                 <input
                   type="tel"
                   required
-                  placeholder="+44 7000 ..."
+                  placeholder="+90 5XX / +44 7XX"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
@@ -184,56 +192,158 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               </div>
             </div>
 
+            {/* B2B Qualification Fields: Kuruluş Türü & Yetki Durumu */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">{t.modal.serviceInterest}</label>
+                <label className="text-xs font-semibold text-[#222222]">
+                  {isEn ? 'Organization Type *' : 'Kuruluş Türü *'}
+                </label>
                 <select
-                  value={formData.serviceInterest}
-                  onChange={(e) => setFormData({ ...formData, serviceInterest: e.target.value })}
+                  value={formData.organizationType}
+                  onChange={(e) => setFormData({ ...formData, organizationType: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
                 >
                   {isEn ? (
                     <>
-                      <option>Performance Ads & Lead Acquisition</option>
-                      <option>Custom CRM & AI Call Agent Setup</option>
-                      <option>International SEO & GEO (AI Search)</option>
-                      <option>High-Converting Medical Web & LP</option>
-                      <option>End-to-End Growth Engine</option>
+                      <option>Licensed Clinic / Medical Center</option>
+                      <option>Private Hospital / Health Group</option>
+                      <option>Physician Practice / Doctor Office</option>
+                      <option>Authorized Medical Tourism Facilitator / Agency</option>
                     </>
                   ) : (
                     <>
-                      <option>Performans Pazarlama & Lead Üretimi</option>
-                      <option>Özel CRM & AI Call Agent Kurulumu</option>
-                      <option>Uluslararası SEO & GEO (AI Arama)</option>
-                      <option>Dönüşüm Odaklı Web Sitesi & LP</option>
-                      <option>Uçtan Uca Büyüme Paketi</option>
+                      <option>Yetkili Sağlık Tesisi / Tıp Merkezi</option>
+                      <option>Özel Hastane / Sağlık Grubu</option>
+                      <option>Hekim Muayenehanesi</option>
+                      <option>Yetkili Uluslararası Sağlık Turizmi Aracı Kuruluşu</option>
                     </>
                   )}
                 </select>
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-semibold text-[#222222]">{t.modal.preferredTime}</label>
+                <label className="text-xs font-semibold text-[#222222]">
+                  {isEn ? 'Authorization License Status *' : 'Yetki Belgesi Durumu *'}
+                </label>
                 <select
-                  value={formData.preferredTime}
-                  onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
+                  value={formData.authorizationStatus}
+                  onChange={(e) => setFormData({ ...formData, authorizationStatus: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
                 >
                   {isEn ? (
                     <>
-                      <option>Morning (10:00 - 13:00 GMT+3)</option>
-                      <option>Afternoon (14:00 - 17:00 GMT+3)</option>
-                      <option>Evening (17:00 - 19:30 GMT+3)</option>
+                      <option>Health Tourism Authorization License Active</option>
+                      <option>Application / Evaluation in Progress</option>
+                      <option>Not Yet / Inquiring Requirements</option>
                     </>
                   ) : (
                     <>
-                      <option>Sabah (10:00 - 13:00)</option>
-                      <option>Öğleden Sonra (14:00 - 17:00)</option>
-                      <option>Akşamüstü (17:00 - 19:30)</option>
+                      <option>Sağlık Turizmi Yetki Belgesi Var</option>
+                      <option>Başvuru / Hazırlık Aşamasında</option>
+                      <option>Henüz Yok / Süreç Bilgisi İstiyorum</option>
                     </>
                   )}
                 </select>
               </div>
+            </div>
+
+            {/* B2B Qualification Fields: Branş & Hedef Pazar */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-[#222222]">
+                  {isEn ? 'Medical Branch *' : 'Tıbbi Branş *'}
+                </label>
+                <select
+                  value={formData.branch}
+                  onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
+                >
+                  {isEn ? (
+                    <>
+                      <option>Dental Treatments & Implants</option>
+                      <option>Hair Transplant</option>
+                      <option>Plastic & Aesthetic Surgery</option>
+                      <option>Bariatric / Obesity Surgery</option>
+                      <option>Eye Surgery & Ophthalmology</option>
+                      <option>IVF & Reproductive Health</option>
+                      <option>Orthopedics / Neurosurgery</option>
+                      <option>General Hospital Services</option>
+                    </>
+                  ) : (
+                    <>
+                      <option>Diş Tedavileri & İmplant</option>
+                      <option>Saç Ekimi</option>
+                      <option>Plastik & Estetik Cerrahi</option>
+                      <option>Obezite Cerrahisi</option>
+                      <option>Göz Cerrahisi</option>
+                      <option>Tüp Bebek (IVF)</option>
+                      <option>Ortopedi / Cerrahi</option>
+                      <option>Genel Hastane Hizmetleri</option>
+                    </>
+                  )}
+                </select>
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-[#222222]">
+                  {isEn ? 'Primary Target Market *' : 'Birincil Hedef Pazar *'}
+                </label>
+                <select
+                  value={formData.targetMarket}
+                  onChange={(e) => setFormData({ ...formData, targetMarket: e.target.value })}
+                  className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
+                >
+                  {isEn ? (
+                    <>
+                      <option>United Kingdom (UK)</option>
+                      <option>Germany, Austria, Switzerland (DACH)</option>
+                      <option>Gulf Region (GCC - UAE, Saudi Arabia, Kuwait)</option>
+                      <option>CIS & Russian Speaking Markets</option>
+                      <option>Western Europe (France, Netherlands, Belgium)</option>
+                      <option>Other / Multi-Regional</option>
+                    </>
+                  ) : (
+                    <>
+                      <option>İngiltere (UK)</option>
+                      <option>Almanya & DACH (Avusturya, İsviçre)</option>
+                      <option>Körfez Ülkeleri (GCC - BAE, Suudi Arabistan, Kuveyt)</option>
+                      <option>BDT & Rusya Pazarı</option>
+                      <option>Batı Avrupa (Fransa, Hollanda, Belçika)</option>
+                      <option>Diğer / Çoklu Bölge</option>
+                    </>
+                  )}
+                </select>
+              </div>
+            </div>
+
+            {/* Aylık Reklam Bütçesi Aralığı */}
+            <div className="space-y-1">
+              <label className="text-xs font-semibold text-[#222222]">
+                {isEn ? 'Planned Monthly Ad Budget *' : 'Planlanan Aylık Reklam Bütçesi Aralığı *'}
+              </label>
+              <select
+                value={formData.monthlyBudget}
+                onChange={(e) => setFormData({ ...formData, monthlyBudget: e.target.value })}
+                className="w-full px-3 py-2 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] text-xs focus:outline-none focus:border-[#446CB5]"
+              >
+                {isEn ? (
+                  <>
+                    <option>€2,000 - €5,000 / month</option>
+                    <option>€5,000 - €10,000 / month</option>
+                    <option>€10,000 - €25,000 / month</option>
+                    <option>€25,000+ / month</option>
+                    <option>Planning Phase / Inquiring Recommended Budget</option>
+                  </>
+                ) : (
+                  <>
+                    <option>2.000€ - 5.000€ / ay</option>
+                    <option>5.000€ - 10.000€ / ay</option>
+                    <option>10.000€ - 25.000€ / ay</option>
+                    <option>25.000€+ / ay</option>
+                    <option>Planlama Aşamasında / Öneri İstiyorum</option>
+                  </>
+                )}
+              </select>
             </div>
 
             <div className="space-y-1">
