@@ -11621,5 +11621,2659 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
         "url": "/saglik-turizmi-tezleri"
       }
     ]
+  },
+  {
+    "id": "K087",
+    "slug": "yurt-disindan-hasta-nasil-bulunur",
+    "url": "/blog/yurt-disindan-hasta-nasil-bulunur",
+    "category": "Uluslararası Hasta Kazanımı",
+    "title": "Yurt Dışından Hasta Nasıl Bulunur? 2026 Uluslararası Hasta Kazanım Rehberi",
+    "h1": "Yurt Dışından Hasta Nasıl Bulunur? 2026 Uluslararası Hasta Kazanım Rehberi",
+    "seoTitle": "Yurt Dışından Hasta Nasıl Bulunur? 2026 Rehberi | Overseas Marketing",
+    "metaDesc": "Yurt dışından hasta bulma stratejileri: Google Ads, Meta video reklamları, medikal SEO, GEO yapay zekâ görünürlüğü, çok dilli CRM ve 90 günlük operasyonel yol haritası.",
+    "primaryKeyword": "yurt dışından hasta bulma",
+    "secondaryKeywords": [
+      "yabancı hasta bulma",
+      "yurt dışından hasta getirme",
+      "sağlık turizmi hasta kazanımı",
+      "uluslararası hasta kazanımı",
+      "yabancı hasta reklamı",
+      "sağlık turizmi reklam ajansı"
+    ],
+    "searchIntent": "Ticari ve Bilgilendirici (Commercial + Informational)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Büyüme & Hasta Kazanım Masası",
+    "reviewer": "Medikal Performans Direktörlüğü",
+    "quickAnswer": "Yurt dışından hasta bulma; hedef ülkedeki yüksek tedavi niyetli hastaların dijital arama ve sosyal medya kanallarından yakalanması, çok dilli açılış sayfalarıyla güven tesis edilmesi, 90 saniye altında WhatsApp/CRM temasları ve uzman satış danışmanlarıyla tedavi randevusuna dönüştürülmesi sürecidir. Başarı rastgele reklam bütçesi harcamakla değil; doğru ülke seçimi, tedavi spesifik funnel kurgusu, sıkı lead kalifikasyonu ve operasyonel takip disipliniyle mümkündür.",
+    "sections": [
+      {
+        "heading": "Yurt dışından hasta bulmak ne demektir? Kavramsal çerçeve",
+        "subheading": "Trafik çekmenin ötesinde sınır ötesi güven mühendisliği",
+        "paragraphs": [
+          "Yurt dışından hasta bulma (uluslararası hasta kazanımı), yabancı bir hastanın kendi ülkesindeki bekleme süreleri, yüksek tedavi maliyetleri veya yetersiz uzmanlık nedeniyle Türkiye'deki yetkili sağlık tesislerini tercih etmesini sağlayan bütünsel bir büyüme sürecidir. Bu süreç tek başına Google'a ya da Instagram'a reklam verip form toplamak anlamına gelmez.",
+          "Sınır ötesi sağlık kararında hasta yalnızca bir hizmet değil, kendi bedenini ve sağlığını binlerce kilometre uzaktaki bir hekime emanet etmektedir. Dolayısıyla hasta kazanım mimarisi; bilgi edinme, akreditasyon güveni, hekim yetkinliği, şeffaf paket fiyatlandırma, çok dilli karşılama ve operasyonel lojistiğin senkronize çalışmasını zorunlu kılar."
+        ],
+        "callout": {
+          "title": "GEO Tanımı: Uluslararası Hasta Kazanımı",
+          "text": "Uluslararası hasta kazanımı; yetkili klinik ve hastanelerin sınır ötesi pazarlarda güvenilirlik, dijital görünürlük (Search, Social, GEO), çok dilli ön konsültasyon ve CRM süreçlerini entegre ederek tedaviye uygun yabancı hastaları randevuya dönüştürme metodolojisidir.",
+          "type": "info"
+        }
+      },
+      {
+        "heading": "Hangi ülkeler hedeflenmeli? Pazar seçim kriterleri",
+        "subheading": "NHS bekleme kuyrukları, DACH satın alma gücü ve Körfez talebi",
+        "paragraphs": [
+          "Her branşın ve kliniğin hedef pazar dinamiği farklıdır. Bütün Avrupa'yı tek bir reklam kampanyasında hedeflemek bütçenin tükenmesine ve niteliksiz lead yığınına yol açar. Pazar seçiminde üç ana parametre belirleyicidir: yerel sağlık sisteminin açıkları, uçuş erişilebilirliği ve kişi başı tedavi bütçesi.",
+          "Örneğin İngiltere pazarı diş tedavileri, saç ekimi ve obezite cerrahisinde yüksek talep üretirken; Almanya ve İsviçre ileri düzey cerrahi, onkoloji ve göz ameliyatlarında klinik kanıt ve kalite odaklıdır."
+        ],
+        "table": {
+          "headers": [
+            "Hedef Pazar",
+            "Öne Çıkan Branşlar",
+            "Temel Hasta Motivasyonu",
+            "Öncelikli Dijital Kanal"
+          ],
+          "rows": [
+            [
+              "Birleşik Krallık (UK)",
+              "Diş (All-on-4, Zirkonyum), Saç Ekimi, Bariatrik Cerrahi",
+              "NHS 18+ ay bekleme süresi, özel kliniklerin aşırı pahalı olması",
+              "Google Search Ads, Instagram Reels, TikTok"
+            ],
+            [
+              "Almanya & DACH",
+              "Plastik Cerrahi, Göz (Akıllı Lens), Ortopedi, Dental",
+              "Yüksek kalite ve hekim uzmanlığı beklentisi, gurbetçi tavsiyeleri",
+              "Google Ads (Almanca), Organik Medikal SEO, YouTube"
+            ],
+            [
+              "Fransa & Benelüks",
+              "Saç Ekimi, Rinoplasti, Diş Estetiği",
+              "Maliyet avantajı, paket transfer ve konaklama konforu",
+              "Meta Video Reklamları, WhatsApp Danışmanlık"
+            ],
+            [
+              "Körfez Ülkeleri (GCC)",
+              "Organ Nakli, İleri Onkoloji, Tüp Bebek, Estetik",
+              "VIP konfor, gelişmiş teknolojik hastane altyapısı, kültürel uyum",
+              "Snapchat, Instagram, VIP Concierge WhatsApp"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Çok kanallı yabancı hasta kazanım sistemi",
+        "subheading": "Google Ads, Meta Ads, SEO ve GEO kanallarının entegrasyonu",
+        "paragraphs": [
+          "Sürdürülebilir hasta edinimi tek bir platforma yaslanamaz. Google Ads arama ağında yüksek tedavi niyetli ('dental implants turkey', 'rhinoplasty istanbul cost') kullanıcıları yakalarken; Meta Ads (Instagram/Facebook) üzerinden hekim vaka videoları ve hasta yolculuk hikayeleriyle talep oluşturulmalıdır.",
+          "Uzun vadede ise medikal SEO ve GEO (Generative Engine Optimization) devreye girer. Hastalar ChatGPT ve Perplexity gibi yapay zekâ yanıt motorlarına Türkiye'deki klinik alternatiflerini sorduğunda kliniğinizin doğrulanabilir bir kaynak (Entity) olarak önerilmesi organik hasta maliyetlerini dramatik olarak düşürür."
+        ],
+        "bulletPoints": [
+          "Google Ads: Anlık tedavi ihtiyacı olan, karar aşamasındaki sıcak hasta sorgularını toplar.",
+          "Meta Ads: Tedavi olmayı düşünen ancak henüz klinik seçmemiş kitlede güven ve marka aşinalığı yaratır.",
+          "Medikal SEO: Tedavi riskleri, iyileşme süreci ve teknoloji odaklı aramalarda kalıcı organik otorite sağlar.",
+          "GEO (AI Arama): ChatGPT, Gemini ve AI Overviews sistemlerinde kliniğinizin referans gösterilmesini sağlar."
+        ]
+      },
+      {
+        "heading": "Hasta dönüşüm hunisi ve operasyonel zincir",
+        "subheading": "Trafik → Lead → Nitelikli Görüşme → Teşhis → Rezervasyon → Hasta",
+        "paragraphs": [
+          "Sağlık turizminde en büyük hata reklamdan gelen her telefon veya mesajı 'hasta' zannetmektir. Sağlıklı bir hasta hunisinde her aşamanın net dönüşüm metrikleri ve filtreleme kriterleri olmalıdır.",
+          "Reklamdan gelen 100 formun ortalama 30-35'i tedaviye tıbben ve finansal olarak uygun (Qualified Lead) çıkar. Bu hastaların ortalama 10-12'si görüntülü hekim konsültasyonuna katılır ve 3-4 tanesi depozito ödeyerek kliniğe uçak biletini alır."
+        ],
+        "table": {
+          "headers": [
+            "Huni Aşaması",
+            "Tipik Hacim (Örnek)",
+            "Hedef Dönüşüm Oranı",
+            "Gerekli Operasyonel Eylem"
+          ],
+          "rows": [
+            [
+              "1. Web Sitesi / Landing Page Trafiği",
+              "1.000 Tıklama",
+              "%5 - %8 Form Oranı",
+              "Hızlı açılan ( < 2 sn), çok dilli mobil arayüz"
+            ],
+            [
+              "2. Ham Başvuru (Raw Lead)",
+              "60 Lead",
+              "%100",
+              "CRM'e otomatik kayıt, ilk 90 saniyede WhatsApp teması"
+            ],
+            [
+              "3. Tıbbi & Finansal Uygunluk (MQL)",
+              "20 Nitelikli Lead",
+              "%33",
+              "Röntgen/fotoğraf analizi, bütçe doğrulaması"
+            ],
+            [
+              "4. Doktor Konsültasyonu / Teklif",
+              "8 Görüşme",
+              "%40",
+              "Hekim görüntülü muayenesi, şeffaf tedavi planı"
+            ],
+            [
+              "5. Tedavi Rezervasyonu (Booking)",
+              "3 Hasta",
+              "%37.5",
+              "Uçak bileti onayı, depozito tahsilatı, transfer planı"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sık yapılan 5 kritik hata ve çözüm yolları",
+        "subheading": "Bütçe israfına ve düşük dönüşüme yol açan operasyonel tuzaklar",
+        "paragraphs": [
+          "1. <strong>Tüm Dünyaya Tek Reklam Açmak:</strong> Farklı dilleri ve kültürleri tek bir İngilizce reklama toplamak dönüşüm oranını sıfırlar.",
+          "2. <strong>Geç Yanıt Verme Felaketi:</strong> WhatsApp'tan yazan yabancı hastaya 2 saat sonra dönüldüğünde hasta başka bir klinikle çoktan görüşmüş olur.",
+          "3. <strong>Fiyatı Saklamak veya Yanıltıcı Düşük Vermek:</strong> Hastayı Türkiye'ye çekmek için gerçekçi olmayan düşük taban fiyat verip havaalanında ekstra çıkarmak klinik itibarını yıkar.",
+          "4. <strong>Satış Temsilcisinin Tıbbi Bilgisizliği:</strong> Hasta vaka detayını sorduğunda doyurucu yanıt veremeyen koordinatörler güven kaybına yol açar.",
+          "5. <strong>CRM Kullanmamak:</strong> Excel veya kişisel WhatsApp üzerinden hasta takibi yapmak, potansiyel tedavilerin %70'inin unutulmasına neden olur."
+        ]
+      },
+      {
+        "heading": "90 günlük örnek hasta kazanım sistemi kurulum planı",
+        "subheading": "Sıfırdan sürdürülebilir yabancı hasta akışına geçiş rehberi",
+        "paragraphs": [
+          "<strong>1 - 30. Gün (Altyapı & Uyum):</strong> Sağlık Bakanlığı yetki belgesi ve HealthTürkiye kontrolü, hedef ülke pazar araştırması, çok dilli yüksek dönüşümlü landing page tasarımları, WhatsApp Business API ve CRM kurulumu.",
+          "<strong>31 - 60. Gün (Test & Validasyon):</strong> Seçilen pilot ülkede (örn. İngiltere veya Almanya) Google Search Ads ve Meta vaka reklamlarının başlatılması, A/B kreatif testleri, lead kalifikasyon filtrelerinin devreye alınması.",
+          "<strong>61 - 90. Gün (Ölçekleme & Otorite):</strong> Düşük maliyetli ve yüksek randevu üreten anahtar kelimelere bütçe aktarımı, medikal SEO blog yayınları, GEO schema işaretlemeleri ve hasta sadakat sistemlerinin devreye girmesi."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Yurt dışından hasta bulmak için ilk nereden başlanmalıdır?",
+        "a": "Öncelikle T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi doğrulanmalı, kliniğin en güçlü olduğu tek bir branş (örn. All-on-4 dental) ve tek bir hedef pazar (örn. İngiltere) seçilerek dönüşüm odaklı açılış sayfası hazırlanmalıdır."
+      },
+      {
+        "q": "Yabancı hastaya ilk temas süresi ne kadar olmalıdır?",
+        "a": "Uluslararası standartlarda hedef ilk 90 saniyedir. İlk 5 dakika içerisinde ana dilinde yanıt verilmeyen lead'lerin başka bir sağlık kuruluşuna kaptırılma riski %80'in üzerine çıkar."
+      },
+      {
+        "q": "Sosyal medya form reklamları neden kalitesiz lead getirir?",
+        "a": "Meta instant formlar kullanıcının kayıtlı bilgilerini tek tıkla otomatik doldurduğu için hasta formu doldurduğunu dahi hatırlamayabilir. Araya röntgen yükleme veya bütçe seçme gibi ön eleme soruları koymak lead kalitesini katlar."
+      },
+      {
+        "q": "Hasta kazanımı için garanti verilebilir mi?",
+        "a": "Tıbbi etik, yasal mevzuat ve dijital dinamikler gereğince hiçbir profesyonel ajans %100 hasta garantisi veremez. Doğru yaklaşım; test edilmiş funnel'lar, veri odaklı optimizasyon ve ölçülebilir CAC (hasta edinme maliyeti) yönetimidir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Sağlık Bakanlığı Uluslararası Sağlık Turizmi Daire Başkanlığı",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Uluslararası Sağlık Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "Yetkili Sağlık Tesisleri Listesi",
+        "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Dijital Pazarlama Stratejisi",
+        "url": "/blog/saglik-turizminde-dijital-pazarlama-rehberi"
+      },
+      {
+        "title": "Sağlık Turizmi Google Ads Rehberi",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      },
+      {
+        "title": "Sağlık Turizminde Hasta Kazanma Maliyeti",
+        "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti"
+      },
+      {
+        "title": "Overseas Marketing Teklif ve Büyüme Analizi",
+        "url": "/teklif-al"
+      }
+    ]
+  },
+  {
+    "id": "K088",
+    "slug": "saglik-turizminde-hasta-nasil-bulunur",
+    "url": "/blog/saglik-turizminde-hasta-nasil-bulunur",
+    "category": "Uluslararası Hasta Kazanımı",
+    "title": "Sağlık Turizminde Hasta Nasıl Bulunur? İşletme Modeli ve Edinme Kanalları",
+    "h1": "Sağlık Turizminde Hasta Nasıl Bulunur? İşletme Modeli ve Edinme Kanalları",
+    "seoTitle": "Sağlık Turizminde Hasta Nasıl Bulunur? | Overseas Marketing",
+    "metaDesc": "Trafik ≠ Lead ≠ Hasta ayrımı. Direkt klinik, yetkili acente, referral ve dijital kanallarla sağlık turizminde sürdürülebilir hasta edinme stratejileri.",
+    "primaryKeyword": "sağlık turizmi hasta bulma",
+    "secondaryKeywords": [
+      "sağlık turizmi hasta kazanımı",
+      "sağlık turizmi hasta nasıl bulunur",
+      "sağlık turizmi acente anlaşmaları",
+      "sağlık turizmi hasta getirme yöntemleri",
+      "sağlık turizmi lead satışı"
+    ],
+    "searchIntent": "Ticari ve Operasyonel (Commercial + Strategy)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Büyüme & Operasyon Masası",
+    "reviewer": "Sağlık Turizmi Yönetim Kurulu",
+    "quickAnswer": "Sağlık turizminde hasta bulma; doğrudan klinik dijital varlıkları (paid ads + SEO/GEO), yetkili uluslararası aracı kuruluş iş birlikleri (B2B acenteler) ve tedavi olmuş hastaların tavsiye mekanizmalarının (referral) dengeli bir karmasıdır. En kritik ticari ilke: Trafik ≠ Lead ≠ Hasta ayrımıdır. Yalnızca form toplamak başarı değildir; operasyonel süreç bu talepleri kliniğe adım atan gerçek hastaya dönüştürmelidir.",
+    "sections": [
+      {
+        "heading": "Trafik ≠ Lead ≠ Hasta: Sağlık turizminin temel denklemi",
+        "subheading": "Dijital yanılsamaları bırakıp gerçek ciroya odaklanmak",
+        "paragraphs": [
+          "Birçok klinik sahibi veya hastane yöneticisi dijital pazarlamaya başlarken 'Web sitemiz ayda 50 bin tık alıyor' veya 'Bu ay 400 lead topladık' verisini bir başarı zanneder. Oysa sağlık turizminde ciro üreten tek metrik, uçaktan inip ameliyathaneye veya tedavi koltuğuna oturan hastadır.",
+          "Web sitesine gelen trafik yalnızca dikkattir. Doldurulan form (lead) yalnızca bir iletişim iznidir. Ancak bu formun arkasındaki kişinin tıbbi belgelerini göndermesi, finansal yeterliliğe sahip olması, uçak biletini alması ve kliniğe gelmesi gerçek hasta kazanımıdır."
+        ],
+        "table": {
+          "headers": [
+            "Kavram",
+            "Tanım",
+            "Risk / Yanılsama",
+            "Sağlıklı Başarı Göstergesi"
+          ],
+          "rows": [
+            [
+              "Trafik (Clicks)",
+              "Web sitesini veya profili ziyaret eden kullanıcı",
+              "Botlar, alakasız araştırmacılar veya iş arayanlar olabilir",
+              "Hedef ülkeden gelen nitelikli ziyaretçi oranı (Bounce rate < %45)"
+            ],
+            [
+              "Lead (Başvuru)",
+              "Telefon veya e-posta bırakan kullanıcı",
+              "Meraklı, bütçesiz veya tedaviye tıbben uygun olmayan kişiler olabilir",
+              "Qualified Lead Oranı (> %30), WhatsApp yanıt verme hızı"
+            ],
+            [
+              "Hasta (Acquired Patient)",
+              "Tedavisini alan, ödemesini yapan hasta",
+              "Gelip memnun kalmazsa kötü yorum ve referral kaybı yaratır",
+              "Hasta Edinme Maliyeti (CAC) / Ortalama Tedavi Geliri (LTV)"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sağlık turizminde 4 ana hasta kazanım kanalı",
+        "subheading": "Tek kanala bağımlı kalmadan çok kanallı gelir mimarisi kurmak",
+        "paragraphs": [
+          "1. <strong>Doğrudan Klinik Dijital Pazarlaması (Direct to Consumer):</strong> Kliniğin kendi markasıyla Google Ads, Meta ve TikTok üzerinden yürüttüğü kampanyalar. Kar marjı en yüksek olan ancak güçlü bir satış ekibi ve CRM gerektiren modeldir.",
+          "2. <strong>Yetkili Aracı Kuruluşlar ve Acenteler (B2B):</strong> Yurt dışındaki medikal broker'lar ve Türkiye'deki yetkili sağlık turizmi acenteleriyle komisyon veya paket bazlı çalışma modeli. Pazarlama riski acentededir ancak klinik hasta başına %15-30 komisyon öder.",
+          "3. <strong>Referral ve Hasta Tavsiye Sistemleri:</strong> Başarıyla tedavi edilen hastaların aile ve çevrelerini yönlendirmesi. Edinme maliyeti sıfıra yakındır ve dönüşüm oranı en yüksek (%60+) kanaldır.",
+          "4. <strong>Yapay Zekâ ve Organik Otorite (GEO & SEO):</strong> ChatGPT, Gemini ve Google aramalarında kliniğin vaka sonuçları ve hekim uzmanlığıyla referans gösterilmesi."
+        ]
+      },
+      {
+        "heading": "Doğrudan klinik modeli mi, acente ortaklığı mı?",
+        "subheading": "Hangi aşamadaki sağlık kuruluşu hangi stratejiyi seçmeli?",
+        "paragraphs": [
+          "Yeni kurulan ve henüz yabancı dil bilen satış/hasta koordinasyon ekibi bulunmayan kliniklerin ilk etapta yetkili acentelerle tecrübe kazanması mantıklı olabilir. Ancak ölçeklenmek ve marka değerini büyütmek isteyen kliniklerin mutlaka kendi doğrudan dijital kazanım kanallarını inşa etmesi şarttır.",
+          "Doğrudan modelde hasta verisi, hasta iletişimi ve hasta sadakati tamamen kliniğe aittir. Acente bağımlılığı ise kliniği komisyon pazarlıklarına ve değişken hasta hacimlerine mahkum edebilir."
+        ]
+      },
+      {
+        "heading": "Hasta koordinasyon ekibinin (Call Center) hayati rolü",
+        "subheading": "Reklam bütçesinin boşa gitmesini engelleyen satış disiplini",
+        "paragraphs": [
+          "Pazarlama ekibinin görevi nitelikli bir hasta adayını telefonun ucuna getirmektir; o adayı ameliyata ikna etmek ise hasta koordinatörünün uzmanlığıdır. Başarılı bir sağlık turizmi satış operasyonu şu kurallarla çalışır:",
+          "• Yabancı dili aksansız, hedef ülkenin kültürel kodlarına hakim danışmanlar çalıştırılmalıdır.",
+          "• Hasta ile sadece yazışarak değil, mutlaka Zoom/Google Meet üzerinden görüntülü hekim ön muayenesi organize edilmelidir.",
+          "• Şeffaf tedavi planı ve ek maliyet çıkarmayan 'all-inclusive' paket sunumu yapılmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi acenteleri hasta başına ne kadar komisyon alır?",
+        "a": "Sektörel teamüllere ve tedavi branşına göre aracı kuruluş komisyonları genellikle %15 ile %35 arasında değişiklik gösterir."
+      },
+      {
+        "q": "Yabancı hasta kazanımında en hızlı sonuç veren yöntem hangisidir?",
+        "a": "Doğru kurgulanmış Google Ads arama ağı kampanyaları ve optimize edilmiş çok dilli açılış sayfaları ilk 2-4 hafta içinde ilk sıcak hasta temaslarını üretmeye başlar."
+      },
+      {
+        "q": "Hastadan depozito almak neden önemlidir?",
+        "a": "Uçak bileti alıp gelmeyen veya son anda vazgeçen (no-show) hastaların ameliyathane ve hekim takvimini kitlemesini önlemek için %10-20 oranında ön rezervasyon depozitosu alınması operasyonel bir zorunluluktur."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Yetkili Aracı Kuruluşlar Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/agency"
+      },
+      {
+        "title": "Resmî Gazete Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Yurt Dışından Hasta Nasıl Bulunur?",
+        "url": "/blog/yurt-disindan-hasta-nasil-bulunur"
+      },
+      {
+        "title": "Sağlık Turizmi CRM Yazılımı",
+        "url": "/hizmetler/saglik-turizmi-crm-yazilimi"
+      },
+      {
+        "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır?",
+        "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir"
+      }
+    ]
+  },
+  {
+    "id": "K089",
+    "slug": "saglik-turizmi-pazarlamasi-nasil-yapilir",
+    "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir",
+    "category": "Pazarlama Stratejisi",
+    "title": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? Uçtan Uca Büyüme Stratejisi",
+    "h1": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? Uçtan Uca Büyüme Stratejisi",
+    "seoTitle": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? | Overseas Marketing",
+    "metaDesc": "Sağlık turizmi pazarlaması: Hedef ülke seçimi, hasta personası, çok kanallı reklam yönetimi, KPI tablosu, CAC ve ciro optimizasyonu rehberi.",
+    "primaryKeyword": "sağlık turizmi pazarlaması",
+    "secondaryKeywords": [
+      "sağlık turizmi pazarlama stratejisi",
+      "sağlık turizmi dijital pazarlama ajansı",
+      "sağlık turizmi kpi tablosu",
+      "sağlık turizmi reklam yönetimi",
+      "sağlık turizmi funnel"
+    ],
+    "searchIntent": "Bilgilendirici ve Stratejik (Informational + Commercial)",
+    "funnel": "MOFU",
+    "readTime": "13 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Strateji & Pazarlama Masası",
+    "reviewer": "Medikal Büyüme Direktörlüğü",
+    "quickAnswer": "Sağlık turizmi pazarlaması; hedef pazar analizi ve hasta personasının çıkarılmasıyla başlar, çok dilli arama ve video reklamlarıyla yüksek niyetli talep toplanır, dönüşüm odaklı açılış sayfaları ve CRM otomasyonlarıyla satışa aktarılır. Süreç CPC, CPL, Qualified Lead, Randevu Oranı, Kapanış Oranı ve CAC gibi finansal KPI'larla uçtan uca yönetilir.",
+    "sections": [
+      {
+        "heading": "Sağlık turizmi pazarlaması nedir?",
+        "subheading": "Tıbbi etik, regülasyonlar ve sınır ötesi dijital büyümenin kesişimi",
+        "paragraphs": [
+          "Sağlık turizmi pazarlaması; bir ülkedeki sağlık kuruluşlarının, yurt dışındaki potansiyel hastaların güvenini kazanarak tedavi amacıyla seyahat etmelerini sağlamak için yürüttüğü pazar araştırması, dijital reklam, içerik üretimi, itibar yönetimi ve satış operasyonlarının tümüdür.",
+          "Diğer sektörlerden temel farkı, ürünün 'insan sağlığı' olması ve hata payının bulunmamasıdır. Tıbbi iddiaların kanıtlanabilir olması, hedef ülkenin tüketici ve reklam mevzuatına tam uyum ve hasta mahremiyeti vazgeçilmez temel direklerdir."
+        ]
+      },
+      {
+        "heading": "Sağlık turizmi pazarlama hunisinin 5 aşaması",
+        "subheading": "Farkındalıktan tedavi sonrası tavsiyeye kadar adım adım yolculuk",
+        "paragraphs": [
+          "1. <strong>Farkındalık ve Keşif (Top of Funnel):</strong> Hasta ülkesindeki tedavi kuyruğundan veya yüksek fiyattan şikayetçidir. Türkiye'deki alternatifleri araştırır.",
+          "2. <strong>Değerlendirme ve Karşılaştırma (Middle of Funnel):</strong> Hekimin diplomaları, JCI/ISO akreditasyonları, vaka galerileri ve Google/Trustpilot hasta yorumları incelenir.",
+          "3. <strong>Teklif ve Ön Konsültasyon (Bottom of Funnel):</strong> Röntgen veya fotoğraflar WhatsApp/web formu üzerinden iletilir, hekim onaylı tedavi planı ve her şey dahil paket fiyat sunulur.",
+          "4. <strong>Satış ve Seyahat (Conversion):</strong> Uçak bileti, otel rezervasyonu, VIP transfer ve hastane yatış organizasyonu tamamlanır.",
+          "5. <strong>Ameliyat Sonrası Takip (Retention & Advocacy):</strong> Ülkesine dönen hastanın iyileşme süreci 6-12 ay boyunca takip edilir; bu güven yeni referral hastaları getirir."
+        ]
+      },
+      {
+        "heading": "Sağlık turizmi temel KPI tablosu ve sektörel benchmark'lar",
+        "subheading": "Pazarlama bütçesinin verimliliğini gösteren kritik metrikler",
+        "paragraphs": [
+          "Aşağıdaki tablo, sağlıklı işleyen bir uluslararası sağlık turizmi dijital pazarlama operasyonunun takip etmesi gereken temel performans göstergelerini özetlemektedir:"
+        ],
+        "table": {
+          "headers": [
+            "KPI (Metrik)",
+            "Açıklama",
+            "Sektörel Benchmark (Avrupa)",
+            "Önemi"
+          ],
+          "rows": [
+            [
+              "CPC (Tıklama Başı Maliyet)",
+              "Reklamda bir ziyaretçiyi çekme maliyeti",
+              "€1.20 - €4.50 (Google Search)",
+              "Trafik edinme verimliliği"
+            ],
+            [
+              "CTR (Tıklama Oranı)",
+              "Reklamı görüp tıklayanların yüzdesi",
+              "%3.5 - %7.0",
+              "Kreatif ve mesaj uyumu"
+            ],
+            [
+              "CPL (Form Başı Maliyet)",
+              "Bir ham iletişim bilgisi edinme maliyeti",
+              "€18 - €45",
+              "Kampanya ilk dönüşüm gücü"
+            ],
+            [
+              "Qualified Lead Oranı",
+              "Tedaviye ve bütçeye uygun lead yüzdesi",
+              "%28 - %40",
+              "Lead kalitesi ve hedefleme doğruluğu"
+            ],
+            [
+              "Görüntülü Görüşme Oranı",
+              "Hekimle online ön görüşmeye katılanlar",
+              "%35 - %50 (Qualified içinden)",
+              "Satış ekibinin güven tesis etme hızı"
+            ],
+            [
+              "Kapanış Oranı (Close Rate)",
+              "Teklif alan hastanın tedaviye gelme oranı",
+              "%20 - %35",
+              "Fiyatlandırma ve değer algısı"
+            ],
+            [
+              "CAC (Hasta Başı Edinme Maliyeti)",
+              "Bir hastayı kazanmak için harcanan toplam bütçe",
+              "Tedavi değerinin %10 - %18'i",
+              "Finansal kârlılık ve sürdürülebilirlik"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Pazarlama kanallarının doğru dengelenmesi",
+        "subheading": "Google Ads, Meta, SEO, GEO ve PR sinerjisi",
+        "paragraphs": [
+          "Tek bir kanala yığılan pazarlama bütçesi risktir. Google Ads maliyetleri rekabetle artabilir, Meta hesapları politika ihlaliyle askıya alınabilir. Dengeli bir pazarlama karmasında bütçenin %50'si anlık hasta getiren Google Ads ve Meta performans reklamlarına, %30'u kalıcı otorite sağlayan SEO/GEO ve web CRO altyapısına, %20'si ise CRM, satış ekibi eğitimi ve remarketing araçlarına ayrılmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi pazarlamasında en önemli KPI hangisidir?",
+        "a": "En kritik metrik CAC (Customer Acquisition Cost - Hasta Edinme Maliyeti) ve bu maliyetin hastanın kliniğe bıraktığı ortalama kâra (LTV) oranıdır."
+      },
+      {
+        "q": "Influencer pazarlaması sağlık turizminde işe yarar mı?",
+        "a": "Özellikle estetik ve diş branşlarında hedef ülkeden yerel mikro-influencer'ların gerçek tedavi deneyimlerini paylaşması güçlü bir sosyal kanıt üretir. Ancak yerel reklam mevzuatlarına (örn. İngiltere ASA) tam uyulmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Ticaret Bakanlığı Sağlık Turizmi Destekleri ve Teşvikleri",
+        "url": "https://ticaret.gov.tr/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Dijital Pazarlama Rehberi",
+        "url": "/blog/saglik-turizminde-dijital-pazarlama-rehberi"
+      },
+      {
+        "title": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir?",
+        "url": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir"
+      },
+      {
+        "title": "Sağlık Turizminde Hasta Kazanma Maliyeti",
+        "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti"
+      }
+    ]
+  },
+  {
+    "id": "K090",
+    "slug": "saglik-turizminde-dijital-pazarlama-rehberi",
+    "url": "/blog/saglik-turizminde-dijital-pazarlama-rehberi",
+    "category": "Dijital Pazarlama Pillar",
+    "title": "Sağlık Turizminde Dijital Pazarlama Rehberi: 2026 Entegre Büyüme Modeli",
+    "h1": "Sağlık Turizminde Dijital Pazarlama Rehberi: 2026 Entegre Büyüme Modeli",
+    "seoTitle": "Sağlık Turizminde Dijital Pazarlama Rehberi | Overseas Marketing",
+    "metaDesc": "Kapsamlı sağlık turizmi dijital pazarlama rehberi: Paid search, paid social, çok dilli medikal SEO, GEO yapay zekâ optimizasyonu, CRM ve satış hunisi entegrasyonu.",
+    "primaryKeyword": "sağlık turizmi dijital pazarlama",
+    "secondaryKeywords": [
+      "sağlık turizmi dijital pazarlama rehberi",
+      "sağlık turizmi pazarlama ajansı",
+      "sağlık turizmi dijital pazarlama stratejisi",
+      "medikal dijital pazarlama",
+      "sağlık turizmi growth marketing"
+    ],
+    "searchIntent": "Geniş Bilgilendirici ve Ticari (Pillar Content)",
+    "funnel": "MOFU",
+    "readTime": "16 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Dijital Pazarlama Masası",
+    "reviewer": "Medikal Büyüme Kurulu",
+    "quickAnswer": "Sağlık turizminde dijital pazarlama; tekil reklam kampanyalarının ötesinde, yabancı hasta adayının arama motorundan yapay zekâ asistanlarına kadar her temas noktasında güven inşa eden çok kanallı bir büyüme sistemidir. Paid kanallar (Google/Meta) hızlı nakit akışı sağlarken, SEO ve GEO organik maliyetleri kalıcı olarak düşürür; CRM ve WhatsApp otomasyonları ise toplanan ilgiyi ameliyat rezervasyonuna dönüştürür.",
+    "sections": [
+      {
+        "heading": "Giriş: Dijital pazarlama neden sağlık turizminin merkezinde?",
+        "subheading": "Geleneksel fuar ve acente modellerinden dijital doğrudan kazanım çağına",
+        "paragraphs": [
+          "Geçmişte sağlık turizmi büyük ölçüde yurt dışı sağlık fuarları, B2B acente temasları ve ikili anlaşmalarla yürütülüyordu. Bugün ise hasta adaylarının %85'inden fazlası tedavi kararını Google aramaları, sosyal medya vaka incelemeleri ve ChatGPT gibi yapay zekâ araçlarıyla bireysel olarak almaktadır.",
+          "Bu durum klinikler için hem muazzam bir fırsat hem de yüksek bir rekabet ortamı yaratmıştır. Artık yalnızca iyi ameliyat yapmak yetmemekte; hekimin ve kliniğin uzmanlığını dijital dünyada çok dilli, şeffaf ve bilimsel olarak anlatabilmesi gerekmektedir."
+        ]
+      },
+      {
+        "heading": "Entegre dijital büyüme ekosisteminin 4 temel direği",
+        "subheading": "Ücretli Reklamlar, Organik Otorite, Dönüşüm Mühendisliği ve Satış Teknolojisi",
+        "paragraphs": [
+          "1. <strong>Ücretli Performans Reklamları (Paid Growth):</strong> Google Search Ads, YouTube ve Meta Ads ile hedef pazarlarda sıcak arama niyetini ve görsel güveni yakalama.",
+          "2. <strong>Organik Görünürlük (SEO & GEO):</strong> Çok dilli medikal içerik mimarisi, teknik SEO, Schema yapıları ve ChatGPT/Perplexity yapay zekâ arama optimizasyonu.",
+          "3. <strong>Dönüşüm Odaklı Açılış Sayfaları (CRO):</strong> 2 saniyenin altında açılan, yerelleştirilmiş, şeffaf doktor profilleri ve hasta yorumları barındıran landing page'ler.",
+          "4. <strong>Satış ve CRM Teknolojileri:</strong> İlk 90 saniyede WhatsApp üzerinden temas sağlayan, hasta geçmişini ve röntgenlerini arşivleyen bulut tabanlı sağlık CRM'i."
+        ]
+      },
+      {
+        "heading": "Medikal SEO ve GEO: Organik hasta kazanımının geleceği",
+        "subheading": "Yapay zekâ yanıt motorlarında referans gösterilen klinik olmak",
+        "paragraphs": [
+          "Geleneksel medikal SEO arama motoru sonuç sayfalarında (SERP) ilk sırayı hedeflerken, GEO (Generative Engine Optimization) yapay zekânın doğrudan ürettiği sentez yanıtlarda kliniğinizin 'en güvenilir seçenek' olarak anılmasını sağlar.",
+          "Bunun için web sitenizde sadece jenerik tanıtım yazıları değil; vaka başarı oranları, olası komplikasyon yönetimi, hekimin akademik geçmişi ve bağımsız inceleme sitelerindeki (Trustpilot, Google Maps) gerçek hasta geri bildirimleri yapılandırılmış veri (Schema) ile işaretlenmelidir."
+        ]
+      },
+      {
+        "heading": "Teknoloji ve otomasyon: Satış ekibini güçlendiren araçlar",
+        "subheading": "Kayıp lead'leri sıfırlayan akıllı takip mekanizmaları",
+        "paragraphs": [
+          "Dijital pazarlamaya binlerce Euro harcayıp gelen lead'leri manuel Excel tablolarında takip etmek en büyük sermaye israfıdır. Overseas Marketing olarak uyguladığımız modelde; reklamdan gelen her lead anında CRM'e düşer, otomatik olarak satış danışmanına atanır ve hastaya kendi saat dilimine uygun kişiselleştirilmiş ilk karşılama mesajı iletilir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi dijital pazarlamasında ne kadar sürede sonuç alınır?",
+        "a": "Google Ads ve Meta reklamları ilk 15-30 gün içinde lead akışı başlatır. SEO ve GEO gibi organik otorite kanalları ise 3-6 ay içinde kalıcı ve düşük maliyetli hasta trafiği üretmeye başlar."
+      },
+      {
+        "q": "Hangi dillerde dijital pazarlama yapılmalıdır?",
+        "a": "İlk etapta uluslararası lingua franca olan İngilizce ile başlanmalı; ardından hedeflenen pazara göre Almanca, Fransızca, Felemenkçe veya Arapça yerelleştirilmiş sayfalar açılmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "T.C. Ticaret Bakanlığı Hizmet İhracatı Genel Müdürlüğü",
+        "url": "https://ticaret.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi SEO Ajansı",
+        "url": "/hizmetler/uluslararasi-seo-hizmeti"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO)",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      },
+      {
+        "title": "Sağlık Turizmi Google Ads Rehberi",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      }
+    ]
+  },
+  {
+    "id": "K091",
+    "slug": "saglik-turizminde-hasta-kazanma-maliyeti",
+    "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti",
+    "category": "Finans & Metrikler",
+    "title": "Sağlık Turizminde Hasta Kazanma Maliyeti (CAC) Nasıl Hesaplanır?",
+    "h1": "Sağlık Turizminde Hasta Kazanma Maliyeti (CAC) Nasıl Hesaplanır?",
+    "seoTitle": "Sağlık Turizminde Hasta Kazanma Maliyeti (CAC) | Overseas Marketing",
+    "metaDesc": "CPL ile CAC arasındaki kritik fark. Sağlık turizminde hasta kazanma maliyeti hesaplama formülü, branş bazlı benchmark'lar ve örnek funnel simülasyonu.",
+    "primaryKeyword": "sağlık turizmi hasta kazanma maliyeti",
+    "secondaryKeywords": [
+      "sağlık turizmi cac hesaplama",
+      "sağlık turizmi cpl maliyetleri",
+      "yabancı hasta maliyeti",
+      "sağlık turizmi hasta başı maliyet",
+      "sağlık turizmi reklam roi"
+    ],
+    "searchIntent": "Ticari ve Finansal (Commercial + Financial)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Finans & Analitik Masası",
+    "reviewer": "Medikal Performans Direktörlüğü",
+    "quickAnswer": "Sağlık turizminde hasta kazanma maliyeti (CAC), bir yabancı hastanın kliniğe gelip tedavi olması için harcanan toplam pazarlama ve satış masraflarının kazanılan hasta sayısına bölünmesidir. Formül: CAC = (Toplam Reklam Harcaması + Satış/Ajans Giderleri) / Kazanılan Gerçek Hasta Sayısı. Yalnızca form maliyetine (CPL) bakmak yanıltıcıdır; kritik olan hastanın bıraktığı kâr ile CAC dengesidir.",
+    "sections": [
+      {
+        "heading": "CPL ile CAC arasındaki kritik fark nedir?",
+        "subheading": "Lead ucuz olabilir, ancak hasta pahalıya gelebilir",
+        "paragraphs": [
+          "Sağlık turizmi reklamlarında ajansların en çok övündüğü metrik '10 Euro'ya lead aldık' söylemidir. Oysa 10 Euro'luk bir lead kalitesizse, telefonlara çıkmıyorsa veya bütçesi yoksa 200 adet toplasanız bile (2.000 €) tek bir hasta dahi getirmeyebilir. Bu durumda CAC tanımsızdır veya sonsuzdur.",
+          "Buna karşılık 60 Euro CPL ile toplanan 50 lead'in 10 tanesi ameliyata gelirse (3.000 € harcama / 10 hasta), CAC sadece 300 Euro olur. Başarılı klinik yöneticisi CPL'e değil, nihai CAC'a ve ROI'ye bakar."
+        ],
+        "table": {
+          "headers": [
+            "Metrik",
+            "Açılımı",
+            "Neyi Ölçer?",
+            "İdeal Sağlık Turizmi Değeri"
+          ],
+          "rows": [
+            [
+              "CPL",
+              "Cost Per Lead",
+              "1 ham iletişim formu maliyeti",
+              "€18 - €50 (Pazara ve branşa göre)"
+            ],
+            [
+              "CPQL",
+              "Cost Per Qualified Lead",
+              "1 tıbben ve bütçesi uygun lead maliyeti",
+              "€50 - €120"
+            ],
+            [
+              "CAC",
+              "Customer Acquisition Cost",
+              "1 ameliyat/tedavi olan hasta maliyeti",
+              "Tedavi paket fiyatının %10 - %18'i"
+            ],
+            [
+              "LTV / CAC",
+              "Life-Time Value / CAC",
+              "Hastanın getirdiği cironun CAC'a oranı",
+              "Minimum 4x - 6x olmalıdır"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Hasta kazanma maliyeti formülü",
+        "subheading": "Gerçek maliyeti ortaya çıkaran eksiksiz matematik",
+        "paragraphs": [
+          "Sağlık turizminde gerçek CAC hesaplanırken sadece reklam platformuna ödenen para değil, satış operasyonu da hesaba katılmalıdır:",
+          "<strong>CAC = (Reklam Harcaması + Ajans Danışmanlık Bedeli + Tercüman/Satış Personeli Primleri + İletişim/Yazılım Lisansları) / Tedavi Olan Hasta Sayısı</strong>",
+          "Örnek: Bir ayda 6.000 € Meta/Google reklamı harcandı, 2.000 € ajans ve yazılım gideri oluştu (Toplam: 8.000 €). Bu harcama sonucunda 16 adet yabancı hasta operasyonu gerçekleştiyse: CAC = 8.000 / 16 = 500 €'dur."
+        ]
+      },
+      {
+        "heading": "100 Lead üzerinden örnek sağlık turizmi hunisi",
+        "subheading": "Rakamlarla gerçekçi dönüşüm aşamaları",
+        "paragraphs": [
+          "Bir kliniğin 100 adet ham yabancı hasta başvurusu aldığında karşılaşacağı ortalama dönüşüm akışı şöyledir:"
+        ],
+        "bulletPoints": [
+          "<strong>100 Ham Lead:</strong> Web sitesi ve WhatsApp formlarından gelen başvurular.",
+          "<strong>30 Nitelikli Lead (Qualified):</strong> İletişime geçilebilen, tedaviyi gerçekten düşünen ve bütçesi yeten hastalar.",
+          "<strong>10 Online Konsültasyon:</strong> Hekimle Zoom görüşmesi yapan veya detaylı tedavi planı alan hastalar.",
+          "<strong>4 Rezervasyon (Booking):</strong> Uçak biletini alan ve depozitosunu yatıran hastalar.",
+          "<strong>3 Kliniğe Gelen ve Tedavi Olan Hasta:</strong> Operasyonu tamamlanan nihai hastalar."
+        ]
+      },
+      {
+        "heading": "Branş bazlı ortalama CAC benchmark'ları",
+        "subheading": "Diş, saç ekimi, estetik ve obezite cerrahisinde kabul edilebilir maliyetler",
+        "paragraphs": [
+          "Avrupa pazarı (UK, DACH) hedeflendiğinde branşlara göre ortalama hasta edinme maliyeti aralıkları:",
+          "• <strong>Saç Ekimi:</strong> Paket fiyatı €2.000 - €3.000 iken, ideal CAC €250 - €450 arasındadır.",
+          "• <strong>Diş Tedavisi (İmplant / Gülüş Tasarımı):</strong> Paket fiyatı €4.000 - €8.000 iken, ideal CAC €400 - €800 arasındadır.",
+          "• <strong>Plastik Cerrahi (Rinoplasti / Meme / Kombine):</strong> Paket fiyatı €3.500 - €7.000 iken, ideal CAC €450 - €900 arasındadır.",
+          "• <strong>Bariatrik Cerrahi (Tüp Mide):</strong> Paket fiyatı €3.000 - €4.500 iken, ideal CAC €350 - €600 arasındadır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hasta kazanma maliyetini düşürmenin en etkili yolu nedir?",
+        "a": "Reklam bütçesini kısmak değil; ilk temas süresini kısaltmak (hızlı yanıt), CRM ile no-show oranlarını düşürmek ve memnun hastalardan referral (tavsiye) toplamaktır."
+      },
+      {
+        "q": "Organik SEO ve GEO hasta kazanma maliyetini nasıl etkiler?",
+        "a": "Organik kanallardan gelen hastaların doğrudan tıklama maliyeti (CPC) sıfırdır. Zamanla toplam hasta portföyünün %30-40'ı organik kanallardan geldiğinde genel harmanlanmış CAC (Blended CAC) yarı yarıya düşer."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "T.C. Ticaret Bakanlığı Sağlık Turizmi Genelgesi",
+        "url": "https://ticaret.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir?",
+        "url": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir"
+      },
+      {
+        "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır?",
+        "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir"
+      },
+      {
+        "title": "Overseas Marketing ROI ve Bütçe Simülasyonu",
+        "url": "/teklif-al"
+      }
+    ]
+  },
+  {
+    "id": "K092",
+    "slug": "saglik-turizmi-icin-google-ads-nasil-yapilir",
+    "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir",
+    "category": "Performans Pazarlama",
+    "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır? 2026 Kampanya Mimarisi",
+    "h1": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır? 2026 Kampanya Mimarisi",
+    "seoTitle": "Sağlık Turizmi Google Ads Rehberi 2026 | Overseas Marketing",
+    "metaDesc": "Sağlık turizmi için Google Ads kurulumu: Yüksek niyetli anahtar kelimeler, negatif eşleme stratejisi, ülke hedefleme, sağlık reklam politikaları ve offline dönüşüm takibi.",
+    "primaryKeyword": "sağlık turizmi google ads",
+    "secondaryKeywords": [
+      "sağlık turizmi arama ağı reklamları",
+      "google ads sağlık reklam politikaları",
+      "sağlık turizmi negatif kelimeler",
+      "yurt dışı google ads yönetimi",
+      "sağlık turizmi dönüşüm takibi"
+    ],
+    "searchIntent": "Ticari ve Teknik (Commercial + How-to)",
+    "funnel": "BOFU",
+    "readTime": "13 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Google Ads Masası",
+    "reviewer": "Medikal Performans Direktörlüğü",
+    "quickAnswer": "Sağlık turizmi için Google Ads; hedef ülkede tedavi arayışındaki hastaların yüksek niyetli arama terimlerini (Search Intent) yakalayan, geniş eşleme yerine sıralı ve tam eşleme kullanan, agresif negatif anahtar kelime listeleriyle bütçeyi koruyan ve Google Sağlık Reklamveren Doğrulaması yapılmış hesaplar üzerinden yürütülür. Başarı offline conversion tracking (ameliyat olan hastanın Google Ads'e geri bildirilmesi) ile sağlanır.",
+    "sections": [
+      {
+        "heading": "Sağlık turizminde Google Ads neden en yüksek niyetli kanaldır?",
+        "subheading": "Pasif gezinme yerine aktif acı noktası ve çözüm arayışı",
+        "paragraphs": [
+          "Sosyal medya reklamlarında kullanıcı içerik tüketirken karşısına reklam çıkarılır (talep yaratma). Google Search Ads'te ise kullanıcı bizzat kendi ihtiyacını yazar: 'all on 4 dental implants turkey cost', 'best rhinoplasty surgeon istanbul' gibi aramalar yapar.",
+          "Bu nedenle Google Ads'ten gelen hasta adaylarının satın alma ve tedaviye karar verme süresi sosyal medyaya göre 3 kat daha hızlıdır. Ancak tıklama başı maliyetler (CPC) yüksek olduğu için hatalı kurulumlar birkaç gün içinde binlerce Euro bütçeyi yok edebilir."
+        ]
+      },
+      {
+        "heading": "Google sağlık reklam politikaları ve kısıtlamaları",
+        "subheading": "Hesap askıya alınmalarını önleyen kurallar ve doğrulama süreçleri",
+        "paragraphs": [
+          "Google Ads, sağlık ve medikal konularda dünyanın en katı reklam politikalarına sahiptir. Dikkat edilmesi gereken temel kurallar şunlardır:",
+          "• <strong>Reçeteli İlaç İsimleri:</strong> Botoks (Botox), Ozempic, antibiyotik gibi ticari ilaç isimlerini reklam metninde veya açılış sayfasında geçirmek reklamın anında reddedilmesine yol açar.",
+          "• <strong>Sağlık Reklamveren Doğrulaması:</strong> Kliniğin ve işletmenin resmî belgeleriyle Google Business Verification sürecinin tamamlanmış olması şarttır.",
+          "• <strong>Abartılı Tedavi İddiaları:</strong> '%100 garantili saç ekimi' veya 'ağrısız kesin tedavi' gibi spekülatif vaatler politika ihlalidir."
+        ]
+      },
+      {
+        "heading": "Kampanya yapısı ve eşleme türü stratejisi",
+        "subheading": "Geniş eşleme tuzağından kurtulup tam kontrole geçmek",
+        "paragraphs": [
+          "Yeni başlayanların en büyük hatası Google'ın önerdiği 'Geniş Eşleme' (Broad Match) seçeneğini körü körüne açmaktır. Bu durumda 'diş hekimliği maaşları' veya 'bedava diş çekimi' aramalarına dahi reklam bütçesi harcanır.",
+          "Sağlıklı bir sağlık turizmi hesabında kampanyalar ülke bazlı ayrılmalı, arama terimleri <strong>Sıralı Eşleme (Phrase Match)</strong> ve <strong>Tam Eşleme (Exact Match)</strong> ağırlıklı kurulmalıdır."
+        ],
+        "table": {
+          "headers": [
+            "Kampanya Türü",
+            "Örnek Anahtar Kelime",
+            "Eşleme Türü",
+            "Hedeflenen Niyet"
+          ],
+          "rows": [
+            [
+              "Tedavi Spesifik",
+              "\"dental implants abroad\"",
+              "Sıralı Eşleme",
+              "Yurt dışında tedavi arayan sıcak kitle"
+            ],
+            [
+              "Şehir & Lokasyon",
+              "[rhinoplasty istanbul price]",
+              "Tam Eşleme",
+              "İstanbul'da burun estetiği fiyatı arayan karar verici"
+            ],
+            [
+              "Rakip & Karşılaştırma",
+              "\"turkey vs hungary dental\"",
+              "Sıralı Eşleme",
+              "Ülke kıyaslaması yapan araştırma aşaması"
+            ],
+            [
+              "Marka Koruma",
+              "[klinik ismi] turkey",
+              "Tam Eşleme",
+              "Kliniği arayan hastayı rakiplere kaptırmama"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Negatif anahtar kelime mimarisi: Bütçe cankurtaranı",
+        "subheading": "Binlerce Euro bütçeyi koruyan filtreleme listeleri",
+        "paragraphs": [
+          "Hesap açılır açılmaz eklenmesi gereken zorunlu negatif kelime kategorileri şunlardır:",
+          "• <strong>Kariyer & Eğitim:</strong> jobs, vacancies, salary, degree, university, course, internship.",
+          "• <strong>Maliyet Düşürücüler:</strong> free, cheap, nhs, charity, discount voucher, complaints.",
+          "• <strong>Akademik:</strong> pdf, ppt, thesis, research paper, medical journal.",
+          "• <strong>Alakasız Ülkeler:</strong> Reklam verdiğiniz ülke dışındaki bölgeler (örn. UK hedefliyorsanız 'in india', 'in mexico' negatiflenmelidir)."
+        ]
+      },
+      {
+        "heading": "Çevrim dışı dönüşüm takibi (Offline Conversion Tracking)",
+        "subheading": "Google algoritmasını tıklamaya değil, gerçek ameliyata göre eğitmek",
+        "paragraphs": [
+          "Akıllı teklif stratejileri (tCPA, Maximize Conversions) form sayısına göre optimize edilirse, algoritma en kolay form dolduran (ancak parası olmayan) kitleyi bulmaya çalışır.",
+          "Overseas Marketing altyapısında; kliniğe gelip ameliyat olan hastaların Google Click ID (GCLID) verileri CRM'den Google Ads'e çevrim dışı dönüşüm olarak geri yüklenir. Böylece algoritma 'ucuz form dolduranları' değil, 'ameliyat masasına yatan gerçek hastaları' bulacak şekilde kendini eğitir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi Google Ads için minimum bütçe ne olmalıdır?",
+        "a": "İngiltere veya Almanya gibi rekabetçi pazarlarda anlamlı veri toplamak ve algoritmayı eğitmek için branş başına aylık minimum 2.500 € - 3.500 € reklam bütçesi tavsiye edilir."
+      },
+      {
+        "q": "Performans Maksimum (PMax) kampanyaları sağlık turizminde kullanılır mı?",
+        "a": "Yeterli negatif kelime kontrolü ve hasta hedefleme hassasiyeti sunmadığı için başlangıçta önerilmez. Temel arama ağı (Search) oturduktan sonra remarketing amacıyla sınırlı kullanılabilir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Ads Sağlık ve İlaç Politikaları",
+        "url": "https://support.google.com/adspolicy/answer/176031"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama",
+        "url": "/hizmetler/performans-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizmi Landing Page Nasıl Olmalı?",
+        "url": "/blog/saglik-turizmi-landing-page-nasil-olmali"
+      },
+      {
+        "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır?",
+        "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir"
+      }
+    ]
+  },
+  {
+    "id": "K093",
+    "slug": "saglik-turizmi-icin-instagram-reklamlari-nasil-verilir",
+    "url": "/blog/saglik-turizmi-icin-instagram-reklamlari-nasil-verilir",
+    "category": "Performans Pazarlama",
+    "title": "Sağlık Turizmi İçin Instagram Reklamları Nasıl Verilir? Meta Ads Rehberi",
+    "h1": "Sağlık Turizmi İçin Instagram Reklamları Nasıl Verilir? Meta Ads Rehberi",
+    "seoTitle": "Sağlık Turizmi Instagram Reklamları 2026 | Overseas Marketing",
+    "metaDesc": "Meta ve Instagram sağlık turizmi reklamları: Reels vaka videoları, hekim güveni, instant form yerine landing page ve WhatsApp hunisi, politika uyumu rehberi.",
+    "primaryKeyword": "sağlık turizmi instagram reklamları",
+    "secondaryKeywords": [
+      "sağlık turizmi meta ads",
+      "klinik instagram reklamı verme",
+      "sağlık turizmi reels reklamları",
+      "sağlık turizmi lead ads tuzağı",
+      "doktor instagram tanıtımı"
+    ],
+    "searchIntent": "Ticari ve Taktiksel (Commercial + Practical)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Sosyal Medya & Kreatif Masası",
+    "reviewer": "Medikal Büyüme Kurulu",
+    "quickAnswer": "Sağlık turizmi için Instagram reklamları; statik görseller yerine hekimin vaka analizini ve hasta yolculuğunu anlatan 4K Reels video kreatifleriyle, doğrudan WhatsApp veya yüksek dönüşümlü mobil açılış sayfalarına trafik yönlendirerek kurgulanır. Meta'nın anlık formları (Instant Forms) yüksek oranda kalitesiz lead ürettiği için, ön eleme soruları ve web dönüşüm hunileri tercih edilmelidir.",
+    "sections": [
+      {
+        "heading": "Instagram sağlık turizminde neden görsel güvenin merkezidir?",
+        "subheading": "Estetik, diş ve saç ekiminde sonucun somut kanıtı",
+        "paragraphs": [
+          "Hastalar tıbbi bir ameliyat için ülke değiştirmeden önce kliniğin atmosferini, hekimin el becerisini, personelin ilgisini ve hastane hijyenini görmek ister. Instagram, bu duygusal ve görsel güveni inşa etmek için dünyadaki en etkili platformdur.",
+          "Ancak yalnızca estetik fotoğraflar paylaşmak yetmez; algoritmanın doğru yabancı hasta adaylarını bulabilmesi için Meta Business Manager üzerinden hedef ülke, dil ve ilgi alanı mimarisinin profesyonelce kurulması gerekir."
+        ]
+      },
+      {
+        "heading": "Meta sağlık ve kişisel görünüm politikaları",
+        "subheading": "Reklam hesabının kapatılmasını önleyen kritik sınırlar",
+        "paragraphs": [
+          "Meta (Facebook & Instagram), estetik ve sağlık reklamlarında oldukça hassastır:",
+          "• <strong>Agresif Before/After Yasakları:</strong> Yan yana konulmuş aşırı dramatik ve şok edici öncesi/sonrası fotoğrafları Meta algoritması tarafından otomatik olarak engellenir veya hesap kısıtlamasına yol açar.",
+          "• <strong>Vücut Kusuru Vurgusu:</strong> 'Karnınızdaki yağlardan bıktınız mı?' veya 'Kel kalmaktan korkuyor musunuz?' gibi kullanıcıyı aşağılayıcı veya olumsuz hissettiren metinler yasaktır.",
+          "• <strong>Çözüm:</strong> Operasyon sürecini, hekimin konsültasyon anını, hastanın Türkiye'ye inişinden taburcu oluşuna kadar olan deneyimini anlatan 'Hasta Yolculuğu' (Patient Journey) belgesel formatı kullanılmalıdır."
+        ]
+      },
+      {
+        "heading": "Meta Instant Form tuzağı: Neden form yerine Web / WhatsApp hunisi?",
+        "subheading": "Binlerce boş telefon numarası toplamak yerine gerçek hastaya odaklanmak",
+        "paragraphs": [
+          "Meta Lead Ads (Potansiyel Müşteri Formları) en ucuz lead toplama yoludur. Ancak Instagram kullanıcının profildeki eski numarasını otomatik doldurduğu için çoğu kişi formu gönderdiğini dahi fark etmez. Sonuç: 'Ben form doldurmadım', 'Fiyat ne kadar?', 'Yanlışlıkla bastım' diyen yüzlerce kalitesiz başvuru.",
+          "Bunun yerine reklam doğrudan hızlı açılan mobil açılış sayfasına yönlendirilmeli; kullanıcıya 'Kaç greft saç düşünüyorsunuz?', 'Hangi diş bölgeniz eksik?' gibi 2-3 ön eleme sorusu sorulmalı veya doğrudan WhatsApp üzerinden hekim asistanıyla yazışmaya başlatılmalıdır."
+        ]
+      },
+      {
+        "heading": "Yüksek dönüşüm sağlayan 3 kreatif formatı",
+        "subheading": "Avrupa pazarında test edilmiş en başarılı reklam türleri",
+        "paragraphs": [
+          "1. <strong>Hekim Açıklamalı Vaka İncelemesi:</strong> Hekimin elinde röntgen veya modelle karmaşık bir vakayı nasıl çözdüğünü ana dilinde veya kaliteli İngilizce altyazıyla anlattığı videolar.",
+          "2. <strong>Yabancı Hasta Deneyimi (UGC / Vaka Röportajı):</strong> İngiltere veya Almanya'dan gelmiş gerçek bir hastanın klinikteki tecrübesini kendi aksanıyla anlattığı samimi röportajlar.",
+          "3. <strong>Klinik Turu ve Teknoloji Vitrini:</strong> Ameliyathane hijyeni, 3D tomografi cihazları ve sterilizasyon standartlarını gösteren kurumsal güven videoları."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Instagram reklamlarında hedef kitle nasıl seçilmelidir?",
+        "a": "Artık aşırı daraltılmış ilgi alanları yerine; Meta Advantage+ kitle hedeflemesiyle hedef ülke (örn. UK) ve dil filtresi (English) seçilmeli, algoritmanın en iyi kreatif üzerinden doğru hastaları bulmasına izin verilmelidir."
+      },
+      {
+        "q": "WhatsApp mesaj reklamları sağlık turizminde verimli midir?",
+        "a": "Evet, doğrudan WhatsApp'a yönlendiren reklamlar (Click-to-WhatsApp) ilk temas hızını çok artırır. Ancak nöbetçi koordinatörün 90 saniye içinde yanıt vermesi şarttır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Meta Advertising Standards — Health and Personal Appearance",
+        "url": "https://www.facebook.com/policies/ads/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama",
+        "url": "/hizmetler/performans-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır?",
+        "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir"
+      },
+      {
+        "title": "Sağlık Turizmi Landing Page Nasıl Olmalı?",
+        "url": "/blog/saglik-turizmi-landing-page-nasil-olmali"
+      }
+    ]
+  },
+  {
+    "id": "K094",
+    "slug": "saglik-turizmi-landing-page-nasil-olmali",
+    "url": "/blog/saglik-turizmi-landing-page-nasil-olmali",
+    "category": "Dönüşüm Optimizasyonu (CRO)",
+    "title": "Sağlık Turizmi Landing Page Nasıl Olmalı? Yüksek Dönüşümlü Sayfa Mimarisi",
+    "h1": "Sağlık Turizmi Landing Page Nasıl Olmalı? Yüksek Dönüşümlü Sayfa Mimarisi",
+    "seoTitle": "Sağlık Turizmi Landing Page Rehberi 2026 | Overseas Marketing",
+    "metaDesc": "Yabancı hastayı randevuya dönüştüren açılış sayfası mimarisi: H1 başlığı, güven rozetleri, hekim profili, paket detayları, hız ve CRO kontrol listesi.",
+    "primaryKeyword": "sağlık turizmi landing page",
+    "secondaryKeywords": [
+      "sağlık turizmi açılış sayfası",
+      "sağlık turizmi web sitesi tasarımı",
+      "sağlık turizmi cro",
+      "dönüşüm odaklı klinik sitesi",
+      "sağlık turizmi whatsapp cta"
+    ],
+    "searchIntent": "Ticari ve Tasarımsal (Commercial + CRO)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas CRO & Tasarım Masası",
+    "reviewer": "Medikal Büyüme Direktörlüğü",
+    "quickAnswer": "Sağlık turizmi landing page'i; klasik bir kurumsal web sitesi gibi karmaşık menüler içermeyen, tek bir tedaviye ve tek bir hedefe odaklanan, 2 saniyenin altında açılan, hekimin uluslararası akreditasyonlarını ve vaka kanıtlarını sunan, şeffaf paket içeriği ve tek tıkla WhatsApp temas butonu barındıran yüksek dönüşümlü satış sayfasıdır.",
+    "sections": [
+      {
+        "heading": "Klasik web sitesi ile dönüşüm odaklı landing page farkı",
+        "subheading": "Kullanıcıyı kaybetmek ile randevuya yönlendirmek arasındaki ayrım",
+        "paragraphs": [
+          "Birçok klinik Google reklamlarını ana sayfalarına (homepage) yönlendirir. Ana sayfada vizyon, misyon, onlarca farklı branş, blog yazıları ve karmaşık menüler vardır. Yabancı hasta aradığı spesifik tedavi bilgisini 3 saniyede bulamazsa sekmeyi kapatır (yüksek hemen çıkma oranı).",
+          "Landing page ise yalnızca reklamda vaat edilen konuyu işler. Dikkat dağıtıcı harici linkler kaldırılmıştır ve her bölüm hastayı tek bir eyleme hazırlar: Ücretsiz ön konsültasyon talep etmek."
+        ],
+        "table": {
+          "headers": [
+            "Özellik",
+            "Klasik Kurumsal Web Sitesi",
+            "Dönüşüm Odaklı Landing Page"
+          ],
+          "rows": [
+            [
+              "Odak Noktası",
+              "Tüm klinik hizmetleri ve kurumsal tanıtım",
+              "Tek bir tedavi (örn. Yalnızca All-on-4 İmplant)"
+            ],
+            [
+              "Navigasyon / Menü",
+              "Geniş menüler, harici sosyal linkler, blog",
+              "Menüsüz veya tek sayfa içi kaydırma bağlantıları"
+            ],
+            [
+              "Açılış Hızı",
+              "Ağır görseller sebebiyle 4-6 saniye",
+              "Mobil için optimize edilmiş < 2 saniye"
+            ],
+            [
+              "Dönüşüm Oranı (CR)",
+              "Ortalama %1.0 - %2.5",
+              "Ortalama %6.0 - %12.0"
+            ],
+            [
+              "Hedeflenen Eylem",
+              "Genel bilgi edinme ve dolaşma",
+              "Fotoğraf/röntgen gönderme ve WhatsApp teması"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Mükemmel bir sağlık turizmi açılış sayfasının 8 zorunlu bileşeni",
+        "subheading": "Yabancı hastanın güven bariyerini yıkan sayfa anatomisi",
+        "paragraphs": [
+          "1. <strong>Net Hero Alanı ve Güçlü H1:</strong> Tedaviyi, hedef avantajı ve ana faydayı ilk ekranda anlatan başlık.",
+          "2. <strong>Hekim Kimliği ve Akreditasyonlar:</strong> Hekimin fotoğrafı, uzmanlık alanı, uluslararası üyelikleri (örn. ISAPS, ITI, AACD) ve vaka tecrübesi.",
+          "3. <strong>Sağlık Bakanlığı & HealthTürkiye Rozetleri:</strong> Resmî yetki belgesi numarası ve lisans güvencesi.",
+          "4. <strong>Şeffaf 'Her Şey Dahil' Paket Kapsamı:</strong> Tedavi, 5 yıldızlı otel, VIP havaalanı transferi, ilaçlar ve tercüman hizmetlerinin net dökümü.",
+          "5. <strong>Bağımsız Sosyal Kanıt:</strong> Google Reviews, Trustpilot veya video hasta geri bildirimleri.",
+          "6. <strong>Tedavi Süreci Yol Haritası:</strong> Gün gün (1. Gün varış, 2. Gün operasyon, 3. Gün kontrol) hastayı nelerin beklediği.",
+          "7. <strong>İkna Edici SSS (FAQ) Bölümü:</strong> 'Uçak bileti dahil mi?', 'Refakatçi getirebilir miyim?', 'İyileşme ne kadar sürer?' sorularının yanıtları.",
+          "8. <strong>Sabit Mobil WhatsApp & Form Butonu:</strong> Kullanıcı sayfayı kaydırırken ekranın altında her an erişilebilir kalan CTA."
+        ]
+      },
+      {
+        "heading": "Hız ve mobil deneyim: 1 saniyelik gecikmenin faturası",
+        "subheading": "Google PageSpeed Insights skoru ve dönüşüm korelasyonu",
+        "paragraphs": [
+          "Yabancı sağlık turizmi aramalarının %82'si akıllı telefonlardan yapılmaktadır. 3 saniyeden uzun sürede açılan sayfalarda kullanıcıların %53'ü sayfayı terk eder.",
+          "Overseas Marketing landing page mimarileri; WebP/AVIF yeni nesil görsel formatları, modern CDN dağıtımı ve temiz kod altyapısıyla mobilde 90+ PageSpeed puanı ve 1.8 saniyenin altında yükleme hızı sunar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Landing page üzerinde fiyat yazılmalı mıdır?",
+        "a": "Tam rakam verilemiyorsa bile 'Paketlerimiz €2.500'den başlamaktadır' şeklinde taban fiyat aralığı verilmesi bütçesiz lead'leri eler ve güveni artırır."
+      },
+      {
+        "q": "Açılış sayfasında kaç adet form alanı olmalıdır?",
+        "a": "Ad-Soyad, Telefon (Ülke kodu seçiciyle) ve isteğe bağlı tedavi notu/röntgen yükleme alanı yeterlidir. 6'dan fazla soru sormak form tamamlama oranını %40 düşürür."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Kriterleri",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Dönüşüm Odaklı Web Sitesi & Landing Page Hizmeti",
+        "url": "/hizmetler/web-sitesi-landing-page"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır?",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      },
+      {
+        "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır?",
+        "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir"
+      }
+    ]
+  },
+  {
+    "id": "K095",
+    "slug": "saglik-turizminde-lead-kalitesi-nasil-artirilir",
+    "url": "/blog/saglik-turizminde-lead-kalitesi-nasil-artirilir",
+    "category": "Satış & Operasyon",
+    "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır? Nitelikli Hasta Filtresi",
+    "h1": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır? Nitelikli Hasta Filtresi",
+    "seoTitle": "Sağlık Turizminde Lead Kalitesi Artırma Yolları | Overseas Marketing",
+    "metaDesc": "Çöp lead'leri eleme ve nitelikli yabancı hasta oranını artırma rehberi: Ön eleme soruları, fiyat beklentisi filtresi, lead scoring ve çağrı merkezi disiplini.",
+    "primaryKeyword": "sağlık turizmi lead kalitesi",
+    "secondaryKeywords": [
+      "sağlık turizmi nitelikli lead",
+      "sağlık turizmi lead scoring",
+      "sağlık turizmi çöp formları engelleme",
+      "sağlık turizmi hasta eleme sistemi",
+      "sağlık turizmi satış dönüşümü"
+    ],
+    "searchIntent": "Ticari ve Operasyonel (Commercial + CRO)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Satış & CRM Masası",
+    "reviewer": "Medikal Operasyon Direktörlüğü",
+    "quickAnswer": "Sağlık turizminde lead kalitesi; reklam hedeflemesinde yanlış ülkeleri ve dilleri eleyerek, formlara bütçe ve tedavi aciliyeti gibi ön eleme soruları ekleyerek, tek tıkla dolan anlık formlar yerine röntgen/fotoğraf yükleten açılış sayfaları kullanarak ve CRM üzerinde otomatik lead skorlama uygulayarak artırılır. Amaç form sayısını şişirmek değil, satış ekibinin vaktini gerçek hasta adaylarına odaklamaktır.",
+    "sections": [
+      {
+        "heading": "Niteliksiz lead sorunu: Satış ekibini tüketen gizli maliyet",
+        "subheading": "Günde 50 telefon açıp hiç ameliyat satamamanın anatomisi",
+        "paragraphs": [
+          "Bir kliniğin çağrı merkezi ekibi her gün 50 farklı lead ile görüşüyor ancak ay sonunda sadece 1-2 hasta çıkarabiliyorsa sorun satış ekibinde değil, pazarlamanın kalitesizliğindedir.",
+          "Ulaşılamayan numaralar, 'ben başvurmadım' diyenler, cebinde tedavi parası olmayanlar veya tıbbi durumu ameliyata uygun olmayanlar satış ekibinin motivasyonunu kırar ve gerçekten ameliyat olacak sıcak hastaların aranmasını geciktirir."
+        ]
+      },
+      {
+        "heading": "Lead kalitesini bozan 4 ana faktör",
+        "subheading": "Nerede hata yapılıyor ve nasıl düzeltilir?",
+        "paragraphs": [
+          "1. <strong>Meta Instant Forms (Hazır Formlar):</strong> Kullanıcının rızası olmadan tek dokunuşla gönderilen ve yanlış numara üreten formlar.",
+          "2. <strong>Fiyat İpuçlarının Gizlenmesi:</strong> Sayfada hiç bütçe aralığı verilmediğinde hastalar tedaviyi 100-200 Euro zannederek başvurur.",
+          "3. <strong>Yanlış Dil ve Bölge Hedeflemesi:</strong> İngiltere hedefli kampanyanın dil ayarı 'All Languages' bırakıldığında ülkedeki mülteci veya turist trafiğine bütçe harcanması.",
+          "4. <strong>Ön Eleme Sorularının Olmaması:</strong> Hastaya hiçbir soru sormadan yalnızca telefonunu istemek."
+        ]
+      },
+      {
+        "heading": "Lead Scoring (Puanlama) modeli örneği",
+        "subheading": "Gelen her başvuruyu sıcaklık ve değer derecesine göre sınıflandırmak",
+        "paragraphs": [
+          "Overseas CRM altyapısında her yeni lead otomatik bir puan alır ve satış ekibi en yüksek puanlı hastalardan aramaya başlar:"
+        ],
+        "table": {
+          "headers": [
+            "Hasta Kriteri",
+            "Skor Puanı",
+            "Sınıflandırma",
+            "Operasyonel Öncelik"
+          ],
+          "rows": [
+            [
+              "Röntgen / Vaka Fotoğrafı Yüklemiş",
+              "+30 Puan",
+              "A+ Lead",
+              "İlk 5 dakikada aranır, hekime iletilir"
+            ],
+            [
+              "Bütçe Aralığını Doğrulamış (örn. £3.000+)",
+              "+25 Puan",
+              "A Lead",
+              "İlk 15 dakikada aranır"
+            ],
+            [
+              "Seyahat Tarihi Belirtmiş (örn. Gelecek Ay)",
+              "+20 Puan",
+              "B+ Lead",
+              "Aynı gün içinde aranır"
+            ],
+            [
+              "Yalnızca İsim ve Telefon Bırakmış",
+              "+10 Puan",
+              "B Lead",
+              "Otomatik WhatsApp mesajı iletilir"
+            ],
+            [
+              "Eksik/Geçersiz Numara, Yanıtsız",
+              "0 Puan",
+              "Disqualified",
+              "Takip listesinden çıkarılır"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Satış koordinatörlerinin takip disiplini (SLA)",
+        "subheading": "Zamanında yapılan aramalarla dönüşümü 3 katına çıkarmak",
+        "paragraphs": [
+          "Harvard Business Review araştırmasına göre; bir lead'e ilk 5 dakika içinde ulaşıldığında satış dönüşümü ihtimali, 30 dakika sonra ulaşılanlara göre 21 kat daha yüksektir.",
+          "Kliniğinizde net bir SLA (Service Level Agreement) kuralı olmalıdır: Mesai saatlerinde gelen formlara maksimum 3 dakikada, gece saatlerinde gelenlere ise akıllı WhatsApp botuyla saniyeler içinde ilk yanıt verilmelidir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Formlara röntgen yükleme alanı eklemek lead sayısını düşürür mü?",
+        "a": "Evet, toplam form sayısını %30-40 düşürür; ancak gelen hastaların ameliyat olma oranı %300 artar. Toplam kazanılan hasta sayısı ve ciro artarken satış ekibinin iş yükü hafifler."
+      },
+      {
+        "q": "Yanlış telefon numaralarını engellemek için ne yapılabilir?",
+        "a": "Landing page formlarına uluslararası SMS veya WhatsApp OTP (tek kullanımlık şifre) doğrulama kodu entegre edilerek sahte numaralar %100 engellenebilir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "Sağlık Turizmi Daire Başkanlığı Kalite Standartları",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi CRM Yazılımı",
+        "url": "/hizmetler/saglik-turizmi-crm-yazilimi"
+      },
+      {
+        "title": "Sağlık Turizminde Hasta Kazanma Maliyeti",
+        "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti"
+      },
+      {
+        "title": "Sağlık Turizmi Landing Page Nasıl Olmalı?",
+        "url": "/blog/saglik-turizmi-landing-page-nasil-olmali"
+      }
+    ]
+  },
+  {
+    "id": "K096",
+    "slug": "saglik-turizmi-reklam-butcesi-nasil-belirlenir",
+    "url": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir",
+    "category": "Finans & Bütçe",
+    "title": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir? 2026 Matematiksel Model",
+    "h1": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir? 2026 Matematiksel Model",
+    "seoTitle": "Sağlık Turizmi Reklam Bütçesi Belirleme Rehberi | Overseas Marketing",
+    "metaDesc": "Sağlık turizmi reklam bütçesi hesaplama formülü: Hedef hasta sayısı x Hedef CAC yaklaşımı, test bütçesi, ölçekleme kuralları ve branş bazlı simülasyon.",
+    "primaryKeyword": "sağlık turizmi reklam bütçesi",
+    "secondaryKeywords": [
+      "sağlık turizmi reklam bütçesi hesaplama",
+      "sağlık turizmi pazarlama harcaması",
+      "klinik reklam bütçesi ne kadar olmalı",
+      "sağlık turizmi test bütçesi",
+      "sağlık turizmi bütçe planlama"
+    ],
+    "searchIntent": "Ticari ve Finansal (Commercial + Strategy)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Finans & Strateji Masası",
+    "reviewer": "Medikal Büyüme Direktörlüğü",
+    "quickAnswer": "Sağlık turizmi reklam bütçesi rastgele bir rakam belirlenerek değil, tersine mühendislik formülüyle hesaplanır: Gerekli Reklam Bütçesi = Hedeflenen Hasta Sayısı × Hedef CAC (Hasta Başı Edinme Maliyeti). İlk ay için öğrenme ve test bütçesi ayrılmalı, kârlılık doğrulandıktan sonra bütçe kademeli olarak (haftalık %15-20 artışlarla) ölçeklenmelidir.",
+    "sections": [
+      {
+        "heading": "Neden 'Aylık ne kadar harcamalıyız?' sorusu yanlıştır?",
+        "subheading": "Bütçeyi harcama değil, ciro yatırımı olarak kurgulamak",
+        "paragraphs": [
+          "Klinik sahipleri genellikle 'Bizim ayda 1.000 Euro bütçemiz var, ne yapabiliriz?' diye sorar. Oysa doğru soru şudur: 'Biz ayda kliniğimize kaç yabancı hasta almak istiyoruz ve ameliyathane kapasitemiz nedir?'.",
+          "Hedeflenen hasta sayısı ile ayrılan bütçe arasında matematiksel bir uyum olmalıdır. Ayda 20 yabancı saç ekimi hastası hedefleyen bir kliniğin 500 Euro bütçe ayırması gerçek dışıdır; çünkü sektör ortalamalarında 20 hasta için gereken CAC bütçesi yaklaşık 6.000 - 8.000 Euro civarındadır."
+        ]
+      },
+      {
+        "heading": "Tersine mühendislik ile bütçe hesaplama formülü",
+        "subheading": "Adım adım bütçe planlama matematiği",
+        "paragraphs": [
+          "<strong>1. Adım: Hedef Hasta Sayısını Belirleyin:</strong> Örn. Ayda 10 yabancı implant hastası.",
+          "<strong>2. Adım: Branş Bazlı Ortalama CAC'ı Alın:</strong> Avrupa pazarı için hasta başı kabul edilebilir CAC = 600 €.",
+          "<strong>3. Adım: Çarpın:</strong> 10 Hasta × 600 € = 6.000 € aylık performans reklam bütçesi gereklidir.",
+          "<strong>4. Adım: Beklenen Ciro ve Kâr Kontrolü:</strong> 10 hasta ortalama 5.000 € paket alırsa toplam ciro = 50.000 €. 6.000 € reklam harcaması toplam cironun yalnızca %12'sidir ve son derece kârlıdır."
+        ]
+      },
+      {
+        "heading": "Örnek bütçe simülasyon tablosu (Avrupa Pazarı)",
+        "subheading": "Farklı klinik hedeflerine göre aylık bütçe projeksiyonu",
+        "paragraphs": [
+          "Aşağıdaki simülasyon, İngiltere ve Almanya pazarlarına yönelik ortalama sektör verileriyle hazırlanmıştır:"
+        ],
+        "table": {
+          "headers": [
+            "Hedef Branş",
+            "Aylık Hedef Hasta",
+            "Tahmini Paket Fiyatı",
+            "Önerilen Aylık Reklam Bütçesi",
+            "Tahmini Brüt Ciro"
+          ],
+          "rows": [
+            [
+              "Saç Ekimi",
+              "15 Hasta",
+              "€2.500",
+              "€4.500 - €5.500",
+              "€37.500"
+            ],
+            [
+              "Diş (İmplant / Gülüş)",
+              "8 Hasta",
+              "€5.500",
+              "€4.800 - €6.000",
+              "€44.000"
+            ],
+            [
+              "Rinoplasti / Meme",
+              "6 Hasta",
+              "€4.000",
+              "€3.600 - €4.800",
+              "€24.000"
+            ],
+            [
+              "Bariatrik (Tüp Mide)",
+              "8 Hasta",
+              "€3.500",
+              "€4.000 - €5.000",
+              "€28.000"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Test bütçesi ve ölçekleme (Scaling) kuralları",
+        "subheading": "Algoritmayı bozmadan bütçeyi güvenle büyütmek",
+        "paragraphs": [
+          "Yeni başlarken ilk 30 gün 'Öğrenme ve Test Aşaması' olarak kabul edilmelidir. Bu dönemde minimum viable bütçe ile hedef ülke ve kreatifler test edilir.",
+          "Kampanyalar kârlı sonuç vermeye başladığında bütçe aniden 3 katına çıkarılmamalıdır (bu durum Meta ve Google algoritmalarını sıfırlar). Bütçe her 4-5 günde bir %15-20 oranında artırılarak sağlıklı bir ölçekleme sağlanmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Test aşaması için minimum ne kadar bütçe gerekir?",
+        "a": "Hedeflenen tek bir ülke ve tek branş için ilk ay en az 2.000 € - 2.500 € test bütçesi ayrılması istatistiksel doğrulama için şarttır."
+      },
+      {
+        "q": "Reklam bütçesine devlet teşviki var mıdır?",
+        "a": "Evet. T.C. Ticaret Bakanlığı Uluslararası Sağlık Turizmi Destekleri kapsamında yetkili sağlık kuruluşlarının yurt dışı reklam ve tanıtım harcamalarının %60'a varan kısmı belirli limitler dahilinde geri ödenmektedir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Ticaret Bakanlığı Sağlık Hizmetleri İhracatı Destekleri",
+        "url": "https://ticaret.gov.tr/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizminde Hasta Kazanma Maliyeti",
+        "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır?",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      },
+      {
+        "title": "Overseas Marketing Teklif ve Bütçe Simülasyonu",
+        "url": "/teklif-al"
+      }
+    ]
+  },
+  {
+    "id": "K097",
+    "slug": "ingiltereden-turkiyeye-hasta-nasil-getirilir",
+    "url": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir",
+    "category": "Pazar Rehberleri (UK)",
+    "title": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir? UK Sağlık Turizmi Rehberi",
+    "h1": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir? UK Sağlık Turizmi Rehberi",
+    "seoTitle": "İngiltere'den Hasta Getirme Rehberi 2026 | Overseas Marketing",
+    "metaDesc": "İngiltere'den Türkiye'ye hasta getirme stratejileri: NHS bekleme süreleri, İngiliz hasta psikolojisi, Trustpilot sosyal kanıtı, paket fiyatlandırma ve ASA kuralları.",
+    "primaryKeyword": "ingiltereden türkiyeye hasta getirme",
+    "secondaryKeywords": [
+      "ingiltere sağlık turizmi",
+      "ingiliz hasta bulma",
+      "ingiltere sağlık reklamları",
+      "uk medikal turizm",
+      "türkiye diş tedavisi ingiltere"
+    ],
+    "searchIntent": "Ticari ve Stratejik (Commercial + Country Strategy)",
+    "funnel": "BOFU",
+    "readTime": "13 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Birleşik Krallık Masası",
+    "reviewer": "Medikal Pazar Direktörlüğü",
+    "quickAnswer": "İngiltere'den Türkiye'ye hasta getirmek; NHS bekleme sürelerinin uzunluğunu ve özel sağlık maliyetlerinin aşırı yüksekliğini avantaja dönüştüren, Trustpilot ve Google bağımsız incelemeleriyle güven inşa eden, sterlin (£) bazında şeffaf 'all-inclusive' paketler sunan ve ana dili İngilizce olan koordinatörlerle yürütülen çok kanallı bir büyüme modelidir.",
+    "sections": [
+      {
+        "heading": "İngiltere pazarı neden Türkiye için 1 numaralı sağlık koridorudur?",
+        "subheading": "NHS krizi, sterlin paritesi ve direkt uçuş kolaylığı",
+        "paragraphs": [
+          "Birleşik Krallık (UK), Türkiye sağlık turizminin en büyük ve en karlı pazarlarının başında gelir. Bunun temel sebebi Ulusal Sağlık Sistemi (NHS) üzerindeki tarihi tıkanıklıktır. İngiltere'de bir diş çekimi veya protez için 18 ayı aşan bekleme süreleri vardır; özel kliniklerde ise bir tek implant maliyeti £2.500 seviyesindedir.",
+          "Londra, Manchester, Birmingham ve Edinburgh'dan İstanbul ve Antalya'ya haftada yüzlerce direkt uçuşun olması, sterlinin satın alma gücüyle birleştiğinde Türkiye'yi rakipsiz bir tedavi destinasyonu haline getirmektedir."
+        ]
+      },
+      {
+        "heading": "İngiliz hasta psikolojisi: Karar verirken nelere bakarlar?",
+        "subheading": "Şüpheci ama güven sağlandığında en sadık hasta profili",
+        "paragraphs": [
+          "İngiliz hastalar geleneksel olarak temkinlidir ve tabloid basının negatif haberlerinden çekinirler. Onları ikna eden temel unsurlar şunlardır:",
+          "• <strong>Trustpilot ve Bağımsız Yorumlar:</strong> Web sitenizdeki yorumlara inanmazlar; bağımsız Trustpilot puanınızın 4.5+ olmasını ve detaylı İngiliz hasta deneyimlerini incelerler.",
+          "• <strong>Hekimin Kurumsal Sertifikaları:</strong> Hekimin cerrahi tecrübesi, uluslararası üyelikleri ve komplikasyon durumunda ne yapılacağı.",
+          "• <strong>Gizli Maliyetsiz Net Paket:</strong> Havaalanında ekstra para istenmeyeceğine dair yazılı sözleşme ve sterlin (£) cinsinden garanti.",
+          "• <strong>Aksansız İletişim:</strong> WhatsApp veya telefonda akıcı, saygılı ve İngiliz kültürüne uygun (polite & friendly) iletişim."
+        ]
+      },
+      {
+        "heading": "İngiltere reklamlarında ASA (Advertising Standards Authority) kuralları",
+        "subheading": "Yasal cezalardan ve itibar kaybından kaçınma",
+        "paragraphs": [
+          "İngiltere'ye yönelik dijital reklamlarda İngiltere Reklam Standartları Otoritesi (ASA) kuralları çok sıkıdır. 'Cosmetic surgery holiday', 'cheap teeth deals' gibi ameliyatı bir tatil veya ucuz promosyon gibi sunan reklamlar yasaklanabilir. Reklamlarda hekim yetkinliği ve tıbbi bilgilendirme odağı korunmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İngiltere'de en çok talep gören branşlar hangileridir?",
+        "a": "Diş tedavileri (özellikle implant ve zirkonyum kaplama), saç ekimi, bariatrik cerrahi (tüp mide) ve rinoplasti ilk sıralardadır."
+      },
+      {
+        "q": "İngiliz hastalar için ödeme yöntemi nasıl olmalıdır?",
+        "a": "Sterlin (£) bazlı fiyatlandırma yapılmalı; depozito için kredi kartı veya güvenli online ödeme linki (Stripe/Wise), kalan ödeme için klinikte nakit veya kart alternatifi sunulmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "ASA (Advertising Standards Authority) UK Cosmetic Guidelines",
+        "url": "https://www.asa.org.uk/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "İngiltere Sağlık Turizmi Google Ads Rehberi",
+        "url": "/blog/ingiltere-saglik-turizmi-google-ads-rehberi"
+      },
+      {
+        "title": "İngiltere'de Diş Hastasına Nasıl Ulaşılır?",
+        "url": "/blog/ingilterede-dis-hastasina-nasil-ulasilir"
+      },
+      {
+        "title": "Hedef Pazarlar ve Ülke Dinamikleri",
+        "url": "/ulkeler"
+      }
+    ]
+  },
+  {
+    "id": "K098",
+    "slug": "ingiltere-saglik-turizmi-google-ads-rehberi",
+    "url": "/blog/ingiltere-saglik-turizmi-google-ads-rehberi",
+    "category": "Pazar Rehberleri (UK)",
+    "title": "İngiltere Sağlık Turizmi Google Ads Rehberi: UK Kampanya Kurulumu",
+    "h1": "İngiltere Sağlık Turizmi Google Ads Rehberi: UK Kampanya Kurulumu",
+    "seoTitle": "İngiltere Google Ads Sağlık Turizmi Rehberi | Overseas Marketing",
+    "metaDesc": "İngiltere sağlık turizmi Google Ads yönetimi: UK anahtar kelime hacimleri, CPC optimizasyonu, Londra vs bölge hedeflemeleri ve negatif stratejisi.",
+    "primaryKeyword": "ingiltere sağlık turizmi google ads",
+    "secondaryKeywords": [
+      "uk google ads klinik",
+      "ingiltere diş implant google ads",
+      "türkiye saç ekimi ingiltere reklamı",
+      "google ads uk cpc maliyetleri"
+    ],
+    "searchIntent": "Ticari ve Taktiksel (Commercial + PPC)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Birleşik Krallık Masası",
+    "reviewer": "Medikal Performans Direktörlüğü",
+    "quickAnswer": "İngiltere sağlık turizmi Google Ads kampanyaları; 'turkey dental clinic', 'hair transplant istanbul cost' gibi yüksek niyetli kelimeleri hedefleyen, Londra'nın yüksek CPC'leri yerine Manchester, Birmingham, Leeds ve İskoçya gibi bölgeleri akıllıca ağırlıklandıran ve sterlin (£) fiyat uzantıları kullanan bir yapı üzerine kurulur.",
+    "sections": [
+      {
+        "heading": "İngiltere arama hacimleri ve CPC dinamikleri",
+        "subheading": "Aylık on binlerce tedavi aramasını doğru bütçeyle yakalamak",
+        "paragraphs": [
+          "İngiltere'de her ay 40.000'den fazla kullanıcı 'dental work abroad' veya 'hair transplant abroad' araması yapmaktadır. Rekabet yoğundur; Londra merkezinde tıklama maliyetleri £3.50 - £6.00 seviyelerine çıkabilirken, kuzey bölgelerinde ve İskoçya'da £1.80 - £2.50 bandına gerilemektedir.",
+          "Bu sebeple tüm Birleşik Krallık'ı tek kampanyaya yığmak yerine bölgesel teklif ayarlamaları yapmak bütçe verimliliğini %40 artırır."
+        ]
+      },
+      {
+        "heading": "UK hedefli yüksek performanslı anahtar kelime grupları",
+        "subheading": "Hangi arama kalıpları gerçek ameliyat getirir?",
+        "paragraphs": [
+          "• <strong>Tedavi + Ülke:</strong> [all on 4 turkey], [dental implants istanbul], [hair transplant turkey price].",
+          "• <strong>Karşılaştırma ve Maliyet:</strong> \"how much is cosmetic surgery in turkey\", \"cost of veneers abroad\".",
+          "• <strong>Güven ve İnceleme:</strong> \"best hair clinic turkey reviews\", \"safe dental implants abroad\"."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İngiltere Google Ads kampanyasında hangi para birimi kullanılmalıdır?",
+        "a": "Açılış sayfasında ve reklam uzantılarında mutlaka İngiliz Sterlini (£) gösterilmelidir. Euro veya TL göstermek dönüşümü düşürür."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Ads UK Policy Overview",
+        "url": "https://support.google.com/adspolicy/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır?",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      }
+    ]
+  },
+  {
+    "id": "K099",
+    "slug": "ingilterede-dis-hastasina-nasil-ulasilir",
+    "url": "/blog/ingilterede-dis-hastasina-nasil-ulasilir",
+    "category": "Pazar Rehberleri (UK)",
+    "title": "İngiltere’de Diş Hastasına Nasıl Ulaşılır? Dental Turizm Büyüme Modeli",
+    "h1": "İngiltere’de Diş Hastasına Nasıl Ulaşılır? Dental Turizm Büyüme Modeli",
+    "seoTitle": "İngiltere Diş Hastası Kazanma Rehberi 2026 | Overseas Marketing",
+    "metaDesc": "İngiltere dental sağlık turizmi: All-on-4, All-on-6 ve gülüş tasarımı hastalarına ulaşma, röntgen toplama hunisi, WhatsApp ön konsültasyon ve güven inşası.",
+    "primaryKeyword": "ingilterede diş hastası kazanımı",
+    "secondaryKeywords": [
+      "ingiltere dental turizm",
+      "ingiltere all on 4 reklamları",
+      "türkiye diş kliniği uk reklamı",
+      "ingiliz diş hastası bulma"
+    ],
+    "searchIntent": "Ticari ve Branş Odaklı (Commercial + Dental)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Dental Pazarlama Masası",
+    "reviewer": "Medikal Direktörlük",
+    "quickAnswer": "İngiltere'de diş hastasına ulaşmak; İngilizlerin çürük ve diş kaybı sorununa karşı Türkiye'de 5-7 günde tamamlanan kalıcı implant çözümlerini (All-on-4 / All-on-6) öne çıkaran, hastadan panoramik röntgen (OPG) talep eden açılış sayfaları kullanan ve WhatsApp üzerinden 24 saatte hekim imzalı detaylı tedavi planı ileten bir sistemle mümkündür.",
+    "sections": [
+      {
+        "heading": "İngiltere dental krizi ve Türk kliniklerinin sunduğu değer",
+        "subheading": "NHS randevu imkansızlığı ve £10.000+ özel klinik faturaları",
+        "paragraphs": [
+          "Birleşik Krallık'ta tam ağız implant tedavisi (Full Mouth All-on-4) özel kliniklerde £12.000 ile £25.000 arasında değişmektedir. Türkiye'deki yetkili diş klinikleri ise aynı işlemi birinci sınıf Straumann veya Nobel Biocare implantlarla, konaklama ve transfer dahil £4.000 - £7.000 bandında sunabilmektedir.",
+          "Bu devasa fiyat ve kalite avantajı, İngiliz hastaların en çok talep gösterdiği sağlık segmentinin dental turizm olmasını sağlamıştır."
+        ]
+      },
+      {
+        "heading": "Başarılı dental hasta kazanım hunisi",
+        "subheading": "Röntgen (OPG) toplama ve güvenli fiyatlandırma",
+        "paragraphs": [
+          "Diş hastalarında en büyük risk hastaya görmeden afaki fiyat vermektir. Doğru funnel şu şekilde işler:",
+          "1. Reklamdan gelen hastaya İngiltere'deki yerel diş hekiminden aldığı OPG (panoramik röntgen) dosyasını yüklemesi istenir.",
+          "2. Çene cerrahı röntgeni inceler ve 3D simülasyon eşliğinde resmi tedavi planı hazırlanır.",
+          "3. Hastaya Zoom üzerinden hekimle 10 dakikalık görüntülü görüşme organize edilir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İngiliz hastalar kaplama (veneer) mı yoksa implant mı tercih ediyor?",
+        "a": "Genç kitle gülüş tasarımı ve zirkonyum kaplama ararken; 45 yaş üstü kitle yüksek bütçeli All-on-4 ve cerrahi implant tedavilerine yoğun talep göstermektedir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "General Dental Council UK",
+        "url": "https://www.gdc-uk.org/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir"
+      },
+      {
+        "title": "Sağlık Turizmi Landing Page Nasıl Olmalı?",
+        "url": "/blog/saglik-turizmi-landing-page-nasil-olmali"
+      }
+    ]
+  },
+  {
+    "id": "K100",
+    "slug": "ingiltere-sac-ekimi-reklam-stratejisi",
+    "url": "/blog/ingiltere-sac-ekimi-reklam-stratejisi",
+    "category": "Pazar Rehberleri (UK)",
+    "title": "İngiltere Saç Ekimi Reklam Stratejisi: DHI & Sapphire FUE Pazarlaması",
+    "h1": "İngiltere Saç Ekimi Reklam Stratejisi: DHI & Sapphire FUE Pazarlaması",
+    "seoTitle": "İngiltere Saç Ekimi Reklam Stratejisi | Overseas Marketing",
+    "metaDesc": "İngiltere'de saç ekimi hastası kazanma: Sapphire FUE, DHI, doktor gözetimi vurgusu, paket fiyatlandırma, video sosyal kanıt ve TikTok & Meta reklamları.",
+    "primaryKeyword": "ingiltere saç ekimi reklam stratejisi",
+    "secondaryKeywords": [
+      "ingiltere saç ekimi reklamı",
+      "uk hair transplant turkey",
+      "türkiye saç ekimi ingiltere pazarlaması",
+      "saç ekimi hasta edinme maliyeti uk"
+    ],
+    "searchIntent": "Ticari ve Branş Odaklı (Commercial + Hair)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Saç Ekimi Masası",
+    "reviewer": "Medikal Büyüme Kurulu",
+    "quickAnswer": "İngiltere saç ekimi reklam stratejisi; merdiven altı algısını yıkan 'doktor kontrolünde cerrahi' vurgusu, DHI ve Safir FUE teknolojisi anlatımı, otel ve transfer dahil şeffaf sterlin paketleri ve YouTube/TikTok/Instagram üzerinde gerçek İngiliz hastaların 12 aylık gelişim süreçlerini gösteren video kanıtlarla yürütülür.",
+    "sections": [
+      {
+        "heading": "İngiltere saç ekimi pazarında farklılaşma zorunluluğu",
+        "subheading": "'Cheap hair transplant' klişesinden premium klinik güvenine",
+        "paragraphs": [
+          "İngiltere'de binlerce erkek her gün Türkiye'de saç ekimini araştırmaktadır; ancak medyadaki kötü haberler sebebiyle en büyük korkuları saç çizgisinin yapay durması ve donör alanın tahrip edilmesidir.",
+          "Bu nedenle en ucuz fiyatı bağıran reklamlar artık dönüştürmemektedir. Başarı; hekimin bizzat kanal açtığı, greft sayısının dürüstçe açıklandığı ve steril hastane ortamını gösteren premium içeriklerle gelir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İngiltere'den bir saç ekimi hastasının edinme maliyeti (CAC) ne kadardır?",
+        "a": "Doğru kurgulanmış Meta ve Google kampanyalarıyla ortalama CAC £250 ile £400 arasında gerçekleşmektedir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "ISHRS International Society of Hair Restoration Surgery",
+        "url": "https://ishrs.org/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Instagram Reklamları Nasıl Verilir?",
+        "url": "/blog/saglik-turizmi-icin-instagram-reklamlari-nasil-verilir"
+      }
+    ]
+  },
+  {
+    "id": "K101",
+    "slug": "almanyadan-turkiyeye-hasta-nasil-getirilir",
+    "url": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir",
+    "category": "Pazar Rehberleri (DACH)",
+    "title": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir? DACH Sağlık Turizmi Rehberi",
+    "h1": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir? DACH Sağlık Turizmi Rehberi",
+    "seoTitle": "Almanya'dan Hasta Getirme Rehberi 2026 | Overseas Marketing",
+    "metaDesc": "Almanya, Avusturya ve İsviçre'den (DACH) hasta getirme: Alman hasta psikolojisi, TÜV/JCI kalite sertifikaları, Almanca çağrı merkezi ve yasal süreçler.",
+    "primaryKeyword": "almanyadan türkiyeye hasta getirme",
+    "secondaryKeywords": [
+      "almanya sağlık turizmi",
+      "alman hasta bulma",
+      "dach bölgesi medikal turizm",
+      "almanya sağlık reklamları",
+      "almanca hasta koordinatörü"
+    ],
+    "searchIntent": "Ticari ve Stratejik (Commercial + DACH Strategy)",
+    "funnel": "BOFU",
+    "readTime": "13 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas DACH Masası",
+    "reviewer": "Medikal Pazar Direktörlüğü",
+    "quickAnswer": "Almanya'dan Türkiye'ye hasta getirmek; Alman hastaların yüksek hijyen, kanıtlanmış akreditasyon (JCI, ISO, TÜV) ve sözleşme sadakati beklentisini karşılayan, kusursuz Almanca dilinde (Native German) hasta iletişimi sunan ve hem Alman vatandaşlarını hem de Türk kökenli gurbetçileri ayrı stratejilerle hedefleyen bir modelle mümkündür.",
+    "sections": [
+      {
+        "heading": "Almanya ve DACH pazarı: Yüksek kârlılık ve titiz hasta profili",
+        "subheading": "Avrupa'nın en büyük ekonomisinde sağlık turizmi dinamikleri",
+        "paragraphs": [
+          "Almanya, Avusturya ve İsviçre'yi kapsayan DACH bölgesi, hasta başına düşen gelir (Revenue per Patient) bakımından en yüksek pazarlardan biridir. Alman hastalar İngilizlere kıyasla daha sorgulayıcıdır; ameliyathane havalandırma standartlarından kullanılan cerrahi malzemenin menşeine kadar her detayı yazılı olarak bilmek isterler.",
+          "Ancak bir Alman hasta kliniğinize güvenip tedavi olduğunda, çevresindeki herkese sizi tavsiye eder ve mükemmel bir referral kaynağına dönüşür."
+        ]
+      },
+      {
+        "heading": "İki farklı hedef kitle: Alman vatandaşları vs Gurbetçi Türkler",
+        "subheading": "Aynı ülkede iki tamamen farklı pazarlama stratejisi",
+        "paragraphs": [
+          "• <strong>Yerel Almanlar (Bio-Deutsche):</strong> Almanca web siteleri, medikal sertifikalar, hukuki garanti metinleri ve rasyonel fayda dili gerekir.",
+          "• <strong>Gurbetçi Türkler:</strong> Türkçe reklamlar, vatan ziyaretiyle birleştirilen tedavi paketleri, akraba tavsiyesi ve sıcak duygusal bağ odaklı iletişim etkilidir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Almanca bilmeyen bir ekiple Almanya pazarına girilebilir mi?",
+        "a": "Kesinlikle hayır. Almanca bilmeyen veya çatpat konuşan satış ekipleri Alman hastaları anında kaybeder. Ekipte en az bir anadili Almanca olan koordinatör bulunmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      },
+      {
+        "title": "Sağlık Bakanlığı Uluslararası Sağlık Turizmi Daire Başkanlığı",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Almanya Sağlık Turizmi Google Ads Rehberi",
+        "url": "/blog/almanya-saglik-turizmi-google-ads-rehberi"
+      },
+      {
+        "title": "Almanya’da Türkçe ve Almanca Sağlık Reklamı",
+        "url": "/blog/almanyada-turkce-ve-almanca-saglik-reklami"
+      },
+      {
+        "title": "Almanya Sağlık Turizmi SEO Stratejisi",
+        "url": "/blog/almanya-saglik-turizmi-seo-stratejisi"
+      }
+    ]
+  },
+  {
+    "id": "K102",
+    "slug": "almanya-saglik-turizmi-google-ads-rehberi",
+    "url": "/blog/almanya-saglik-turizmi-google-ads-rehberi",
+    "category": "Pazar Rehberleri (DACH)",
+    "title": "Almanya Sağlık Turizmi Google Ads Rehberi: DACH PPC Yönetimi",
+    "h1": "Almanya Sağlık Turizmi Google Ads Rehberi: DACH PPC Yönetimi",
+    "seoTitle": "Almanya Google Ads Sağlık Turizmi Rehberi | Overseas Marketing",
+    "metaDesc": "Almanya sağlık turizmi Google Ads kampanyaları: Almanca anahtar kelimeler (Zahnimplantate Türkei, Haartransplantation Istanbul), CPC optimizasyonu ve regülasyonlar.",
+    "primaryKeyword": "almanya sağlık turizmi google ads",
+    "secondaryKeywords": [
+      "almanya google ads klinik reklamı",
+      "dach google ads yönetimi",
+      "almanca sağlık turizmi kelimeleri",
+      "google ads almanya cpc"
+    ],
+    "searchIntent": "Ticari ve Taktiksel (Commercial + PPC)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas DACH Masası",
+    "reviewer": "Medikal Performans Direktörlüğü",
+    "quickAnswer": "Almanya sağlık turizmi Google Ads yönetimi; kusursuz Almanca gramerle yazılmış reklam metinleri, 'Zahnbehandlung Türkei Kosten', 'Haartransplantation Istanbul Erfahrung' gibi güven ve maliyet odaklı aramaları hedefleyen ve Alman Reklam Hukuku (HWG) sınırlarına dikkat eden profesyonel bir kampanya mimarisidir.",
+    "sections": [
+      {
+        "heading": "Almanya'da en çok aranan medikal terimler ve arama niyetleri",
+        "subheading": "Alman hastanın klavyeye yazdığı gerçek sorgular",
+        "paragraphs": [
+          "Alman hastalar karar vermeden önce derinlemesine araştırma yapar. En popüler anahtar kelime öbekleri şunlardır:",
+          "• <strong>Diş:</strong> [zahnimplantate türkei kosten], [zahnklinik istanbul erfahrungen], [zahnkronen türkei preisvergleich].",
+          "• <strong>Saç Ekimi:</strong> [haartransplantation türkei bester arzt], [dhi methode istanbul kosten].",
+          "• <strong>Göz / Lazer:</strong> [augenlasern istanbul erfahrungsberichte], [trifokallinsen türkei]."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Almanya'da Google Ads tıklama maliyetleri (CPC) nasıldır?",
+        "a": "Almanya'da medikal arama ağı CPC'leri ortalama 1.50 € ile 4.00 € arasında değişir ve İngiltere'ye kıyasla genellikle daha kararlıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Heilmittelwerbegesetz (HWG) Almanya Sağlık Reklam Kanunu",
+        "url": "https://www.gesetze-im-internet.de/heilmwerbg/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır?",
+        "url": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir"
+      }
+    ]
+  },
+  {
+    "id": "K103",
+    "slug": "almanyada-turkce-ve-almanca-saglik-reklami",
+    "url": "/blog/almanyada-turkce-ve-almanca-saglik-reklami",
+    "category": "Pazar Rehberleri (DACH)",
+    "title": "Almanya’da Türkçe ve Almanca Sağlık Reklamı: İkili Kampanya Stratejisi",
+    "h1": "Almanya’da Türkçe ve Almanca Sağlık Reklamı: İkili Kampanya Stratejisi",
+    "seoTitle": "Almanya'da Türkçe ve Almanca Sağlık Reklamı | Overseas Marketing",
+    "metaDesc": "Almanya pazarında çift dilli reklam mimarisi: Gurbetçi Türkler için Türkçe duygusal kurgular ile Alman vatandaşları için Almanca rasyonel kampanyaların ayrımı.",
+    "primaryKeyword": "almanyada türkçe ve almanca sağlık reklamı",
+    "secondaryKeywords": [
+      "almanya gurbetçi sağlık reklamları",
+      "almanya türkçe google ads",
+      "almanca klinik reklamı",
+      "almanya sağlık turizmi hedef kitle"
+    ],
+    "searchIntent": "Ticari ve Stratejik (Commercial + Targeting)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas DACH Masası",
+    "reviewer": "Medikal Büyüme Kurulu",
+    "quickAnswer": "Almanya'da başarı sağlamak; gurbetçi Türklere yönelik Türkçe kampanyalar ile yerel Alman vatandaşlarına yönelik Almanca kampanyaları tek sepete koymamak, dil ve kültür bazlı iki ayrı reklam hesabı ve açılış sayfası mimarisi kurmakla mümkündür.",
+    "sections": [
+      {
+        "heading": "Neden iki kampanya birbirine karıştırılmamalıdır?",
+        "subheading": "Aynı coğrafyada iki tamamen farklı karar mekanizması",
+        "paragraphs": [
+          "Almanya'da 3.5 milyonu aşkın Türk kökenli nüfus yaşamaktadır. Bu kitle Türkçe dilinde arama yapar, Türkiye'deki hekimlere güvenir ve yıllık memleket tatillerinde tedavisini planlar.",
+          "Yerel Alman ise Almanca arama yapar, Alman Krankenkasse (sigorta) sisteminin ödeme kapsamını sorgular ve akreditasyon belgelerini inceler. İkisini tek bir reklamda birleştirmek her iki kitlenin de kaçmasına yol açar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Gurbetçi kampanyaları yaz aylarında mı yoğunlaştırılmalıdır?",
+        "a": "Evet, gurbetçi Türkler tedavi için genellikle yıllık izin ve yaz tatili dönemlerini (Haziran - Eylül) tercih eder; kampanyalar Nisan-Mayıs aylarında başlatılmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir"
+      },
+      {
+        "title": "Almanya Sağlık Turizmi SEO Stratejisi",
+        "url": "/blog/almanya-saglik-turizmi-seo-stratejisi"
+      }
+    ]
+  },
+  {
+    "id": "K104",
+    "slug": "almanya-saglik-turizmi-seo-stratejisi",
+    "url": "/blog/almanya-saglik-turizmi-seo-stratejisi",
+    "category": "Pazar Rehberleri (DACH)",
+    "title": "Almanya Sağlık Turizmi SEO Stratejisi: Google.de Sıralama Rehberi",
+    "h1": "Almanya Sağlık Turizmi SEO Stratejisi: Google.de Sıralama Rehberi",
+    "seoTitle": "Almanya Sağlık Turizmi SEO Stratejisi | Overseas Marketing",
+    "metaDesc": "Google.de'de üst sıralara çıkma: Hreflang de-DE etiketleri, Almanca tıbbi terminoloji, E-E-A-T hekim otoritesi ve Alman backlink mimarisi.",
+    "primaryKeyword": "almanya sağlık turizmi seo stratejisi",
+    "secondaryKeywords": [
+      "google.de medikal seo",
+      "almanca sağlık seo ajansı",
+      "almanya klinik web sitesi optimizasyonu",
+      "hreflang de almanya sağlık turizmi"
+    ],
+    "searchIntent": "Ticari ve Teknik (Commercial + SEO)",
+    "funnel": "MOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Uluslararası SEO Masası",
+    "reviewer": "Medikal SEO Direktörlüğü",
+    "quickAnswer": "Almanya sağlık turizmi SEO stratejisi; google.de algoritması için de-DE hreflang yapılandırması, yapay çeviri yerine anadili Almanca olan medikal yazarlarca üretilmiş içerikler, hekimin akademik yayınları (E-E-A-T) ve Alman sağlık forumları ile haber sitelerinden edinilen yerel dijital PR bağlantılarını içerir.",
+    "sections": [
+      {
+        "heading": "Google.de'de sıralama almanın teknik ve içerik kuralları",
+        "subheading": "Yapay zekâ çevirilerinin neden Almanya'da sıralanamayacağı gerçeği",
+        "paragraphs": [
+          "Google Çeviri veya ham yapay zekâ çıktısıyla Almancaya çevrilmiş sayfalar Alman kullanıcılara güven vermez ve Google'ın 'Helpful Content' filtrelerine takılır. Almanca tıbbi terminoloji (Fachbegriffe) son derece zengindir.",
+          "Başarılı bir SEO mimarisinde teknik hreflang etiketleri hatasız kurulmalı, sunucu yanıt süreleri DACH bölgesinde 200 ms altında olmalı ve sayfalar Impressum ve Datenschutz (GDPR) gibi Alman hukuki gerekliliklerini taşımalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Almanca SEO için .de uzantılı alan adı şart mıdır?",
+        "a": "Şart değildir; .com altında /de/ alt dizini (subfolder) ve doğru hreflang='de-DE' etiketlemesi ile Google.de üzerinde güçlü sıralamalar elde edilebilir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Search Central — Managing multi-regional and multilingual sites",
+        "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Uluslararası Sağlık Turizmi SEO Hizmeti",
+        "url": "/hizmetler/uluslararasi-seo-hizmeti"
+      },
+      {
+        "title": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir?",
+        "url": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir"
+      }
+    ]
+  },
+  {
+    "id": "K105",
+    "slug": "chatgptde-klinik-nasil-gorunur",
+    "url": "/blog/chatgptde-klinik-nasil-gorunur",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "ChatGPT’de Klinik Nasıl Görünür? Sağlık Kuruluşları İçin AI Rehberi",
+    "h1": "ChatGPT’de Klinik Nasıl Görünür? Sağlık Kuruluşları İçin AI Rehberi",
+    "seoTitle": "ChatGPT'de Klinik Nasıl Görünür? | Overseas Marketing",
+    "metaDesc": "Kliniklerin ChatGPT aramalarında önerilme stratejileri: Entity inşası, açık veri yapıları, bağımsız inceleme siteleri, hekim biyografileri ve prompt görünürlüğü.",
+    "primaryKeyword": "chatgptde klinik görünürlüğü",
+    "secondaryKeywords": [
+      "chatgpt klinik önerileri",
+      "yapay zeka sağlık turizmi",
+      "chatgpt doktor tavsiyesi",
+      "sağlık turizmi geo",
+      "ai arama motorlarında görünme"
+    ],
+    "searchIntent": "Bilgilendirici ve Ticari (GEO + AI Search)",
+    "funnel": "MOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Yapay Zekâ Masası",
+    "reviewer": "AI Teknolojileri Direktörlüğü",
+    "quickAnswer": "Bir kliniğin ChatGPT'de görünmesi; yapay zekâya doğrudan reklam vererek değil, dil modellerinin web taramalarında ve eğitim verilerinde kliniği doğrulanabilir, uzman ve tarafsız bir sağlık kuruluşu (Entity) olarak tanımasıyla mümkündür. Bunun için Schema yapılandırılmış verisi, hekimin akademik profilleri, bağımsız platformlardaki (Trustpilot, Google) pozitif hasta yorumları ve dijital PR gereklidir.",
+    "sections": [
+      {
+        "heading": "Yabancı hastalar ChatGPT'yi nasıl kullanıyor?",
+        "subheading": "Arama motorundan doğrudan tavsiye motoruna geçiş",
+        "paragraphs": [
+          "Geleneksel Google aramasında hasta 10 farklı mavi linki tıklar ve karşılaştırır. ChatGPT'de ise doğrudan 'Türkiye'de diş implantı yaptırmak istiyorum, JCI akreditasyonlu en güvenilir klinikler hangileri?' veya 'İstanbul'da en iyi rinoplasti cerrahları kimler?' diye sorar.",
+          "ChatGPT hastaya tek tek web sitesi gezdirmez; kendi bilgi tabanındaki verileri sentezleyerek 3-4 klinik veya hekim önerir ve neden önerdiğini açıklar. Burada yer almak, hastanın gözünde en yüksek güven sinyalidir."
+        ]
+      },
+      {
+        "heading": "ChatGPT'de yer almanın 4 altın kuralı",
+        "subheading": "Algoritmanın kliniğinizi güvenilir kaynak olarak seçmesi için gerekenler",
+        "paragraphs": [
+          "1. <strong>Doğrulanabilir Kurumsal Varlık (Entity SEO):</strong> Kliniğin T.C. Sağlık Bakanlığı ruhsatı, yetki belgesi ve HealthTürkiye kaydı webde açık ve taranabilir olmalıdır.",
+          "2. <strong>Hekim Uzmanlık Kanıtı:</strong> Hekimin uzmanlık belgeleri, tıp fakültesi geçmişi ve bilimsel dernek üyelikleri sitede şeffafça yer almalıdır.",
+          "3. <strong>Harici İnceleme Otoritesi:</strong> Reddit, Quora, Trustpilot ve Google Reviews gibi yapay zekânın taradığı üçüncü taraf platformlarda organik hasta tavsiyeleri bulunmalıdır.",
+          "4. <strong>Net Soru-Cevap ve Tanım Blokları:</strong> Web sitenizdeki içeriklerin AI botları tarafından kolayca alıntılanabilir (quotable) doğrudan cevap cümleleri içermesi gerekir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ChatGPT'de görünmek için para ödenebilir mi?",
+        "a": "Hayır. ChatGPT'nin organik model çıktıları ve web arama sonuçları sponsorlu reklamlarla satın alınamaz. Görünürlük tamamen organik otorite ve GEO stratejisiyle sağlanır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "OpenAI Documentation — Search and Model Capabilities",
+        "url": "https://openai.com/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Generative Engine Optimization (GEO) Hizmeti",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      },
+      {
+        "title": "ChatGPT Klinik Önerilerini Nasıl Oluşturur?",
+        "url": "/blog/chatgpt-klinik-onerilerini-nasil-olusturur"
+      },
+      {
+        "title": "Klinik Entity SEO Nedir?",
+        "url": "/blog/klinik-entity-seo-nedir"
+      }
+    ]
+  },
+  {
+    "id": "K106",
+    "slug": "chatgpt-klinik-onerilerini-nasil-olusturur",
+    "url": "/blog/chatgpt-klinik-onerilerini-nasil-olusturur",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "ChatGPT Klinik Önerilerini Nasıl Oluşturur? AI Yanıt Algoritması",
+    "h1": "ChatGPT Klinik Önerilerini Nasıl Oluşturur? AI Yanıt Algoritması",
+    "seoTitle": "ChatGPT Klinik Önerilerini Nasıl Oluşturur? | Overseas Marketing",
+    "metaDesc": "ChatGPT'nin sağlık tavsiyesi üretme mantığı: Eğitim verisi, canlı web araması, bilgi grafikleri (Knowledge Graphs), tıp etiği filtreleri ve marka alıntıları.",
+    "primaryKeyword": "chatgpt klinik önerileri",
+    "secondaryKeywords": [
+      "chatgpt doktor nasıl önerir",
+      "yapay zeka klinik tavsiyesi",
+      "ai arama algoritması sağlık",
+      "chatgpt veri kaynakları sağlık"
+    ],
+    "searchIntent": "Bilgilendirici ve Teknik (Educational + AI Tech)",
+    "funnel": "TOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Yapay Zekâ Masası",
+    "reviewer": "AI Teknolojileri Direktörlüğü",
+    "quickAnswer": "ChatGPT bir klinik önerirken; statik eğitim ağırlıklarındaki kurumsal varlık ilişkilerini, canlı web araması (Bing / OpenAI Search) ile ulaştığı güncel akreditasyonları, hasta yorumlarını ve tıp dernekleri kayıtlarını sentezler. Güvenlik filtreleri gereği belirsiz, kanıtsız veya spam reklam kokan siteleri eler; resmî ve doğrulanabilir tıp otoritelerini öne çıkarır.",
+    "sections": [
+      {
+        "heading": "ChatGPT'nin yanıt üretim mimarisi",
+        "subheading": "RAG (Retrieval-Augmented Generation) ve medikal güvenlik filtreleri",
+        "paragraphs": [
+          "ChatGPT sağlık konularında doğrudan tıbbi teşhis koymaktan kaçınır; ancak kullanıcının sorduğu destinasyon ve klinik alternatiflerini sıralarken RAG (Bilgi Getirimli Üretim) mimarisini kullanır.",
+          "Model interneti tarar, güvenilir sağlık portallarındaki eşleşmeleri bulur, hekimin uzmanlık tescillerini kontrol eder ve kullanıcıya en dengeli, risksiz ve kanıtlanmış önerileri sunar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ChatGPT olumsuz hasta yorumlarını okur mu?",
+        "a": "Evet. Trustpilot veya forumlardaki yoğun negatif hasta şikayetleri modelin duygu analizinde olumsuz sinyal üreterek kliniğin tavsiye listelerinden çıkarılmasına sebep olabilir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "ChatGPT’de Klinik Nasıl Görünür?",
+        "url": "/blog/chatgptde-klinik-nasil-gorunur"
+      },
+      {
+        "title": "AI Sistemleri Klinik Bilgilerini Nereden Alır?",
+        "url": "/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir"
+      }
+    ]
+  },
+  {
+    "id": "K107",
+    "slug": "chatgpt-seo-nedir",
+    "url": "/blog/chatgpt-seo-nedir",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "ChatGPT SEO Nedir? Sağlık Markaları İçin Yeni Nesil Optimizasyon",
+    "h1": "ChatGPT SEO Nedir? Sağlık Markaları İçin Yeni Nesil Optimizasyon",
+    "seoTitle": "ChatGPT SEO Nedir? AI Arama Optimizasyonu | Overseas Marketing",
+    "metaDesc": "ChatGPT SEO tanımı ve uygulama rehberi: Doğal dil sorguları, doğrudan cevap blokları, semantik ağlar ve büyük dil modelleri (LLM) optimizasyonu.",
+    "primaryKeyword": "chatgpt seo",
+    "secondaryKeywords": [
+      "llm optimizasyonu",
+      "ai seo stratejisi",
+      "chatgpt arama optimizasyonu",
+      "sağlık turizmi chatgpt seo"
+    ],
+    "searchIntent": "Bilgilendirici ve Stratejik (Informational + GEO)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Yapay Zekâ Masası",
+    "reviewer": "Medikal SEO Direktörlüğü",
+    "quickAnswer": "ChatGPT SEO; bir sağlık kuruluşunun dijital varlıklarını büyük dil modellerinin (LLM) kolayca anlayabileceği, anlamlandırabileceği ve güvenilir bir kaynak olarak kullanıcılara tavsiye edebileceği şekilde optimize etme sanatıdır. Klasik SEO'daki anahtar kelime tekrarı yerine; net kavram tanımları, semantik ilişkilendirme ve doğrulanmış entitiler gerektirir.",
+    "sections": [
+      {
+        "heading": "Klasik Google SEO ile ChatGPT SEO arasındaki fark",
+        "subheading": "Tıklama odaklı dünyadan sentez ve cevap odaklı dünyaya geçiş",
+        "paragraphs": [
+          "Klasik SEO bir sayfayı Google'da ilk sıraya çıkarıp kullanıcının siteye tıklamasını amaçlar. ChatGPT SEO ise yapay zekânın kliniğinizi doğrudan bir uzmanlık otoritesi olarak hafızasına almasını ve öneri metnine dahil etmesini hedefler.",
+          "Bu sebeple metinlerdeki boş ajans jargonları ve yapay keyword doldurmaları yerine; doğrudan cevap blokları, net tedavi süreleri ve doğrulanabilir klinik istatistikleri bulunmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ChatGPT SEO yapmak için klasik SEO'yu bırakmalı mıyız?",
+        "a": "Hayır. ChatGPT canlı aramalarında Google ve Bing arama dizinlerini kullandığı için güçlü bir klasik SEO altyapısı olmadan ChatGPT SEO başarılı olamaz."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "GEO ile SEO Arasındaki Fark",
+        "url": "/blog/geo-ile-seo-arasindaki-fark"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO) Hizmeti",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      }
+    ]
+  },
+  {
+    "id": "K108",
+    "slug": "geo-ile-seo-arasindaki-fark",
+    "url": "/blog/geo-ile-seo-arasindaki-fark",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "GEO ile SEO Arasındaki Fark Nedir? 2026 Karşılaştırma Rehberi",
+    "h1": "GEO ile SEO Arasındaki Fark Nedir? 2026 Karşılaştırma Rehberi",
+    "seoTitle": "GEO ile SEO Arasındaki Fark Nedir? | Overseas Marketing",
+    "metaDesc": "Generative Engine Optimization (GEO) ile Search Engine Optimization (SEO) farkı: Metrikler, algoritmalar, içerik yapıları ve sağlık turizmine etkileri.",
+    "primaryKeyword": "geo ile seo arasındaki fark",
+    "secondaryKeywords": [
+      "geo nedir",
+      "generative engine optimization farkı",
+      "ai arama vs google arama",
+      "sağlık turizmi seo geo"
+    ],
+    "searchIntent": "Bilgilendirici ve Karşılaştırmalı (Informational + Comparison)",
+    "funnel": "TOFU",
+    "readTime": "10 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "SEO (Search Engine Optimization), web sayfalarını Google arama motorunda ilk sıralara çıkararak siteye tıklama çekmeye odaklanır. GEO (Generative Engine Optimization) ise web sitenizi ChatGPT, Gemini, Perplexity ve Google AI Overviews gibi yapay zekâ motorlarının doğrudan ürettiği sentez yanıtlarda referans kaynak ve önerilen marka haline getirmeye odaklanır.",
+    "sections": [
+      {
+        "heading": "GEO ve SEO'nun ayrıntılı karşılaştırma tablosu",
+        "subheading": "Hedefler, algoritmalar ve başarı kriterleri",
+        "paragraphs": [
+          "Aşağıdaki tablo, sağlık turizmi markalarının bu iki disiplini nasıl konumlandırması gerektiğini özetlemektedir:"
+        ],
+        "table": {
+          "headers": [
+            "Özellik",
+            "Geleneksel SEO",
+            "Yeni Nesil GEO"
+          ],
+          "rows": [
+            [
+              "Birincil Platform",
+              "Google, Bing, Yandex",
+              "ChatGPT, Perplexity, Gemini, AI Overviews"
+            ],
+            [
+              "Temel Hedef",
+              "Organik tıklama (Click) almak",
+              "AI yanıtında alıntılanmak (Citation & Mention)"
+            ],
+            [
+              "İçerik Stratejisi",
+              "Anahtar kelimeler, H2/H3 başlıklar",
+              "Doğrudan tanımlar, kavram ilişkileri, Entity yapısı"
+            ],
+            [
+              "Başarı Metriği",
+              "SERP Pozisyonu, Organik Trafik",
+              "AI Referans Payı (Share of Model), Marka Alıntıları"
+            ],
+            [
+              "Kullanıcı Deneyimi",
+              "Sayfada gezinme ve form doldurma",
+              "AI tarafından ikna edilip doğrudan kliniği arama"
+            ]
+          ]
+        }
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hangisi sağlık turizmi için daha önemlidir?",
+        "a": "İkisi birbirini tamamlar. SEO olmadan web siteniz dizine giremez; GEO olmadan ise geleceğin arama davranışı olan yapay zekâ yanıtlarında yok olursunuz."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "ChatGPT SEO Nedir?",
+        "url": "/blog/chatgpt-seo-nedir"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO) Hizmeti",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      }
+    ]
+  },
+  {
+    "id": "K109",
+    "slug": "google-ai-overviews-saglik-turizmini-nasil-degistiriyor",
+    "url": "/blog/google-ai-overviews-saglik-turizmini-nasil-degistiriyor",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "Google AI Overviews Sağlık Turizmini Nasıl Değiştiriyor? SGE Analizi",
+    "h1": "Google AI Overviews Sağlık Turizmini Nasıl Değiştiriyor? SGE Analizi",
+    "seoTitle": "Google AI Overviews ve Sağlık Turizmi | Overseas Marketing",
+    "metaDesc": "Google'ın yapay zekâ genel bakışları (AI Overviews) sağlık turizmi aramalarını nasıl dönüştürüyor? Sıfır tıklama aramaları ve kaynak gösterilme stratejileri.",
+    "primaryKeyword": "google ai overviews sağlık turizmi",
+    "secondaryKeywords": [
+      "google sge sağlık aramaları",
+      "ai overviews klinik görünürlüğü",
+      "sıfır tıklama medikal arama",
+      "google yapay zeka özeti"
+    ],
+    "searchIntent": "Bilgilendirici ve Trend Analizi (Informational + Trends)",
+    "funnel": "TOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Analitik Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "Google AI Overviews; kullanıcıların arama sonuçlarının en tepesinde yapay zekâ tarafından derlenmiş doğrudan bir özet kutusu görmesini sağlar. Bu durum klasik 1. sıra linklerinin tıklanma oranını düşürürken, yapay zekâ kutucuğunda referans kartı (kaynak bağlantı) olarak yer alan kliniklere en nitelikli ve hazır hastaları yönlendirmektedir.",
+    "sections": [
+      {
+        "heading": "Sıfır tıklama (Zero-Click) çağında sağlık turizmi",
+        "subheading": "Yapay zekâ kutucuğunun içinde yer almanın hayati önemi",
+        "paragraphs": [
+          "Hastalar 'How long does dental implant take in Turkey?' veya 'Rhinoplasty recovery time' gibi bilgilendirici sorular sorduğunda Google AI Overviews artık cevabı doğrudan arama sayfasında üretmektedir.",
+          "Eğer kliniğinizin içeriği bu cevabın kaynak referansı (citation link) olarak kutucuğa girerse, kullanıcı ameliyat için sonraki adıma geçtiğinde doğrudan sizin kliniğinizi tıklar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "AI Overviews kutucuğuna girmek için ne yapmak gerekir?",
+        "a": "Sayfanızda doğrudan soru başlığı altında ilk 2-3 cümlede net ve tıbben doğru tanımlar vermek ve güncel Schema işaretlemeleri kullanmak en kritik adımdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Search Central — Generative AI in Search",
+        "url": "https://developers.google.com/search/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "GEO ile SEO Arasındaki Fark",
+        "url": "/blog/geo-ile-seo-arasindaki-fark"
+      },
+      {
+        "title": "Schema Markup AI Görünürlüğünü Etkiler mi?",
+        "url": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi"
+      }
+    ]
+  },
+  {
+    "id": "K110",
+    "slug": "perplexityde-klinik-nasil-gorunur",
+    "url": "/blog/perplexityde-klinik-nasil-gorunur",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "Perplexity’de Klinik Nasıl Görünür? Akademik ve Medikal AI Arama",
+    "h1": "Perplexity’de Klinik Nasıl Görünür? Akademik ve Medikal AI Arama",
+    "seoTitle": "Perplexity'de Klinik Nasıl Görünür? | Overseas Marketing",
+    "metaDesc": "Perplexity AI yanıtlarında kliniğinizin kaynak gösterilmesi: Canlı web alıntıları (citations), E-E-A-T akademik sinyalleri ve Perplexity optimizasyonu.",
+    "primaryKeyword": "perplexityde klinik görünürlüğü",
+    "secondaryKeywords": [
+      "perplexity ai seo",
+      "perplexity klinik tavsiyesi",
+      "ai arama motorlarında kaynak gösterilme",
+      "sağlık turizmi perplexity"
+    ],
+    "searchIntent": "Teknik ve Bilgilendirici (Technical + GEO)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Yapay Zekâ Masası",
+    "reviewer": "AI Teknolojileri Direktörlüğü",
+    "quickAnswer": "Perplexity AI; her ürettiği iddianın ve önerinin yanına tıklanabilir dipnot kaynakları (Citations) koyan dünyanın en popüler araştırma motorudur. Perplexity'de görünmek için klinik web sitenizde bilimsel kaynaklar, net vaka verileri, şeffaf fiyat aralıkları ve taranabilir temiz HTML yapısı bulunmalıdır.",
+    "sections": [
+      {
+        "heading": "Perplexity neden araştırmacı hastaların favorisidir?",
+        "subheading": "Dipnotlu, şeffaf ve kanıta dayalı yapay zekâ motoru",
+        "paragraphs": [
+          "Özellikle ileri cerrahi, onkoloji, obezite ve karmaşık dental tedaviler araştıran yüksek eğitimli yabancı hastalar Perplexity'yi tercih eder. Çünkü Perplexity yanıt verirken kaynaklarını şeffafça gösterir.",
+          "Kliniğiniz bir tedavi konusunda en kapsamlı ve bilimsel makaleyi sunduğunda, Perplexity hastanın ekranında kliniğinizi 1 numaralı kaynak dipnotu olarak öne çıkarır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Perplexity hangi kaynaklara öncelik verir?",
+        "a": "Akademik atıflar, tıp dernekleri, resmî devlet portalları ve uzman hekim imzalı derinlemesine medikal içeriklere öncelik verir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Perplexity AI Official Documentation",
+        "url": "https://www.perplexity.ai/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "ChatGPT’de Klinik Nasıl Görünür?",
+        "url": "/blog/chatgptde-klinik-nasil-gorunur"
+      },
+      {
+        "title": "Gemini’de Klinik Nasıl Görünür?",
+        "url": "/blog/geminide-klinik-nasil-gorunur"
+      }
+    ]
+  },
+  {
+    "id": "K111",
+    "slug": "geminide-klinik-nasil-gorunur",
+    "url": "/blog/geminide-klinik-nasil-gorunur",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "Gemini’de Klinik Nasıl Görünür? Google Ekosisteminde AI Otoritesi",
+    "h1": "Gemini’de Klinik Nasıl Görünür? Google Ekosisteminde AI Otoritesi",
+    "seoTitle": "Google Gemini'de Klinik Nasıl Görünür? | Overseas Marketing",
+    "metaDesc": "Google Gemini yapay zekâsında klinik tavsiyesi alma rehberi: Google Haritalar, Google Business Profile, YouTube vaka videoları ve Gemini entegrasyonu.",
+    "primaryKeyword": "geminide klinik görünürlüğü",
+    "secondaryKeywords": [
+      "google gemini sağlık turizmi",
+      "gemini doktor önerileri",
+      "google ai klinik tavsiyesi",
+      "google business profile ve gemini"
+    ],
+    "searchIntent": "Bilgilendirici ve Taktiksel (Informational + Google AI)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "Google Gemini'de bir kliniğin görünmesi; Gemini'nin Google'ın devasa ekosistemiyle (Google Haritalar, YouTube, Google Scholar, Google Reviews) doğrudan entegre çalışması sayesinde mümkündür. Optimize edilmiş bir Google İşletme Profili, 4.8+ puanlı hasta yorumları ve YouTube'daki uzman hekim videoları Gemini'nin birincil öneri sinyalleridir.",
+    "sections": [
+      {
+        "heading": "Gemini'nin Google ekosistemi gücü",
+        "subheading": "Harita kayıtları ve YouTube videolarının doğrudan AI yanıtına girmesi",
+        "paragraphs": [
+          "Gemini diğer dil modellerinden farklı olarak Google Maps ve YouTube verilerini doğrudan yanıtlarının içine yerleştirir. Bir hasta 'Show me top dental clinics in Istanbul' dediğinde, Gemini doğrudan harita kartlarını ve YouTube vaka anlatımlarını listeler.",
+          "Bu nedenle Gemini optimizasyonu sadece web sitesi metniyle sınırlı değildir; kliniğin Google Harita profilinin eksiksiz olması ve YouTube üzerinde hekim videolarının bulunması zorunludur."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Google Haritalar puanı Gemini'yi etkiler mi?",
+        "a": "Doğrudan etkiler. Düşük puanlı veya doğrulanmamış işletmeler Gemini tarafından yabancı hastalara önerilmez."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Gemini AI Official Overview",
+        "url": "https://gemini.google.com/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "ChatGPT’de Klinik Nasıl Görünür?",
+        "url": "/blog/chatgptde-klinik-nasil-gorunur"
+      },
+      {
+        "title": "Klinik Entity SEO Nedir?",
+        "url": "/blog/klinik-entity-seo-nedir"
+      }
+    ]
+  },
+  {
+    "id": "K112",
+    "slug": "doktor-entity-seo-nedir",
+    "url": "/blog/doktor-entity-seo-nedir",
+    "category": "Entity SEO & Otorite",
+    "title": "Doktor Entity SEO Nedir? Hekimlerin Dijital Kimlik ve Bilgi Grafiği",
+    "h1": "Doktor Entity SEO Nedir? Hekimlerin Dijital Kimlik ve Bilgi Grafiği",
+    "seoTitle": "Doktor Entity SEO Nedir? | Overseas Marketing",
+    "metaDesc": "Doktor Entity SEO: Hekimin Google Bilgi Grafiğinde (Knowledge Graph) bağımsız bir tıbbi otorite (Physician Entity) olarak konumlandırılması ve şema mimarisi.",
+    "primaryKeyword": "doktor entity seo",
+    "secondaryKeywords": [
+      "hekim entity seo",
+      "doktor knowledge graph",
+      "physician schema markup",
+      "doktor dijital kimliği",
+      "google hekim otoritesi"
+    ],
+    "searchIntent": "Teknik ve Bilgilendirici (Technical + E-E-A-T)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Entity & Otorite Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "Doktor Entity SEO; bir hekimin Google ve yapay zekâ algoritmaları tarafından sıradan bir web sitesi yazarı değil, tescilli diploması, uzmanlık branşı, ameliyat tecrübesi ve akademik yayınları olan doğrulanmış bir 'Tıbbi Varlık' (Physician Entity) olarak tanınmasını sağlayan semantik optimizasyon sürecidir.",
+    "sections": [
+      {
+        "heading": "Entity (Varlık) mantığı nedir?",
+        "subheading": "Kelimeleri değil, gerçek dünyadaki nesneleri ve insanları anlamak",
+        "paragraphs": [
+          "Google artık sayfaları sadece anahtar kelimelere göre değil, Google Knowledge Graph (Bilgi Grafiği) içindeki ilişkili varlıklara (Entities) göre değerlendirir.",
+          "Bir cerrahın adı geçtiğinde algoritma 'Bu kişi kimdir?', 'Hangi tıp fakültesinden mezundur?', 'Hangi cerrahi derneklere üyedir?', 'Hangi hastanelerde ameliyat yapmaktadır?' sorularının yanıtlarını web üzerinden doğrulayabiliyorsa, o hekimin kliniği tüm aramalarda ve AI yanıtlarında en üst sıraya yerleşir."
+        ]
+      },
+      {
+        "heading": "Doktor Entity inşasının 5 temel adımı",
+        "subheading": "Hekimin dijital ayak izini bilgi grafiğine bağlamak",
+        "paragraphs": [
+          "1. <strong>Physician & Person Schema Markup:</strong> Sitede hekimin adını, mezuniyetini ve tescilli tıp unvanını yapılandırılmış veriyle işaretlemek.",
+          "2. <strong>Wikidata ve Vikiveri Kayıtları:</strong> Akademik kariyere sahip hekimlerin açık bilgi tabanlarına işlenmesi.",
+          "3. <strong>Google Knowledge Panel (Bilgi Paneli):</strong> Hekim adına özel resmî Google Bilgi Paneli oluşturulması ve doğrulanması.",
+          "4. <strong>Akademik Profiller:</strong> Google Scholar, ResearchGate ve PubMed bağlantılarının web sitesiyle ilişkilendirilmesi (sameAs etiketleri).",
+          "5. <strong>Mesleki Birlik Tescilleri:</strong> TTB, Türk Plastik Cerrahi Derneği, ISAPS gibi kurumlardaki resmi profil linkleri."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Doktor Entity SEO neden YMYL için hayati önem taşır?",
+        "a": "Google sağlık konularını 'Your Money or Your Life' (YMYL) kategorisinde tutar ve içeriğin arkasındaki yazarın gerçek bir tıp doktoru olduğunu doğrulamadan o siteyi sıralamaya sokmaz."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Search Central — E-E-A-T and Search Quality Rater Guidelines",
+        "url": "https://developers.google.com/search/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Klinik Entity SEO Nedir?",
+        "url": "/blog/klinik-entity-seo-nedir"
+      },
+      {
+        "title": "Schema Markup AI Görünürlüğünü Etkiler mi?",
+        "url": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi"
+      }
+    ]
+  },
+  {
+    "id": "K113",
+    "slug": "klinik-entity-seo-nedir",
+    "url": "/blog/klinik-entity-seo-nedir",
+    "category": "Entity SEO & Otorite",
+    "title": "Klinik Entity SEO Nedir? Sağlık Kuruluşları İçin Semantik Otorite",
+    "h1": "Klinik Entity SEO Nedir? Sağlık Kuruluşları İçin Semantik Otorite",
+    "seoTitle": "Klinik Entity SEO Nedir? | Overseas Marketing",
+    "metaDesc": "Klinik Entity SEO: Sağlık tesislerinin Google Bilgi Grafiğinde doğrulanması, MedicalBusiness şeması, ruhsat eşleşmeleri ve yerel otorite inşası.",
+    "primaryKeyword": "klinik entity seo",
+    "secondaryKeywords": [
+      "sağlık tesisi entity seo",
+      "medicalbusiness schema",
+      "hastane bilgi grafiği",
+      "sağlık turizmi semantik seo"
+    ],
+    "searchIntent": "Teknik ve Stratejik (Technical + Entity)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Entity & Otorite Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "Klinik Entity SEO; bir polikliniğin, tıp merkezinin veya hastanenin arama motorları ve yapay zekâ modelleri nezdinde fiziki adresi, Sağlık Bakanlığı ruhsat numarası, uzman hekim kadrosu ve sunduğu tıbbi branşlarla eksiksiz tanımlanmış kurumsal bir 'Sağlık Varlığı' (MedicalOrganization) haline getirilmesidir.",
+    "sections": [
+      {
+        "heading": "Kurumsal klinik varlığı nasıl tescil edilir?",
+        "subheading": "MedicalBusiness ve MedicalOrganization şemalarının rolü",
+        "paragraphs": [
+          "Arama motorları bir kliniğin gerçek bir hastane mi yoksa yalnızca aracı bir web sitesi mi olduğunu anlamak için kurumsal varlık sinyallerini tarar.",
+          "Klinik Entity SEO'da web sitesine MedicalBusiness şeması eklenerek kliniğin ruhsat no'su, HealthTürkiye akreditasyonu, fiziki GPS koordinatları, çalışma saatleri, acil servis durumu ve hekim kadrosu semantik olarak birbirine bağlanır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Klinik Entity SEO yerel harita sıralamalarını etkiler mi?",
+        "a": "Evet, güçlü bir Entity yapısı Google Maps ve yerel 3'lü paket (Local Pack) sonuçlarında kliniği doğrudan öne taşır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Schema.org — MedicalBusiness Schema Specifications",
+        "url": "https://schema.org/MedicalBusiness"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Doktor Entity SEO Nedir?",
+        "url": "/blog/doktor-entity-seo-nedir"
+      },
+      {
+        "title": "Schema Markup AI Görünürlüğünü Etkiler mi?",
+        "url": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi"
+      }
+    ]
+  },
+  {
+    "id": "K114",
+    "slug": "schema-markup-ai-gorunurlugunu-etkiler-mi",
+    "url": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi",
+    "category": "Teknik SEO & Veri Yapısı",
+    "title": "Schema Markup AI Görünürlüğünü Etkiler mi? Yapılandırılmış Veri Rehberi",
+    "h1": "Schema Markup AI Görünürlüğünü Etkiler mi? Yapılandırılmış Veri Rehberi",
+    "seoTitle": "Schema Markup AI Görünürlüğünü Etkiler mi? | Overseas Marketing",
+    "metaDesc": "Yapılandırılmış veri (Schema Markup) ChatGPT, Gemini ve Google AI sistemlerinin kliniğinizi anlamasını nasıl sağlar? JSON-LD şemaları ve GEO etkisi.",
+    "primaryKeyword": "schema markup ai görünürlüğü",
+    "secondaryKeywords": [
+      "yapılandırılmış veri yapay zeka",
+      "sağlık turizmi schema markup",
+      "json-ld medikal seo",
+      "ai arama için şema kodları"
+    ],
+    "searchIntent": "Teknik ve Bilgilendirici (Technical + Data)",
+    "funnel": "TOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas Teknik SEO Masası",
+    "reviewer": "Medikal SEO Kurulu",
+    "quickAnswer": "Evet, doğrudan ve güçlü bir şekilde etkiler. Yapay zekâ dil modelleri web sayfalarını okurken düz metinlerin yanında JSON-LD formatındaki Schema yapılandırılmış verilerini doğrudan birincil bilgi kaynağı olarak ayrıştırır. Doğru kurulmuş MedicalProcedure, FAQPage ve Physician şemaları AI'ın kliniğinizi hatasız anlamasını sağlar.",
+    "sections": [
+      {
+        "heading": "Yapay zekâ JSON-LD verilerini nasıl okur?",
+        "subheading": "Yoruma yer bırakmayan kesin kodlanmış bilgi",
+        "paragraphs": [
+          "Doğal dil metinleri bazen yapay zekâ için belirsizlik içerebilir. Ancak JSON-LD şemasında:",
+          "\"@type\": \"MedicalProcedure\", \"name\": \"All-on-4 Dental Implants\", \"recoveryTime\": \"3 days\", \"cost\": {\"currency\": \"GBP\", \"value\": \"4500\"}",
+          "şeklinde kodlanmış kesin veri yapısı bulunduğunda, yapay zekâ motoru bu bilgiyi hiç şüphe duymadan hafızasına alır ve kullanıcıya doğrudan aktarır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizminde en kritik şema türleri hangileridir?",
+        "a": "MedicalBusiness, Physician, MedicalProcedure, FAQPage, BreadcrumbList ve Review / AggregateRating şemalarıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Search Central — Structured Data Guidelines",
+        "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Doktor Entity SEO Nedir?",
+        "url": "/blog/doktor-entity-seo-nedir"
+      },
+      {
+        "title": "Klinik Entity SEO Nedir?",
+        "url": "/blog/klinik-entity-seo-nedir"
+      }
+    ]
+  },
+  {
+    "id": "K115",
+    "slug": "ai-sistemleri-klinik-bilgilerini-nereden-alir",
+    "url": "/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir",
+    "category": "GEO & Yapay Zekâ Görünürlüğü",
+    "title": "AI Sistemleri Klinik Bilgilerini Nereden Alır? Yapay Zekâ Veri Kaynakları",
+    "h1": "AI Sistemleri Klinik Bilgilerini Nereden Alır? Yapay Zekâ Veri Kaynakları",
+    "seoTitle": "AI Sistemleri Klinik Bilgilerini Nereden Alır? | Overseas Marketing",
+    "metaDesc": "ChatGPT, Gemini ve Perplexity klinik verilerini hangi kaynaklardan çekiyor? Resmî kayıtlar, hasta yorum platformları, akademik dizinler ve dijital ayak izi.",
+    "primaryKeyword": "ai sistemleri klinik veri kaynakları",
+    "secondaryKeywords": [
+      "chatgpt veri tabanı sağlık",
+      "yapay zeka bilgiyi nereden alır",
+      "ai arama kaynakları klinik",
+      "sağlık turizmi dijital ayak izi"
+    ],
+    "searchIntent": "Bilgilendirici ve Araştırma Odaklı (Informational + Tech)",
+    "funnel": "TOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas GEO & Veri Masası",
+    "reviewer": "AI Teknolojileri Direktörlüğü",
+    "quickAnswer": "Yapay zekâ sistemleri klinik bilgilerini tek bir yerden değil; Common Crawl gibi küresel web arşivlerinden, Google ve Bing canlı arama dizinlerinden, T.C. Sağlık Bakanlığı ve HealthTürkiye gibi resmî portallardan, Trustpilot/Google Maps hasta yorumlarından, akademik yayın veri tabanlarından ve Wikipedia/Wikidata'dan çeker.",
+    "sections": [
+      {
+        "heading": "Yapay zekânın taradığı 5 temel veri katmanı",
+        "subheading": "Kliniğinizin dijital izinin bulunduğu kaynak havuzları",
+        "paragraphs": [
+          "1. <strong>Resmî Kamu ve Akreditasyon Kayıtları:</strong> Sağlık Bakanlığı yetki belgeleri, JCI listeleri, USHAŞ ve HealthTürkiye dizinleri.",
+          "2. <strong>Arama Motoru Dizinleri (Canlı Tarama):</strong> Bing ve Google dizinlerinde üst sıralarda yer alan klinik sayfaları.",
+          "3. <strong>Kullanıcı İnceleme ve Forum Ağları:</strong> Trustpilot, Reddit, Quora ve Google Harita yorumları.",
+          "4. <strong>Akademik ve Bilimsel Kütüphaneler:</strong> PubMed, ResearchGate, tıp dergileri.",
+          "5. <strong>Haber ve Dijital PR Siteleri:</strong> Uluslararası medyada yer alan röportajlar ve sektörel haberler."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Klinik web sitemiz tek başına AI'da görünmek için yeterli midir?",
+        "a": "Hayır. Yapay zekâ üçüncü taraf tarafsız kaynaklardan (bağımsız incelemeler, haberler, akreditasyonlar) çapraz doğrulama yapmadan bir kliniği kesin öneri olarak sunmaz."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Common Crawl Open Repository",
+        "url": "https://commoncrawl.org/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "ChatGPT Klinik Önerilerini Nasıl Oluşturur?",
+        "url": "/blog/chatgpt-klinik-onerilerini-nasil-olusturur"
+      },
+      {
+        "title": "Sağlık Markaları İçin Brand Mention Stratejisi",
+        "url": "/blog/saglik-markalari-icin-brand-mention-stratejisi"
+      }
+    ]
+  },
+  {
+    "id": "K116",
+    "slug": "saglik-markalari-icin-brand-mention-stratejisi",
+    "url": "/blog/saglik-markalari-icin-brand-mention-stratejisi",
+    "category": "Dijital PR & İtibar",
+    "title": "Sağlık Markaları İçin Brand Mention Stratejisi: Bağlantısız Otorite",
+    "h1": "Sağlık Markaları İçin Brand Mention Stratejisi: Bağlantısız Otorite",
+    "seoTitle": "Sağlık Markaları Brand Mention Stratejisi | Overseas Marketing",
+    "metaDesc": "Bağlantısız marka anılmaları (Unlinked Brand Mentions) SEO ve yapay zekâda nasıl güven yaratır? Dijital PR, forumlar ve uluslararası medya yönetimi.",
+    "primaryKeyword": "brand mention stratejisi",
+    "secondaryKeywords": [
+      "sağlık markası dijital pr",
+      "bağlantısız marka anılması",
+      "klinik itibar yönetimi",
+      "yapay zeka marka sinyalleri"
+    ],
+    "searchIntent": "Stratejik ve Bilgilendirici (PR + GEO Strategy)",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "5 Ekim 2026",
+    "author": "Overseas PR & İtibar Masası",
+    "reviewer": "Medikal Büyüme Direktörlüğü",
+    "quickAnswer": "Brand Mention (Marka Anılması) stratejisi; kliniğinizin veya hekiminizin adının uluslararası haber sitelerinde, sağlık forumlarında, Reddit topluluklarında ve podcast'lerde doğal olarak anılmasıdır. Geleneksel backlink olmasa dahi (Unlinked Brand Mention), yapay zekâ ve Google bu anılmaları en güçlü otorite ve popülerlik sinyali olarak kabul eder.",
+    "sections": [
+      {
+        "heading": "Neden klasik backlink'lerin ötesine geçmeliyiz?",
+        "subheading": "Yapay zekâ algoritmalarının duygu ve bağlam analizi",
+        "paragraphs": [
+          "Eskiden sadece sitenize verilen 'link' puan kazandırıyordu. Artık büyük dil modelleri ve Google algoritmaları metnin tamamını okuyarak duygu analizi (Sentiment Analysis) yapmaktadır.",
+          "Örneğin saygın bir İngiliz sağlık haberinde 'Dr. Ahmet'in kliniği İstanbul'da uluslararası standartlarda hizmet veriyor' cümlesinin geçmesi link olmasa bile kliniğinize muazzam bir Entity güveni kazandırır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Reddit ve forumlardaki marka anılmaları yapay zekâyı etkiler mi?",
+        "a": "Evet, Reddit ve Quora yapay zekâ modellerinin en sık başvurduğu halk deneyimi veri tabanlarıdır. Buralardaki organik ve pozitif hasta paylaşımları AI görünürlüğünü doğrudan yukarı taşır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/tr/homepage"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "AI Sistemleri Klinik Bilgilerini Nereden Alır?",
+        "url": "/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO) Hizmeti",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      }
+    ]
   }
 ];
