@@ -21,6 +21,54 @@ export const NewArticlesSlider: React.FC = () => {
 
   const newArticles = [
     {
+      id: 'yurt-disindan-hasta-bulma',
+      title: isEn
+        ? "How to Find International Patients: Global Acquisition Guide"
+        : "Yurt Dışından Hasta Nasıl Bulunur?",
+      url: "/blog/yurt-disindan-hasta-nasil-bulunur",
+      badge: isEn ? "Master Blueprint • 2026" : "Yeni Rehber • 9 Ekim 2026",
+      badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+      icon: <Globe2 className="w-5 h-5 text-[#446CB5]" />,
+      desc: isEn
+        ? "Country selection, Google/Meta ads, SEO, GEO, multilingual pages, and CRM patient follow-up unified in one system."
+        : "Ülke seçimi, reklam, SEO, GEO ve CRM'yi aynı hasta kazanım planında değerlendirin.",
+      readTime: "16 dk okuma",
+      date: "9 Ekim 2026",
+      category: isEn ? "Patient Acquisition" : "Hasta Kazanımı"
+    },
+    {
+      id: 'hasta-kazanma-maliyeti',
+      title: isEn
+        ? "How to Calculate Patient Acquisition Cost: CPL vs CAC Guide"
+        : "Hasta Kazanma Maliyeti Nasıl Hesaplanır?",
+      url: "/blog/saglik-turizminde-hasta-kazanma-maliyeti",
+      badge: isEn ? "Financial Framework • 2026" : "Yeni Rehber • 9 Ekim 2026",
+      badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+      icon: <FileCheck2 className="w-5 h-5 text-emerald-600" />,
+      desc: isEn
+        ? "Calculate healthcare tourism patient acquisition with CPL, CPQL, and full CAC breakdown across real-world cohort funnels."
+        : "Başvuru maliyeti, medya bazlı hasta maliyeti ve tam CAC arasındaki farkı örneklerle görün.",
+      readTime: "15 dk okuma",
+      date: "9 Ekim 2026",
+      category: isEn ? "Cost & Economics" : "Maliyet & Finans"
+    },
+    {
+      id: 'lead-kalitesi',
+      title: isEn
+        ? "How to Improve Lead Quality in Healthcare Tourism: CRM Guide"
+        : "Sağlık Turizminde Lead Kalitesi",
+      url: "/blog/saglik-turizminde-lead-kalitesi",
+      badge: isEn ? "Operations Blueprint • 2026" : "Yeni Rehber • 9 Ekim 2026",
+      badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+      icon: <Bot className="w-5 h-5 text-indigo-600" />,
+      desc: isEn
+        ? "Elevate healthcare lead qualification through operational scoring, response time SLAs, and lost-lead root-cause analysis."
+        : "Başvuruları, iletişimi, sorumlu atamasını ve kayıp nedenlerini birlikte yönetin.",
+      readTime: "16 dk okuma",
+      date: "9 Ekim 2026",
+      category: isEn ? "CRM & Operations" : "CRM & İletişim"
+    },
+    {
       id: 'doc-ban-2026',
       title: isEn
         ? "Doctor Advertising Ban 2026: What Healthcare Professionals Can Do"

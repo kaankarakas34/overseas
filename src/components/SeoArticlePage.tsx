@@ -49,28 +49,31 @@ export const SeoArticlePage: React.FC<SeoArticlePageProps> = ({ article, onOpenC
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${canonicalUrl}#article`,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': canonicalUrl
     },
     headline: article.h1,
     description: article.metaDesc,
+    inLanguage: 'tr-TR',
     author: {
       '@type': 'Organization',
-      name: 'Overseas Marketing Medikal SEO Ekibi',
+      name: article.author || 'Overseas Marketing Editör Ekibi',
       url: 'https://www.overseas.marketing'
     },
     publisher: {
       '@type': 'Organization',
       name: 'Overseas Marketing',
+      url: 'https://www.overseas.marketing',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.overseas.marketing/logo2/siyah.png'
       }
     },
-    datePublished: '2026-01-15',
-    dateModified: '2026-09-16',
-    keywords: [article.primaryKeyword, ...article.secondaryKeywords].join(', ')
+    datePublished: article.publishedDate ? '2026-10-09' : '2026-01-15',
+    dateModified: '2026-10-09',
+    keywords: [article.primaryKeyword, ...(article.secondaryKeywords || [])].join(', ')
   };
 
   const faqSchema = {

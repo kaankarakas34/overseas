@@ -479,16 +479,19 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-7 lg:order-2 space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  CPPA & Birim Maliyet
+                  Bütünleşik Maliyet & CAC Ölçümü
                 </div>
                 <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  Başvuru kalitesi ve hasta başı maliyet
+                  Mesaj maliyetinden gerçekleşen sonuca kadar ölçüm
                 </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Çoğu ajans kliniğe "1000 lead getirdik" diyerek övünür ancak bu başvuruların 900'ü telefonunu açmaz veya bütçesi yetersizdir. Overseas Marketing olarak "lead sayısını şişirmek" yerine <strong>CPPA (Cost Per Patient Acquired - Kazanılan Hasta Başı Maliyet)</strong> metriğini hedefleriz.
+                  Kampanyaları sadece tıklama veya başvuru sayısıyla değerlendirmiyoruz. Kurumun CRM kayıtları düzenli tutulduğunda iletişim kurulabilen başvuru, operasyonel nitelik, görüşme ve gerçekleşen hizmet aşamalarını birlikte analiz ediyoruz. Medya başvuru maliyetini, medya bazlı hasta maliyetinden ve toplam edinim maliyetinden ayrı raporluyoruz.
                 </p>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Başvuru kalitesi tek bir reklam ayarıyla maksimize edilemez; hedef pazarın seçimi, açılış sayfasının şeffaflığı, hekimin güven seviyesi, çağrı karşılama hızı ve tedavi teklifinin netliği bir bütün olarak çalışmalıdır. Kampanyalarımızı yalnızca tıklamaya göre değil, kliniğe gerçekten gelen hastaya göre optimize ederiz.
+                  Nitelikli başvuru sayısı, maliyeti ve görüşmeye ilerleme oranı birlikte optimize edilir. Başvuru kalitesi tek bir reklam ayarıyla çözülemez; hedef pazarın seçimi, açılış sayfasının şeffaflığı, çağrı karşılama hızı ve tedavi teklifinin netliği bir bütün olarak çalışmalıdır.
+                </p>
+                <p className="pt-2 text-xs sm:text-sm font-medium text-[#446CB5]">
+                  Bütçe kararında hangi maliyetin kullanılacağını <a href="/blog/saglik-turizminde-hasta-kazanma-maliyeti" className="underline font-bold hover:text-[#35558F]">CPL ve CAC rehberinde</a> açıklıyoruz.
                 </p>
               </div>
               <div className="lg:col-span-5 lg:order-1 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
@@ -995,11 +998,23 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   Generative Engine Optimization
                 </div>
                 <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  GEO Nedir? Yapay Zeka Aramalarında Görünür Olun
+                  Sağlık Turizmi GEO: Yapay Zekâ Aramalarında Doğru Klinik Bilgisi
                 </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Arama dünyası değişiyor. İnsanlar artık yalnızca Google’a birkaç kelime yazıp çıkan sonuçları incelemiyor. ChatGPT’ye hangi kliniği tercih etmesi gerektiğini soruyor, Gemini’den şehirdeki en iyi işletmeleri karşılaştırmasını istiyor, Google AI Overviews üzerinden araştırmasını yapıyor ve karar vermeden önce yapay zekadan fikir alıyor. GEO, markanızın yapay zeka cevaplarında önerilen ve referans gösterilen kaynak olmasını sağlar.
+                  Klinik ve hekim bilgilerinizin yapay zekâ destekli araştırmalarda doğru anlaşılması için teknik erişilebilirlik, açık kurum kimliği, kaynaklı içerik ve tutarlı dijital bilgiler üzerinde çalışıyoruz. Görünürlüğü örnek sorgular, kaynak bağlantıları ve erişilebilen yönlendirme verileriyle izliyoruz.
                 </p>
+                <div className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] space-y-2 text-xs sm:text-sm text-[#595F69]">
+                  <strong className="text-[#16202E] block font-semibold">GEO çalışmasında neleri düzenliyoruz?</strong>
+                  <p>
+                    Kurum adı, konum, hekim profilleri ve hizmet kapsamını tutarlı bir bilgi yapısına dönüştürüyoruz. Mevcut içeriklerin erişilebilirliğini, soruları cevaplama kalitesini ve ilgili sayfalar arasındaki bağlantıları geliştiriyoruz. Yapılandırılmış veriyi sayfadaki gerçek bilgilerle eşleştiriyor, farklı araştırma sorularındaki görünürlüğü düzenli örneklerle değerlendiriyoruz.
+                  </p>
+                  <p className="pt-1 italic">
+                    Marka anılması, kaynak olarak gösterilme, siteye ziyaret ve iletişim talebi ayrı göstergelerdir. Tek bir testte görünmek kalıcı görünürlük anlamına gelmez. Yapay zekâ sistemlerinin cevapları ve kaynak seçimi değişebilir; öneri veya sıralama garantisi verilmez.
+                  </p>
+                  <p className="pt-2 font-medium text-[#446CB5]">
+                    GEO'nun reklam, web sitesi ve CRM ile ilişkisini <a href="/blog/yurt-disindan-hasta-nasil-bulunur" className="underline font-bold hover:text-[#35558F]">uluslararası hasta kazanım rehberinde</a> inceleyebilirsiniz.
+                  </p>
+                </div>
               </div>
               <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
                 <img 
@@ -1116,14 +1131,22 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-6 space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#EEF3FB] text-[#446CB5] text-xs font-bold uppercase">
-                  Özel Sağlık Turizmi Teknolojisi
+                  Başvuru Takibi ve Ekip Koordinasyonunu Düzenleyen CRM
                 </div>
                 <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
-                  Klasik CRM Sistemleri Sağlık Turizminde Neden Yeterli Değil?
+                  Başvurunun hangi aşamada beklediğini görün
                 </h2>
                 <p className="text-sm sm:text-base text-[#595F69] leading-relaxed">
-                  Piyasadaki hazır CRM yazılımları kullanıcı başına aylık ücretlerle çalışır. Ekibiniz büyüdükçe maliyetleriniz artar; üstelik WhatsApp entegrasyonu, otomasyon, ses kaydı ve yapay zeka uygulamaları için ayrı sistemlere abonelik ödemeniz gerekir. Overseas Marketing olarak operasyonunuza göre şekillenen, kişi başı lisans sınırına takılmayan özelleştirilebilir sağlık turizmi CRM altyapısı sunuyoruz.
+                  Form, WhatsApp ve çağrı üzerinden gelen başvuruları tekilleştirilmiş kayıtlarla takip edin. Her kayıt için sorumlu kişi, iletişim dili, aşama ve bir sonraki işlem zamanı tanımlayın. Otomatik karşılama ile nitelikli insan yanıtını ayrı ölçün; kayıp nedenlerini reklam ve koordinasyon ekiplerinin birlikte kullanabileceği raporlara dönüştürün.
                 </p>
+                <div className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] space-y-2 text-xs sm:text-sm text-[#595F69]">
+                  <p>
+                    Piyasadaki hazır CRM yazılımları kullanıcı başına aylık ücretlerle çalışır ve sağlık turizmine özel aşamaları içermez. Overseas Marketing olarak operasyonunuza göre şekillenen, kişi başı lisans sınırına takılmayan özelleştirilebilir sağlık turizmi CRM altyapısı sunuyoruz.
+                  </p>
+                  <p className="pt-2 font-medium text-[#446CB5]">
+                    Başvuruları operasyonel kriterlerle değerlendirmek için <a href="/blog/saglik-turizminde-lead-kalitesi" className="underline font-bold hover:text-[#35558F]">lead kalitesi rehberini</a>, edinim giderlerini sonuçlarla ilişkilendirmek için <a href="/blog/saglik-turizminde-hasta-kazanma-maliyeti" className="underline font-bold hover:text-[#35558F]">hasta kazanma maliyeti rehberini</a> inceleyin.
+                  </p>
+                </div>
               </div>
               <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-[#DDE2E8]">
                 <img 

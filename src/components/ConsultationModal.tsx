@@ -80,6 +80,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
     } finally {
       setLoading(false);
       setSubmitted(true);
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'generate_lead', {
+          event_category: 'ConsultationModal',
+          service_group: 'Healthcare Strategy Review',
+          content_id: 'om-b2b-modal'
+        });
+      }
       confetti({
         particleCount: 90,
         spread: 60,

@@ -21,6 +21,14 @@ export const WhatsAppFloatingButton: React.FC = () => {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => {
+          if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('event', 'whatsapp_click', {
+              event_category: 'Contact',
+              cta_location: 'floating_button'
+            });
+          }
+        }}
         aria-label={isEn ? "WhatsApp Support" : "WhatsApp İletişim"}
         className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center justify-center shadow-2xl shadow-[#25D366]/50 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer"
       >
