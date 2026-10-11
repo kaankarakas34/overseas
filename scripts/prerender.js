@@ -1,3 +1,4 @@
+import { serviceDirectoryRoutes } from './serviceDirectoryRoutes.mjs';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -28,6 +29,7 @@ const NOINDEX_URLS = new Set([
 
 // 27 Core Route definitions with rich static SEO content for non-JS bots (AI & Search Engines)
 const ROUTES = [
+  ...serviceDirectoryRoutes,
   // 1. Ana Sayfa
   {
     path: '/',
@@ -1169,6 +1171,7 @@ const navFooterHtml = `
       <div>
         <h4 style="font-size: 15px; margin-bottom: 12px; color: #60A5FA;">Büyüme Hizmetleri</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+          <li><a href="/hizmetler" style="color: #94A3B8; text-decoration: none;">Tüm hizmet aileleri</a></li>
           <li><a href="/hizmetler/performans-pazarlama" style="color: #94A3B8; text-decoration: none;">Performans Pazarlama</a></li>
           <li><a href="/hizmetler/uluslararasi-seo-hizmeti" style="color: #94A3B8; text-decoration: none;">Uluslararası SEO</a></li>
           <li><a href="/hizmetler/geo-generative-engine-optimization" style="color: #94A3B8; text-decoration: none;">GEO Optimizasyonu</a></li>

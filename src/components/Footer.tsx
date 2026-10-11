@@ -83,6 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               {t.footer.colServices}
             </div>
             <ul className="space-y-1.5 text-xs">
+              <li><Link to={isEn ? '/hizmetler?lang=en' : '/hizmetler'} className="text-[#60A5FA] font-semibold hover:text-white py-0.5 inline-block">{isEn ? 'All service families' : 'Tüm hizmet aileleri'}</Link></li>
               {currentServices.map((s) => (
                 <li key={s.id}>
                   <Link

@@ -38,6 +38,8 @@ const SeoArticlePage = lazy(() => import('./components/SeoArticlePage').then(m =
 const NotFoundPage = lazy(() => import('./components/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 const B2BOutreachLandingPage = lazy(() => import('./components/B2BOutreachLandingPage').then(m => ({ default: m.B2BOutreachLandingPage })));
 
+const ServicesDirectoryPage = lazy(() => import('./components/ServicesDirectoryPage').then(m => ({ default: m.ServicesDirectoryPage })));
+
 // New Institutional, Authority and Conversion Pages
 const AboutPage = lazy(() => import('./components/AboutPage').then(m => ({ default: m.AboutPage })));
 const TeamPage = lazy(() => import('./components/TeamPage').then(m => ({ default: m.TeamPage })));
@@ -363,6 +365,9 @@ export const App: React.FC = () => {
                 />
               }
             />
+            <Route path="/hizmetler" element={<ServicesDirectoryPage onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/hizmetler/crm-otomasyon" element={<ServicesDirectoryPage familyId="technology" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
+            <Route path="/hizmetler/icerik-marka-yonetimi" element={<ServicesDirectoryPage familyId="content" onOpenConsultation={() => setIsConsultationModalOpen(true)} />} />
             <Route
               path="/hizmetler/:serviceId"
               element={

@@ -1,0 +1,256 @@
+[
+  {
+    "id": "performance",
+    "url": "/hizmetler/performans-pazarlama",
+    "name": {
+      "tr": "Performans Pazarlama",
+      "en": "Performance Marketing"
+    },
+    "description": {
+      "tr": "Hedef ülke ve branşa göre Google Ads ile Meta kampanyalarını, bütçe planını ve nitelikli başvuru ölçümünü birlikte ele alın.",
+      "en": "Coordinate Google Ads and Meta campaigns, budgets and qualified enquiry measurement by country and specialty."
+    },
+    "need": {
+      "tr": "Reklam trafiği geliyor ama başvuruların kalitesi veya maliyeti net değilse.",
+      "en": "When paid traffic arrives but enquiry quality or acquisition cost is unclear."
+    },
+    "links": [
+      {
+        "url": "/hizmetler/saglik-turizmi-google-ads",
+        "label": {
+          "tr": "Google Ads",
+          "en": "Google Ads"
+        }
+      },
+      {
+        "url": "/hizmetler/saglik-turizmi-meta-reklamlari",
+        "label": {
+          "tr": "Meta Reklam Yönetimi",
+          "en": "Meta Advertising"
+        }
+      }
+    ]
+  },
+  {
+    "id": "seo",
+    "url": "/hizmetler/uluslararasi-seo-hizmeti",
+    "name": {
+      "tr": "Uluslararası SEO",
+      "en": "International SEO"
+    },
+    "description": {
+      "tr": "Teknik erişim, çok dilli içerik ve ülke bazlı arama niyetini tek organik büyüme planında birleştirin.",
+      "en": "Bring technical access, multilingual content and country-specific search intent into one organic growth plan."
+    },
+    "need": {
+      "tr": "Hedef pazarda ilgili aramalardan yeterli görünürlük ve başvuru alamıyorsanız.",
+      "en": "When relevant searches in your target market do not bring enough visibility or enquiries."
+    },
+    "links": []
+  },
+  {
+    "id": "geo",
+    "url": "/hizmetler/geo-generative-engine-optimization",
+    "name": {
+      "tr": "GEO & AI Görünürlüğü",
+      "en": "GEO & AI Visibility"
+    },
+    "description": {
+      "tr": "Markanızın AI yanıtlarında nasıl tanımlandığını inceleyin; kaynak tutarlılığı ve alıntılanabilir içerik üzerinde çalışın.",
+      "en": "Review how AI answers describe your brand and improve source consistency and content that can be cited."
+    },
+    "need": {
+      "tr": "AI aramalarında markanızın temsilini ve kaynak gösterimini ölçmek istiyorsanız.",
+      "en": "When you need to measure how AI search represents and cites your brand."
+    },
+    "links": []
+  },
+  {
+    "id": "web",
+    "url": "/hizmetler/web-sitesi-landing-page",
+    "name": {
+      "tr": "Web & Landing Page",
+      "en": "Web & Landing Pages"
+    },
+    "description": {
+      "tr": "Kurumsal web sitesi ile kampanya açılış sayfalarını; dil, mobil deneyim, form ve CRM bağlantısıyla birlikte planlayın.",
+      "en": "Plan corporate websites and campaign landing pages alongside languages, mobile usability, forms and CRM integration."
+    },
+    "need": {
+      "tr": "Ziyaretçi geliyor fakat doğru bilgiye veya iletişim adımına ulaşamıyorsa.",
+      "en": "When visitors arrive but struggle to find the right information or contact step."
+    },
+    "links": [
+      {
+        "url": "/hizmetler/saglik-turizmi-landing-page",
+        "label": {
+          "tr": "Sağlık Turizmi Landing Page",
+          "en": "Medical Tourism Landing Page"
+        }
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "url": "/hizmetler/crm-otomasyon",
+    "name": {
+      "tr": "CRM & Otomasyon",
+      "en": "CRM & Automation"
+    },
+    "description": {
+      "tr": "Başvuru kaynağı, ekip ataması, takip ve otomasyonu tek iletişim akışında birleştirin.",
+      "en": "Connect enquiry sources, team assignment, follow-up and automation in one communication workflow."
+    },
+    "need": {
+      "tr": "WhatsApp, form ve reklam başvuruları farklı yerlerde kalıyor; takip ve raporlama aksıyorsa.",
+      "en": "When WhatsApp, form and ad enquiries are scattered and follow-up or reporting breaks down."
+    },
+    "links": [
+      {
+        "url": "/hizmetler/saglik-turizmi-crm-yazilimi",
+        "label": {
+          "tr": "Sağlık Turizmi CRM Yazılımı",
+          "en": "Medical Tourism CRM"
+        }
+      },
+      {
+        "url": "/hizmetler/yapay-zeka-otomasyon",
+        "label": {
+          "tr": "Yapay Zekâ ve Otomasyon",
+          "en": "AI & Automation"
+        }
+      }
+    ],
+    "hub": {
+      "intro": {
+        "tr": "CRM & Otomasyon; hangi başvurunun nereden geldiğini, kime atandığını ve hangi adımda beklediğini görünür kılan süreç mimarisidir. CRM kurulumu kayıt ve takip katmanını, otomasyon ise bu kayıtlar üzerinde çalışan kontrollü iş akışlarını kapsar.",
+        "en": "CRM & Automation is a workflow architecture that shows where enquiries came from, who owns them and which step is pending. CRM provides records and follow-up; automation runs controlled workflows over those records."
+      },
+      "steps": [
+        {
+          "tr": "Mevcut akışı çıkarın: form, WhatsApp ve reklam kaynakları; dil ve ekip sorumluluklarını eşleştirin.",
+          "en": "Map forms, WhatsApp and ad sources to languages and team ownership."
+        },
+        {
+          "tr": "Kayıt modelini kurun: başvuru aşamaları, kaynak alanları, takip görevleri ve kayıp nedenlerini tanımlayın.",
+          "en": "Define enquiry stages, source fields, follow-up tasks and loss reasons."
+        },
+        {
+          "tr": "Otomasyonu sınırlandırın: tekrar eden işlemler, insan devri ve istisna koşullarını belirleyin.",
+          "en": "Set boundaries for repeatable actions, human handoff and exceptions."
+        },
+        {
+          "tr": "Örnek akışı doğrulayın: mükerrer kayıt, atama, takip ve rapor tutarlılığını birlikte kontrol edin.",
+          "en": "Validate duplicate handling, assignment, follow-up and reporting in a sample workflow."
+        }
+      ],
+      "outputs": [
+        {
+          "tr": "Kaynak ve dil bazlı başvuru akışı haritası",
+          "en": "Enquiry workflow map by source and language"
+        },
+        {
+          "tr": "CRM alanları, aşamalar ve ekip sorumlulukları",
+          "en": "CRM fields, stages and team responsibilities"
+        },
+        {
+          "tr": "İnsan devri içeren otomasyon senaryoları",
+          "en": "Automation scenarios with human handoff"
+        },
+        {
+          "tr": "Nitelikli başvuru ve takip raporu ölçüm planı",
+          "en": "Measurement plan for qualified enquiries and follow-up"
+        }
+      ],
+      "boundary": {
+        "tr": "Yeni bir CRM gerekip gerekmediği mevcut sistem incelenerek belirlenir. AI Call Agent ve mesaj otomasyonlarında cevap sınırları ile insan devri tanımlanır; tıbbi değerlendirme veya sonuç garantisi verilmez. Entegrasyon kapsamı kullanılan araçlar ve erişim izinlerine göre netleştirilir.",
+        "en": "Review the current system before choosing a new CRM. Define answer boundaries and human handoff for AI agents and messaging automation; they do not provide medical assessments or guaranteed outcomes. Integration scope depends on tools and access permissions."
+      }
+    }
+  },
+  {
+    "id": "content",
+    "url": "/hizmetler/icerik-marka-yonetimi",
+    "name": {
+      "tr": "İçerik & Marka",
+      "en": "Content & Brand"
+    },
+    "description": {
+      "tr": "Marka mesajını, sosyal medya yayınlarını, prodüksiyonu ve hekim uzmanlık iletişimini ortak bir editoryal planla yönetin.",
+      "en": "Coordinate brand messaging, social publishing, production and clinician expertise through one editorial plan."
+    },
+    "need": {
+      "tr": "Farklı kanallardaki anlatım dağınıksa veya düzenli, doğrulanabilir içerik üretimi gerekiyorsa.",
+      "en": "When messaging is fragmented or you need consistent content supported by verifiable information."
+    },
+    "links": [
+      {
+        "url": "/hizmetler/sosyal-medya-yonetimi",
+        "label": {
+          "tr": "Sosyal Medya Yönetimi",
+          "en": "Social Media Management"
+        }
+      },
+      {
+        "url": "/hizmetler/icerik-produksiyon",
+        "label": {
+          "tr": "İçerik ve Prodüksiyon",
+          "en": "Content Production"
+        }
+      },
+      {
+        "url": "/doktor-marka-yonetimi",
+        "label": {
+          "tr": "Doktor Marka Yönetimi",
+          "en": "Doctor Brand Management"
+        }
+      }
+    ],
+    "hub": {
+      "intro": {
+        "tr": "İçerik & Marka; kurumun ne anlattığını, bunu hangi kanalda ve hangi doğrulanabilir bilgiyle sunduğunu birleştirir. Bu merkez marka ve editoryal koordinasyonu açıklar; sosyal medya, prodüksiyon ve doktor marka yönetimi ayrıntıları ilgili hizmetlerde yer alır.",
+        "en": "Content & Brand connects what an organisation communicates with where it publishes and which verifiable information supports it. This hub covers brand and editorial coordination; social media, production and doctor branding have their own detailed services."
+      },
+      "steps": [
+        {
+          "tr": "Mesaj çerçevesini belirleyin: kurumun hedef kitlesi, uzmanlık alanı ve anlatım önceliklerini netleştirin.",
+          "en": "Define audiences, expertise and communication priorities."
+        },
+        {
+          "tr": "İçerik kaynaklarını düzenleyin: uzman görüşü, kurum bilgisi, görsel ve yayın izinlerini kontrol edin.",
+          "en": "Organise expert input, organisation information, visual assets and publication permissions."
+        },
+        {
+          "tr": "Kanal planını kurun: sosyal medya takvimi, çekim briefleri ve hekim iletişimini aynı çerçevede eşleştirin.",
+          "en": "Align social calendars, production briefs and clinician communication."
+        },
+        {
+          "tr": "Yayınları değerlendirin: mesaj tutarlılığı, içerik kullanımı ve ilgili başvuru kaynaklarını gözden geçirin.",
+          "en": "Review message consistency, content usage and relevant enquiry sources."
+        }
+      ],
+      "outputs": [
+        {
+          "tr": "Marka mesajları ve içerik konu haritası",
+          "en": "Brand messaging and content topic map"
+        },
+        {
+          "tr": "Kanal bazlı editoryal takvim",
+          "en": "Editorial calendar by channel"
+        },
+        {
+          "tr": "Prodüksiyon ve uzman içerik briefleri",
+          "en": "Production and expert content briefs"
+        },
+        {
+          "tr": "Kaynak, izin ve yayın kontrol listesi",
+          "en": "Source, permission and publication checklist"
+        }
+      ],
+      "boundary": {
+        "tr": "Organik sosyal medya ve marka iletişimi, ücretli Meta reklam yönetiminin yerine geçmez. Yayımlanacak uzmanlık bilgileri ve görseller kurum tarafından doğrulanır; izin gerektiren materyaller onay sürecinden geçirilir. Plan ve üretim kapsamı mevcut ekip ve içerik kaynaklarına göre belirlenir.",
+        "en": "Organic publishing and brand communication do not replace paid Meta campaign management. The organisation verifies expertise statements and visuals, and materials requiring permission pass through approval. Planning and production scope depend on the team and available sources."
+      }
+    }
+  }
+]

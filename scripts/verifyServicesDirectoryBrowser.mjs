@@ -1,0 +1,31 @@
+import {spawnSync} from 'node:child_process';
+const cli=process.argv[2];if(!cli)throw Error('Pass playwright-cli.js path');
+const base=process.argv[3]||'http://127.0.0.1:5189';
+function run(args){const r=spawnSync(process.execPath,[cli,'-s=overseas-nav03',...args],{encoding:'utf8',windowsHide:true});console.log(r.stdout);if(r.status!==0||r.stdout.includes('### Error'))throw Error(r.stderr||r.stdout);}
+run(['goto','about:blank']);
+run(['run-code',`async page => { await page.route(/googletagmanager.com|google-analytics.com|connect.facebook.net|facebook.com/, route => route.abort()); await page.goto('${base}/hizmetler'); }`]);
+run(['snapshot']);
+run(['run-code',`async page => {
+ const cards=page.locator('article[data-service-family]');if(await cards.count()!==6)throw Error('Expected six families');
+ if(await page.locator('h1').count()!==1)throw Error('Expected one H1');
+ if(await page.locator('link[rel="canonical"]').getAttribute('href')!=='https://www.overseas.marketing/hizmetler')throw Error('Wrong canonical');
+ const destination=page.locator('article[data-service-family="technology"] a');await destination.click();await page.waitForURL('**/hizmetler/crm-otomasyon');
+ await page.getByRole('heading',{level:1,name:'CRM & Otomasyon',exact:true}).waitFor();
+ const events=await page.evaluate(()=>Array.from(window.dataLayer||[]).map(e=>Array.from(e)));
+ if(!events.some(e=>e[1]==='service_family_select'&&e[2]?.service_family==='technology'))throw Error('Missing family event');
+ await page.getByRole('button',{name:'Büyüme Analizi Al',exact:true}).first().click();
+ await page.getByRole('button',{name:'Kapat',exact:true}).waitFor();
+ if(!await page.locator('input[placeholder="Dr. / Ynt. Ad Soyad"]').isVisible())throw Error('Growth form did not open');
+ const updated=await page.evaluate(()=>Array.from(window.dataLayer||[]).map(e=>Array.from(e)));
+ if(!updated.some(e=>e[1]==='growth_analysis_open'&&e[2]?.service_family==='technology'))throw Error('Missing CTA event');
+ if(updated.filter(e=>e[0]==='event'&&['service_family_select','growth_analysis_open','service_directory_view'].includes(e[1])).some(e=>Object.keys(e[2]).some(k=>/email|phone|name|notes/.test(k))))throw Error('Personal analytics fields');
+ await page.getByRole('button',{name:'Kapat',exact:true}).click();
+ console.log('PASS: six families, self canonical, CRM destination, real consultation modal and analytics events without PII');
+}`]);
+run(['goto',base+'/hizmetler/icerik-marka-yonetimi']);run(['snapshot']);
+run(['run-code',`async page => { await page.getByRole('heading',{level:1,name:'İçerik & Marka',exact:true}).waitFor(); if(await page.locator('main a[href="/doktor-marka-yonetimi"]').count()!==1)throw Error('Missing doctor branding child'); console.log('PASS: content hub and child links'); }`]);
+run(['goto',base+'/hizmetler?lang=en']);run(['snapshot']);
+run(['run-code',`async page => { await page.getByRole('heading',{level:1,name:'Marketing & growth services',exact:true}).waitFor();if(await page.locator('link[rel="canonical"]').getAttribute('href')!=='https://www.overseas.marketing/hizmetler?lang=en')throw Error('Wrong EN canonical');console.log('PASS: English copy and self canonical'); }`]);
+run(['goto',base+'/hizmetler?lang=tr']);run(['resize','390','844']);run(['snapshot']);
+run(['run-code',`async page => { if(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth))throw Error('Mobile horizontal overflow');if(await page.locator('article[data-service-family]').count()!==6)throw Error('Mobile family cards');await page.getByRole('button',{name:'Büyüme Analizi Al',exact:true}).first().click();await page.getByRole('button',{name:'Kapat',exact:true}).waitFor();await page.getByRole('button',{name:'Kapat',exact:true}).click();console.log('PASS: mobile layout and growth modal'); }`]);
+run(['screenshot','--filename=output/playwright/nav-03-mobile.png']);run(['resize','1440','1000']);run(['screenshot','--filename=output/playwright/nav-03-desktop.png']);
