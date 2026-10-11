@@ -1,0 +1,114 @@
+{
+  "task": "E4N-253 / NAV-02",
+  "date": "2026-10-11",
+  "status": "Mimari tanımı; uygulama yapılmadı",
+  "directory": { "url": "/hizmetler", "exists": false, "implementationTask": "NAV-03" },
+  "policy": {
+    "header": "Yeni hizmet eklemek için açık kullanıcı onayı gerekir; bu görev header veya MASTER_SERVICES değiştirmez.",
+    "gsc": "NAV-01 GSC doğrulaması açık. Rol ve içerik kararları kaynak koduna dayalı geçici mimaridir; birleşme/301/canonical kararı uygulanmaz.",
+    "newPages": "Yeni merkezler yalnızca öneridir. Hizmet ailelerinin tanımı başlık veya kelime varyasyonları için ayrı sayfa üretmez.",
+    "evidence": "Aşağıdaki kanıt alanları toplanacak/yayın öncesi doğrulanacak materyallerdir; mevcut başarı sonuçları veya izinler varsayılmaz.",
+    "cta": "CTA metinleri içerik brief'idir. Uygulamada mevcut onOpenConsultation akışı kullanılabilir; hizmet bağlamı forma/CRM'e aktarılıp doğrulanmalıdır."
+  },
+  "families": [
+    {
+      "id": "performance",
+      "name": "Performans Pazarlama",
+      "hub": {
+        "url": "/hizmetler/performans-pazarlama", "exists": true,
+        "scope": "Çok kanallı reklam bütçesi, hedef ülke/branş, kampanya koordinasyonu ve CRM ile nitelikli başvuru ölçümü. Sağlık Turizmi Reklam Yönetimi aynı mevcut merkez kaydıdır; ikinci bir merkez veya alt URL açılmaz.",
+        "evidence": "Anonimleştirilmiş medya planı, kanal bazlı CPL/nitelikli lead raporu, ölçüm yöntemi ve izinli reklam vaka örneği.",
+        "cta": "Reklam büyüme planınızı görüşelim"
+      },
+      "children": [
+        { "url": "/hizmetler/saglik-turizmi-google-ads", "exists": true, "scope": "Arama niyeti, hesap mimarisi, negatif kelimeler, hedef ülke/dil, offline dönüşüm ve reklam politikası kontrol süreci.", "evidence": "İzinli/anonim arama terimleri örneği, negatif liste ve dönüşüm eşleme örneği; tarihlenmiş politika incelemesi.", "cta": "Google Ads hesabınızı değerlendirelim" },
+        { "url": "/hizmetler/saglik-turizmi-meta-reklamlari", "exists": true, "scope": "Video kreatif, hedef kitle, form/WhatsApp akışı, kreatif testleri ve lead kalitesi; organik sosyal medya yönetiminden ayrılır.", "evidence": "İzinli kreatif test matrisi, nitelikli lead karşılaştırması ve kaynak/örneklem açıklaması.", "cta": "Meta reklam ve lead kalitesi analizi alın" }
+      ],
+      "sections": [],
+      "relatedFamilies": ["web", "technology", "content"]
+    },
+    {
+      "id": "seo", "name": "Uluslararası SEO",
+      "hub": {
+        "url": "/hizmetler/uluslararasi-seo-hizmeti", "exists": true,
+        "scope": "Hedef ülke/dil arama niyeti, teknik erişim, yerelleştirme, içerik kümeleri, organik görünürlük ve nitelikli dönüşüm. AI yanıt görünürlüğü yöntemi GEO merkezine bağlanır.",
+        "evidence": "Örnek sorgu–URL haritası, teknik denetim, hreflang matrisi ve tarih/aralık belirten izinli GSC/CRM vaka raporu.",
+        "cta": "Uluslararası SEO fırsatlarınızı değerlendirelim"
+      },
+      "children": [],
+      "sections": [
+        { "name": "Sağlık turizmi SEO", "scope": "Klinik ve hastanelerde ülke/branş niyeti ve hasta kazanımı; mevcut /saglik-turizmi-seo route'u aynı hizmet bileşenini kullanır.", "decision": "Mevcut SEO merkezinde bölüm. /saglik-turizmi-seo ayrı özgün hizmet sayfası kabul edilmez; alias olarak kaydedilir. Ayrı sayfa ancak GSC/SERP ayrışması ve özgün kanıtla değerlendirilir." },
+        { "name": "Teknik SEO", "scope": "Taranabilirlik, indeks, canonical, performans ve yapılandırılmış veri.", "decision": "Mevcut merkezin teknik süreç bölümü; yeni URL yok." },
+        { "name": "Çok dilli SEO", "scope": "Dil/ülke eşleşmesi, hreflang, URL stratejisi ve gerçek yerelleştirme.", "decision": "Mevcut merkezin uluslararası süreç bölümü; yeni URL yok." }
+      ],
+      "relatedFamilies": ["geo", "web", "content"]
+    },
+    {
+      "id": "geo", "name": "GEO & AI Görünürlüğü",
+      "hub": {
+        "url": "/hizmetler/geo-generative-engine-optimization", "exists": true,
+        "scope": "AI sorgu envanteri, entity/kaynak tutarlılığı, erişilebilirlik, alıntılanabilir içerik ve tekrarlanabilir AI görünürlük ölçümü. SEO sıralama hizmetiyle kopya kapsam oluşturmaz.",
+        "evidence": "Tarihli prompt seti, motor/oturum/pazar yöntemi, mention/citation/entity benchmark'ı ve örneklem sınırları.",
+        "cta": "AI görünürlük başlangıç analizinizi planlayalım"
+      },
+      "children": [],
+      "sections": [
+        { "name": "ChatGPT / Gemini görünürlüğü", "scope": "Motor bazında marka tanımı, mention ve citation gözlemleri.", "decision": "Mevcut GEO sayfasındaki ölçüm bölümü; platform başına ayrı kopya URL yok." },
+        { "name": "AI Search stratejileri", "scope": "Soru niyeti, özgün kanıt, entity, dijital PR ve periyodik karşılaştırma.", "decision": "Mevcut GEO strateji bölümü. Görünürlük veya hasta garantisi verilmeyecek." }
+      ],
+      "relatedFamilies": ["seo", "content"]
+    },
+    {
+      "id": "web", "name": "Web & Landing Page",
+      "hub": {
+        "url": "/hizmetler/web-sitesi-landing-page", "exists": true,
+        "scope": "Kurumsal çok dilli web sitesi, hizmet/içerik mimarisi, güven unsurları, kullanılabilirlik, ölçüm ve CRM bağlantısı.",
+        "evidence": "İzinli ekran/akış örnekleri, dil matrisi, mobil performans ölçümü ve dönüşüm olay planı.",
+        "cta": "Web sitesi ve dönüşüm ihtiyaçlarınızı görüşelim"
+      },
+      "children": [
+        { "url": "/hizmetler/saglik-turizmi-landing-page", "exists": true, "scope": "Tek kampanya veya branş için açılış sayfası, mobil form/WhatsApp akışı, mesaj uyumu ve CRO deneyleri; kurumsal site kapsamının tamamını tekrar etmez.", "evidence": "Anonimleştirilmiş wireframe, form hunisi ve başlangıç/değişiklik/değerlendirme koşulu belirtilmiş test örneği.", "cta": "Kampanyanız için landing page brief'i hazırlayalım" }
+      ],
+      "sections": [
+        { "name": "Sağlık turizmi web tasarımı", "scope": "Çok dilli klinik/hastane kurumsal sitesi ve bilgi mimarisi.", "decision": "Mevcut merkezde bölüm; /saglik-turizmi-web-tasarim aynı bileşene bağlı alias, yeni alt hizmet sayfası değildir." }
+      ],
+      "relatedFamilies": ["performance", "seo", "technology"]
+    },
+    {
+      "id": "technology", "name": "CRM & Otomasyon",
+      "hub": {
+        "url": "/hizmetler/crm-otomasyon", "exists": false,
+        "scope": "Başvurudan satış fırsatına operasyon akışı, CRM–AI veri geçişi, görev/randevu takibi ve insan devri. CRM yazılımının modüllerini veya AI ürününün senaryolarını tümüyle kopyalamaz.",
+        "evidence": "Anonim veri akış şeması, CRM/AI entegrasyon örneği, insan devri ve lead durum geçişleri.",
+        "cta": "Hasta iletişim ve takip akışınızı değerlendirelim"
+      },
+      "children": [
+        { "url": "/hizmetler/saglik-turizmi-crm-yazilimi", "exists": true, "scope": "CRM modülleri, çok dilli lead kayıtları, teklif/satış takibi, ekip görevleri ve kaynak ilişkilendirmesi.", "evidence": "İzinli/anonim gerçek ürün ekranı, lead durum örneği, rol/erişim ve attribution akışı.", "cta": "CRM demo ve ihtiyaç görüşmesi planlayın" },
+        { "url": "/hizmetler/yapay-zeka-otomasyon", "exists": true, "scope": "AI Call Agent, WhatsApp/chat karşılama, CRM kayıtları, senaryo sınırları ve insan denetimi.", "evidence": "Sentetik/izinli demo senaryosu, test logları, insan devri ve veri işleme sınırları.", "cta": "AI Agent demo senaryonuzu planlayalım" }
+      ],
+      "sections": [],
+      "relatedFamilies": ["performance", "web"]
+    },
+    {
+      "id": "content", "name": "İçerik & Marka",
+      "hub": {
+        "url": "/hizmetler/icerik-marka-yonetimi", "exists": false,
+        "scope": "Marka konumlandırma, editoryal yön, sosyal yayın ve prodüksiyonun birbiriyle ilişkisi. Ücretli Meta kampanya yönetimi Performans Pazarlama altında kalır.",
+        "evidence": "İzinli marka/içerik brief'i, kanal planı, onay süreci ve farklı formatlarda örnek teslimler.",
+        "cta": "İçerik ve marka yol haritanızı görüşelim"
+      },
+      "children": [
+        { "url": "/hizmetler/sosyal-medya-yonetimi", "exists": true, "scope": "Organik yayın takvimi, yerelleştirme, topluluk yönetimi ve içerik onayı; reklam satın alma kapsamı değildir.", "evidence": "İzinli yayın takvimi ve onay akışı, dönem tanımlı organik etkileşim/lead raporu.", "cta": "Sosyal medya içerik planınızı değerlendirelim" },
+        { "url": "/hizmetler/icerik-produksiyon", "exists": true, "scope": "Çekim, hekim röportajı, senaryo, kurgu, altyazı ve platform formatları; yayın yönetiminden ayrı üretim teslimleri.", "evidence": "İzinli reel/portfolio, çekim brief'i, teslim formatı ve kullanım izni kaydı.", "cta": "Prodüksiyon brief'inizi görüşelim" },
+        { "url": "/doktor-marka-yonetimi", "exists": true, "scope": "Hekim konumlandırması, biyografi, itibar ve uzmanlık anlatımı; doktor reklam ajansı branş sayfasından ayrı danışmanlık kapsamı.", "evidence": "İzinli hekim profil/marka çalışması, doğrulanmış unvanlar ve editoryal onay süreci.", "cta": "Doktor marka stratejisi görüşmesi planlayın" }
+      ],
+      "sections": [],
+      "relatedFamilies": ["performance", "seo", "geo"]
+    }
+  ],
+  "crossFamilySolutions": [
+    { "url": "/hizmetler/saglik-turizmi-reklam-ajansi", "exists": true, "scope": "Ajans seçimi ve hizmet kapsamı. Ana sayfa ile örtüşme GSC sonrası değerlendirilecek.", "families": ["performance", "seo", "geo", "web", "technology", "content"], "evidence": "İzinli çok hizmetli vaka, ekip ve süreç kanıtı", "cta": "Ajans ihtiyaçlarınızı görüşelim" },
+    { "url": "/hizmetler/saglik-turizmi-dijital-pazarlama", "exists": true, "scope": "Kanalların birlikte büyüme stratejisi; her hizmet sayfasının içeriğini tekrarlamaz.", "families": ["performance", "seo", "geo", "web", "technology", "content"], "evidence": "Kanal katkı ve ölçüm planı; izinli entegre vaka", "cta": "Entegre büyüme planınızı görüşelim" },
+    { "url": "/hizmetler/uluslararasi-hasta-kazanimi", "exists": true, "scope": "Hasta yolculuğu, satış hunisi, yanıt süresi ve çok dilli operasyon. Tedavi sunucusu rolü üstlenmez.", "families": ["performance", "web", "technology"], "evidence": "Anonimleştirilmiş hasta adayı takip hunisi ve yöntem açıklaması", "cta": "Hasta kazanım huninizi değerlendirelim" }
+  ]
+}
