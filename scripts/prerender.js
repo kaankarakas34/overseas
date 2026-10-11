@@ -1144,23 +1144,15 @@ if (fs.existsSync(seoArticlesJsonPath)) {
 console.log('🚀 2026 Statik Pre-rendering (Zengin Retrieval & Mesh Katmanı) Başlatılıyor...');
 
 // Navigation Header HTML for rich discovery
+const headerNavigation = JSON.parse(fs.readFileSync(new URL('../src/data/headerNavigation.json', import.meta.url), 'utf8'));
+const navEscape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const navHeaderHtml = `
-  <header style="padding: 16px 24px; border-bottom: 1px solid #dde2e8; background: #ffffff;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
-      <a href="/" style="font-weight: 800; font-size: 18px; text-decoration: none; color: #16202E;">Overseas Marketing</a>
-      <nav style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px;">
-        <a href="/" style="color: #16202E; text-decoration: none;">Ana Sayfa</a>
-        <a href="/doktor-marka-yonetimi" style="color: #16202E; text-decoration: none;">Doktor Marka Yönetimi</a>
-        <a href="/hizmetler/performans-pazarlama" style="color: #16202E; text-decoration: none;">Performans Pazarlama</a>
-        <a href="/hizmetler/uluslararasi-seo-hizmeti" style="color: #16202E; text-decoration: none;">Uluslararası SEO</a>
-        <a href="/hizmetler/saglik-turizmi-crm-yazilimi" style="color: #16202E; text-decoration: none;">Sağlık Turizmi CRM</a>
-        <a href="/hizmetler/geo-generative-engine-optimization" style="color: #16202E; text-decoration: none;">GEO</a>
-        <a href="/sozluk" style="color: #16202E; text-decoration: none;">Sözlük</a>
-        <a href="/sac-ekimi-reklam-ajansi" style="color: #16202E; text-decoration: none;">Saç Ekimi</a>
-        <a href="/dis-klinigi-reklam-ajansi" style="color: #16202E; text-decoration: none;">Diş Kliniği</a>
-        <a href="/ingiltere-saglik-turizmi-reklamlari" style="color: #16202E; text-decoration: none;">İngiltere Pazarı</a>
-      </nav>
-    </div>
+  <header style="padding:16px 24px;border-bottom:1px solid #dde2e8;background:white">
+    <a href="/">Overseas Marketing</a>
+    <nav aria-label="Ana navigasyon" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:12px">
+      ${headerNavigation.map(group => `<div><a href="${group.url}">${navEscape(group.label.tr)}</a><details><summary>${navEscape(group.label.tr)} alt menüsü</summary><ul>${group.links.map(item => `<li><a href="${item.url}">${navEscape(item.label.tr)}</a></li>`).join('')}</ul></details></div>`).join('')}
+    </nav>
+    <a href="/teklif-al">Büyüme Analizi Al</a>
   </header>
 `;
 

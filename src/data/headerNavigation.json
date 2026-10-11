@@ -1,0 +1,321 @@
+[
+  {
+    "id": "services",
+    "url": "/hizmetler",
+    "label": {
+      "tr": "Hizmetler",
+      "en": "Services"
+    },
+    "links": [
+      {
+        "url": "/hizmetler",
+        "label": {
+          "tr": "Tüm Hizmetler",
+          "en": "All Services"
+        }
+      },
+      {
+        "url": "/hizmetler/performans-pazarlama",
+        "label": {
+          "tr": "Performans Pazarlama",
+          "en": "Performance Marketing"
+        }
+      },
+      {
+        "url": "/hizmetler/uluslararasi-seo-hizmeti",
+        "label": {
+          "tr": "Uluslararası SEO",
+          "en": "International SEO"
+        }
+      },
+      {
+        "url": "/hizmetler/geo-generative-engine-optimization",
+        "label": {
+          "tr": "GEO & AI Görünürlüğü",
+          "en": "GEO & AI Visibility"
+        }
+      },
+      {
+        "url": "/hizmetler/web-sitesi-landing-page",
+        "label": {
+          "tr": "Web & Landing Page",
+          "en": "Web & Landing Pages"
+        }
+      },
+      {
+        "url": "/hizmetler/crm-otomasyon",
+        "label": {
+          "tr": "CRM & Otomasyon",
+          "en": "CRM & Automation"
+        }
+      },
+      {
+        "url": "/hizmetler/icerik-marka-yonetimi",
+        "label": {
+          "tr": "İçerik & Marka",
+          "en": "Content & Brand"
+        }
+      }
+    ]
+  },
+  {
+    "id": "specialties",
+    "url": "/sektorler",
+    "label": {
+      "tr": "Uzmanlık Alanları",
+      "en": "Specialties"
+    },
+    "links": [
+      {
+        "url": "/sektorler",
+        "label": {
+          "tr": "Tüm Uzmanlık Alanları",
+          "en": "All Specialties"
+        }
+      },
+      {
+        "url": "/sac-ekimi-reklam-ajansi",
+        "label": {
+          "tr": "Saç Ekimi Reklam Ajansı",
+          "en": "Hair Transplant Advertising Agency"
+        }
+      },
+      {
+        "url": "/dis-klinigi-reklam-ajansi",
+        "label": {
+          "tr": "Diş Kliniği Reklam Ajansı",
+          "en": "Dental Clinic Advertising Agency"
+        }
+      },
+      {
+        "url": "/estetik-klinigi-reklam-ajansi",
+        "label": {
+          "tr": "Estetik Kliniği Reklam Ajansı",
+          "en": "Aesthetic Clinic Advertising Agency"
+        }
+      },
+      {
+        "url": "/plastik-cerrahi-reklam-ajansi",
+        "label": {
+          "tr": "Plastik Cerrahi Reklam Ajansı",
+          "en": "Plastic Surgery Advertising Agency"
+        }
+      },
+      {
+        "url": "/obezite-cerrahisi-reklam-ajansi",
+        "label": {
+          "tr": "Obezite Cerrahisi Reklam Ajansı",
+          "en": "Bariatric Surgery Advertising Agency"
+        }
+      },
+      {
+        "url": "/tup-bebek-reklam-ajansi",
+        "label": {
+          "tr": "Tüp Bebek Reklam Ajansı",
+          "en": "IVF & Fertility Advertising Agency"
+        }
+      },
+      {
+        "url": "/goz-klinigi-reklam-ajansi",
+        "label": {
+          "tr": "Göz Kliniği Reklam Ajansı",
+          "en": "Eye Clinic & Vision Advertising Agency"
+        }
+      },
+      {
+        "url": "/hastane-reklam-ajansi",
+        "label": {
+          "tr": "Hastane Reklam Ajansı",
+          "en": "Hospital & Health Group Advertising Agency"
+        }
+      },
+      {
+        "url": "/doktor-reklam-ajansi",
+        "label": {
+          "tr": "Doktor Reklam Ajansı",
+          "en": "Doctor & Private Practice Advertising Agency"
+        }
+      },
+      {
+        "url": "/klinik-reklam-ajansi",
+        "label": {
+          "tr": "Klinik Reklam Ajansı",
+          "en": "Klinik Reklam Ajansı"
+        }
+      },
+      {
+        "url": "/dermatoloji-reklam-ajansi",
+        "label": {
+          "tr": "Dermatoloji Reklam Ajansı",
+          "en": "Dermatoloji Reklam Ajansı"
+        }
+      },
+      {
+        "url": "/medikal-estetik-reklam-ajansi",
+        "label": {
+          "tr": "Medikal Estetik Reklam Ajansı",
+          "en": "Medikal Estetik Reklam Ajansı"
+        }
+      },
+      {
+        "url": "/fizik-tedavi-reklam-ajansi",
+        "label": {
+          "tr": "Fizik Tedavi Reklam Ajansı",
+          "en": "Fizik Tedavi Reklam Ajansı"
+        }
+      },
+      {
+        "url": "/ortopedi-reklam-ajansi",
+        "label": {
+          "tr": "Ortopedi Reklam Ajansı",
+          "en": "Ortopedi Reklam Ajansı"
+        }
+      },
+      {
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama",
+        "label": {
+          "tr": "Sağlık Turizmi Aracı Kuruluş Pazarlama",
+          "en": "Sağlık Turizmi Aracı Kuruluş Pazarlama"
+        }
+      }
+    ]
+  },
+  {
+    "id": "markets",
+    "url": "/ulkeler",
+    "label": {
+      "tr": "Hedef Ülkeler",
+      "en": "Target Markets"
+    },
+    "links": [
+      {
+        "url": "/ulkeler",
+        "label": {
+          "tr": "Tüm Hedef Ülkeler",
+          "en": "All Target Markets"
+        }
+      },
+      {
+        "url": "/ingiltere-saglik-turizmi-reklamlari",
+        "label": {
+          "tr": "İngiltere Sağlık Turizmi Reklamları",
+          "en": "United Kingdom (UK) Medical Tourism Advertising"
+        }
+      },
+      {
+        "url": "/almanya-saglik-turizmi-reklamlari",
+        "label": {
+          "tr": "Almanya Sağlık Turizmi Reklamları",
+          "en": "Germany (DACH) Medical Tourism Advertising"
+        }
+      },
+      {
+        "url": "/fransa-saglik-turizmi-reklamlari",
+        "label": {
+          "tr": "Fransa Sağlık Turizmi Reklamları",
+          "en": "France Medical Tourism Advertising"
+        }
+      },
+      {
+        "url": "/hollanda-saglik-turizmi-reklamlari",
+        "label": {
+          "tr": "Hollanda Sağlık Turizmi Reklamları",
+          "en": "Netherlands & Benelux Medical Tourism Advertising"
+        }
+      }
+    ]
+  },
+  {
+    "id": "guide",
+    "url": "/blog",
+    "label": {
+      "tr": "Rehber",
+      "en": "Guides"
+    },
+    "links": [
+      {
+        "url": "/blog",
+        "label": {
+          "tr": "Rehber & Bilgi Merkezi",
+          "en": "Guides & Knowledge Hub"
+        }
+      },
+      {
+        "url": "/metodoloji",
+        "label": {
+          "tr": "Büyüme Metodolojisi",
+          "en": "Growth Methodology"
+        }
+      },
+      {
+        "url": "/sozluk",
+        "label": {
+          "tr": "Sözlük",
+          "en": "Glossary"
+        }
+      }
+    ]
+  },
+  {
+    "id": "references",
+    "url": "/referanslar",
+    "label": {
+      "tr": "Referanslar",
+      "en": "References"
+    },
+    "links": [
+      {
+        "url": "/referanslar",
+        "label": {
+          "tr": "Referanslar",
+          "en": "References"
+        }
+      },
+      {
+        "url": "/basari-hikayeleri",
+        "label": {
+          "tr": "Başarı Hikayeleri",
+          "en": "Case Studies"
+        }
+      }
+    ]
+  },
+  {
+    "id": "about",
+    "url": "/hakkimizda",
+    "label": {
+      "tr": "Hakkımızda",
+      "en": "About Us"
+    },
+    "links": [
+      {
+        "url": "/hakkimizda",
+        "label": {
+          "tr": "Hakkımızda",
+          "en": "About Us"
+        }
+      },
+      {
+        "url": "/ekibimiz",
+        "label": {
+          "tr": "Ekibimiz",
+          "en": "Our Team"
+        }
+      },
+      {
+        "url": "/iletisim",
+        "label": {
+          "tr": "İletişim",
+          "en": "Contact"
+        }
+      },
+      {
+        "url": "/teklif-al",
+        "label": {
+          "tr": "Teklif Al",
+          "en": "Request a Proposal"
+        }
+      }
+    ]
+  }
+]

@@ -34,6 +34,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -56,9 +57,10 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setSubmitError(false);
 
     try {
-      await fetch('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -75,23 +77,26 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
           formType: isEn ? 'B2B Healthcare Strategy & Eligibility Review' : 'Sağlık Turizmi Yetki & Pazar Uygunluk Değerlendirmesi'
         })
       });
-    } catch (err) {
-      console.warn('Form email call background:', err);
+      if (!response.ok) throw new Error('Contact request failed');
+      setSubmitted(true);
+      try {
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'generate_lead', {
+            event_category: 'ConsultationModal',
+            service_group: 'Healthcare Strategy Review',
+            content_id: 'om-b2b-modal'
+          });
+        }
+        confetti({
+          particleCount: 90,
+          spread: 60,
+          origin: { y: 0.5 }
+        });
+      } catch { /* The accepted request remains successful if effects fail. */ }
+    } catch {
+      setSubmitError(true);
     } finally {
       setLoading(false);
-      setSubmitted(true);
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'generate_lead', {
-          event_category: 'ConsultationModal',
-          service_group: 'Healthcare Strategy Review',
-          content_id: 'om-b2b-modal'
-        });
-      }
-      confetti({
-        particleCount: 90,
-        spread: 60,
-        origin: { y: 0.5 }
-      });
     }
   };
 
@@ -131,6 +136,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {submitError && <p role="alert" className="rounded-xl bg-red-50 p-3 text-sm text-red-700">{isEn ? 'Your request could not be sent. Please try again or contact us directly.' : 'Talebiniz gönderilemedi. Lütfen yeniden deneyin veya doğrudan iletişime geçin.'}</p>}
             
             <div className="space-y-1 pr-8">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#EEF3FB] text-[10px] font-bold text-[#446CB5] uppercase">

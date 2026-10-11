@@ -13,7 +13,7 @@ run(['run-code',`async page => {
  await page.getByRole('heading',{level:1,name:'CRM & Otomasyon',exact:true}).waitFor();
  const events=await page.evaluate(()=>Array.from(window.dataLayer||[]).map(e=>Array.from(e)));
  if(!events.some(e=>e[1]==='service_family_select'&&e[2]?.service_family==='technology'))throw Error('Missing family event');
- await page.getByRole('button',{name:'B체y체me Analizi Al',exact:true}).first().click();
+ await page.locator('main').getByRole('button',{name:'B체y체me Analizi Al',exact:true}).first().click();
  await page.getByRole('button',{name:'Kapat',exact:true}).waitFor();
  if(!await page.locator('input[placeholder="Dr. / Ynt. Ad Soyad"]').isVisible())throw Error('Growth form did not open');
  const updated=await page.evaluate(()=>Array.from(window.dataLayer||[]).map(e=>Array.from(e)));
@@ -27,5 +27,5 @@ run(['run-code',`async page => { await page.getByRole('heading',{level:1,name:'�
 run(['goto',base+'/hizmetler?lang=en']);run(['snapshot']);
 run(['run-code',`async page => { await page.getByRole('heading',{level:1,name:'Marketing & growth services',exact:true}).waitFor();if(await page.locator('link[rel="canonical"]').getAttribute('href')!=='https://www.overseas.marketing/hizmetler?lang=en')throw Error('Wrong EN canonical');console.log('PASS: English copy and self canonical'); }`]);
 run(['goto',base+'/hizmetler?lang=tr']);run(['resize','390','844']);run(['snapshot']);
-run(['run-code',`async page => { if(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth))throw Error('Mobile horizontal overflow');if(await page.locator('article[data-service-family]').count()!==6)throw Error('Mobile family cards');await page.getByRole('button',{name:'B체y체me Analizi Al',exact:true}).first().click();await page.getByRole('button',{name:'Kapat',exact:true}).waitFor();await page.getByRole('button',{name:'Kapat',exact:true}).click();console.log('PASS: mobile layout and growth modal'); }`]);
+run(['run-code',`async page => { if(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth))throw Error('Mobile horizontal overflow');if(await page.locator('article[data-service-family]').count()!==6)throw Error('Mobile family cards');await page.locator('main').getByRole('button',{name:'B체y체me Analizi Al',exact:true}).first().click();await page.getByRole('button',{name:'Kapat',exact:true}).waitFor();await page.getByRole('button',{name:'Kapat',exact:true}).click();console.log('PASS: mobile layout and growth modal'); }`]);
 run(['screenshot','--filename=output/playwright/nav-03-mobile.png']);run(['resize','1440','1000']);run(['screenshot','--filename=output/playwright/nav-03-desktop.png']);
