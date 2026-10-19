@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -612,6 +613,30 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                     Tüm Google Ads ve Meta Business Manager hesapları %100 kliniğinize ait olur. Ajans olarak yönetici veya ortak erişimiyle çalışır; tüm veriye, harcama faturalarına ve dönüşüm geçmişine şeffaf erişiminizi sağlarız.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* Performans Pazarlama İlgili Strateji ve Metrik Rehberleri */}
+            <div className="p-8 sm:p-10 rounded-3xl bg-[#EEF3FB]/50 border border-[#446CB5]/20 space-y-4">
+              <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222]">
+                Performans Pazarlama & Ölçüm Rehberleri
+              </h3>
+              <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
+                Kampanya mimarinizi, CPL ve CAC formüllerinizi ve mevzuat uyumunuzu derinleştirmek için hazırladığımız güncel rehberler:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold pt-2">
+                <Link to="/blog/saglik-turizmi-performans-pazarlama" className="p-3.5 rounded-xl border border-[#DDE2E8] bg-white hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block">
+                  CPL, CAC ve Kampanya Ölçümü →
+                </Link>
+                <Link to="/blog/saglik-turizmi-pazarlamasi-nasil-yapilir" className="p-3.5 rounded-xl border border-[#DDE2E8] bg-white hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block">
+                  2026 Pazarlama Stratejisi →
+                </Link>
+                <Link to="/blog/saglik-turizminde-hasta-kazanma-maliyeti" className="p-3.5 rounded-xl border border-[#DDE2E8] bg-white hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block">
+                  Hasta Edinme Maliyeti (CAC) Hesabı →
+                </Link>
+                <Link to="/blog/saglik-turizmi-reklam-mevzuati-2026" className="p-3.5 rounded-xl border border-[#DDE2E8] bg-white hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block">
+                  2026 Reklam Mevzuatı Kuralları →
+                </Link>
               </div>
             </div>
 
@@ -1255,6 +1280,98 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               </p>
             </div>
 
+          </div>
+        ) : serviceId === 'saglik-turizmi-araci-kurulus-pazarlama' ? (
+          /* Dedicated Section for Authorized Intermediaries (Aracı Kuruluşlar) */
+          <div className="space-y-12 text-left">
+            {/* Header & Framework */}
+            <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-[#446CB5]/10 text-[#446CB5]">
+                <ShieldCheck className="w-3.5 h-3.5" /> 2025 Yönetmeliği ve USHAŞ Uyumlu Acente Büyüme Modeli
+              </div>
+              <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#222222]">
+                Yetkili Sağlık Turizmi Aracı Kuruluşları İçin B2B Hasta Kazanım Ekosistemi
+              </h2>
+              <p className="text-sm sm:text-base text-[#595F69] leading-relaxed max-w-4xl">
+                26 Nisan 2025 tarihli Resmî Gazete’de yayımlanan yönetmelik uyarınca sağlık turizmi aracı kuruluşları; anlaşmalı yetkili sağlık tesisleriyle birlikte yabancı hastaya ulaşım, konaklama ve tedavi organizasyonu sunan ruhsatlı seyahat acenteleridir. Overseas Marketing; yetki belgeli aracı kuruluşların küresel pazarda güven inşa etmesi, sözleşmeli hastane ağlarını şeffafça sunması ve 7/24 çok dilli CRM ile başvuru kaçırmamasını sağlayan büyüme altyapısını kurar.
+              </p>
+            </div>
+
+            {/* 3 Strategic Pillars for Facilitators */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-8 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EEF3FB] text-[#446CB5] flex items-center justify-center font-bold text-base">
+                  01
+                </div>
+                <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222]">
+                  Şeffaf Hastane & Hekim Ağı İletişimi
+                </h3>
+                <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
+                  Hastalar acenteden çok tedavi olacakları hekime güvenir. Acentenizin sözleşmeli çalıştığı A Plus hastaneleri, hekimlerin cerrahi uzmanlıklarını ve vaka sonuçlarını mevzuata uygun biçimde açılış sayfalarında konumlandırıyoruz.
+                </p>
+              </div>
+
+              <div className="p-8 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EEF3FB] text-[#446CB5] flex items-center justify-center font-bold text-base">
+                  02
+                </div>
+                <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222]">
+                  7/24 Çok Dilli WhatsApp Satış Hunisi
+                </h3>
+                <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
+                  İngiltere, DACH veya Körfez’den gelen aracı kuruluş başvurularını anında karşılayan, dil tespit eden ve hastadan tedavi röntgeni/fotoğrafı toplayarak koordinatörün önüne hazır dosya koyan akıllı CRM sistemleri kuruyoruz.
+                </p>
+              </div>
+
+              <div className="p-8 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EEF3FB] text-[#446CB5] flex items-center justify-center font-bold text-base">
+                  03
+                </div>
+                <h3 className="font-['Inter_Tight'] text-lg font-bold text-[#222222]">
+                  Mevzuata Uygun Performans Reklamları
+                </h3>
+                <p className="text-xs sm:text-sm text-[#595F69] leading-relaxed">
+                  12 Kasım 2025 Tanıtım Yönetmeliği ve HealthTürkiye portalı kriterlerine tam uyumlu, Türkiye IP’lerinin hariç tutulduğu, ceza riski taşımayan Google Ads ve Meta Ads kampanyaları yönetiyoruz.
+                </p>
+              </div>
+            </div>
+
+            {/* Sabit Marka Ayrımı ve Hukuki Uyarı */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-slate-100 border border-slate-300 text-slate-800 space-y-2 text-xs sm:text-sm leading-relaxed">
+              <h4 className="font-bold text-sm text-[#0B1528] flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#446CB5]" /> Önemli Kurumsal ve Hukuki Ayrım:
+              </h4>
+              <p>
+                Overseas Marketing bir uluslararası sağlık turizmi aracı kuruluşu veya seyahat acentesi <strong>değildir</strong>. Kuruluşumuz yetki belgesi vermez, satmaz veya hastane aracılığı yapmaz. Biz; Sağlık Bakanlığı yetki belgesine sahip aracı kuruluşlara ve kliniklere dijital pazarlama, uluslararası SEO, GEO ve CRM otomasyonu danışmanlığı sunan bir büyüme ajansıyız.
+              </p>
+            </div>
+
+            {/* Bilgilendirici İç Linkler */}
+            <div className="p-8 rounded-3xl bg-white border border-[#DDE2E8] shadow-sm space-y-4">
+              <h4 className="font-['Inter_Tight'] font-bold text-base text-[#222222]">
+                Aracı Kuruluşlar İçin İlgili Resmî Mevzuat ve Strateji Rehberleri:
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs font-semibold">
+                <Link to="/blog/saglik-turizmi-araci-kurulus-yetki-belgesi" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Aracı Kuruluş Yetki Belgesi Şartları →
+                </Link>
+                <Link to="/saglik-turizmi-acentesi-acmak" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Sağlık Turizmi Acentası Nasıl Kurulur? →
+                </Link>
+                <Link to="/blog/tursab-saglik-turizmi-belgesi-farki" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  TÜRSAB ile USHAŞ Yetki Belgesi Farkı →
+                </Link>
+                <Link to="/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Yetki Belgesi Başvuru Formları (EK-1/B) →
+                </Link>
+                <Link to="/blog/turkiyede-saglik-turizmi-yapan-acentalar" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Yetkili Aracı Kuruluş Sicil Sorgulama →
+                </Link>
+                <Link to="/blog/saglik-turizminde-chatbot" className="p-3.5 rounded-xl border border-[#DDE2E8] hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Acenteler İçin Chatbot & WhatsApp CRM →
+                </Link>
+              </div>
+            </div>
           </div>
         ) : (
           /* Fallback Standard Modular View for other services */

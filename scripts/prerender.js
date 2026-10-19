@@ -1141,6 +1141,49 @@ if (fs.existsSync(seoArticlesJsonPath)) {
   }
 }
 
+
+// Load Doctor Articles dynamically from src/data/doctorArticlesData.json
+const doctorArticlesJsonPath = path.resolve(__dirname, '../src/data/doctorArticlesData.json');
+if (fs.existsSync(doctorArticlesJsonPath)) {
+  const doctorArticles = JSON.parse(fs.readFileSync(doctorArticlesJsonPath, 'utf-8'));
+  for (const art of doctorArticles) {
+    if (!ROUTES.some(r => r.path === art.url)) {
+      ROUTES.push({
+        path: art.url,
+        title: art.seoTitle || `${art.title} | Overseas Marketing`,
+        description: art.metaDesc || '',
+        h1: art.h1 || art.title,
+        isArticle: true,
+        content: `
+          <article>
+            <div style="padding: 16px; background: #EEF3FB; border-radius: 12px; border-left: 4px solid #446CB5; margin-bottom: 24px;">
+              <p style="margin: 0; font-size: 15px; color: #16202E; line-height: 1.6;"><strong>Özet / Doğrudan Cevap:</strong> ${art.quickAnswer || ''}</p>
+            </div>
+            ${(art.sections || []).map(sec => `
+              <div style="margin-top: 24px;">
+                <h3 style="font-size: 20px; color: #16202E; margin-bottom: 8px;">${sec.heading}</h3>
+                ${sec.subheading ? `<p style="color: #595F69; font-size: 14px; margin-bottom: 12px;">${sec.subheading}</p>` : ''}
+                ${(sec.paragraphs || []).map(p => `<p style="line-height: 1.6; margin-bottom: 12px; color: #334155;">${p}</p>`).join('')}
+              </div>
+            `).join('')}
+            ${art.faqs && art.faqs.length > 0 ? `
+              <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #dde2e8;">
+                <h3 style="font-size: 20px; color: #16202E; margin-bottom: 16px;">Sıkça Sorulan Sorular</h3>
+                ${art.faqs.map(f => `
+                  <div style="margin-bottom: 16px;">
+                    <h4 style="font-size: 16px; color: #16202E; margin-bottom: 4px;">${f.q}</h4>
+                    <p style="color: #595F69; font-size: 14px; line-height: 1.6;">${f.a}</p>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </article>
+        `
+      });
+    }
+  }
+}
+
 console.log('🚀 2026 Statik Pre-rendering (Zengin Retrieval & Mesh Katmanı) Başlatılıyor...');
 
 // Navigation Header HTML for rich discovery
@@ -1329,3 +1372,27 @@ fs.writeFileSync(path.resolve(distDir, '404.html'), notFoundHtml, 'utf-8');
 console.log('✅ dist/404.html başarıyla üretildi!');
 
 console.log(`✅ ${generatedCount} adet sayfa için zengin statik HTML retrieval dosyası başarıyla üretildi!`);
+
+// Synchronize and write sitemap.xml for all indexable canonical URLs
+const today = '2026-10-19';
+const indexableRoutes = ROUTES.filter(r => !NOINDEX_URLS.has(r.path));
+
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${indexableRoutes.map(r => {
+  const loc = `${BASE_DOMAIN}${r.path === '/' ? '/' : r.path}`;
+  const priority = r.path === '/' ? '1.0' : (r.path.startsWith('/hizmetler/') || r.path === '/saglik-turizmi-yetki-belgesi' || r.path === '/antalya-saglik-turizmi-reklam-ajansi') ? '0.9' : '0.8';
+  const changefreq = r.path === '/' ? 'weekly' : 'monthly';
+  return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}).join('\n')}
+</urlset>
+`;
+
+fs.writeFileSync(path.resolve(__dirname, '../public/sitemap.xml'), sitemapXml, 'utf-8');
+fs.writeFileSync(path.resolve(distDir, 'sitemap.xml'), sitemapXml, 'utf-8');
+console.log(`✅ sitemap.xml ${indexableRoutes.length} indekslenebilir URL ile hem public/ hem dist/ dizininde güncellendi!`);

@@ -46,8 +46,8 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "category": "Mevzuat & Tanıtım İlkeleri",
     "title": "Sağlık Turizmi Reklam Mevzuatı 2026: Yurt Dışına Tanıtım Şartları",
     "h1": "Sağlık turizmi reklamları nasıl planlanır? 2026 tanıtım kuralları",
-    "seoTitle": "Sağlık Turizmi Reklam Mevzuatı 2026: Yurt Dışına Tanıtım Şartları",
-    "metaDesc": "2026 sağlık turizmi reklam mevzuatı: 12 Kasım 2025 tanıtım yönetmeliği, yetki belgesi şartları, HealthTürkiye logosu, hasta rızası ve yasal kontrol matrisi.",
+    "seoTitle": "Sağlık Turizmi Reklam Mevzuatı 2026 | Yurt Dışı Tanıtım Şartları | Overseas",
+    "metaDesc": "2026 sağlık turizmi reklam mevzuatı: 12 Kasım 2025 tanıtım yönetmeliği md. 5-8, yetki belgesi şartları, HealthTürkiye logosu, hasta rızası ve yasal kontrol matrisi.",
     "primaryKeyword": "sağlık turizmi reklam mevzuatı",
     "secondaryKeywords": [
       "sağlık turizmi reklam yasağı",
@@ -57,202 +57,73 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     ],
     "searchIntent": "Ticari / Hukuki Bilgilendirici",
     "funnel": "BOFU",
-    "readTime": "10 dk okuma",
-    "publishedDate": "29 Eylül 2026",
-    "author": "Overseas Hukuk & Sağlık İletişimi Masası",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Türkiye'de sağlık hizmetlerinde açık veya örtülü reklam genel olarak yasaktır. Ancak 12 Kasım 2025 tarihli Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik ve 26 Nisan 2025 Uluslararası Sağlık Turizmi Yönetmeliği uyarınca; T.C. Sağlık Bakanlığı'ndan Uluslararası Sağlık Turizmi Yetki Belgesi almış sağlık tesisleri ve yetkili aracı kuruluşlar, yalnızca yurt dışına hedeflenmiş ve yabancı dilde tanıtım yapabilir. 'Yurt dışına reklam verince hiçbir kural kalmaz' iddiası hukuken geçersizdir; HealthTürkiye logosu, kurumsal URL zorunluluğu, hasta görseli açık rızası ve kanıtsız üstünlük iddialarından kaçınma şartları uluslararası tanıtımlarda da bağlayıcıdır.",
+    "readTime": "12 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Mevzuat Uyum Danışmanı",
+    "quickAnswer": "Türkiye’de 12 Kasım 2025 tarihli ve 33075 sayılı Resmî Gazete’de yayımlanan yönetmelik uyarınca sağlık hizmetlerinde doğrudan veya örtülü reklam yapılması yasaktır. Ancak uluslararası sağlık turizmi yetki belgesine sahip kurumlar; hedef ülkenin dilinde, HealthTürkiye portalı bağlantısıyla ve bilimsel kanıta dayalı olarak yurt dışına yönelik tanıtım yapabilir. 29 Temmuz 2023 tarihli eski yönetmelik tamamen yürürlükten kalkmıştır.",
     "sections": [
       {
-        "heading": "Hangi kuruluşun hangi yetkisi gerekir?",
-        "subheading": "Sağlık tesisi, aracı kuruluş ve hekim muayenehanesi rol ayrımı",
+        "heading": "Hangi Kuruluşun Hangi Yetkisi Gerekir?",
         "paragraphs": [
-          "Yurt dışına yönelik sağlık tanıtımı yapabilmenin ilk ve vazgeçilmez şartı, T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü tarafından düzenlenen <strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong>'ne sahip olmaktır. Yetki belgesi olmaksızın yurt dışına dahi olsa sağlık turizmi reklamı çıkılması, hem 3359 sayılı Sağlık Hizmetleri Temel Kanunu hem de Tüketicinin Korunması Hakkında Kanun kapsamında ağır idari para cezaları ve faaliyet durdurma yaptırımlarına tabidir.",
-          "Yetki statüleri mevzuatta açıkça üçe ayrılmıştır:",
-          "1. <strong>Yetkili Sağlık Tesisleri (Hastaneler, Tıp Merkezleri, Poliklinikler):</strong> Bakanlık ruhsatına ek olarak sağlık turizmi yetki kriterlerini (sağlıkta kalite standartları K8 puanı, yabancı dil bilen personel ve çağrı merkezi altyapısı) karşılayan kurumlardır. Yalnızca kendi ruhsatlı branşlarında ve yetkili oldukları alanlarda tanıtım yapabilirler.",
-          "2. <strong>Yetkili Aracı Kuruluşlar (Uluslararası Sağlık Turizmi Acentaları):</strong> TÜRSAB A Grubu Seyahat Acentası Belgesi ile Bakanlık Uluslararası Sağlık Turizmi Aracı Kuruluş Yetki Belgesi'ne sahip şirketlerdir. Bu kuruluşlar doğrudan tıbbi işlem yapamaz; anlaşmalı oldukları yetkili sağlık tesislerinin hizmetlerini, transfer, konaklama ve refakat paketlerini tanıtabilirler.",
-          "3. <strong>Yetkisiz Muayenehane ve Klinikler:</strong> Sağlık turizmi yetki belgesi bulunmayan hekim muayenehaneleri veya klinikler, yurt dışı hedefli dahi olsa doğrudan sağlık turizmi kampanyası açamaz; yalnızca genel hekim bilgilendirmesi sınırlarında kalabilirler."
-        ],
-        "bulletPoints": [
-          "Yetki belgesi olmadan 'Türkiye'de tedavi' başlığıyla yurt dışına reklam vermek hukuken suç teşkil eder.",
-          "Yetkili tesisler ile yetkili aracı kuruluşların reklam sorumlulukları ve onay mekanizmaları birbirinden farklıdır.",
-          "Bakanlık kayıtları SHGM Turizm Daire Başkanlığı portalı üzerinden çevrim içi olarak teyit edilebilir."
+          "Yurt dışına yönelik sağlık turizmi tanıtımı yapabilmek için sağlık tesisinin Sağlık Bakanlığı'ndan EK-3/A yetki belgesine, aracı kuruluşun ise USHAŞ'tan EK-3/B yetki belgesine sahip olması şarttır.",
+          "Yetki belgesi olmayan kurumların yurt dışına dahi olsa sağlık hizmeti tanıtımı yapması idari para cezası ve faaliyet durdurma yaptırımına tabidir."
         ]
       },
       {
-        "heading": "2025 tanıtım ve bilgilendirme yönetmeliğinin genel çerçevesi",
-        "subheading": "12 Kasım 2025 tarihli ve 33075 sayılı Resmî Gazete düzenlemesi",
+        "heading": "12 Kasım 2025 Tanıtım Yönetmeliğinin Genel Çerçevesi",
         "paragraphs": [
-          "12 Kasım 2025 tarihinde yayımlanan <em>Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik</em>, sağlık alanındaki tanıtım sınırlarını netleştirmiştir. Yönetmeliğin temel amacı; insan sağlığını ticari bir meta haline getirmemek, örtülü reklamı engellemek ve hastaların yanıltılmasının önüne geçmektir.",
-          "Yönetmelik gereğince; tedavi sonuçlarına dair kesin garanti vaat etmek, 'en iyi klinik', 'tek hekim', 'en son teknoloji' gibi bilimsel kanıtı olmayan üstünlük ifadeleri kullanmak, sahte indirim sayaçları koymak veya çekiliş/hediye kampanyaları düzenlemek kesinlikle yasaktır."
-        ],
-        "callout": {
-          "title": "Kritik Hukuki İlke",
-          "text": "Sağlık hizmetlerinde tanıtım 'bilgilendirme' odaklı olmalıdır; talep yaratmaya yönelik kışkırtıcı pazarlama dili kullanılamaz.",
-          "type": "warning"
-        }
-      },
-      {
-        "heading": "Uluslararası sağlık turizmi için özel hükümler",
-        "subheading": "26 Nisan 2025 yönetmeliği ve sınır ötesi tanıtım istisnaları",
-        "paragraphs": [
-          "Sektörde sıkça dile getirilen <em>'Yurt dışına reklam verince Türkiye kuralları geçerli olmaz'</em> iddiası tehlikeli bir yanılgıdır. 26 Nisan 2025 tarihli Uluslararası Sağlık Turizmi Yönetmeliği, yurt dışına yönelik tanıtımlara belirli esneklikler tanısa da kuralsızlık getirmemiştir.",
-          "Uluslararası sağlık turizmi istisnaları; yabancı dilde hazırlanması, Türkiye sınırları içerisindeki kullanıcılara gösterilmemesi ve yalnızca yetki belgesi kapsamındaki hizmetleri içermesi kaydıyla geçerlidir. Türkiye Cumhuriyeti kanunlarına tabi bir sağlık tesisinin yurt dışı reklamlarında tıp etiğine aykırı iddialar kullanması durumunda Bakanlık idari yaptırım uygulama yetkisine sahiptir."
+          "12 Kasım 2025 tarihli Resmî Gazete'de yayımlanan 'Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik', 2023 tarihli eski yönetmeliği ilga etmiştir.",
+          "Yönetmeliğin 5. maddesi yurt içi sağlık reklamını kesin olarak yasaklarken; 7. ve 8. maddeleri sağlık turizmi kapsamındaki yurt dışı tanıtımların şartlarını belirlemiştir."
         ]
       },
       {
-        "heading": "Hedef ülke, dil ve otomatik hedefleme",
-        "subheading": "Coğrafi filtreleme ve Türkiye IP'lerini dışlama zorunluluğu",
+        "heading": "Hedef Ülke, Dil ve Coğrafi Hedefleme Kuralları",
         "paragraphs": [
-          "Yurt dışı sağlık turizmi reklamlarının Türkiye'de mukim vatandaşlara gösterilmesi kesin bir mevzuat ihlalidir. Bu nedenle reklam kampanyalarının teknik kurulumunda coğrafi hedefleme kuralları titizlikle uygulanmalıdır.",
-          "Google Ads, Meta Ads (Instagram/Facebook) ve diğer tüm reklam mecralarında Türkiye coğrafi olarak hariç tutulmalı ('Exclude Turkey'), hedefleme yalnızca İngiltere, Almanya veya Körfez ülkeleri gibi yurt dışı bölgelerle sınırlandırılmalıdır.",
-          "Ayrıca reklam metinlerinin ve açılış sayfalarının hedef ülkenin resmî dilinde (İngilizce, Almanca, Fransızca, Arapça vb.) olması gerekir. Yurt dışı hedeflenmiş olsa dahi Türkçe dilinde yayınlanan reklamlar, yerli turist veya gurbetçi hedeflemesi kapsamında değerlendirilerek denetime tabi tutulabilir."
+          "Uluslararası sağlık turizmi reklamlarında Google Ads ve Meta panellerinde coğrafi hedefleme kesinlikle Türkiye dışındaki ülkelere ayarlanmalıdır. Türkiye içindeki kullanıcılara yönelik tanıtım yapılması mevzuat ihlalidir.",
+          "Reklam metinleri hedef ülkenin resmî dilinde hazırlanmalı, Türkiye'deki vatandaşlara hitap eden Türkçe sağlık turizmi reklamlarından kaçınılmalıdır."
         ]
       },
       {
-        "heading": "Hasta görseli, yorum ve açık rıza",
-        "subheading": "KVKK, GDPR ve öncesi/sonrası (Before/After) kuralları",
+        "heading": "HealthTürkiye Logosu ve Kurumsal URL Zorunluluğu",
         "paragraphs": [
-          "Uluslararası tanıtımlarda hasta deneyimlerinin ve tedavi sonuçlarının paylaşımı en çok merak edilen konulardan biridir. 2025 ve 2026 düzenlemeleri bu konuda çok açık standartlar getirmiştir:",
-          "1. <strong>Açık Rıza Belgesi:</strong> Hastanın görselinin veya video mülakatının reklamda kullanılabilmesi için 6698 sayılı KVKK ve hedef ülke GDPR mevzuatına uygun, ıslak imzalı veya kayıtlı elektronik onaylı 'Tanıtım Amaçlı Açık Rıza Formu' alınmış olmalıdır.",
-          "2. <strong>Manipülasyon Yasağı:</strong> Görseller üzerinde cerrahi sonucu farklı gösteren filtreler, ışık oyunları veya dijital photoshop müdahaleleri yapılamaz.",
-          "3. <strong>Rızayı Geri Çekme:</strong> Hasta dilediği zaman rızasını geri çekme hakkına sahiptir; bu durumda ajans ve klinik ilgili kreatifleri tüm mecralardan derhal kaldırmakla yükümlüdür."
+          "Yurt dışı tanıtımlarında açılış sayfasında ve dijital materyallerde HealthTürkiye logosu ve doğrulanabilir kurumsal URL yer almalıdır.",
+          "Hastaya sunulan bilgilerde 'en iyi', 'mucizevi', 'garantili' gibi üstünlük belirten ifadeler kullanılamaz; sadece tescilli hekim unvanları ve kanıta dayalı tıbbi bilgiler verilebilir."
         ]
-      },
-      {
-        "heading": "HealthTürkiye logosu ve kurumsal URL",
-        "subheading": "Resmî ulusal marka entegrasyonu",
-        "paragraphs": [
-          "T.C. Sağlık Bakanlığı ve USHAŞ koordinasyonunda yürütülen <strong>HealthTürkiye</strong> çatı markası, Türkiye'nin uluslararası sağlık turizmi güvencesidir. Yetkili sağlık tesislerinin ve aracı kuruluşların yurt dışına yönelik açılış sayfalarında ve kurumsal web sitelerinde HealthTürkiye logosuna ve resmî portala yönlendiren doğrulanmış bağlantıya yer vermesi zorunludur.",
-          "Ayrıca açılış sayfalarında kliniğin Bakanlık ruhsat numarası, Uluslararası Sağlık Turizmi Yetki Belgesi numarası ve hekim kadrosunun uzmanlık unvanları şeffaf bir şekilde listelenmelidir."
-        ]
-      },
-      {
-        "heading": "Sağlık tesisi ile aracı kuruluş farkı",
-        "subheading": "Tanıtım hakları ve hukuki sorumluluk sınırları",
-        "paragraphs": [
-          "Sağlık tesisi ile aracı kuruluşun reklam dili birbirine karıştırılmamalıdır:",
-          "<strong>Sağlık Tesisi (Klinik / Hastane):</strong> Yalnızca kendi bünyesinde sunduğu tıbbi tedavileri, hekimlerinin uzmanlığını ve ameliyathane standartlarını anlatabilir. Başka tesislerin reklamını yapamaz.",
-          "<strong>Aracı Kuruluş (Acenta):</strong> Kendisini bir tıp merkezi veya hastaneymiş gibi tanıtamaz; 'Biz ameliyat yapıyoruz' dili kullanamaz. Yalnızca yetkili sağlık tesisleriyle yaptığı resmî protokoller çerçevesinde sağlık turizmi paketini (tedavi koordinasyonu, otel, transfer, tercüman) tanıtabilir."
-        ]
-      },
-      {
-        "heading": "Google/Meta platform politikalarıyla ikinci kontrol",
-        "subheading": "Platform düzeyinde sağlık reklam kısıtlamaları",
-        "paragraphs": [
-          "Mevzuata uygunluk tek başına reklamın yayınlanması için yetmeyebilir; Google ve Meta'nın kendi küresel sağlık politikaları da dikkate alınmalıdır:",
-          "<strong>Google Healthcare Policy:</strong> Reçeteli ilaç isimleri, onaylanmamış tıbbi cihazlar ve spekülatif tedaviler Google Ads tarafından otomatik olarak engellenir. Sağlık reklamvereni doğrulaması yapılması zorunludur.",
-          "<strong>Meta Kişisel Sağlık Politikası:</strong> Kullanıcıya fiziksel yetersizlik hissettiren, vücut kusurlarını vurgulayan veya 'Bu göbekten 3 günde kurtulun' gibi negatif kurgular Meta algoritması tarafından reddedilir."
-        ]
-      },
-      {
-        "heading": "Yayımdan önce kontrol listesi",
-        "subheading": "Sağlık turizmi reklam kontrol matrisi (Son kontrol: 29 Eylül 2026)",
-        "paragraphs": [
-          "Herhangi bir yurt dışı reklam kampanyasını yayına almadan önce aşağıdaki kontrol matrisinin eksiksiz doğrulanması gerekir:"
-        ],
-        "table": {
-          "headers": [
-            "Kuruluş Türü",
-            "Hedef Kitle & Coğrafya",
-            "Dil Şartı",
-            "Kreatif & İçerik Sınırı",
-            "Açılış Sayfası Zorunluluğu",
-            "Yasal Onay Sahibi"
-          ],
-          "rows": [
-            [
-              "Yetkili Sağlık Tesisi (Klinik / Hastane)",
-              "Yalnızca Yurt Dışı (Türkiye IP'leri hariç)",
-              "Hedef ülkenin dili veya İngilizce",
-              "Bilgilendirme, hekim uzmanlığı, HealthTürkiye logosu",
-              "Yetki belge no, hekim adı, açık rıza metni",
-              "Bakanlık Sağlık Turizmi Yetki Belgesi"
-            ],
-            [
-              "Yetkili Aracı Kuruluş (Acenta)",
-              "Yalnızca Yurt Dışı (Türkiye IP'leri hariç)",
-              "Hedef ülkenin dili veya İngilizce",
-              "Paket tur, seyahat, anlaşmalı hastane tanıtımı",
-              "Acenta belge no, anlaşmalı hastane listesi",
-              "TÜRSAB A Grubu + Bakanlık Aracı Kuruluş Belgesi"
-            ],
-            [
-              "Yetkisiz Muayenehane / Hekim",
-              "Yurt İçi ve Yurt Dışı",
-              "Türkçe veya Yabancı Dil",
-              "Yalnızca bilimsel bilgilendirme; REKLAM YASAK",
-              "1219 sayılı Kanun hekim kimlik künyesi",
-              "İl Sağlık Müdürlüğü Muayenehane Ruhsatı"
-            ],
-            [
-              "B2B Sağlık Ajansı (Overseas Marketing)",
-              "Sağlık Sektörü Karar Vericileri",
-              "Türkçe veya İngilizce",
-              "Ajans B2B hizmetleri, teknoloji ve CRM çözümleri",
-              "Kurumsal künye, yayın ilkeleri, iletişim bilgisi",
-              "B2B Hizmet Sözleşmesi & Kurumsal Tescil"
-            ]
-          ]
-        }
       }
     ],
     "faqs": [
       {
-        "q": "Türkiye'de sağlık turizmi reklamı tamamen serbest midir?",
-        "a": "Hayır. Uluslararası sağlık turizmi yetki belgesine sahip kurumlar yurt dışına yönelik tanıtım yapabilir ancak bu tanıtımlar talep yaratıcı, yanıltıcı indirim veya garanti vaatleri içeremez; mevzuat kurallarına uymak zorundadır."
+        "q": "2023 tarihli tanıtım yönetmeliği hâlâ yürürlükte midir?",
+        "a": "Hayır. 12 Kasım 2025 tarihli yeni yönetmelik ile 29 Temmuz 2023 tarihli eski yönetmelik tamamen yürürlükten kaldırılmıştır."
       },
       {
-        "q": "Yetki belgesi olmadan yurt dışına reklam verilebilir mi?",
-        "a": "Kesinlikle hayır. T.C. Sağlık Bakanlığı'ndan Uluslararası Sağlık Turizmi Yetki Belgesi almamış sağlık tesisleri veya aracı kuruluşların yurt dışına dahi olsa tedavi tanıtımı yapması idari para cezası ve faaliyet durdurma sebebidir."
-      },
-      {
-        "q": "Reklamlarda hasta öncesi ve sonrası (Before/After) görselleri kullanılabilir mi?",
-        "a": "Görseller üzerinde dijital manipülasyon yapılmaması, hastanın kimliğini ifşa etmeyecek şekilde veya ıslak/elektronik açık rıza belgesi alınmış olması şartıyla uluslararası tanıtımlarda bilgilendirme amaçlı kullanılabilir."
-      },
-      {
-        "q": "HealthTürkiye logosunu kimler kullanmak zorundadır?",
-        "a": "Uluslararası Sağlık Turizmi Yetki Belgesi sahibi tüm sağlık tesisleri ve yetkili aracı kuruluşlar, yurt dışına yönelik web sitelerinde ve tanıtım materyallerinde HealthTürkiye logosunu kullanmakla yükümlüdür."
-      },
-      {
-        "q": "Yurt dışına reklam verirken Türkiye'deki kullanıcıları nasıl engelleriz?",
-        "a": "Google Ads ve Meta Business Manager hedefleme ayarlarında coğrafi konum filtresi kullanılarak 'Türkiye' konumu hariç tutulanlar (exclude) listesine eklenir."
-      },
-      {
-        "q": "Aracı kuruluşlar doğrudan ameliyat reklamı yapabilir mi?",
-        "a": "Hayır. Aracı kuruluşlar sağlık hizmeti sunucusu değildir; kendilerini klinik gibi gösteremezler. Yalnızca anlaşmalı oldukları yetkili sağlık tesislerinin hizmetlerini ve refakat/seyahat paketlerini tanıtabilirler."
+        "q": "Yurt dışına fiyatlı reklam verilebilir mi?",
+        "a": "Tedavi fiyatları değişkenlik gösterdiğinden yanıltıcı sabit fiyat veya kampanya/indirim vaatleri yurt dışı tanıtımlarında da yasaktır."
       }
     ],
     "officialSources": [
       {
-        "title": "Sağlık Bakanlığı — 12 Kasım 2025 Tanıtım ve Bilgilendirme Yönetmeliği",
+        "title": "12 Kasım 2025 Tarihli ve 33075 Sayılı Tanıtım Yönetmeliği",
         "url": "https://antalyaism.saglik.gov.tr/TR-366500/saglik-hizmetlerinde-tanitim-ve-bilgilendirme--faaliyetleri-hakkinda-yonetmelik.html"
       },
       {
-        "title": "Resmî Gazete — 26 Nisan 2025 Uluslararası Sağlık Turizmi Yönetmeliği",
+        "title": "26 Nisan 2025 Uluslararası Sağlık Turizmi Yönetmeliği",
         "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
-      },
-      {
-        "title": "Sağlık Bakanlığı — Yetkili Sağlık Tesisleri ve Aracı Kuruluşlar Portalı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/TR-68016/uluslararasi-saglik-turizmi-yetki-belgesi-alan-saglik-tesisleri.html"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi Reklam Yönetimi (Google Ads & Meta)",
+        "title": "Sağlık Bakanlığı Sağlık Turizmi Mevzuatı 2026",
+        "url": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026"
+      },
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama Hizmeti",
         "url": "/hizmetler/performans-pazarlama"
-      },
-      {
-        "title": "Generative Engine Optimization (GEO) Hizmeti",
-        "url": "/hizmetler/geo-generative-engine-optimization"
-      },
-      {
-        "title": "Sağlık Turizminde ChatGPT Reklamı Verilebilir mi?",
-        "url": "/blog/saglik-turizminde-chatgpt-reklami-verilebilir-mi"
-      },
-      {
-        "title": "İngiltere Sağlık Turizmi Reklamları ve ASA Kuralları",
-        "url": "/ingiltere-saglik-turizmi-reklamlari"
       }
     ]
   },
@@ -260,197 +131,81 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "id": "GPT01",
     "slug": "saglik-turizminde-chatgpt-reklami-verilebilir-mi",
     "url": "/blog/saglik-turizminde-chatgpt-reklami-verilebilir-mi",
-    "category": "Yapay Zekâ & Politika Analizi",
+    "category": "Yapay Zekâ & Politika",
     "title": "Sağlık Turizminde ChatGPT Reklamı Verilebilir mi? 2026 Politika Rehberi",
     "h1": "Sağlık turizmi klinikleri ChatGPT'de reklam verebilir mi?",
-    "seoTitle": "Sağlık Turizminde ChatGPT Reklamı Verilebilir mi? 2026 Politika Rehberi",
-    "metaDesc": "Sağlık turizmi klinikleri ChatGPT'de reklam verebilir mi? OpenAI reklam uygunluğu tablosu, tıbbi işlemler yasağı, saç ekimi/implant reklamı ve organik GEO alternatifi.",
+    "seoTitle": "Sağlık Turizminde ChatGPT Reklamı Verilebilir mi? 2026 | Overseas",
+    "metaDesc": "Sağlık turizminde ChatGPT reklamı verilebilir mi? OpenAI reklam politikaları, sağlık kısıtlamaları, GEO (organik yapay zekâ görünürlüğü) ve klinik stratejileri.",
     "primaryKeyword": "sağlık turizmi ChatGPT reklam",
     "secondaryKeywords": [
-      "klinik ChatGPT reklam",
-      "hastane ChatGPT Ads",
-      "ChatGPT'de diş kliniği reklamı",
-      "ChatGPT saç ekimi reklam",
-      "sağlık turizmi GEO"
+      "chatgpt reklamı sağlık",
+      "chatgptde klinik görünürlüğü",
+      "sağlık turizmi geo",
+      "openai sağlık politikası"
     ],
-    "searchIntent": "Ticari / Teknoloji Karar Aşaması",
-    "funnel": "BOFU",
+    "searchIntent": "AI Politika ve Strateji Rehberi",
+    "funnel": "MOFU",
     "readTime": "9 dk okuma",
-    "publishedDate": "29 Eylül 2026",
-    "author": "Overseas AI & Sağlık Pazarlaması Ekibi",
-    "reviewer": "Yapay Zekâ ve Platform Politikaları Kurulu",
-    "quickAnswer": "ChatGPT Ads mevcut olsa da, OpenAI'ın güncel reklam uygunluğu tablosunda tıbbi işlemler (medical procedures and experimental care) ABD dahil tüm ülkelerde izin dışı görünmektedir; hastaneler ve acil bakım kuruluşları da ABD dışındaki tüm pazarlarda izin dışıdır. Bu nedenle saç ekimi, diş implantı, tüp mide veya estetik cerrahi gibi klinik tedaviler için ChatGPT'de sponsorlu reklam kampanyası vaat edilemez. Ancak kliniklerin ChatGPT ve diğer yapay zekâ asistanlarında organik olarak tavsiye edilmesi ve kaynak gösterilmesi için uygulanan GEO (Generative Engine Optimization), reklam satın alımından tamamen ayrı bir stratejik uzmanlıktır.",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Yapay Zekâ Ekibi",
+    "reviewer": "AI Politika Masası",
+    "quickAnswer": "OpenAI platform politikaları uyarınca tıbbi tedaviler, reçeteli ilaçlar ve cerrahi işlemler için doğrudan sponsorlu reklam vermek katı kısıtlamalara tabidir. Ancak klinikler ve hekimler Generative Engine Optimization (GEO) stratejileriyle, ChatGPT ve benzeri yapay zekâ sistemlerinin organik bilgi tabanında güvenilir kaynak ve otorite olarak doğal biçimde yer alabilir.",
     "sections": [
       {
-        "heading": "Ads Manager hesabı açmak reklam onayı mıdır?",
-        "subheading": "Onboarding hesabı ile reklam onayı arasındaki kritik fark",
+        "heading": "OpenAI Reklam Politikaları ve Sağlık Kısıtlamaları",
         "paragraphs": [
-          "OpenAI'ın ChatGPT Ads Manager sistemini belirli pazarlarda kullanıma açmasıyla birlikte, sağlık turizmi sektöründe <em>'Artık ChatGPT'de saç ekimi ve estetik reklamı verebiliyoruz'</em> şeklinde yanıltıcı iddialar ortaya çıkmaya başlamıştır. Bu iddia gerçeği yansıtmamaktadır.",
-          "OpenAI Ads Manager üzerinde kurumsal bir reklamveren hesabı açabilmek, gireceğiniz her reklam kreatifinin onaylanacağı anlamına gelmez. Reklam hesabı açılışı yalnızca teknik bir kimlik doğrulamasıdır; reklam kreatifleri ise OpenAI'ın sıkı kategori ve politika denetimlerinden geçer.",
-          "Özellikle sağlık kategorisinde reklam açmayı vadeden ve politika tablosunu incelemeyen ajanslar, kliniklerin reklam hesaplarının kalıcı olarak kapatılmasına ve askıya alınmasına yol açmaktadır."
-        ],
-        "callout": {
-          "title": "OpenAI Politikası Uyarısı",
-          "text": "Reklamveren hesabınızın onaylanmış olması, tıbbi tedavi reklamlarınızın yayınlanabileceği anlamına gelmez. Sağlık kategorisi bağımsız politika kurallarına tabidir.",
-          "type": "warning"
-        }
-      },
-      {
-        "heading": "Hangi sağlık kategorileri izinli/izin dışı?",
-        "subheading": "OpenAI resmî uygunluk tablosunun ayrıntılı dökümü (29 Eylül 2026 Kontrolü)",
-        "paragraphs": [
-          "OpenAI'ın Resmî Yardım Merkezi'nde (Troubleshooting Common Onboarding and Policy Issues) ilan ettiği sağlık uygunluk tablosu şu şekildedir:",
-          "1. <strong>Tıbbi İşlemler ve Deneysel Tedaviler (Medical Procedures & Experimental Care):</strong> ABD dahil DÜNYANIN TÜM ÜLKELERİNDE <strong>'Not Allowed' (İzin Dışı)</strong> olarak sınıflandırılmıştır. Ameliyatlar, cerrahi müdahaleler, invaziv klinik işlemler reklamı yapılamaz kategoridedir.",
-          "2. <strong>Hastaneler ve Acil Bakım Kuruluşları (Hospitals & Urgent Care):</strong> ABD dışındaki tüm ülkelerde <strong>'Not Allowed'</strong>; yalnızca ABD içinde belirli sertifikasyonlarla 'Allowed' (İzinli) statüsündedir.",
-          "3. <strong>Sağlık Yazılımları ve Altyapısı (Health Software & Infrastructure):</strong> Tüm ülkelerde <strong>'Allowed' (İzinli)</strong>. B2B klinik yönetim yazılımları, tele-sağlık altyapıları ve sağlık CRM sistemleri reklam verebilir.",
-          "4. <strong>Reçetesiz Genel Sağlık ve Wellness:</strong> Belirli ülkelerde yerel ilaç ve tüketici yasalarına uygunluk şartıyla kısıtlı olarak izinlidir."
+          "Yapay zekâ platformlarında sağlık iletişimi en hassas alandır. OpenAI, kullanıcıların sağlık kararlarını manipüle edebilecek doğrudan ticari reklam modellerine izin vermemektedir.",
+          "Saç ekimi, diş implantı veya plastik cerrahi klinikleri için 'ChatGPT'ye para verip birinci sırada sponsorlu çıkmak' gibi bir reklam modeli söz konusu değildir."
         ]
       },
       {
-        "heading": "Saç ekimi, implant, rinoplasti ve IVF nasıl değerlendirilir?",
-        "subheading": "Tıbbi prosedür politikası kapsamında branş incelemeleri",
+        "heading": "GEO ile Sponsorlu Reklam Arasındaki Temel Fark",
         "paragraphs": [
-          "Sağlık turizminin ana omurgasını oluşturan tedavilerin ChatGPT Ads karşısındaki durumunu dürüstçe değerlendirmek gerekir:",
-          "<strong>Saç Ekimi (Hair Transplant):</strong> Cerrahi ve invaziv bir tıbbi işlem olduğundan 'medical procedures' kapsamındadır ve reklamı izin dışıdır.",
-          "<strong>Diş İmplantı ve All-on-4 (Dental Implants):</strong> Cerrahi kemik içi müdahale gerektirdiğinden tıbbi prosedür sayılır ve sponsorlu reklamı onaylanmaz.",
-          "<strong>Rinoplasti ve Estetik Cerrahi:</strong> Genel anestezi altında yapılan cerrahi operasyonlar kesinlikle 'Not Allowed' kategorisindedir.",
-          "<strong>Tüp Bebek (IVF):</strong> İleri düzey tıbbi prosedür ve üreme tedavisi sınıflandırmasında olup OpenAI reklam politikalarınca desteklenmemektedir.",
-          "Dolayısıyla bir ajansın kliniğinize 'ChatGPT Ads üzerinden İngiltere'den implant veya saç ekimi hastası getireceğiz' vaadinde bulunması politikaya aykırıdır."
+          "Sponsorlu reklam bir platforma para ödeyerek banner veya metin göstermektir. GEO (Generative Engine Optimization) ise web sitenizin içeriğini, hekiminizin vaka çalışmalarını ve klinik otoritenizi yapay zekâ botlarının anlayacağı semantik biçimde optimize etmektir.",
+          "Kullanıcı ChatGPT'ye 'Antalya'da diş implantı için hangi standartlara bakmalıyım?' diye sorduğunda sistemin kliniğinizin makalesini kaynak göstermesi bir reklam değil, organik GEO başarısıdır."
         ]
       },
       {
-        "heading": "Reklam görünmeyen sağlık konuşmaları",
-        "subheading": "Yapay zekânın bağımsız ve reklamsız bilgi verme ilkesi",
+        "heading": "Klinikler Bugün Hangi Çalışmaları Yapabilir?",
         "paragraphs": [
-          "OpenAI, ChatGPT içinde sponsorlu reklamların nasıl konumlanacağını belirlerken kullanıcının sağlığını ve güvenliğini en üstte tuttuğunu açıklamıştır.",
-          "Bir kullanıcı ChatGPT'ye <em>'Göğsümde ağrı var, ne yapmalıyım?'</em> veya <em>'Diş implantı enfeksiyon belirtileri nelerdir?'</em> gibi akut semptom, teşhis veya hassas sağlık soruları sorduğunda, sistem bu konuşmalarda asla sponsorlu reklam göstermez.",
-          "Ayrıca OpenAI reklamları organik cevaplardan kesin olarak ayırır. Sponsorlu bir bağlantı olsa dahi bu durum ChatGPT'nin organik akıl yürütmesini ve kaynak seçimini etkilemez."
+          "1. E-E-A-T Otoritesi: Hekimlerin uzmanlık alanlarını ve bilimsel makalelerini web sitesinde yapılandırılmış veriyle sunmak.",
+          "2. Şeffaf Vaka Analizleri: Tedavi süreçlerini, komplikasyon risklerini ve iyileşme sürelerini detaylı açıklamak.",
+          "3. Dijital PR ve Brand Mention: Sektörel yayınlarda klinik adının kaliteli referanslarla geçmesini sağlamak."
         ]
-      },
-      {
-        "heading": "GEO ile ChatGPT reklamı arasındaki fark",
-        "subheading": "Sponsorlu alan ile organik kaynak görünürlüğünü karıştırmayın",
-        "paragraphs": [
-          "ChatGPT Ads ve GEO (Generative Engine Optimization) kavramları sektörde sıkça birbirine karıştırılmaktadır:",
-          "<strong>ChatGPT Reklamı (Sponsorlu Bağlantı):</strong> Para ödenerek reklamverenin adının çıktığı alandır. Sağlık ve tıbbi prosedürler için izin verilmemektedir.",
-          "<strong>GEO (Organik Kaynak Görünürlüğü):</strong> Hastanın <em>'Which dental clinic in Istanbul is best for British patients?'</em> veya <em>'Is Turkey safe for hair transplant?'</em> gibi karar verme sorularında ChatGPT, Gemini ve Perplexity'nin web üzerindeki dijital otoriteyi tarayarak kliniğinizi kaynak göstermesidir. Parayla satın alınamaz; kaliteli içerik, hekim E-E-A-T profili, Schema.org işaretlemesi ve dijital PR ile inşa edilir."
-        ]
-      },
-      {
-        "heading": "Klinikler bugün hangi çalışmaları yapabilir?",
-        "subheading": "Yapay zekâ çağında gerçekçi ve sürdürülebilir büyüme adımları",
-        "paragraphs": [
-          "ChatGPT'de tıbbi reklam verilemiyor olması, yapay zekâ devriminden faydalanamayacağınız anlamına gelmez. Kliniklerin bugün uygulayabileceği 4 temel strateji şunlardır:",
-          "1. <strong>GEO ve Entity SEO Altyapısı Kurun:</strong> Kliniğinizi, hekimlerinizi ve tedavi teknolojilerinizi Schema.org medikal veri yapılarıyla işaretleyin. Yapay zekâ botlarının sitenizi eksiksiz taramasını sağlayın.",
-          "2. <strong>Hedef Dilde Topical Authority Oluşturun:</strong> İngiltere ve Almanya hastalarının karar verirken yapay zekâya sorduğu soruları kapsayan derinlemesine içerik kütüphaneleri hazırlayın.",
-          "3. <strong>Google Ads ve Meta Kampanyalarını Yetkiyle Yönetin:</strong> Aktif hasta talebini toplamak için mevzuat onaylı Google Arama Ağı ve Meta Ads reklamlarını etkin kullanın.",
-          "4. <strong>WhatsApp CRM ve AI Sesli Asistan Entegrasyonu:</strong> Gelen lead'leri saniyeler içinde karşılayarak operasyonel kayıpları sıfıra indirin."
-        ]
-      },
-      {
-        "heading": "Politika değişirse nasıl takip edilir?",
-        "subheading": "Arama ifadesi, beklenti ve dürüst ajans yanıtı matrisi",
-        "paragraphs": [
-          "OpenAI reklam politikaları dinamiktir ve gelecekte sağlık kategorilerinde bölgesel gevşemeler veya sertifikasyon programları (Google LegitScript benzeri) devreye girebilir. Overseas Marketing olarak OpenAI politika güncellemelerini haftalık izlemekte ve müşterilerimize şeffafça raporlamaktayız."
-        ],
-        "table": {
-          "headers": [
-            "Arama İfadesi / Talep",
-            "Kullanıcı / Klinik Beklentisi",
-            "Bugün Dürüst Yanıt & Politika Durumu",
-            "İlgili Hizmet & Önerilen Alternatif Kanal"
-          ],
-          "rows": [
-            [
-              "ChatGPT'de saç ekimi reklamı vermek",
-              "Saç ekimi için sponsorlu kampanya açmak",
-              "OpenAI 'Medical procedures' politikasında izin dışıdır; onaylanmaz.",
-              "Organik GEO & Uluslararası SEO Stratejisi"
-            ],
-            [
-              "ChatGPT diş kliniği ve implant reklamı",
-              "İmplant ve gülüş tasarımı reklamı vermek",
-              "Tıbbi müdahale kategorisinde olduğundan sponsorlu reklam açılamaz.",
-              "Google Ads Arama Ağı + Organik GEO"
-            ],
-            [
-              "ChatGPT'de önerilen klinik olmak",
-              "Yapay zekâ cevaplarında tavsiye edilmek",
-              "Organik cevaplar reklamla satın alınamaz; dijital otoriteyle kazanılır.",
-              "Generative Engine Optimization (GEO) & Entity SEO"
-            ],
-            [
-              "Hastane için ChatGPT Ads kampanyası",
-              "Hastane tanıtımı için ChatGPT'ye reklam vermek",
-              "Hastaneler ABD dışında 'Not Allowed', ABD'de kısıtlı izinlidir.",
-              "Google Search Ads + Meta Brand Awareness"
-            ],
-            [
-              "Yurt dışından hasta getirmek için reklam",
-              "Dijital kanallarla yabancı hasta edinmek",
-              "ChatGPT Ads yerine mevzuata uygun Google ve Meta Ads kullanılmalıdır.",
-              "Performans Pazarlama + Çok Dilli WhatsApp CRM"
-            ]
-          ]
-        }
       }
     ],
     "faqs": [
       {
-        "q": "ChatGPT'de doğrudan sağlık reklamı verilebilir mi?",
-        "a": "Hayır. OpenAI'ın 29 Eylül 2026 itibarıyla yürürlükte olan reklam uygunluk tablosunda tıbbi işlemler (medical procedures) ABD dahil tüm dünyada izin dışıdır; hastaneler de ABD dışındaki ülkelerde izin dışı görünmektedir."
+        "q": "ChatGPT'de kesin olarak birinci çıkmak mümkün müdür?",
+        "a": "Hayır. Yapay zekâ sistemleri dinamik prompt mantığıyla çalışır; kesin bir sıralama garantisi vermek teknik olarak yanıltıcıdır."
       },
       {
-        "q": "ChatGPT Ads hesabı açmak sağlık reklamı vermeye yeterli mi?",
-        "a": "Hayır. OpenAI Ads Manager hesabı açmak yalnızca bir ön kayıttır; girilen her reklam kreatifi politika denetiminden geçer ve tıbbi işlemler sistem tarafından reddedilir."
-      },
-      {
-        "q": "Klinikler ChatGPT'de nasıl yer alabilir?",
-        "a": "Sponsorlu reklam yerine GEO (Generative Engine Optimization) uygulayarak. Yapay zekâ botlarının kliniğinizi güvenilir bir kaynak olarak tanımasını sağlayarak organik soru-cevaplarda tavsiye edilmesini sağlayabilirsiniz."
-      },
-      {
-        "q": "Saç ekimi ve diş tedavileri neden izin dışı?",
-        "a": "OpenAI, cerrahi ve invaziv klinik müdahaleleri 'Medical procedures & experimental care' kategorisinde değerlendirmekte ve kullanıcının sağlığını korumak amacıyla bu alanda sponsorlu reklama izin vermemektedir."
-      },
-      {
-        "q": "GEO ile ChatGPT reklamı arasındaki fark nedir?",
-        "a": "ChatGPT reklamı ücret karşılığı yayınlanan sponsorlu bağlantıdır (tıbbi işlemlere kapalıdır). GEO ise web sitenizin bilgi mimarisini optimize ederek yapay zekânın sizi doğal bir kaynak olarak alıntılamasını sağlamaktır."
-      },
-      {
-        "q": "OpenAI sağlık politikalarını gelecekte değiştirir mi?",
-        "a": "Politikalar dinamiktir. OpenAI gelecekte sağlık kuruluşları için özel akreditasyon veya sertifikasyon programları açıklarsa süreç güncellenecektir; ancak şu an tıbbi işlemler küresel olarak izin dışıdır."
+        "q": "GEO için web sitesine özel bir şema kodu gerekir mi?",
+        "a": "Özel bir 'GEO şeması' yoktur; Google ve Schema.org'un standart Article, Physician ve Organization şemalarını doğru kullanmak yeterlidir."
       }
     ],
     "officialSources": [
       {
-        "title": "OpenAI — Reklam Kategorileri ve Sağlık Uygunluk Tablosu",
-        "url": "https://help.openai.com/en/articles/20001534-troubleshooting-common-onboarding-and-policy-issues"
+        "title": "OpenAI Usage Policies — Health and Safety",
+        "url": "https://openai.com/policies/usage-policies"
       },
       {
-        "title": "OpenAI — ChatGPT Reklamları ve Cevapların Bağımsızlığı",
-        "url": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt"
-      },
-      {
-        "title": "yapayzekadareklam.com — ChatGPT Reklamları ve Ads Manager Rehberi",
-        "url": "https://www.yapayzekadareklam.com/blog/chatgpt-reklamlari-nasil-verilir"
+        "title": "Google Search Central — AI Optimization Guide",
+        "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
       }
     ],
     "internalLinks": [
       {
-        "title": "Generative Engine Optimization (GEO) Hizmetimiz",
+        "title": "Generative Engine Optimization (GEO) Hizmeti",
         "url": "/hizmetler/geo-generative-engine-optimization"
       },
       {
-        "title": "2026 Sağlık Turizmi Reklam Mevzuatı Rehberi",
-        "url": "/blog/saglik-turizmi-reklam-mevzuati-2026"
+        "title": "Sağlık Turizminde Chatbot ve AI Entegrasyonu",
+        "url": "/blog/saglik-turizminde-chatbot"
       },
       {
-        "title": "Sağlık Turizmi Reklam Yönetimi (Google & Meta Ads)",
-        "url": "/hizmetler/performans-pazarlama"
-      },
-      {
-        "title": "Uluslararası Sağlık Turizmi SEO Hizmeti",
-        "url": "/saglik-turizmi-seo"
+        "title": "Uluslararası SEO Hizmeti",
+        "url": "/hizmetler/uluslararasi-seo-hizmeti"
       }
     ]
   },
@@ -3575,115 +3330,94 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "id": "K018",
     "slug": "saglik-turizmi-acentesi-acmak",
     "url": "/saglik-turizmi-acentesi-acmak",
-    "category": "İşletmecilik, acenta ve danışmanlık",
-    "title": "Sağlık Turizmi Acentası Açmak İçin Gerekenler",
-    "h1": "Sağlık Turizmi Acentası Açmak İçin Gerekenler",
-    "seoTitle": "Sağlık Turizmi Acentası Açmak İçin Gerekenler | Overseas Marketing",
-    "metaDesc": "Sağlık Turizmi Acentası Açmak İçin Gerekenler. sağlık turizmi acentası açmak hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
-    "primaryKeyword": "sağlık turizmi acentası açmak",
+    "category": "Acente & Kuruluş",
+    "title": "Sağlık Turizmi Acentası Nasıl Kurulur? Adım Adım Belgeler",
+    "h1": "Sağlık Turizmi Acentası Nasıl Kurulur? Adım Adım Belgeler",
+    "seoTitle": "Sağlık Turizmi Acentası Nasıl Kurulur? 2026 Rehberi | Overseas",
+    "metaDesc": "Sağlık turizmi acentası nasıl kurulur? Gerekli belgeler, TÜRSAB A grubu seyahat acentesi işletme belgesi, USHAŞ aracı kuruluş başvurusu ve protokoller.",
+    "primaryKeyword": "sağlık turizmi acentası nasıl kurulur",
     "secondaryKeywords": [
-      "sağlık turizmi acentaları",
-      "sağlık turizmi acenteleri",
-      "sağlık turizmi için gerekli belgeler"
+      "sağlık turizmi acentası kurmak için gerekli belgeler",
+      "sağlık turizmi acente açmak",
+      "aracı kuruluş kurma şartları"
     ],
-    "searchIntent": "Ticari araştırma",
-    "funnel": "MOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Sağlık Turizmi Acentası Açmak İçin Gerekenler, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; sağlık turizmi acentası açmak konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.",
+    "searchIntent": "Adım Adım Kuruluş Rehberi",
+    "funnel": "BOFU",
+    "readTime": "10 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Acente Uyum Masası",
+    "quickAnswer": "Sağlık turizmi acentası kurmak için sırasıyla: 1) Şirket ana sözleşmesine seyahat acenteliği ve sağlık turizmi maddelerini ekleyerek şirket kurmak, 2) Kültür ve Turizm Bakanlığı'ndan A Grubu Seyahat Acentesi İşletme Belgesi almak, 3) En az 3 yetkili sağlık tesisi ile protokol imzalayarak USHAŞ'a başvurup Sağlık Turizmi Aracı Kuruluş Yetki Belgesi almak gerekir.",
     "sections": [
       {
-        "heading": "Sağlık Turizmi Acentası Açmak İçin Gerekenler Genel Bakış ve Kapsamı",
-        "subheading": "2026 Mevzuat ve Pazar Standartları",
+        "heading": "Acente, Aracı Kuruluş ve Seyahat Acentesi Terimlerini Ayırmak",
         "paragraphs": [
-          "Sağlık Turizmi Acentası Açmak İçin Gerekenler, sağlık turizmi ekosisteminde hem hizmet sunucuları (hastaneler ve klinikler) hem de hizmet arayan uluslararası hastalar açısından temel bir dinamiktir.",
-          "Türkiye, sahip olduğu güçlü hekim kadrosu, modern teknolojik altyapısı ve akredite sağlık tesisleriyle sağlık turizmi acentası açmak alanında küresel ölçekte lider destinasyonlardan biridir. Bu süreçte doğru bilgilendirme ve şeffaf hasta iletişimi esastır."
-        ],
-        "bulletPoints": [
-          "sağlık turizmi acentası açmak kapsamında sunulan hizmetlerin uluslararası standartlara (JCI, TEMOS, SKS) uygunluğu.",
-          "Yabancı hasta adaylarının kendi ana dillerinde doğru bilgilendirilmesi ve E-E-A-T güven ilkeleri.",
-          "Mevzuata uygun, kanıtsız garanti içermeyen profesyonel bilgilendirme ve şeffaf süreç yönetimi."
+          "Sektörde sıklıkla 'sağlık turizmi acentası' olarak ifade edilen kavramın mevzuattaki resmî karşılığı 'Uluslararası Sağlık Turizmi Aracı Kuruluşu'dur.",
+          "Sağlık turizmi acentası olmak isteyen girişimcilerin öncelikle Kültür ve Turizm Bakanlığı mevzuatına göre bir seyahat acentesi olması, ardından Sağlık Bakanlığı mevzuatına göre aracı kuruluş yetkisi alması zorunludur. Biri olmadan diğeri geçerli sayılamaz."
         ]
       },
       {
-        "heading": "Süreç ve Uygulama Kriterleri",
+        "heading": "Şirket Türü, Unvan ve Faaliyet Kapsamı",
         "paragraphs": [
-          "Sağlık Turizmi Acentası Açmak İçin Gerekenler sürecinde kurumsal başarı elde etmek için operasyonel, hukuki ve dijital pazarlama adımlarının entegre biçimde yürütülmesi gerekir."
-        ],
-        "table": {
-          "headers": [
-            "Süreç Adımı",
-            "Temel Gereksinim",
-            "Beklenen Çıktı"
-          ],
-          "rows": [
-            [
-              "Stratejik Planlama",
-              "Hedef pazar & branş analizi",
-              "Doğru hasta profili belirleme"
-            ],
-            [
-              "Yasal Uygunluk",
-              "Sağlık Bakanlığı & ilgili mevzuat",
-              "Yetkili ve güvenli hizmet sunumu"
-            ],
-            [
-              "Dijital Entegrasyon",
-              "Çok dilli web & CRM altyapısı",
-              "Hızlı ve nitelikli hasta karşılama"
-            ],
-            [
-              "Hasta Deneyimi",
-              "Uçtan uca refakat & takip",
-              "Yüksek hasta memnuniyeti ve tavsiye"
-            ]
-          ]
-        },
-        "callout": {
-          "title": "Mevzuat ve Kalite Notu",
-          "text": "Sağlık turizmi kapsamındaki tüm faaliyetler T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü ve ilgili resmî yönetmelik hükümleri doğrultusunda yürütülmelidir.",
-          "type": "info"
-        }
+          "Şirket Limited Şirket veya Anonim Şirket olarak kurulabilir. TÜRSAB nezdinde tescil edilecek acente unvanının daha önce başka bir acente tarafından kullanılmamış olması şarttır.",
+          "Ana sözleşmede yurt içi ve yurt dışı turizm acenteliği, bilet satışı, transfer, konaklama ve sağlık turizmi aracılık hizmetlerinin açıkça yer alması Ticaret Sicil onayı için gereklidir."
+        ]
+      },
+      {
+        "heading": "Kültür ve Turizm Bakanlığı ve TÜRSAB Boyutu",
+        "paragraphs": [
+          "Seyahat acentesi işletme belgesi almak için TÜRSAB'a başvuru yapılır. Başvuruda; fiziki ofis şartları, mesul müdür ataması, enformasyon memuru istihdamı ve Bakanlık adına teminat mektubu sunulması zorunludur. İşletme belgesi çıkmadan USHAŞ aşamasına geçilemez."
+        ]
+      },
+      {
+        "heading": "USHAŞ Sağlık Turizmi Aracı Kuruluş Yetkisi",
+        "paragraphs": [
+          "TÜRSAB belgesi alındıktan sonra USHAŞ'a EK-1/B dosyası teslim edilir. Bu dosyanın en can alıcı kısmı, yetki belgeli sağlık tesisleriyle yapılan protokollerdir. Sözleşmelerde hastanın hakları, tedavi ücreti aktarımları ve komplikasyon sorumlulukları netleştirilmelidir."
+        ]
+      },
+      {
+        "heading": "Yetkili Hale Geldikten Sonra Hasta Kazanımı Altyapısı",
+        "paragraphs": [
+          "Yetki belgesini alan aracı kuruluşun ilk yapması gereken, güvenilir bir dijital büyüme kanalı kurmaktır. Overseas Marketing; yetkili acenteler için çok dilli web sayfaları, çağrı merkezi CRM'i ve uluslararası reklam yönetimi desteği sağlar."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Sağlık Turizmi Acentası Açmak İçin Gerekenler konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "TÜRSAB belgesi sağlık turizmi belgesi yerine geçer mi?",
+        "a": "Hayır. TÜRSAB belgesi yalnızca seyahat ve turizm faaliyetlerine izin verir. Sağlık turizmi aracılığı için USHAŞ belgesi şarttır."
       },
       {
-        "q": "sağlık turizmi acentası açmak ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
-      },
-      {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "Acente kurmadan sadece doktor yönlendirerek komisyon alınabilir mi?",
+        "a": "Hayır. Yetki belgesiz sağlık turizmi aracılığı yapmak ve komisyon almak yasalara aykırıdır ve ağır idari yaptırımlara tabidir."
       }
     ],
     "officialSources": [
       {
-        "title": "Sağlık Turizmi Daire Başkanlığı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/"
+        "title": "TÜRSAB Yeni İşletme Belgesi Başvurusu",
+        "url": "https://www.tursab.org.tr/yeni-isletme-belgesi-basvurusu"
       },
       {
-        "title": "HealthTürkiye yetkili acentalar",
-        "url": "https://healthturkiye.gov.tr/tr/agency"
+        "title": "2025 Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi İşletmeciliği Nedir?",
-        "url": "/saglik-turizmi-isletmeciligi/nedir"
+        "title": "Aracı Kuruluş Yetki Belgesi Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
       },
       {
-        "title": "Sağlık Turizmi İşletmeciliği Ne İş Yapar?",
-        "url": "/saglik-turizmi-isletmeciligi/ne-is-yapar"
+        "title": "TÜRSAB Sağlık Turizmi Belgesi Farkı",
+        "url": "/blog/tursab-saglik-turizmi-belgesi-farki"
       },
       {
-        "title": "Sağlık Turizmi İşletmeciliği Bölümü ve Kariyer Olanakları",
-        "url": "/saglik-turizmi-isletmeciligi"
+        "title": "Yetki Belgesi Başvuru Formları",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari"
+      },
+      {
+        "title": "Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
       }
     ]
   },
@@ -4519,109 +4253,180 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "id": "K026",
     "slug": "saglik-turizmi-yetki-belgesi",
     "url": "/saglik-turizmi-yetki-belgesi",
-    "category": "Yetki belgesi, yönetmelik ve hukuk",
-    "title": "Sağlık Turizmi Yetki Belgesi Nedir?",
-    "h1": "Sağlık Turizmi Yetki Belgesi Nedir?",
-    "seoTitle": "Sağlık Turizmi Yetki Belgesi Nedir? | Overseas Marketing",
-    "metaDesc": "Sağlık Turizmi Yetki Belgesi Nedir?. sağlık turizmi yetki belgesi hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
+    "category": "Yetki Belgesi & Mevzuat",
+    "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır? 2026 Başvuru Rehberi",
+    "h1": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır? 2026 Başvuru Rehberi",
+    "seoTitle": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır? 2026 Başvuru Rehberi | Overseas",
+    "metaDesc": "2026 uluslararası sağlık turizmi yetki belgesi başvuru rehberi: Sağlık tesisi ve aracı kuruluş şartları, EKİP ve USHAŞ başvuru adımları, denetim ve belgeler.",
     "primaryKeyword": "sağlık turizmi yetki belgesi",
     "secondaryKeywords": [
-      "sağlık turizmi belgesi",
-      "sağlık bakanlığı sağlık turizmi yetki belgesi",
-      "sağlık turizmi yetki belgesi şartları"
+      "sağlık turizm belgesi nasıl alınır",
+      "sağlık turizmi yetki belgesi şartları",
+      "uluslararası sağlık turizmi yetki belgesi",
+      "sağlık tesisi yetki belgesi",
+      "aracı kuruluş yetki belgesi",
+      "EKİP başvurusu",
+      "USHAŞ yetki belgesi"
     ],
-    "searchIntent": "Bilgilendirici",
-    "funnel": "MOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Uluslararası Sağlık Turizmi Yetki Belgesi; Türkiye’de yabancı hastalara sağlık hizmeti sunmak veya aracı kurum olarak faaliyet göstermek isteyen kurumların T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü’nden almak zorunda olduğu resmî izin belgesidir. Sağlık tesisleri için Ek-1, aracı kuruluşlar için Ek-2 kriterlerine tam uyum zorunludur.",
+    "searchIntent": "Hukuki / Kurumsal Bilgilendirici (YMYL)",
+    "funnel": "BOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Sağlık Mevzuatı Danışma Masası",
+    "quickAnswer": "Uluslararası sağlık turizmi yetki belgesi; Türkiye’de yabancı hastalara yasal olarak sağlık hizmeti sunmak veya bu hizmete aracılık etmek isteyen kurumlar için zorunlu resmî izin belgesidir. 26 Nisan 2025 tarihli Resmî Gazete’de yayımlanan yönetmelik uyarınca sağlık tesisleri başvurularını EK-1/A formuyla EKİP üzerinden Sağlık Bakanlığı'na; aracı kuruluşlar (seyahat acenteleri) ise EK-1/B formuyla doğrudan USHAŞ’a yapar.",
     "sections": [
       {
-        "heading": "Sağlık Turizmi Yetki Belgesi Alım Şartları ve Kriterleri",
-        "subheading": "Sağlık Bakanlığı Yönetmeliği Kapsamında Zorunlu Kriterler",
+        "heading": "Yetki Belgesi Nedir ve Hangi Kuruluşlar İçin Zorunludur?",
         "paragraphs": [
-          "Yetki belgesi olmadan yabancı hastalara yönelik tanıtım, reklam veya hasta kabul faaliyeti yürütmek idari para cezası ve faaliyet durdurma yaptırımlarına tabidir.",
-          "Yetki belgesi iki ayrı kategoriye ayrılır: Sağlık Tesisleri (Hastaneler, Tıp Merkezleri, Muayenehaneler) ve Aracı Kuruluşlar (Seyahat Acentaları)."
+          "Uluslararası sağlık turizmi yetki belgesi, Türkiye Cumhuriyeti sınırları içinde yerleşik sağlık tesislerinin ve aracı kuruluşların yurt dışından gelen hastalara yönelik yasal hizmet sunabilmesini sağlayan ruhsatlandırıcı belgedir. 26 Nisan 2025 tarihli ve 32882 sayılı Resmî Gazete’de yayımlanan Uluslararası Sağlık Turizmi Yönetmeliği ile 2017 tarihli eski yönetmelik tamamen yürürlükten kaldırılmıştır.",
+          "Yeni yasal çerçevede yetki belgesi olmaksızın yurt dışından hasta kabul etmek, yabancı dilde sağlık tanıtımı yapmak veya sağlık turizmi aracılığı faaliyeti yürütmek kesin olarak yasaklanmış ve ağır idari para cezaları ile faaliyet durdurma yaptırımlarına bağlanmıştır.",
+          "Önemli kurumsal ayrım: Overseas Marketing bir sağlık tesisi ya da yetkili aracı kuruluş değildir; yetki belgeli klinik ve aracı kuruluşlara uluslararası dijital pazarlama, SEO, GEO ve teknoloji danışmanlığı sağlar."
+        ],
+        "callout": {
+          "title": "Resmî Mevzuat Uyarısı",
+          "text": "2017 tarihli Sağlık Turizmi Yönetmeliği mülga olmuştur. 2026 yılındaki tüm başvurular 26 Nisan 2025 tarihli 32882 sayılı Resmî Gazete yönetmeliği ve eklerindeki güncel kriterlere göre değerlendirilir.",
+          "type": "warning"
+        }
+      },
+      {
+        "heading": "Sağlık Tesisi ve Aracı Kuruluş Başvuru Makamları Karşılaştırması",
+        "paragraphs": [
+          "Sağlık turizmi ekosisteminde iki temel aktör bulunur: Sağlık hizmetini bizzat veren 'Sağlık Tesisleri' (hastane, tıp merkezi, poliklinik, muayenehane) ve organizasyonu yürüten 'Aracı Kuruluşlar' (A grubu seyahat acenteleri). Her iki kurumun başvurduğu resmî makam ve mevzuat yükümlülükleri tamamen farklıdır."
         ],
         "table": {
           "headers": [
-            "Gereksinim",
-            "Sağlık Tesisi İçin Şart",
-            "Aracı Kuruluş İçin Şart"
+            "Kriter / Alan",
+            "Sağlık Tesisi (Klinik / Hastane)",
+            "Aracı Kuruluş (Acente)"
           ],
           "rows": [
             [
-              "Yabancı Dil Personeli",
-              "En az 2 yabancı dilde B2/C1 yeterlilik belgesi",
-              "En az 2 dilde B2/C1 düzeyinde istihdam"
+              "Başvuru Makamı",
+              "İl Sağlık Müdürlüğü / EKİP Sistemi",
+              "USHAŞ (Uluslararası Sağlık Hizmetleri A.Ş.)"
             ],
             [
-              "Çağrı / İletişim",
-              "7/24 kesintisiz çok dilli iletişim hattı",
-              "7/24 kesintisiz çok dilli çağrı ve kriz yönetimi"
+              "Kullanılan Başvuru Formu",
+              "EK-1/A Başvuru Evrakı",
+              "EK-1/B Başvuru Evrakı"
             ],
             [
-              "Mesleki İzin",
-              "Ruhsatlı sağlık tesisi / muayenehane",
-              "TÜRSAB A Grubu Seyahat Acentası İşletme Belgesi"
+              "Temel Ön Koşul",
+              "Ruhsatlı sağlık tesisi + Sağlıkta Kalite Standartları (en az 85 puan)",
+              "Kültür ve Turizm Bakanlığı A Grubu Seyahat Acentesi İşletme Belgesi"
             ],
             [
-              "Protokol Zorunluluğu",
-              "Kendi sağlık ruhsatı esastır",
-              "En az 3 yetkili sağlık tesisiyle imzalanmış protokol"
+              "Düzenlenen Belge Örneği",
+              "EK-3/A Sağlık Tesisi Yetki Belgesi",
+              "EK-3/B Aracı Kuruluş Yetki Belgesi"
             ],
             [
-              "Web Sitesi Şartları",
-              "Hekim yetkinliği, KVKK/GDPR, çok dilli altyapı",
-              "Paket içeriği, acente unvanı ve şeffaf bilgilendirme"
+              "Yabancı Dil Şartı",
+              "Yetkili sağlık turizmi biriminde en az 2 dilde yetkin personel",
+              "7/24 kesintisiz hizmet veren çok dilli çağrı merkezi ve personel"
+            ],
+            [
+              "Portal Kaydı",
+              "HealthTürkiye sistemine zorunlu kayıt ve entegrasyon",
+              "HealthTürkiye sistemine zorunlu kayıt ve sözleşmeli tesis listesi"
             ]
           ]
-        },
-        "callout": {
-          "title": "Yasal Uyum Kuralı",
-          "text": "Aracı kuruluşların TÜRSAB A Grubu Seyahat Acentası Belgesi bulunması kanuni zorunluluktur. B veya C grubu acentalar sağlık turizmi aracı kurumu olamaz.",
-          "type": "warning"
         }
+      },
+      {
+        "heading": "Sağlık Tesisi İçin Yetki Belgesi Başvuru Süreci: EKİP ve EK-1/A",
+        "paragraphs": [
+          "Sağlık tesisleri başvurularını Entegre Kurumsal İşlem Platformu (EKİP) üzerinden dijital ortamda gerçekleştirir. Başvuru dosyasına EK-1/A belgesinde sıralanan evraklar eksiksiz yüklenir.",
+          "Sürecin ilk aşamasında sağlık tesisinin Sağlıkta Kalite Standartları (SKS) denetiminden en az 85 puan almış olması şartı aranır. Muayenehaneler için ise SKS puanı yerine yönetmelikte belirtilen asgari fiziki ve teknik kriterler esas alınır.",
+          "İl Sağlık Müdürlüğü bünyesindeki denetim komisyonu tesisi yerinde inceler. Yabancı hasta kayıt sistemi, komplikasyon ve acil durum protokolleri, tercüman istihdamı ve aydınlatılmış onam formlarının hedef dillerdeki mevcudiyeti denetlenir. Uygun bulunan dosya Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü onayıyla EK-3/A yetki belgesine bağlanır."
+        ]
+      },
+      {
+        "heading": "Aracı Kuruluş İçin Başvuru: USHAŞ ve EK-1/B İnceleme Akışı",
+        "paragraphs": [
+          "Sağlık turizmi aracı kuruluşu olmak isteyen şirketlerin öncelikle 1618 sayılı Kanun kapsamında Kültür ve Turizm Bakanlığı’ndan alınmış A Grubu Seyahat Acentesi İşletme Belgesi’ne sahip olması şarttır.",
+          "Başvuru doğrudan USHAŞ’a EK-1/B formu ve ekleriyle yapılır. Başvuru dosyasında; en az 3 yetkili sağlık tesisi ile akdedilmiş uluslararası sağlık turizmi protokolleri, 7/24 hizmet veren yabancı dil çağrı altyapısı, transfer ve konaklama sigorta poliçeleri ve KVKK uyumlu hasta veri saklama taahhütnamesi yer alır.",
+          "USHAŞ tarafından yapılan dosya ve yerinde inceleme neticesinde uygun görülen acentelere EK-3/B Aracı Kuruluş Yetki Belgesi tanzim edilir ve kuruluş HealthTürkiye portalında listelenir."
+        ]
+      },
+      {
+        "heading": "Başvuru Sonrası Denetim, HealthTürkiye Entegrasyonu ve Belge Kontrolü",
+        "paragraphs": [
+          "Yetki belgesi almak süreci tamamlamaz; sürdürülebilir denetim sürecini başlatır. Yetki alan tüm kurumlar HealthTürkiye resmî portalına entegre olmak ve sisteme gelen hasta taleplerini, tedavi süreçlerini ve şikayet mekanizmalarını şeffafça yönetmek zorundadır.",
+          "Bakanlık ve USHAŞ yılda en az bir kez olağan, şikayet üzerine ise habersiz yerinde denetimler gerçekleştirir. Yabancı dildeki tanıtımların 12 Kasım 2025 tarihli Tanıtım Yönetmeliği'ne uygunluğu, yanıltıcı fiyat ve tedavi garantisi verilip verilmediği taranır.",
+          "Eksiklik tespit edilen kurumlara eksikliği gidermesi için süre verilir; halk sağlığını veya ülke itibarını zedeleyen ağır ihlallerde yetki belgesi doğrudan iptal edilir."
+        ]
+      },
+      {
+        "heading": "Yetki Belgesi Başvurusunda Sık Yapılan 7 Hata",
+        "paragraphs": [
+          "1. TÜRSAB seyahat belgesini sağlık turizmi yetki belgesi ile aynı sanmak ve USHAŞ başvurusu yapmadan hasta kabul etmeye çalışmak.",
+          "2. EK-3 formunu bir başvuru evrakı sanarak Bakanlığa EK-3 doldurmaya çalışmak (EK-3 başvuru formu değil, düzenlenen belgenin örneğidir; başvuru formu EK-1'dir).",
+          "3. SKS kalite puanı 85'in altındayken klinik adına başvuru yaparak harç ve zaman kaybetmek.",
+          "4. Tercüman istihdamını yalnızca sözlü beyanla sunup noter onaylı diploma veya dil yeterlilik belgesi eklememek.",
+          "5. Anlaşmalı hastane protokollerini 2025 yönetmeliğinin zorunlu tuttuğu asgari teminat maddelerini içermeden alelade sözleşmelerle hazırlamak.",
+          "6. Yabancı hasta aydınlatılmış onam formlarını hedef ülke diline profesyonel hukuki çeviri yaptırmadan Google Translate ile oluşturmak.",
+          "7. Belge onaylanmadan önce yurt dışına yönelik sponsorlu reklam kampanyaları başlatarak ceza riskine girmek."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Sağlık Turizmi Yetki Belgesi Nedir? konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "Sağlık turizmi yetki belgesi kimlere zorunludur?",
+        "a": "Türkiye'de yabancı uyruklu hastalara tıbbi teşhis, tedavi veya cerrahi müdahale sunan tüm ruhsatlı sağlık tesislerine (hastane, tıp merkezi, poliklinik, muayenehane) ve bu hastalara ulaşım, konaklama ve tedavi organizasyonu sağlayan seyahat acentelerine zorunludur."
       },
       {
-        "q": "sağlık turizmi yetki belgesi ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
+        "q": "Klinik yetki belgesi ile aracı kuruluş belgesi aynı mıdır?",
+        "a": "Hayır. Klinik yetki belgesi EK-3/A koduyla Sağlık Bakanlığı tarafından yalnızca tıbbi tesislere verilir. Aracı kuruluş yetki belgesi ise EK-3/B koduyla USHAŞ tarafından A grubu seyahat acentelerine verilir."
       },
       {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "Sağlık turizmi yetki belgesi hangi durumlarda iptal edilir?",
+        "a": "Yıllık denetimlerde aranan şartların kaybedilmesi, HealthTürkiye portalına bildirim yapılmaması, 12 Kasım 2025 tanıtım mevzuatına aykırı örtülü reklam ve yanıltıcı vaatte bulunulması veya aracı kuruluşun A grubu acente ruhsatının iptal edilmesi durumunda belge iptal edilir."
       }
     ],
     "officialSources": [
       {
-        "title": "Sağlık Turizmi Daire Başkanlığı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/"
+        "title": "Resmî Gazete 26.04.2025 / Sayı 32882 — Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
       },
       {
-        "title": "Yetkili sağlık tesisleri",
-        "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html"
+        "title": "T.C. Sağlık Bakanlığı Sağlık Turizmi Dairesi Başkanlığı",
+        "url": "https://shgmturizmdb.saglik.gov.tr/TR-108367/yeni-saglik-turizmi-yonetmeligi.html"
+      },
+      {
+        "title": "USHAŞ Uluslararası Sağlık Turizmi Yetkilendirme Kriterleri",
+        "url": "https://www.ushas.gov.tr/saglik-turizmi-mevzuati/"
+      },
+      {
+        "title": "HealthTürkiye Resmî Portalı",
+        "url": "https://healthturkiye.gov.tr/certificated-health-service-providers"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır?",
-        "url": "/saglik-turizmi-yetki-belgesi/nasil-alinir"
+        "title": "Aracı Kuruluş Yetki Belgesi Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
       },
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Şartları",
-        "url": "/saglik-turizmi-yetki-belgesi/sartlari"
+        "title": "Sağlık Turizmi Gerekli Şartlar ve Belgeler",
+        "url": "/saglik-turizmi/gerekli-belgeler"
       },
       {
-        "title": "Uluslararası Sağlık Turizmi Yetki Belgesi Başvuru Rehberi",
-        "url": "/uluslararasi-saglik-turizmi-yetki-belgesi"
+        "title": "Sağlık Turizmi Yetki Belgesi Başvuru Formları",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari"
+      },
+      {
+        "title": "Yetki Belgesi Ücretleri ve Maliyet Analizi",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-ucreti"
+      },
+      {
+        "title": "Sağlık Bakanlığı 2026 Mevzuatı",
+        "url": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026"
+      },
+      {
+        "title": "Yetkili Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
       }
     ]
   },
@@ -5293,117 +5098,134 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
   },
   {
     "id": "K033",
-    "slug": "saglik-turizmi-gerekli-belgeler",
+    "slug": "gerekli-belgeler",
     "url": "/saglik-turizmi/gerekli-belgeler",
-    "category": "Yetki belgesi, yönetmelik ve hukuk",
-    "title": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?",
-    "h1": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?",
-    "seoTitle": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir? | Overseas Marketing",
-    "metaDesc": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?. sağlık turizmi için gerekli belgeler hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
+    "category": "Yetki Belgesi & Evraklar",
+    "title": "Sağlık Turizmi Yapmak İçin Gerekli Şartlar ve Belgeler (2026)",
+    "h1": "Sağlık Turizmi Yapmak İçin Gerekli Şartlar ve Belgeler (2026)",
+    "seoTitle": "Sağlık Turizmi İçin Gerekli Şartlar ve Belgeler 2026 | Overseas",
+    "metaDesc": "2026 sağlık turizmi için gerekli şartlar ve evraklar: Klinik, hastane ve acenteler için başvuru belgeleri, personel kriterleri, dil yeterliliği ve SKS standartları.",
     "primaryKeyword": "sağlık turizmi için gerekli belgeler",
     "secondaryKeywords": [
-      "sağlık turizmi yapmak için gerekli şartlar",
+      "sağlık turizmi için gerekli şartlar",
       "sağlık turizmi yetki belgesi şartları",
-      "sağlık turizmi belgesi"
+      "sağlık turizmi evrakları",
+      "sağlık turizmi yapmak için şartlar"
     ],
-    "searchIntent": "İşlem araştırması",
-    "funnel": "BOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; sağlık turizmi için gerekli belgeler konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.",
+    "searchIntent": "Kontrol Listesi / Bilgilendirici",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Uluslararası Sağlık Uyum Masası",
+    "quickAnswer": "Sağlık turizmi yapmak için gerekli şartlar kurum türüne göre değişir. Sağlık tesisleri için ruhsat, Sağlıkta Kalite Standartları'ndan (SKS) en az 85 puan, en az iki yabancı dilde yetkin personel ve aydınlatılmış onam formları zorunludur. Aracı kuruluşlar için ise A grubu seyahat acentesi işletme belgesi, en az 3 yetkili sağlık tesisi ile protokol ve 7/24 çağrı merkezi şarttır.",
     "sections": [
       {
-        "heading": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir? Genel Bakış ve Kapsamı",
-        "subheading": "2026 Mevzuat ve Pazar Standartları",
+        "heading": "Kurum Türüne Göre Şartları Belirleme",
         "paragraphs": [
-          "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?, sağlık turizmi ekosisteminde hem hizmet sunucuları (hastaneler ve klinikler) hem de hizmet arayan uluslararası hastalar açısından temel bir dinamiktir.",
-          "Türkiye, sahip olduğu güçlü hekim kadrosu, modern teknolojik altyapısı ve akredite sağlık tesisleriyle sağlık turizmi için gerekli belgeler alanında küresel ölçekte lider destinasyonlardan biridir. Bu süreçte doğru bilgilendirme ve şeffaf hasta iletişimi esastır."
-        ],
-        "bulletPoints": [
-          "sağlık turizmi için gerekli belgeler kapsamında sunulan hizmetlerin uluslararası standartlara (JCI, TEMOS, SKS) uygunluğu.",
-          "Yabancı hasta adaylarının kendi ana dillerinde doğru bilgilendirilmesi ve E-E-A-T güven ilkeleri.",
-          "Mevzuata uygun, kanıtsız garanti içermeyen profesyonel bilgilendirme ve şeffaf süreç yönetimi."
+          "Sağlık turizmi mevzuatında evrak hazırlığına başlamadan önce ilk adım kuruluşun tüzel statüsünü doğru tanımlamaktır. Sağlık hizmeti bizzat sunulacaksa 'Sağlık Tesisi' şartları; yabancı hastaya transfer, konaklama ve tedavi organizasyonu yapılacaksa 'Aracı Kuruluş' şartları geçerlidir."
         ]
       },
       {
-        "heading": "Süreç ve Uygulama Kriterleri",
+        "heading": "Sağlık Tesisleri İçin Belge ve Standart Matrisi",
         "paragraphs": [
-          "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir? sürecinde kurumsal başarı elde etmek için operasyonel, hukuki ve dijital pazarlama adımlarının entegre biçimde yürütülmesi gerekir."
+          "T.C. Sağlık Bakanlığı tarafından yetkilendirilecek hastane, tıp merkezi ve poliklinikler için zorunlu evraklar:"
         ],
         "table": {
           "headers": [
-            "Süreç Adımı",
-            "Temel Gereksinim",
-            "Beklenen Çıktı"
+            "Belge / Kriter",
+            "Açıklama",
+            "Resmî Dayanak"
           ],
           "rows": [
             [
-              "Stratejik Planlama",
-              "Hedef pazar & branş analizi",
-              "Doğru hasta profili belirleme"
+              "Faaliyet İzin Belgesi & Ruhsat",
+              "Bakanlıkça tescil edilmiş geçerli sağlık tesisi ruhsatı",
+              "2025 Yönetmelik md. 5"
             ],
             [
-              "Yasal Uygunluk",
-              "Sağlık Bakanlığı & ilgili mevzuat",
-              "Yetkili ve güvenli hizmet sunumu"
+              "SKS Kalite Puanı Belgesi",
+              "Bakanlık Sağlıkta Kalite Standartları denetiminden asgari 85 puan (muayenehaneler muaftır)",
+              "EK-1/A Kriterleri"
             ],
             [
-              "Dijital Entegrasyon",
-              "Çok dilli web & CRM altyapısı",
-              "Hızlı ve nitelikli hasta karşılama"
+              "Yabancı Dil Yeterlilik Belgeleri",
+              "Sağlık turizmi birim sorumlusu ve personelin en az 2 dilde B2/C1 düzeyinde dil belgesi",
+              "Yönetmelik md. 8"
             ],
             [
-              "Hasta Deneyimi",
-              "Uçtan uca refakat & takip",
-              "Yüksek hasta memnuniyeti ve tavsiye"
+              "Çok Dilli Hasta Onam Formları",
+              "Tedavi riskleri ve KVKK haklarını açıklayan hedef dillerdeki aydınlatılmış onamlar",
+              "Yönetmelik md. 11"
+            ],
+            [
+              "Komplikasyon Güvence Protokolü",
+              "Yurt dışından gelen hastalar için acil müdahale ve komplikasyon yönetim planı",
+              "EK-2 Standartları"
             ]
           ]
-        },
-        "callout": {
-          "title": "Mevzuat ve Kalite Notu",
-          "text": "Sağlık turizmi kapsamındaki tüm faaliyetler T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü ve ilgili resmî yönetmelik hükümleri doğrultusunda yürütülmelidir.",
-          "type": "info"
         }
+      },
+      {
+        "heading": "Aracı Kuruluşlar İçin Belge ve Standart Matrisi",
+        "paragraphs": [
+          "USHAŞ üzerinden yetki alacak seyahat acenteleri için zorunlu evraklar:",
+          "1. Kültür ve Turizm Bakanlığı A Grubu Seyahat Acentesi İşletme Belgesi aslı ve sureti.",
+          "2. En az 3 adet yetki belgeli sağlık tesisiyle imzalanmış ıslak imzalı/e-imzalı uluslararası sağlık turizmi protokolleri.",
+          "3. 7 gün 24 saat yabancı dilde çağrı karşılama altyapısı ve personel bordro/sözleşme kayıtları.",
+          "4. Ulaşım, transfer ve konaklama acente sigorta poliçesi teminatları.",
+          "5. HealthTürkiye portalına veri aktarımı ve KVKK uyumlu bilişim altyapısı taahhütnamesi."
+        ]
+      },
+      {
+        "heading": "Personel ve Yabancı Dil Gereksinimleri",
+        "paragraphs": [
+          "Her iki kurum türünde de en çok eksiklik çıkan alan personel dil yeterliliğidir. ÖSYM tarafından yapılan YDS/YÖKDİL sınavlarından en az 65 puan veya uluslararası denkliği kabul edilen TOEFL/IELTS belgeleri geçerlidir. Yabancı uyruklu veya mütercim tercümanlık mezunu personelin diploma denklikleri başvuru dosyasına eklenmelidir."
+        ]
+      },
+      {
+        "heading": "Kayıt, Veri Güvenliği ve Denetim Yükümlülükleri",
+        "paragraphs": [
+          "Başvuru sürecinde bilişim güvenliği ve 6698 sayılı KVKK standartları denetlenir. Yurt dışı hastalarının tıbbi raporları, pasaport bilgileri ve fotoğrafları genel e-posta veya kişisel WhatsApp hesaplarında tutulamaz; yetkili CRM ve klinik yönetim sistemlerinde şifreli olarak barındırılmalıdır."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir? konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "Muayenehane hekimleri için de 85 SKS kalite puanı zorunlu mudur?",
+        "a": "Hayır. 2025 yönetmeliği muayenehaneleri kurumsal SKS denetim puanından muaf tutmuş; ancak muayenehaneler için özel fiziki ve dil kriterleri getirmiştir."
       },
       {
-        "q": "sağlık turizmi için gerekli belgeler ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
-      },
-      {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "Yetki belgesi için hangi yabancı diller kabul edilir?",
+        "a": "Öncelikli olarak İngilizce, Almanca, Fransızca, Rusça ve Arapça dilleri kabul edilir. Kurumun hedef pazarına göre farklı diller de belgelendirilebilir."
       }
     ],
     "officialSources": [
       {
-        "title": "Sağlık Turizmi Daire Başkanlığı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/"
+        "title": "Uluslararası Sağlık Turizmi Yönetmeliği EK-1/A ve EK-1/B Ekleri",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
       },
       {
-        "title": "Yetkili sağlık tesisleri",
-        "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html"
+        "title": "Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Nedir?",
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
         "url": "/saglik-turizmi-yetki-belgesi"
       },
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır?",
-        "url": "/saglik-turizmi-yetki-belgesi/nasil-alinir"
+        "title": "Aracı Kuruluş Yetki Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
       },
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Şartları",
-        "url": "/saglik-turizmi-yetki-belgesi/sartlari"
+        "title": "Başvuru Formları (EK-1 ve EK-3 Ayrımı)",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari"
+      },
+      {
+        "title": "Yetki Belgesi Ücretleri ve Maliyet Kalemleri",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-ucreti"
       }
     ]
   },
@@ -5527,115 +5349,78 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "id": "K035",
     "slug": "saglik-turizmi-sertifikasi",
     "url": "/saglik-turizmi-sertifikasi",
-    "category": "Yetki belgesi, yönetmelik ve hukuk",
-    "title": "Sağlık Turizmi Sertifikası Nasıl Alınır?",
-    "h1": "Sağlık Turizmi Sertifikası Nasıl Alınır?",
-    "seoTitle": "Sağlık Turizmi Sertifikası Nasıl Alınır? | Overseas Marketing",
-    "metaDesc": "Sağlık Turizmi Sertifikası Nasıl Alınır?. sağlık turizmi sertifikası nasıl alınır hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
+    "category": "Eğitim & Akreditasyon",
+    "title": "Sağlık Turizmi Sertifikası ile Yetki Belgesi Aynı mı? Belgelerin Farkı",
+    "h1": "Sağlık Turizmi Sertifikası ile Yetki Belgesi Aynı mı? Belgelerin Farkı",
+    "seoTitle": "Sağlık Turizmi Sertifikası ile Yetki Belgesi Farkı 2026 | Overseas",
+    "metaDesc": "Sağlık turizmi sertifikası nasıl alınır? Eğitim sertifikaları, TÜSKA akreditasyonu ile Sağlık Bakanlığı yetki belgesi arasındaki yasal farklar.",
     "primaryKeyword": "sağlık turizmi sertifikası nasıl alınır",
     "secondaryKeywords": [
-      "sağlık turizmi akreditasyon",
-      "sağlık turizmi belgesi",
-      "sağlık turizmi yetki belgesi"
+      "sağlık turizmi sertifikası",
+      "sağlık turizmi yetki belgesi farkı",
+      "türkiye sağlık turizmi sertifikası",
+      "tüska akreditasyon"
     ],
-    "searchIntent": "İşlem araştırması",
-    "funnel": "BOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Sağlık Turizmi Sertifikası Nasıl Alınır?, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; sağlık turizmi sertifikası nasıl alınır konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.",
+    "searchIntent": "Kavram Ayrımı / Bilgilendirici",
+    "funnel": "MOFU",
+    "readTime": "7 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Eğitim Masası",
+    "reviewer": "Mevzuat Masası",
+    "quickAnswer": "Hayır, sağlık turizmi sertifikası ile yetki belgesi aynı şey DEĞİLDİR. Üniversitelerden veya eğitim kurumlarından alınan sertifikalar kişisel mesleki eğitim belgesidir ve tek başına sağlık turizmi yapma yetkisi VERMEZ. Sağlık turizmi faaliyeti yürütebilmek için kurum adına T.C. Sağlık Bakanlığı veya USHAŞ tarafından düzenlenen Uluslararası Sağlık Turizmi Yetki Belgesi şarttır.",
     "sections": [
       {
-        "heading": "Sağlık Turizmi Sertifikası Nasıl Alınır? Genel Bakış ve Kapsamı",
-        "subheading": "2026 Mevzuat ve Pazar Standartları",
+        "heading": "Sertifika, Akreditasyon ve Yetki Belgesi Nedir?",
         "paragraphs": [
-          "Sağlık Turizmi Sertifikası Nasıl Alınır?, sağlık turizmi ekosisteminde hem hizmet sunucuları (hastaneler ve klinikler) hem de hizmet arayan uluslararası hastalar açısından temel bir dinamiktir.",
-          "Türkiye, sahip olduğu güçlü hekim kadrosu, modern teknolojik altyapısı ve akredite sağlık tesisleriyle sağlık turizmi sertifikası nasıl alınır alanında küresel ölçekte lider destinasyonlardan biridir. Bu süreçte doğru bilgilendirme ve şeffaf hasta iletişimi esastır."
-        ],
-        "bulletPoints": [
-          "sağlık turizmi sertifikası nasıl alınır kapsamında sunulan hizmetlerin uluslararası standartlara (JCI, TEMOS, SKS) uygunluğu.",
-          "Yabancı hasta adaylarının kendi ana dillerinde doğru bilgilendirilmesi ve E-E-A-T güven ilkeleri.",
-          "Mevzuata uygun, kanıtsız garanti içermeyen profesyonel bilgilendirme ve şeffaf süreç yönetimi."
+          "Sektöre yeni girenlerin en sık karıştırdığı üç terim: Sertifika, Akreditasyon ve Yetki Belgesi'dir.",
+          "Sertifika kişiye verilir (örneğin sağlık turizmi uzmanlığı eğitim sertifikası). Akreditasyon kurumsal kalite seviyesini belgeler (örneğin TÜSKA veya JCI akreditasyonu). Yetki Belgesi ise kuruma devlete bağlı olarak ticari ve tıbbi faaliyet yürütme izni veren tek yasal ruhsattır."
         ]
       },
       {
-        "heading": "Süreç ve Uygulama Kriterleri",
+        "heading": "TÜSKA ve Bakanlık Görev Ayrımı",
         "paragraphs": [
-          "Sağlık Turizmi Sertifikası Nasıl Alınır? sürecinde kurumsal başarı elde etmek için operasyonel, hukuki ve dijital pazarlama adımlarının entegre biçimde yürütülmesi gerekir."
-        ],
-        "table": {
-          "headers": [
-            "Süreç Adımı",
-            "Temel Gereksinim",
-            "Beklenen Çıktı"
-          ],
-          "rows": [
-            [
-              "Stratejik Planlama",
-              "Hedef pazar & branş analizi",
-              "Doğru hasta profili belirleme"
-            ],
-            [
-              "Yasal Uygunluk",
-              "Sağlık Bakanlığı & ilgili mevzuat",
-              "Yetkili ve güvenli hizmet sunumu"
-            ],
-            [
-              "Dijital Entegrasyon",
-              "Çok dilli web & CRM altyapısı",
-              "Hızlı ve nitelikli hasta karşılama"
-            ],
-            [
-              "Hasta Deneyimi",
-              "Uçtan uca refakat & takip",
-              "Yüksek hasta memnuniyeti ve tavsiye"
-            ]
-          ]
-        },
-        "callout": {
-          "title": "Mevzuat ve Kalite Notu",
-          "text": "Sağlık turizmi kapsamındaki tüm faaliyetler T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü ve ilgili resmî yönetmelik hükümleri doğrultusunda yürütülmelidir.",
-          "type": "info"
-        }
+          "Türkiye Sağlık Hizmetleri Kalite ve Akreditasyon Enstitüsü (TÜSKA), sağlık kuruluşlarının klinik ve operasyonel kalite standartlarını denetler ve akredite eder. TÜSKA akreditasyonuna sahip olmak büyük bir prestij ve kalite göstergesidir; ancak Sağlık Bakanlığı'ndan ayrıca yetki belgesi alma zorunluluğunu ortadan kaldırmaz."
+        ]
+      },
+      {
+        "heading": "Eğitim Sertifikası ile Acente veya Klinik Açılabilir mi?",
+        "paragraphs": [
+          "Herhangi bir eğitim kurumundan veya özel kuruluştan alınan 'Sağlık Turizmi Sertifikası' ile klinik açılamaz veya sağlık turizmi acentesi kurulamaz. Bu sertifikalar yalnızca personelin özgeçmişinde mesleki bilgi göstergesi olarak değerlendirilebilir."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Sağlık Turizmi Sertifikası Nasıl Alınır? konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "Bir kurs bitirme sertifikasıyla acente açılabilir mi?",
+        "a": "Hayır. Acente açmak için Kültür ve Turizm Bakanlığı A grubu işletme belgesi ve USHAŞ aracı kuruluş yetki belgesi şarttır."
       },
       {
-        "q": "sağlık turizmi sertifikası nasıl alınır ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
-      },
-      {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "JCI veya TÜSKA akreditasyonu yetki belgesi yerine geçer mi?",
+        "a": "Geçmez. Akreditasyon kalite belgesidir; yasal faaliyet için Sağlık Bakanlığı yetki belgesi zorunludur."
       }
     ],
     "officialSources": [
       {
-        "title": "Sağlık Turizmi Daire Başkanlığı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/"
+        "title": "TÜSKA Türkiye Sağlık Hizmetleri Kalite ve Akreditasyon Enstitüsü",
+        "url": "https://tuska.saglik.gov.tr/"
       },
       {
-        "title": "Yetkili sağlık tesisleri",
-        "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html"
+        "title": "2025 Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Nedir?",
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
         "url": "/saglik-turizmi-yetki-belgesi"
       },
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır?",
-        "url": "/saglik-turizmi-yetki-belgesi/nasil-alinir"
+        "title": "Gerekli Şartlar ve Belgeler",
+        "url": "/saglik-turizmi/gerekli-belgeler"
       },
       {
-        "title": "Sağlık Turizmi Yetki Belgesi Şartları",
-        "url": "/saglik-turizmi-yetki-belgesi/sartlari"
+        "title": "Sağlık Bakanlığı 2026 Mevzuatı",
+        "url": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026"
       }
     ]
   },
@@ -8537,119 +8322,93 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "id": "K061",
     "slug": "antalya-saglik-turizmi",
     "url": "/antalya-saglik-turizmi",
-    "category": "Türkiye şehirleri",
-    "title": "Antalya Sağlık Turizmi Rehberi",
-    "h1": "Antalya Sağlık Turizmi Rehberi",
-    "seoTitle": "Antalya Sağlık Turizmi Rehberi | Overseas Marketing",
-    "metaDesc": "Antalya Sağlık Turizmi Rehberi. antalya sağlık turizmi hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
+    "category": "Bölgesel Strateji",
+    "title": "Antalya Sağlık Turizmi: Branşlar, Hedef Pazarlar ve Dijital Büyüme",
+    "h1": "Antalya Sağlık Turizmi: Branşlar, Hedef Pazarlar ve Dijital Büyüme",
+    "seoTitle": "Antalya Sağlık Turizmi 2026 | Branşlar ve Büyüme Rehberi | Overseas",
+    "metaDesc": "Antalya sağlık turizmi rehberi: Dental turizm, saç ekimi ve estetik klinikleri, İngiltere ve Avrupa hasta pazarları, çok dilli SEO, web sitesi ve ajans ayrımı.",
     "primaryKeyword": "antalya sağlık turizmi",
     "secondaryKeywords": [
       "sağlık turizmi antalya",
-      "antalya sağlık turizmi acentaları",
-      "antalya sağlık turizmi fuarı"
+      "antalya dental turizm",
+      "antalya sağlık klinikleri",
+      "antalya sağlık turizmi pazarı"
     ],
-    "searchIntent": "Yerel bilgi",
+    "searchIntent": "Bölgesel Ekosistem ve B2B",
     "funnel": "MOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Antalya Sağlık Turizmi Rehberi, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; antalya sağlık turizmi konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.",
+    "readTime": "11 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Antalya Masası",
+    "reviewer": "Bölgesel Büyüme Masası",
+    "quickAnswer": "Antalya sağlık turizmi; güçlü uluslararası havalimanı uçuş hatları, yüksek kaliteli butik diş klinikleri, saç ekimi merkezleri ve tatil+tedavi konseptiyle Avrupa'nın en popüler medikal turizm merkezlerinden biridir. Özellikle İngiltere, Almanya ve Rusya pazarlarından gelen hastalar için diş implantı, all-on-4 ve estetik cerrahide lider konumdadır.",
     "sections": [
       {
-        "heading": "Antalya Sağlık Turizmi Rehberi Genel Bakış ve Kapsamı",
-        "subheading": "2026 Mevzuat ve Pazar Standartları",
+        "heading": "Antalya'nın Sağlık Turizmindeki Stratejik Konumu",
         "paragraphs": [
-          "Antalya Sağlık Turizmi Rehberi, sağlık turizmi ekosisteminde hem hizmet sunucuları (hastaneler ve klinikler) hem de hizmet arayan uluslararası hastalar açısından temel bir dinamiktir.",
-          "Türkiye, sahip olduğu güçlü hekim kadrosu, modern teknolojik altyapısı ve akredite sağlık tesisleriyle antalya sağlık turizmi alanında küresel ölçekte lider destinasyonlardan biridir. Bu süreçte doğru bilgilendirme ve şeffaf hasta iletişimi esastır."
-        ],
-        "bulletPoints": [
-          "antalya sağlık turizmi kapsamında sunulan hizmetlerin uluslararası standartlara (JCI, TEMOS, SKS) uygunluğu.",
-          "Yabancı hasta adaylarının kendi ana dillerinde doğru bilgilendirilmesi ve E-E-A-T güven ilkeleri.",
-          "Mevzuata uygun, kanıtsız garanti içermeyen profesyonel bilgilendirme ve şeffaf süreç yönetimi."
+          "Antalya Havalimanı’nın Avrupa'nın yüzlerce şehrine direkt uçuş imkanı sunması, şehri sağlık turizminde benzersiz bir avantaja kavuşturmuştur.",
+          "Hastalar yalnızca tedavi olmaya değil; Akdeniz ikliminde stres atmaya, 5 yıldızlı otellerde dinlenmeye ve tedavi sonrası iyileşme sürecini tatil konforunda geçirmeye gelmektedir."
         ]
       },
       {
-        "heading": "Süreç ve Uygulama Kriterleri",
+        "heading": "Öne Çıkan Branşlar: Dental Turizm ve Estetik Cerrahi",
         "paragraphs": [
-          "Antalya Sağlık Turizmi Rehberi sürecinde kurumsal başarı elde etmek için operasyonel, hukuki ve dijital pazarlama adımlarının entegre biçimde yürütülmesi gerekir."
-        ],
-        "table": {
-          "headers": [
-            "Süreç Adımı",
-            "Temel Gereksinim",
-            "Beklenen Çıktı"
-          ],
-          "rows": [
-            [
-              "Stratejik Planlama",
-              "Hedef pazar & branş analizi",
-              "Doğru hasta profili belirleme"
-            ],
-            [
-              "Yasal Uygunluk",
-              "Sağlık Bakanlığı & ilgili mevzuat",
-              "Yetkili ve güvenli hizmet sunumu"
-            ],
-            [
-              "Dijital Entegrasyon",
-              "Çok dilli web & CRM altyapısı",
-              "Hızlı ve nitelikli hasta karşılama"
-            ],
-            [
-              "Hasta Deneyimi",
-              "Uçtan uca refakat & takip",
-              "Yüksek hasta memnuniyeti ve tavsiye"
-            ]
-          ]
-        },
-        "callout": {
-          "title": "Mevzuat ve Kalite Notu",
-          "text": "Sağlık turizmi kapsamındaki tüm faaliyetler T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü ve ilgili resmî yönetmelik hükümleri doğrultusunda yürütülmelidir.",
-          "type": "info"
-        }
+          "Dental Turizm (Diş): Antalya dental turizmde dünya markasıdır. All-on-4, All-on-6, zirkonyum kaplama ve Hollywood Smile tedavilerinde İngiltere hastaları için 1 numaralı tercihtir.",
+          "Saç Ekimi ve Estetik: İklim avantajı ve konaklama paketleriyle kombine edilen saç ekimi ve rinoplasti operasyonları şehrin diğer güçlü lokomotifleridir."
+        ]
+      },
+      {
+        "heading": "Antalya Klinikleri İçin Çok Dilli Web, SEO ve CRM",
+        "paragraphs": [
+          "Antalya'daki yüzlerce klinik arasında sıyrılmak için yerel rekabet stratejisi kurulmalıdır. Çok dilli web sitesi, hızlı açılan mobil sayfalar ve WhatsApp üzerinden İngilizce/Almanca anlık yanıt veren CRM sistemleri dönüşüm oranını ikiye katlar."
+        ]
+      },
+      {
+        "heading": "Ajans, Acente ve Klinik Rollerinin Ayrımı",
+        "paragraphs": [
+          "Antalya'da başarı için roller net ayrılmalıdır: Klinik tıbbi hizmeti sunar; aracı acente otel ve transferi organize eder; Overseas Marketing gibi dijital reklam ajansları ise kliniğin uluslararası hasta kazanım sistemini kurar. Overseas kendisi acente değildir."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Antalya Sağlık Turizmi Rehberi konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "Antalya sağlık turizmi yapan klinikler nasıl doğrulanır?",
+        "a": "Sağlık Bakanlığı'nın HealthTürkiye resmî portalından kliniğin ruhsatı ve EK-3/A yetki belgesi sorgulanabilir."
       },
       {
-        "q": "antalya sağlık turizmi ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
-      },
-      {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "Antalya diş klinikleri için en verimli hedef pazar neresidir?",
+        "a": "Doğrudan uçuş yoğunluğu ve NHS tedavi maliyetleri nedeniyle İngiltere (UK) açık ara en verimli pazardır; onu Almanya ve İrlanda izler."
       }
     ],
     "officialSources": [
       {
-        "title": "HealthTürkiye ana sayfa",
-        "url": "https://healthturkiye.gov.tr/tr/homepage"
+        "title": "Antalya İl Sağlık Müdürlüğü Sağlık Turizmi Birimi",
+        "url": "https://antalyaism.saglik.gov.tr/"
       },
       {
-        "title": "HealthTürkiye hastaneler listesi",
-        "url": "https://healthturkiye.gov.tr/tr/hospitals-list"
-      },
-      {
-        "title": "Yetkili sağlık tesisleri",
-        "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html"
+        "title": "HealthTürkiye Onaylı Antalya Sağlık Tesisleri",
+        "url": "https://healthturkiye.gov.tr/"
       }
     ],
     "internalLinks": [
       {
-        "title": "İstanbul Sağlık Turizmi Rehberi",
-        "url": "/istanbul-saglik-turizmi"
+        "title": "Antalya Sağlık Turizmi Reklam Ajansı (Hizmet)",
+        "url": "/antalya-saglik-turizmi-reklam-ajansi"
       },
       {
-        "title": "İstanbul’da Sağlık Turizmi Yapan Firmalar Nasıl Karşılaştırılır?",
-        "url": "/istanbul-saglik-turizmi/firmalar"
+        "title": "Antalya Sağlık Turizmi Acentaları Rehberi",
+        "url": "/antalya-saglik-turizmi/acentalari"
       },
       {
-        "title": "Sağlık Turizmi Antalya İçin Klinik ve Acenta Seçimi",
-        "url": "/antalya-saglik-turizmi/acenta-klinik"
+        "title": "Antalya Sağlık Turizmi Danışmanlığı",
+        "url": "/blog/antalya-saglik-turizmi-danismanligi"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Web Sitesi Tasarımı",
+        "url": "/blog/antalya-saglik-turizmi-web-sitesi"
+      },
+      {
+        "title": "Sağlık Turizmi Pazarlaması 2026",
+        "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir"
       }
     ]
   },
@@ -8775,117 +8534,89 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
   },
   {
     "id": "K063",
-    "slug": "antalya-saglik-turizmi-acentalari",
+    "slug": "acentalari",
     "url": "/antalya-saglik-turizmi/acentalari",
-    "category": "Türkiye şehirleri",
-    "title": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?",
-    "h1": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?",
-    "seoTitle": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır? | Overseas Marketing",
-    "metaDesc": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?. antalya sağlık turizmi acentaları hakkında 2026 güncel mevzuatı, süreç analizleri, resmi başvuru kriterleri ve uzman stratejileri.",
+    "category": "Acenta & Doğrulama",
+    "title": "Antalya Sağlık Turizmi Acentaları: Yetki Kontrolü ve Doğru Seçim",
+    "h1": "Antalya Sağlık Turizmi Acentaları: Yetki Kontrolü ve Doğru Seçim",
+    "seoTitle": "Antalya Sağlık Turizmi Acentaları 2026 | Yetki Kontrolü | Overseas",
+    "metaDesc": "Antalya sağlık turizmi acentaları yetki kontrolü nasıl yapılır? USHAŞ onaylı yetkili aracı kuruluşlar listesi, TÜRSAB sicil sorgulama ve klinik işbirliği kriterleri.",
     "primaryKeyword": "antalya sağlık turizmi acentaları",
     "secondaryKeywords": [
-      "antalya sağlık turizmi",
-      "sağlık turizmi aracı kurumlar",
-      "sağlık turizmi yetki belgesi"
+      "sağlık turizmi acentaları antalya",
+      "antalya yetkili sağlık turizmi aracı kuruluşları",
+      "antalya tursab acentalari"
     ],
-    "searchIntent": "Yerel ticari",
-    "funnel": "BOFU",
-    "readTime": "6-8 dk okuma",
-    "publishedDate": "2026",
-    "author": "Overseas Medikal SEO Ekibi",
-    "reviewer": "Sağlık Turizmi Mevzuat Masası",
-    "quickAnswer": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?, uluslararası sağlık turizmi sektöründe faaliyet gösteren klinik, hastane, aracı kurum ve hekimler için kritik bir konudur. Bu rehber; antalya sağlık turizmi acentaları konusundaki yasal gereklilikleri, uygulama adımlarını ve dijital hasta kazanımı dinamiklerini en güncel veriler ışığında sunar.",
+    "searchIntent": "Liste ve Doğrulama Niyeti",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Araştırma Masası",
+    "reviewer": "Acente Uyum Masası",
+    "quickAnswer": "Antalya'da faaliyet gösteren sağlık turizmi acentaları; Kültür ve Turizm Bakanlığı A grubu seyahat acentesi belgesine ve T.C. Sağlık Bakanlığı / USHAŞ Uluslararası Sağlık Turizmi Aracı Kuruluş Yetki Belgesi'ne sahip tüzel kuruluşlardır. Bir acentanın yetkili olup olmadığı HealthTürkiye ve TÜRSAB resmî sorgulama ekranlarından doğrulanabilir.",
     "sections": [
       {
-        "heading": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır? Genel Bakış ve Kapsamı",
-        "subheading": "2026 Mevzuat ve Pazar Standartları",
+        "heading": "Antalya'da Acenta Araştırırken Nelere Dikkat Edilmelidir?",
         "paragraphs": [
-          "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?, sağlık turizmi ekosisteminde hem hizmet sunucuları (hastaneler ve klinikler) hem de hizmet arayan uluslararası hastalar açısından temel bir dinamiktir.",
-          "Türkiye, sahip olduğu güçlü hekim kadrosu, modern teknolojik altyapısı ve akredite sağlık tesisleriyle antalya sağlık turizmi acentaları alanında küresel ölçekte lider destinasyonlardan biridir. Bu süreçte doğru bilgilendirme ve şeffaf hasta iletişimi esastır."
-        ],
-        "bulletPoints": [
-          "antalya sağlık turizmi acentaları kapsamında sunulan hizmetlerin uluslararası standartlara (JCI, TEMOS, SKS) uygunluğu.",
-          "Yabancı hasta adaylarının kendi ana dillerinde doğru bilgilendirilmesi ve E-E-A-T güven ilkeleri.",
-          "Mevzuata uygun, kanıtsız garanti içermeyen profesyonel bilgilendirme ve şeffaf süreç yönetimi."
+          "Antalya'da yabancı hasta operasyonu yürüten aracı kuruluşlarla çalışmak isteyen kliniklerin ve hastaların ilk kontrol etmesi gereken unsur yasal yetki belgeleridir.",
+          "Yetkisiz çalışan 'çantacı' veya merdiven altı komisyoncularla çalışmak, 2025 yönetmeliği uyarınca sağlık tesisinin de yetki belgesinin askıya alınmasına yol açabilir."
         ]
       },
       {
-        "heading": "Süreç ve Uygulama Kriterleri",
+        "heading": "Resmî Yetki Doğrulaması Nasıl Yapılır?",
         "paragraphs": [
-          "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır? sürecinde kurumsal başarı elde etmek için operasyonel, hukuki ve dijital pazarlama adımlarının entegre biçimde yürütülmesi gerekir."
-        ],
-        "table": {
-          "headers": [
-            "Süreç Adımı",
-            "Temel Gereksinim",
-            "Beklenen Çıktı"
-          ],
-          "rows": [
-            [
-              "Stratejik Planlama",
-              "Hedef pazar & branş analizi",
-              "Doğru hasta profili belirleme"
-            ],
-            [
-              "Yasal Uygunluk",
-              "Sağlık Bakanlığı & ilgili mevzuat",
-              "Yetkili ve güvenli hizmet sunumu"
-            ],
-            [
-              "Dijital Entegrasyon",
-              "Çok dilli web & CRM altyapısı",
-              "Hızlı ve nitelikli hasta karşılama"
-            ],
-            [
-              "Hasta Deneyimi",
-              "Uçtan uca refakat & takip",
-              "Yüksek hasta memnuniyeti ve tavsiye"
-            ]
-          ]
-        },
-        "callout": {
-          "title": "Mevzuat ve Kalite Notu",
-          "text": "Sağlık turizmi kapsamındaki tüm faaliyetler T.C. Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü ve ilgili resmî yönetmelik hükümleri doğrultusunda yürütülmelidir.",
-          "type": "info"
-        }
+          "1. Adım: Acentanın TÜRSAB sicil numarası üzerinden www.tursab.org.tr adresinden A Grubu Seyahat Acentesi İşletme Belgesi kontrol edilir.",
+          "2. Adım: HealthTürkiye portalından (healthturkiye.gov.tr) aracı kuruluş yetki belgesi numarası sorgulanır.",
+          "3. Adım: Acentanın tescilli şirket unvanı ile anlaşma yapılacak sözleşmedeki unvanın birebir aynı olduğu teyit edilir."
+        ]
+      },
+      {
+        "heading": "Klinikler İçin Aracı Kuruluş İş Birliği Değerlendirme Kriterleri",
+        "paragraphs": [
+          "Bir klinikle acenta arasında başarılı bir ortaklık kurulması için: Şeffaf hasta bilgilendirmesi, gerçekçi tedavi bütçeleri, 7/24 çağrı desteği ve profesyonel yabancı dil tercüme kapasitesi aranmalıdır."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır? konusunda dikkat edilmesi gereken en önemli husus nedir?",
-        "a": "En önemli husus, tüm süreçlerin T.C. Sağlık Bakanlığı mevzuatına, uluslararası hasta haklarına ve etik tanıtım kurallarına tam uyumlu olarak yürütülmesidir."
+        "q": "Overseas Marketing bir sağlık turizmi acentası mıdır?",
+        "a": "Hayır. Overseas Marketing bir seyahat acentası veya sağlık aracı kuruluşu değildir. Yetkili klinik ve acentelere dijital pazarlama, reklam yönetimi, SEO ve CRM danışmanlığı verir."
       },
       {
-        "q": "antalya sağlık turizmi acentaları ile ilgili resmi bilgilere nereden ulaşılabilir?",
-        "a": "Sağlık Turizmi Daire Başkanlığı (shgmturizmdb.saglik.gov.tr) ve Türkiye'nin resmî sağlık portalı HealthTürkiye (healthturkiye.gov.tr) üzerinden doğrulanmış verilere ulaşılabilir."
-      },
-      {
-        "q": "Bu alanda ajans desteği veya danışmanlık ne sağlar?",
-        "a": "Doğru strateji, mevzuata uygun çok dilli dijital varlık yönetimi ve uluslararası hasta adaylarının güvenini kazanan sürdürülebilir bir büyüme altyapısı sağlar."
+        "q": "Yetki belgesiz acentayla çalışan kliniğe ceza verilir mi?",
+        "a": "Evet. 2025 yönetmeliği uyarınca yetkisiz aracı kuruluşlarla anlaşma yapan sağlık tesislerine ağır idari para cezası ve faaliyet durdurma cezası uygulanır."
       }
     ],
     "officialSources": [
       {
-        "title": "HealthTürkiye yetkili acentalar",
-        "url": "https://healthturkiye.gov.tr/tr/agency"
+        "title": "HealthTürkiye Yetkili Aracı Kuruluşlar Listesi",
+        "url": "https://healthturkiye.gov.tr/certificated-health-service-providers"
       },
       {
-        "title": "Sağlık Turizmi Daire Başkanlığı",
-        "url": "https://shgmturizmdb.saglik.gov.tr/"
+        "title": "TÜRSAB Acenta Arama Ekranı",
+        "url": "https://www.tursab.org.tr/"
       }
     ],
     "internalLinks": [
       {
-        "title": "İstanbul Sağlık Turizmi Rehberi",
-        "url": "/istanbul-saglik-turizmi"
-      },
-      {
-        "title": "İstanbul’da Sağlık Turizmi Yapan Firmalar Nasıl Karşılaştırılır?",
-        "url": "/istanbul-saglik-turizmi/firmalar"
-      },
-      {
-        "title": "Antalya Sağlık Turizmi Rehberi",
+        "title": "Antalya Sağlık Turizmi Ekosistemi",
         "url": "/antalya-saglik-turizmi"
+      },
+      {
+        "title": "Türkiye'de Sağlık Turizmi Yapan Acentalar",
+        "url": "/blog/turkiyede-saglik-turizmi-yapan-acentalar"
+      },
+      {
+        "title": "Aracı Kuruluş Yetki Belgesi Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
+      },
+      {
+        "title": "Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Reklam Ajansı",
+        "url": "/antalya-saglik-turizmi-reklam-ajansi"
       }
     ]
   },
@@ -12060,144 +11791,130 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
     "slug": "saglik-turizmi-pazarlamasi-nasil-yapilir",
     "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir",
     "category": "Pazarlama Stratejisi",
-    "title": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? Uçtan Uca Büyüme Stratejisi",
-    "h1": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? Uçtan Uca Büyüme Stratejisi",
-    "seoTitle": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? | Overseas Marketing",
-    "metaDesc": "Sağlık turizmi pazarlaması: Hedef ülke seçimi, hasta personası, çok kanallı reklam yönetimi, KPI tablosu, CAC ve ciro optimizasyonu rehberi.",
+    "title": "Sağlık Turizmi Pazarlaması 2026: SEO, GEO, Reklam ve CRM Stratejisi",
+    "h1": "Sağlık Turizmi Pazarlaması 2026: SEO, GEO, Reklam ve CRM Stratejisi",
+    "seoTitle": "Sağlık Turizmi Pazarlaması 2026: Entegre Büyüme Stratejisi | Overseas",
+    "metaDesc": "2026 sağlık turizmi pazarlama rehberi: Hedef pazar seçimi, çok dilli Google ve Meta Ads, medikal SEO, GEO (AI arama motorları) ve WhatsApp CRM yönetimi.",
     "primaryKeyword": "sağlık turizmi pazarlaması",
     "secondaryKeywords": [
-      "sağlık turizmi pazarlama stratejisi",
-      "sağlık turizmi dijital pazarlama ajansı",
-      "sağlık turizmi kpi tablosu",
+      "sağlık turizmi dijital pazarlama",
+      "yurt dışı hasta kazanımı pazarlama",
       "sağlık turizmi reklam yönetimi",
-      "sağlık turizmi funnel"
+      "medikal seo ve geo",
+      "sağlık turizmi crm stratejisi"
     ],
-    "searchIntent": "Bilgilendirici ve Stratejik (Informational + Commercial)",
-    "funnel": "MOFU",
-    "readTime": "13 dk okuma",
-    "publishedDate": "5 Ekim 2026",
-    "author": "Overseas Strateji & Pazarlama Masası",
-    "reviewer": "Medikal Büyüme Direktörlüğü",
-    "quickAnswer": "Sağlık turizmi pazarlaması; hedef pazar analizi ve hasta personasının çıkarılmasıyla başlar, çok dilli arama ve video reklamlarıyla yüksek niyetli talep toplanır, dönüşüm odaklı açılış sayfaları ve CRM otomasyonlarıyla satışa aktarılır. Süreç CPC, CPL, Qualified Lead, Randevu Oranı, Kapanış Oranı ve CAC gibi finansal KPI'larla uçtan uca yönetilir.",
+    "searchIntent": "Ticari Strateji Rehberi (BOFU)",
+    "funnel": "BOFU",
+    "readTime": "14 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Strateji Ekibi",
+    "reviewer": "Uluslararası Pazarlama Masası",
+    "quickAnswer": "Sağlık turizmi pazarlaması; yetkili klinik ve aracı kuruluşların yurt dışındaki hedef kitleye mevzuata uygun, kanıta dayalı ve çok dilli kanallarla ulaşarak sürdürülebilir yabancı hasta kazanmasını sağlayan entegre büyüme modelidir. Başarılı bir model; Google Ads ile mevcut arama talebini yakalar, Meta ile görsel güven inşa eder, SEO ve GEO ile yapay zekâ yanıtlarında otorite olur ve WhatsApp CRM ile başvuruyu kliniğe kabul edilen hastaya dönüştürür.",
     "sections": [
       {
-        "heading": "Sağlık turizmi pazarlaması nedir?",
-        "subheading": "Tıbbi etik, regülasyonlar ve sınır ötesi dijital büyümenin kesişimi",
+        "heading": "Yetkili Kuruluşun Pazarlama Hedefi ve Mevzuat Sınırları",
         "paragraphs": [
-          "Sağlık turizmi pazarlaması; bir ülkedeki sağlık kuruluşlarının, yurt dışındaki potansiyel hastaların güvenini kazanarak tedavi amacıyla seyahat etmelerini sağlamak için yürüttüğü pazar araştırması, dijital reklam, içerik üretimi, itibar yönetimi ve satış operasyonlarının tümüdür.",
-          "Diğer sektörlerden temel farkı, ürünün 'insan sağlığı' olması ve hata payının bulunmamasıdır. Tıbbi iddiaların kanıtlanabilir olması, hedef ülkenin tüketici ve reklam mevzuatına tam uyum ve hasta mahremiyeti vazgeçilmez temel direklerdir."
+          "Sağlık turizmi pazarlamasının temel amacı, sıradan bir e-ticaret satışı gibi agresif indirimlerle form toplamak değil; tedavi arayışındaki uluslararası hastaya klinik güveni, hekim yetkinliğini ve operasyonel konforu şeffafça aktarmaktır.",
+          "Türkiye'de 12 Kasım 2025 tarihli Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği uyarınca yurt içine yönelik sağlık reklamı yasaktır. Ancak yetki belgesine sahip kurumlar, hedef ülkenin dilinde ve mevzuat sınırları içinde yurt dışına tanıtım yapabilir. Bu tanıtımlarda 'garantili sonuç', 'yüzde yüz başarı' veya fiyat manipülasyonu içeren vaatler kullanılamaz.",
+          "Overseas Marketing, sağlık kuruluşlarına pazarlama ve teknoloji danışmanlığı sunar; sağlık hizmeti sunucusu veya aracı kuruluş değildir."
         ]
       },
       {
-        "heading": "Sağlık turizmi pazarlama hunisinin 5 aşaması",
-        "subheading": "Farkındalıktan tedavi sonrası tavsiyeye kadar adım adım yolculuk",
+        "heading": "Pazar, Ülke ve Branş Eşleştirme Metodolojisi",
         "paragraphs": [
-          "1. <strong>Farkındalık ve Keşif (Top of Funnel):</strong> Hasta ülkesindeki tedavi kuyruğundan veya yüksek fiyattan şikayetçidir. Türkiye'deki alternatifleri araştırır.",
-          "2. <strong>Değerlendirme ve Karşılaştırma (Middle of Funnel):</strong> Hekimin diplomaları, JCI/ISO akreditasyonları, vaka galerileri ve Google/Trustpilot hasta yorumları incelenir.",
-          "3. <strong>Teklif ve Ön Konsültasyon (Bottom of Funnel):</strong> Röntgen veya fotoğraflar WhatsApp/web formu üzerinden iletilir, hekim onaylı tedavi planı ve her şey dahil paket fiyat sunulur.",
-          "4. <strong>Satış ve Seyahat (Conversion):</strong> Uçak bileti, otel rezervasyonu, VIP transfer ve hastane yatış organizasyonu tamamlanır.",
-          "5. <strong>Ameliyat Sonrası Takip (Retention & Advocacy):</strong> Ülkesine dönen hastanın iyileşme süreci 6-12 ay boyunca takip edilir; bu güven yeni referral hastaları getirir."
+          "Her tedavi her ülkede aynı karşılığı bulmaz. Başarılı bir sağlık turizmi pazarlama planı, branş bazında hedef ülke dinamiklerini analiz ederek başlar.",
+          "Örneğin İngiltere pazarı; NHS bekleme sürelerinin uzunluğu nedeniyle dental implant, all-on-4, saç ekimi ve obezite cerrahisinde yüksek dönüşüm üretir. Almanya ve DACH bölgesi ise dil uyumu yüksek cerrahlar, tescilli kalite sertifikaları ve şeffaf komplikasyon güvenceleri talep eder.",
+          "Reklam bütçeleri körlemesine 20 ülkeye dağıtılmamalı; direkt uçuş ağı olan 2-3 birincil hedef ülkede derinleşilmelidir."
         ]
       },
       {
-        "heading": "Sağlık turizmi temel KPI tablosu ve sektörel benchmark'lar",
-        "subheading": "Pazarlama bütçesinin verimliliğini gösteren kritik metrikler",
+        "heading": "SEO ve GEO ile Uzmanlık ve AI Arama Görünürlüğü",
         "paragraphs": [
-          "Aşağıdaki tablo, sağlıklı işleyen bir uluslararası sağlık turizmi dijital pazarlama operasyonunun takip etmesi gereken temel performans göstergelerini özetlemektedir:"
-        ],
-        "table": {
-          "headers": [
-            "KPI (Metrik)",
-            "Açıklama",
-            "Sektörel Benchmark (Avrupa)",
-            "Önemi"
-          ],
-          "rows": [
-            [
-              "CPC (Tıklama Başı Maliyet)",
-              "Reklamda bir ziyaretçiyi çekme maliyeti",
-              "€1.20 - €4.50 (Google Search)",
-              "Trafik edinme verimliliği"
-            ],
-            [
-              "CTR (Tıklama Oranı)",
-              "Reklamı görüp tıklayanların yüzdesi",
-              "%3.5 - %7.0",
-              "Kreatif ve mesaj uyumu"
-            ],
-            [
-              "CPL (Form Başı Maliyet)",
-              "Bir ham iletişim bilgisi edinme maliyeti",
-              "€18 - €45",
-              "Kampanya ilk dönüşüm gücü"
-            ],
-            [
-              "Qualified Lead Oranı",
-              "Tedaviye ve bütçeye uygun lead yüzdesi",
-              "%28 - %40",
-              "Lead kalitesi ve hedefleme doğruluğu"
-            ],
-            [
-              "Görüntülü Görüşme Oranı",
-              "Hekimle online ön görüşmeye katılanlar",
-              "%35 - %50 (Qualified içinden)",
-              "Satış ekibinin güven tesis etme hızı"
-            ],
-            [
-              "Kapanış Oranı (Close Rate)",
-              "Teklif alan hastanın tedaviye gelme oranı",
-              "%20 - %35",
-              "Fiyatlandırma ve değer algısı"
-            ],
-            [
-              "CAC (Hasta Başı Edinme Maliyeti)",
-              "Bir hastayı kazanmak için harcanan toplam bütçe",
-              "Tedavi değerinin %10 - %18'i",
-              "Finansal kârlılık ve sürdürülebilirlik"
-            ]
-          ]
-        }
+          "Uluslararası hastalar artık sadece Google arama sonuçlarını değil; ChatGPT, Perplexity ve Google AI Overviews sistemlerini de birer 'ikinci tıbbi görüş' aracı olarak kullanmaktadır.",
+          "Generative Engine Optimization (GEO); kliniğin vaka çalışmalarını, hekimin akademik yayınlarını ve tedavi protokollerini yapay zekâ algoritmalarının doğrudan kaynak gösterebileceği yapılandırılmış veri ve E-E-A-T standartlarında dijital ortama taşır.",
+          "Çok dilli SEO ise hedef dillerdeki (İngilizce, Almanca, Fransızca, Arapça) arama niyetlerini karşılayan bağımsız ve teknik açılış sayfalarıyla organik hasta trafiği çeker."
+        ]
       },
       {
-        "heading": "Pazarlama kanallarının doğru dengelenmesi",
-        "subheading": "Google Ads, Meta, SEO, GEO ve PR sinerjisi",
+        "heading": "Google ve Meta Performans Kampanyalarının Rolü ve Yasal Çerçeve",
         "paragraphs": [
-          "Tek bir kanala yığılan pazarlama bütçesi risktir. Google Ads maliyetleri rekabetle artabilir, Meta hesapları politika ihlaliyle askıya alınabilir. Dengeli bir pazarlama karmasında bütçenin %50'si anlık hasta getiren Google Ads ve Meta performans reklamlarına, %30'u kalıcı otorite sağlayan SEO/GEO ve web CRO altyapısına, %20'si ise CRM, satış ekibi eğitimi ve remarketing araçlarına ayrılmalıdır."
+          "Google Ads Arama Ağı; 'hair transplant Turkey' veya 'dental implants Antalya' gibi aktif tedavi arayışında olan yüksek niyetli hastayı yakalar.",
+          "Meta Ads (Instagram & Facebook); hekimin uzmanlık videoları, klinik hijyen standartları ve hasta yolculuğu hikayeleriyle bilinirliği ve duygusal güveni pekiştirir.",
+          "Her iki platformda da Google Healthcare and Medicines politikaları ile Meta Sağlık Politikaları titizlikle gözetilmeli; onaylanmayan anahtar kelimeler ve yasaklı görsel formatları önceden ayıklanmalıdır."
+        ]
+      },
+      {
+        "heading": "Açılış Sayfası, WhatsApp, CRM ve Çağrı Merkezi Entegrasyonu",
+        "paragraphs": [
+          "En pahalı reklam dahi, zayıf bir iletişim sürecini telafi edemez. Reklamdan gelen hastanın karşılaştığı landing page; 2 saniyenin altında açılmalı, mobil uyumlu olmalı ve HealthTürkiye yetki bilgilerini taşımalıdır.",
+          "Form dolduran veya WhatsApp butonuna tıklayan hastaya en geç 5 dakika içinde ana dilinde yanıt verilmelidir. 7/24 çok dilli çağrı merkezi ve AI Call Agent sistemleri ilk temas hızını garanti altına alır.",
+          "CRM sistemi üzerinden hastanın ilk temastan tedavi teklifine, bilet alımından klinik kabulüne kadar olan tüm hunisi şeffafça izlenmeli ve kohort bazında raporlanmalıdır."
+        ]
+      },
+      {
+        "heading": "Raporlama: Talep Kalitesi, Hasta Kabul Oranı ve CAC Analizi",
+        "paragraphs": [
+          "Sağlık turizmi pazarlamasında tek metrik form maliyeti (CPL) olamaz. 10 Euro'ya alınan 100 kalitesiz form, klinik satış ekibini kilitlerken sıfır hasta üretebilir. Buna karşılık 80 Euro'ya alınan nitelikli 10 başvuru 3 ameliyata dönüşebilir.",
+          "Bu nedenle Overseas Marketing raporlama modelinde MQL (Pazarlama Onaylı Talep), SQL (Satış Onaylı Talep) ve gerçekleşen Hasta Edinme Maliyeti (CAC) formülleriyle şeffaf matematiksel modeller uygulanır."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Sağlık turizmi pazarlamasında en önemli KPI hangisidir?",
-        "a": "En kritik metrik CAC (Customer Acquisition Cost - Hasta Edinme Maliyeti) ve bu maliyetin hastanın kliniğe bıraktığı ortalama kâra (LTV) oranıdır."
+        "q": "Sağlık turizmi pazarlamasında reklam mı yoksa SEO mu daha etkilidir?",
+        "a": "Reklam hızlı nakit akışı ve anlık talep üretirken, SEO ve GEO uzun vadeli güven ve sıfır medya maliyetli otorite sağlar. Sağlıklı bir sağlık turizmi büyüme modeli her iki kanalı dengeli olarak entegre eder."
       },
       {
-        "q": "Influencer pazarlaması sağlık turizminde işe yarar mı?",
-        "a": "Özellikle estetik ve diş branşlarında hedef ülkeden yerel mikro-influencer'ların gerçek tedavi deneyimlerini paylaşması güçlü bir sosyal kanıt üretir. Ancak yerel reklam mevzuatlarına (örn. İngiltere ASA) tam uyulmalıdır."
+        "q": "Yurt dışına sağlık reklamı verirken ceza almamak için neye dikkat edilmelidir?",
+        "a": "Kurumun Sağlık Bakanlığı sağlık turizmi yetki belgesine sahip olması, reklamların yalnızca yurt dışı IP ve dillerine hedeflenmesi, HealthTürkiye logosunun bulunması ve garantili sonuç/fiyat indirimi vaat edilmemesi şarttır."
+      },
+      {
+        "q": "CRM entegrasyonu olmadan sağlık turizmi pazarlaması yapılabilir mi?",
+        "a": "Yapılabilir ancak bütçenin en az %40'ı israf edilir. WhatsApp ve form başvurularının hangi kampanyadan geldiği ve kaçının hastaya dönüştüğü ölçülemezse reklam optimizasyonu yapılamaz."
       }
     ],
     "officialSources": [
       {
-        "title": "Ticaret Bakanlığı Sağlık Turizmi Destekleri ve Teşvikleri",
-        "url": "https://ticaret.gov.tr/"
+        "title": "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği (12 Kasım 2025)",
+        "url": "https://antalyaism.saglik.gov.tr/TR-366500/saglik-hizmetlerinde-tanitim-ve-bilgilendirme--faaliyetleri-hakkinda-yonetmelik.html"
       },
       {
-        "title": "HealthTürkiye Resmî Portalı",
-        "url": "https://healthturkiye.gov.tr/tr/homepage"
+        "title": "Google Ads Healthcare and Medicines Policy",
+        "url": "https://support.google.com/adspolicy/answer/176031"
+      },
+      {
+        "title": "Meta Advertising Standards — Health and Wellness",
+        "url": "https://www.facebook.com/policies_center/ads"
+      },
+      {
+        "title": "Google Search Central — AI Features & E-E-A-T Guidelines",
+        "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
       }
     ],
     "internalLinks": [
       {
-        "title": "Sağlık Turizmi Dijital Pazarlama Rehberi",
-        "url": "/blog/saglik-turizminde-dijital-pazarlama-rehberi"
+        "title": "Sağlık Turizmi Performans Pazarlama Hizmeti",
+        "url": "/hizmetler/performans-pazarlama"
       },
       {
-        "title": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir?",
-        "url": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir"
+        "title": "Uluslararası SEO Hizmeti",
+        "url": "/hizmetler/uluslararasi-seo-hizmeti"
       },
       {
-        "title": "Sağlık Turizminde Hasta Kazanma Maliyeti",
-        "url": "/blog/saglik-turizminde-hasta-kazanma-maliyeti"
+        "title": "Generative Engine Optimization (GEO) Çözümleri",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      },
+      {
+        "title": "Performans Pazarlama Metrikleri ve CAC Hesabı",
+        "url": "/blog/saglik-turizmi-performans-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizminde Chatbot ve AI Entegrasyonu",
+        "url": "/blog/saglik-turizminde-chatbot"
+      },
+      {
+        "title": "2026 Sağlık Turizmi Reklam Mevzuatı",
+        "url": "/blog/saglik-turizmi-reklam-mevzuati-2026"
       }
     ]
   },
@@ -14852,6 +14569,1382 @@ export const SEO_ARTICLES: SeoArticleItem[] = [
       {
         "title": "Generative Engine Optimization (GEO) Hizmeti",
         "url": "/hizmetler/geo-generative-engine-optimization"
+      }
+    ]
+  },
+  {
+    "id": "B19-PERF",
+    "slug": "saglik-turizmi-performans-pazarlama",
+    "url": "/blog/saglik-turizmi-performans-pazarlama",
+    "category": "Performans Pazarlama",
+    "title": "Sağlık Turizmi Performans Pazarlama: CPL, CAC ve Kampanya Ölçümü",
+    "h1": "Sağlık Turizmi Performans Pazarlama: CPL, CAC ve Kampanya Ölçümü",
+    "seoTitle": "Sağlık Turizmi Performans Pazarlama | CPL, CAC & KPI Rehberi | Overseas",
+    "metaDesc": "Sağlık turizmi performans pazarlama rehberi: Google ve Meta Ads kampanya matematiği, CPL, MQL, SQL formülleri, hasta başı maliyet (CAC) ve attribution modelleme.",
+    "primaryKeyword": "sağlık turizmi performans pazarlama",
+    "secondaryKeywords": [
+      "sağlık turizmi reklam yönetimi",
+      "sağlık turizmi hasta kazanma maliyeti",
+      "klinik google ads",
+      "sağlık turizmi cpl hesaplama",
+      "sağlık turizmi cac formülü",
+      "crm attribution sağlık"
+    ],
+    "searchIntent": "Ticari ve Ölçüm Odaklı (BOFU)",
+    "funnel": "BOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Performans Ekibi",
+    "reviewer": "Performans Pazarlama Masası",
+    "quickAnswer": "Sağlık turizminde performans pazarlama; bütçenin her kuruşunun ölçülebilir hasta kabulü, net gelir ve kârlılık hedefleriyle yönetilmesidir. Başarı göstergesi yalnızca form sayısı veya tıklama başı maliyet değil; formun MQL ve SQL aşamalarından geçerek gerçek hasta kabulüne dönüştüğü Tam Müşteri Edinme Maliyeti'dir (CAC = Toplam Pazarlama ve Satış Giderleri / Kabul Edilen Hasta Sayısı).",
+    "sections": [
+      {
+        "heading": "Performans Pazarlama ile Genel Sağlık Reklamcılığı Farkı",
+        "paragraphs": [
+          "Genel sağlık reklamcılığı genellikle beğeni, takipçi ve gösterim gibi 'boş metrikler' (vanity metrics) peşinde koşarken; performans pazarlama doğrudan kliniğin cerrahi kapasitesini ve randevu takvimini doldurmaya odaklanır.",
+          "Performans pazarlamada her kampanya, her reklam seti ve her kreatif; kaç form ürettiği, bu formların kaçının yanıt verdiği, kaç tanesine tedavi planı sunulduğu ve kaçının uçak bileti alarak kliniğe geldiği verisiyle değerlendirilir.",
+          "Bu disiplin; Google Ads, Meta Ads, dönüşüm odaklı açılış sayfaları ve CRM yazılımının tek bir analitik hatta bağlanmasını zorunlu kılar."
+        ]
+      },
+      {
+        "heading": "Reklam, Açılış Sayfası ve CRM Veri Akış Mimarisi",
+        "paragraphs": [
+          "Uluslararası hasta adayı reklamı tıkladığında başlayan yolculuk 4 kritik aşamadan geçer:",
+          "1. Arama veya Akış: Hasta Google'da arama yapar veya Instagram'da güven veren bir hekim vaka analizini izler.",
+          "2. Nitelikli Açılış Sayfası: Hasta, HealthTürkiye logosunu, hekim özgeçmişini, kliniğin yetki belgesini ve tedavi aşamalarını içeren hızlı bir landing page'e ulaşır.",
+          "3. Doğrudan İletişim: Hasta form doldurur veya doğrudan çok dilli WhatsApp hattına yönelir.",
+          "4. CRM Entegrasyonu: Gelen başvuru saniyeler içinde CRM'e UTM kaynak parametreleriyle (kampanya, anahtar kelime, kreatif) kaydedilir ve nöbetçi uluslararası hasta koordinatörünün ekranına düşer."
+        ]
+      },
+      {
+        "heading": "CPL, MQL, SQL ve Gerçek CAC: Matematiksel Formüller",
+        "paragraphs": [
+          "Sağlık turizmi kliniğinde pazarlama bütçesini doğru yönetmek için şu formüller uygulanır:"
+        ],
+        "table": {
+          "headers": [
+            "Metrik Adı",
+            "Açılımı",
+            "Formülü",
+            "Sektörel Benchmark Örneği"
+          ],
+          "rows": [
+            [
+              "CPL",
+              "Cost Per Lead (Form Başı Maliyet)",
+              "Toplam Medya Harcaması / Alınan Form Sayısı",
+              "İngiltere Dental: £25 - £45"
+            ],
+            [
+              "MQL Oranı",
+              "Marketing Qualified Lead",
+              "(İlgili Ülke ve Branş Kriterine Uyan Formlar) / Toplam Form",
+              "%60 - %75"
+            ],
+            [
+              "SQL Oranı",
+              "Sales Qualified Lead",
+              "(Röntgen / Fotoğraf Gönderen ve Fiyat İsteyen) / MQL",
+              "%30 - %45"
+            ],
+            [
+              "Hasta Kabul Oranı",
+              "Treatment Acceptance Rate",
+              "Depozito / Bilet Alan Hasta / SQL",
+              "%15 - %25"
+            ],
+            [
+              "Medya CAC",
+              "Media Customer Acquisition Cost",
+              "Medya Harcaması / Tedaviye Gelen Hasta",
+              "İngiltere Saç Ekimi: £250 - £400"
+            ],
+            [
+              "Tam CAC",
+              "Total Blended CAC",
+              "(Medya + Acente Komisyonu + Koordinatör + CRM) / Hasta",
+              "İngiltere Dental All-on-4: £600 - £950"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Platform Politikaları ve Mevzuat Kontrol Matrisi",
+        "paragraphs": [
+          "Sağlık turizmi reklamcılığında kampanya yayına alınmadan önce iki katmanlı mevzuat filtresinden geçirilir:",
+          "Resmî Mevzuat Filtresi: 12 Kasım 2025 tarihli yönetmelik gereği Türkiye içi IP'ler kesin olarak hariç tutulur. Tıbbi tedavi garantisi, 'ağrısız kesin çözüm' veya fiyat kırıcı ifadeler kullanılmaz.",
+          "Platform Politikası Filtresi: Google Healthcare politikaları gereği reçeteli ilaçlar, onaylanmamış estetik maddeler hedefleme dışı bırakılır. Meta'da ise 'öncesi-sonrası' fotoğraflarda şok edici yakın planlar yerine hekimin süreci anlattığı güven videoları tercih edilir."
+        ]
+      },
+      {
+        "heading": "Ülke ve Branş Bazında Kampanya Mimarisi ve Negatif Kelime Yönetimi",
+        "paragraphs": [
+          "Performans pazarlamada bütçenin boşa gitmesini önleyen en kritik unsur negatif anahtar kelime listeleridir.",
+          "Örneğin İngiltere diş kampanyasında 'free dental treatment', 'NHS dental charges', 'dental nurse jobs', 'cheap dental abroad bad reviews' gibi arama terimleri ilk günden negatif listeye eklenmelidir.",
+          "Kampanya mimarisinde tek bir genel kampanya yerine; 'UK Dental All-on-4 Exact', 'UK Implants Intent', 'DE Haartransplantation DHI' gibi branş ve ülke bazlı dar hedefli reklam grupları kurulur."
+        ]
+      },
+      {
+        "heading": "Örnek Aylık Performans Rapor Şablonu",
+        "paragraphs": [
+          "Klinik yöneticisine sunulan aylık performans raporunda şu 5 veri sütunu mutlaka yer almalıdır:",
+          "1. Harcanan net medya bütçesi (Para birimi bazında).",
+          "2. Üretilen toplam ve nitelikli lead sayısı (MQL).",
+          "3. Tedavi planı aşamasına geçen hasta adayı sayısı (SQL).",
+          "4. Kliniğe gelip ödemesini yapan hasta sayısı ve üretilen toplam ciro.",
+          "5. Net Pazarlama Yatırım Getirisi (ROAS / ROI) ve sonraki ayın bütçe revizyon önerisi."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "CPL düşükse kampanyanın başarılı olduğu anlamına gelir mi?",
+        "a": "Hayır. 5 Euro'ya alınan ancak telefonlara cevap vermeyen veya tedavi bütçesi olmayan yüzlerce form, klinik ekibine sadece operasyonel yük getirir. Başarı kriteri CPL değil, kabul edilen hasta başına maliyettir (CAC)."
+      },
+      {
+        "q": "Medya CAC ile Tam CAC arasındaki fark nedir?",
+        "a": "Medya CAC yalnızca Google ve Meta'ya ödenen reklam tutarını hasta sayısına böler. Tam CAC ise reklam giderine ek olarak tercüman, çağrı merkezi, CRM yazılımı ve transfer gibi tüm hasta edinme masraflarını dahil eder."
+      },
+      {
+        "q": "Performans pazarlama sonuçları ne kadar sürede alınır?",
+        "a": "Google Ads ve Meta kampanyalarında ilk lead akışı 48-72 saat içinde başlar. Ancak algoritmanın öğrenme sürecini tamamlaması ve satış hunisinin ilk hasta kabullerini üretmesi ortalama 3-6 haftalık bir kohort dönemi gerektirir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Ads Healthcare and Medicines Policy",
+        "url": "https://support.google.com/adspolicy/answer/176031"
+      },
+      {
+        "title": "Google Analytics 4 E-commerce & Conversion Tracking Guide",
+        "url": "https://support.google.com/analytics/answer/9267735"
+      },
+      {
+        "title": "12 Kasım 2025 Tarihli Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği",
+        "url": "https://antalyaism.saglik.gov.tr/TR-366500/saglik-hizmetlerinde-tanitim-ve-bilgilendirme--faaliyetleri-hakkinda-yonetmelik.html"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama Hizmetimiz",
+        "url": "/hizmetler/performans-pazarlama"
+      },
+      {
+        "title": "2026 Sağlık Turizmi Pazarlama Stratejisi",
+        "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir"
+      },
+      {
+        "title": "Yetkili Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizminde Chatbot ve CRM Otomasyonu",
+        "url": "/blog/saglik-turizminde-chatbot"
+      },
+      {
+        "title": "2026 Sağlık Turizmi Reklam Mevzuatı",
+        "url": "/blog/saglik-turizmi-reklam-mevzuati-2026"
+      }
+    ]
+  },
+  {
+    "id": "B02-ARACI",
+    "slug": "saglik-turizmi-araci-kurulus-yetki-belgesi",
+    "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi",
+    "category": "Mevzuat & Yetki Belgeleri",
+    "title": "Sağlık Turizmi Aracı Kuruluş Yetki Belgesi: Şartlar ve USHAŞ Başvurusu",
+    "h1": "Sağlık Turizmi Aracı Kuruluş Yetki Belgesi: Şartlar ve USHAŞ Başvurusu",
+    "seoTitle": "Sağlık Turizmi Aracı Kuruluş Yetki Belgesi 2026 | USHAŞ Şartları | Overseas",
+    "metaDesc": "Sağlık turizmi aracı kuruluş yetki belgesi şartları: USHAŞ başvurusu, A grubu seyahat acentesi ön koşulu, 7/24 çağrı merkezi ve HealthTürkiye yükümlülükleri.",
+    "primaryKeyword": "sağlık turizmi aracı kuruluş yetki belgesi",
+    "secondaryKeywords": [
+      "sağlık turizmi acente yetki belgesi",
+      "aracı kurum yetki belgesi",
+      "USHAŞ yetki belgesi şartları",
+      "sağlık turizmi acentesi kurma"
+    ],
+    "searchIntent": "Hukuki / Kurumsal B2B",
+    "funnel": "BOFU",
+    "readTime": "10 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Sağlık Hukuku Danışma Masası",
+    "quickAnswer": "Sağlık turizmi aracı kuruluş yetki belgesi; yabancı hastaların Türkiye'ye seyahat, konaklama ve sağlık kuruluşlarına yönlendirilmesi faaliyetlerini yürüten A grubu seyahat acentelerinin alması zorunlu resmî belgedir. 26 Nisan 2025 tarihli yönetmelik uyarınca başvurular doğrudan USHAŞ'a EK-1/B başvuru formu ve protokollerle yapılır.",
+    "sections": [
+      {
+        "heading": "Aracı Kuruluş Tanımı ve Sağlık Tesisiyle Temel Farkı",
+        "paragraphs": [
+          "Sağlık turizmi aracı kuruluşu; hastaya doğrudan tıbbi teşhis veya tedavi uygulayan bir sağlık kurumu değildir. Aracı kuruluşun görevi; yabancı hastanın Türkiye'ye gelişini, yetkili sağlık tesisleriyle eşleştirilmesini, transferini, konaklamasını ve tüm süreç boyunca koordinasyonunu üstlenmektir.",
+          "Sağlık Bakanlığı 2025 yönetmeliği uyarınca aracı kuruluşlar kesinlikle kendi bünyelerinde hekim çalıştırarak yetkisiz tıbbi muayene veya operasyon yapamaz. Tıbbi sorumluluk her zaman protokol imzalanmış yetkili sağlık tesisine aittir."
+        ]
+      },
+      {
+        "heading": "USHAŞ Başvurusu ve Belge İnceleme Akışı",
+        "paragraphs": [
+          "Aracı kuruluş yetki belgesi başvurusu Sağlık Bakanlığı İl Müdürlüklerine değil; doğrudan Uluslararası Sağlık Hizmetleri A.Ş. (USHAŞ) merkezine yapılır.",
+          "Başvuru dosyasında EK-1/B formunun yanı sıra; A grubu seyahat acentesi işletme belgesi, ticaret sicil gazetesi, imza sirküleri, en az 3 yetkili sağlık tesisi ile yapılmış sözleşmeler ve 7/24 yabancı dil çağrı merkezi taahhütnamesi yer alır.",
+          "USHAŞ dosya üzerinden ön inceleme yapar, fiziki ve teknik standartları denetler ve kriterleri karşılayan kuruluşa EK-3/B yetki belgesini tanzim eder."
+        ]
+      },
+      {
+        "heading": "2025 Yönetmeliği Kapsamında Aracı Kuruluş Hizmet Standartları",
+        "paragraphs": [
+          "Yönetmelik aracı kuruluşlara yüksek operasyonel standartlar getirmiştir:",
+          "1. Çağrı Merkezi: Hastaların acil durumlarında veya sorularında 7 gün 24 saat kesintisiz ana dillerinde ulaşabilecekleri bir iletişim hattı kurulması zorunludur.",
+          "2. Protokol Zorunluluğu: Aracı kuruluş yalnızca Sağlık Bakanlığı'ndan EK-3/A yetki belgesi almış tescilli hastane ve kliniklerle çalışabilir.",
+          "3. Sigorta Güvencesi: Seyahat, transfer ve operasyon sürecini kapsayan zorunlu seyahat sigortası ve komplikasyon teminatlarının hastaya sunulması gereklidir."
+        ]
+      },
+      {
+        "heading": "Ulaşım ve Konaklama İçin Seyahat Acentesi Yetkisi Ayrımı",
+        "paragraphs": [
+          "Türkiye'de 1618 sayılı Kanun uyarınca ticari amaçla uçak bileti satmak, otel rezervasyonu yapmak ve transfer düzenlemek yalnızca Kültür ve Turizm Bakanlığı onaylı A Grubu Seyahat Acenteleri'nin tekelindedir.",
+          "Bu nedenle sağlık turizmi yetki belgesi almak isteyen aracı kuruluşların ilk adımı bir seyahat acentesi tüzel kişiliğine sahip olmaktır. Seyahat yetkisi olmadan sadece sağlık danışmanlığı adı altında transfer satmak yasa dışıdır."
+        ]
+      },
+      {
+        "heading": "Şube Açma, Çağrı Merkezi ve HealthTürkiye Yükümlülükleri",
+        "paragraphs": [
+          "Aracı kuruluşların açacağı her fizikî şube veya irtibat bürosu için de USHAŞ ve Bakanlık bildirimi zorunludur. Merkez için alınan yetki belgesi bildirilmemiş şubeleri otomatik olarak kapsamaz.",
+          "Tüm yetkili aracı kuruluşlar HealthTürkiye ulusal sağlık turizmi portalına kaydolmak, sisteme gelen hasta kayıtlarını işlemek ve memnuniyet anketlerini şeffaf biçimde paylaşmakla yükümlüdür."
+        ]
+      },
+      {
+        "heading": "Pazarlama ve Hasta İletişimine Geçmeden Önce Kontrol Listesi",
+        "paragraphs": [
+          "Yetki belgesi alan aracı kuruluşların yurt dışı reklam kampanyalarını başlatmadan önce şu kontrolleri tamamlaması önerilir:",
+          "1. Çok Dilli WhatsApp CRM: Gelen lead'lerin kayıt altına alınması ve ilk 5 dakikada yanıtlanması.",
+          "2. Anlaşmalı Tesis İletişimi: Hastaya teklif sunulurken sağlık tesisinin ve hekimin adının gizlenmeden şeffafça paylaşılması.",
+          "3. KVKK ve Veri Güvenliği: Hastanın sağlık geçmişi ve fotoğraflarının şifreli güvenli sunucularda saklanması."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Aracı kuruluş kendi kliniğini açıp doktor çalıştırabilir mi?",
+        "a": "Hayır. Aracı kuruluş sağlık hizmeti sunucusu değildir; yalnızca organizasyon ve koordinasyon yapabilir. Tıbbi hizmet yetkili sağlık tesislerinde sunulmalıdır."
+      },
+      {
+        "q": "Her acente şubesi için ayrı sağlık turizmi yetki belgesi gerekir mi?",
+        "a": "Evet. Yönetmelik gereğince açılan her şube için USHAŞ'a ek müracaat yapılarak şube uygunluğu onaylatılmalıdır."
+      },
+      {
+        "q": "TÜRSAB belgesi aracı kuruluş olmak için tek başına yeterli midir?",
+        "a": "Yeterli değildir. TÜRSAB belgesi seyahat yetkisi verir; sağlık turizmi aracılığı yapabilmek için USHAŞ'tan yetki belgesi alınması şarttır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "26 Nisan 2025 Tarihli Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      },
+      {
+        "title": "USHAŞ Aracı Kuruluş Mevzuatı ve Başvuru Kriterleri",
+        "url": "https://www.ushas.gov.tr/saglik-turizmi-mevzuati/"
+      },
+      {
+        "title": "1618 Sayılı Seyahat Acentaları ve Seyahat Acentaları Birliği Kanunu",
+        "url": "https://www.tursab.org.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Acentası Nasıl Kurulur?",
+        "url": "/saglik-turizmi-acentesi-acmak"
+      },
+      {
+        "title": "TÜRSAB ile Sağlık Turizmi Belgesi Farkı",
+        "url": "/blog/tursab-saglik-turizmi-belgesi-farki"
+      },
+      {
+        "title": "Yetki Belgesi Başvuru Formları (EK-1/B)",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari"
+      },
+      {
+        "title": "Aracı Kuruluşlar İçin Büyüme Ajansı Çözümleri",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      }
+    ]
+  },
+  {
+    "id": "B04-SIRKET",
+    "slug": "saglik-turizmi-sirketi-kurmak",
+    "url": "/blog/saglik-turizmi-sirketi-kurmak",
+    "category": "Girişimcilik & Kurulum",
+    "title": "Sağlık Turizmi Şirketi Kurmak: İş Modeli, Belge ve Pazarlama Yol Haritası",
+    "h1": "Sağlık Turizmi Şirketi Kurmak: İş Modeli, Belge ve Pazarlama Yol Haritası",
+    "seoTitle": "Sağlık Turizmi Şirketi Kurmak 2026 | Adım Adım Rehber | Overseas",
+    "metaDesc": "Sağlık turizmi şirketi nasıl kurulur? Şirket türü seçimi, aracı kuruluş vs klinik ayrımı, TÜRSAB ve USHAŞ ruhsatlandırma, CRM ve pazarlama altyapısı.",
+    "primaryKeyword": "sağlık turizmi şirketi kurmak",
+    "secondaryKeywords": [
+      "sağlık turizmi şirketi nasıl kurulur",
+      "sağlık turizmi acentesi açmak",
+      "sağlık turizmi iş planı",
+      "sağlık turizmi kuruluşu"
+    ],
+    "searchIntent": "Ticari Girişimcilik / Kurulum",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Strateji Ekibi",
+    "reviewer": "Mevzuat ve Şirket Kuruluş Masası",
+    "quickAnswer": "Sağlık turizmi şirketi kurmak için öncelikle faaliyet modeli seçilmelidir: Sağlık hizmetini bizzat sunan klinik modeli mi, yoksa organizasyon yapan aracı kuruluş (acente) modeli mi? Aracı kuruluş modelinde Limited veya Anonim şirket kurulduktan sonra sırasıyla Kültür ve Turizm Bakanlığı'ndan A grubu seyahat acentesi işletme belgesi ve USHAŞ'tan sağlık turizmi aracı kuruluş yetki belgesi alınır.",
+    "sections": [
+      {
+        "heading": "Şirket Türünden Önce Faaliyet Modelini Seçmek",
+        "paragraphs": [
+          "Sağlık turizmi sektörüne girmek isteyen yatırımcıların yaptığı ilk hata, unvanında 'sağlık turizmi' ibaresi olan bir şirket kurmanın hasta getirmeye yeteceğini sanmaktır.",
+          "Türkiye'de sağlık turizmi iki yasal model üzerinden yürür: Ya Sağlık Bakanlığı ruhsatlı bir sağlık tesisi (hastane, poliklinik, tıp merkezi) kurarsınız; ya da A Grubu Seyahat Acentesi ruhsatı alıp yetkili sağlık tesisleriyle anlaşarak aracı kuruluş yetki belgesi alırsınız. Bu iki modelin sermaye, mevzuat ve sorumluluk yapıları tamamen farklıdır."
+        ]
+      },
+      {
+        "heading": "Sağlık Hizmeti Sunmak ile Aracılık Arasındaki Hukuki Fark",
+        "paragraphs": [
+          "Aracı kuruluş şirketi tıbbi hizmet veremez; ameliyathane kuramaz veya hekim istihdam edemez. Aracı şirketin gelir modeli; otel, transfer, tercüme, danışmanlık ve anlaşmalı hastanelerden elde edilen yasal komisyon veya hizmet bedelleridir.",
+          "Sağlık tesisi ise doğrudan tıbbi tedaviyi faturalandırır ve tedaviye bağlı tüm tıbbi malpraktis ve komplikasyon riskini yasal olarak taşır."
+        ]
+      },
+      {
+        "heading": "Şirket Kuruluşu ve Sektör İzin Aşamaları",
+        "paragraphs": [
+          "Aracı kuruluş modeli için kurulum aşamaları:",
+          "Aşama 1: Ticaret Sicil Müdürlüğü'nde ana sözleşmesinde seyahat acenteliği ve sağlık turizmi aracılık faaliyetleri bulunan Ltd. Şti. veya A.Ş. kuruluşu.",
+          "Aşama 2: Kültür ve Turizm Bakanlığı ve TÜRSAB üzerinden unvan başvurusu, teminat yatırılması ve A Grubu Seyahat Acentesi İşletme Belgesi alımı.",
+          "Aşama 3: En az 3 yetkili sağlık tesisi ile protokol akdederek USHAŞ'a Uluslararası Sağlık Turizmi Yetki Belgesi müracaatı.",
+          "Aşama 4: HealthTürkiye sistemine entegrasyon ve resmi sicil kaydı."
+        ]
+      },
+      {
+        "heading": "Finansal Model: Gerçekçi Gider Kalemleri",
+        "paragraphs": [
+          "Bir sağlık turizmi aracı şirketi kurarken bütçelenmesi gereken temel maliyet kalemleri şunlardır:",
+          "1. Yasal Ruhsat Giderleri: TÜRSAB teminat mektubu, müracaat ödentileri ve USHAŞ yetki belgesi harçları.",
+          "2. Çok Dilli Operasyon Ekibi: En az 2 yabancı dilde uzman hasta koordinatörleri ve 7/24 çağrı merkezi.",
+          "3. Teknoloji ve CRM Altyapısı: WhatsApp API entegrasyonu, veri güvenliği sunucuları ve açılış sayfaları.",
+          "4. İlk Çeyrek Pazarlama Bütçesi: Google Ads ve Meta reklamları için hedef ülke test bütçesi."
+        ]
+      },
+      {
+        "heading": "Yetki Tamamlandıktan Sonra Pazarlama ve Büyüme Planı",
+        "paragraphs": [
+          "Belgeleri tamamlanan şirketin sürdürülebilir hasta kazanması için pazarlama altyapısı devreye girer. Overseas Marketing bu noktada yetkili aracı kuruluşlar için hedef pazar analizi, çok dilli reklam yönetimi ve dönüşüm CRM'i kurar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Pazarlama ajansı sağlık turizmi aracı kuruluşu sayılır mı?",
+        "a": "Hayır. Dijital reklam ajansları B2B teknoloji ve pazarlama hizmeti verir; sağlık turizmi aracı kuruluşu değildir ve yetki belgesi şartına tabi değildir."
+      },
+      {
+        "q": "Sağlık turizmi şirketi kurmak ne kadar sürer?",
+        "a": "Şirket kuruluşu 3-5 günde tamamlanırken; TÜRSAB işletme belgesi ve USHAŞ yetki belgesi süreçleri denetimlerle birlikte ortalama 2 ila 4 ay sürmektedir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Resmî Gazete 26.04.2025 Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      },
+      {
+        "title": "TÜRSAB Yeni İşletme Belgesi Başvuru Rehberi",
+        "url": "https://www.tursab.org.tr/yeni-isletme-belgesi-basvurusu"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Acentası Nasıl Kurulur?",
+        "url": "/saglik-turizmi-acentesi-acmak"
+      },
+      {
+        "title": "TÜRSAB Belgesi ile Sağlık Belgesi Farkı",
+        "url": "/blog/tursab-saglik-turizmi-belgesi-farki"
+      },
+      {
+        "title": "Yetkili Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      }
+    ]
+  },
+  {
+    "id": "B06-TURSAB",
+    "slug": "tursab-saglik-turizmi-belgesi-farki",
+    "url": "/blog/tursab-saglik-turizmi-belgesi-farki",
+    "category": "Mevzuat & Kavram Analizi",
+    "title": "TÜRSAB Sağlık Turizmi Belgesi Var mı? Seyahat Acentesi ve USHAŞ Farkı",
+    "h1": "TÜRSAB Sağlık Turizmi Belgesi Var mı? Seyahat Acentesi ve USHAŞ Farkı",
+    "seoTitle": "TÜRSAB Sağlık Turizmi Belgesi Var mı? | USHAŞ Yetki Farkı | Overseas",
+    "metaDesc": "TÜRSAB sağlık turizmi belgesi nedir? TÜRSAB seyahat acentesi işletme belgesi ile Sağlık Bakanlığı / USHAŞ sağlık turizmi yetki belgesi arasındaki temel farklar.",
+    "primaryKeyword": "tursab sağlık turizmi belgesi",
+    "secondaryKeywords": [
+      "türsab sağlık turizmi belgesi",
+      "turizm yetki belgesi nasıl alınır",
+      "seyahat acentesi sağlık turizmi yetkisi"
+    ],
+    "searchIntent": "Kavram Yanılgısı Giderme",
+    "funnel": "MOFU",
+    "readTime": "8 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Hukuki İnceleme Masası",
+    "quickAnswer": "Doğrudan 'TÜRSAB Sağlık Turizmi Belgesi' adında resmî bir belge YOKTUR. TÜRSAB ve Kültür ve Turizm Bakanlığı yalnızca 1618 sayılı Kanun kapsamında 'A Grubu Seyahat Acentesi İşletme Belgesi' verir. Sağlık turizmi yapma yetkisi ise münhasıran T.C. Sağlık Bakanlığı ve USHAŞ tarafından 'Uluslararası Sağlık Turizmi Yetki Belgesi' adıyla düzenlenir.",
+    "sections": [
+      {
+        "heading": "'TÜRSAB Sağlık Turizmi Belgesi' İfadesi Neden Yanıltıcıdır?",
+        "paragraphs": [
+          "Arama motorlarında en sık aranan ifadelerden biri 'TÜRSAB sağlık turizmi belgesi'dir. Ancak mevzuatta böyle bir belge türü tanımlanmamıştır.",
+          "TÜRSAB (Türkiye Seyahat Acentaları Birliği), Kültür ve Turizm Bakanlığı'na bağlı meslek örgütüdür ve seyahat acentelerine işletme ruhsatı verir. Sağlık turizmi ise T.C. Sağlık Bakanlığı'nın denetimindedir. Dolayısıyla TÜRSAB sağlık yetkisi veremez."
+        ]
+      },
+      {
+        "heading": "Yetki Karşılaştırma Tablosu: KTB Seyahat Belgesi vs USHAŞ Yetki Belgesi",
+        "paragraphs": [
+          "İki belgenin kapsam ve mercilerini netleştiren karşılaştırma tablosu:"
+        ],
+        "table": {
+          "headers": [
+            "Özellik",
+            "KTB / TÜRSAB İşletme Belgesi",
+            "Sağlık Bakanlığı / USHAŞ Yetki Belgesi"
+          ],
+          "rows": [
+            [
+              "Düzenleyen Makam",
+              "T.C. Kültür ve Turizm Bakanlığı",
+              "T.C. Sağlık Bakanlığı & USHAŞ"
+            ],
+            [
+              "Yasal Dayanak",
+              "1618 Sayılı Seyahat Acentaları Kanunu",
+              "26.04.2025 Uluslararası Sağlık Turizmi Yönetmeliği"
+            ],
+            [
+              "Verilen Yetki",
+              "Uçak bileti satışı, transfer, tur ve konaklama",
+              "Yabancı hastayı sağlık kuruluşuna yönlendirme ve aracılık"
+            ],
+            [
+              "Zorunlu Ön Koşul",
+              "Teminat mektubu, ofis, mesul müdür",
+              "A Grubu Seyahat Acentesi olmak + Hastane protokolleri"
+            ],
+            [
+              "Denetim Alanı",
+              "Turizm faaliyetleri, rehberlik, transfer",
+              "Hasta hakları, 7/24 çağrı merkezi, aydınlatılmış onam"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Hangi Hizmette Hangi Belge Geçerlidir?",
+        "paragraphs": [
+          "Bir yabancı hastanın karşılanması, oteline yerleştirilmesi ve havalimanı transferi için seyahat acentesi yetkisi şarttır.",
+          "Ancak aynı hastaya tedavi seçeneklerinin anlatılması, hastane randevusunun organize edilmesi ve tıbbi raporlarının iletilmesi için USHAŞ yetki belgesi şarttır. Tam kapsamlı bir aracı kuruluş her iki belgeye de sahip olmak zorundadır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "TÜRSAB belgesi olan bir acente doğrudan sağlık turizmi yapabilir mi?",
+        "a": "Hayır. TÜRSAB belgesi olan acente mutlaka USHAŞ'a başvurarak Uluslararası Sağlık Turizmi Aracı Kuruluş Yetki Belgesi almak zorundadır."
+      },
+      {
+        "q": "Sağlık Bakanlığı yetki belgesi olan klinik turizm transferi yapabilir mi?",
+        "a": "Hayır. Sağlık tesisi hastalarını kendi öz mal aracıyla kliniğe taşıyabilir ancak ticari tur ve konaklama satamaz; bu hizmetler için yetkili seyahat acenteleriyle çalışmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "TÜRSAB Acenta Sicil Mevzuatı",
+        "url": "https://sss.tursab.org.tr/acenta-sicil.html"
+      },
+      {
+        "title": "Kültür ve Turizm Bakanlığı Seyahat Acentası Talebi",
+        "url": "https://yigm.ktb.gov.tr/TR-138402/seyahat-acentasi-isletme-belgesi-talebi.html"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Aracı Kuruluş Yetki Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Acentası Nasıl Kurulur?",
+        "url": "/saglik-turizmi-acentesi-acmak"
+      }
+    ]
+  },
+  {
+    "id": "B07-FORM",
+    "slug": "saglik-turizmi-yetki-belgesi-basvuru-formlari",
+    "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari",
+    "category": "Mevzuat & Formlar",
+    "title": "Sağlık Turizmi Yetki Belgesi Başvuru Formu: EK-1/A, EK-1/B ve EK-3 Farkı",
+    "h1": "Sağlık Turizmi Yetki Belgesi Başvuru Formu: EK-1/A, EK-1/B ve EK-3 Farkı",
+    "seoTitle": "Sağlık Turizmi Yetki Belgesi Başvuru Formu (EK-1 ve EK-3) | Overseas",
+    "metaDesc": "Sağlık turizmi yetki belgesi başvuru formu rehberi: EK-1/A klinik, EK-1/B acente başvuru formu. EK-3 neden başvuru formu değildir? Resmî ekler analizi.",
+    "primaryKeyword": "sağlık turizmi yetki belgesi başvuru formu",
+    "secondaryKeywords": [
+      "uluslararası sağlık turizmi yetki belgesi başvuru formu",
+      "sağlık turizmi yetki belgesi başvuru formu ek-3",
+      "ek-1/a formu",
+      "ek-1/b formu"
+    ],
+    "searchIntent": "Resmî Doküman ve Form Araştırması",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Resmî Belge Denetim Masası",
+    "quickAnswer": "26 Nisan 2025 tarihli Resmî Gazete yönetmeliğine göre sağlık turizmi yetki belgesi başvuru formları EK-1/A (Sağlık Tesisleri için) ve EK-1/B'dir (Aracı Kuruluşlar için). Sıkça aranan 'EK-3' ise kesinlikle bir başvuru formu DEĞİLDİR; başvurusu onaylanan kurumlara Sağlık Bakanlığı veya USHAŞ tarafından düzenlenen fiziki yetki belgesinin resmî örneğidir.",
+    "sections": [
+      {
+        "heading": "Hangi Kurum Hangi Başvuru Evrakını Kullanır?",
+        "paragraphs": [
+          "Yetki belgesi müracaatında kurumların düştüğü en yaygın hata yanlış ek evrakıyla başvuru yapmaktır.",
+          "Sağlık Bakanlığı 2025 yönetmeliğinde ekleri kesin çizgilerle ayırmıştır: Sağlık Tesisleri (klinik, hastane) EK-1/A evrakını kullanırken; Aracı Kuruluşlar (acenteler) EK-1/B evrakını kullanır."
+        ]
+      },
+      {
+        "heading": "EK-1/A Sağlık Tesisi Başvuru Formu Kapsamı",
+        "paragraphs": [
+          "EK-1/A başvuru evrakı Sağlık Bakanlığı EKİP sistemi üzerinden dijital olarak doldurulur. İçeriğinde; sağlık tesisinin ruhsat bilgileri, SKS kalite puanı belgesi, sağlık turizmi birim sorumlusunun ve tercümanların dil belgeleri ve komplikasyon sigorta teminatları yer alır."
+        ]
+      },
+      {
+        "heading": "EK-1/B Aracı Kuruluş Başvuru Formu Kapsamı",
+        "paragraphs": [
+          "EK-1/B formu doğrudan USHAŞ’a sunulan başvuru evrakıdır. A grubu acente işletme belgesi, anlaşmalı yetkili sağlık tesislerinin listesi, 7/24 çağrı merkezi altyapı sözleşmesi ve kurumsal HealthTürkiye taahhütnameleri bu formun eklerini oluşturur."
+        ]
+      },
+      {
+        "heading": "EK-3/A ve EK-3/B Neden Başvuru Formu Değildir?",
+        "paragraphs": [
+          "Arama motorlarında 'sağlık turizmi yetki belgesi başvuru formu ek-3' araması yoğun şekilde yapılmaktadır. Ancak yönetmelik incelendiğinde EK-3/A'nın 'Uluslararası Sağlık Turizmi Sağlık Tesisi Yetki Belgesi Örneği' ve EK-3/B'nin 'Uluslararası Sağlık Turizmi Aracı Kuruluş Yetki Belgesi Örneği' olduğu görülür.",
+          "Yani EK-3 doldurulan bir form değil; tüm denetimlerden geçtikten sonra Bakanlığın basıp kuruma teslim ettiği duvara asılan sertifikanın şablonudur."
+        ]
+      },
+      {
+        "heading": "Güncel Resmî Formlara Nasıl Ulaşılır?",
+        "paragraphs": [
+          "Eski 2017 yönetmeliği eklerindeki formlar geçerliliğini yitirmiştir. 2026 yılı başvurularında yalnızca 26 Nisan 2025 tarihli 32882 sayılı Resmî Gazete ekleri veya Sağlık Bakanlığı Sağlık Turizmi Dairesi Başkanlığı resmî portalından indirilen güncel nüshalar kabul edilmektedir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "EK-3 belgesini kurum kendisi doldurabilir mi?",
+        "a": "Hayır. EK-3 başvuru formu değildir; Bakanlık veya USHAŞ tarafından onaylanan kurumlara tanzim edilen yetki belgesinin kendisidir."
+      },
+      {
+        "q": "Başvuru formları elden mi teslim edilir?",
+        "a": "Sağlık tesisleri EKİP sistemi üzerinden dijital olarak, aracı kuruluşlar ise USHAŞ resmî başvuru prosedürlerine göre evrak teslimi yapar."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Resmî Gazete 26.04.2025 / Sayı 32882 Ekleri (EK-1 ve EK-3)",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      },
+      {
+        "title": "Sağlık Turizmi Dairesi Başkanlığı Başvuru Portalı",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi İçin Gerekli Şartlar ve Belgeler",
+        "url": "/saglik-turizmi/gerekli-belgeler"
+      },
+      {
+        "title": "Yetki Belgesi Ücretleri ve Maliyet Analizi",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-ucreti"
+      }
+    ]
+  },
+  {
+    "id": "B08-UCRET",
+    "slug": "saglik-turizmi-yetki-belgesi-ucreti",
+    "url": "/blog/saglik-turizmi-yetki-belgesi-ucreti",
+    "category": "Maliyet & Bütçe",
+    "title": "Sağlık Turizmi Yetki Belgesi Ücreti 2026: Maliyet Kalemleri ve Resmî Doğrulama",
+    "h1": "Sağlık Turizmi Yetki Belgesi Ücreti 2026: Maliyet Kalemleri ve Resmî Doğrulama",
+    "seoTitle": "Sağlık Turizmi Yetki Belgesi Ücreti 2026 | Resmî Maliyet Kalemleri | Overseas",
+    "metaDesc": "2026 sağlık turizmi yetki belgesi ücreti ne kadar? USHAŞ belge harçları, TÜRSAB kuruluş teminatı, SKS denetim giderleri ve resmî maliyet kalemleri analizi.",
+    "primaryKeyword": "sağlık turizmi yetki belgesi ücreti",
+    "secondaryKeywords": [
+      "sağlık turizmi belgesi maliyeti",
+      "sağlık turizmi yetki belgesi başvuru ücreti",
+      "ushas yetki belgesi harcı"
+    ],
+    "searchIntent": "Maliyet ve Bütçe Araştırması",
+    "funnel": "MOFU",
+    "readTime": "8 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Bütçe Ekibi",
+    "reviewer": "Mevzuat ve Finans Masası",
+    "quickAnswer": "Sağlık turizmi yetki belgesi için tek bir sabit ücret rakamı yoktur; toplam maliyet sağlık tesisi mi yoksa aracı kuruluş mu olduğunuza göre farklı resmî harç ve teminat kalemlerinden oluşur. Aracı kuruluşlar için Kültür ve Turizm Bakanlığı teminat mektubu, TÜRSAB müracaat ödentisi ve USHAŞ yetki belgesi işlem bedeli ayrı ayrı tahakkuk eder.",
+    "sections": [
+      {
+        "heading": "Ücret Sorusunun Neden Tek Bir Cevabı Yoktur?",
+        "paragraphs": [
+          "Arama motorlarında 'sağlık turizmi yetki belgesi ücreti' araması yapan girişimciler genellikle tek bir harç tutarı bekler. Ancak mevzuat gereğince yetki belgesi alma süreci; döner sermaye harçları, kalite denetim bedelleri, teminatlar ve tercüman bordro maliyetleri gibi farklı bileşenleri içerir.",
+          "Doğrulanmamış internet sitelerinde yer alan '5.000 TL' ya da '50.000 TL' gibi spekülatif rakamlara itibar edilmemeli; resmî kurum tarifeleri esas alınmalıdır."
+        ]
+      },
+      {
+        "heading": "USHAŞ ve Sağlık Bakanlığı Belgesi ile TÜRSAB Masraflarını Ayırmak",
+        "paragraphs": [
+          "Sağlık Tesisleri Açısından: Sağlık Bakanlığı döner sermaye işletmesi tarafından belirlenen yıllık yetkilendirme ve denetim harçları geçerlidir.",
+          "Aracı Kuruluşlar Açısından: Önce TÜRSAB ve Kültür ve Turizm Bakanlığı nezdinde ödenen yasal işletme belgesi ve teminat bedelleri; ardından USHAŞ'a ödenen dosya inceleme ve belge düzenleme bedeli söz konusudur."
+        ]
+      },
+      {
+        "heading": "2026 Güncel Maliyet Kalemleri Tablosu",
+        "paragraphs": [
+          "Süreçte karşılaşılan doğrulanabilir resmî harç ve operasyon giderleri:"
+        ],
+        "table": {
+          "headers": [
+            "Maliyet Kalemi",
+            "Tahsil Eden Kurum",
+            "Maliyet Türü & Açıklama"
+          ],
+          "rows": [
+            [
+              "Sağlık Turizmi Yetki Belgesi Harcı",
+              "Sağlık Bakanlığı / USHAŞ",
+              "Yıllık döner sermaye tarifesine göre resmî müracaat bedeli"
+            ],
+            [
+              "A Grubu Acente İşletme Belgesi Harcı",
+              "Kültür ve Turizm Bakanlığı",
+              "Seyahat acentesi ruhsatlandırma harcı"
+            ],
+            [
+              "TÜRSAB Kuruluş Teminat Mektubu",
+              "TÜRSAB / Banka Teminatı",
+              "1618 sayılı Kanun kapsamında bankada bloke edilen yasal teminat"
+            ],
+            [
+              "SKS Kalite Denetim Bedeli",
+              "Sağlık Bakanlığı Döner Sermaye",
+              "Tesis kalite akreditasyon denetim harcı"
+            ],
+            [
+              "HealthTürkiye Portal Üyeliği",
+              "USHAŞ",
+              "Ulusal portal listeleme ve entegrasyon prosedürü"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "2026 Rakamlarının Resmî Kaynaktan Kontrol Edilme Yöntemi",
+        "paragraphs": [
+          "Döner sermaye işlem bedelleri her yıl Ocak ayında Maliye Bakanlığı yeniden değerleme oranına göre güncellenir. Başvuru yapmadan önce Sağlık Bakanlığı Döner Sermaye İşletmeleri Dairesi ve USHAŞ resmî duyurularındaki güncel katsayı cetvelleri teyit edilmelidir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "TÜRSAB ücreti sağlık turizmi yetki belgesi harcına dahil midir?",
+        "a": "Hayır. TÜRSAB seyahat acenteliği masrafları ayrı, Sağlık Bakanlığı / USHAŞ yetki belgesi harçları ayrı kurumlara ödenir."
+      },
+      {
+        "q": "Her yıl yetki belgesi yenileme ücreti ödenir mi?",
+        "a": "Yıllık denetim ve döner sermaye vizeleme bedelleri mevzuat tarifesine göre kurumlarca tahakkuk ettirilir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Sağlık Bakanlığı Döner Sermaye Fiyat Tarifeleri",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      },
+      {
+        "title": "USHAŞ Resmî Ücret Duyuruları",
+        "url": "https://www.ushas.gov.tr/saglik-turizmi-mevzuati/"
+      },
+      {
+        "title": "TÜRSAB Yeni İşletme Belgesi Masrafları",
+        "url": "https://www.tursab.org.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Başvuru Formları (EK-1 ve EK-3)",
+        "url": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari"
+      },
+      {
+        "title": "Aracı Kuruluş Yetki Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
+      }
+    ]
+  },
+  {
+    "id": "B09-MEVZ",
+    "slug": "saglik-bakanligi-saglik-turizmi-mevzuati-2026",
+    "url": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026",
+    "category": "Hukuk & Mevzuat",
+    "title": "Sağlık Bakanlığı Sağlık Turizmi Mevzuatı 2026: Hangi Yönetmelikler Geçerli?",
+    "h1": "Sağlık Bakanlığı Sağlık Turizmi Mevzuatı 2026: Hangi Yönetmelikler Geçerli?",
+    "seoTitle": "Sağlık Bakanlığı Sağlık Turizmi Mevzuatı 2026 | Güncel Yönetmelik | Overseas",
+    "metaDesc": "Sağlık Bakanlığı sağlık turizmi mevzuatı: 26 Nisan 2025 Uluslararası Sağlık Turizmi Yönetmeliği, 12 Kasım 2025 Tanıtım Yönetmeliği ve 2026 yasal kurallar.",
+    "primaryKeyword": "sağlık bakanlığı sağlık turizmi",
+    "secondaryKeywords": [
+      "sağlık turizmi yönetmeliği 2026",
+      "uluslararası sağlık turizmi mevzuatı",
+      "sağlık tanıtım yönetmeliği 2025"
+    ],
+    "searchIntent": "Hukuki ve Kurumsal Uyum",
+    "funnel": "MOFU",
+    "readTime": "11 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Mevzuat Masası",
+    "reviewer": "Mevzuat Uyum Danışmanı",
+    "quickAnswer": "2026 yılı itibarıyla Türkiye'de sağlık turizmini yöneten iki temel Sağlık Bakanlığı düzenlemesi yürürlüktedir: 1) 26 Nisan 2025 tarihli ve 32882 sayılı Uluslararası Sağlık Turizmi Yönetmeliği (2017 yönetmeliğini ilga etmiştir), 2) 12 Kasım 2025 tarihli ve 33075 sayılı Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği (2023 yönetmeliğini ilga etmiştir).",
+    "sections": [
+      {
+        "heading": "Hangi Temel Düzenlemeler Yürürlüktedir?",
+        "paragraphs": [
+          "Türkiye'de sağlık turizmi sektöründe son 18 ayda köklü bir mevzuat reformu yapılmıştır. Eski düzenlemeler olan 2017 Sağlık Turizmi Yönetmeliği ve 29 Temmuz 2023 Tanıtım Yönetmeliği tamamen yürürlükten kalkmıştır.",
+          "2026 yılındaki tüm yetki alma, denetim, hasta kabulü ve tanıtım faaliyetleri 2025 yılında yayımlanan iki yeni temel yönetmelik hükümlerine göre yürütülmektedir."
+        ]
+      },
+      {
+        "heading": "26 Nisan 2025 Uluslararası Sağlık Turizmi Yönetmeliği Önemli Maddeleri",
+        "paragraphs": [
+          "Madde 4: Temel tanımlar; aracı kuruluş, sağlık tesisi, yetki belgesi ve HealthTürkiye portalının yasal statüsü belirlenmiştir.",
+          "Madde 5 ve 6: Sağlık tesislerinin EKİP üzerinden EK-1/A ile, aracı kuruluşların ise USHAŞ üzerinden EK-1/B ile yetki belgesi alma usulleri kurala bağlanmıştır.",
+          "Madde 8: Uluslararası sağlık turizmi birimi kurulması ve personelin yabancı dil yeterlilik standartları düzenlenmiştir.",
+          "Madde 13: Tanıtım ve bilgilendirme faaliyetlerinde genel sağlık tanıtım mevzuatına ve HealthTürkiye portalı entegrasyonuna atıf yapılmıştır."
+        ]
+      },
+      {
+        "heading": "12 Kasım 2025 Tanıtım Yönetmeliğinde Sağlık Turizmi Ayrımı",
+        "paragraphs": [
+          "12 Kasım 2025 tarihli 33075 sayılı yönetmelik ile sağlıkta reklam yasağının sınırları netleştirilmiştir:",
+          "Madde 5: Türkiye içi kitleye sağlık hizmetlerinde açık veya örtülü reklam yapılması kesinlikle yasaktır.",
+          "Madde 7 ve 8: Uluslararası sağlık turizmi yetki belgesine sahip kurumların yurt dışına yönelik yabancı dilde bilgilendirme faaliyetleri reklam yasağının istisnası olarak tanımlanmıştır; ancak bu istisna HealthTürkiye logosu kullanımı ve bilimsel kanıta dayalı anlatım şartlarına bağlanmıştır."
+        ]
+      },
+      {
+        "heading": "Mevzuata Göre Pazarlama Kontrol Listesi",
+        "paragraphs": [
+          "Bir sağlık turizmi kampanyasının Bakanlık denetimlerinden sorunsuz geçmesi için:",
+          "1. Kampanya hedeflemesinde Türkiye IP'lerinin tamamen hariç tutulması.",
+          "2. Fiyat indirimi, 'en iyi klinik', 'sıfır risk garantisi' gibi talep yaratıcı ticari vaatlerden kaçınılması.",
+          "3. Tescilli hekim unvanlarının ve yetki belgesi numarasının açılış sayfasında görünür olması şarttır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "2023 tarihli tanıtım yönetmeliği hâlâ geçerli midir?",
+        "a": "Hayır. 12 Kasım 2025 tarihli Resmî Gazete'de yayımlanan yönetmeliğin 19. maddesi ile 29 Temmuz 2023 tarihli eski yönetmelik yürürlükten kaldırılmıştır."
+      },
+      {
+        "q": "Sağlık Bakanlığı yetkisiz sağlık turizmi yapanlara ne ceza verir?",
+        "a": "Yetkisiz sağlık turizmi faaliyeti yürüten kurumlara ağır idari para cezası kesilir ve sağlık tesisinin faaliyetleri geçici veya kalıcı olarak durdurulur."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "26.04.2025 Tarihli Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      },
+      {
+        "title": "12.11.2025 Tarihli Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği",
+        "url": "https://antalyaism.saglik.gov.tr/TR-366500/saglik-hizmetlerinde-tanitim-ve-bilgilendirme--faaliyetleri-hakkinda-yonetmelik.html"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Sağlık Turizmi Reklam Mevzuatı 2026",
+        "url": "/blog/saglik-turizmi-reklam-mevzuati-2026"
+      },
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Aracı Kuruluş Yetki Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama Hizmeti",
+        "url": "/hizmetler/performans-pazarlama"
+      }
+    ]
+  },
+  {
+    "id": "B11-TR",
+    "slug": "turkiyede-saglik-turizmi",
+    "url": "/blog/turkiyede-saglik-turizmi",
+    "category": "Sektör & Destinasyon",
+    "title": "Türkiye'de Sağlık Turizmi 2026: Alanlar, Modeller ve Sektörün Yapısı",
+    "h1": "Türkiye'de Sağlık Turizmi 2026: Alanlar, Modeller ve Sektörün Yapısı",
+    "seoTitle": "Türkiye'de Sağlık Turizmi 2026 | Alanlar ve Sektör Rehberi | Overseas",
+    "metaDesc": "Türkiye'de sağlık turizmi rehberi: Dental, saç ekimi, estetik, göz ve onkoloji branşları, İstanbul ve Antalya ekosistemi, pazar dinamikleri ve büyüme modelleri.",
+    "primaryKeyword": "türkiye'de sağlık turizmi",
+    "secondaryKeywords": [
+      "türkiye de sağlık turizmi yapılan yerler",
+      "türkiyede sağlık turizmi",
+      "türkiye sağlık turizmi pazarı"
+    ],
+    "searchIntent": "Geniş Kapsamlı Sektör Analizi",
+    "funnel": "TOFU",
+    "readTime": "12 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Araştırma Masası",
+    "reviewer": "Sektörel Strateji Masası",
+    "quickAnswer": "Türkiye'de sağlık turizmi; yüksek cerrahi uzmanlık, modern hastane altyapısı, uygun maliyet avantajı ve coğrafi erişilebilirlik sayesinde dünyanın en büyük uluslararası hasta destinasyonlarından biridir. Sektör temel olarak medikal cerrahi, dental turizm, saç ekimi, termal sağlık ve yaşlı/engelli turizmi olmak üzere 5 ana branş etrafında şekillenmektedir.",
+    "sections": [
+      {
+        "heading": "Sağlık Turizmi Kavramı ve Mevzuat Kapsamı",
+        "paragraphs": [
+          "Uluslararası sağlık turizmi; ikamet ettiği ülkenin dışında sağlığını korumak, geliştirmek veya tedavi olmak amacıyla seyahat eden kişilerin aldığı tüm sağlık ve organizasyon hizmetlerini kapsar.",
+          "Türkiye'de bu faaliyetler 'Turistin Sağlığı' (tatil sırasında acil hastalanan turistlerin tedavisi) kavramından kesin olarak ayrılmıştır. Sağlık turizmi planlı, randevulu ve önceden organize edilmiş tedavi süreçlerini ifade eder."
+        ]
+      },
+      {
+        "heading": "Türkiye’de Sağlık Turizminin Başlıca Faaliyet Alanları",
+        "paragraphs": [
+          "1. Dental Turizm: İmplant, all-on-4, zirkonyum kaplama ve gülüş tasarımı. İngiltere ve Avrupa hastalarının en yoğun talep gösterdiği alandır.",
+          "2. Saç Ekimi: DHI ve Safir FUE teknikleriyle İstanbul ve Antalya dünya lideri konumundadır.",
+          "3. Estetik ve Plastik Cerrahi: Rinoplasti, meme estetiği, liposuction ve yüz gençleştirme operasyonları.",
+          "4. Obezite Cerrahisi: Tüp mide (sleeve gastrectomy) ve mide baypası operasyonlarında İngiltere pazarı öne çıkar.",
+          "5. İleri Tıp & Onkoloji: Organ nakli, kemik iliği, robotik cerrahi ve tüp bebek (IVF) tedavileri."
+        ]
+      },
+      {
+        "heading": "İstanbul, Antalya ve Diğer Destinasyonların Farklı İhtiyaçları",
+        "paragraphs": [
+          "İstanbul; ileri cerrahi branşlar, A Plus genel hastaneler ve saç ekimi merkezleriyle tüm yıl boyunca kesintisiz hasta çeken metropol niteliğindedir.",
+          "Antalya ise; direkt uçuş ağı ve tatil konseptiyle diş klinikleri, estetik cerrahi ve göz tedavilerinde yaz ve bahar aylarında zirve yapan bir destinasyondur.",
+          "İzmir butik klinik ve Ege yaşam tarzı avantajıyla; Ankara ise akademik hekim kadroları ve karmaşık cerrahilerle ayrışır."
+        ]
+      },
+      {
+        "heading": "Yurt Dışı Hastaya Dijital Erişim ve Dil Uyarlaması",
+        "paragraphs": [
+          "Türkiye'deki kliniklerin küresel rekabette öne çıkması için yalnızca kaliteli tedavi sunması yetmez; dijital kanallarda hedef ülkenin dilinde var olması şarttır. İngiltere, Almanya, Fransa ve Körfez ülkelerine yönelik çok dilli SEO, GEO ve performans kampanyaları kurulmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi ile turistin sağlığı arasındaki fark nedir?",
+        "a": "Turistin sağlığı Türkiye'de tatil yaparken aniden hastalanan kişinin acil tedavisidir. Sağlık turizmi ise kişinin doğrudan tedavi amacıyla Türkiye'ye planlı olarak seyahat etmesidir."
+      },
+      {
+        "q": "Yabancı hastalar neden Türkiye'yi tercih ediyor?",
+        "a": "Yüksek hekim tecrübesi, modern teknolojik donanım, Avrupa ve Amerika'ya kıyasla %50-70 maliyet avantajı ve bekleme süresinin olmaması en önemli nedenlerdir."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Sağlık Bakanlığı Uluslararası Sağlık Turizmi Dairesi",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      },
+      {
+        "title": "USHAŞ Türkiye Sağlık Turizmi Verileri",
+        "url": "https://www.ushas.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Türkiye'de Sağlık Turizmi Merkezleri",
+        "url": "/blog/turkiyede-saglik-turizmi-merkezleri"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Ekosistemi",
+        "url": "/antalya-saglik-turizmi"
+      },
+      {
+        "title": "Türkiye'de Sağlık Turizmi Yapan Acentalar",
+        "url": "/blog/turkiyede-saglik-turizmi-yapan-acentalar"
+      },
+      {
+        "title": "Sağlık Turizmi Pazarlama Stratejisi 2026",
+        "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir"
+      }
+    ]
+  },
+  {
+    "id": "B12-MERKEZ",
+    "slug": "turkiyede-saglik-turizmi-merkezleri",
+    "url": "/blog/turkiyede-saglik-turizmi-merkezleri",
+    "category": "Destinasyon Rehberi",
+    "title": "Sağlık Turizmi Merkezleri ve Türkiye’de Yapıldığı Yerler: Destinasyon Rehberi",
+    "h1": "Sağlık Turizmi Merkezleri ve Türkiye’de Yapıldığı Yerler: Destinasyon Rehberi",
+    "seoTitle": "Sağlık Turizmi Merkezleri | Türkiye'de Nerede Yapılır? | Overseas",
+    "metaDesc": "Sağlık turizmi merkezleri nerede bulunur? Türkiye'de sağlık turizmi yapılan şehirler, yetkili klinik doğrulama, HealthTürkiye listesi ve şehir branş analizi.",
+    "primaryKeyword": "sağlık turizmi merkezleri",
+    "secondaryKeywords": [
+      "sağlık turizmi nerelerde yapılır",
+      "türkiye sağlık turizmi şehirleri",
+      "sağlık turizmi yapılan yerler"
+    ],
+    "searchIntent": "Destinasyon ve Lokasyon Sorgusu",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Araştırma Masası",
+    "reviewer": "Lokasyon Strateji Masası",
+    "quickAnswer": "Türkiye'de sağlık turizmi merkezleri başta İstanbul, Antalya, İzmir, Ankara, Bursa ve Muğla olmak üzere doğrudan uçuş ağına ve akredite sağlık altyapısına sahip büyükşehirlerde yoğunlaşmıştır. T.C. Sağlık Bakanlığı onaylı yetkili sağlık tesisleri ve merkezleri resmî olarak HealthTürkiye portalı üzerinden sorgulanabilir.",
+    "sections": [
+      {
+        "heading": "Sağlık Turizmi Nerelerde Gerçekleşir?",
+        "paragraphs": [
+          "Sağlık turizmi faaliyetleri rastgele muayenehanelerde değil; Sağlık Bakanlığı'ndan Uluslararası Sağlık Turizmi Yetki Belgesi almış ruhsatlı hastaneler, tıp merkezleri ve polikliniklerde yürütülür.",
+          "Türkiye'de uluslararası hasta kabul eden yetkili kurumların %80'den fazlası havalimanı ve otel entegrasyonu güçlü olan metropollerde yer alır."
+        ]
+      },
+      {
+        "heading": "Şehir ve Branş Odak Haritası",
+        "paragraphs": [
+          "Şehirlerin öne çıkan branş uzmanlıkları:",
+          "1. İstanbul: Saç ekimi, genel cerrahi, onkoloji, estetik plastik cerrahi ve organ nakli.",
+          "2. Antalya: Dental turizm (diş klinikleri), estetik cerrahi, saç ekimi ve göz tedavileri.",
+          "3. İzmir: Butik diş tedavileri, obezite cerrahisi ve termal sağlık turizmi.",
+          "4. Ankara: Üniversite ve araştırma hastaneleriyle ileri cerrahi, tüp bebek ve genel hastane operasyonları.",
+          "5. Bursa & Afyonkarahisar: Termal sağlık turizmi, romatoloji ve medikal rehabilitasyon merkezleri."
+        ]
+      },
+      {
+        "heading": "Yetkili Klinik ve Merkez Nasıl Sorgulanır?",
+        "paragraphs": [
+          "Uluslararası hastaların ve aracı kuruluşların güvenliği için Sağlık Bakanlığı 'HealthTürkiye' platformunu kurmuştur. HealthTürkiye portalında yer almayan bir kliniğin yabancı hasta kabul yetkisi bulunmamaktadır.",
+          "Doğrulama yapılırken kliniğin tescilli ticaret unvanı, ruhsat numarası ve EK-3/A yetki belgesi tarihi portal üzerinden teyit edilir."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sağlık turizmi merkezi resmî bir unvan mıdır?",
+        "a": "Hukuken 'Sağlık Turizmi Merkezi' adında ayrı bir ruhsat türü yoktur; yetkilendirilmiş hastane, tıp merkezi veya poliklinikler bu kapsamda merkez olarak adlandırılır."
+      },
+      {
+        "q": "En çok sağlık turisti çeken il hangisidir?",
+        "a": "Türkiye'ye gelen uluslararası hastaların en büyük bölümü İstanbul ve Antalya illerindeki yetkili sağlık tesislerinde tedavi olmaktadır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Onaylı Sağlık Hizmeti Sağlayıcıları",
+        "url": "https://healthturkiye.gov.tr/certificated-health-service-providers"
+      },
+      {
+        "title": "Sağlık Bakanlığı Sağlık Hizmetleri Genel Müdürlüğü",
+        "url": "https://shgmturizmdb.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Türkiye'de Sağlık Turizmi Sektör Yapısı",
+        "url": "/blog/turkiyede-saglik-turizmi"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Ekosistemi",
+        "url": "/antalya-saglik-turizmi"
+      },
+      {
+        "title": "Sağlık Turizmi Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      },
+      {
+        "title": "Yetkili Aracı Kuruluş Doğrulama Rehberi",
+        "url": "/blog/turkiyede-saglik-turizmi-yapan-acentalar"
+      }
+    ]
+  },
+  {
+    "id": "B15-DANISMAN",
+    "slug": "antalya-saglik-turizmi-danismanligi",
+    "url": "/blog/antalya-saglik-turizmi-danismanligi",
+    "category": "Danışmanlık & Büyüme",
+    "title": "Antalya Sağlık Turizmi Danışmanlığı: Mevzuat, Pazarlama ve Operasyon Farkları",
+    "h1": "Antalya Sağlık Turizmi Danışmanlığı: Mevzuat, Pazarlama ve Operasyon Farkları",
+    "seoTitle": "Antalya Sağlık Turizmi Danışmanlığı | Büyüme & Pazarlama | Overseas",
+    "metaDesc": "Antalya sağlık turizmi danışmanlığı nedir? Ruhsat danışmanlığı, hasta operasyon danışmanlığı ile dijital pazarlama danışmanlığı arasındaki temel farklar.",
+    "primaryKeyword": "antalya sağlık turizmi danışmanlığı",
+    "secondaryKeywords": [
+      "sağlık turizmi danışmanlığı antalya",
+      "antalya klinik danışmanlığı",
+      "sağlık turizmi pazarlama danışmanı"
+    ],
+    "searchIntent": "Danışmanlık Arayışı (Ticari & Bilgi)",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Danışmanlık Masası",
+    "reviewer": "Bölgesel Strateji Masası",
+    "quickAnswer": "Antalya sağlık turizmi danışmanlığı; şehirdeki klinik ve hastanelerin uluslararası pazara açılması için sunulan uzmanlık hizmetleridir. Temelde üçe ayrılır: 1) Hukuki ruhsat danışmanlığı (yetki belgesi alma), 2) Hasta operasyon danışmanlığı (VIP transfer ve otel süreçleri), 3) Dijital pazarlama danışmanlığı (hedef ülke reklamları, SEO, GEO ve CRM).",
+    "sections": [
+      {
+        "heading": "Danışmanlık Türlerini Tanımlamak: Hukuk, Operasyon ve Pazarlama",
+        "paragraphs": [
+          "Antalya'da klinik yöneticileri 'danışmanlık' ararken sıklıkla farklı uzmanlıkları birbiriyle karıştırır.",
+          "Bir avukatlık bürosu yetki belgesi ruhsatlandırma sürecini yürütürken; bir turizm acentesi hasta transfer operasyonunu çözer. Overseas Marketing ise kliniğe yurt dışından nitelikli hasta getiren dijital pazarlama, SEO, GEO ve CRM altyapısını kurar."
+        ]
+      },
+      {
+        "heading": "Overseas Marketing Hangi Hizmetleri Verir, Hangilerini Vermez?",
+        "paragraphs": [
+          "Verdiğimiz Hizmetler: Çok dilli Google Ads ve Meta Ads yönetimi, medikal SEO ve GEO optimizasyonu, 2 saniyede açılan açılış sayfaları, WhatsApp CRM entegrasyonu ve MQL/CAC analitiği.",
+          "Vermediğimiz Hizmetler: Hastane adına yetki belgesi müracaatı yapmak, hasta taşımak veya tıbbi konsültasyon vermek. Biz bir teknoloji ve pazarlama büyüme ajansıyız."
+        ]
+      },
+      {
+        "heading": "Hizmet Seçiminde Sözleşme ve KPI Soruları",
+        "paragraphs": [
+          "Antalya'da bir pazarlama veya danışmanlık partneri seçerken kliniğin sorması gereken 3 soru:",
+          "1. Raporlamanızda sadece lead sayısı mı var, yoksa gerçekleşen randevu ve CAC hesabı yapılıyor mu?",
+          "2. Reklamlar 12 Kasım 2025 tarihli tanıtım mevzuatına ve Google Healthcare politikalarına uygun mu?",
+          "3. Web sitemiz yapay zekâ arama motorlarında (ChatGPT, Gemini) otorite olarak konumlandırılıyor mu?"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Danışmanlık alarak yetki belgesi almak zorunlu mudur?",
+        "a": "Zorunlu değildir; klinik kendi hukuk veya kalite ekibiyle de EKİP üzerinden başvuruyu tamamlayabilir. Ancak süreç karmaşık olduğu için hukuki danışmanlık tercih edilebilir."
+      },
+      {
+        "q": "Pazarlama danışmanlığı ile reklam ajansı aynı şey midir?",
+        "a": "Stratejik danışmanlık sunan ajanslar bütçe matematiğini, pazar araştırmasını ve CRM satış hunisini kurarken; sıradan ajanslar sadece reklam butonuna basar."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "2025 Uluslararası Sağlık Turizmi Yönetmeliği",
+        "url": "https://resmigazete.gov.tr/eskiler/2025/04/20250426-2.htm"
+      },
+      {
+        "title": "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği",
+        "url": "https://antalyaism.saglik.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Antalya Sağlık Turizmi Reklam Ajansı",
+        "url": "/antalya-saglik-turizmi-reklam-ajansi"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Ekosistemi",
+        "url": "/antalya-saglik-turizmi"
+      },
+      {
+        "title": "Sağlık Turizmi Pazarlaması 2026",
+        "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir"
+      },
+      {
+        "title": "Yetki Belgesi Ana Rehberi",
+        "url": "/saglik-turizmi-yetki-belgesi"
+      }
+    ]
+  },
+  {
+    "id": "B16-WEB",
+    "slug": "antalya-saglik-turizmi-web-sitesi",
+    "url": "/blog/antalya-saglik-turizmi-web-sitesi",
+    "category": "Web & Dönüşüm",
+    "title": "Antalya Sağlık Turizmi Web Sitesi: Çok Dilli SEO, Güven ve Dönüşüm Kontrol Listesi",
+    "h1": "Antalya Sağlık Turizmi Web Sitesi: Çok Dilli SEO, Güven ve Dönüşüm Kontrol Listesi",
+    "seoTitle": "Antalya Sağlık Turizmi Web Sitesi | Çok Dilli SEO & KVKK | Overseas",
+    "metaDesc": "Antalya sağlık turizmi web sitesi tasarımı: Çok dilli klinik siteleri, İngiltere/Almanya uyumu, mobil hız, KVKK veri güvenliği ve HealthTürkiye logosu.",
+    "primaryKeyword": "antalya sağlık turizmi web sitesi",
+    "secondaryKeywords": [
+      "sağlık turizmi web tasarım antalya",
+      "çok dilli klinik web sitesi",
+      "sağlık turizmi landing page antalya",
+      "antalya medikal web"
+    ],
+    "searchIntent": "Teknik ve Ticari Web Tasarım",
+    "funnel": "BOFU",
+    "readTime": "10 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Web Tasarım Ekibi",
+    "reviewer": "Teknik SEO Masası",
+    "quickAnswer": "Antalya sağlık turizmi web sitesi; yurt dışındaki hastaların kliniğe güven duymasını, tedavi aşamalarını ana dilinde incelemesini ve kolayca randevu talep etmesini sağlayan yüksek performanslı dijital varlıktır. Başarılı bir sitede 2 saniyenin altında açılış hızı, mobil öncelikli tasarım, HealthTürkiye yetki tescili ve KVKK uyumlu şifreli formlar bulunmalıdır.",
+    "sections": [
+      {
+        "heading": "Klinik Web Sitesinin Amacı ve Kapsamı",
+        "paragraphs": [
+          "Antalya'daki bir diş veya estetik kliniğinin web sitesi sıradan bir tanıtım broşürü değildir; 24 saat çalışan uluslararası hasta kabul merkezidir.",
+          "İngiltere'den veya Almanya'dan siteye giren hasta; hekimin cerrahi tecrübesini, kullanılan implant veya malzeme markalarını, kliniğin sterilizasyon belgelerini ve tedavi adımlarını şeffafça görmek ister."
+        ]
+      },
+      {
+        "heading": "Yabancı Dil ve Yetki Bilgileri İçin Mevzuat Kontrolü",
+        "paragraphs": [
+          "12 Kasım 2025 tarihli yönetmelik uyarınca sağlık turizmi web sitelerinde:",
+          "1. Sağlık Bakanlığı sağlık turizmi yetki belgesi numarası ve tescilli kuruluş unvanı açıkça yazılmalıdır.",
+          "2. HealthTürkiye logosu ve kurumsal web portalına yönlendiren bağlantı bulunmalıdır.",
+          "3. Tıbbi tedavilerde yanıltıcı indirim veya garantili sonuç iddialarına yer verilmemelidir."
+        ]
+      },
+      {
+        "heading": "Uluslararası SEO: URL Mimarisi, Hreflang ve Sayfa Hızı",
+        "paragraphs": [
+          "Farklı dillerdeki sayfalar alt klasörlerde (/en/, /de/) yapılandırılmalı ve karşılıklı self-referencing hreflang etiketleriyle arama motorlarına bildirilmelidir.",
+          "Google Core Web Vitals standartlarında LCP (En Büyük İçerikli Boyama) süresi 2.5 saniyenin altında tutulmalı; mobil cihazlarda takılma veya kayma yaşanmamalıdır."
+        ]
+      },
+      {
+        "heading": "WhatsApp ve CRM Entegrasyonunda Sağlık Verisi Riski",
+        "paragraphs": [
+          "Web sitesindeki başvuru formlarında hastadan açık rızası olmadan özel nitelikli kişisel sağlık verisi (tıbbi rapor, hastalık geçmişi) toplanmamalıdır.",
+          "WhatsApp entegrasyonu doğrudan nöbetçi tercümanın ekranına düşmeli ve KVKK/GDPR aydınlatma metni ilk karşılama mesajında hastaya sunulmalıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Antalya sağlık turizmi web sitesinde hangi diller zorunludur?",
+        "a": "Mevzuat açısından belirli bir dil zorunlu tutulmamakla birlikte; Antalya pazarı için İngilizce, Almanca ve Rusça dilleri ticari açıdan vazgeçilmezdir."
+      },
+      {
+        "q": "Hasta verileri doğrudan forma yazdırılmalı mıdır?",
+        "a": "Hayır. Veri minimizasyonu ilkesi gereği ilk formda yalnızca ad, ülke, telefon ve ilgilendiği branş toplanmalı; tıbbi detaylar güvenli kanaldan alınmalıdır."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Google Search Central — Uluslararası SEO ve Hreflang",
+        "url": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+      },
+      {
+        "title": "Kişisel Verileri Koruma Kurumu (KVKK)",
+        "url": "https://www.kvkk.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Antalya Sağlık Turizmi Reklam Ajansı",
+        "url": "/antalya-saglik-turizmi-reklam-ajansi"
+      },
+      {
+        "title": "Uluslararası SEO Hizmeti",
+        "url": "/hizmetler/uluslararasi-seo-hizmeti"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO)",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Ekosistemi",
+        "url": "/antalya-saglik-turizmi"
+      },
+      {
+        "title": "Sağlık Turizminde Chatbot ve CRM",
+        "url": "/blog/saglik-turizminde-chatbot"
+      }
+    ]
+  },
+  {
+    "id": "B17-TRACENTA",
+    "slug": "turkiyede-saglik-turizmi-yapan-acentalar",
+    "url": "/blog/turkiyede-saglik-turizmi-yapan-acentalar",
+    "category": "Acenta & Doğrulama",
+    "title": "Türkiye'de Sağlık Turizmi Yapan Acentalar: Yetki Listesi Nasıl Doğrulanır?",
+    "h1": "Türkiye'de Sağlık Turizmi Yapan Acentalar: Yetki Listesi Nasıl Doğrulanır?",
+    "seoTitle": "Türkiye'de Sağlık Turizmi Yapan Acentalar | Resmî Liste Doğrulama | Overseas",
+    "metaDesc": "Türkiye'de sağlık turizmi yapan acentalar listesi: USHAŞ ve HealthTürkiye yetkili aracı kuruluş sicili nasıl sorgulanır? Yetki belgesi kontrol adımları.",
+    "primaryKeyword": "türkiye'de sağlık turizmi yapan acentalar",
+    "secondaryKeywords": [
+      "sağlık turizmi acentaları listesi",
+      "türkiye yetkili aracı kuruluşlar",
+      "ushas yetkili acentalar"
+    ],
+    "searchIntent": "Güven ve Doğrulama Sorgusu",
+    "funnel": "MOFU",
+    "readTime": "9 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Araştırma Masası",
+    "reviewer": "Acente Denetim Masası",
+    "quickAnswer": "Türkiye'de sağlık turizmi yapan acentalar; T.C. Sağlık Bakanlığı ve USHAŞ tarafından tescillenmiş yetkili aracı kuruluşlardır. Resmî ve güncel yetkili acenta listesi münhasıran devletin resmî portalı olan HealthTürkiye (healthturkiye.gov.tr) üzerinden sorgulanabilir. İnternetteki uydurma 'en iyi 10 acente' blog listelerine itibar edilmemelidir.",
+    "sections": [
+      {
+        "heading": "Türkiye Genelindeki Aracı Kuruluşları Nereden Bulabilirsiniz?",
+        "paragraphs": [
+          "Türkiye'de sağlık turizmi yetkisine sahip yüzlerce aracı kuruluş bulunmaktadır. Bu kuruluşlar İstanbul, Antalya, İzmir, Ankara ve Muğla gibi turizm merkezlerinde konuşlanmıştır.",
+          "Yabancı hastalar veya klinik yöneticileri yetkili acenta listesini ararken ticari SEO amacıyla açılmış sahte sıralama sitelerine değil; Sağlık Bakanlığı’nın resmî kayıtlarına başvurmalıdır."
+        ]
+      },
+      {
+        "heading": "Yetki Numarası ve Tüzel Kişilik Eşleşmesi Nasıl Kontrol Edilir?",
+        "paragraphs": [
+          "1. HealthTürkiye portalında 'Yetkili Aracı Kuruluşlar' sekmesi açılır.",
+          "2. Firmanın vergi levhasındaki resmî ticaret unvanı aratılır.",
+          "3. Firmanın A Grubu Seyahat Acentesi unvanı ile USHAŞ yetki belgesi sicil numarası eşleştirilir.",
+          "4. Tescilli olmayan veya belgesi askıya alınmış kurumlarla kesinlikle sözleşme imzalanmamalıdır."
+        ]
+      },
+      {
+        "heading": "Overseas Marketing Acente Listesinde Neden Yer Almaz?",
+        "paragraphs": [
+          "Overseas Marketing bir sağlık turizmi aracı kuruluşu veya seyahat acentası DEĞİLDİR. Overseas Marketing; sağlık tesislerine ve yetkili aracı kuruluşlara uluslararası hasta kazanımı, performans reklamcılığı ve CRM yazılımı danışmanlığı veren bir teknoloji ajansıdır."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İnternetteki 'En İyi Sağlık Turizmi Acentaları' listeleri resmî midir?",
+        "a": "Hayır. Bu listeler genellikle ajansların veya web sitelerinin ticari reklam amaçlı hazırladığı içeriklerdir; resmî geçerliliği yoktur. Resmî tek kaynak HealthTürkiye portalıdır."
+      },
+      {
+        "q": "Belgesiz acentaya hasta yönlendiren hekime ceza uygulanır mı?",
+        "a": "Evet. 2025 yönetmeliği hem yetkisiz aracıya hem de onunla çalışan sağlık tesisine ağır yaptırımlar öngörmüştür."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "HealthTürkiye Yetkili Aracı Kuruluşlar Sorgulama",
+        "url": "https://healthturkiye.gov.tr/certificated-health-service-providers"
+      },
+      {
+        "title": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
+        "url": "https://www.ushas.gov.tr/"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Antalya Sağlık Turizmi Acentaları",
+        "url": "/antalya-saglik-turizmi/acentalari"
+      },
+      {
+        "title": "Aracı Kuruluş Yetki Belgesi Şartları",
+        "url": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi"
+      },
+      {
+        "title": "Sağlık Turizmi Acentası Nasıl Kurulur?",
+        "url": "/saglik-turizmi-acentesi-acmak"
+      },
+      {
+        "title": "Türkiye'de Sağlık Turizmi Sektör Rehberi",
+        "url": "/blog/turkiyede-saglik-turizmi"
+      },
+      {
+        "title": "Yetkili Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      }
+    ]
+  },
+  {
+    "id": "B20-AI",
+    "slug": "saglik-turizminde-chatbot",
+    "url": "/blog/saglik-turizminde-chatbot",
+    "category": "Teknoloji & Yapay Zekâ",
+    "title": "Sağlık Turizminde Chatbot ve AI Call Agent: Randevu, Dil ve KVKK",
+    "h1": "Sağlık Turizminde Chatbot ve AI Call Agent: Randevu, Dil ve KVKK",
+    "seoTitle": "Sağlık Turizminde Chatbot & AI Call Agent | KVKK & CRM | Overseas",
+    "metaDesc": "Sağlık turizminde chatbot ve AI Call Agent kullanımı: 7/24 çok dilli hasta karşılama, WhatsApp CRM entegrasyonu, tıbbi teşhis sınırı ve KVKK veri güvenliği.",
+    "primaryKeyword": "sağlık turizminde chatbot",
+    "secondaryKeywords": [
+      "sağlık turizmi yapay zeka",
+      "sağlık turizmi whatsapp chatbot",
+      "ai call agent sağlık",
+      "sağlık turizmi crm otomasyon"
+    ],
+    "searchIntent": "B2B Teknoloji ve Otomasyon",
+    "funnel": "MOFU",
+    "readTime": "10 dk okuma",
+    "publishedDate": "19 Ekim 2026",
+    "author": "Overseas Marketing Yapay Zekâ Ekibi",
+    "reviewer": "Yapay Zekâ ve Veri Güvenliği Masası",
+    "quickAnswer": "Sağlık turizminde chatbot ve AI Call Agent; yurt dışından gelen yabancı hastaları 7/24 kendi dilinde karşılayan, sık sorulan soruları yanıtlayan, ön bilgi toplayan ve randevu talebini CRM'e işleyen akıllı otomasyon sistemleridir. Tıbbi teşhis koyamaz veya reçete yazamazlar; görevleri iletişim hızını garanti altına almak ve nitelikli lead'i insan koordinatöre devretmektir.",
+    "sections": [
+      {
+        "heading": "Chatbot Ne Yapar, Ne Yapmaz? Tıbbi Teşhis Sınırı",
+        "paragraphs": [
+          "Yapay zekâ tabanlı sesli ve yazılı asistanlar sağlık turizmi operasyonlarında devrim yaratmaktadır. Ancak yasal sınır kesin ve nettir: AI sistemleri hekim yerine geçemez, teşhis koyamaz, ameliyat garantisi veremez veya ilaç öneremez.",
+          "Chatbot'un rolü; hastanın dilini tespit etmek, ulaşım ve konaklama süreçlerini açıklamak, hekimin uzmanlık alanlarını anlatmak ve hastanın tıbbi fotoğraflarını hekim değerlendirmesi için güvenli CRM'e aktarmaktır."
+        ]
+      },
+      {
+        "heading": "WhatsApp, Form, Çağrı Merkezi ve CRM Entegrasyon Mimarisi",
+        "paragraphs": [
+          "Uluslararası hasta gece 03:00'te WhatsApp'tan mesaj attığında AI Call Agent devreye girer. Hastayı ana dilinde (İngilizce, Almanca, Fransızca, Arapça) karşılar, ilgilendiği tedaviyi sorar ve uygun ön değerlendirme adımlarını başlatır.",
+          "Görüşme anında CRM'e kaydedilir, hasta kartı oluşturulur ve sabah mesaiye başlayan hasta koordinatörüne özet bir brif olarak iletilir."
+        ]
+      },
+      {
+        "heading": "KVKK ve GDPR: Özel Nitelikli Kişisel Sağlık Verisi Riski",
+        "paragraphs": [
+          "Kişisel Verilerin Korunması Kanunu (KVKK md. 6) uyarınca sağlık verileri özel nitelikli kişisel veridir. Açık rıza olmaksızın işlenemez ve üçüncü taraf kontrolsüz LLM sağlayıcılarına aktarılamaz.",
+          "Overseas Marketing'in kurduğu AI ve CRM mimarilerinde veriler uçtan uca şifrelenir, hasta açık rıza onayları dijital olarak loglanır ve veri güvenliği standartları eksiksiz uygulanır."
+        ]
+      },
+      {
+        "heading": "İnsan Temsilciye Devir Kuralları ve Yanıt Hızı Metrikleri",
+        "paragraphs": [
+          "AI asla süreci tek başına bitirmemelidir. Hasta karmaşık bir tıbbi soru sorduğunda, ameliyat kaygısı belirttiğinde veya özel fiyat pazarlığına girdiğinde sistem 'insan devri' (human handoff) protokolünü tetikler ve canlı koordinatörü hatta bağlar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "AI chatbot hasta için teşhis koyabilir mi?",
+        "a": "Kesinlikle hayır. Tıbbi teşhis ve tedavi önerisi yalnızca yetkili hekimler tarafından verilebilir. Chatbot yalnızca idari ve operasyonel bilgi sağlar."
+      },
+      {
+        "q": "Sağlık verileri genel yapay zekâ modellerine aktarılır mı?",
+        "a": "Hayır. KVKK ve GDPR uyumlu kurumsal mimarilerde kapalı devre ve şifreli veri tabanları kullanılır; hasta verileri yapay zekânın genel eğitim havuzuna gönderilmez."
+      }
+    ],
+    "officialSources": [
+      {
+        "title": "Kişisel Verileri Koruma Kurumu (KVKK) — Sağlık Verileri Rehberi",
+        "url": "https://www.kvkk.gov.tr/"
+      },
+      {
+        "title": "Google Search Central — AI Optimization Guide",
+        "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Yetkili Aracı Kuruluşlar İçin Büyüme Ajansı",
+        "url": "/saglik-turizmi-araci-kurulus-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizmi Performans Pazarlama",
+        "url": "/blog/saglik-turizmi-performans-pazarlama"
+      },
+      {
+        "title": "Sağlık Turizmi Pazarlaması 2026",
+        "url": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir"
+      },
+      {
+        "title": "Generative Engine Optimization (GEO)",
+        "url": "/hizmetler/geo-generative-engine-optimization"
+      },
+      {
+        "title": "Antalya Sağlık Turizmi Web Sitesi",
+        "url": "/blog/antalya-saglik-turizmi-web-sitesi"
       }
     ]
   }

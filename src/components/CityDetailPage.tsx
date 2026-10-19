@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowLeft, Sparkles, Phone, Send, CheckCircle2, MapPin, ArrowRight, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { CityItem, MASTER_CITIES } from '../data/masterPlanData';
@@ -244,6 +245,91 @@ export const CityDetailPage: React.FC<CityDetailPageProps> = ({
                   <p className="text-sm text-slate-700 leading-relaxed pt-1">{adv}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ANTALYA DEDICATED CLINIC GROWTH ARCHITECTURE */}
+      {slug === 'antalya-saglik-turizmi-reklam-ajansi' && (
+        <section className="py-16 bg-white border-t border-slate-200 text-left">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-[#446CB5]/10 text-[#446CB5] mb-3">
+                <Sparkles className="w-3.5 h-3.5" /> {isEn ? 'Antalya Market Strategy' : 'Antalya Sağlık Turizmi Ajansı Özel Stratejisi'}
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1528] mb-4">
+                {isEn ? 'Antalya Dental & Aesthetics Patient Acquisition Architecture' : 'Antalya Diş ve Estetik Klinikleri İçin Uluslararası Büyüme Modeli'}
+              </h2>
+              <p className="text-slate-600 leading-relaxed max-w-4xl text-sm sm:text-base">
+                {isEn
+                  ? 'Overseas Marketing provides performance advertising, international SEO, GEO, and WhatsApp CRM systems for authorized clinics in Antalya. We are a marketing and technology agency, not a medical provider or travel agency.'
+                  : 'Overseas Marketing; Antalya’daki yetkili diş klinikleri, estetik merkezleri ve hekimler için çok dilli Google Ads, Meta video kampanyaları, uluslararası SEO, GEO (AI arama motoru görünürlüğü) ve WhatsApp CRM sistemleri kurar. Kuruluşumuz bir sağlık tesisi veya seyahat acentesi değildir; büyüme ve pazarlama teknolojisi danışmanlığı sunar.'}
+              </p>
+            </div>
+
+            {/* SCENARIOS: DENTAL & AESTHETICS */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-8 rounded-2xl bg-[#F8FAFC] border border-slate-200">
+                <h3 className="text-xl font-bold text-[#0B1528] mb-3">
+                  {isEn ? 'Dental Tourism Scenario: UK & European Patients' : '1. Dental Turizm Senaryosu: İngiltere ve Avrupa Hastası'}
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Antalya, İngiltere pazarından implant, All-on-4, All-on-6 ve zirkonyum kaplama arayan hastalar için bir numaralı destinasyondur. Direkt uçuş hatlarının sunduğu avantajla, tatil ve tedaviyi birleştiren yüksek niyetli Google Arama Ağı kampanyaları kurguluyoruz.
+                </p>
+                <ul className="text-xs text-slate-700 space-y-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> İngiltere NHS bekleme sürelerine alternatif şeffaf tedavi adımları</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> Kullanılan implant markalarının (Straumann, Nobel vb.) açık sunumu</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> Röntgen ve tedavi planının 5 dakikada incelendiği WhatsApp CRM</li>
+                </ul>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-[#F8FAFC] border border-slate-200">
+                <h3 className="text-xl font-bold text-[#0B1528] mb-3">
+                  {isEn ? 'Aesthetics & Hair Transplant Scenario: DACH & Gulf' : '2. Estetik Cerrahi ve Saç Ekimi: DACH ve Körfez Pazarı'}
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Rinoplasti, liposuction, meme estetiği ve Safir FUE / DHI saç ekimi operasyonlarında hekimin E-E-A-T cerrahi otoritesi ve vaka güveni öne çıkarılır. 12 Kasım 2025 tanıtım mevzuatına uygun olarak fiyat manipülasyonundan uzak, kanıta dayalı bilgilendirme yapılır.
+                </p>
+                <ul className="text-xs text-slate-700 space-y-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> Tescilli uzman hekim kimliği ve cerrahi geçmişin ön plana çıkarılması</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> İyileşme süreci ve otel istirahat konseptinin detaylı anlatımı</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#446CB5]" /> HealthTürkiye portalı yetki tescili ile güven inşası</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* AGENCY VS INTERMEDIARY DISTINCTION & REGULATORY NOTICE */}
+            <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-sm leading-relaxed">
+              <h4 className="font-bold text-base mb-2">Antalya'da Ajans ve Aracı Kuruluş (Acente) Ayrımı:</h4>
+              <p>
+                Overseas Marketing, sağlık turizmi yapan yetkili kliniklere ve aracı kuruluşlara dijital pazarlama danışmanlığı verir. Şirketimiz sağlık turizmi yetki belgesi vermez veya satmaz; seyahat acentesi gibi komisyonla hasta transferi yapmaz. Sağlık tesislerinin HealthTürkiye tescilini ve yetki belgelerini doğrulayarak yalnızca mevzuata uygun uluslararası tanıtım yürütürüz.
+              </p>
+            </div>
+
+            {/* INTERNAL LINKS TO RELEVANT GUIDES */}
+            <div className="pt-6 border-t border-slate-200">
+              <h4 className="font-bold text-base text-[#0B1528] mb-4">Antalya ve Büyüme Ekosistemi İlgili Rehberler:</h4>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs font-semibold">
+                <Link to="/antalya-saglik-turizmi" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Antalya Sağlık Turizmi Ekosistemi →
+                </Link>
+                <Link to="/antalya-saglik-turizmi/acentalari" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Antalya Yetkili Acentalar Listesi →
+                </Link>
+                <Link to="/blog/antalya-saglik-turizmi-danismanligi" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Antalya Sağlık Turizmi Danışmanlığı →
+                </Link>
+                <Link to="/blog/antalya-saglik-turizmi-web-sitesi" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Antalya Klinik Web Tasarımı & SEO →
+                </Link>
+                <Link to="/hizmetler/performans-pazarlama" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Sağlık Turizmi Performans Pazarlama →
+                </Link>
+                <Link to="/hizmetler/geo-generative-engine-optimization" className="p-3 rounded-lg border border-slate-200 hover:border-[#446CB5] hover:text-[#446CB5] transition-colors block bg-[#F8FAFC]">
+                  Generative Engine Optimization (GEO) →
+                </Link>
+              </div>
             </div>
           </div>
         </section>
