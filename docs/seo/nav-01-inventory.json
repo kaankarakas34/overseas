@@ -1,14 +1,14 @@
 {
   "summary": {
-    "urls": 217,
-    "sitemapUrls": 124,
-    "uniqueSitemapUrls": 123,
+    "urls": 233,
+    "sitemapUrls": 217,
+    "uniqueSitemapUrls": 216,
     "services": 14,
     "serviceAliases": 17,
     "branches": 15,
     "markets": 4,
     "cities": 4,
-    "articles": 138,
+    "articles": 151,
     "unclassified": 0,
     "missingGsc": true
   },
@@ -167,18 +167,19 @@
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Yerel bilgi",
+      "intent": "Bölgesel Ekosistem ve B2B",
       "keywords": [
         "antalya sağlık turizmi",
         "sağlık turizmi antalya",
-        "antalya sağlık turizmi acentaları",
-        "antalya sağlık turizmi fuarı"
+        "antalya dental turizm",
+        "antalya sağlık klinikleri",
+        "antalya sağlık turizmi pazarı"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Antalya Sağlık Turizmi Rehberi",
+      "title": "Antalya Sağlık Turizmi: Branşlar, Hedef Pazarlar ve Dijital Büyüme",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/antalya-saglik-turizmi",
       "inSitemap": true
@@ -267,18 +268,18 @@
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Yerel ticari",
+      "intent": "Liste ve Doğrulama Niyeti",
       "keywords": [
         "antalya sağlık turizmi acentaları",
-        "antalya sağlık turizmi",
-        "sağlık turizmi aracı kurumlar",
-        "sağlık turizmi yetki belgesi"
+        "sağlık turizmi acentaları antalya",
+        "antalya yetkili sağlık turizmi aracı kuruluşları",
+        "antalya tursab acentalari"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Antalya Sağlık Turizmi Acentaları Nasıl Çalışır?",
+      "title": "Antalya Sağlık Turizmi Acentaları: Yetki Kontrolü ve Doğru Seçim",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/antalya-saglik-turizmi/acentalari",
       "inSitemap": true
@@ -287,7 +288,8 @@
       "path": "/aydinlatma-metni",
       "url": "https://www.overseas.marketing/aydinlatma-metni",
       "sources": [
-        "App.tsx explicit route"
+        "App.tsx explicit route",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -300,13 +302,14 @@
       "placement": "İlgili kurumsal merkez / footer",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/b2b-linkedin-outreach",
       "url": "https://www.overseas.marketing/b2b-linkedin-outreach",
       "sources": [
-        "App.tsx dedicated routes"
+        "App.tsx dedicated routes",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -320,7 +323,7 @@
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
       "title": "B2B LinkedIn Outreach",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/basari-hikayeleri",
@@ -386,7 +389,8 @@
       "path": "/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir",
       "url": "https://www.overseas.marketing/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -406,13 +410,14 @@
       "title": "AI Sistemleri Klinik Bilgilerini Nereden Alır? Yapay Zekâ Veri Kaynakları",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/ai-sistemleri-klinik-bilgilerini-nereden-alir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/almanya-saglik-turizmi-google-ads-rehberi",
       "url": "https://www.overseas.marketing/blog/almanya-saglik-turizmi-google-ads-rehberi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -432,13 +437,14 @@
       "title": "Almanya Sağlık Turizmi Google Ads Rehberi: DACH PPC Yönetimi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/almanya-saglik-turizmi-google-ads-rehberi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/almanya-saglik-turizmi-seo-stratejisi",
       "url": "https://www.overseas.marketing/blog/almanya-saglik-turizmi-seo-stratejisi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -458,13 +464,14 @@
       "title": "Almanya Sağlık Turizmi SEO Stratejisi: Google.de Sıralama Rehberi",
       "serviceTarget": "/hizmetler/uluslararasi-seo-hizmeti",
       "canonicalTarget": "/blog/almanya-saglik-turizmi-seo-stratejisi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/almanyada-turkce-ve-almanca-saglik-reklami",
       "url": "https://www.overseas.marketing/blog/almanyada-turkce-ve-almanca-saglik-reklami",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -484,13 +491,14 @@
       "title": "Almanya’da Türkçe ve Almanca Sağlık Reklamı: İkili Kampanya Stratejisi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/almanyada-turkce-ve-almanca-saglik-reklami",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir",
       "url": "https://www.overseas.marketing/blog/almanyadan-turkiyeye-hasta-nasil-getirilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -511,13 +519,67 @@
       "title": "Almanya’dan Türkiye’ye Hasta Nasıl Getirilir? DACH Sağlık Turizmi Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/almanyadan-turkiyeye-hasta-nasil-getirilir",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/antalya-saglik-turizmi-danismanligi",
+      "url": "https://www.overseas.marketing/blog/antalya-saglik-turizmi-danismanligi",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Danışmanlık Arayışı (Ticari & Bilgi)",
+      "keywords": [
+        "antalya sağlık turizmi danışmanlığı",
+        "sağlık turizmi danışmanlığı antalya",
+        "antalya klinik danışmanlığı",
+        "sağlık turizmi pazarlama danışmanı"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Antalya Sağlık Turizmi Danışmanlığı: Mevzuat, Pazarlama ve Operasyon Farkları",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/antalya-saglik-turizmi-danismanligi",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/antalya-saglik-turizmi-web-sitesi",
+      "url": "https://www.overseas.marketing/blog/antalya-saglik-turizmi-web-sitesi",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Teknik ve Ticari Web Tasarım",
+      "keywords": [
+        "antalya sağlık turizmi web sitesi",
+        "sağlık turizmi web tasarım antalya",
+        "çok dilli klinik web sitesi",
+        "sağlık turizmi landing page antalya",
+        "antalya medikal web"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Antalya Sağlık Turizmi Web Sitesi: Çok Dilli SEO, Güven ve Dönüşüm Kontrol Listesi",
+      "serviceTarget": "/hizmetler/uluslararasi-seo-hizmeti",
+      "canonicalTarget": "/blog/antalya-saglik-turizmi-web-sitesi",
+      "inSitemap": true
     },
     {
       "path": "/blog/chatgpt-klinik-onerilerini-nasil-olusturur",
       "url": "https://www.overseas.marketing/blog/chatgpt-klinik-onerilerini-nasil-olusturur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -537,13 +599,14 @@
       "title": "ChatGPT Klinik Önerilerini Nasıl Oluşturur? AI Yanıt Algoritması",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/chatgpt-klinik-onerilerini-nasil-olusturur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/chatgpt-seo-nedir",
       "url": "https://www.overseas.marketing/blog/chatgpt-seo-nedir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -563,13 +626,14 @@
       "title": "ChatGPT SEO Nedir? Sağlık Markaları İçin Yeni Nesil Optimizasyon",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/chatgpt-seo-nedir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/chatgptde-klinik-nasil-gorunur",
       "url": "https://www.overseas.marketing/blog/chatgptde-klinik-nasil-gorunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -590,13 +654,14 @@
       "title": "ChatGPT’de Klinik Nasıl Görünür? Sağlık Kuruluşları İçin AI Rehberi",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/chatgptde-klinik-nasil-gorunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-chatgptde-nasil-gorunur",
       "url": "https://www.overseas.marketing/blog/doktor-chatgptde-nasil-gorunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -616,13 +681,14 @@
       "title": "Doktor ChatGPT'de Nasıl Görünür? Reklam ve Organik Kaynak Farkı",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/doktor-chatgptde-nasil-gorunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-entity-seo-nedir",
       "url": "https://www.overseas.marketing/blog/doktor-entity-seo-nedir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -643,13 +709,14 @@
       "title": "Doktor Entity SEO Nedir? Hekimlerin Dijital Kimlik ve Bilgi Grafiği",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-entity-seo-nedir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-google-ads-verebilir-mi",
       "url": "https://www.overseas.marketing/blog/doktor-google-ads-verebilir-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -669,13 +736,14 @@
       "title": "Doktorlar Google Ads Reklamı Verebilir mi?",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/doktor-google-ads-verebilir-mi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-hasta-yorumu-paylasabilir-mi",
       "url": "https://www.overseas.marketing/blog/doktor-hasta-yorumu-paylasabilir-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -695,13 +763,14 @@
       "title": "Doktor Hasta Yorumlarını Paylaşabilir mi?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-hasta-yorumu-paylasabilir-mi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-instagram-reklami-verebilir-mi",
       "url": "https://www.overseas.marketing/blog/doktor-instagram-reklami-verebilir-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -721,13 +790,14 @@
       "title": "Doktorlar Instagram'da Reklam Verebilir mi?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-instagram-reklami-verebilir-mi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-kisisel-marka-reklam-yasagi",
       "url": "https://www.overseas.marketing/blog/doktor-kisisel-marka-reklam-yasagi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -747,13 +817,14 @@
       "title": "Reklam Yasağı İçinde Doktor Kişisel Markası Nasıl Kurulur?",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/doktor-kisisel-marka-reklam-yasagi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-oncesi-sonrasi-fotograf",
       "url": "https://www.overseas.marketing/blog/doktor-oncesi-sonrasi-fotograf",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -773,13 +844,14 @@
       "title": "Doktor Öncesi–Sonrası Fotoğraf Paylaşabilir mi?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-oncesi-sonrasi-fotograf",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-reklam-yasagi-2026",
       "url": "https://www.overseas.marketing/blog/doktor-reklam-yasagi-2026",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -799,13 +871,14 @@
       "title": "Doktor Reklam Yasağı 2026: Hekimler Neler Yapabilir?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-reklam-yasagi-2026",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-sosyal-medya-kurallari",
       "url": "https://www.overseas.marketing/blog/doktor-sosyal-medya-kurallari",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -825,13 +898,14 @@
       "title": "Doktorların Sosyal Medyada Paylaşabileceği ve Paylaşamayacağı İçerikler",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/doktor-sosyal-medya-kurallari",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/doktor-yurt-disina-reklam-verebilir-mi",
       "url": "https://www.overseas.marketing/blog/doktor-yurt-disina-reklam-verebilir-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -851,13 +925,14 @@
       "title": "Doktorlar Yurt Dışına Reklam Verebilir mi?",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/doktor-yurt-disina-reklam-verebilir-mi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/geminide-klinik-nasil-gorunur",
       "url": "https://www.overseas.marketing/blog/geminide-klinik-nasil-gorunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -877,13 +952,14 @@
       "title": "Gemini’de Klinik Nasıl Görünür? Google Ekosisteminde AI Otoritesi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/geminide-klinik-nasil-gorunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/geo-ile-seo-arasindaki-fark",
       "url": "https://www.overseas.marketing/blog/geo-ile-seo-arasindaki-fark",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -903,13 +979,14 @@
       "title": "GEO ile SEO Arasındaki Fark Nedir? 2026 Karşılaştırma Rehberi",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/geo-ile-seo-arasindaki-fark",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/google-ai-overviews-saglik-turizmini-nasil-degistiriyor",
       "url": "https://www.overseas.marketing/blog/google-ai-overviews-saglik-turizmini-nasil-degistiriyor",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -929,13 +1006,14 @@
       "title": "Google AI Overviews Sağlık Turizmini Nasıl Değiştiriyor? SGE Analizi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/google-ai-overviews-saglik-turizmini-nasil-degistiriyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/ingiltere-sac-ekimi-reklam-stratejisi",
       "url": "https://www.overseas.marketing/blog/ingiltere-sac-ekimi-reklam-stratejisi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -955,13 +1033,14 @@
       "title": "İngiltere Saç Ekimi Reklam Stratejisi: DHI & Sapphire FUE Pazarlaması",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/ingiltere-sac-ekimi-reklam-stratejisi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/ingiltere-saglik-turizmi-google-ads-rehberi",
       "url": "https://www.overseas.marketing/blog/ingiltere-saglik-turizmi-google-ads-rehberi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -981,13 +1060,14 @@
       "title": "İngiltere Sağlık Turizmi Google Ads Rehberi: UK Kampanya Kurulumu",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/ingiltere-saglik-turizmi-google-ads-rehberi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/ingilterede-dis-hastasina-nasil-ulasilir",
       "url": "https://www.overseas.marketing/blog/ingilterede-dis-hastasina-nasil-ulasilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1007,13 +1087,14 @@
       "title": "İngiltere’de Diş Hastasına Nasıl Ulaşılır? Dental Turizm Büyüme Modeli",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/ingilterede-dis-hastasina-nasil-ulasilir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir",
       "url": "https://www.overseas.marketing/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1034,13 +1115,14 @@
       "title": "İngiltere’den Türkiye’ye Hasta Nasıl Getirilir? UK Sağlık Turizmi Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/ingiltereden-turkiyeye-hasta-nasil-getirilir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/klinik-entity-seo-nedir",
       "url": "https://www.overseas.marketing/blog/klinik-entity-seo-nedir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1060,13 +1142,14 @@
       "title": "Klinik Entity SEO Nedir? Sağlık Kuruluşları İçin Semantik Otorite",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/klinik-entity-seo-nedir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/perplexityde-klinik-nasil-gorunur",
       "url": "https://www.overseas.marketing/blog/perplexityde-klinik-nasil-gorunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1086,13 +1169,14 @@
       "title": "Perplexity’de Klinik Nasıl Görünür? Akademik ve Medikal AI Arama",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/perplexityde-klinik-nasil-gorunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/reklam-vermeden-doktor-googleda-nasil-gorunur",
       "url": "https://www.overseas.marketing/blog/reklam-vermeden-doktor-googleda-nasil-gorunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1112,13 +1196,40 @@
       "title": "Reklam Vermeden Doktor Google'da Nasıl Görünür?",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/reklam-vermeden-doktor-googleda-nasil-gorunur",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026",
+      "url": "https://www.overseas.marketing/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Hukuki ve Kurumsal Uyum",
+      "keywords": [
+        "sağlık bakanlığı sağlık turizmi",
+        "sağlık turizmi yönetmeliği 2026",
+        "uluslararası sağlık turizmi mevzuatı",
+        "sağlık tanıtım yönetmeliği 2025"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Bakanlığı Sağlık Turizmi Mevzuatı 2026: Hangi Yönetmelikler Geçerli?",
+      "serviceTarget": "/hizmetler/performans-pazarlama",
+      "canonicalTarget": "/blog/saglik-bakanligi-saglik-turizmi-mevzuati-2026",
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-markalari-icin-brand-mention-stratejisi",
       "url": "https://www.overseas.marketing/blog/saglik-markalari-icin-brand-mention-stratejisi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1138,13 +1249,41 @@
       "title": "Sağlık Markaları İçin Brand Mention Stratejisi: Bağlantısız Otorite",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/saglik-markalari-icin-brand-mention-stratejisi",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi",
+      "url": "https://www.overseas.marketing/blog/saglik-turizmi-araci-kurulus-yetki-belgesi",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Hukuki / Kurumsal B2B",
+      "keywords": [
+        "sağlık turizmi aracı kuruluş yetki belgesi",
+        "sağlık turizmi acente yetki belgesi",
+        "aracı kurum yetki belgesi",
+        "USHAŞ yetki belgesi şartları",
+        "sağlık turizmi acentesi kurma"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Aracı Kuruluş Yetki Belgesi: Şartlar ve USHAŞ Başvurusu",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/saglik-turizmi-araci-kurulus-yetki-belgesi",
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-icin-google-ads-nasil-yapilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1165,13 +1304,14 @@
       "title": "Sağlık Turizmi İçin Google Ads Nasıl Yapılır? 2026 Kampanya Mimarisi",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/saglik-turizmi-icin-google-ads-nasil-yapilir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-icin-instagram-reklamlari-nasil-verilir",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-icin-instagram-reklamlari-nasil-verilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1192,13 +1332,14 @@
       "title": "Sağlık Turizmi İçin Instagram Reklamları Nasıl Verilir? Meta Ads Rehberi",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/saglik-turizmi-icin-instagram-reklamlari-nasil-verilir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-landing-page-nasil-olmali",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-landing-page-nasil-olmali",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1219,40 +1360,71 @@
       "title": "Sağlık Turizmi Landing Page Nasıl Olmalı? Yüksek Dönüşümlü Sayfa Mimarisi",
       "serviceTarget": "/hizmetler/web-sitesi-landing-page",
       "canonicalTarget": "/blog/saglik-turizmi-landing-page-nasil-olmali",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-pazarlamasi-nasil-yapilir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Bilgilendirici ve Stratejik (Informational + Commercial)",
+      "intent": "Ticari Strateji Rehberi (BOFU)",
       "keywords": [
         "sağlık turizmi pazarlaması",
-        "sağlık turizmi pazarlama stratejisi",
-        "sağlık turizmi dijital pazarlama ajansı",
-        "sağlık turizmi kpi tablosu",
+        "sağlık turizmi dijital pazarlama",
+        "yurt dışı hasta kazanımı pazarlama",
         "sağlık turizmi reklam yönetimi",
-        "sağlık turizmi funnel"
+        "medikal seo ve geo",
+        "sağlık turizmi crm stratejisi"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Sağlık Turizmi Pazarlaması Nasıl Yapılır? Uçtan Uca Büyüme Stratejisi",
-      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "title": "Sağlık Turizmi Pazarlaması 2026: SEO, GEO, Reklam ve CRM Stratejisi",
+      "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/saglik-turizmi-pazarlamasi-nasil-yapilir",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizmi-performans-pazarlama",
+      "url": "https://www.overseas.marketing/blog/saglik-turizmi-performans-pazarlama",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Ticari ve Ölçüm Odaklı (BOFU)",
+      "keywords": [
+        "sağlık turizmi performans pazarlama",
+        "sağlık turizmi reklam yönetimi",
+        "sağlık turizmi hasta kazanma maliyeti",
+        "klinik google ads",
+        "sağlık turizmi cpl hesaplama",
+        "sağlık turizmi cac formülü",
+        "crm attribution sağlık"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Performans Pazarlama: CPL, CAC ve Kampanya Ölçümü",
+      "serviceTarget": "/hizmetler/performans-pazarlama",
+      "canonicalTarget": "/blog/saglik-turizmi-performans-pazarlama",
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1273,13 +1445,14 @@
       "title": "Sağlık Turizmi Reklam Bütçesi Nasıl Belirlenir? 2026 Matematiksel Model",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/saglik-turizmi-reklam-butcesi-nasil-belirlenir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizmi-reklam-mevzuati-2026",
       "url": "https://www.overseas.marketing/blog/saglik-turizmi-reklam-mevzuati-2026",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1299,25 +1472,132 @@
       "title": "Sağlık Turizmi Reklam Mevzuatı 2026: Yurt Dışına Tanıtım Şartları",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/saglik-turizmi-reklam-mevzuati-2026",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizmi-sirketi-kurmak",
+      "url": "https://www.overseas.marketing/blog/saglik-turizmi-sirketi-kurmak",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Ticari Girişimcilik / Kurulum",
+      "keywords": [
+        "sağlık turizmi şirketi kurmak",
+        "sağlık turizmi şirketi nasıl kurulur",
+        "sağlık turizmi acentesi açmak",
+        "sağlık turizmi iş planı",
+        "sağlık turizmi kuruluşu"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Şirketi Kurmak: İş Modeli, Belge ve Pazarlama Yol Haritası",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/saglik-turizmi-sirketi-kurmak",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari",
+      "url": "https://www.overseas.marketing/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Resmî Doküman ve Form Araştırması",
+      "keywords": [
+        "sağlık turizmi yetki belgesi başvuru formu",
+        "uluslararası sağlık turizmi yetki belgesi başvuru formu",
+        "sağlık turizmi yetki belgesi başvuru formu ek-3",
+        "ek-1/a formu",
+        "ek-1/b formu"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Yetki Belgesi Başvuru Formu: EK-1/A, EK-1/B ve EK-3 Farkı",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/saglik-turizmi-yetki-belgesi-basvuru-formlari",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizmi-yetki-belgesi-ucreti",
+      "url": "https://www.overseas.marketing/blog/saglik-turizmi-yetki-belgesi-ucreti",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Maliyet ve Bütçe Araştırması",
+      "keywords": [
+        "sağlık turizmi yetki belgesi ücreti",
+        "sağlık turizmi belgesi maliyeti",
+        "sağlık turizmi yetki belgesi başvuru ücreti",
+        "ushas yetki belgesi harcı"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Yetki Belgesi Ücreti 2026: Maliyet Kalemleri ve Resmî Doğrulama",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/saglik-turizmi-yetki-belgesi-ucreti",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/saglik-turizminde-chatbot",
+      "url": "https://www.overseas.marketing/blog/saglik-turizminde-chatbot",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "B2B Teknoloji ve Otomasyon",
+      "keywords": [
+        "sağlık turizminde chatbot",
+        "sağlık turizmi yapay zeka",
+        "sağlık turizmi whatsapp chatbot",
+        "ai call agent sağlık",
+        "sağlık turizmi crm otomasyon"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizminde Chatbot ve AI Call Agent: Randevu, Dil ve KVKK",
+      "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
+      "canonicalTarget": "/blog/saglik-turizminde-chatbot",
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizminde-chatgpt-reklami-verilebilir-mi",
       "url": "https://www.overseas.marketing/blog/saglik-turizminde-chatgpt-reklami-verilebilir-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Ticari / Teknoloji Karar Aşaması",
+      "intent": "AI Politika ve Strateji Rehberi",
       "keywords": [
         "sağlık turizmi ChatGPT reklam",
-        "klinik ChatGPT reklam",
-        "hastane ChatGPT Ads",
-        "ChatGPT'de diş kliniği reklamı",
-        "ChatGPT saç ekimi reklam",
-        "sağlık turizmi GEO"
+        "chatgpt reklamı sağlık",
+        "chatgptde klinik görünürlüğü",
+        "sağlık turizmi geo",
+        "openai sağlık politikası"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
@@ -1326,13 +1606,14 @@
       "title": "Sağlık Turizminde ChatGPT Reklamı Verilebilir mi? 2026 Politika Rehberi",
       "serviceTarget": "/hizmetler/geo-generative-engine-optimization",
       "canonicalTarget": "/blog/saglik-turizminde-chatgpt-reklami-verilebilir-mi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizminde-dijital-pazarlama-rehberi",
       "url": "https://www.overseas.marketing/blog/saglik-turizminde-dijital-pazarlama-rehberi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1353,13 +1634,14 @@
       "title": "Sağlık Turizminde Dijital Pazarlama Rehberi: 2026 Entegre Büyüme Modeli",
       "serviceTarget": "/hizmetler/uluslararasi-seo-hizmeti",
       "canonicalTarget": "/blog/saglik-turizminde-dijital-pazarlama-rehberi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizminde-hasta-kazanma-maliyeti",
       "url": "https://www.overseas.marketing/blog/saglik-turizminde-hasta-kazanma-maliyeti",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1380,13 +1662,14 @@
       "title": "Sağlık Turizminde Hasta Kazanma Maliyeti Nasıl Hesaplanır? CPL ve CAC Rehberi",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/saglik-turizminde-hasta-kazanma-maliyeti",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizminde-hasta-nasil-bulunur",
       "url": "https://www.overseas.marketing/blog/saglik-turizminde-hasta-nasil-bulunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1407,13 +1690,14 @@
       "title": "Sağlık Turizminde Hasta Nasıl Bulunur? İşletme Modeli ve Edinme Kanalları",
       "serviceTarget": "/hizmetler/saglik-turizmi-crm-yazilimi",
       "canonicalTarget": "/blog/saglik-turizminde-hasta-nasil-bulunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/saglik-turizminde-lead-kalitesi",
       "url": "https://www.overseas.marketing/blog/saglik-turizminde-lead-kalitesi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1434,13 +1718,14 @@
       "title": "Sağlık Turizminde Lead Kalitesi Nasıl Artırılır? CRM ve İletişim Rehberi",
       "serviceTarget": "/hizmetler/saglik-turizmi-crm-yazilimi",
       "canonicalTarget": "/blog/saglik-turizminde-lead-kalitesi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi",
       "url": "https://www.overseas.marketing/blog/schema-markup-ai-gorunurlugunu-etkiler-mi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1460,13 +1745,118 @@
       "title": "Schema Markup AI Görünürlüğünü Etkiler mi? Yapılandırılmış Veri Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/blog/schema-markup-ai-gorunurlugunu-etkiler-mi",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/turkiyede-saglik-turizmi",
+      "url": "https://www.overseas.marketing/blog/turkiyede-saglik-turizmi",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Geniş Kapsamlı Sektör Analizi",
+      "keywords": [
+        "türkiye'de sağlık turizmi",
+        "türkiye de sağlık turizmi yapılan yerler",
+        "türkiyede sağlık turizmi",
+        "türkiye sağlık turizmi pazarı"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Türkiye'de Sağlık Turizmi 2026: Alanlar, Modeller ve Sektörün Yapısı",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/turkiyede-saglik-turizmi",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/turkiyede-saglik-turizmi-merkezleri",
+      "url": "https://www.overseas.marketing/blog/turkiyede-saglik-turizmi-merkezleri",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Destinasyon ve Lokasyon Sorgusu",
+      "keywords": [
+        "sağlık turizmi merkezleri",
+        "sağlık turizmi nerelerde yapılır",
+        "türkiye sağlık turizmi şehirleri",
+        "sağlık turizmi yapılan yerler"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Sağlık Turizmi Merkezleri ve Türkiye’de Yapıldığı Yerler: Destinasyon Rehberi",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/turkiyede-saglik-turizmi-merkezleri",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/turkiyede-saglik-turizmi-yapan-acentalar",
+      "url": "https://www.overseas.marketing/blog/turkiyede-saglik-turizmi-yapan-acentalar",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Güven ve Doğrulama Sorgusu",
+      "keywords": [
+        "türkiye'de sağlık turizmi yapan acentalar",
+        "sağlık turizmi acentaları listesi",
+        "türkiye yetkili aracı kuruluşlar",
+        "ushas yetkili acentalar"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "Türkiye'de Sağlık Turizmi Yapan Acentalar: Yetki Listesi Nasıl Doğrulanır?",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/turkiyede-saglik-turizmi-yapan-acentalar",
+      "inSitemap": true
+    },
+    {
+      "path": "/blog/tursab-saglik-turizmi-belgesi-farki",
+      "url": "https://www.overseas.marketing/blog/tursab-saglik-turizmi-belgesi-farki",
+      "sources": [
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Bilgilendirici rehber",
+      "intent": "Kavram Yanılgısı Giderme",
+      "keywords": [
+        "tursab sağlık turizmi belgesi",
+        "türsab sağlık turizmi belgesi",
+        "turizm yetki belgesi nasıl alınır",
+        "seyahat acentesi sağlık turizmi yetkisi"
+      ],
+      "parent": "/blog",
+      "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "title": "TÜRSAB Sağlık Turizmi Belgesi Var mı? Seyahat Acentesi ve USHAŞ Farkı",
+      "serviceTarget": "İçerik özelinde belirlenmeli",
+      "canonicalTarget": "/blog/tursab-saglik-turizmi-belgesi-farki",
+      "inSitemap": true
     },
     {
       "path": "/blog/yurt-disindan-hasta-nasil-bulunur",
       "url": "https://www.overseas.marketing/blog/yurt-disindan-hasta-nasil-bulunur",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1487,13 +1877,14 @@
       "title": "Yurt Dışından Hasta Nasıl Bulunur? Uluslararası Hasta Kazanım Rehberi",
       "serviceTarget": "/hizmetler/performans-pazarlama",
       "canonicalTarget": "/blog/yurt-disindan-hasta-nasil-bulunur",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/brezilya-saglik-turizmi",
       "url": "https://www.overseas.marketing/brezilya-saglik-turizmi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1512,7 +1903,7 @@
       "title": "Brezilya Sağlık Turizmi Pazarı",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/brezilya-saglik-turizmi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/bursa-saglik-turizmi",
@@ -1570,7 +1961,8 @@
       "path": "/cerez-politikasi",
       "url": "https://www.overseas.marketing/cerez-politikasi",
       "sources": [
-        "App.tsx explicit route"
+        "App.tsx explicit route",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -1583,7 +1975,7 @@
       "placement": "İlgili kurumsal merkez / footer",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/cumhuriyet-universitesi-saglik-turizmi-isletmeciligi",
@@ -2072,7 +2464,8 @@
       "path": "/gizlilik-politikasi",
       "url": "https://www.overseas.marketing/gizlilik-politikasi",
       "sources": [
-        "App.tsx explicit route"
+        "App.tsx explicit route",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2085,7 +2478,7 @@
       "placement": "İlgili kurumsal merkez / footer",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/goz-klinigi-reklam-ajansi",
@@ -2155,7 +2548,8 @@
       "path": "/hindistan-saglik-turizmi",
       "url": "https://www.overseas.marketing/hindistan-saglik-turizmi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2174,7 +2568,47 @@
       "title": "Hindistan Sağlık Turizmi ile Türkiye Karşılaştırması",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/hindistan-saglik-turizmi",
-      "inSitemap": false
+      "inSitemap": true
+    },
+    {
+      "path": "/hizmetler",
+      "url": "https://www.overseas.marketing/hizmetler",
+      "sources": [
+        "App.tsx explicit route",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Kurumsal / güven / dönüşüm",
+      "intent": "Kurumsal bilgi veya iletişim",
+      "keywords": [
+        "hizmetler"
+      ],
+      "parent": "/",
+      "placement": "İlgili kurumsal merkez / footer",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "inSitemap": true
+    },
+    {
+      "path": "/hizmetler/crm-otomasyon",
+      "url": "https://www.overseas.marketing/hizmetler/crm-otomasyon",
+      "sources": [
+        "App.tsx explicit route",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Kurumsal / güven / dönüşüm",
+      "intent": "Kurumsal bilgi veya iletişim",
+      "keywords": [
+        "hizmetler/crm otomasyon"
+      ],
+      "parent": "/",
+      "placement": "İlgili kurumsal merkez / footer",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
+      "inSitemap": true
     },
     {
       "path": "/hizmetler/geo-generative-engine-optimization",
@@ -2198,6 +2632,26 @@
       "title": "GEO (Generative Engine Optimization)",
       "canonicalTarget": "/hizmetler/geo-generative-engine-optimization",
       "evidence": "GEO ve uluslararası SEO ile markanızı ChatGPT, Gemini, Google AI Overviews ve hedef ülke Google aramalarında görünür hale getirin.",
+      "inSitemap": true
+    },
+    {
+      "path": "/hizmetler/icerik-marka-yonetimi",
+      "url": "https://www.overseas.marketing/hizmetler/icerik-marka-yonetimi",
+      "sources": [
+        "App.tsx explicit route",
+        "public/sitemap.xml"
+      ],
+      "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
+      "indexStatus": "GSC ile doğrulanmadı",
+      "role": "Kurumsal / güven / dönüşüm",
+      "intent": "Kurumsal bilgi veya iletişim",
+      "keywords": [
+        "hizmetler/icerik marka yonetimi"
+      ],
+      "parent": "/",
+      "placement": "İlgili kurumsal merkez / footer",
+      "currentHeader": "Kaynakta doğrudan doğrulanmadı",
+      "decision": "Koruma varsayımı; GSC bekleniyor",
       "inSitemap": true
     },
     {
@@ -2744,7 +3198,8 @@
       "path": "/kaynaklar",
       "url": "https://www.overseas.marketing/kaynaklar",
       "sources": [
-        "App.tsx dedicated routes"
+        "App.tsx dedicated routes",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2758,7 +3213,7 @@
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
       "title": "Kaynaklar",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/klinik-reklam-ajansi",
@@ -2812,7 +3267,8 @@
       "path": "/kuba-saglik-turizmi",
       "url": "https://www.overseas.marketing/kuba-saglik-turizmi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2831,13 +3287,14 @@
       "title": "Küba Sağlık Turizmi Sistemi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/kuba-saglik-turizmi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/kuba-saglik-turizmi/nasil-yapiliyor",
       "url": "https://www.overseas.marketing/kuba-saglik-turizmi/nasil-yapiliyor",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2856,13 +3313,14 @@
       "title": "Küba’da Sağlık Turizmi Nasıl Yapılıyor?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/kuba-saglik-turizmi/nasil-yapiliyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/kvkk",
       "url": "https://www.overseas.marketing/kvkk",
       "sources": [
-        "App.tsx explicit route"
+        "App.tsx explicit route",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2875,13 +3333,14 @@
       "placement": "İlgili kurumsal merkez / footer",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/longevita-saglik-turizmi",
       "url": "https://www.overseas.marketing/longevita-saglik-turizmi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -2900,7 +3359,7 @@
       "title": "Longevita Sağlık Turizmi Hakkında Bilinmesi Gerekenler",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/longevita-saglik-turizmi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/medikal-estetik-reklam-ajansi",
@@ -3056,7 +3515,8 @@
       "path": "/saglik-bakanligi-saglik-turizmi-yetki-belgesi",
       "url": "https://www.overseas.marketing/saglik-bakanligi-saglik-turizmi-yetki-belgesi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3075,13 +3535,14 @@
       "title": "Sağlık Bakanlığı Sağlık Turizmi Yetki Belgesi Başvurusu",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-bakanligi-saglik-turizmi-yetki-belgesi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-reklam-ajansi",
       "url": "https://www.overseas.marketing/saglik-reklam-ajansi",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3097,7 +3558,7 @@
       "title": "Sağlık Turizmi Reklam Ajansı",
       "canonicalTarget": "/hizmetler/saglik-turizmi-reklam-ajansi",
       "evidence": "Klinik, doktor ve hastanelerin yurtdışından nitelikli hasta kazanması için pazar araştırması, reklam yönetimi, landing page, CRM ve satış takibi.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-acentesi-acmak",
@@ -3109,18 +3570,18 @@
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Ticari araştırma",
+      "intent": "Adım Adım Kuruluş Rehberi",
       "keywords": [
-        "sağlık turizmi acentası açmak",
-        "sağlık turizmi acentaları",
-        "sağlık turizmi acenteleri",
-        "sağlık turizmi için gerekli belgeler"
+        "sağlık turizmi acentası nasıl kurulur",
+        "sağlık turizmi acentası kurmak için gerekli belgeler",
+        "sağlık turizmi acente açmak",
+        "aracı kuruluş kurma şartları"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Sağlık Turizmi Acentası Açmak İçin Gerekenler",
+      "title": "Sağlık Turizmi Acentası Nasıl Kurulur? Adım Adım Belgeler",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-acentesi-acmak",
       "inSitemap": true
@@ -3177,7 +3638,8 @@
       "path": "/saglik-turizmi-belgesi",
       "url": "https://www.overseas.marketing/saglik-turizmi-belgesi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3196,7 +3658,7 @@
       "title": "Sağlık Turizmi Belgesi ile Yetki Belgesi Arasındaki Fark",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-belgesi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-crm",
@@ -3226,7 +3688,8 @@
       "path": "/saglik-turizmi-daire-baskanligi",
       "url": "https://www.overseas.marketing/saglik-turizmi-daire-baskanligi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3245,13 +3708,14 @@
       "title": "Sağlık Turizmi Daire Başkanlığı Ne İş Yapar?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-daire-baskanligi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-dairesi-baskanligi",
       "url": "https://www.overseas.marketing/saglik-turizmi-dairesi-baskanligi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3270,7 +3734,7 @@
       "title": "Sağlık Turizmi Dairesi Başkanlığı ve Yetki Belgesi Süreci",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-dairesi-baskanligi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-danismanlik",
@@ -3450,7 +3914,8 @@
       "path": "/saglik-turizmi-icerik-pazarlamasi",
       "url": "https://www.overseas.marketing/saglik-turizmi-icerik-pazarlamasi",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3467,7 +3932,7 @@
       "title": "İçerik ve Prodüksiyon",
       "canonicalTarget": "/hizmetler/icerik-produksiyon",
       "evidence": "Klinik çekimleri, profesyonel hekim röportajları, süreç rehberleri ve çok dilli video içerik üretimi.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-is-ilanlari",
@@ -3745,7 +4210,8 @@
       "path": "/saglik-turizmi-performans-pazarlama",
       "url": "https://www.overseas.marketing/saglik-turizmi-performans-pazarlama",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3762,7 +4228,7 @@
       "title": "Sağlık Turizmi Reklam Yönetimi",
       "canonicalTarget": "/hizmetler/performans-pazarlama",
       "evidence": "Yetkili klinik ve hastaneler için Google Ads, Meta Ads, hedef ülke uyumu ve CRM entegrasyonlu reklam yönetimi.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-reklam",
@@ -3871,26 +4337,28 @@
       "path": "/saglik-turizmi-sertifikasi",
       "url": "https://www.overseas.marketing/saglik-turizmi-sertifikasi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "İşlem araştırması",
+      "intent": "Kavram Ayrımı / Bilgilendirici",
       "keywords": [
         "sağlık turizmi sertifikası nasıl alınır",
-        "sağlık turizmi akreditasyon",
-        "sağlık turizmi belgesi",
-        "sağlık turizmi yetki belgesi"
+        "sağlık turizmi sertifikası",
+        "sağlık turizmi yetki belgesi farkı",
+        "türkiye sağlık turizmi sertifikası",
+        "tüska akreditasyon"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Sağlık Turizmi Sertifikası Nasıl Alınır?",
+      "title": "Sağlık Turizmi Sertifikası ile Yetki Belgesi Aynı mı? Belgelerin Farkı",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-sertifikasi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-slayt",
@@ -3921,7 +4389,8 @@
       "path": "/saglik-turizmi-sosyal-medya-yonetimi",
       "url": "https://www.overseas.marketing/saglik-turizmi-sosyal-medya-yonetimi",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3937,13 +4406,14 @@
       "title": "Sosyal Medya Yönetimi",
       "canonicalTarget": "/hizmetler/sosyal-medya-yonetimi",
       "evidence": "Uluslararası hedef kitleye uygun stratejik içerik planı, hekim anlatımları ve mevzuata uygun yayıncılık.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-tesvik-basvurusu",
       "url": "https://www.overseas.marketing/saglik-turizmi-tesvik-basvurusu",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3962,13 +4432,14 @@
       "title": "Sağlık Turizmi Teşvik Başvurusu Nasıl Yapılır?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-tesvik-basvurusu",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-tesvik-danismanligi",
       "url": "https://www.overseas.marketing/saglik-turizmi-tesvik-danismanligi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -3987,7 +4458,7 @@
       "title": "Sağlık Turizmi Teşvik Danışmanlığı Nedir?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-tesvik-danismanligi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-tesvikleri",
@@ -4019,7 +4490,8 @@
       "path": "/saglik-turizmi-tesvikleri/rehber",
       "url": "https://www.overseas.marketing/saglik-turizmi-tesvikleri/rehber",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4038,7 +4510,7 @@
       "title": "Sağlık Turizmi Teşvikleri Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-tesvikleri/rehber",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-tezleri",
@@ -4095,7 +4567,8 @@
       "path": "/saglik-turizmi-web-tasarim",
       "url": "https://www.overseas.marketing/saglik-turizmi-web-tasarim",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4112,7 +4585,7 @@
       "title": "Web Sitesi ve Landing Page Tasarımı",
       "canonicalTarget": "/hizmetler/web-sitesi-landing-page",
       "evidence": "Sağlık turizmi ve global pazarlar için yüksek dönüşümlü, hızlı, SEO & GEO uyumlu, CRM entegreli web sitesi ve landing page tasarımı.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-yetki-belgesi",
@@ -4124,18 +4597,22 @@
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "Bilgilendirici",
+      "intent": "Hukuki / Kurumsal Bilgilendirici (YMYL)",
       "keywords": [
         "sağlık turizmi yetki belgesi",
-        "sağlık turizmi belgesi",
-        "sağlık bakanlığı sağlık turizmi yetki belgesi",
-        "sağlık turizmi yetki belgesi şartları"
+        "sağlık turizm belgesi nasıl alınır",
+        "sağlık turizmi yetki belgesi şartları",
+        "uluslararası sağlık turizmi yetki belgesi",
+        "sağlık tesisi yetki belgesi",
+        "aracı kuruluş yetki belgesi",
+        "EKİP başvurusu",
+        "USHAŞ yetki belgesi"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Sağlık Turizmi Yetki Belgesi Nedir?",
+      "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır? 2026 Başvuru Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-yetki-belgesi",
       "inSitemap": true
@@ -4144,7 +4621,8 @@
       "path": "/saglik-turizmi-yetki-belgesi/nasil-alinir",
       "url": "https://www.overseas.marketing/saglik-turizmi-yetki-belgesi/nasil-alinir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4163,13 +4641,14 @@
       "title": "Sağlık Turizmi Yetki Belgesi Nasıl Alınır?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-yetki-belgesi/nasil-alinir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-yetki-belgesi/sartlari",
       "url": "https://www.overseas.marketing/saglik-turizmi-yetki-belgesi/sartlari",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4188,7 +4667,7 @@
       "title": "Sağlık Turizmi Yetki Belgesi Şartları",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi-yetki-belgesi/sartlari",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi-yonetmeligi",
@@ -4299,7 +4778,8 @@
       "path": "/saglik-turizmi/akreditasyon",
       "url": "https://www.overseas.marketing/saglik-turizmi/akreditasyon",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4318,7 +4798,7 @@
       "title": "Sağlık Turizmi Akreditasyon Süreci ve Sertifikasyon Kriterleri",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/akreditasyon",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi/araci-kurumlar",
@@ -4480,7 +4960,8 @@
       "path": "/saglik-turizmi/devlet-destekleri",
       "url": "https://www.overseas.marketing/saglik-turizmi/devlet-destekleri",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4499,13 +4980,14 @@
       "title": "Sağlık Turizmi Devlet Destekleri Nelerdir?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/devlet-destekleri",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi/devlet-tesvikleri",
       "url": "https://www.overseas.marketing/saglik-turizmi/devlet-tesvikleri",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4524,7 +5006,7 @@
       "title": "Sağlık Turizmi Devlet Teşvikleri Nasıl Alınır?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/devlet-tesvikleri",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi/dis-fiyatlari",
@@ -4712,32 +5194,35 @@
       "path": "/saglik-turizmi/gerekli-belgeler",
       "url": "https://www.overseas.marketing/saglik-turizmi/gerekli-belgeler",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
       "role": "Bilgilendirici rehber",
-      "intent": "İşlem araştırması",
+      "intent": "Kontrol Listesi / Bilgilendirici",
       "keywords": [
         "sağlık turizmi için gerekli belgeler",
-        "sağlık turizmi yapmak için gerekli şartlar",
+        "sağlık turizmi için gerekli şartlar",
         "sağlık turizmi yetki belgesi şartları",
-        "sağlık turizmi belgesi"
+        "sağlık turizmi evrakları",
+        "sağlık turizmi yapmak için şartlar"
       ],
       "parent": "/blog",
       "placement": "Rehber merkezi + konu kümesi + ilgili hizmet; yeni header eklemesi yok",
       "currentHeader": "Kaynakta doğrudan doğrulanmadı",
       "decision": "Koruma varsayımı; GSC bekleniyor",
-      "title": "Sağlık Turizmi İçin Gerekli Belgeler Nelerdir?",
+      "title": "Sağlık Turizmi Yapmak İçin Gerekli Şartlar ve Belgeler (2026)",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/gerekli-belgeler",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi/gerekli-sartlar",
       "url": "https://www.overseas.marketing/saglik-turizmi/gerekli-sartlar",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -4756,7 +5241,7 @@
       "title": "Sağlık Turizmi Yapmak İçin Gerekli Şartlar",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/gerekli-sartlar",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizmi/google-ads",
@@ -5021,7 +5506,8 @@
       "path": "/saglik-turizmi/vergi-muafiyeti",
       "url": "https://www.overseas.marketing/saglik-turizmi/vergi-muafiyeti",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -5040,13 +5526,14 @@
       "title": "Sağlık Turizminde Vergi Muafiyeti Var mı?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/saglik-turizmi/vergi-muafiyeti",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/saglik-turizminde-yapay-zeka",
       "url": "https://www.overseas.marketing/saglik-turizminde-yapay-zeka",
       "sources": [
-        "App.tsx explicit ServicePageWrapper alias"
+        "App.tsx explicit ServicePageWrapper alias",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -5063,7 +5550,7 @@
       "title": "Yapay Zeka ve Otomasyon Çözümleri",
       "canonicalTarget": "/hizmetler/yapay-zeka-otomasyon",
       "evidence": "AI Call Agent, WhatsApp/Instagram chatbot, e-posta botu ve CRM entegrasyonlu yapay zeka otomasyon çözümleri. 7/24 kesintisiz satış operasyonu.",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/sektorler",
@@ -5198,7 +5685,8 @@
       "path": "/uluslararasi-saglik-turizmi-yetki-belgesi",
       "url": "https://www.overseas.marketing/uluslararasi-saglik-turizmi-yetki-belgesi",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -5217,13 +5705,14 @@
       "title": "Uluslararası Sağlık Turizmi Yetki Belgesi Başvuru Rehberi",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/uluslararasi-saglik-turizmi-yetki-belgesi",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/uluslararasi-saglik-turizmi-yetki-belgesi/nasil-alinir",
       "url": "https://www.overseas.marketing/uluslararasi-saglik-turizmi-yetki-belgesi/nasil-alinir",
       "sources": [
-        "SEO_ARTICLES / DOCTOR_ARTICLES"
+        "SEO_ARTICLES / DOCTOR_ARTICLES",
+        "public/sitemap.xml"
       ],
       "gscStatus": "Veri yok; sorgu/URL ve performans doğrulaması bekliyor",
       "indexStatus": "GSC ile doğrulanmadı",
@@ -5242,7 +5731,7 @@
       "title": "Uluslararası Sağlık Turizmi Yetki Belgesi Nasıl Alınır?",
       "serviceTarget": "İçerik özelinde belirlenmeli",
       "canonicalTarget": "/uluslararasi-saglik-turizmi-yetki-belgesi/nasil-alinir",
-      "inSitemap": false
+      "inSitemap": true
     },
     {
       "path": "/uluslararasi-saglik-turizmi-yonetmeligi",

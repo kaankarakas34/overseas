@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -95,12 +96,17 @@ export const BranchDetailPage: React.FC<BranchDetailPageProps> = ({
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-            <button
-              onClick={onBackToHome}
-              className="inline-flex items-center text-sm font-medium text-slate-300 hover:text-white transition-colors bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/15 cursor-pointer"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" /> {isEn ? 'Back to Home' : 'Ana Sayfaya Dön'}
-            </button>
+            <nav aria-label="Breadcrumb" className="inline-flex items-center gap-2 text-xs font-medium text-slate-300 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/15">
+              <Link to="/" className="hover:text-white transition-colors flex items-center gap-1">
+                <ArrowLeft className="w-3.5 h-3.5" /> {isEn ? 'Home' : 'Ana Sayfa'}
+              </Link>
+              <span className="text-slate-500">/</span>
+              <Link to="/sektorler" className="hover:text-white transition-colors">
+                {isEn ? 'Specialties' : 'Uzmanlık Alanları'}
+              </Link>
+              <span className="text-slate-500">/</span>
+              <span className="text-white font-semibold">{branch.title}</span>
+            </nav>
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#446CB5]/30 text-[#8BB2F9] border border-[#446CB5]/50">
               <Sparkles className="w-3.5 h-3.5" /> {branch.heroBadge || branch.badge}
             </span>

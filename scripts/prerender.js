@@ -568,12 +568,153 @@ const ROUTES = [
   {
     path: '/sektorler',
     title: 'Hizmet Verdiğimiz Sağlık Branşları ve Sektörler | Overseas Marketing',
-    description: 'Diş klinikleri, saç ekimi, plastik cerrahi, tüp bebek, obezite, göz ve hastaneler için özel sağlık turizmi pazarlama çözümleri.',
-    h1: 'Her Klinik Branşı İçin Özelleştirilmiş Hasta Edinme Çözümleri',
+    description: 'Diş klinikleri, saç ekimi, plastik cerrahi, tüp bebek, obezite, göz ve hastaneler için özel sağlık turizmi pazarlama çözümleri ve 15 branş rehberi.',
+    h1: 'Sağlık Turizminde 15 Klinik Branşı İçin Özelleştirilmiş Hasta Kazanım Mimarisi',
     content: `
       <section>
-        <h2>15+ Sağlık Branşı ve Klinik Çözümü</h2>
-        <p>Diş, saç ekimi, estetik cerrahi, tüp bebek, obezite, göz, ortopedi, dermatoloji ve hastaneler için özelleştirilmiş pazarlama modelleri.</p>
+        <p>Sağlık turizminde saç ekimi veya implant arayan bir hastanın karar süreci ile obezite cerrahisi, tüp bebek veya onkoloji tedavisi düşünen bir ailenin psikolojisi, risk algısı ve güven eşiği taban tabana zıttır. Tek tip şablon pazarlama bütçe israfına yol açar. Overseas Marketing; hekim E-E-A-T profiline, medikal içerik mevzuatına ve pazar dinamiklerine uygun 15 klinik branşına özel büyüme hunileri kurar.</p>
+      </section>
+
+      <section>
+        <h2>15 Klinik Branşı ve Özelleştirilmiş Büyüme Çözümleri</h2>
+        
+        <h3>1. Cerrahi & İnvaziv Tedavi Branşları</h3>
+        <ul>
+          <li><strong><a href="/sac-ekimi-reklam-ajansi">Saç Ekimi Reklam Ajansı</a>:</strong> İngiltere, İspanya ve İtalya pazarlarında FUE, Sapphire ve DHI tekniklerine özel Google Ads, Meta Lead Ads ve 7/24 WhatsApp AI Call Agent ile yüksek dönüşümlü hasta akışı.</li>
+          <li><strong><a href="/plastik-cerrahi-reklam-ajansi">Plastik Cerrahi Reklam Ajansı</a>:</strong> Rinoplasti, meme estetiği ve kombine cerrahilerde cerrah uzmanlık belgesi ve doğal vaka sonuçlarını öne çıkaran sinematik video pazarlama ve görüntülü hekim ön görüşme hunileri.</li>
+          <li><strong><a href="/obezite-cerrahisi-reklam-ajansi">Obezite Cerrahisi Reklam Ajansı</a>:</strong> Tüp mide (Sleeve Gastrectomy) ve bariyatrik revizyon ameliyatlarında cerrah komplikasyon oranları ve 12 aylık beslenme takip garantisini şeffafça sunan İngiltere ve İrlanda odaklı arama ağı kampanyaları.</li>
+          <li><strong><a href="/ortopedi-reklam-ajansi">Ortopedi Reklam Ajansı</a>:</strong> Robotik diz ve kalça protezi cerrahisi, spor yaralanmaları ve omurga cerrahisinde hedef ülke hastalarına yönelik güven odaklı sağlık turizmi pazarlaması.</li>
+          <li><strong><a href="/goz-klinigi-reklam-ajansi">Göz Kliniği Reklam Ajansı</a>:</strong> No-Touch lazer, akıllı lens (Trifokal) ve katarakt ameliyatlarında Avrupa pazarında bekleme sürelerini avantaja çeviren performans reklam yönetimi.</li>
+        </ul>
+
+        <h3>2. Dental & Ağız Sağlığı Branşları</h3>
+        <ul>
+          <li><strong><a href="/dis-klinigi-reklam-ajansi">Diş Kliniği Reklam Ajansı</a>:</strong> Hollywood Smile, All-on-4, All-on-6 ve zirkonyum kaplama aramalarında İngiltere ve Almanya odaklı Google Ads, lokalize dental landing page ve anlık panoramik röntgen (X-Ray) analizi entegrasyonu.</li>
+        </ul>
+
+        <h3>3. Estetik, Dermatoloji & Medikal Uygulamalar</h3>
+        <ul>
+          <li><strong><a href="/estetik-klinigi-reklam-ajansi">Estetik Kliniği Reklam Ajansı</a>:</strong> Minimal invaziv estetik uygulamalar, yüz gençleştirme ve medikal kozmetikte uluslararası hasta edinme stratejileri.</li>
+          <li><strong><a href="/medikal-estetik-reklam-ajansi">Medikal Estetik Reklam Ajansı</a>:</strong> Botoks, dolgu, mezoterapi ve ameliyatsız vücut şekillendirmede mevzuata uygun bilgilendirici içerik ve hasta kazanımı.</li>
+          <li><strong><a href="/dermatoloji-reklam-ajansi">Dermatoloji Reklam Ajansı</a>:</strong> Lazerli cilt tedavileri, akne izi tedavisi ve dermatolojik operasyonlarda uzman hekim otoritesini (E-E-A-T) vurgulayan dijital iletişim.</li>
+        </ul>
+
+        <h3>4. Özelleşmiş Tedavi & Üreme Sağlığı</h3>
+        <ul>
+          <li><strong><a href="/tup-bebek-reklam-ajansi">Tüp Bebek Reklam Ajansı (IVF)</a>:</strong> Embriyoloji laboratuvarı teknolojisi, genetik tarama (PGD/NGS) ve hekim tecrübesini odağa alan; Almanya, İngiltere ve Körfez ülkelerine yönelik hassas hasta iletişim hunisi.</li>
+          <li><strong><a href="/fizik-tedavi-reklam-ajansi">Fizik Tedavi Reklam Ajansı</a>:</strong> Nörolojik ve ortopedik rehabilitasyon, robotik yürüme sistemleri ve termal sağlık turizmi alanında yabancı hasta programları.</li>
+        </ul>
+
+        <h3>5. Kurumsal Sağlık Kuruluşları & Yetkili Acenteler</h3>
+        <ul>
+          <li><strong><a href="/hastane-reklam-ajansi">Hastane Reklam Ajansı</a>:</strong> A+ ve JCI akreditasyonuna sahip tam teşekküllü özel hastaneler için multidisipliner uluslararası pazarlama yönetimi.</li>
+          <li><strong><a href="/doktor-reklam-ajansi">Doktor Reklam Ajansı</a>:</strong> Bağımsız muayenehane ve klinik sahibi uzman hekimlerin yurt dışı marka kimliği, E-E-A-T profili ve doğrudan hasta kazanım altyapısı.</li>
+          <li><strong><a href="/klinik-reklam-ajansi">Klinik Reklam Ajansı</a>:</strong> Butik klinik ve tıp merkezlerinin uluslararası hasta operasyonunu ölçekleyen entegre büyüme modelleri.</li>
+          <li><strong><a href="/saglik-turizmi-araci-kurulus-pazarlama">Sağlık Turizmi Aracı Kuruluş Pazarlama</a>:</strong> TÜRSAB ve USHAŞ yetki belgesine sahip sağlık turizmi acenteleri için çok dilli çağrı merkezi, çok branşlı reklam mimarisi ve CRM entegrasyonu.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Klinik Branşları Karar Matrisi: Hasta Süreci ve Kanal Stratejisi</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Branş / Tedavi</th>
+              <th>Öncelikli Hedef Pazarlar</th>
+              <th>Ortalama Karar Süresi</th>
+              <th>Kritik Güven Faktörü</th>
+              <th>Önerilen Huni Modeli</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Saç Ekimi</strong></td>
+              <td>Birleşik Krallık, İspanya, İtalya</td>
+              <td>7 – 21 Gün</td>
+              <td>Greft şeffaflığı ve cerrah katılımı</td>
+              <td>Meta Lead Ads + Hızlı WhatsApp AI Çağrı</td>
+            </tr>
+            <tr>
+              <td><strong>Diş Kliniği</strong></td>
+              <td>İngiltere, İrlanda, Almanya, İsviçre</td>
+              <td>14 – 30 Gün</td>
+              <td>Malzeme sertifikası & Röntgen analizi</td>
+              <td>Google Ads Search + Hızlı Röntgen Değerlendirme</td>
+            </tr>
+            <tr>
+              <td><strong>Obezite Cerrahisi</strong></td>
+              <td>İngiltere, İrlanda, Hollanda</td>
+              <td>30 – 60 Gün</td>
+              <td>Cerrah komplikasyon oranı & 12 ay beslenme takibi</td>
+              <td>E-E-A-T Video SEO + Bakım Garantisi</td>
+            </tr>
+            <tr>
+              <td><strong>Plastik Cerrahi</strong></td>
+              <td>Almanya, Fransa, Birleşik Krallık</td>
+              <td>21 – 45 Gün</td>
+              <td>Uzmanlık belgesi & Doğal estetik sonuçlar</td>
+              <td>Instagram Sinematik Video + Görüntülü Ön Görüşme</td>
+            </tr>
+            <tr>
+              <td><strong>Tüp Bebek (IVF)</strong></td>
+              <td>Almanya, Birleşik Krallık, MENA</td>
+              <td>45 – 90 Gün</td>
+              <td>Embriyoloji lab teknolojisi & Şeffaf başarı oranı</td>
+              <td>Eğitici GEO / Arama + Hemşire Vaka Yöneticisi</td>
+            </tr>
+            <tr>
+              <td><strong>Yetkili Aracı Kuruluşlar</strong></td>
+              <td>Global & Çok Pazar Odaklı</td>
+              <td>10 – 30 Gün</td>
+              <td>USHAŞ ve TÜRSAB Yetki Belgesi, Hastane Protokolleri</td>
+              <td>Çok Branşlı Reklam Ağı + Çok Dilli CRM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>2026 Resmî Mevzuat ve Tanıtım Standartları</h2>
+        <p>Overseas Marketing; 12 Kasım 2025 tarihli 33075 sayılı Tanıtım Yönetmeliği ve 26 Nisan 2025 tarihli 32882 sayılı Uluslararası Sağlık Turizmi Yönetmeliği hükümlerine eksiksiz uyar:</p>
+        <ul>
+          <li><strong>Eğitici ve Bilgilendirici Tanıtım:</strong> Tıbbi endikasyon, tedavi süreci ve olası riskler bilimsel hekim diliyle aktarılır; talep yaratıcı ticari vaatlerde bulunulmaz.</li>
+          <li><strong>Yetki Belgesi Tescili:</strong> Yalnızca Sağlık Bakanlığı ve USHAŞ tarafından tescilli akredite sağlık tesisleri ve yetkili aracı kuruluşlar adına tanıtım yürütülür.</li>
+          <li><strong>Fiyat ve İndirim Yasağı:</strong> Sağlık hizmetlerinde paket fiyat indirimi, çekiliş, kampanya gibi ticari promosyonlar kesinlikle uygulanmaz.</li>
+          <li><strong>Coğrafi IP Sınırlandırması:</strong> Uluslararası hasta reklamları yalnızca ilgili yabancı ülkelere gösterilir; yurt içi kullanıcılara hedefleme yapılmaz.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Klinik Branşlarını Güçlendiren 6 Temel Hizmet Ailesi</h2>
+        <p>Her branşın dijital varlığı 6 temel merkezimiz üzerinden koordine edilir:</p>
+        <ul>
+          <li><a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a>: İngiltere ve Avrupa'da düşük CPL ile doğrulanmış yabancı hasta kazanımı.</li>
+          <li><a href="/hizmetler/uluslararasi-seo-hizmeti">Uluslararası SEO</a>: Çok dilli arama motorlarında organik klinik otoritesi.</li>
+          <li><a href="/hizmetler/geo-generative-engine-optimization">GEO (Yapay Zekâ Görünürlüğü)</a>: ChatGPT, Gemini ve Perplexity aramalarında birincil öneri olarak alıntılanma.</li>
+          <li><a href="/hizmetler/web-sitesi-landing-page">Web Tasarım & Landing Page</a>: Yabancı hasta güveni ve yüksek randevu dönüşümü sağlayan hızlı sayfalar.</li>
+          <li><a href="/hizmetler/crm-otomasyon">CRM & Yapay Zekâ Otomasyonu</a>: 7/24 WhatsApp karşılama ve çok dilli lead skorlama.</li>
+          <li><a href="/hizmetler/icerik-marka-yonetimi">İçerik Prodüksiyon & Doktor Markası</a>: Hekim video çekimi ve etik tıbbi medya yönetimi.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sıkça Sorulan Sorular</h2>
+        <dl>
+          <dt>Sağlık turizminde farklı branşlar için neden aynı pazarlama modeli uygulanamaz?</dt>
+          <dd>Saç ekimi veya diş tedavisi arayan bir hastanın karar süresi 1-3 hafta iken, obezite cerrahisi veya tüp bebek düşünen bir ailenin araştırma süresi 2-3 ayı bulabilir. Güven bariyerleri, gönderilen tıbbi belgeler ve hasta psikolojisi tamamen farklı olduğundan her branşa özel dönüşüm hunisi kurulmalıdır.</dd>
+          
+          <dt>2026 Sağlık Turizmi ve Tanıtım Mevzuatı klinik branşlarda nasıl uygulanır?</dt>
+          <dd>12 Kasım 2025 tarihli Tanıtım Yönetmeliği uyarınca tanıtımlar eğitici, bilgilendirici ve tıbbi doğruluğu kanıtlanmış nitelikte olmalıdır. Ticari indirim, çekiliş ve yanıltıcı vaatler yasaktır. Reklamlar yalnızca hedef yabancı ülkelere gösterilmeli, hekim unvanları ve HealthTürkiye akreditasyonları şeffafça belirtilmelidir.</dd>
+
+          <dt>Diş klinikleri için en verimli uluslararası hasta kazanım kanalı hangisidir?</dt>
+          <dd>İngiltere ve İrlanda pazarında Google Ads Arama Ağı üzerinden yüksek niyetli aramaları hedefleyen kampanyalar, lokalize dental landing page ve WhatsApp üzerinden hızlı panoramik röntgen analizi sunan CRM entegrasyonu en yüksek dönüşüm oranını sağlamaktadır.</dd>
+
+          <dt>Saç ekimi reklamlarında CPL maliyeti nasıl optimize edilir?</dt>
+          <dd>Tek tip form yerine çok adımlı greft hesaplayıcı, teknik ayrımı (DHI vs Sapphire), şeffaf paket içerikleri ve 7/24 AI Call Agent ile gece gelen başvuruların 1 dakika içinde geri aranması niteliksiz talepleri eler ve randevu dönüşüm oranını 3 kata kadar artırır.</dd>
+
+          <dt>Overseas Marketing bir sağlık tesisi veya acente midir?</dt>
+          <dd>Hayır. Overseas Marketing bir sağlık kuruluşu veya aracı kuruluş değildir. Yetkili sağlık tesislerine ve Sağlık Bakanlığı/USHAŞ tescilli aracı kuruluşlara performans pazarlama, uluslararası SEO, GEO ve yazılım altyapısı sunan bir B2B büyüme ve teknoloji danışmanlığı ajansıdır.</dd>
+        </dl>
       </section>
     `
   },

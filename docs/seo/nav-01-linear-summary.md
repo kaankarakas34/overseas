@@ -10,7 +10,7 @@ Yeni sayfa oluşturulabilir. Header'a yeni hizmet eklenmesi, veri listesi üzeri
 
 Kaynaklar: App.tsx route'ları, MASTER_SERVICES/BRANCHES/MARKETS/CITIES, SEO_ARTICLES, DOCTOR_ARTICLES ve public/sitemap.xml. Site ana sayfasının sunucu tarafından sunulan metni de 11 Ekim 2026'da kontrol edildi: https://www.overseas.marketing/. Bu tam bir canlı crawl, render veya GSC indeks denetimi değildir. Rol ve kelime önerileri kaynak içeriklerinden yapılan çıkarımlardır; arama hacmi veya GSC verisi değildir.
 
-217 URL; 14 hizmet kaydı; 17 hizmet alias route'u; 15 branş, 4 pazar, 4 şehir kaydı; 138 rehber kaydı. Sitemap: 124 kayıt / 123 tekil URL. İncelenmeli rolü: 0. Bu sayılar yerel çalışma ağacına aittir; Google indeks sayısı değildir.
+233 URL; 14 hizmet kaydı; 17 hizmet alias route'u; 15 branş, 4 pazar, 4 şehir kaydı; 151 rehber kaydı. Sitemap: 217 kayıt / 216 tekil URL. İncelenmeli rolü: 0. Bu sayılar yerel çalışma ağacına aittir; Google indeks sayısı değildir.
 
 ## Hizmet URL karar tablosu
 

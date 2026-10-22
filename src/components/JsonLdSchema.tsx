@@ -183,7 +183,22 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
     },
   ];
 
-  if (activeTitle && activeUrl !== DOMAIN) {
+  if (type === 'branch' && branch) {
+    breadcrumbItems.push(
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Uzmanlık Alanları',
+        item: `${DOMAIN}/sektorler`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: branch.title,
+        item: `${DOMAIN}/${branch.slug}`,
+      }
+    );
+  } else if (activeTitle && activeUrl !== DOMAIN) {
     breadcrumbItems.push({
       '@type': 'ListItem',
       position: 2,
