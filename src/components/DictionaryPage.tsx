@@ -26,6 +26,31 @@ export const DictionaryPage: React.FC<DictionaryPageProps> = ({ onOpenConsultati
     });
   }, [searchQuery, selectedCategory]);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Ana Sayfa',
+        item: 'https://www.overseas.marketing'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Bilgi Merkezi',
+        item: 'https://www.overseas.marketing/blog'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Sağlık Turizmi Sözlüğü',
+        item: 'https://www.overseas.marketing/sozluk'
+      }
+    ]
+  };
+
   const schemaJson = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTermSet',
@@ -54,6 +79,7 @@ export const DictionaryPage: React.FC<DictionaryPageProps> = ({ onOpenConsultati
 
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero & Navigation */}
@@ -64,7 +90,7 @@ export const DictionaryPage: React.FC<DictionaryPageProps> = ({ onOpenConsultati
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
             <ChevronRight className="w-3 h-3 text-slate-600" />
-            <span className="text-slate-500">Bilgi Merkezi</span>
+            <Link to="/blog" className="text-slate-400 hover:text-white transition-colors">Bilgi Merkezi</Link>
             <ChevronRight className="w-3 h-3 text-slate-600" />
             <span className="text-[#60A5FA] font-medium">Sağlık Turizmi Sözlüğü</span>
           </nav>

@@ -210,8 +210,8 @@ export const DoctorAdvertisingAgencyPage: React.FC<DoctorAdvertisingAgencyPagePr
                   {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "Sağlık Pazarlaması",
-                    "item": "https://www.overseas.marketing/hizmetler/performans-pazarlama"
+                    "name": "Uzmanlık Alanları",
+                      "item": "https://www.overseas.marketing/sektorler"
                   },
                   {
                     "@type": "ListItem",
@@ -272,7 +272,7 @@ export const DoctorAdvertisingAgencyPage: React.FC<DoctorAdvertisingAgencyPagePr
           <nav className="flex items-center gap-2 text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
             <span>/</span>
-            <span className="text-slate-300">Sağlık Pazarlaması</span>
+            <Link to="/sektorler" className="text-slate-300 hover:text-white transition-colors">Uzmanlık Alanları</Link>
             <span>/</span>
             <span className="text-[#60A5FA] font-medium">Doktor Reklam Ajansı</span>
           </nav>

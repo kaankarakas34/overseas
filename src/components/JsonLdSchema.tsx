@@ -1,6 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ServiceItem, BranchItem, MarketItem, CityItem } from '../data/masterPlanData';
+import { SERVICE_RELATIONS } from '../data/serviceRelations';
+
+export interface BreadcrumbItem {
+  name: string;
+  item: string;
+}
 
 interface JsonLdSchemaProps {
   type?: 'home' | 'service' | 'doctor-branding' | 'branch' | 'market' | 'city' | 'person' | 'about' | 'policy';
@@ -11,6 +17,7 @@ interface JsonLdSchemaProps {
   faqs?: { q: string; a: string }[];
   customTitle?: string;
   customUrl?: string;
+  customBreadcrumbs?: BreadcrumbItem[];
 }
 
 const DOMAIN = 'https://www.overseas.marketing';
@@ -23,7 +30,8 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
   city,
   faqs,
   customTitle,
-  customUrl
+  customUrl,
+  customBreadcrumbs
 }) => {
   // 1. Organization & ProfessionalService Schema
   const organizationSchema = {
@@ -173,53 +181,130 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
     };
   }
 
-  // 4. Breadcrumb Schema
-  let breadcrumbItems = [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Ana Sayfa',
-      item: DOMAIN,
-    },
-  ];
+  // 4. Breadcrumb Schema (Standardized 2026 Hierarchy)
+  let breadcrumbItems: { '@type': string; position: number; name: string; item: string }[] = [];
 
-  if (type === 'branch' && branch) {
-    breadcrumbItems.push(
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Uzmanlık Alanları',
-        item: `${DOMAIN}/sektorler`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: branch.title,
-        item: `${DOMAIN}/${branch.slug}`,
-      }
-    );
-  } else if (type === 'market' && market) {
-    breadcrumbItems.push(
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Hedef Ülkeler',
-        item: `${DOMAIN}/ulkeler`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: market.title,
-        item: `${DOMAIN}/${market.slug}`,
-      }
-    );
-  } else if (activeTitle && activeUrl !== DOMAIN) {
-    breadcrumbItems.push({
+  if (customBreadcrumbs && customBreadcrumbs.length > 0) {
+    breadcrumbItems = customBreadcrumbs.map((b, idx) => ({
       '@type': 'ListItem',
-      position: 2,
-      name: activeTitle,
-      item: activeUrl,
-    });
+      position: idx + 1,
+      name: b.name,
+      item: b.item.startsWith('http') ? b.item : `${DOMAIN}${b.item.startsWith('/') ? b.item : `/${b.item}`}`,
+    }));
+  } else {
+    breadcrumbItems = [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Ana Sayfa',
+        item: DOMAIN,
+      },
+    ];
+
+    if (type === 'service' && service) {
+      const rel = SERVICE_RELATIONS[service.id];
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Hizmetler',
+        item: `${DOMAIN}/hizmetler`,
+      });
+
+      if (rel && rel.parentHub) {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          position: 3,
+          name: rel.parentHub.title,
+          item: `${DOMAIN}${rel.parentHub.url}`,
+        });
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          position: 4,
+          name: service.title,
+          item: `${DOMAIN}/hizmetler/${service.id}`,
+        });
+      } else {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          position: 3,
+          name: service.title,
+          item: `${DOMAIN}/hizmetler/${service.id}`,
+        });
+      }
+    } else if (type === 'doctor-branding') {
+      breadcrumbItems.push(
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Hizmetler',
+          item: `${DOMAIN}/hizmetler`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'İçerik & Marka Yönetimi',
+          item: `${DOMAIN}/hizmetler/icerik-marka-yonetimi`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Doktor Marka Yönetimi',
+          item: `${DOMAIN}/doktor-marka-yonetimi`,
+        }
+      );
+    } else if (type === 'branch' && branch) {
+      breadcrumbItems.push(
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Uzmanlık Alanları',
+          item: `${DOMAIN}/sektorler`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: branch.title,
+          item: `${DOMAIN}/${branch.slug}`,
+        }
+      );
+    } else if (type === 'market' && market) {
+      breadcrumbItems.push(
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Hedef Pazarlar',
+          item: `${DOMAIN}/ulkeler`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: market.title,
+          item: `${DOMAIN}/${market.slug}`,
+        }
+      );
+    } else if (type === 'city' && city) {
+      breadcrumbItems.push(
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Hizmetler',
+          item: `${DOMAIN}/hizmetler`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: city.title,
+          item: `${DOMAIN}/${city.slug}`,
+        }
+      );
+    } else if (activeTitle && activeUrl !== DOMAIN) {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: activeTitle,
+        item: activeUrl,
+      });
+    }
   }
 
   const breadcrumbSchema = {
@@ -254,7 +339,7 @@ export const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({
       {personSchema && <script type="application/ld+json">{JSON.stringify(personSchema)}</script>}
       {serviceSchema && <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>}
       {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
-      <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      {breadcrumbItems.length > 1 && <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>}
       <script type="application/ld+json">{JSON.stringify(datasetSchema)}</script>
     </Helmet>
   );

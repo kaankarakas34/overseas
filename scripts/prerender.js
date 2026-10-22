@@ -15,6 +15,162 @@ if (!fs.existsSync(templatePath)) {
 
 const templateHtml = fs.readFileSync(templatePath, 'utf-8');
 const BASE_DOMAIN = 'https://www.overseas.marketing';
+const serviceRelations = JSON.parse(fs.readFileSync(new URL('../src/data/serviceRelationsData.json', import.meta.url), 'utf8'));
+
+function generateBreadcrumbSchema(route) {
+  const p = route.path;
+  if (p === '/') return null;
+
+  const items = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Ana Sayfa',
+      item: BASE_DOMAIN
+    }
+  ];
+
+  // 1. Services Root
+  if (p === '/hizmetler') {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Hizmetler',
+      item: `${BASE_DOMAIN}/hizmetler`
+    });
+  }
+  // 2. Service Family Hubs
+  else if (p === '/hizmetler/crm-otomasyon') {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: `${BASE_DOMAIN}/hizmetler` },
+      { '@type': 'ListItem', position: 3, name: 'CRM & Otomasyon', item: `${BASE_DOMAIN}/hizmetler/crm-otomasyon` }
+    );
+  } else if (p === '/hizmetler/icerik-marka-yonetimi') {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: `${BASE_DOMAIN}/hizmetler` },
+      { '@type': 'ListItem', position: 3, name: 'İçerik & Marka Yönetimi', item: `${BASE_DOMAIN}/hizmetler/icerik-marka-yonetimi` }
+    );
+  }
+  // 3. Doctor Branding
+  else if (p === '/doktor-marka-yonetimi') {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: `${BASE_DOMAIN}/hizmetler` },
+      { '@type': 'ListItem', position: 3, name: 'İçerik & Marka Yönetimi', item: `${BASE_DOMAIN}/hizmetler/icerik-marka-yonetimi` },
+      { '@type': 'ListItem', position: 4, name: 'Doktor Marka Yönetimi', item: `${BASE_DOMAIN}/doktor-marka-yonetimi` }
+    );
+  }
+  // 4. Detailed Services
+  else if (p.startsWith('/hizmetler/') || [
+    '/saglik-turizmi-google-ads',
+    '/saglik-turizmi-meta-reklamlari',
+    '/saglik-turizmi-landing-page',
+    '/saglik-turizmi-reklam-ajansi',
+    '/saglik-turizmi-dijital-pazarlama',
+    '/uluslararasi-hasta-kazanimi'
+  ].includes(p)) {
+    const slug = p.replace(/^\/hizmetler\//, '').replace(/^\//, '');
+    const rel = serviceRelations[slug];
+
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Hizmetler',
+      item: `${BASE_DOMAIN}/hizmetler`
+    });
+
+    if (rel && rel.parentHub) {
+      items.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: rel.parentHub.title,
+        item: `${BASE_DOMAIN}${rel.parentHub.url}`
+      });
+      items.push({
+        '@type': 'ListItem',
+        position: 4,
+        name: route.h1 || route.title.split('|')[0].trim(),
+        item: `${BASE_DOMAIN}${p}`
+      });
+    } else {
+      items.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: route.h1 || route.title.split('|')[0].trim(),
+        item: `${BASE_DOMAIN}${p}`
+      });
+    }
+  }
+  // 5. Clinical Specialties / Branches
+  else if (p === '/sektorler') {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Uzmanlık Alanları',
+      item: `${BASE_DOMAIN}/sektorler`
+    });
+  } else if (
+    p.endsWith('-reklam-ajansi') ||
+    p.endsWith('-pazarlamasi') ||
+    p.endsWith('-klinigi-reklam-ajansi') ||
+    p === '/doktor-reklam-ajansi' ||
+    p === '/saglik-turizmi-araci-kurulus-pazarlama'
+  ) {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Uzmanlık Alanları', item: `${BASE_DOMAIN}/sektorler` },
+      { '@type': 'ListItem', position: 3, name: route.h1 || route.title.split('|')[0].trim(), item: `${BASE_DOMAIN}${p}` }
+    );
+  }
+  // 6. Target Markets
+  else if (p === '/ulkeler') {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Hedef Pazarlar',
+      item: `${BASE_DOMAIN}/ulkeler`
+    });
+  } else if (p.endsWith('-reklamlari') || p.endsWith('-pazari-saglik-turizmi')) {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Hedef Pazarlar', item: `${BASE_DOMAIN}/ulkeler` },
+      { '@type': 'ListItem', position: 3, name: route.h1 || route.title.split('|')[0].trim(), item: `${BASE_DOMAIN}${p}` }
+    );
+  }
+  // 7. Blog & Knowledge Base
+  else if (p === '/blog' || p === '/kaynaklar') {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Bilgi Merkezi',
+      item: `${BASE_DOMAIN}/blog`
+    });
+  } else if (p.startsWith('/blog/')) {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Bilgi Merkezi', item: `${BASE_DOMAIN}/blog` },
+      { '@type': 'ListItem', position: 3, name: route.h1 || route.title.split('|')[0].trim(), item: `${BASE_DOMAIN}${p}` }
+    );
+  }
+  // 8. Dictionary
+  else if (p === '/sozluk' || p === '/bilgi-merkezi/sozluk') {
+    items.push(
+      { '@type': 'ListItem', position: 2, name: 'Bilgi Merkezi', item: `${BASE_DOMAIN}/blog` },
+      { '@type': 'ListItem', position: 3, name: 'Sağlık Turizmi Sözlüğü', item: `${BASE_DOMAIN}/sozluk` }
+    );
+  }
+  // 9. Generic 2nd level pages
+  else {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: route.h1 || route.title.split('|')[0].trim(),
+      item: `${BASE_DOMAIN}${p}`
+    });
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items
+  };
+}
 
 const NOINDEX_URLS = new Set([
   '/saglik-turizmi-isletmeciligi/taban-puanlari',
@@ -1680,6 +1836,15 @@ for (const route of ROUTES) {
     pageHtml = pageHtml.replace(
       /<link rel="preload" as="image" href="\/images\/hero_health_tech\.jpg" fetchpriority="high" \/>\s*/i,
       ''
+    );
+  }
+
+  // Inject Standardized BreadcrumbList Schema into <head>
+  const breadcrumbSchema = generateBreadcrumbSchema(route);
+  if (breadcrumbSchema) {
+    pageHtml = pageHtml.replace(
+      /<\/head>/i,
+      `  <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>\n</head>`
     );
   }
 

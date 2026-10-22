@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { SEOHead } from './SEOHead';
+import { JsonLdSchema } from './JsonLdSchema';
 import { useLanguage } from '../context/LanguageContext';
 import familyData from '../data/serviceFamilies.json';
 
@@ -43,6 +44,22 @@ export function ServicesDirectoryPage({familyId, onOpenConsultation}: {familyId?
   return (
     <div className="bg-[#F8FAFC] text-[#16202E] pt-28 pb-20 min-h-screen">
       <SEOHead title={title} description={description} canonicalUrl={`${domain}${path}`} />
+      <JsonLdSchema
+        customTitle={family ? copy(family.name) : (isEn ? 'Services' : 'Hizmetler')}
+        customUrl={`${domain}${path}`}
+        customBreadcrumbs={
+          family
+            ? [
+                { name: isEn ? 'Home' : 'Ana Sayfa', item: '/' },
+                { name: isEn ? 'Services' : 'Hizmetler', item: '/hizmetler' },
+                { name: copy(family.name), item: path }
+              ]
+            : [
+                { name: isEn ? 'Home' : 'Ana Sayfa', item: '/' },
+                { name: isEn ? 'Services' : 'Hizmetler', item: '/hizmetler' }
+              ]
+        }
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label={isEn ? 'Breadcrumb' : 'İçerik yolu'} className="text-sm text-[#595F69] flex flex-wrap gap-2 mb-8">
           <Link to={href('/')} className="hover:underline">{isEn ? 'Home' : 'Ana Sayfa'}</Link><span aria-hidden="true">/</span>
