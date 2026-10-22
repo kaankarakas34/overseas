@@ -722,11 +722,152 @@ const ROUTES = [
     path: '/ulkeler',
     title: 'Hedef Ülkeler ve Uluslararası Sağlık Turizmi Pazarları | Overseas Marketing',
     description: 'İngiltere, Almanya, Fransa, Hollanda ve Körfez pazarlarında sağlık turizmi reklam yönetimi, hasta profilleri ve pazar dinamikleri rehberi.',
-    h1: 'Hedef Pazarlar: Avrupa ve Birleşik Krallık\'ta Hasta Kazanımı',
+    h1: 'Sağlık Turizminde 4 Temel Avrupa Pazarı ve Küresel Sağlık Koridorları',
     content: `
       <section>
-        <h2>Uluslararası Pazar Dinamikleri ve Sağlık Koridorları</h2>
-        <p>İngiltere NHS bekleme süreleri, Alman JCI akreditasyon beklentisi ve Körfez VIP hasta talepleri doğrultusunda yerelleştirilmiş stratejiler.</p>
+        <p>İngiltere NHS bekleme süreleri, Alman Krankenkassen kapsam dışı tedavileri ve JCI akreditasyon beklentisi, Fransızca dil hassasiyeti ve Körfez ülkelerinin VIP konsiyerj talepleri... Her pazarın hasta arama niyetini, yasal reklam sınırlarını ve satın alma psikolojisini yerinde analiz ediyoruz. Overseas Marketing; hedef pazara özgü dil, para birimi ve mevzuata tam uyumlu entegre büyüme hunileri kurar.</p>
+      </section>
+
+      <section>
+        <h2>Birincil Odak Avrupa Pazarlarımız</h2>
+        
+        <h3>1. Birleşik Krallık & İngiltere Koridoru</h3>
+        <p><strong><a href="/ingiltere-saglik-turizmi-reklamlari">İngiltere Sağlık Turizmi Reklamları</a>:</strong> NHS bekleme listelerinin 7.6 milyonu aşması, İngiltere'deki özel klinik fiyatlarının yüksekliği ve Londra-İstanbul arası 3.5 saatlik uçuş mesafesi İngiliz hastalar için Türkiye'yi birincil destinasyon kılar. Sterlin (£) bazlı şeffaf paket içerikleri, ASA (Advertising Standards Authority) kurallarına tam uyum ve aksansız İngilizce WhatsApp karşılama ile diş, saç ekimi ve obezite cerrahisinde yüksek dönüşümlü hasta akışı sağlanır.</p>
+
+        <h3>2. Almanya & DACH Bölgesi Koridoru</h3>
+        <p><strong><a href="/almanya-saglik-turizmi-reklamlari">Almanya Sağlık Turizmi Reklamları</a>:</strong> Almanya, Avusturya ve İsviçre (DACH); akreditasyonlara (JCI, ISO, TÜV), hekim tecrübesine ve CE belgeli implant/protez markalarına en çok önem veren pazardır. Yasal sigortanın (Krankenkassen) estetik ve diş tedavilerini karşılamaması nedeniyle hastalar Türkiye'ye yönelir. Kusursuz Almanca dil desteği, DSGVO / GDPR veri gizliliği uyumu ve detaylı yazılı tedavi planları (Heil- und Kostenplan) ile yönetilir.</p>
+
+        <h3>3. Fransa Pazarı Koridoru</h3>
+        <p><strong><a href="/fransa-saglik-turizmi-reklamlari">Fransa Sağlık Turizmi Reklamları</a>:</strong> Fransız hastalar doğallığa, cerrahın sanatsal anatomik uzmanlığına ve rafine hasta deneyimine odaklanır. Rinoplasti (ultrasonik/piezo burun estetiği), DHI saç ekimi ve meme estetiğinde abartısız doğal sonuçları vurgulayan sinematik Fransızca video reklamlar ve ana dilinde hasta koordinatörlüğü ile yüksek dönüşüm elde edilir.</p>
+
+        <h3>4. Hollanda & Benelüks Koridoru</h3>
+        <p><strong><a href="/hollanda-saglik-turizmi-reklamlari">Hollanda Sağlık Turizmi Reklamları</a>:</strong> Hollanda ve Belçika; satın alma gücü yüksek, rasyonel ve doğrudan iletişimi tercih eden bir hasta profiline sahiptir. Zorgverzekering kapsam daralması nedeniyle diş implantları, saç ekimi ve bariyatrik cerrahide Türkiye'yi tercih ederler. Felemenkçe ve İngilizce çift dilli arama ağı stratejisi ve gizli masrafsız net Euro (€) paketleri uygulanır.</p>
+      </section>
+
+      <section>
+        <h2>Yüksek Potansiyelli Sağlık Koridorları</h2>
+        <ul>
+          <li><strong>Körfez Ülkeleri (BAE, Suudi Arabistan, Katar):</strong> Yüksek bütçeli estetik cerrahi, robotik ameliyatlar, VIP check-up ve tüp bebek için Arapça medikal konsiyerj modeli.</li>
+          <li><strong>İrlanda (Dublin Koridoru):</strong> Yüksek yerel diş tedavi fiyatları ve obezite bekleme süreleri nedeniyle Dublin'den doğrudan dental ve cerrahi hasta akışı.</li>
+          <li><strong>İtalya & Güney Avrupa (Roma, Milano):</strong> Saç ekimi (Safir/DHI) ve estetik diş talebi için İtalyanca hasta iletişim altyapısı.</li>
+          <li><strong>İspanya & İberya (Madrid, Barselona):</strong> DHI saç ekimi ve rinoplasti aramaları için İspanyolca kreatif ve WhatsApp konsültasyon kurgusu.</li>
+          <li><strong>İsviçre & Avusturya:</strong> Akredite implant, gülüş tasarımı ve No-Touch lazer göz tedavisi arayan yüksek gelir grubu hastalar.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hedef Ülkeler Karar ve Harcama Matrisi</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hedef Pazar Koridoru</th>
+              <th>Öncelikli Tedavi Talepleri</th>
+              <th>Para Birimi & Ortalama Paket</th>
+              <th>Ortalama Karar Süresi</th>
+              <th>Kritik Güven Faktörü</th>
+              <th>Önerilen Huni Modeli</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>İngiltere (UK)</strong></td>
+              <td>Diş İmplantı, Saç Ekimi, Tüp Mide</td>
+              <td>GBP (£) · £2,500 – £6,500</td>
+              <td>2 – 4 Hafta</td>
+              <td>NHS bekleme kıyası & Cerrah tecrübesi</td>
+              <td>Google Ads Search + Aksansız İngilizce WhatsApp</td>
+            </tr>
+            <tr>
+              <td><strong>Almanya (DACH)</strong></td>
+              <td>İmplantoloji, Lazer Göz, Rinoplasti, Saç</td>
+              <td>EUR (€) · €3,000 – €8,500</td>
+              <td>4 – 8 Hafta</td>
+              <td>JCI/TÜV Belgesi, CE Malzeme sertifikası, DSGVO</td>
+              <td>E-E-A-T Medikal SEO + Detaylı Almanca Maliyet Planı</td>
+            </tr>
+            <tr>
+              <td><strong>Fransa</strong></td>
+              <td>DHI Saç Ekimi, Piezo Rinoplasti, Meme Estetiği</td>
+              <td>EUR (€) · €2,800 – €7,000</td>
+              <td>3 – 6 Hafta</td>
+              <td>Doğal estetik sonuçlar, Kusursuz Fransızca iletişim</td>
+              <td>Sinematik Video Reklamları + Fransızca Koordinatör</td>
+            </tr>
+            <tr>
+              <td><strong>Hollanda & Benelüks</strong></td>
+              <td>Gülüş Tasarımı, Saç Ekimi, Bariyatrik Cerrahi</td>
+              <td>EUR (€) · €2,500 – €6,000</td>
+              <td>3 – 5 Hafta</td>
+              <td>Gizli maliyetsiz şeffaf paket, Klinik hijyen kanıtı</td>
+              <td>Felemenkçe/İngilizce Arama Ağı + Şeffaf Teklif Modülü</td>
+            </tr>
+            <tr>
+              <td><strong>Körfez (GCC)</strong></td>
+              <td>Robotik Cerrahi, VIP Check-up, Tüp Bebek, Estetik</td>
+              <td>USD / AED · $8,000 – $25,000+</td>
+              <td>2 – 6 Hafta</td>
+              <td>Hastane marka itibarı & 5 Yıldızlı VIP Konsiyerj</td>
+              <td>Arapça Video Reklamları + Özel VIP Koordinasyon Masası</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>2026 Uluslararası Reklam Mevzuatı ve Küresel Uyumluluk</h2>
+        <p>Overseas Marketing; hem hedef ülkelerin yerel reklam standartlarına hem de Türkiye Sağlık Bakanlığı'nın uluslararası sağlık turizmi tanıtım yönetmeliklerine %100 uyumlu çalışır:</p>
+        <ul>
+          <li><strong>UK ASA Standartları:</strong> İngiltere'de ASA reklam kurallarına tam uyum; sahte indirim sayaçları veya cerrahiyi basitleştiren yanıltıcı vaatler kesinlikle kullanılmaz.</li>
+          <li><strong>DSGVO / GDPR Güvenliği:</strong> Almanya ve Avrupa'da hasta bilgileri, formlar ve tıbbi belgeler uçtan uca şifreli ve GDPR/DSGVO onaylı sistemlerde işlenir.</li>
+          <li><strong>Yurt Dışı Coğrafi IP Kuralı:</strong> 2026 Sağlık Turizmi Yönetmeliği gereği reklamlar IP bazında yalnızca hedef yabancı ülkelere yayınlanır, Türkiye içine gösterilemez.</li>
+          <li><strong>Yetki Belgesi ve Sağlık Tesis Tescili:</strong> Tüm kampanyalar yalnızca Sağlık Bakanlığı ve USHAŞ yetki belgesine sahip akredite tesis ve aracı kuruluşlar adına yönetilir.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hedef Pazarlara Özel Klinik Branş Çözümleri</h2>
+        <p>Her pazarın öne çıkan cerrahi ve medikal tedavi arayışları farklı uzmanlık gerektirir:</p>
+        <ul>
+          <li><a href="/sektorler">Tüm Klinik Branşları ve Uzmanlık Alanları</a></li>
+          <li><a href="/dis-klinigi-reklam-ajansi">Diş Kliniği Reklam Ajansı</a> (UK, İrlanda ve Benelüks odaklı)</li>
+          <li><a href="/sac-ekimi-reklam-ajansi">Saç Ekimi Reklam Ajansı</a> (İngiltere, İtalya, İspanya odaklı)</li>
+          <li><a href="/obezite-cerrahisi-reklam-ajansi">Obezite Cerrahisi Reklam Ajansı</a> (İngiltere ve Hollanda odaklı)</li>
+          <li><a href="/plastik-cerrahi-reklam-ajansi">Plastik Cerrahi Reklam Ajansı</a> (Almanya ve Fransa odaklı)</li>
+          <li><a href="/tup-bebek-reklam-ajansi">Tüp Bebek Reklam Ajansı</a> (Almanya ve Körfez odaklı)</li>
+          <li><a href="/hastane-reklam-ajansi">Hastane Reklam Ajansı</a> (Körfez ve Avrupa odaklı multidisipliner tesisler)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hedef Pazarlarda Hasta Kazanımı Sağlayan 6 Temel Büyüme Hizmeti</h2>
+        <ul>
+          <li><a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a>: Hedef ülkeye özel para birimi, dil ve IP filtreleme ile optimize edilmiş Google & Meta reklamları.</li>
+          <li><a href="/hizmetler/uluslararasi-seo-hizmeti">Uluslararası SEO</a>: İngiltere, Almanya ve Fransa yerel arama motorlarında organik otorite ve çok dilli SEO.</li>
+          <li><a href="/hizmetler/geo-generative-engine-optimization">GEO (Yapay Zekâ Görünürlüğü)</a>: ChatGPT, Perplexity ve Gemini aramalarında hedef ülkeden yapılan sorgularda birincil öneri olma.</li>
+          <li><a href="/hizmetler/web-sitesi-landing-page">Web Tasarım & Landing Page</a>: Hedef pazarın para birimi (£, €) ve dilinde tasarlanmış yüksek dönüşümlü iniş sayfaları.</li>
+          <li><a href="/hizmetler/crm-otomasyon">CRM & Çok Dilli WhatsApp AI</a>: İngilizce, Almanca, Fransızca ve Arapça anlık WhatsApp karşılama ve 7/24 randevu yönetimi.</li>
+          <li><a href="/hizmetler/icerik-marka-yonetimi">İçerik Prodüksiyon & Marka</a>: Hedef ülke dillerine altyazılı hekim video çekimleri ve şeffaf yabancı hasta başarı hikayeleri.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sıkça Sorulan Sorular</h2>
+        <dl>
+          <dt>Türkiye'deki bir sağlık tesisi veya klinik öncelikle hangi ülkeye odaklanmalıdır?</dt>
+          <dd>Hedef pazar seçimi kliniğin branşına ve çok dilli iletişim kapasitesine göre belirlenmelidir. İngiltere (UK); NHS bekleme süreleri nedeniyle diş, saç ekimi ve tüp mide cerrahisinde en yüksek hacimli pazardır. Almanca bilen koordinatörlere sahip klinikler DACH bölgesinde yüksek marj elde eder; plastik cerrahide ise Fransa öne çıkar.</dd>
+
+          <dt>İngiltere ve Almanya sağlık turizmi reklam mevzuatları arasında ne gibi farklar vardır?</dt>
+          <dd>İngiltere'de reklamlar ASA kurallarına tabidir; cerrahiyi basitleştiren sayaçlar ve sahte vaatler yasaktır. Almanya'da ise Heilmittelwerbegesetz (HWG) ve katı DSGVO (GDPR) veri gizliliği kuralları geçerlidir; hekim uzmanlık belgeleri ve CE malzeme sertifikaları şeffafça sunulmalıdır.</dd>
+
+          <dt>İngilizce hazırlanan reklamlar Almanya ve Fransa pazarlarında neden başarısız olur?</dt>
+          <dd>Sağlık kararları ana dilde güven gerektirir. Almanya ve Fransa'da İngilizce yayınlanan kampanyalar ve açılış sayfaları yüzde 70'e varan güven ve randevu kaybı yaratır. Reklam metninden WhatsApp görüşmesine kadar tüm temas noktaları ana dilde yürütülmelidir.</dd>
+
+          <dt>Uluslararası hasta verileri GDPR ve KVKK kapsamında nasıl korunmalıdır?</dt>
+          <dd>Tüm başvuru ve röntgen süreçlerinde uçtan uca şifreleme ve GDPR/KVKK uyumlu CRM protokolleri uygulanmalıdır. Reklam piksellerinde özel nitelikli kişisel sağlık verisi barındırılmamalı ve açık rıza metinleri zorunlu tutulmalıdır.</dd>
+
+          <dt>Avrupa ülkelerinden gelen hastaların operasyon karar verme süresi ne kadardır?</dt>
+          <dd>Diş ve saç ekiminde İngiltere ve Hollanda hastaları 2 ila 4 haftada karar verirken; bariyatrik cerrahi ve kombine estetik ameliyatlarda Almanya ve Fransa hastalarının karar süresi 4 ila 8 haftayı bulur.</dd>
+        </dl>
       </section>
     `
   },
