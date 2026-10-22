@@ -80,10 +80,17 @@ const ROUTES = [
     description: 'Doktorlar için kişisel marka konumlama, dijital PR, uluslararası hasta görünürlüğü ve özel içerik yönetimi hizmetleri.',
     h1: 'Doktor Marka Yönetimi ve Uluslararası Dijital Otorite',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a> / Doktor Marka Yönetimi</p>
       <section>
         <h2>Hekimler İçin E-E-A-T ve Dijital İtibar Mimarisi</h2>
         <p>Uluslararası sağlık turizminde hastalar kliniğe değil, hekime güvenir. Doktor marka yönetimi; hekimin bilimsel yetkinliğini, vaka başarılarını ve cerrahi uzmanlığını hedef ülkelerdeki hastaların dilinde dijital otoriteye dönüştürür.</p>
         <p>Kişisel web sitesi, hedef ülke odaklı dijital PR çalışmaları, Google Arama Ağı hekim aramaları ve E-E-A-T uyumlu vaka sunumları tek elden koordine edilir.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka Yönetimi Merkezi</a></p>
+        <p><strong>İlgili Çözümler:</strong> <a href="/hizmetler/sosyal-medya-yonetimi">Sosyal Medya Yönetimi</a> | <a href="/hizmetler/icerik-produksiyon">İçerik ve Prodüksiyon</a> | <a href="/doktor-reklam-ajansi">Doktor Reklam Ajansı</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar (15 Branş)</a> | <a href="/ulkeler">Hedef Pazarlar ve Koridorlar</a> | <a href="/blog">Hekim Bilgi Merkezi</a></p>
       </section>
     `
   },
@@ -144,10 +151,19 @@ const ROUTES = [
     description: 'İngiltere, Almanya ve Avrupa hedefli çok dilli Google Ads ve Meta reklam yönetimi. Yüksek niyetli yabancı hasta kazanımı.',
     h1: 'Sağlık Turizmi Performans Pazarlama',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / Performans Pazarlama</p>
       <section>
         <h2>Hedef Odaklı Uluslararası Reklam Yönetimi</h2>
         <p>Google Ads arama ağında yüksek tedavi niyetli sorgular (Search Intent) yakalanırken, Meta ve Instagram kanallarında estetik ve sağlık güvenini pekiştiren video kreatifler ile yabancı hasta talebi oluşturulur.</p>
         <p>İngiltere, Almanya, Hollanda, Fransa ve Körfez ülkelerinde ana dilinde hazırlanan kreatifler ile tıklama başı maliyetler (CPC) optimize edilir, nitelikli hasta başvurusu (CPL) maksimize edilir.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Alt Hizmetler ve Çapraz Çözümler</h3>
+        <p><strong>Alt Hizmetler:</strong> <a href="/hizmetler/saglik-turizmi-google-ads">Google Ads Yönetimi</a> | <a href="/hizmetler/saglik-turizmi-meta-reklamlari">Meta Reklam Yönetimi</a></p>
+        <p><strong>Kardeş Hizmet Merkezleri:</strong> <a href="/hizmetler/web-sitesi-landing-page">Web & Landing Page</a> | <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon</a> | <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a> | <a href="/hizmetler/uluslararasi-seo-hizmeti">Uluslararası SEO</a></p>
+        <p><strong>Öncelikli Klinik Branşlar:</strong> <a href="/sektorler">Tüm Branşlar</a> (<a href="/dis-klinigi-reklam-ajansi">Diş</a>, <a href="/sac-ekimi-reklam-ajansi">Saç Ekimi</a>, <a href="/obezite-cerrahisi-reklam-ajansi">Obezite</a>, <a href="/plastik-cerrahi-reklam-ajansi">Plastik Cerrahi</a>)</p>
+        <p><strong>Hedef Pazarlar:</strong> <a href="/ulkeler">Tüm Pazarlar</a> (<a href="/ingiltere-saglik-turizmi-reklamlari">İngiltere</a>, <a href="/almanya-saglik-turizmi-reklamlari">Almanya</a>, <a href="/fransa-saglik-turizmi-reklamlari">Fransa</a>)</p>
+        <p><strong>İlgili Rehber:</strong> <a href="/blog/saglik-turizmi-performans-pazarlama">Sağlık Turizmi Performans Pazarlama Kılavuzu</a></p>
       </section>
     `
   },
@@ -157,10 +173,18 @@ const ROUTES = [
     description: 'İngilizce, Almanca ve hedef dillerde klinik ve doktorlar için uluslararası SEO mimarisi, teknik altyapı ve E-E-A-T içerik stratejisi.',
     h1: 'Uluslararası Sağlık Turizmi SEO Hizmeti',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / Uluslararası SEO</p>
       <section>
         <h2>Çok Dilli Global Organik Büyüme</h2>
         <p>Klinik web sitenizi İngiltere, DACH ve Avrupa arama motorlarında üst sıralara taşıyan semantik içerik ve teknik SEO altyapısı kuruyoruz.</p>
         <p>Uluslararası SEO hizmetimiz; teknik denetim, hreflang mimarisi, hedef dillerde medikal makale üretimi, dijital PR ve yerel otorite inşasını kapsar.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Entegre Ekosistem Bağlantıları</h3>
+        <p><strong>Tamamlayıcı Çözümler:</strong> <a href="/hizmetler/geo-generative-engine-optimization">GEO (Yapay Zekâ Görünürlüğü)</a> | <a href="/hizmetler/web-sitesi-landing-page">Web Sitesi & Landing Page</a> | <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a></p>
+        <p><strong>Öncelikli Klinik Branşlar:</strong> <a href="/sektorler">Klinik Branşlar Merkezi</a> (<a href="/sac-ekimi-reklam-ajansi">Saç Ekimi</a>, <a href="/dis-klinigi-reklam-ajansi">Diş</a>, <a href="/plastik-cerrahi-reklam-ajansi">Plastik Cerrahi</a>)</p>
+        <p><strong>Hedef Pazarlar:</strong> <a href="/ulkeler">Hedef Pazarlar</a> (<a href="/ingiltere-saglik-turizmi-reklamlari">İngiltere</a>, <a href="/almanya-saglik-turizmi-reklamlari">Almanya</a>, <a href="/fransa-saglik-turizmi-reklamlari">Fransa</a>)</p>
+        <p><strong>İlgili Rehber:</strong> <a href="/blog/saglik-turizmi-seo-ve-geo-entegrasyonu">SEO ve GEO Entegrasyonu</a></p>
       </section>
     `
   },
@@ -170,9 +194,17 @@ const ROUTES = [
     description: 'ChatGPT, Perplexity ve Google AI Overviews aramalarında kliniğinizin tavsiye edilmesini sağlayan yeni nesil GEO optimizasyonu.',
     h1: 'Generative Engine Optimization (GEO)',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / GEO (Yapay Zekâ Arama)</p>
       <section>
         <h2>Yapay Zekâ Arama Motorlarında Kliniğinizi Kaynak Göstertin</h2>
         <p>Hastalar artık doğrudan ChatGPT ve Perplexity'ye 'Türkiye'de en iyi saç ekimi kliniği hangisi?' diye soruyor. GEO stratejimizle kliniğinizi yapay zekânın kaynak veri tabanına entegre ediyoruz.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Entegre Ekosistem Bağlantıları</h3>
+        <p><strong>Tamamlayıcı Çözümler:</strong> <a href="/hizmetler/uluslararasi-seo-hizmeti">Uluslararası SEO</a> | <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a> | <a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a></p>
+        <p><strong>Öncelikli Klinik Branşlar:</strong> <a href="/sektorler">Klinik Branşlar</a> (<a href="/dis-klinigi-reklam-ajansi">Diş</a>, <a href="/sac-ekimi-reklam-ajansi">Saç Ekimi</a>, <a href="/plastik-cerrahi-reklam-ajansi">Plastik Cerrahi</a>)</p>
+        <p><strong>Hedef Pazarlar:</strong> <a href="/ulkeler">Hedef Pazarlar</a> (<a href="/ingiltere-saglik-turizmi-reklamlari">İngiltere</a>, <a href="/almanya-saglik-turizmi-reklamlari">Almanya</a>)</p>
+        <p><strong>İlgili Rehber:</strong> <a href="/blog/saglik-turizmi-geo-nedir">GEO Nedir ve Nasıl Yapılır?</a></p>
       </section>
     `
   },
@@ -182,9 +214,18 @@ const ROUTES = [
     description: 'Yabancı hastalar için özel tasarlanmış, çok dilli, hızlı ve yüksek dönüşüm oranlı sağlık turizmi açılış sayfaları.',
     h1: 'Sağlık Turizmi Web Sitesi ve Landing Page',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / Web & Landing Page</p>
       <section>
         <h2>Yabancı Hastayı Randevuya Dönüştüren Sayfalar</h2>
         <p>3 saniyenin altında açılan, güven unsurları ve hekim yetkinliğini öne çıkaran çok dilli landing page tasarımları.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Alt Hizmetler ve Çapraz Çözümler</h3>
+        <p><strong>Alt Hizmetler:</strong> <a href="/hizmetler/klinik-web-tasarim">Klinik Web Tasarım</a> | <a href="/hizmetler/saglik-turizmi-landing-page">Sağlık Turizmi Landing Page</a></p>
+        <p><strong>Kardeş Hizmet Merkezleri:</strong> <a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a> | <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon</a> | <a href="/hizmetler/uluslararasi-seo-hizmeti">Uluslararası SEO</a></p>
+        <p><strong>Öncelikli Klinik Branşlar:</strong> <a href="/sektorler">Klinik Branşlar</a> (<a href="/dis-klinigi-reklam-ajansi">Diş</a>, <a href="/sac-ekimi-reklam-ajansi">Saç Ekimi</a>, <a href="/obezite-cerrahisi-reklam-ajansi">Obezite</a>)</p>
+        <p><strong>Hedef Pazarlar:</strong> <a href="/ulkeler">Hedef Pazarlar</a> (<a href="/ingiltere-saglik-turizmi-reklamlari">İngiltere</a>, <a href="/almanya-saglik-turizmi-reklamlari">Almanya</a>)</p>
+        <p><strong>İlgili Rehber:</strong> <a href="/blog/saglik-turizmi-landing-page-rehberi">Yüksek Dönüşümlü Landing Page Kılavuzu</a></p>
       </section>
     `
   },
@@ -194,9 +235,16 @@ const ROUTES = [
     description: 'WhatsApp entegrasyonlu, çok dilli satış ekibi için optimize edilmiş ve teklif yönetimli özel sağlık turizmi CRM sistemi.',
     h1: 'Sağlık Turizmi CRM Yazılımı',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon</a> / CRM Yazılımı</p>
       <section>
         <h2>Kayıp Lead'leri Sıfırlayan Hasta Yönetim Sistemi</h2>
         <p>WhatsApp, form ve çağrı kanallarından gelen başvuruları tek panelde toplayan ve satış danışmanlarının dönüşüm hızını artıran özel CRM.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon Merkezi</a></p>
+        <p><strong>Kardeş Çözüm:</strong> <a href="/hizmetler/yapay-zeka-otomasyon">Yapay Zekâ ve Otomasyon (AI Call Agent)</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-crm-secimi">CRM Seçim Rehberi</a></p>
       </section>
     `
   },
@@ -206,9 +254,16 @@ const ROUTES = [
     description: '7/24 çok dilli yapay zekâ sesli asistanları, otomatik lead kalifikasyonu ve akıllı randevu otomasyonları.',
     h1: 'Sağlık Turizmi Yapay Zekâ ve Otomasyon',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon</a> / Yapay Zekâ & Otomasyon</p>
       <section>
         <h2>Gece Gelen Hastayı Anında Karşılayan AI Sistemleri</h2>
         <p>Saat farkı olan ülkelerden gelen aramaları ve mesajları ana dilinde karşılayıp ön nitelikten geçiren yapay zekâ asistanları.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/crm-otomasyon">CRM & Otomasyon Merkezi</a></p>
+        <p><strong>Kardeş Çözüm:</strong> <a href="/hizmetler/saglik-turizmi-crm-yazilimi">Sağlık Turizmi CRM Yazılımı</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizminde-yapay-zeka-kullanimi">Sağlık Turizminde Yapay Zekâ</a></p>
       </section>
     `
   },
@@ -218,9 +273,16 @@ const ROUTES = [
     description: 'Hekim ve klinik markaları için estetik ve cerrahi güven odaklı profesyonel sosyal medya içerik yönetimi.',
     h1: 'Sağlık Turizmi Sosyal Medya Yönetimi',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a> / Sosyal Medya Yönetimi</p>
       <section>
         <h2>Uluslararası Hasta Güveni Oluşturan İçerikler</h2>
         <p>Instagram ve TikTok platformlarında ameliyat öncesi/sonrası, hasta deneyimleri ve uzman hekim anlatımları.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka Yönetimi Merkezi</a></p>
+        <p><strong>Kardeş Çözümler:</strong> <a href="/hizmetler/icerik-produksiyon">İçerik ve Prodüksiyon</a> | <a href="/doktor-marka-yonetimi">Doktor Marka Yönetimi</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-sosyal-medya-yonetimi">Sosyal Medya Yönetimi Rehberi</a></p>
       </section>
     `
   },
@@ -230,9 +292,16 @@ const ROUTES = [
     description: 'Klinik içi profesyonel 4K video çekimleri, cerrahi operasyon anlatımları ve uluslararası hasta röportajları.',
     h1: 'Sağlık Turizmi İçerik ve Prodüksiyon',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka</a> / İçerik ve Prodüksiyon</p>
       <section>
         <h2>Kliniğinizin Kalitesini Gösteren Profesyonel Prodüksiyon</h2>
         <p>Yabancı hastanın Türkiye'ye gelmeden kliniği hissetmesini sağlayan sinematik çekimler ve hekim güven videoları.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/icerik-marka-yonetimi">İçerik & Marka Yönetimi Merkezi</a></p>
+        <p><strong>Kardeş Çözümler:</strong> <a href="/hizmetler/sosyal-medya-yonetimi">Sosyal Medya Yönetimi</a> | <a href="/doktor-marka-yonetimi">Doktor Marka Yönetimi</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-video-produksiyon">Video Prodüksiyon Rehberi</a></p>
       </section>
     `
   },
@@ -1037,9 +1106,16 @@ const ROUTES = [
     description: 'Diş, saç ekimi ve cerrahi kliniklerine özel çok dilli Google Ads arama kampanyaları, negatif anahtar kelime filtreleri ve offline dönüşüm takibi.',
     h1: 'Sağlık Turizmi Google Ads Ajansı ve Uluslararası Arama Reklamları',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a> / Google Ads</p>
       <section>
         <h2>Yüksek Niyetli Arama Trafiğini Hastaya Dönüştürün</h2>
         <p>Google Ads arama ağında yüksek tedavi niyetli sorgular (Search Intent), negatif kelime optimizasyonu ve CRM offline dönüşüm entegrasyonu.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/performans-pazarlama">Performans Pazarlama Hub</a></p>
+        <p><strong>Kardeş Hizmet:</strong> <a href="/saglik-turizmi-meta-reklamlari">Sağlık Turizmi Meta Reklamları</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-performans-pazarlama">Performans Pazarlama Rehberi</a></p>
       </section>
     `
   },
@@ -1049,9 +1125,16 @@ const ROUTES = [
     description: 'Klinik ve cerrahlar için Instagram ve Facebook video reklamları, çok dilli hedef kitle segmentasyonu ve doğrudan WhatsApp lead akışı.',
     h1: 'Sağlık Turizmi Meta Reklamları: Instagram ve Facebook Hasta Edinimi',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/performans-pazarlama">Performans Pazarlama</a> / Meta Reklamları</p>
       <section>
         <h2>Görsel Güven ve Video Prodüksiyon Odaklı Meta Reklamları</h2>
         <p>Avrupa ve İngiltere hastaları için ameliyat öncesi/sonrası süreç anlatımları, hekim güveni ve doğrudan WhatsApp sohbet reklamları.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/performans-pazarlama">Performans Pazarlama Hub</a></p>
+        <p><strong>Kardeş Hizmet:</strong> <a href="/saglik-turizmi-google-ads">Sağlık Turizmi Google Ads Yönetimi</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-reklam-mevzuati-2026">Mevzuat Rehberi</a></p>
       </section>
     `
   },
@@ -1061,9 +1144,16 @@ const ROUTES = [
     description: 'Yabancı hastaların güven bariyerini aşan, çok dilli, hızlı ve yüksek dönüşüm oranlı sağlık turizmi açılış sayfaları ve CRO optimizasyonu.',
     h1: 'Sağlık Turizmi İçin Dönüşüm Odaklı Landing Page Tasarımı',
     content: `
+      <p style="font-size: 13px; color: #64748B;"><a href="/">Ana Sayfa</a> / <a href="/hizmetler">Hizmetler</a> / <a href="/hizmetler/web-sitesi-landing-page">Web & Landing Page</a> / Landing Page Tasarımı</p>
       <section>
         <h2>2 Saniyenin Altında Açılan Hızlı ve Yüksek Dönüşümlü Sayfalar</h2>
         <p>UX araştırması, şeffaf tedavi aşamaları, E-E-A-T rozetleri ve sürtünmesiz lead formlarıyla yabancı ziyaretçileri randevuya dönüştürün.</p>
+      </section>
+      <section style="margin-top: 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <h3>Bağlı Hizmet Merkezi ve İlgili Çözümler</h3>
+        <p><strong>Üst Hizmet Merkezi:</strong> <a href="/hizmetler/web-sitesi-landing-page">Web & Landing Page Hub</a></p>
+        <p><strong>Kardeş Çözüm:</strong> <a href="/hizmetler/web-sitesi-landing-page">Klinik Web Tasarım</a></p>
+        <p><strong>Entegre Ekosistem:</strong> <a href="/sektorler">Klinik Branşlar</a> | <a href="/ulkeler">Hedef Pazarlar</a> | <a href="/blog/saglik-turizmi-landing-page-rehberi">Landing Page Kılavuzu</a></p>
       </section>
     `
   },

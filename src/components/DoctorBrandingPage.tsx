@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   ArrowLeft, 
   CheckCircle2, 
@@ -245,13 +246,35 @@ export const DoctorBrandingPage: React.FC<DoctorBrandingPageProps> = ({
       {/* Top Header / Breadcrumb */}
       <div className="bg-white border-b border-[#DDE2E8] pt-24 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <button
-            onClick={onBackToHome}
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#446CB5] hover:text-[#35558F] transition-colors cursor-pointer"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>{isEn ? 'Back to Home' : 'Ana Sayfaya Dön'}</span>
-          </button>
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-semibold text-[#595F69] flex-wrap">
+            <Link to="/" className="hover:text-[#446CB5] transition-colors">
+              {isEn ? 'Home' : 'Ana Sayfa'}
+            </Link>
+            <span>/</span>
+            <Link to="/hizmetler" className="hover:text-[#446CB5] transition-colors">
+              {isEn ? 'Services' : 'Hizmetler'}
+            </Link>
+            <span>/</span>
+            <Link to="/hizmetler/icerik-marka-yonetimi" className="hover:text-[#446CB5] transition-colors font-medium">
+              {isEn ? 'Content & Brand' : 'İçerik & Marka'}
+            </Link>
+            <span>/</span>
+            <span className="text-[#446CB5] font-bold">{isEn ? 'Doctor Brand Management' : 'Doktor Marka Yönetimi'}</span>
+          </nav>
+
+          {/* Parent Family Context Banner */}
+          <div className="p-4 rounded-xl bg-[#EEF3FB] border border-[#446CB5]/25 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <p className="text-xs text-[#16202E]">
+              {isEn 
+                ? <>Part of the <strong>Content & Brand</strong> architecture. Related clinical branch: <Link to="/doktor-reklam-ajansi" className="text-[#446CB5] font-bold underline">Doctor Advertising Agency</Link>.</>
+                : <>Bu hizmet <strong>İçerik & Marka</strong> ailesinin bir parçasıdır. İlgili klinik branşı: <Link to="/doktor-reklam-ajansi" className="text-[#446CB5] font-bold underline">Doktor Reklam Ajansı</Link>.</>}
+            </p>
+            <Link to="/hizmetler/icerik-marka-yonetimi" className="text-xs font-bold text-[#446CB5] hover:underline flex items-center gap-1 shrink-0">
+              <span>{isEn ? 'View Content & Brand Hub' : 'İçerik & Marka Merkezini İncele'}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] border border-[#446CB5]/20 text-xs font-bold text-[#446CB5]">

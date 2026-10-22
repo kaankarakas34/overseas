@@ -71,6 +71,22 @@ export function ServicesDirectoryPage({familyId, onOpenConsultation}: {familyId?
             <h2 id="starting-point" className="text-2xl font-bold mb-4">{isEn ? 'How do we choose the right scope?' : 'Doğru çalışma kapsamını nasıl seçiyoruz?'}</h2>
             <p className="text-[#595F69] leading-relaxed mb-5">{isEn ? 'Review your organisation, target countries and current acquisition process before choosing a channel. A CRM follow-up problem and an advertising problem need different interventions.' : 'Kanal seçmeden önce kurumunuzu, hedef ülkeleri ve mevcut başvuru sürecini birlikte değerlendiririz. CRM takibindeki bir sorun ile reklam erişimindeki bir sorun farklı müdahaleler gerektirir.'}</p>
             <ol className="list-decimal pl-5 space-y-3 text-[#595F69]"><li>{isEn ? 'Define the audience, languages and target markets.' : 'Hedef kitleyi, dilleri ve hedef pazarları netleştirin.'}</li><li>{isEn ? 'Identify the bottleneck between discovery, enquiry and follow-up.' : 'Görünürlük, başvuru ve takip arasındaki darboğazı belirleyin.'}</li><li>{isEn ? 'Agree priorities, ownership and measurement for the selected services.' : 'Seçilen hizmetler için öncelik, sorumluluk ve ölçüm planını oluşturun.'}</li></ol>
+            <div className="grid sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-100">
+              <Link to="/sektorler" className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] flex items-center justify-between">
+                <div>
+                  <div className="text-xs font-bold text-[#446CB5] uppercase">{isEn ? 'Specialty Solutions' : 'Klinik Branşları'}</div>
+                  <div className="text-sm font-semibold text-[#16202E]">{isEn ? 'Explore 15 Healthcare Sectors' : '15 Uzmanlık Alanı ve Branş Mimarisi'}</div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[#446CB5]" />
+              </Link>
+              <Link to="/ulkeler" className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] flex items-center justify-between">
+                <div>
+                  <div className="text-xs font-bold text-[#446CB5] uppercase">{isEn ? 'Target Markets' : 'Hedef Pazarlar'}</div>
+                  <div className="text-sm font-semibold text-[#16202E]">{isEn ? 'Cross-Border Patient Corridors' : 'Avrupa ve Küresel Sağlık Koridorları'}</div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[#446CB5]" />
+              </Link>
+            </div>
           </section>
         </> : family.hub && <>
           <section className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -79,6 +95,25 @@ export function ServicesDirectoryPage({familyId, onOpenConsultation}: {familyId?
           </section>
           <section className="mb-12"><h2 className="text-2xl font-bold mb-5">{isEn ? 'Explore the related services' : 'İlgili alt hizmetleri inceleyin'}</h2><div className="grid sm:grid-cols-2 gap-4">{family.links.map(link => <Link key={link.url} to={href(link.url)} className="bg-white border border-[#DDE2E8] rounded-2xl p-5 font-semibold text-[#446CB5] flex items-center justify-between gap-4 hover:underline">{copy(link.label)}<ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" /></Link>)}</div></section>
           <section className="mb-12 max-w-4xl"><h2 className="text-2xl font-bold mb-4">{isEn ? 'Scope and working boundaries' : 'Kapsam ve çalışma sınırları'}</h2><p className="text-[#595F69] leading-relaxed">{copy(family.hub.boundary)}</p></section>
+          <section className="bg-white border border-[#DDE2E8] rounded-3xl p-6 sm:p-8 mb-12">
+            <h2 className="text-xl font-bold mb-4">{isEn ? 'Specialty & Market Integrations' : 'Bağlantılı Klinik Branşlar ve Hedef Pazarlar'}</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/sektorler" className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] flex items-center justify-between">
+                <div>
+                  <div className="text-xs font-bold text-[#446CB5] uppercase">{isEn ? 'Clinical Specialties' : 'Klinik Branşları'}</div>
+                  <div className="text-sm font-semibold text-[#16202E]">{isEn ? 'View 15 Medical Specialties' : '15 Sağlık Branşı ve Çözümleri'}</div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[#446CB5]" />
+              </Link>
+              <Link to="/ulkeler" className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] flex items-center justify-between">
+                <div>
+                  <div className="text-xs font-bold text-[#446CB5] uppercase">{isEn ? 'Target Markets' : 'Hedef Pazarlar'}</div>
+                  <div className="text-sm font-semibold text-[#16202E]">{isEn ? 'UK, DACH, France, Benelux' : 'İngiltere, DACH, Fransa, Benelüks'}</div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[#446CB5]" />
+              </Link>
+            </div>
+          </section>
           <Link to={href('/hizmetler')} className="text-[#446CB5] font-semibold hover:underline inline-block mb-10">{isEn ? 'Explore all six service families' : 'Altı hizmet ailesinin tamamını inceleyin'}</Link>
         </>}
         <section className="bg-[#16202E] text-white rounded-3xl p-8 sm:p-12">

@@ -16,11 +16,14 @@ import {
   FileText,
   Calendar,
   Search,
-  Check
+  Check,
+  Building2,
+  ArrowUpRight
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { MASTER_SERVICES, ServiceItem } from '../data/masterPlanData';
 import { MASTER_SERVICES_EN } from '../i18n/masterPlanData.en';
+import { SERVICE_RELATIONS } from '../data/serviceRelations';
 import { useLanguage } from '../context/LanguageContext';
 
 interface ServiceDetailPageProps {
@@ -53,6 +56,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
   const servicesList = isEn ? MASTER_SERVICES_EN : MASTER_SERVICES;
   const service: ServiceItem | undefined = servicesList.find(s => s.id === serviceId) || servicesList[0];
+  const relations = SERVICE_RELATIONS[service.id];
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -165,32 +169,67 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         
         {/* Top Breadcrumb & Back button */}
         <div className="flex items-center justify-between border-b border-[#DDE2E8] pb-4">
-          <nav className="flex items-center gap-2 text-xs font-semibold text-[#595F69]">
-            <button 
-              onClick={onBackToHome}
-              className="hover:text-[#446CB5] transition-colors cursor-pointer"
+          <nav className="flex items-center gap-2 text-xs font-semibold text-[#595F69] flex-wrap">
+            <Link 
+              to="/"
+              className="hover:text-[#446CB5] transition-colors"
             >
               {isEn ? 'Home' : 'Ana Sayfa'}
-            </button>
+            </Link>
             <span>/</span>
-            <button 
-              onClick={onBackToHome}
-              className="hover:text-[#446CB5] transition-colors cursor-pointer"
+            <Link 
+              to="/hizmetler"
+              className="hover:text-[#446CB5] transition-colors"
             >
               {isEn ? 'Services' : 'Hizmetler'}
-            </button>
+            </Link>
+            {relations?.parentHub && (
+              <>
+                <span>/</span>
+                <Link 
+                  to={relations.parentHub.url}
+                  className="hover:text-[#446CB5] transition-colors font-medium"
+                >
+                  {isEn ? relations.parentHub.titleEn : relations.parentHub.title}
+                </Link>
+              </>
+            )}
             <span>/</span>
             <span className="text-[#446CB5] font-bold">{service.title}</span>
           </nav>
 
-          <button
-            onClick={onBackToHome}
+          <Link
+            to="/hizmetler"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-[#DDE2E8] text-xs font-semibold text-[#222222] hover:bg-[#EEF3FB] transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-3.5 h-3.5 text-[#446CB5]" />
-            <span>{isEn ? 'All Services' : 'Tüm Hizmetlere Dön'}</span>
-          </button>
+            <span>{isEn ? 'All Services' : 'Tüm Hizmetler'}</span>
+          </Link>
         </div>
+
+        {/* Parent Hub Context Banner (For Child/Sub-services) */}
+        {relations?.parentHub && (
+          <div className="p-5 rounded-2xl bg-[#EEF3FB] border border-[#446CB5]/25 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#446CB5]/15 text-[#446CB5] text-[11px] font-bold uppercase tracking-wider mb-1.5">
+                <Layers className="w-3 h-3" />
+                <span>{isEn ? 'Parent Service Family' : 'Üst Hizmet Ailesi'}</span>
+              </div>
+              <p className="text-xs sm:text-sm text-[#16202E] leading-relaxed">
+                {isEn 
+                  ? <>This capability operates within the <strong>{relations.parentHub.titleEn}</strong> framework. {relations.parentHub.descEn}</>
+                  : <>Bu uzmanlık çözümü, <strong>{relations.parentHub.title}</strong> ailesinin entegre bir bileşenidir. {relations.parentHub.desc}</>}
+              </p>
+            </div>
+            <Link
+              to={relations.parentHub.url}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-[#446CB5]/30 text-xs font-bold text-[#446CB5] hover:bg-[#446CB5] hover:text-white transition-all shrink-0 shadow-xs"
+            >
+              <span>{isEn ? 'View Family Hub' : 'Ana Aileyi İncele'}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        )}
 
         {/* 1. Service Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -1489,6 +1528,173 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </div>
 
         </div>
+
+        {/* Bidirectional Mesh: Sub-services (If Hub) */}
+        {relations?.subServices && relations.subServices.length > 0 && (
+          <section className="bg-white p-8 sm:p-10 rounded-3xl border border-[#DDE2E8]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-[#446CB5] text-xs font-bold mb-4">
+              <Layers className="w-3.5 h-3.5" />
+              <span>{isEn ? 'Specialized Sub-Services' : 'Bu Ailenin Özel Alt Hizmetleri'}</span>
+            </div>
+            <h2 className="font-['Inter_Tight'] text-2xl sm:text-3xl font-extrabold text-[#16202E] mb-3">
+              {isEn ? `Dedicated Solutions Under ${service.title}` : `${service.title} Ailesine Bağlı Uygulama Alanları`}
+            </h2>
+            <p className="text-sm text-[#595F69] max-w-3xl mb-8 leading-relaxed">
+              {isEn
+                ? 'Deploy these focused capabilities independently or as part of an integrated international growth retainer.'
+                : 'Bu uzmanlık alanlarını bağımsız olarak devreye alabilir veya entegre büyüme planınız kapsamında yönetebilirsiniz.'}
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {relations.subServices.map((sub, sIdx) => (
+                <div key={sIdx} className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] transition-all flex flex-col justify-between group">
+                  <div>
+                    <h3 className="font-bold text-lg text-[#16202E] group-hover:text-[#446CB5] transition-colors mb-2">
+                      {isEn ? sub.titleEn : sub.title}
+                    </h3>
+                    <p className="text-xs text-[#595F69] leading-relaxed mb-4">
+                      {isEn ? sub.descEn : sub.desc}
+                    </p>
+                  </div>
+                  <Link
+                    to={sub.url}
+                    className="font-bold text-xs text-[#446CB5] hover:underline inline-flex items-center gap-1.5 self-start pt-2"
+                  >
+                    <span>{isEn ? 'Explore Sub-Service' : 'Alt Hizmeti İncele'}</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Bidirectional Mesh: Sibling Services (If Sub-Service) */}
+        {relations?.siblingServices && relations.siblingServices.length > 0 && (
+          <section className="bg-white p-6 sm:p-8 rounded-3xl border border-[#DDE2E8]">
+            <div className="text-xs font-bold text-[#446CB5] uppercase tracking-wider mb-2">
+              {isEn ? 'Sibling Capabilities' : 'Aynı Ailedeki Diğer Çözümler'}
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              {relations.siblingServices.map((sib, sbIdx) => (
+                <Link
+                  key={sbIdx}
+                  to={sib.url}
+                  className="px-4 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#DDE2E8] hover:border-[#446CB5] text-xs font-bold text-[#16202E] hover:text-[#446CB5] transition-all flex items-center gap-1.5"
+                >
+                  <span>{isEn ? sib.titleEn : sib.title}</span>
+                  <ArrowRight className="w-3 h-3 text-[#446CB5]" />
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Bidirectional Mesh: Specialties, Markets & Guide Articles */}
+        <section className="bg-white p-8 sm:p-10 rounded-3xl border border-[#DDE2E8] space-y-8">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF3FB] text-[#446CB5] text-xs font-bold mb-3">
+              <Globe2 className="w-3.5 h-3.5" />
+              <span>{isEn ? 'Ecosystem Integration' : 'Entegre Ekosistem Bağlantıları'}</span>
+            </div>
+            <h2 className="font-['Inter_Tight'] text-2xl font-bold text-[#16202E]">
+              {isEn ? `How ${service.title} Connects with Specialties & Markets` : `${service.title} ile Bağlantılı Branşlar ve Hedef Pazarlar`}
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 pt-2 border-t border-slate-100">
+            {/* Related Specialties */}
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="font-bold text-sm text-[#16202E] flex items-center gap-1.5">
+                  <Building2 className="w-4 h-4 text-[#446CB5]" />
+                  <span>{isEn ? 'Related Specialties' : 'Öncelikli Klinik Branşlar'}</span>
+                </h3>
+                <Link to="/sektorler" className="text-[11px] font-bold text-[#446CB5] hover:underline">
+                  {isEn ? 'All (15)' : 'Tümü (15)'}
+                </Link>
+              </div>
+              <ul className="space-y-2 text-xs">
+                {relations?.relatedBranches?.map((br, bIdx) => (
+                  <li key={bIdx}>
+                    <Link
+                      to={`/${br.slug}`}
+                      className="text-[#595F69] hover:text-[#446CB5] transition-colors flex items-center justify-between p-2 rounded-lg hover:bg-[#F8FAFC]"
+                    >
+                      <span>{isEn ? br.titleEn : br.title}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Related Markets */}
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="font-bold text-sm text-[#16202E] flex items-center gap-1.5">
+                  <Globe2 className="w-4 h-4 text-[#446CB5]" />
+                  <span>{isEn ? 'Target Country Corridors' : 'Hedef Ülke Koridorları'}</span>
+                </h3>
+                <Link to="/ulkeler" className="text-[11px] font-bold text-[#446CB5] hover:underline">
+                  {isEn ? 'All Markets' : 'Tüm Pazarlar'}
+                </Link>
+              </div>
+              <ul className="space-y-2 text-xs">
+                {relations?.relatedMarkets?.map((mk, mIdx) => (
+                  <li key={mIdx}>
+                    <Link
+                      to={`/${mk.slug}`}
+                      className="text-[#595F69] hover:text-[#446CB5] transition-colors flex items-center justify-between p-2 rounded-lg hover:bg-[#F8FAFC]"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span>{mk.flag}</span>
+                        <span>{isEn ? mk.titleEn : mk.title}</span>
+                      </span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Related Families & Guides */}
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="font-bold text-sm text-[#16202E] flex items-center gap-1.5">
+                  <FileText className="w-4 h-4 text-[#446CB5]" />
+                  <span>{isEn ? 'Related Guides & Hubs' : 'İlgili Merkez & Rehberler'}</span>
+                </h3>
+                <Link to="/blog" className="text-[11px] font-bold text-[#446CB5] hover:underline">
+                  {isEn ? 'Blog' : 'Rehber'}
+                </Link>
+              </div>
+              <ul className="space-y-2 text-xs">
+                {relations?.relatedFamilies?.map((fam, fIdx) => (
+                  <li key={`fam-${fIdx}`}>
+                    <Link
+                      to={fam.url}
+                      className="text-[#446CB5] font-semibold hover:underline flex items-center justify-between p-2 rounded-lg bg-[#EEF3FB]/50"
+                    >
+                      <span>{isEn ? fam.titleEn : fam.title}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </li>
+                ))}
+                {relations?.relatedArticles?.map((art, aIdx) => (
+                  <li key={`art-${aIdx}`}>
+                    <Link
+                      to={art.url}
+                      className="text-[#595F69] hover:text-[#446CB5] transition-colors flex items-center justify-between p-2 rounded-lg hover:bg-[#F8FAFC]"
+                    >
+                      <span className="line-clamp-1">{isEn ? art.titleEn : art.title}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
 
         {/* 4. Consultation Booking Form */}
         <div className="max-w-4xl mx-auto rounded-3xl bg-[#16202E] text-white p-8 sm:p-12 shadow-2xl border border-slate-700 space-y-8">
