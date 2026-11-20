@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { PartnerLogos } from './components/PartnerLogos';
 import { ProblemApproach } from './components/ProblemApproach';
 import { ServicesSection } from './components/ServicesSection';
+import { AiVisibilitySection } from './components/AiVisibilitySection';
 import { DoctorBrandingSection } from './components/DoctorBrandingSection';
 import { GrowthWorkflow } from './components/GrowthWorkflow';
 import { RoadmapSection } from './components/RoadmapSection';
@@ -280,6 +281,8 @@ const HomePage: React.FC<{
         onSelectService={onSelectService}
         onOpenConsultation={onOpenConsultation}
       />
+
+      <AiVisibilitySection />
 
       <DoctorBrandingSection
         onNavigateDoctorBranding={onNavigateDoctorBranding}
