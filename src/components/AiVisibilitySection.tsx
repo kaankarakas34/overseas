@@ -24,9 +24,6 @@ export const AiVisibilitySection = () => {
           <div className="text-left">
             <div className="mb-7 border-l-2 border-[#446CB5] pl-4">
               <p className="font-['Inter_Tight'] text-xl font-bold tracking-tight text-[#222222]">Yapay Zekada Reklam</p>
-              <p className="mt-1 text-sm text-[#595F69]">
-                {isEn ? 'An Overseas Marketing brand' : 'Bir Overseas Marketing markası'}
-              </p>
             </div>
 
             <h2 id="ai-visibility-title" className="max-w-xl font-['Inter_Tight'] text-3xl font-extrabold leading-tight tracking-tight text-[#222222] sm:text-4xl">
@@ -34,8 +31,8 @@ export const AiVisibilitySection = () => {
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#595F69]">
               {isEn
-                ? 'What information do people find about your clinic when they ask ChatGPT, Gemini or Perplexity? Through Yapay Zekada Reklam, our specialist brand for AI visibility, we help you assess your presence and plan how to improve it.'
-                : 'ChatGPT, Gemini veya Perplexity’ye kliniğinizi soran bir kişi hangi bilgilerle karşılaşıyor? Yapay zekâda görünürlük alanındaki uzman markamız Yapay Zekada Reklam ile mevcut durumunuzu analiz ediyor, gelişim için yol haritanızı oluşturuyoruz.'}
+                ? 'What information do people find about your clinic when they ask ChatGPT, Gemini or Perplexity? We assess your visibility in AI answers and create a roadmap to strengthen your content and sources.'
+                : 'ChatGPT, Gemini veya Perplexity’ye kliniğinizi soran bir kişi hangi bilgilerle karşılaşıyor? Yapay zekâ yanıtlarındaki görünürlüğünüzü analiz ediyor, içerik ve kaynak yapınızı geliştirmek için yol haritası hazırlıyoruz.'}
             </p>
 
             <div className="mt-7 flex flex-col items-start gap-4">
