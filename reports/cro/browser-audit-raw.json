@@ -1,0 +1,673 @@
+{
+  "baseUrl": "http://127.0.0.1:5190",
+  "timestamp": "2026-11-23T18:55:20.395Z",
+  "pages": {
+    "/": {
+      "desktop-1440": {
+        "title": "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing",
+        "h1Text": "Sağlık Turizmi İçin Reklam, SEO, GEO ve Hasta İletişim Sistemi",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 16470,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing",
+        "h1Text": "Sağlık Turizmi İçin Reklam, SEO, GEO ve Hasta İletişim Sistemi",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 18182,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing",
+        "h1Text": "Sağlık Turizmi İçin Reklam, SEO, GEO ve Hasta İletişim Sistemi",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 23073,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing",
+        "h1Text": "Sağlık Turizmi İçin Reklam, SEO, GEO ve Hasta İletişim Sistemi",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 32352,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "Sağlık Turizmi Reklam Ajansı | Yurt Dışı Hasta Büyümesi – Overseas Marketing",
+        "h1Text": "Sağlık Turizmi İçin Reklam, SEO, GEO ve Hasta İletişim Sistemi",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 33090,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    },
+    "/teklif-al": {
+      "desktop-1440": {
+        "title": "Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing",
+        "h1Text": "Kliniğinize özel sağlık turizmi büyüme teklifi alın",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 491,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing",
+        "h1Text": "Kliniğinize özel sağlık turizmi büyüme teklifi alın",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 491,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing",
+        "h1Text": "Kliniğinize özel sağlık turizmi büyüme teklifi alın",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 491,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing",
+        "h1Text": "Kliniğinize özel sağlık turizmi büyüme teklifi alın",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 446,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "Sağlık Turizmi Teklif Al | Bütçe ve CPL Analizi | Overseas Marketing",
+        "h1Text": "Kliniğinize özel sağlık turizmi büyüme teklifi alın",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 484,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    },
+    "/iletisim": {
+      "desktop-1440": {
+        "title": "İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı",
+        "h1Text": "Kliniğinizin büyüme hedeflerini birlikte planlayalım.",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 574,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı",
+        "h1Text": "Kliniğinizin büyüme hedeflerini birlikte planlayalım.",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 574,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı",
+        "h1Text": "Kliniğinizin büyüme hedeflerini birlikte planlayalım.",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 554,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı",
+        "h1Text": "Kliniğinizin büyüme hedeflerini birlikte planlayalım.",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 669,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "İletişim | Overseas Marketing Sağlık Turizmi Reklam Ajansı",
+        "h1Text": "Kliniğinizin büyüme hedeflerini birlikte planlayalım.",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 698,
+        "firstFormInFirstFold": true,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    },
+    "/hizmetler": {
+      "desktop-1440": {
+        "title": "Dijital Pazarlama ve Büyüme Hizmetleri | Overseas Marketing",
+        "h1Text": "Dijital pazarlama ve büyüme hizmetleri",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "Dijital Pazarlama ve Büyüme Hizmetleri | Overseas Marketing",
+        "h1Text": "Dijital pazarlama ve büyüme hizmetleri",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "Dijital Pazarlama ve Büyüme Hizmetleri | Overseas Marketing",
+        "h1Text": "Dijital pazarlama ve büyüme hizmetleri",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "Dijital Pazarlama ve Büyüme Hizmetleri | Overseas Marketing",
+        "h1Text": "Dijital pazarlama ve büyüme hizmetleri",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "Dijital Pazarlama ve Büyüme Hizmetleri | Overseas Marketing",
+        "h1Text": "Dijital pazarlama ve büyüme hizmetleri",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    },
+    "/hizmetler/performans-pazarlama": {
+      "desktop-1440": {
+        "title": "Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing",
+        "h1Text": "Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 8843,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing",
+        "h1Text": "Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 9244,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing",
+        "h1Text": "Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 11310,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing",
+        "h1Text": "Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 14728,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "Sağlık Turizmi Reklam Yönetimi | Google Ads ve Meta – Overseas Marketing",
+        "h1Text": "Sağlık turizmi reklam yönetimi: ülke, branş ve dönüşüm odaklı plan",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 1,
+        "visibleFormCount": 1,
+        "firstFormTop": 15375,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    },
+    "/basari-hikayeleri": {
+      "desktop-1440": {
+        "title": "Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing",
+        "h1Text": "Sağlık turizminde gerçek sonuçlar: Sorun, strateji ve ölçülebilir başarı.",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": true,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "laptop-1024": {
+        "title": "Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing",
+        "h1Text": "Sağlık turizminde gerçek sonuçlar: Sorun, strateji ve ölçülebilir başarı.",
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "tablet-768": {
+        "title": "Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing",
+        "h1Text": "Sağlık turizminde gerçek sonuçlar: Sorun, strateji ve ölçülebilir başarı.",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-390": {
+        "title": "Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing",
+        "h1Text": "Sağlık turizminde gerçek sonuçlar: Sorun, strateji ve ölçülebilir başarı.",
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      },
+      "mobile-360": {
+        "title": "Sağlık Turizmi Vaka Analizleri ve Başarı Hikayeleri | Overseas Marketing",
+        "h1Text": "Sağlık turizminde gerçek sonuçlar: Sorun, strateji ve ölçülebilir başarı.",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "hasHorizontalOverflow": false,
+        "formCount": 0,
+        "visibleFormCount": 0,
+        "firstFormTop": null,
+        "firstFormInFirstFold": false,
+        "headerCtaVisible": false,
+        "whatsappVisible": true,
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "pageErrors": []
+      }
+    }
+  },
+  "formTests": {
+    "/teklif-al": {
+      "formExists": true,
+      "capturedPayloadKeys": [
+        "fullName",
+        "institution",
+        "phone",
+        "email",
+        "specialty",
+        "targetCountry",
+        "monthlyBudget",
+        "notes",
+        "sourcePage",
+        "submittedAt"
+      ],
+      "falseSuccessOn500": true,
+      "errorAlertVisibleOn500": false
+    },
+    "/iletisim": {
+      "formExists": true,
+      "capturedPayloadKeys": [
+        "fullName",
+        "institution",
+        "email",
+        "phone",
+        "serviceNeed",
+        "targetMarket",
+        "message",
+        "sourcePage",
+        "submittedAt"
+      ],
+      "falseSuccessOn500": true,
+      "errorAlertVisibleOn500": false
+    }
+  },
+  "axe": {
+    "/": {
+      "totalViolations": 1,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        }
+      ]
+    },
+    "/teklif-al": {
+      "totalViolations": 2,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
+        },
+        {
+          "id": "select-name",
+          "impact": "critical",
+          "help": "Select element must have an accessible name",
+          "nodes": 3
+        }
+      ]
+    },
+    "/iletisim": {
+      "totalViolations": 2,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 6
+        },
+        {
+          "id": "select-name",
+          "impact": "critical",
+          "help": "Select element must have an accessible name",
+          "nodes": 2
+        }
+      ]
+    },
+    "/hizmetler": {
+      "totalViolations": 1,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
+        }
+      ]
+    },
+    "/hizmetler/performans-pazarlama": {
+      "totalViolations": 1,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
+        }
+      ]
+    },
+    "/basari-hikayeleri": {
+      "totalViolations": 1,
+      "criticalOrSerious": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 9
+        }
+      ]
+    }
+  }
+}
