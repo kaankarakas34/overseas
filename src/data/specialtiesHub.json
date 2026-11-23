@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {"id":"surgery","tr":"Cerrahi branşlar","en":"Surgical specialties"},
+    {"id":"dental","tr":"Diş klinikleri","en":"Dental clinics"},
+    {"id":"aesthetic","tr":"Estetik ve dermatoloji","en":"Aesthetics and dermatology"},
+    {"id":"specialized","tr":"Diğer uzmanlık alanları","en":"Other specialties"},
+    {"id":"institutional","tr":"Kurumlar ve hekimler","en":"Institutions and physicians"}
+  ],
+  "branches": [
+    {"slug":"sac-ekimi-reklam-ajansi","category":"surgery","tr":"Saç ekimi merkezleri","en":"Hair transplant clinics","summary":{"tr":"Hedef dilde hizmet anlatımı, başvuru kanalları ve CRM üzerinden görüşme takibi.","en":"Service information in the target language, enquiry channels and consultation tracking in CRM."}},
+    {"slug":"plastik-cerrahi-reklam-ajansi","category":"surgery","tr":"Plastik cerrahi klinikleri","en":"Plastic surgery clinics","summary":{"tr":"Hekim ve hizmet bilgilerinin doğrulanması, içerik planı ve başvurudan görüşmeye geçişin ölçümü.","en":"Verification of physician and service information, content planning and enquiry-to-consultation measurement."}},
+    {"slug":"obezite-cerrahisi-reklam-ajansi","category":"surgery","tr":"Obezite cerrahisi klinikleri","en":"Bariatric surgery clinics","summary":{"tr":"Hizmet kapsamını açıklayan içerik, ülke ve dil planlaması, başvuru kaynağı takibi.","en":"Content explaining service scope, country and language planning, and enquiry source tracking."}},
+    {"slug":"ortopedi-reklam-ajansi","category":"surgery","tr":"Ortopedi klinikleri","en":"Orthopaedic clinics","summary":{"tr":"Uzmanlık alanına göre içerik mimarisi, arama niyeti eşlemesi ve nitelikli başvuru ölçümü.","en":"Specialty-specific content architecture, search intent mapping and qualified enquiry measurement."}},
+    {"slug":"goz-klinigi-reklam-ajansi","category":"surgery","tr":"Göz klinikleri","en":"Eye clinics","summary":{"tr":"Hedef dilde hizmet sayfaları, reklam mesajı ile sayfa uyumu ve görüşme kaynağı takibi.","en":"Service pages in the target language, ad-to-page message alignment and consultation source tracking."}},
+    {"slug":"dis-klinigi-reklam-ajansi","category":"dental","tr":"Diş klinikleri","en":"Dental clinics","summary":{"tr":"Hizmet bazlı arama niyeti, çok dilli açılış sayfaları ve başvurudan randevuya dönüşüm takibi.","en":"Service-specific search intent, multilingual landing pages and enquiry-to-appointment tracking."}},
+    {"slug":"estetik-klinigi-reklam-ajansi","category":"aesthetic","tr":"Estetik klinikleri","en":"Aesthetic clinics","summary":{"tr":"Hizmet kapsamına göre içerik ve kreatif planı, kanal seçimi ve lead niteliği analizi.","en":"Content and creative planning by service scope, channel selection and lead quality analysis."}},
+    {"slug":"medikal-estetik-reklam-ajansi","category":"aesthetic","tr":"Medikal estetik klinikleri","en":"Medical aesthetics clinics","summary":{"tr":"Hizmet bilgisini açıklayan sayfalar, yayın öncesi iddia kontrolü ve kampanya ölçüm planı.","en":"Pages explaining service information, pre-publication claim review and campaign measurement planning."}},
+    {"slug":"dermatoloji-reklam-ajansi","category":"aesthetic","tr":"Dermatoloji klinikleri","en":"Dermatology clinics","summary":{"tr":"Uzmanlık içeriklerinin düzenlenmesi, hedef dilde görünürlük ve başvuru takibi.","en":"Organisation of specialty content, target-language visibility and enquiry tracking."}},
+    {"slug":"tup-bebek-reklam-ajansi","category":"specialized","tr":"Tüp bebek (IVF) merkezleri","en":"IVF and fertility clinics","summary":{"tr":"Bilgilendirici içerik, hassas veri toplamayan ilk temas ve kurum ekibine yönlendirme akışı.","en":"Informational content, initial contact without collecting sensitive data, and routing to the facility team."}},
+    {"slug":"fizik-tedavi-reklam-ajansi","category":"specialized","tr":"Fizik tedavi merkezleri","en":"Physiotherapy centres","summary":{"tr":"Hizmet kapsamını anlatan sayfalar, hedef pazar araştırması ve CRM görüşme takibi.","en":"Pages describing service scope, target market research and CRM consultation tracking."}},
+    {"slug":"hastane-reklam-ajansi","category":"institutional","tr":"Hastaneler","en":"Hospitals","summary":{"tr":"Çok branşlı site mimarisi, ülke bazlı iletişim ve departmanlar arası lead yönlendirme.","en":"Multi-specialty site architecture, country-specific communication and lead routing between departments."}},
+    {"slug":"doktor-reklam-ajansi","category":"institutional","tr":"Hekimler","en":"Physicians","summary":{"tr":"Doğrulanabilir uzmanlık profili, içerik planlaması ve mevcut iletişim kanallarına yönlendirme.","en":"Verifiable professional profiles, content planning and routing to existing contact channels."}},
+    {"slug":"klinik-reklam-ajansi","category":"institutional","tr":"Klinikler ve tıp merkezleri","en":"Clinics and medical centres","summary":{"tr":"Hedef pazar önceliği, reklam–SEO koordinasyonu ve satış ekibinin başvuru takibi.","en":"Target market prioritisation, paid search–SEO coordination and sales team enquiry tracking."}},
+    {"slug":"saglik-turizmi-araci-kurulus-pazarlama","category":"institutional","tr":"Sağlık turizmi aracı kuruluşları","en":"Medical tourism intermediaries","summary":{"tr":"Kurum rolünün netleştirilmesi, çok dilli iletişim ve tesis bazında CRM yönlendirmesi.","en":"Clarification of the organisation role, multilingual communication and facility-specific CRM routing."}}
+  ],
+  "planningRows": [
+    {"slug":"sac-ekimi-reklam-ajansi","question":{"tr":"Hangi dildeki başvurular görüşmeye dönüşüyor?","en":"Which enquiry languages lead to consultations?"},"input":{"tr":"Dil, kaynak sayfa ve CRM görüşme durumu","en":"Language, landing page and CRM consultation status"}},
+    {"slug":"dis-klinigi-reklam-ajansi","question":{"tr":"Hangi hizmet sayfaları nitelikli talep getiriyor?","en":"Which service pages bring qualified enquiries?"},"input":{"tr":"Sorgu–sayfa eşlemesi ve randevu durumu","en":"Query-to-page mapping and appointment status"}},
+    {"slug":"obezite-cerrahisi-reklam-ajansi","question":{"tr":"Bilgi talebi ile görüşme talebi nasıl ayrılıyor?","en":"How are information and consultation requests separated?"},"input":{"tr":"Kurumun onayladığı içerik ve CRM aşaması","en":"Facility-approved content and CRM stage"}},
+    {"slug":"plastik-cerrahi-reklam-ajansi","question":{"tr":"Hangi kanallar görüşmeye katkı sağlıyor?","en":"Which channels contribute to consultations?"},"input":{"tr":"İzinli içerik kaydı, kanal ve görüşme kaynağı","en":"Content permission records, channel and consultation source"}},
+    {"slug":"tup-bebek-reklam-ajansi","question":{"tr":"İlk temas doğru kurum ekibine ulaşıyor mu?","en":"Does the first enquiry reach the right facility team?"},"input":{"tr":"Dil, iletişim tercihi ve yönlendirme durumu","en":"Language, contact preference and routing status"}},
+    {"slug":"saglik-turizmi-araci-kurulus-pazarlama","question":{"tr":"Başvuru hangi tesise yönlendiriliyor?","en":"Which facility receives each enquiry?"},"input":{"tr":"Kurum rolü, hizmet kapsamı ve yönlendirme kaydı","en":"Organisation role, service scope and routing record"}}
+  ],
+  "copy": {
+    "tr": {
+      "title":"Hizmet Verdiğimiz Sağlık Branşları ve Sektörler | Overseas Marketing",
+      "description":"Diş klinikleri, saç ekimi, plastik cerrahi, tüp bebek, obezite, göz ve hastaneler için özel sağlık turizmi pazarlama çözümleri ve 15 branş rehberi.",
+      "home":"Ana Sayfa","directory":"Uzmanlık Alanları",
+      "h1":"Klinik branşlarına ve kurum türüne göre sağlık turizmi pazarlaması",
+      "intro":"Klinik sahibi, hastane yöneticisi ve uluslararası hasta departmanı için branşa göre reklam, SEO ve CRM planlaması. Mevcut 15 branş ve kurum rehberinden ihtiyacınıza uygun olanı seçin; hedef dil, hizmet kapsamı ve nitelikli başvuru ölçümünü birlikte değerlendirin.",
+      "all":"Tüm alanlar","filterLabel":"Uzmanlık alanlarını filtrele","results":"rehber gösteriliyor",
+      "directoryTitle":"Branş ve kurum rehberleri","detail":"Branş rehberini incele",
+      "matrixTitle":"Branşa göre pazarlama planında hangi veriler gerekir?",
+      "matrixIntro":"Bu tablo bir planlama çerçevesidir; pazar büyüklüğü, karar süresi veya sonuç benchmarkı sunmaz. Kanal ve bütçe kararı kurumun verileri, hedef ülke ve hizmet kapsamı üzerinden verilir.",
+      "matrixColumns":["Branş / kurum","Planlama sorusu","İncelenecek veri"],
+      "reviewTitle":"Kampanya öncesi içerik ve yetki kontrolü",
+      "reviewIntro":"Kurumun rolü, hedef ülke, dil ve yayın kanalı birlikte değerlendirilir. Türkiye mevzuatı, hedef ülke kuralları ve platform politikaları ayrı incelenir; yayın kararı kurumun hukuk/uyum onayına bağlanır.",
+      "reviews":[{"title":"Kurum rolü ve hizmet kapsamı","text":"Sağlık tesisi, hekim veya aracı kuruluş rolünü ve tanıtılacak hizmetin kapsamını netleştirin."},{"title":"İddia ve kaynak kontrolü","text":"Hekim, başarı, fiyat ve referans ifadelerini kaynak, dönem ve kullanım izniyle inceleyin."},{"title":"Ülke, dil ve kanal","text":"Hedef ülkeye, dile ve platforma göre yayın koşullarını ayrı değerlendirin."},{"title":"İletişim ve veri akışı","text":"İlk temas için gerekli alanları belirleyin; sağlık verisini reklam ve analitik araçlarına göndermeyin."}],
+      "servicesTitle":"Branş planını destekleyen hizmetler",
+      "servicesIntro":"Uzmanlık rehberleri kurumun ihtiyacını tanımlar. Reklam, SEO, web, CRM ve içerik uygulamalarının kapsamını ilgili hizmet merkezinde inceleyin.",
+      "serviceLink":"Hizmeti incele","faqTitle":"Branş pazarlaması hakkında sorular",
+      "faqs":[{"q":"Branşa özel pazarlama planı nereden başlar?","a":"Kurumun hizmet kapsamı, hedeflediği dil ve ülkeler, mevcut içerikleri ve başvuru akışı birlikte incelenir. Kanal planı bu değerlendirmeden sonra oluşturulur; tüm branşlar için tek bir karar süresi veya bütçe varsayılmaz."},{"q":"Diş kliniği için Google Ads mi SEO mu önceliklidir?","a":"Öncelik mevcut arama görünürlüğüne, talebe, bütçeye ve ekibin kapasitesine bağlıdır. Reklam ve organik trafik, başvuru sayısının yanında nitelikli görüşme ve randevu katkısıyla karşılaştırılır."},{"q":"Branş pazarlamasında başarı nasıl ölçülür?","a":"Başvuru kaynağı, nitelikli başvuru, görüşme ve kurumun satış aşamaları ayrı takip edilir. CPL başvuru başına maliyettir; müşteri veya hasta edinme maliyetiyle aynı değildir. Sonuçlar kaynak ve dönem belirtilerek değerlendirilir."},{"q":"İçerik yayından önce nasıl değerlendirilir?","a":"Kurum rolü, hizmet bilgisi, iddiaların kaynağı, içerik izinleri ve hedef ülke ile platform koşulları kontrol edilir. Mevzuat yorumu gerektiren konular kurumun hukuk/uyum incelemesine sunulur."},{"q":"Overseas Marketing sağlık hizmeti veya aracılık hizmeti sunar mı?","a":"Overseas Marketing B2B pazarlama ve teknoloji ajansıdır. Sağlık kuruluşlarına reklam, SEO, içerik, web ve CRM hizmetleri sunar; tedavi, tıbbi değerlendirme veya sağlık turizmi aracılığı yapmaz."}],
+      "ctaTitle":"Branşınıza uygun pazarlama planını birlikte değerlendirelim",
+      "ctaText":"Mevcut sayfalarınızı, hedef pazarınızı ve başvuru akışınızı görüşelim; hangi veri ve uygulamalara ihtiyaç olduğunu belirleyelim.",
+      "cta":"Hedef Pazar ve Büyüme Analizi İste"
+    },
+    "en": {
+      "title":"Healthcare Sectors & Clinical Specialties | Overseas Marketing",
+      "description":"Marketing, international SEO and CRM planning for clinics, hospitals and medical tourism intermediaries. Explore 15 specialty and organisation guides.",
+      "home":"Home","directory":"Clinical Specialties",
+      "h1":"Medical tourism marketing by clinical specialty and organisation type",
+      "intro":"Advertising, SEO and CRM planning for clinic owners, hospital managers and international patient teams. Choose from 15 specialty and organisation guides to explore target languages, service scope and qualified enquiry measurement.",
+      "all":"All areas","filterLabel":"Filter specialty guides","results":"guides shown",
+      "directoryTitle":"Specialty and organisation guides","detail":"Explore specialty guide",
+      "matrixTitle":"What data informs a specialty marketing plan?",
+      "matrixIntro":"This is a planning framework, not a benchmark for market size, decision timelines or results. Channel and budget decisions depend on the organisation's data, target country and service scope.",
+      "matrixColumns":["Specialty / organisation","Planning question","Data to review"],
+      "reviewTitle":"Review content and organisation scope before a campaign",
+      "reviewIntro":"Consider the organisation's role, target country, language and publishing channel together. Review Turkish rules, target-country requirements and platform policies separately, with publication subject to the organisation's legal/compliance approval.",
+      "reviews":[{"title":"Organisation role and scope","text":"Clarify the facility, physician or intermediary role and the scope of the service being promoted."},{"title":"Claims and sources","text":"Review physician, performance, pricing and reference claims with sources, periods and permissions."},{"title":"Country, language and channel","text":"Assess publishing conditions for each target country, language and platform."},{"title":"Contact and data flow","text":"Define necessary first-contact fields; keep health data out of advertising and analytics tools."}],
+      "servicesTitle":"Services supporting your specialty plan",
+      "servicesIntro":"Specialty guides describe the organisation's needs. Explore the relevant service centre for advertising, SEO, web, CRM and content delivery.",
+      "serviceLink":"Explore service","faqTitle":"Questions about specialty marketing",
+      "faqs":[{"q":"Where does a specialty marketing plan start?","a":"Review the organisation's service scope, target languages and countries, existing content and enquiry workflow together. Set the channel plan after this review, rather than assuming one decision timeline or budget for every specialty."},{"q":"Should a dental clinic prioritise Google Ads or SEO?","a":"Priority depends on existing search visibility, demand, budget and the team's capacity. Compare paid and organic traffic by qualified consultations and appointments as well as enquiry volume."},{"q":"How is specialty marketing performance measured?","a":"Track enquiry sources, qualified enquiries, consultations and sales stages separately. CPL means cost per lead; it is not the same as customer or patient acquisition cost. Evaluate results with their source and period."},{"q":"How is content reviewed before publication?","a":"Check the organisation's role, service information, claim sources, content permissions, and target-country and platform conditions. Refer matters requiring regulatory interpretation to the organisation's legal/compliance reviewers."},{"q":"Does Overseas Marketing provide healthcare or medical travel intermediary services?","a":"Overseas Marketing is a B2B marketing and technology agency. We provide advertising, SEO, content, web and CRM services to healthcare organisations; we do not provide treatment, medical assessment or medical travel intermediary services."}],
+      "ctaTitle":"Explore a marketing plan for your specialty",
+      "ctaText":"Discuss your existing pages, target market and enquiry workflow to identify the data and delivery you need.",
+      "cta":"Request a Market and Growth Review"
+    }
+  }
+}

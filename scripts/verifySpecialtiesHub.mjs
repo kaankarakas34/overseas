@@ -1,107 +1,55 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import ts from 'typescript';
+import vm from 'node:vm';
 
-const root = process.cwd();
-const distDir = path.join(root, 'dist');
-const sektorlerHtmlPath = path.join(distDir, 'sektorler', 'index.html');
-
-console.log('--- NAV-05 Specialties Hub Verification ---');
-
-// 1. Check dist/sektorler/index.html exists
-if (!fs.existsSync(sektorlerHtmlPath)) {
-  console.error('FAIL: dist/sektorler/index.html does not exist. Run npm run build first.');
-  process.exit(1);
+const hub = JSON.parse(fs.readFileSync('src/data/specialtiesHub.json', 'utf8'));
+const families = JSON.parse(fs.readFileSync('src/data/serviceFamilies.json', 'utf8'));
+const html = fs.readFileSync('dist/sektorler/index.html', 'utf8');
+const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
+const escape = text => text.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const compiled = ts.transpileModule(fs.readFileSync('src/data/masterPlanData.ts', 'utf8'), { compilerOptions: {module: ts.ModuleKind.CommonJS} }).outputText;
+const sandbox = { exports: {} };
+vm.runInNewContext(compiled, sandbox);
+assert.equal(hub.branches.length, 15);
+assert.deepEqual(hub.branches.map(b => b.slug).sort(), Array.from(sandbox.exports.MASTER_BRANCHES, b => b.slug).sort(), 'Match the existing branch registry');
+assert.equal(new Set(hub.branches.map(b => b.slug)).size, 15);
+assert.deepEqual(hub.categories.map(c => hub.branches.filter(b => b.category === c.id).length), [5, 1, 3, 2, 4]);
+for (const branch of hub.branches) {
+  assert.ok(hub.categories.some(c => c.id === branch.category));
+  assert.ok(main.includes(`href="/${branch.slug}"`));
+  assert.ok(main.includes(escape(branch.summary.tr)), 'Shared static summary: ' + branch.slug);
 }
-
-const html = fs.readFileSync(sektorlerHtmlPath, 'utf8');
-
-// 2. Check SEO tags
-const hasCanonical = html.includes('rel="canonical" href="https://www.overseas.marketing/sektorler"');
-const hasTitle = html.includes('Hizmet Verdi') || html.includes('sektorler') || html.includes('Overseas Marketing');
-const hasRobots = html.includes('index, follow');
-
-if (!hasCanonical) {
-  console.error('FAIL: Missing or invalid canonical in dist/sektorler/index.html');
-  process.exit(1);
+for (const url of [...hub.branches.map(b => '/' + b.slug), ...families.map(f => f.url), '/teklif-al']) {
+  assert.ok(main.includes(`href="${url}"`), 'Crawlable link ' + url);
+  const target = fs.readFileSync('dist' + url + '/index.html', 'utf8');
+  assert.ok(!/<title[^>]*>404|Sayfa Bulunamadı/.test(target), 'Real target ' + url);
+  assert.equal((target.match(/rel="canonical"/g) || []).length, 1, 'Single target canonical ' + url);
 }
-console.log('PASS: Canonical URL verified (https://www.overseas.marketing/sektorler).');
+assert.equal((html.match(/<h1\b/g) || []).length, 1);
+assert.ok(html.includes('rel="canonical" href="https://www.overseas.marketing/sektorler"'));
+assert.ok(html.includes(escape(hub.copy.tr.h1)));
+assert.match(html.match(/<meta\b[^>]*name="robots"[^>]*>/)?.[0] || '', /content="index, follow/);
+const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
+const faq = schemas.find(s => s['@type'] === 'FAQPage');
+assert.deepEqual(faq.mainEntity.map(q => ({q:q.name, a:q.acceptedAnswer.text})), hub.copy.tr.faqs);
+for (const entry of hub.copy.tr.faqs) assert.ok(main.includes(escape(entry.a)));
+assert.deepEqual(schemas.find(s => s['@type'] === 'BreadcrumbList').itemListElement.map(i => i.item), ['https://www.overseas.marketing', 'https://www.overseas.marketing/sektorler']);
+assert.ok(!/7\s*[–-]\s*21|3 kata|%100|12 Ay Takip Garantisi|Mevzuata Tam Uyumlu|birincil öneri/i.test(main), 'Remove unsupported hub claims');
+for (const file of ['src/components/Navbar.tsx', 'src/data/headerNavigation.json', 'src/data/masterPlanData.ts', 'src/i18n/masterPlanData.en.ts', 'src/App.tsx', 'public/sitemap.xml']) {
+  assert.equal(execFileSync('git', ['diff', 'HEAD', '--', file], {encoding:'utf8'}).trim(), '', 'Protected file unchanged: ' + file);
+}
+console.log('PASS: 15 registered branches, 5 categories, 6 family links and real static targets; H1/canonical/robots, shared copy/FAQ schema, breadcrumb, claim regression and protected files');
 
-// 3. Verify all 15 branch links exist in dist/sektorler/index.html
-const branches = [
-  'sac-ekimi-reklam-ajansi',
-  'dis-klinigi-reklam-ajansi',
-  'estetik-klinigi-reklam-ajansi',
-  'plastik-cerrahi-reklam-ajansi',
-  'obezite-cerrahisi-reklam-ajansi',
-  'tup-bebek-reklam-ajansi',
-  'goz-klinigi-reklam-ajansi',
-  'hastane-reklam-ajansi',
-  'doktor-reklam-ajansi',
-  'klinik-reklam-ajansi',
-  'dermatoloji-reklam-ajansi',
-  'medikal-estetik-reklam-ajansi',
-  'fizik-tedavi-reklam-ajansi',
-  'ortopedi-reklam-ajansi',
-  'saglik-turizmi-araci-kurulus-pazarlama'
-];
-
-let missingBranches = [];
-for (const slug of branches) {
-  const branchLinkRegex = new RegExp(`href=["']\\/${slug}["']`);
-  if (!branchLinkRegex.test(html)) {
-    missingBranches.push(slug);
+const baselinePath = process.argv[2];
+if (baselinePath) {
+  const baseline = JSON.parse(fs.readFileSync(baselinePath, 'utf8'));
+  for (const [file, before] of Object.entries(baseline)) {
+    const after = fs.readFileSync(file, 'utf8');
+    const tags = [...after.matchAll(/<title[^>]*>[^<]*<\/title>|<meta[^>]*(?:name="(?:description|robots)")[^>]*>|<link[^>]*(?:rel="(?:canonical|alternate)")[^>]*>/g)].map(m => m[0]);
+    assert.deepEqual(tags, before.tags, 'Baseline SEO metadata ' + file);
+    assert.equal(after.match(/<header\b[^>]*>[\s\S]*?<\/header>/)?.[0], before.header, 'Baseline header ' + file);
   }
+  console.log(`PASS: ${Object.keys(baseline).length} pages retain baseline title/meta/robots/canonical/alternate and header`);
 }
-
-if (missingBranches.length > 0) {
-  console.error('FAIL: Missing branch links in sektorler page:', missingBranches);
-  process.exit(1);
-}
-console.log(`PASS: All 15 branch links verified in static HTML.`);
-
-// 4. Verify all 15 branch files exist in dist/
-let missingFiles = [];
-for (const slug of branches) {
-  const branchFilePath = path.join(distDir, slug, 'index.html');
-  if (!fs.existsSync(branchFilePath)) {
-    missingFiles.push(slug);
-  }
-}
-
-if (missingFiles.length > 0) {
-  console.error('FAIL: Missing static HTML files for branches in dist:', missingFiles);
-  process.exit(1);
-}
-console.log(`PASS: All 15 branch static HTML pages exist in dist/.`);
-
-// 5. Verify 6 service family links exist in dist/sektorler/index.html
-const services = [
-  '/hizmetler/performans-pazarlama',
-  '/hizmetler/uluslararasi-seo-hizmeti',
-  '/hizmetler/geo-generative-engine-optimization',
-  '/hizmetler/web-sitesi-landing-page',
-  '/hizmetler/crm-otomasyon',
-  '/hizmetler/icerik-marka-yonetimi'
-];
-
-let missingServices = [];
-for (const srv of services) {
-  if (!html.includes(srv)) {
-    missingServices.push(srv);
-  }
-}
-
-if (missingServices.length > 0) {
-  console.error('FAIL: Missing core service links in sektorler page:', missingServices);
-  process.exit(1);
-}
-console.log(`PASS: All 6 core service family links verified in static HTML.`);
-
-// 6. Verify Header integrity
-const navbarPath = path.join(root, 'src', 'components', 'Navbar.tsx');
-const navJsonPath = path.join(root, 'src', 'data', 'headerNavigation.json');
-const navbarCode = fs.readFileSync(navbarPath, 'utf8');
-const navJson = fs.readFileSync(navJsonPath, 'utf8');
-
-console.log('PASS: Header files intact.');
-console.log('ALL VERIFICATIONS PASSED: NAV-05 Specialties Hub is fully verified.');
