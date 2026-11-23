@@ -181,51 +181,6 @@
     ]
   },
   {
-    "id": "markets",
-    "url": "/ulkeler",
-    "label": {
-      "tr": "Hedef Ülkeler",
-      "en": "Target Markets"
-    },
-    "links": [
-      {
-        "url": "/ulkeler",
-        "label": {
-          "tr": "Tüm Hedef Ülkeler",
-          "en": "All Target Markets"
-        }
-      },
-      {
-        "url": "/ingiltere-saglik-turizmi-reklamlari",
-        "label": {
-          "tr": "İngiltere Sağlık Turizmi Reklamları",
-          "en": "United Kingdom (UK) Medical Tourism Advertising"
-        }
-      },
-      {
-        "url": "/almanya-saglik-turizmi-reklamlari",
-        "label": {
-          "tr": "Almanya Sağlık Turizmi Reklamları",
-          "en": "Germany (DACH) Medical Tourism Advertising"
-        }
-      },
-      {
-        "url": "/fransa-saglik-turizmi-reklamlari",
-        "label": {
-          "tr": "Fransa Sağlık Turizmi Reklamları",
-          "en": "France Medical Tourism Advertising"
-        }
-      },
-      {
-        "url": "/hollanda-saglik-turizmi-reklamlari",
-        "label": {
-          "tr": "Hollanda Sağlık Turizmi Reklamları",
-          "en": "Netherlands & Benelux Medical Tourism Advertising"
-        }
-      }
-    ]
-  },
-  {
     "id": "guide",
     "url": "/blog",
     "label": {
