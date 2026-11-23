@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigateHome, onOpenConsultati
   return <header ref={header} className={`fixed top-0 left-0 right-0 z-40 border-b border-[#DDE2E8] py-4 transition-shadow bg-white/95 backdrop-blur-md ${isScrolled ? 'shadow-sm' : ''}`}>
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 xl:px-8">
       <div className="flex items-center justify-between gap-4">
-        <Link to="/" onClick={onNavigateHome} aria-label="Overseas Marketing" className="shrink-0 focus-visible:outline-2 focus-visible:outline-[#446CB5]"><img src="/logo2/siyah.png" alt="Overseas Marketing" className="h-5 sm:h-6 w-auto max-w-[145px] sm:max-w-[160px]" /></Link>
+        <Link to="/" onClick={onNavigateHome} aria-label="Overseas Marketing" className="min-w-0 focus-visible:outline-2 focus-visible:outline-[#446CB5]"><img src="/logo2/siyah.png" alt="Overseas Marketing" width={1400} height={110} className="block h-auto w-[180px] max-w-full sm:w-[220px]" /></Link>
         <nav aria-label={isEn ? 'Main navigation' : 'Ana navigasyon'} className="hidden xl:flex items-center gap-7">{navigation.map(group => <NavigationGroup key={group.id} group={group} language={language} mobile={false} onSelect={select} />)}</nav>
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher />
