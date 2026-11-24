@@ -84,3 +84,12 @@ Gerçek lead/e-posta gönderilmedi; hukuk onayı, sıralama, trafik veya dönü�
 Kod `codex/nav05-brans-merkezi-kabul` dalında review için teslim edilir; üretim dalına merge/yayın yapılmaz. Sıradaki NAV-06 bu turda başlatılmadı.
 
 Kaynaklar: mevcut repo ve geçmiş `3ccd9fb` değişikliği; kullanıcının 23 Kasım master briefi; [canlı merkez başlangıç incelemesi](https://www.overseas.marketing/sektorler); [Google taranabilir bağlantı kılavuzu](https://developers.google.com/search/docs/crawling-indexing/links-crawlable). Canlı sayfanın başlangıç gözlemi, yeni kodun canlıda olduğu anlamına gelmez.
+
+
+## 24 Kasım 2026 — üretim yayını eki
+
+Kullanıcının açık yayın talimatıyla PR #1 merge edildi: `06cdb0919cc4253c30e81f93eca26946671b1eea`. Overseas / Vercel üretim dağıtımı `dpl_GdWJz8mSF83Cmu7PSg5zXaUVYv2m` READY. [Canlı merkez](https://www.overseas.marketing/sektorler). Üstteki yayın bekliyor bilgisi bu tarihli ekle güncellenir. Header ve menü veri dosyaları korunmuştur. PR aynı dalda sonradan eklenen CRO envanter/denetim raporlarını ve geliştirme bağımlılıklarını da içerir.
+
+24 Kasım canlı Chromium kontrolü PASS: TR/EN × 1440/390, filtreler/reset, 5 FAQ klavye/schema eşliği, 2 CTA/form açılması, kişisel veri içermeyen olay, analitik hatası, 21 hedef HTTP/canonical, diş rehberinden dönüş/CRM gezinmesi ve JavaScript kapalı gerçek clean URL içeriği. Log: `output/playwright/nav-05-browser.log`. Gerçek form gönderilmedi. Üretim dağıtımına ait son 30 dakika function/daemon error/fatal sorgusu kayıt döndürmedi; statik sayfa trafiğinin tamamını veya uçtan uca veri teslimini kanıtlamaz.
+
+Bağımsız insan editör incelemesi ve canlı GA4/GSC sonucu halen VERIFY MANUALLY; Linear In Progress kalır. Yeni trafik, sıralama, hukuk onayı veya gerçek lead teslimi beyanı yoktur.

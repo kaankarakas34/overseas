@@ -1,0 +1,236 @@
+{
+  "markets": [
+    {
+      "slug": "ingiltere-saglik-turizmi-reklamlari",
+      "tr": "İngiltere / Birleşik Krallık",
+      "en": "England / United Kingdom",
+      "summary": {
+        "tr": "İngilizce arama niyetini, açılış sayfasını ve başvuru sonrası iletişimi birlikte planlayın. Birleşik Krallık içindeki ülke ve şehir hedeflerini ayrı ölçün; tek bir ülke ortalamasını kliniğinizin sonucu olarak kullanmayın.",
+        "en": "Plan English search intent, landing pages and enquiry follow-up together. Measure country and city targeting within the UK separately rather than treating a national average as your clinic’s result."
+      },
+      "question": {
+        "tr": "İngilizce arama sorgusu, kurumun hizmet kapsamıyla ve başvuru formuyla örtüşüyor mu?",
+        "en": "Does the English search query match the provider’s scope and enquiry form?"
+      },
+      "input": {
+        "tr": "Birleşik Krallık sorgu/konum verisi, İngilizce içerik ve GBP teklif sunumu incelemesi; CRM’de başvuru kaynağı ve yanıt süresi.",
+        "en": "UK query/location data, English content and GBP quotation presentation review; enquiry source and response times in the CRM."
+      },
+      "branches": [
+        "dis-klinigi-reklam-ajansi",
+        "sac-ekimi-reklam-ajansi"
+      ]
+    },
+    {
+      "slug": "almanya-saglik-turizmi-reklamlari",
+      "tr": "Almanya",
+      "en": "Germany",
+      "summary": {
+        "tr": "Almanca içerik ile danışman ekibinin dil kapasitesini eşleştirin. Avusturya ve İsviçre’yi otomatik olarak aynı kampanyaya katmak yerine ülke, dil ve hizmet kapsamını ayrıca değerlendirin.",
+        "en": "Match German content with the team’s ability to handle enquiries in German. Assess Austria and Switzerland separately for country, language and service scope before including them in the same campaign."
+      },
+      "question": {
+        "tr": "Almanca sayfadaki hizmet açıklaması ve başvuru sonrası süreç aynı bilgiyi veriyor mu?",
+        "en": "Do the German service page and follow-up process communicate the same scope?"
+      },
+      "input": {
+        "tr": "Almanya sorgu ve bölge kırılımı, Almanca editör kontrolü, ekip dil kapasitesi; Avusturya/İsviçre için ayrı veri.",
+        "en": "German query and regional breakdowns, native editorial review and team language capacity; separate evidence for Austria/Switzerland."
+      },
+      "branches": [
+        "hastane-reklam-ajansi",
+        "ortopedi-reklam-ajansi"
+      ]
+    },
+    {
+      "slug": "fransa-saglik-turizmi-reklamlari",
+      "tr": "Fransa",
+      "en": "France",
+      "summary": {
+        "tr": "Fransızca sorguları, sayfa anlatımını ve form sorularını aynı hizmet ihtiyacı etrafında düzenleyin. Sadece reklamı çevirmek yerine içerik, ekip yanıtları ve kaynak gösterilen iddiaları birlikte inceleyin.",
+        "en": "Align French queries, page copy and form questions around the same service need. Review content, team responses and evidence for claims together rather than translating the advertisement alone."
+      },
+      "question": {
+        "tr": "Fransızca reklam vaadi, sayfa içeriği ve danışman yanıtı birbiriyle tutarlı mı?",
+        "en": "Are the French advertisement, page content and coordinator response consistent?"
+      },
+      "input": {
+        "tr": "Fransa sorgu/kampanya verisi, Fransızca içerik incelemesi, form terk noktaları ve nitelikli başvuru tanımı.",
+        "en": "French query/campaign data, French editorial review, form drop-off points and a qualified enquiry definition."
+      },
+      "branches": [
+        "plastik-cerrahi-reklam-ajansi",
+        "dermatoloji-reklam-ajansi"
+      ]
+    },
+    {
+      "slug": "hollanda-saglik-turizmi-reklamlari",
+      "tr": "Hollanda",
+      "en": "Netherlands",
+      "summary": {
+        "tr": "Felemenkçe ve İngilizce deneyimleri ayrı ölçerek dil seçimini veriye dayandırın. Belçika’yı tek bir dil veya Hollanda ile aynı ülke hedefi olarak varsaymadan ayrıca değerlendirin.",
+        "en": "Measure Dutch and English experiences separately to inform language choices. Assess Belgium independently rather than assuming one language or the same country targeting as the Netherlands."
+      },
+      "question": {
+        "tr": "Dil tercihi ile başvuru kalitesi arasında kliniğe ait ölçülebilir bir fark var mı?",
+        "en": "Does your clinic’s data show a measurable difference in enquiry quality by language?"
+      },
+      "input": {
+        "tr": "Hollanda dil/konum kırılımı, sayfa ve form performansı, ekip yanıtları; Belçika için ayrı ülke ve dil araştırması.",
+        "en": "Dutch language/location breakdowns, page and form performance and team responses; separate country/language research for Belgium."
+      },
+      "branches": [
+        "dis-klinigi-reklam-ajansi",
+        "tup-bebek-reklam-ajansi"
+      ]
+    }
+  ],
+  "copy": {
+    "tr": {
+      "title": "Hedef Ülkeler ve Uluslararası Sağlık Turizmi Pazarları | Overseas Marketing",
+      "description": "İngiltere, Almanya, Fransa, Hollanda ve Körfez pazarlarında sağlık turizmi reklam yönetimi, hasta profilleri ve pazar dinamikleri rehberi.",
+      "home": "Ana Sayfa",
+      "directory": "Hedef Ülkeler",
+      "h1": "Kliniğiniz için hedef ülkeye göre sağlık turizmi pazarlaması",
+      "intro": "Klinik sahipleri, hastane yöneticileri ve uluslararası hasta ekipleri için pazar planlama merkezi. Mevcut dört ülke rehberini; dil kapasiteniz, hizmet kapsamınız, reklam, SEO ve CRM verinizle birlikte değerlendirin. Overseas Marketing B2B pazarlama ve teknoloji ajansıdır; tedavi sunmaz veya sağlık turizmi aracılığı yapmaz.",
+      "cta": "Pazar planını görüşün",
+      "directoryTitle": "Mevcut ülke rehberleri",
+      "directoryIntro": "Ülke rehberleriyle dil, içerik ve başvuru sonrası iletişim ihtiyacınızı değerlendirin. Her rehberden kurumunuzun branşına uygun planlama örneklerine geçebilirsiniz.",
+      "detail": "Ülke rehberini inceleyin",
+      "branchLinks": "Branşa göre planlama örnekleri",
+      "matrixTitle": "Pazar seçmeden önce hangi veriye bakmalısınız?",
+      "matrixIntro": "Kliniğinizin verisini ve ekip kapasitesini dört ülke için aynı çerçevede değerlendirin. Arama sorgusundan başvurunun niteliğine uzanan akışı inceleyerek pilot kampanyanın önceliklerini belirleyin.",
+      "matrixColumns": [
+        "Ülke",
+        "Planlama sorusu",
+        "İncelenecek veri"
+      ],
+      "expansionTitle": "Diğer ülkeler için araştırma kapsamı",
+      "expansionIntro": "İrlanda, İtalya, İspanya, Belçika, Avusturya, İsviçre ve Körfez ülkeleri için yeni pazar araştırmasında ülke ve dil sorguları, kurumun hizmet kapsamı, ekip kapasitesi ve pilot kampanya hedefi birlikte ele alınır. Bu ülkeler için ayrı rehber hazırlamadan önce yerel içerik ve iletişim ihtiyacı değerlendirilir.",
+      "reviewTitle": "Kampanya öncesi kapsam ve yayın kontrolü",
+      "reviewIntro": "Pazar planı; kurumun rolü, hedef ülkedeki yayın koşulları ve veri akışı üzerinden değerlendirilir. Bu çalışma hukuk onayı veya mevzuata tam uyum garantisi değildir.",
+      "reviews": [
+        {
+          "title": "Kurum ve hizmet kapsamı",
+          "text": "Sağlık tesisi, hekim ve aracı kuruluş rollerini ayırın; kampanyada kimin hangi hizmeti sunduğunu belgelerle netleştirin."
+        },
+        {
+          "title": "Yerel dil ve iddialar",
+          "text": "Reklam, sayfa ve danışman metnini birlikte inceleyin. Fiyat, başarı, akreditasyon ve hasta deneyimi ifadelerini kaynak ve kullanım izniyle doğrulayın."
+        },
+        {
+          "title": "Ülke ve platform incelemesi",
+          "text": "Türkiye, hedef ülke ve reklam platformunun güncel koşullarını ayrı değerlendirin; gerekli hukuk/uyum incelemesini yayın öncesinde tamamlayın."
+        },
+        {
+          "title": "Ölçüm ve iletişim verisi",
+          "text": "Nitelikli başvuru tanımını, CRM alanlarını ve erişim yetkilerini belirleyin. Analitik olaylara tıbbi belge veya kişisel başvuru içeriği taşımayın."
+        }
+      ],
+      "specialtiesTitle": "Ülke planını kurumunuzun branşıyla eşleştirin",
+      "specialtiesIntro": "Branş rehberleriyle içerik, hizmet kapsamı ve başvuru sürecini kurumunuzun ihtiyacına göre planlayın. Ülke kartlarındaki branş bağlantıları bu değerlendirmeye başlamak için örnek yollar sunar.",
+      "specialtiesLink": "Tüm uzmanlık alanlarını inceleyin",
+      "servicesTitle": "Pazar planını destekleyen hizmetler",
+      "servicesIntro": "Pazar hedefinizi belirledikten sonra reklam, SEO, web ve CRM ihtiyacınıza uygun hizmet merkezini inceleyin.",
+      "serviceLink": "Hizmet merkezini inceleyin",
+      "faqTitle": "Hedef ülke planlaması hakkında sorular",
+      "faqs": [
+        {
+          "q": "Kliniğimiz önce hangi ülkeye odaklanmalı?",
+          "a": "Tek bir ülkeyi her klinik için ilk sıraya koymuyoruz. Mevcut başvuru kaynakları, dil kapasitesi, hizmet kapsamı, ülke bazlı sorgular ve bütçeyle birlikte ölçülebilir bir pilot seçilir. Veri yoksa önce veri toplama planı hazırlanır."
+        },
+        {
+          "q": "Aynı reklam ve sayfa metnini farklı ülkelere çevirmek yeterli mi?",
+          "a": "Çeviri başlangıç olabilir; ülke hedefini, sorgu niyetini, hizmet açıklamasını, formu ve ekibin yanıt kapasitesini birlikte incelemek gerekir. Bir dilde elde edilen sonuç diğer ülke için performans kanıtı sayılmaz."
+        },
+        {
+          "q": "Pazar karşılaştırması için hangi veriler gerekir?",
+          "a": "Ülke ve dil bazlı arama/kampanya verisi, sayfa ve form ölçümleri, CRM’de başvuru kaynağı, yanıt süresi ve kurumun nitelikli başvuru tanımı gerekir. Klinik verisi olmadan ortalama maliyet veya dönüşüm rakamı sunmuyoruz."
+        },
+        {
+          "q": "Neden her ülke için ayrı bir sayfa yok?",
+          "a": "Bu merkez mevcut İngiltere, Almanya, Fransa ve Hollanda rehberlerini bir araya getirir. Diğer ülkelerde ayrı arama niyeti, içerik ve kurum kapasitesi doğrulanmadan birbirine benzeyen sayfalar oluşturulmaz."
+        },
+        {
+          "q": "Overseas Marketing tedavi veya hasta yönlendirme hizmeti mi sunuyor?",
+          "a": "Overseas Marketing kuruluşlara pazarlama ve teknoloji hizmetleri sunar; tedavi planı, tıbbi değerlendirme veya sağlık turizmi aracılığı yapmaz. Kampanyanın hizmet sağlayıcısı ve iletişim kapsamı müşteri kurumun rolüne göre belirlenir."
+        }
+      ],
+      "ctaTitle": "Ülke, dil ve ölçüm planını birlikte netleştirelim",
+      "ctaText": "Mevcut pazar verinizi, ekip kapasitenizi ve hizmet kapsamınızı paylaşın; reklam, SEO, içerik ve CRM için incelenecek adımları belirleyelim."
+    },
+    "en": {
+      "title": "Target Countries & International Medical Markets | Overseas Marketing",
+      "description": "Cross-border healthcare marketing strategies across the UK, Germany, France, Netherlands, and GCC with localized patient acquisition funnels.",
+      "home": "Home",
+      "directory": "Target Countries",
+      "h1": "Plan healthcare marketing around your clinic’s target countries",
+      "intro": "A market planning hub for clinic owners, hospital managers and international patient teams. Assess the four existing country guides against your language capacity, service scope and advertising, SEO and CRM data. Overseas Marketing is a B2B marketing and technology agency; it does not provide treatment or medical tourism intermediary services.",
+      "cta": "Discuss your market plan",
+      "directoryTitle": "Existing country guides",
+      "directoryIntro": "Use the country guides to assess language, content and enquiry follow-up requirements. Each guide links to specialty planning examples relevant to your organisation.",
+      "detail": "Explore the country guide",
+      "branchLinks": "Specialty planning examples",
+      "matrixTitle": "What evidence should inform your market choice?",
+      "matrixIntro": "Assess your clinic’s evidence and team capacity using the same framework across four countries. Review the journey from search query to enquiry quality to set priorities for a pilot campaign.",
+      "matrixColumns": [
+        "Country",
+        "Planning question",
+        "Evidence to review"
+      ],
+      "expansionTitle": "Research scope for other countries",
+      "expansionIntro": "Researching Ireland, Italy, Spain, Belgium, Austria, Switzerland or the Gulf countries brings together country and language queries, provider scope, team capacity and pilot objectives. Assess local content and communication requirements before preparing a dedicated guide for another country.",
+      "reviewTitle": "Scope and publishing review before a campaign",
+      "reviewIntro": "Review the market plan against the provider’s role, publishing conditions in the target country and data flows. This process is not legal approval or a guarantee of regulatory compliance.",
+      "reviews": [
+        {
+          "title": "Provider and service scope",
+          "text": "Distinguish healthcare providers, individual practitioners and intermediaries. Document who provides each service presented in the campaign."
+        },
+        {
+          "title": "Local language and claims",
+          "text": "Review advertisements, pages and coordinator copy together. Verify pricing, outcomes, accreditation and patient experience claims against sources and permissions."
+        },
+        {
+          "title": "Country and platform review",
+          "text": "Assess current Turkish, target country and advertising platform conditions separately. Complete any required legal/compliance review before publishing."
+        },
+        {
+          "title": "Measurement and contact data",
+          "text": "Define qualified enquiries, CRM fields and access permissions. Do not send medical documents or personal enquiry content through analytics events."
+        }
+      ],
+      "specialtiesTitle": "Connect the country plan to your specialty",
+      "specialtiesIntro": "Use specialty guides to plan content, service scope and enquiry handling around your organisation’s needs. The specialty links in each country card offer example paths for starting that assessment.",
+      "specialtiesLink": "Explore all specialties",
+      "servicesTitle": "Services that support your market plan",
+      "servicesIntro": "Once you have defined a market objective, explore the service hub that fits your advertising, SEO, website or CRM requirements.",
+      "serviceLink": "Explore the service hub",
+      "faqTitle": "Questions about target country planning",
+      "faqs": [
+        {
+          "q": "Which country should our clinic prioritise?",
+          "a": "We do not rank one country first for every clinic. Choose a measurable pilot using existing enquiry sources, language capacity, service scope, country-level queries and budget. If evidence is missing, begin with a data collection plan."
+        },
+        {
+          "q": "Is translating the same advertisement and page enough?",
+          "a": "Translation can be a starting point. Review country targeting, search intent, service explanations, forms and the team’s response capacity together. Results in one language are not performance evidence for another country."
+        },
+        {
+          "q": "What data is needed to compare markets?",
+          "a": "Country and language-level search/campaign data, page and form measurements, enquiry sources in the CRM, response times and the provider’s qualified enquiry definition are needed. We do not present average cost or conversion figures without clinic data."
+        },
+        {
+          "q": "Why is there no separate page for every country?",
+          "a": "This hub brings together the existing UK, Germany, France and Netherlands guides. Similar pages are not created for other countries until distinct search intent, useful content and provider capacity have been established."
+        },
+        {
+          "q": "Does Overseas Marketing provide treatment or patient referrals?",
+          "a": "Overseas Marketing provides marketing and technology services to organisations; it does not offer treatment planning, medical assessments or medical tourism intermediary services. The campaign’s provider and contact scope depend on the client organisation’s role."
+        }
+      ],
+      "ctaTitle": "Clarify your country, language and measurement plan",
+      "ctaText": "Share your existing market evidence, team capacity and service scope so we can identify what to review across advertising, SEO, content and CRM."
+    }
+  }
+}
